@@ -3,6 +3,7 @@ import { NavGuard, useApp, useCanonicalUrl } from '../App';
 import { COURSES } from '../lib/data';
 import { cleanName, donePlayers, isDone, isPlayable, MAX_LINK_PLAYERS, NAME_MAX, sameName } from '../lib/game';
 import { findGame } from '../lib/store';
+import { dailyId, dailyLabel } from '../lib/daily';
 import { HowToSteps } from '../components/HowTo';
 import { Icons, IconButton, Logo, Tag, TopBar } from '../components/ui';
 import Message from './Message';
@@ -29,7 +30,8 @@ export default function Join({ id }: { id: string }) {
 
   const done = donePlayers(game);
   const doneNames = done.map((i) => game.players[i].name);
-  const course = COURSES.find((c) => c.id === game.course)?.name ?? 'Mixed';
+  const daily = dailyLabel(id);
+  const course = daily ? 'Daily challenge' : (COURSES.find((c) => c.id === game.course)?.name ?? 'Mixed');
   const full = game.players.length >= MAX_LINK_PLAYERS;
 
   // "That's me": the person who already played opens the link somewhere new (another browser, Home Screen app).
@@ -70,7 +72,7 @@ export default function Join({ id }: { id: string }) {
       />
       <div className="join-hero">
         <Logo size={64} />
-        <p className="kicker">Football Golf</p>
+        <p className="kicker">{daily ? `${daily}${id === dailyId() ? ' · today' : ''}` : 'Football Golf'}</p>
         <h1 className="join-title">
           {done.length === 0 ? 'Fancy a round?' : done.length === 1 ? `${doneNames[0]} has challenged you` : `${listNames(doneNames)} have played`}
         </h1>
@@ -121,7 +123,6 @@ export default function Join({ id }: { id: string }) {
         <label className="field-title" htmlFor="join-name">
           {done.length >= 2 ? 'New player? Your name' : 'Your name'}
         </label>
-        {done.length === 1 && <p className="field-help">Already played this one? Enter the same name to see your card.</p>}
         <input
           id="join-name"
           className={`input${error ? ' is-error' : ''}`}
@@ -162,9 +163,12 @@ export default function Join({ id }: { id: string }) {
             </button>
           </div>
         ) : (
-          <button type="submit" className="btn btn-primary btn-block btn-lg">
-            Tee off
-          </button>
+          <>
+            <button type="submit" className="btn btn-primary btn-block btn-lg">
+              Tee off
+            </button>
+            {done.length === 1 && <p className="fine center">Already played this one? Enter the same name to see your card.</p>}
+          </>
         )}
       </form>
 

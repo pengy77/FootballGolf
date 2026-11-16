@@ -8,12 +8,16 @@ import Join from './screens/Join';
 import Play from './screens/Play';
 import Results from './screens/Results';
 import Message from './screens/Message';
+import Daily from './screens/Daily';
+import Live from './screens/Live';
 import { HowToSheet } from './components/HowTo';
 import { Toast } from './components/ui';
 
 export type Route =
   | { name: 'home' }
-  | { name: 'setup'; mode: 'challenge' | 'local' }
+  | { name: 'setup'; mode: 'live' | 'local' }
+  | { name: 'daily' }
+  | { name: 'live'; code: string }
   | { name: 'incoming'; code: string }
   | { name: 'join'; id: string }
   | { name: 'play'; id: string }
@@ -24,7 +28,11 @@ export function parseHash(hash: string): Route {
   const parts = hash.replace(/^#\/?/, '').split('/');
   switch (parts[0]) {
     case 'new':
-      return { name: 'setup', mode: parts[1] === 'local' ? 'local' : 'challenge' };
+      return { name: 'setup', mode: parts[1] === 'local' ? 'local' : 'live' };
+    case 'daily':
+      return { name: 'daily' };
+    case 'r':
+      return parts[1] ? { name: 'live', code: parts[1] } : { name: 'badlink' };
     case 'c':
       return parts[1] ? { name: 'incoming', code: parts.slice(1).join('/') } : { name: 'badlink' };
     case 'join':
@@ -102,10 +110,22 @@ export default function App() {
       go('/badlink', { replace: true });
       return;
     }
-    const existing = findGame(mergeSaved(savedRef.current, loadSaved()), decoded.id);
+    const all = mergeSaved(savedRef.current, loadSaved());
     const now = Date.now();
     const incoming: Game = { ...decoded, mode: 'challenge', me: null, revealed: 0, seen: [], createdAt: now, updatedAt: now };
-    const game = existing ? mergeGame(existing, incoming) : incoming;
+    const sameHoles = (g: Game) => JSON.stringify(g.holes) === JSON.stringify(decoded.holes);
+    const untouched = (g: Game) => g.me === null || g.players[g.me]?.picks.every((x) => x === null);
+    // Cards are only ever merged when they're for exactly the same holes. If this phone has a game with
+    // the same id but different holes (e.g. a daily made by an older version), keep them apart.
+    let target = decoded.id;
+    for (const c of '23456789') {
+      const g = findGame(all, target);
+      if (!g || sameHoles(g) || untouched(g)) break;
+      target = `${decoded.id.slice(0, 15)}${c}`;
+    }
+    const existing = findGame(all, target);
+    const fresh = { ...incoming, id: target };
+    const game = existing && sameHoles(existing) ? mergeGame(existing, fresh) : fresh;
     update((s) => ({ ...s, games: { ...s.games, [game.id]: game } }));
     go(`/join/${game.id}`, { replace: true });
   }, [route, go, update]);
@@ -130,6 +150,12 @@ export default function App() {
   switch (route.name) {
     case 'setup':
       screen = <Setup key={route.mode} mode={route.mode} />;
+      break;
+    case 'daily':
+      screen = <Daily />;
+      break;
+    case 'live':
+      screen = <Live key={route.code} code={route.code} />;
       break;
     case 'join':
       screen = <Join key={route.id} id={route.id} />;

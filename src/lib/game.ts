@@ -6,7 +6,7 @@ export interface Hole {
   target: number;
 }
 
-/** item id, "~free text" for an off-the-list answer ("~" alone = gave up), or null = not played yet */
+/** item id, "~free text" for an off-the-list answer ("~" alone = gave up), "!" = ran out of time (live), or null = not played yet */
 export type Pick = string | null;
 
 export interface Player {
@@ -116,7 +116,8 @@ export interface Verdict {
   tone: Tone;
 }
 
-export function verdictFor(strokes: number, size: number, ob: boolean): Verdict {
+export function verdictFor(strokes: number, size: number, ob: boolean, timedOut = false): Verdict {
+  if (timedOut) return { label: 'Out of time', tone: 'ob' };
   if (ob) return { label: 'Out of bounds', tone: 'ob' };
   if (strokes === 0) return { label: 'Hole in one!', tone: 'ace' };
   if (strokes <= 2) return { label: 'Tap-in', tone: 'great' };
@@ -137,6 +138,8 @@ export interface HoleResult {
   /** Strokes before the per-hole cap */
   raw: number;
   capped: boolean;
+  /** Live mode: the shot clock ran out before they locked anything in */
+  timedOut?: boolean;
   verdict?: Verdict;
 }
 
@@ -146,18 +149,27 @@ export function holeResult(hole: Hole, pick: Pick): HoleResult {
   const item = pick.startsWith('~') ? undefined : cat.byId.get(pick);
   if (!item) {
     const strokes = obStrokes(cat, hole.target);
+    const timedOut = pick === '!';
     return {
       played: true,
       offList: pick.startsWith('~') ? pick.slice(1) : '',
       strokes,
       raw: strokes,
       capped: strokes === HOLE_MAX,
-      verdict: verdictFor(strokes, cat.size, true),
+      timedOut,
+      verdict: verdictFor(strokes, cat.size, true, timedOut),
     };
   }
   const raw = distance(item, hole.target);
   const strokes = Math.min(raw, HOLE_MAX);
   return { played: true, item, strokes, raw, capped: raw > HOLE_MAX, verdict: verdictFor(raw, cat.size, false) };
+}
+
+/** What someone answered, in words. */
+export function pickLabel(r: HoleResult): string {
+  if (r.item) return r.item.name;
+  if (r.timedOut) return 'Ran out of time';
+  return r.offList ? `“${r.offList}”` : 'No answer';
 }
 
 export function perfectAnswers(hole: Hole): Item[] {

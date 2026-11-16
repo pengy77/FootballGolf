@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { CATEGORY_BY_ID } from '../lib/data';
-import { HOLE_MAX, holeResult, nearestRank, ordinal, perfectAnswers, rankLabel, type Game, type HoleResult } from '../lib/game';
+import { HOLE_MAX, holeResult, nearestRank, ordinal, perfectAnswers, pickLabel, rankLabel, type Game, type HoleResult } from '../lib/game';
 import { buzz } from '../lib/share';
 import { Confetti } from './Confetti';
 import { HoleCard } from './HoleCard';
@@ -11,6 +11,7 @@ const STEP = 650;
 
 /** Spell out the sum so strokes always add up, including ties and the hole cap. */
 function mathLine(r: HoleResult, target: number): string {
+  if (!r.item && r.timedOut) return r.capped ? `Shot clock: hole maximum (${HOLE_MAX})` : 'Shot clock: same as out of bounds';
   if (!r.item) return r.capped ? `Hole maximum (${HOLE_MAX})` : '1 worse than the worst on the list';
   if (r.strokes === 0) return r.item.lo === r.item.hi ? 'Bang on the pin' : `Tied ${rankLabel(r.item)}, covers ${ordinal(target)}`;
   // For a tie, count from the end of the tied range nearest the target (the pill shows the range).
@@ -44,6 +45,7 @@ export function Reveal({
   const [confetti, setConfetti] = useState(0);
   const settledRef = useRef(onSettled);
   settledRef.current = onSettled;
+  const pinRef = useRef<HTMLDivElement>(null);
 
   const results = players.map((p) => ({ p, r: holeResult(h, game.players[p].picks[hole] ?? null) }));
   const aceAt = results.findIndex((x) => x.r.played && x.r.strokes === 0 && !!x.r.item);
@@ -62,6 +64,19 @@ export function Reveal({
     return () => clearTimeout(t);
     // Fire once per hole, not again when the reveal is skipped.
   }, [hole]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // On a small screen with several players the answer can land below the fold: bring it into view.
+  useEffect(() => {
+    if (instant) return;
+    const t = setTimeout(() => {
+      const el = pinRef.current;
+      if (!el) return;
+      const r = el.getBoundingClientRect();
+      const visibleBottom = window.innerHeight - 120; // above the sticky button
+      if (r.bottom > visibleBottom) window.scrollBy({ top: r.bottom - visibleBottom + 12, behavior: reduced ? 'auto' : 'smooth' });
+    }, cardsDone);
+    return () => clearTimeout(t);
+  }, [instant, cardsDone, hole, reduced]);
 
   useEffect(() => {
     // Even when skipped, wait a beat so a double-tap can't fall through to the next button.
@@ -91,8 +106,8 @@ export function Reveal({
               <Tag name={game.players[p].name} index={p} small />
             </div>
             <div className="pick-card-body pop" style={d(i * STEP)}>
-              <div className="pick-card-name">{r.item ? r.item.name : r.offList ? `“${r.offList}”` : 'No answer'}</div>
-              <div className="pick-card-sub">{r.item ? r.item.sub : 'Not on the list'}</div>
+              <div className="pick-card-name">{pickLabel(r)}</div>
+              <div className="pick-card-sub">{r.item ? r.item.sub : r.timedOut ? 'No pick in time' : 'Not on the list'}</div>
             </div>
             <div className="pick-card-foot">
               <span className="rank-pill pop" style={d(i * STEP + 280)}>
@@ -113,7 +128,7 @@ export function Reveal({
         ))}
       </div>
 
-      <div className="pin-banner pop" style={d(cardsDone - 150)}>
+      <div className="pin-banner pop" style={d(cardsDone - 150)} ref={pinRef}>
         <FlagIcon size={20} />
         <div>
           <div className="pin-banner-label">On the pin · {ordinal(h.target)}</div>

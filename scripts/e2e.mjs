@@ -95,12 +95,12 @@ try {
   await sleep(400);
   await snap(A.page, 'how-to', false);
   await A.page.keyboard.press('Escape');
-  await clickText(A.page, 'Challenge a friend');
-  await A.page.waitForSelector('input');
-  await A.page.type('input', 'Hanif');
-  await snap(A.page, 'setup');
+  await clickText(A.page, "Play today's holes");
+  await A.page.waitForSelector('#daily-name');
+  await A.page.type('#daily-name', 'Hanif');
+  await snap(A.page, 'daily-intro');
   await clickText(A.page, 'Tee off');
-  await playRound(A.page, 'A', ['st', 'ma', 'ro']);
+  await playRound(A.page, 'A', ['st', 'ma', 'ro', 'li', 'ar']);
   await snap(A.page, 'A-final-solo');
   await clickText(A.page, 'Send to a friend');
   await sleep(300);
@@ -117,7 +117,7 @@ try {
   await B.page.type('#join-name', 'Jay');
   await clickText(B.page, 'Tee off');
   await sleep(300);
-  await playRound(B.page, 'B', ['ar', 'li', 'sa']);
+  await playRound(B.page, 'B', ['ar', 'li', 'sa', 'ch', 'ma']);
   await snap(B.page, 'B-final-h2h');
   await clickText(B.page, 'Send to Hanif');
   await sleep(300);
@@ -134,6 +134,8 @@ try {
   await snap(A.page, 'A-final-h2h');
   await A.page.goto(BASE, { waitUntil: 'networkidle0' });
   await snap(A.page, 'A-home-recent');
+  // Today's daily is done: the home card shows the score instead of a Play button.
+  await A.page.waitForFunction(() => document.querySelector('.daily-score'));
 
   // --- A opens B's result in a fresh browser (e.g. Home Screen app): one tap to claim the card
   console.log('Player A: fresh browser');

@@ -2,15 +2,20 @@ import { useState } from 'react';
 import { useApp } from '../App';
 import { COURSES, categoriesFor, type CourseId } from '../lib/data';
 import { cleanName, createGame, MAX_PLAYERS, NAME_MAX, sameName } from '../lib/game';
+import { newSecret } from '../live/crypto';
+import { newDoc, newRoom } from '../live/room';
+import { newRoomIds, putRoom, roomCode } from '../live/rooms';
 import { Icons, IconButton, TopBar, colorOf } from '../components/ui';
 
 const HOLE_OPTIONS = [3, 6, 9];
+const CLOCK_OPTIONS = [30, 60, 90];
 
-export default function Setup({ mode }: { mode: 'challenge' | 'local' }) {
+export default function Setup({ mode }: { mode: 'live' | 'local' }) {
   const { go, saved, saveGame, setName } = useApp();
   const [names, setNames] = useState<string[]>(mode === 'local' ? [saved.name, ''] : [saved.name]);
   const [holes, setHoles] = useState(3);
   const [course, setCourse] = useState<CourseId>('mixed');
+  const [clock, setClock] = useState(60);
   const [tried, setTried] = useState(false);
 
   const pool = categoriesFor(course).length;
@@ -23,7 +28,15 @@ export default function Setup({ mode }: { mode: 'challenge' | 'local' }) {
     setTried(true);
     if (!valid) return;
     setName(cleaned[0]);
-    const g = createGame({ mode, course, holes: holeCount, names: cleaned, me: mode === 'challenge' ? 0 : null });
+    if (mode === 'live') {
+      const { id, playerId } = newRoomIds();
+      const secret = newSecret();
+      const now = Date.now();
+      const state = newRoom({ hostId: playerId, hostName: cleaned[0], course, holeCount, turnMs: clock * 1000, now });
+      putRoom({ id, secret, playerId, host: true, name: cleaned[0], doc: newDoc(playerId, cleaned[0], 1), state, updatedAt: now });
+      return go(`/r/${roomCode({ id, secret })}`, { replace: true });
+    }
+    const g = createGame({ mode, course, holes: holeCount, names: cleaned, me: null });
     saveGame(g);
     go(`/play/${g.id}`, { replace: true });
   };
@@ -36,7 +49,7 @@ export default function Setup({ mode }: { mode: 'challenge' | 'local' }) {
             {Icons.back}
           </IconButton>
         }
-        title={mode === 'challenge' ? 'New challenge' : 'Pass & play'}
+        title={mode === 'live' ? 'Live challenge' : 'Pass & play'}
       />
 
       <form
@@ -47,8 +60,8 @@ export default function Setup({ mode }: { mode: 'challenge' | 'local' }) {
         }}
       >
         <section className="card form-card">
-          <h2 className="field-title">{mode === 'challenge' ? 'Your name' : 'Players'}</h2>
-          {mode === 'challenge' && <p className="field-help">Your friend sees this when you send the link.</p>}
+          <h2 className="field-title">{mode === 'live' ? 'Your name' : 'Players'}</h2>
+          {mode === 'live' && <p className="field-help">Next you'll get a link to send your mates. You tee off once at least one of them is in.</p>}
           {mode === 'local' && <p className="field-help">Everyone picks in secret, then you pass the phone on.</p>}
           <div className="names">
             {names.map((n, i) => (
@@ -58,8 +71,8 @@ export default function Setup({ mode }: { mode: 'challenge' | 'local' }) {
                   className={`input${tried && (!cleaned[i] || dupes[i]) ? ' is-error' : ''}`}
                   value={n}
                   maxLength={NAME_MAX}
-                  placeholder={mode === 'challenge' ? 'e.g. Jay' : `Player ${i + 1}`}
-                  aria-label={mode === 'challenge' ? 'Your name' : `Player ${i + 1} name`}
+                  placeholder={mode === 'live' ? 'Your name' : `Player ${i + 1}`}
+                  aria-label={mode === 'live' ? 'Your name' : `Player ${i + 1} name`}
                   autoCapitalize="words"
                   autoComplete={i === 0 ? 'nickname' : 'off'}
                   enterKeyHint={i === names.length - 1 ? 'go' : 'next'}
@@ -133,9 +146,24 @@ export default function Setup({ mode }: { mode: 'challenge' | 'local' }) {
           </div>
         </section>
 
+        {mode === 'live' && (
+          <section className="card form-card">
+            <h2 className="field-title">Shot clock</h2>
+            <p className="field-help">Time to lock in each hole. Miss it and that hole counts as out of bounds.</p>
+            <div className="segmented" role="radiogroup" aria-label="Shot clock">
+              {CLOCK_OPTIONS.map((n) => (
+                <button key={n} type="button" role="radio" aria-checked={clock === n} className={clock === n ? 'is-on' : undefined} onClick={() => setClock(n)}>
+                  <b>{n}s</b>
+                  <small>{n === 30 ? 'Quick-fire' : n === 60 ? 'Standard' : 'Relaxed'}</small>
+                </button>
+              ))}
+            </div>
+          </section>
+        )}
+
         <div className="sticky-cta">
           <button type="submit" className="btn btn-primary btn-block btn-lg">
-            Tee off
+            {mode === 'live' ? 'Open the room' : 'Tee off'}
           </button>
         </div>
       </form>

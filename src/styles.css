@@ -2016,3 +2016,464 @@ p {
   font-size: 16px;
   text-align: center;
 }
+
+/* ---------- daily & challenge mode (home) ---------- */
+
+.daily-card,
+.mode-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.daily-card {
+  border-width: 4px;
+  box-shadow: 0 6px 0 var(--ink);
+}
+
+.daily-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.daily-date {
+  font: 800 15px/1 var(--cond);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.daily-title {
+  font: 400 34px/1 var(--display);
+  text-transform: uppercase;
+}
+
+.daily-blurb,
+.daily-score {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.daily-score b {
+  font: 400 26px/1 var(--display);
+}
+
+.daily-next {
+  text-align: center;
+  font: 700 14px/1 var(--cond);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.chip-live {
+  background: var(--red);
+  color: #fff;
+}
+
+.live-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ff5a4a;
+  box-shadow: 0 0 0 0 rgba(255, 90, 74, 0.6);
+  animation: live-pulse 1.6s infinite;
+  vertical-align: 0.08em;
+}
+
+.chip-live .live-dot {
+  background: #fff;
+}
+
+@keyframes live-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 90, 74, 0.55); }
+  70% { box-shadow: 0 0 0 7px rgba(255, 90, 74, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 90, 74, 0); }
+}
+
+/* ---------- live room ---------- */
+
+.spinner {
+  display: inline-block;
+  flex: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid currentColor;
+  border-right-color: transparent;
+  animation: spin 0.8s linear infinite;
+  vertical-align: -0.15em;
+}
+
+.spinner-lg {
+  width: 40px;
+  height: 40px;
+  border-width: 5px;
+  color: var(--yellow);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.conn-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--yellow-soft);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  font: 600 15px/1.3 var(--body);
+  text-align: center;
+}
+
+.roster {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.roster-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.roster-title span {
+  font: 700 14px/1 var(--cond);
+  letter-spacing: 0.08em;
+  color: var(--good);
+}
+
+.roster-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.roster-list li {
+  display: grid;
+  grid-template-columns: 14px auto 1fr auto;
+  align-items: center;
+  gap: 10px;
+  min-height: 46px;
+  border-bottom: 2px dashed var(--line);
+}
+
+.roster-list li:last-child {
+  border-bottom: 0;
+}
+
+.presence {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #b9bfb4;
+  border: 2px solid var(--ink);
+}
+
+.roster-list li.is-on .presence {
+  background: #2fd16b;
+}
+
+.roster-list li.is-away {
+  opacity: 0.6;
+}
+
+.roster-note {
+  font: 700 14px/1 var(--cond);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.roster-state {
+  font: 800 15px/1 var(--cond);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.roster-list li.is-on .roster-state {
+  color: var(--good);
+}
+
+.roster-wait {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--paper-2);
+  font-weight: 600;
+}
+
+.wait-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 60px;
+  padding: 10px 16px;
+  border-radius: 14px;
+  border: 3px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  font: 800 18px/1.15 var(--cond);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.wait-skip {
+  display: block;
+  margin: 8px auto 0;
+  min-height: 40px;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* The clock stays pinned while you scroll and while the keyboard is up. */
+.shot-clock {
+  position: sticky;
+  top: calc(env(safe-area-inset-top) + 58px);
+  z-index: 19;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: var(--ink);
+  border: 3px solid var(--ink);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.35);
+}
+
+.play.is-searching .shot-clock {
+  top: calc(env(safe-area-inset-top) + 6px);
+  padding: 6px 10px;
+}
+
+.shot-clock-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.shot-clock-bar {
+  flex: 1;
+  height: 12px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.16);
+  overflow: hidden;
+}
+
+.shot-clock-bar i {
+  display: block;
+  height: 100%;
+  border-radius: 99px;
+  background: var(--yellow);
+  transform-origin: left center;
+  transition: transform 0.25s linear;
+}
+
+.shot-clock-n {
+  min-width: 3.1ch;
+  text-align: right;
+  font: 400 28px/1 var(--display);
+  font-variant-numeric: tabular-nums;
+  color: var(--yellow);
+}
+
+.shot-clock.is-low .shot-clock-bar i {
+  background: #ff5a4a;
+}
+
+.shot-clock.is-low .shot-clock-n {
+  color: #ff7a6b;
+  animation: tick-pulse 1s ease-in-out infinite;
+}
+
+.shot-clock.is-paused .shot-clock-bar i {
+  background: #9aa596;
+}
+
+.shot-clock.is-paused .shot-clock-n {
+  color: #cfd6cb;
+  font-size: 20px;
+}
+
+.shot-clock-note {
+  font: 700 14px/1.2 var(--cond);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #fff;
+}
+
+@keyframes tick-pulse {
+  50% { transform: scale(1.12); }
+}
+
+.lock-status {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.lock-status li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px 4px 4px;
+  border-radius: 99px;
+  background: rgba(0, 0, 0, 0.22);
+  font: 700 14px/1 var(--cond);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.lock-status li.is-in {
+  background: var(--yellow);
+  color: var(--ink);
+}
+
+.lock-status li.is-in .lock-word::before {
+  content: '✓ ';
+}
+
+.lock-status li.is-away {
+  opacity: 0.65;
+}
+
+.locked-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+  animation: pop 0.35s cubic-bezier(0.2, 1.4, 0.4, 1) both;
+}
+
+.locked-card.is-late {
+  background: #ffe1db;
+}
+
+.kicker-ink {
+  font: 800 14px/1 var(--cond);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+}
+
+.locked-name {
+  font: 400 30px/1.05 var(--display);
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.spectate-note {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.22);
+  font-size: 15px;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .live-dot,
+  .spinner,
+  .shot-clock.is-low .shot-clock-n {
+    animation: none;
+  }
+}
+
+/* ---------- review fixes (live + daily) ---------- */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.youre-in {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: var(--yellow);
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  font: 700 16px/1.3 var(--body);
+}
+
+.youre-in span {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--yellow);
+  font-weight: 800;
+}
+
+.get-ready {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 36px 0 20px;
+  text-align: center;
+}
+
+.get-ready-n {
+  font: 400 120px/1 var(--display);
+  color: var(--yellow);
+  text-shadow: 0 6px 0 var(--ink);
+  animation: pop 0.45s cubic-bezier(0.2, 1.4, 0.4, 1) both;
+}
+
+.shot-clock-note.is-hurry {
+  color: #ff9a8e;
+}
+
+.banner-big {
+  overflow-wrap: break-word;
+}
+
+.banner-big.is-long {
+  font-size: 38px;
+}
+
+.daily-versus {
+  display: block;
+  margin-top: 4px;
+  font: 800 18px/1.2 var(--cond);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.lock-status li.is-away {
+  opacity: 0.85;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.roster-list li.is-away {
+  opacity: 0.75;
+}

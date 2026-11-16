@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useState } from 'react';
 import { NavGuard, useApp, useCanonicalUrl } from '../App';
 import { CATEGORY_BY_ID } from '../lib/data';
-import { createGame, donePlayers, holeResult, isDone, isPlayable, ordinal, rankLabel, standings, type Game } from '../lib/game';
+import { createGame, donePlayers, holeResult, isDone, isPlayable, ordinal, pickLabel, rankLabel, standings, type Game } from '../lib/game';
 import { findGame } from '../lib/store';
+import { dailyId, dailyLabel, formatCountdown, msUntilNextDaily } from '../lib/daily';
 import { shareUrl } from '../lib/link';
 import { copyText, shareLink } from '../lib/share';
 import { Confetti } from '../components/Confetti';
@@ -12,7 +13,7 @@ import { Scorecard } from '../components/Scorecard';
 import { FlagIcon, Icons, IconButton, Tag, TopBar } from '../components/ui';
 import Message from './Message';
 
-function HoleRecap({ game, hole, players }: { game: Game; hole: number; players: number[] }) {
+export function HoleRecap({ game, hole, players }: { game: Game; hole: number; players: number[] }) {
   const h = game.holes[hole];
   const cat = CATEGORY_BY_ID.get(h.cat);
   const [open, setOpen] = useState(false);
@@ -35,7 +36,7 @@ function HoleRecap({ game, hole, players }: { game: Game; hole: number; players:
         {rows.map(({ p, r }) => (
           <li key={p}>
             <Tag name={game.players[p].name} index={p} small />
-            <span className="recap-pick">{r.item ? r.item.name : r.offList ? `“${r.offList}”` : 'No answer'}</span>
+            <span className="recap-pick">{pickLabel(r)}</span>
             <span className="recap-rank">{r.item ? rankLabel(r.item) : 'OB'}</span>
             <span className="recap-strokes">{r.strokes}</span>
           </li>
@@ -78,6 +79,8 @@ export default function Results({ id }: { id: string }) {
   if (done.length === 0) return <NavGuard to={`/join/${id}`} />;
 
   const n = game.holes.length;
+  const daily = dailyLabel(game.id);
+  const isToday = game.id === dailyId();
 
   if (!summary) {
     return (
@@ -144,7 +147,9 @@ export default function Results({ id }: { id: string }) {
 
   // Share text never includes scores, so the chat preview doesn't spoil the reveal.
   const shareText = solo
-    ? `⛳ I've just played a ${n}-hole round of Football Golf. Your turn: can you beat me?`
+    ? daily
+      ? `⛳ Football Golf ${daily}: I've played today's ${n} holes. Can you beat me?`
+      : `⛳ I've just played a ${n}-hole round of Football Golf. Your turn: can you beat me?`
     : game.mode === 'local'
       ? `⛳ We've just played ${n} holes of Football Golf. Think you can beat us? Play the same course:`
       : returning
@@ -173,15 +178,8 @@ export default function Results({ id }: { id: string }) {
   );
 
   const rematch = () => {
-    const names = game.mode === 'local' ? game.players.map((p) => p.name) : [game.players[meIndex ?? 0]?.name ?? saved.name];
-    if (game.mode === 'challenge' && meIndex === null) return go('/new/challenge');
-    const g = createGame({
-      mode: game.mode,
-      course: game.course,
-      holes: n,
-      names,
-      me: game.mode === 'challenge' ? 0 : null,
-    });
+    if (game.mode === 'challenge') return go('/new/live');
+    const g = createGame({ mode: 'local', course: game.course, holes: n, names: game.players.map((p) => p.name), me: null });
     saveGame(g);
     go(`/play/${g.id}`);
   };
@@ -194,7 +192,7 @@ export default function Results({ id }: { id: string }) {
             {Icons.close}
           </IconButton>
         }
-        title={<span className="topbar-label">Final card</span>}
+        title={<span className="topbar-label">{daily ?? 'Final card'}</span>}
       />
 
       <section className={`banner${solo ? ' is-solo' : ''}`}>
@@ -231,6 +229,7 @@ export default function Results({ id }: { id: string }) {
           </button>
           {urlBox}
           <p className="fine">They play the same holes without seeing your answers. Their result comes back to you as a link: open it to watch the head-to-head.</p>
+          {isToday && <p className="fine">Next daily in {formatCountdown(msUntilNextDaily())}.</p>}
         </section>
       )}
 
@@ -279,7 +278,7 @@ export default function Results({ id }: { id: string }) {
 
       <div className="end-actions">
         <button type="button" className="btn btn-secondary btn-block" onClick={rematch}>
-          {game.mode === 'local' ? 'Rematch on a new course' : meIndex !== null ? 'New course, new challenge' : 'Start your own game'}
+          {game.mode === 'local' ? 'Rematch on a new course' : 'Play your mates live'}
         </button>
         {!summary || done.length < 2 ? null : (
           <button type="button" className="btn btn-ghost btn-block" onClick={() => setStep(0)}>

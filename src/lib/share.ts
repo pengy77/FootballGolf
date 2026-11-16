@@ -39,6 +39,9 @@ export async function copyText(text: string): Promise<boolean> {
 
 export function buzz(ms = 12): void {
   try {
+    // Browsers refuse (and log an error) until the person has tapped something on the page.
+    const ua = (navigator as Navigator & { userActivation?: { hasBeenActive: boolean } }).userActivation;
+    if (ua && !ua.hasBeenActive) return;
     navigator.vibrate?.(ms);
   } catch {
     /* not supported */
