@@ -1,0 +1,1146 @@
+{
+  "id": "top5-league-stadiums",
+  "title": "Top-five league stadiums by capacity",
+  "prompt": "biggest stadium in Europe's top 5 leagues",
+  "noun": "stadium",
+  "nounPlural": "stadiums",
+  "metric": "Capacity",
+  "order": "desc",
+  "description": "Home grounds of every 2026–27 Premier League, La Liga, Serie A, Bundesliga and Ligue 1 club, by listed capacity; shared grounds appear once.",
+  "tags": [
+    "stadiums",
+    "europe",
+    "clubs"
+  ],
+  "source": {
+    "name": "Wikipedia: 2026–27 Premier League, La Liga, Serie A, Bundesliga and Ligue 1 (Stadiums and locations)",
+    "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Premier_League#Stadiums_and_locations",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "santiago-bernabeu",
+      "name": "Santiago Bernabéu",
+      "sub": "Real Madrid · Madrid",
+      "value": 83186,
+      "display": "83,186",
+      "aliases": [
+        "Real Madrid",
+        "Real",
+        "Bernabéu",
+        "Estadio Santiago Bernabéu"
+      ]
+    },
+    {
+      "id": "signal-iduna-park",
+      "name": "Signal Iduna Park",
+      "sub": "Borussia Dortmund · Dortmund",
+      "value": 81365,
+      "display": "81,365",
+      "aliases": [
+        "Borussia Dortmund",
+        "Dortmund",
+        "BVB",
+        "Westfalenstadion"
+      ]
+    },
+    {
+      "id": "san-siro",
+      "name": "San Siro",
+      "sub": "AC Milan & Inter · Milan",
+      "value": 75710,
+      "display": "75,710",
+      "aliases": [
+        "Inter Milan",
+        "Inter",
+        "Internazionale",
+        "AC Milan",
+        "Milan",
+        "Stadio Giuseppe Meazza",
+        "Giuseppe Meazza",
+        "Meazza"
+      ]
+    },
+    {
+      "id": "allianz-arena",
+      "name": "Allianz Arena",
+      "sub": "Bayern Munich · Munich",
+      "value": 75000,
+      "display": "75,000",
+      "aliases": [
+        "Bayern Munich",
+        "Bayern",
+        "FC Bayern"
+      ]
+    },
+    {
+      "id": "old-trafford",
+      "name": "Old Trafford",
+      "sub": "Manchester United · Manchester",
+      "value": 74158,
+      "display": "74,158",
+      "aliases": [
+        "Manchester United",
+        "Man Utd",
+        "Man United",
+        "Theatre of Dreams"
+      ]
+    },
+    {
+      "id": "estadio-riyadh-air-metropolitano",
+      "name": "Estadio Riyadh Air Metropolitano",
+      "sub": "Atlético Madrid · Madrid",
+      "value": 70813,
+      "display": "70,813",
+      "aliases": [
+        "Atlético Madrid",
+        "Atlético",
+        "Atleti",
+        "Metropolitano Stadium",
+        "Metropolitano",
+        "Wanda Metropolitano",
+        "Cívitas Metropolitano"
+      ]
+    },
+    {
+      "id": "stadio-olimpico",
+      "name": "Stadio Olimpico",
+      "sub": "Lazio & Roma · Rome",
+      "value": 70634,
+      "display": "70,634",
+      "aliases": [
+        "Lazio",
+        "Roma",
+        "AS Roma",
+        "Olimpico"
+      ]
+    },
+    {
+      "id": "estadio-la-cartuja-de-sevilla",
+      "name": "Estadio La Cartuja de Sevilla",
+      "sub": "Real Betis · Seville",
+      "value": 70000,
+      "display": "70,000",
+      "aliases": [
+        "Real Betis",
+        "Betis",
+        "Estadio de La Cartuja",
+        "La Cartuja"
+      ]
+    },
+    {
+      "id": "stade-velodrome",
+      "name": "Stade Vélodrome",
+      "sub": "Marseille · Marseille",
+      "value": 67394,
+      "display": "67,394",
+      "aliases": [
+        "Marseille",
+        "OM",
+        "Olympique de Marseille",
+        "Vélodrome",
+        "Orange Vélodrome"
+      ]
+    },
+    {
+      "id": "tottenham-hotspur-stadium",
+      "name": "Tottenham Hotspur Stadium",
+      "sub": "Tottenham Hotspur · London",
+      "value": 62850,
+      "display": "62,850",
+      "aliases": [
+        "Tottenham Hotspur",
+        "Tottenham",
+        "Spurs"
+      ]
+    },
+    {
+      "id": "spotify-camp-nou",
+      "name": "Spotify Camp Nou",
+      "sub": "Barcelona · Barcelona",
+      "value": 62652,
+      "display": "62,652",
+      "aliases": [
+        "Barcelona",
+        "Barça",
+        "FC Barcelona",
+        "Camp Nou",
+        "Nou Camp"
+      ]
+    },
+    {
+      "id": "veltins-arena",
+      "name": "Veltins-Arena",
+      "sub": "Schalke 04 · Gelsenkirchen",
+      "value": 62271,
+      "display": "62,271",
+      "aliases": [
+        "Schalke 04",
+        "Schalke",
+        "Arena AufSchalke"
+      ]
+    },
+    {
+      "id": "anfield",
+      "name": "Anfield",
+      "sub": "Liverpool · Liverpool",
+      "value": 61276,
+      "display": "61,276",
+      "aliases": [
+        "Liverpool",
+        "LFC"
+      ]
+    },
+    {
+      "id": "etihad-stadium",
+      "name": "Etihad Stadium",
+      "sub": "Manchester City · Manchester",
+      "value": 61038,
+      "display": "61,038",
+      "aliases": [
+        "Manchester City",
+        "Man City",
+        "City of Manchester Stadium",
+        "Etihad"
+      ]
+    },
+    {
+      "id": "emirates-stadium",
+      "name": "Emirates Stadium",
+      "sub": "Arsenal · London",
+      "value": 60704,
+      "display": "60,704",
+      "aliases": [
+        "Arsenal",
+        "Gunners"
+      ]
+    },
+    {
+      "id": "mhparena",
+      "name": "MHPArena",
+      "sub": "VfB Stuttgart · Stuttgart",
+      "value": 60058,
+      "display": "60,058",
+      "aliases": [
+        "VfB Stuttgart",
+        "Stuttgart",
+        "MHP Arena",
+        "Neckarstadion",
+        "Mercedes-Benz Arena"
+      ]
+    },
+    {
+      "id": "deutsche-bank-park",
+      "name": "Deutsche Bank Park",
+      "sub": "Eintracht Frankfurt · Frankfurt",
+      "value": 59500,
+      "display": "59,500",
+      "aliases": [
+        "Eintracht Frankfurt",
+        "Frankfurt",
+        "Waldstadion",
+        "Commerzbank-Arena"
+      ]
+    },
+    {
+      "id": "groupama-stadium",
+      "name": "Groupama Stadium",
+      "sub": "Lyon · Décines-Charpieu",
+      "value": 59186,
+      "display": "59,186",
+      "aliases": [
+        "Lyon",
+        "Olympique Lyonnais",
+        "OL",
+        "Parc Olympique Lyonnais"
+      ]
+    },
+    {
+      "id": "volksparkstadion",
+      "name": "Volksparkstadion",
+      "sub": "Hamburger SV · Hamburg",
+      "value": 57000,
+      "display": "57,000",
+      "aliases": [
+        "Hamburger SV",
+        "Hamburg",
+        "HSV"
+      ]
+    },
+    {
+      "id": "stadio-diego-armando-maradona",
+      "name": "Stadio Diego Armando Maradona",
+      "sub": "Napoli · Naples",
+      "value": 54732,
+      "display": "54,732",
+      "aliases": [
+        "Napoli",
+        "Maradona",
+        "San Paolo"
+      ]
+    },
+    {
+      "id": "borussia-park",
+      "name": "Borussia-Park",
+      "sub": "Borussia M'gladbach · Mönchengladbach",
+      "value": 54057,
+      "display": "54,057",
+      "aliases": [
+        "Borussia Mönchengladbach",
+        "Gladbach",
+        "Mönchengladbach"
+      ]
+    },
+    {
+      "id": "estadio-san-mames",
+      "name": "Estadio San Mamés",
+      "sub": "Athletic Bilbao · Bilbao",
+      "value": 53289,
+      "display": "53,289",
+      "aliases": [
+        "Athletic Bilbao",
+        "Athletic Club",
+        "Athletic",
+        "San Mamés Stadium",
+        "San Mamés"
+      ]
+    },
+    {
+      "id": "hill-dickinson-stadium",
+      "name": "Hill Dickinson Stadium",
+      "sub": "Everton · Liverpool",
+      "value": 52769,
+      "display": "52,769",
+      "aliases": [
+        "Everton",
+        "Toffees",
+        "Everton Stadium",
+        "Bramley-Moore Dock"
+      ]
+    },
+    {
+      "id": "st-james-park",
+      "name": "St James' Park",
+      "sub": "Newcastle United · Newcastle upon Tyne",
+      "value": 52729,
+      "display": "52,729",
+      "aliases": [
+        "Newcastle United",
+        "Newcastle",
+        "Toon"
+      ]
+    },
+    {
+      "id": "stade-pierre-mauroy",
+      "name": "Stade Pierre-Mauroy",
+      "sub": "Lille · Villeneuve-d'Ascq",
+      "value": 50186,
+      "display": "50,186",
+      "aliases": [
+        "Lille",
+        "LOSC",
+        "Pierre-Mauroy"
+      ]
+    },
+    {
+      "id": "rheinenergiestadion",
+      "name": "RheinEnergieStadion",
+      "sub": "1. FC Köln · Cologne",
+      "value": 49698,
+      "display": "49,698",
+      "aliases": [
+        "1. FC Köln",
+        "Köln",
+        "Cologne",
+        "FC Köln",
+        "Müngersdorfer Stadion"
+      ]
+    },
+    {
+      "id": "camp-de-mestalla",
+      "name": "Camp de Mestalla",
+      "sub": "Valencia · Valencia",
+      "value": 49430,
+      "display": "49,430",
+      "aliases": [
+        "Valencia",
+        "Mestalla Stadium",
+        "Mestalla"
+      ]
+    },
+    {
+      "id": "stadium-of-light",
+      "name": "Stadium of Light",
+      "sub": "Sunderland · Sunderland",
+      "value": 48095,
+      "display": "48,095",
+      "aliases": [
+        "Sunderland"
+      ]
+    },
+    {
+      "id": "parc-des-princes",
+      "name": "Parc des Princes",
+      "sub": "Paris Saint-Germain · Paris",
+      "value": 47926,
+      "display": "47,926",
+      "aliases": [
+        "Paris Saint-Germain",
+        "PSG"
+      ]
+    },
+    {
+      "id": "red-bull-arena",
+      "name": "Red Bull Arena",
+      "sub": "RB Leipzig · Leipzig",
+      "value": 47800,
+      "display": "47,800",
+      "aliases": [
+        "RB Leipzig",
+        "Leipzig"
+      ]
+    },
+    {
+      "id": "estadio-ramon-sanchez-pizjuan",
+      "name": "Estadio Ramón Sánchez-Pizjuán",
+      "sub": "Sevilla · Seville",
+      "value": 43883,
+      "display": "43,883",
+      "aliases": [
+        "Sevilla",
+        "Seville",
+        "Ramón Sánchez-Pizjuán Stadium",
+        "Sánchez-Pizjuán",
+        "Pizjuán"
+      ]
+    },
+    {
+      "id": "stadio-artemio-franchi",
+      "name": "Stadio Artemio Franchi",
+      "sub": "Fiorentina · Florence",
+      "value": 43118,
+      "display": "43,118",
+      "aliases": [
+        "Fiorentina",
+        "Artemio Franchi",
+        "Franchi"
+      ]
+    },
+    {
+      "id": "weserstadion",
+      "name": "Weserstadion",
+      "sub": "Werder Bremen · Bremen",
+      "value": 42100,
+      "display": "42,100",
+      "aliases": [
+        "Werder Bremen",
+        "Werder",
+        "Bremen"
+      ]
+    },
+    {
+      "id": "allianz-stadium",
+      "name": "Allianz Stadium",
+      "sub": "Juventus · Turin",
+      "value": 41507,
+      "display": "41,507",
+      "aliases": [
+        "Juventus",
+        "Juve",
+        "Juventus Stadium"
+      ]
+    },
+    {
+      "id": "stamford-bridge",
+      "name": "Stamford Bridge",
+      "sub": "Chelsea · London",
+      "value": 40044,
+      "display": "40,044",
+      "aliases": [
+        "Chelsea",
+        "The Bridge"
+      ]
+    },
+    {
+      "id": "reale-arena",
+      "name": "Reale Arena",
+      "sub": "Real Sociedad · San Sebastián",
+      "value": 39313,
+      "display": "39,313",
+      "aliases": [
+        "Real Sociedad",
+        "La Real",
+        "Anoeta Stadium",
+        "Anoeta"
+      ]
+    },
+    {
+      "id": "stadio-renato-dallara",
+      "name": "Stadio Renato Dall'Ara",
+      "sub": "Bologna · Bologna",
+      "value": 38279,
+      "display": "38,279",
+      "aliases": [
+        "Bologna",
+        "Dall'Ara"
+      ]
+    },
+    {
+      "id": "stade-bollaert-delelis",
+      "name": "Stade Bollaert-Delelis",
+      "sub": "Lens · Lens",
+      "value": 38223,
+      "display": "38,223",
+      "aliases": [
+        "Lens",
+        "Bollaert"
+      ]
+    },
+    {
+      "id": "estadi-cornella-el-prat",
+      "name": "Estadi Cornellà-El Prat",
+      "sub": "Espanyol · Cornellà de Llobregat",
+      "value": 37776,
+      "display": "37,776",
+      "aliases": [
+        "Espanyol",
+        "RCD Espanyol",
+        "RCDE Stadium",
+        "Cornellà-El Prat"
+      ]
+    },
+    {
+      "id": "elland-road",
+      "name": "Elland Road",
+      "sub": "Leeds United · Leeds",
+      "value": 37633,
+      "display": "37,633",
+      "aliases": [
+        "Leeds United",
+        "Leeds"
+      ]
+    },
+    {
+      "id": "villa-park",
+      "name": "Villa Park",
+      "sub": "Aston Villa · Birmingham",
+      "value": 36887,
+      "display": "36,887",
+      "aliases": [
+        "Aston Villa",
+        "Villa"
+      ]
+    },
+    {
+      "id": "allianz-riviera",
+      "name": "Allianz Riviera",
+      "sub": "Nice · Nice",
+      "value": 36178,
+      "display": "36,178",
+      "aliases": [
+        "Nice",
+        "OGC Nice"
+      ]
+    },
+    {
+      "id": "europa-park-stadion",
+      "name": "Europa-Park Stadion",
+      "sub": "SC Freiburg · Freiburg im Breisgau",
+      "value": 34700,
+      "display": "34,700",
+      "aliases": [
+        "SC Freiburg",
+        "Freiburg"
+      ]
+    },
+    {
+      "id": "mewa-arena",
+      "name": "MEWA Arena",
+      "sub": "Mainz 05 · Mainz",
+      "value": 33305,
+      "display": "33,305",
+      "aliases": [
+        "Mainz 05",
+        "Mainz"
+      ]
+    },
+    {
+      "id": "stadio-luigi-ferraris",
+      "name": "Stadio Luigi Ferraris",
+      "sub": "Genoa · Genoa",
+      "value": 33205,
+      "display": "33,205",
+      "aliases": [
+        "Genoa",
+        "Marassi",
+        "Luigi Ferraris"
+      ]
+    },
+    {
+      "id": "stadium-de-toulouse",
+      "name": "Stadium de Toulouse",
+      "sub": "Toulouse · Toulouse",
+      "value": 33150,
+      "display": "33,150",
+      "aliases": [
+        "Toulouse"
+      ]
+    },
+    {
+      "id": "estadio-abanca-riazor",
+      "name": "Estadio ABANCA-Riazor",
+      "sub": "Deportivo A Coruña · A Coruña",
+      "value": 32660,
+      "display": "32,660",
+      "aliases": [
+        "Deportivo A Coruña",
+        "Deportivo",
+        "Depor",
+        "Deportivo La Coruña",
+        "Estadio Riazor",
+        "Riazor"
+      ]
+    },
+    {
+      "id": "coventry-building-society-arena",
+      "name": "Coventry Building Society Arena",
+      "sub": "Coventry City · Coventry",
+      "value": 32609,
+      "display": "32,609",
+      "aliases": [
+        "Coventry City",
+        "Coventry",
+        "CBS Arena",
+        "Ricoh Arena"
+      ]
+    },
+    {
+      "id": "falmer-stadium",
+      "name": "Falmer Stadium",
+      "sub": "Brighton & Hove Albion · Falmer",
+      "value": 32176,
+      "display": "32,176",
+      "aliases": [
+        "Brighton & Hove Albion",
+        "Brighton",
+        "Amex Stadium",
+        "American Express Stadium"
+      ]
+    },
+    {
+      "id": "stade-de-la-meinau",
+      "name": "Stade de la Meinau",
+      "sub": "Strasbourg · Strasbourg",
+      "value": 32000,
+      "display": "32,000",
+      "aliases": [
+        "Strasbourg",
+        "La Meinau",
+        "Meinau"
+      ]
+    },
+    {
+      "id": "estadio-martinez-valero",
+      "name": "Estadio Martínez Valero",
+      "sub": "Elche · Elche",
+      "value": 31388,
+      "display": "31,388",
+      "aliases": [
+        "Elche",
+        "Martínez Valero"
+      ]
+    },
+    {
+      "id": "city-ground",
+      "name": "City Ground",
+      "sub": "Nottingham Forest · West Bridgford",
+      "value": 31212,
+      "display": "31,212",
+      "aliases": [
+        "Nottingham Forest",
+        "Forest",
+        "Nottm Forest"
+      ]
+    },
+    {
+      "id": "wwk-arena",
+      "name": "WWK Arena",
+      "sub": "FC Augsburg · Augsburg",
+      "value": 30660,
+      "display": "30,660",
+      "aliases": [
+        "FC Augsburg",
+        "Augsburg",
+        "Augsburg Arena"
+      ]
+    },
+    {
+      "id": "stadio-via-del-mare-ettore-giardiniero",
+      "name": "Stadio Via del Mare-Ettore Giardiniero",
+      "sub": "Lecce · Lecce",
+      "value": 30354,
+      "display": "30,354",
+      "aliases": [
+        "Lecce",
+        "Stadio Via del mare",
+        "Via del Mare"
+      ]
+    },
+    {
+      "id": "bayarena",
+      "name": "BayArena",
+      "sub": "Bayer Leverkusen · Leverkusen",
+      "value": 30210,
+      "display": "30,210",
+      "aliases": [
+        "Bayer Leverkusen",
+        "Leverkusen"
+      ]
+    },
+    {
+      "id": "prezero-arena",
+      "name": "PreZero Arena",
+      "sub": "TSG Hoffenheim · Sinsheim",
+      "value": 30150,
+      "display": "30,150",
+      "aliases": [
+        "TSG Hoffenheim",
+        "Hoffenheim",
+        "Rhein-Neckar-Arena"
+      ]
+    },
+    {
+      "id": "portman-road",
+      "name": "Portman Road",
+      "sub": "Ipswich Town · Ipswich",
+      "value": 30056,
+      "display": "30,056",
+      "aliases": [
+        "Ipswich Town",
+        "Ipswich"
+      ]
+    },
+    {
+      "id": "estadio-la-rosaleda",
+      "name": "Estadio La Rosaleda",
+      "sub": "Málaga · Málaga",
+      "value": 30044,
+      "display": "30,044",
+      "aliases": [
+        "Málaga",
+        "La Rosaleda"
+      ]
+    },
+    {
+      "id": "roazhon-park",
+      "name": "Roazhon Park",
+      "sub": "Rennes · Rennes",
+      "value": 29778,
+      "display": "29,778",
+      "aliases": [
+        "Rennes",
+        "Stade Rennais"
+      ]
+    },
+    {
+      "id": "stadio-olimpico-grande-torino",
+      "name": "Stadio Olimpico Grande Torino",
+      "sub": "Torino · Turin",
+      "value": 28177,
+      "display": "28,177",
+      "aliases": [
+        "Torino",
+        "Olimpico Grande Torino"
+      ]
+    },
+    {
+      "id": "craven-cottage",
+      "name": "Craven Cottage",
+      "sub": "Fulham · London",
+      "value": 28107,
+      "display": "28,107",
+      "aliases": [
+        "Fulham"
+      ]
+    },
+    {
+      "id": "estadi-ciutat-de-valencia",
+      "name": "Estadi Ciutat de València",
+      "sub": "Levante · Valencia",
+      "value": 26354,
+      "display": "26,354",
+      "aliases": [
+        "Levante",
+        "Ciutat de València"
+      ]
+    },
+    {
+      "id": "selhurst-park",
+      "name": "Selhurst Park",
+      "sub": "Crystal Palace · London",
+      "value": 25194,
+      "display": "25,194",
+      "aliases": [
+        "Crystal Palace",
+        "Palace"
+      ]
+    },
+    {
+      "id": "stade-oceane",
+      "name": "Stade Océane",
+      "sub": "Le Havre · Le Havre",
+      "value": 25181,
+      "display": "25,181",
+      "aliases": [
+        "Le Havre"
+      ]
+    },
+    {
+      "id": "bluenergy-stadium",
+      "name": "Bluenergy Stadium",
+      "sub": "Udinese · Udine",
+      "value": 25132,
+      "display": "25,132",
+      "aliases": [
+        "Udinese",
+        "Stadio Friuli",
+        "Dacia Arena"
+      ]
+    },
+    {
+      "id": "stade-marie-marvingt",
+      "name": "Stade Marie-Marvingt",
+      "sub": "Le Mans · Le Mans",
+      "value": 25064,
+      "display": "25,064",
+      "aliases": [
+        "Le Mans",
+        "MMArena"
+      ]
+    },
+    {
+      "id": "mkm-stadium",
+      "name": "MKM Stadium",
+      "sub": "Hull City · Kingston upon Hull",
+      "value": 24983,
+      "display": "24,983",
+      "aliases": [
+        "Hull City",
+        "Hull",
+        "KCOM Stadium"
+      ]
+    },
+    {
+      "id": "estadio-abanca-balaidos",
+      "name": "Estadio ABANCA Balaídos",
+      "sub": "Celta Vigo · Vigo",
+      "value": 24870,
+      "display": "24,870",
+      "aliases": [
+        "Celta Vigo",
+        "Celta",
+        "Balaídos Stadium",
+        "Balaídos"
+      ]
+    },
+    {
+      "id": "estadio-el-sadar",
+      "name": "Estadio El Sadar",
+      "sub": "Osasuna · Pamplona",
+      "value": 23576,
+      "display": "23,576",
+      "aliases": [
+        "Osasuna",
+        "El Sadar Stadium",
+        "El Sadar"
+      ]
+    },
+    {
+      "id": "new-balance-arena",
+      "name": "New Balance Arena",
+      "sub": "Atalanta · Bergamo",
+      "value": 23439,
+      "display": "23,439",
+      "aliases": [
+        "Atalanta",
+        "Stadio di Bergamo",
+        "Gewiss Stadium",
+        "Atleti Azzurri d'Italia"
+      ]
+    },
+    {
+      "id": "estadio-de-la-ceramica",
+      "name": "Estadio de la Cerámica",
+      "sub": "Villarreal · Villarreal",
+      "value": 23008,
+      "display": "23,008",
+      "aliases": [
+        "Villarreal",
+        "La Cerámica",
+        "El Madrigal"
+      ]
+    },
+    {
+      "id": "stadio-ennio-tardini",
+      "name": "Stadio Ennio Tardini",
+      "sub": "Parma · Parma",
+      "value": 22352,
+      "display": "22,352",
+      "aliases": [
+        "Parma",
+        "Tardini"
+      ]
+    },
+    {
+      "id": "campos-de-sport-de-el-sardinero",
+      "name": "Campos de Sport de El Sardinero",
+      "sub": "Racing Santander · Santander",
+      "value": 22308,
+      "display": "22,308",
+      "aliases": [
+        "Racing Santander",
+        "Racing",
+        "El Sardinero"
+      ]
+    },
+    {
+      "id": "stadion-an-der-alten-forsterei",
+      "name": "Stadion An der Alten Försterei",
+      "sub": "Union Berlin · Berlin",
+      "value": 22012,
+      "display": "22,012",
+      "aliases": [
+        "Union Berlin",
+        "Union",
+        "Alte Försterei"
+      ]
+    },
+    {
+      "id": "stade-de-laube",
+      "name": "Stade de l'Aube",
+      "sub": "Troyes · Troyes",
+      "value": 21877,
+      "display": "21,877",
+      "aliases": [
+        "Troyes"
+      ]
+    },
+    {
+      "id": "mapei-stadium-citta-del-tricolore",
+      "name": "Mapei Stadium – Città del Tricolore",
+      "sub": "Sassuolo · Reggio Emilia",
+      "value": 21515,
+      "display": "21,515",
+      "aliases": [
+        "Sassuolo",
+        "Mapei Stadium"
+      ]
+    },
+    {
+      "id": "stade-jean-bouin",
+      "name": "Stade Jean-Bouin",
+      "sub": "Paris FC · Paris",
+      "value": 20000,
+      "display": "20,000",
+      "aliases": [
+        "Paris FC",
+        "Jean-Bouin"
+      ]
+    },
+    {
+      "id": "campo-de-futbol-de-mendizorrotza",
+      "name": "Campo de Fútbol de Mendizorrotza",
+      "sub": "Alavés · Vitoria-Gasteiz",
+      "value": 19840,
+      "display": "19,840",
+      "aliases": [
+        "Alavés",
+        "Deportivo Alavés",
+        "Mendizorrotza Stadium",
+        "Mendizorrotza"
+      ]
+    },
+    {
+      "id": "stade-raymond-kopa",
+      "name": "Stade Raymond Kopa",
+      "sub": "Angers · Angers",
+      "value": 19800,
+      "display": "19,800",
+      "aliases": [
+        "Angers"
+      ]
+    },
+    {
+      "id": "stade-du-moustoir",
+      "name": "Stade du Moustoir",
+      "sub": "Lorient · Lorient",
+      "value": 18110,
+      "display": "18,110",
+      "aliases": [
+        "Lorient"
+      ]
+    },
+    {
+      "id": "stade-abbe-deschamps",
+      "name": "Stade Abbé Deschamps",
+      "sub": "Auxerre · Auxerre",
+      "value": 17897,
+      "display": "17,897",
+      "aliases": [
+        "Auxerre"
+      ]
+    },
+    {
+      "id": "brentford-community-stadium",
+      "name": "Brentford Community Stadium",
+      "sub": "Brentford · London",
+      "value": 17250,
+      "display": "17,250",
+      "aliases": [
+        "Brentford",
+        "Bees",
+        "Gtech Community Stadium"
+      ]
+    },
+    {
+      "id": "stadio-brianteo",
+      "name": "Stadio Brianteo",
+      "sub": "Monza · Monza",
+      "value": 17102,
+      "display": "17,102",
+      "aliases": [
+        "Monza",
+        "Brianteo",
+        "U-Power Stadium"
+      ]
+    },
+    {
+      "id": "estadio-coliseum",
+      "name": "Estadio Coliseum",
+      "sub": "Getafe · Getafe",
+      "value": 16500,
+      "display": "16,500",
+      "aliases": [
+        "Getafe",
+        "Coliseum",
+        "Coliseum Alfonso Pérez"
+      ]
+    },
+    {
+      "id": "unipol-domus",
+      "name": "Unipol Domus",
+      "sub": "Cagliari · Cagliari",
+      "value": 16416,
+      "display": "16,416",
+      "aliases": [
+        "Cagliari",
+        "Sardegna Arena"
+      ]
+    },
+    {
+      "id": "stade-louis-ii",
+      "name": "Stade Louis II",
+      "sub": "Monaco · Monaco",
+      "value": 16360,
+      "display": "16,360",
+      "aliases": [
+        "Monaco",
+        "AS Monaco",
+        "Louis II"
+      ]
+    },
+    {
+      "id": "stadio-benito-stirpe",
+      "name": "Stadio Benito Stirpe",
+      "sub": "Frosinone · Frosinone",
+      "value": 16227,
+      "display": "16,227",
+      "aliases": [
+        "Frosinone",
+        "Stirpe"
+      ]
+    },
+    {
+      "id": "stade-francis-le-ble",
+      "name": "Stade Francis-Le Blé",
+      "sub": "Brest · Brest",
+      "value": 15220,
+      "display": "15,220",
+      "aliases": [
+        "Brest"
+      ]
+    },
+    {
+      "id": "home-deluxe-arena",
+      "name": "Home Deluxe Arena",
+      "sub": "SC Paderborn · Paderborn",
+      "value": 15000,
+      "display": "15,000",
+      "aliases": [
+        "SC Paderborn",
+        "Paderborn"
+      ]
+    },
+    {
+      "id": "campo-de-futbol-de-vallecas",
+      "name": "Campo de Fútbol de Vallecas",
+      "sub": "Rayo Vallecano · Madrid",
+      "value": 14708,
+      "display": "14,708",
+      "aliases": [
+        "Rayo Vallecano",
+        "Rayo",
+        "Vallecas Stadium",
+        "Vallecas",
+        "Estadio de Vallecas"
+      ]
+    },
+    {
+      "id": "stadio-giuseppe-sinigaglia",
+      "name": "Stadio Giuseppe Sinigaglia",
+      "sub": "Como · Como",
+      "value": 13602,
+      "display": "13,602",
+      "aliases": [
+        "Como",
+        "Sinigaglia"
+      ]
+    },
+    {
+      "id": "dean-court",
+      "name": "Dean Court",
+      "sub": "Bournemouth · Bournemouth",
+      "value": 12357,
+      "display": "12,357",
+      "aliases": [
+        "Bournemouth",
+        "AFC Bournemouth",
+        "Cherries",
+        "Vitality Stadium"
+      ]
+    },
+    {
+      "id": "stadio-pier-luigi-penzo",
+      "name": "Stadio Pier Luigi Penzo",
+      "sub": "Venezia · Venice",
+      "value": 12048,
+      "display": "12,048",
+      "aliases": [
+        "Venezia",
+        "Penzo"
+      ]
+    },
+    {
+      "id": "waldstadion-an-der-kaiserlinde",
+      "name": "Waldstadion an der Kaiserlinde",
+      "sub": "SV Elversberg · Spiesen-Elversberg",
+      "value": 10000,
+      "display": "10,000",
+      "aliases": [
+        "SV Elversberg",
+        "Elversberg",
+        "Ursapharm-Arena"
+      ]
+    }
+  ]
+}

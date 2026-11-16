@@ -1,0 +1,1284 @@
+{
+  "id": "england-caps",
+  "title": "England men's most capped players",
+  "prompt": "most caps for the England men's team",
+  "noun": "player",
+  "nounPlural": "players",
+  "metric": "Caps",
+  "order": "desc",
+  "description": "England men's internationals with 30 or more caps since 1872; tied players share a rank.",
+  "tags": [
+    "england",
+    "international",
+    "players"
+  ],
+  "source": {
+    "name": "Wikipedia: List of England international footballers",
+    "url": "https://en.wikipedia.org/wiki/List_of_England_international_footballers",
+    "asOf": "2026-11-15"
+  },
+  "items": [
+    {
+      "id": "harry-kane",
+      "name": "Harry Kane",
+      "sub": "Forward · 2015–2026",
+      "value": 127,
+      "aliases": [
+        "Kane"
+      ]
+    },
+    {
+      "id": "peter-shilton",
+      "name": "Peter Shilton",
+      "sub": "Goalkeeper · 1970–1990",
+      "value": 125,
+      "aliases": [
+        "Shilton"
+      ]
+    },
+    {
+      "id": "wayne-rooney",
+      "name": "Wayne Rooney",
+      "sub": "Forward · 2003–2018",
+      "value": 120,
+      "aliases": [
+        "Rooney",
+        "Wazza"
+      ]
+    },
+    {
+      "id": "david-beckham",
+      "name": "David Beckham",
+      "sub": "Midfielder · 1996–2009",
+      "value": 115,
+      "aliases": [
+        "Beckham",
+        "Becks"
+      ]
+    },
+    {
+      "id": "steven-gerrard",
+      "name": "Steven Gerrard",
+      "sub": "Midfielder · 2000–2014",
+      "value": 114,
+      "aliases": [
+        "Gerrard",
+        "Stevie G"
+      ]
+    },
+    {
+      "id": "bobby-moore",
+      "name": "Bobby Moore",
+      "sub": "Defender · 1962–1973",
+      "value": 108,
+      "aliases": [
+        "Moore",
+        "Sir Bobby Moore"
+      ]
+    },
+    {
+      "id": "ashley-cole",
+      "name": "Ashley Cole",
+      "sub": "Defender · 2001–2014",
+      "value": 107,
+      "aliases": [
+        "Cole"
+      ]
+    },
+    {
+      "id": "bobby-charlton",
+      "name": "Bobby Charlton",
+      "sub": "Forward / Midfielder · 1958–1970",
+      "value": 106,
+      "aliases": [
+        "Charlton",
+        "Sir Bobby Charlton"
+      ]
+    },
+    {
+      "id": "frank-lampard",
+      "name": "Frank Lampard",
+      "sub": "Midfielder · 1999–2014",
+      "value": 106,
+      "aliases": [
+        "Lampard"
+      ]
+    },
+    {
+      "id": "billy-wright",
+      "name": "Billy Wright",
+      "sub": "Half back · 1946–1959",
+      "value": 105,
+      "aliases": [
+        "Wright"
+      ]
+    },
+    {
+      "id": "kyle-walker",
+      "name": "Kyle Walker",
+      "sub": "Defender · 2011–2025",
+      "value": 96,
+      "aliases": [
+        "Walker"
+      ]
+    },
+    {
+      "id": "john-stones",
+      "name": "John Stones",
+      "sub": "Defender · 2014–2026",
+      "value": 94,
+      "aliases": [
+        "Stones"
+      ]
+    },
+    {
+      "id": "jordan-pickford",
+      "name": "Jordan Pickford",
+      "sub": "Goalkeeper · 2017–2026",
+      "value": 94,
+      "aliases": [
+        "Pickford"
+      ]
+    },
+    {
+      "id": "jordan-henderson",
+      "name": "Jordan Henderson",
+      "sub": "Midfielder · 2010–2026",
+      "value": 91,
+      "aliases": [
+        "Henderson",
+        "Hendo"
+      ]
+    },
+    {
+      "id": "bryan-robson",
+      "name": "Bryan Robson",
+      "sub": "Midfielder · 1980–1991",
+      "value": 90,
+      "aliases": [
+        "Robson"
+      ]
+    },
+    {
+      "id": "michael-owen",
+      "name": "Michael Owen",
+      "sub": "Forward · 1998–2008",
+      "value": 89,
+      "aliases": [
+        "Owen"
+      ]
+    },
+    {
+      "id": "kenny-sansom",
+      "name": "Kenny Sansom",
+      "sub": "Defender · 1979–1988",
+      "value": 86,
+      "aliases": [
+        "Sansom"
+      ]
+    },
+    {
+      "id": "gary-neville",
+      "name": "Gary Neville",
+      "sub": "Defender · 1995–2007",
+      "value": 85,
+      "aliases": [
+        "Neville"
+      ]
+    },
+    {
+      "id": "ray-wilkins",
+      "name": "Ray Wilkins",
+      "sub": "Midfielder · 1976–1986",
+      "value": 84,
+      "aliases": [
+        "Wilkins"
+      ]
+    },
+    {
+      "id": "raheem-sterling",
+      "name": "Raheem Sterling",
+      "sub": "Midfielder / Forward · 2012–2022",
+      "value": 82,
+      "aliases": [
+        "Sterling"
+      ]
+    },
+    {
+      "id": "declan-rice",
+      "name": "Declan Rice",
+      "sub": "Midfielder · 2019–2026",
+      "value": 82,
+      "aliases": [
+        "Rice"
+      ]
+    },
+    {
+      "id": "rio-ferdinand",
+      "name": "Rio Ferdinand",
+      "sub": "Defender · 1997–2011",
+      "value": 81,
+      "aliases": [
+        "Ferdinand"
+      ]
+    },
+    {
+      "id": "gary-lineker",
+      "name": "Gary Lineker",
+      "sub": "Forward · 1984–1992",
+      "value": 80,
+      "aliases": [
+        "Lineker"
+      ]
+    },
+    {
+      "id": "john-barnes",
+      "name": "John Barnes",
+      "sub": "Midfielder · 1983–1995",
+      "value": 79,
+      "aliases": [
+        "Barnes"
+      ]
+    },
+    {
+      "id": "stuart-pearce",
+      "name": "Stuart Pearce",
+      "sub": "Defender · 1987–1999",
+      "value": 78,
+      "aliases": [
+        "Pearce",
+        "Psycho"
+      ]
+    },
+    {
+      "id": "john-terry",
+      "name": "John Terry",
+      "sub": "Defender · 2003–2012",
+      "value": 78,
+      "aliases": [
+        "Terry"
+      ]
+    },
+    {
+      "id": "marcus-rashford",
+      "name": "Marcus Rashford",
+      "sub": "Forward · 2016–2026",
+      "value": 78,
+      "aliases": [
+        "Rashford"
+      ]
+    },
+    {
+      "id": "terry-butcher",
+      "name": "Terry Butcher",
+      "sub": "Defender · 1980–1990",
+      "value": 77,
+      "aliases": [
+        "Butcher"
+      ]
+    },
+    {
+      "id": "tom-finney",
+      "name": "Tom Finney",
+      "sub": "Forward · 1946–1958",
+      "value": 76,
+      "aliases": [
+        "Finney",
+        "Sir Tom Finney"
+      ]
+    },
+    {
+      "id": "david-seaman",
+      "name": "David Seaman",
+      "sub": "Goalkeeper · 1988–2002",
+      "value": 75,
+      "aliases": [
+        "Seaman"
+      ]
+    },
+    {
+      "id": "joe-hart",
+      "name": "Joe Hart",
+      "sub": "Goalkeeper · 2008–2017",
+      "value": 75,
+      "aliases": [
+        "Hart"
+      ]
+    },
+    {
+      "id": "gordon-banks",
+      "name": "Gordon Banks",
+      "sub": "Goalkeeper · 1963–1972",
+      "value": 73,
+      "aliases": [
+        "Banks"
+      ]
+    },
+    {
+      "id": "sol-campbell",
+      "name": "Sol Campbell",
+      "sub": "Defender · 1996–2007",
+      "value": 73,
+      "aliases": [
+        "Campbell"
+      ]
+    },
+    {
+      "id": "alan-ball-jr",
+      "name": "Alan Ball Jr.",
+      "sub": "Midfielder · 1965–1975",
+      "value": 72,
+      "aliases": [
+        "Ball",
+        "Alan Ball"
+      ]
+    },
+    {
+      "id": "martin-peters",
+      "name": "Martin Peters",
+      "sub": "Midfielder · 1966–1974",
+      "value": 67,
+      "aliases": [
+        "Peters"
+      ]
+    },
+    {
+      "id": "tony-adams",
+      "name": "Tony Adams",
+      "sub": "Defender · 1987–2000",
+      "value": 66,
+      "aliases": [
+        "Adams"
+      ]
+    },
+    {
+      "id": "paul-scholes",
+      "name": "Paul Scholes",
+      "sub": "Midfielder · 1997–2004",
+      "value": 66,
+      "aliases": [
+        "Scholes"
+      ]
+    },
+    {
+      "id": "harry-maguire",
+      "name": "Harry Maguire",
+      "sub": "Defender · 2017–2026",
+      "value": 66,
+      "aliases": [
+        "Maguire"
+      ]
+    },
+    {
+      "id": "david-watson",
+      "name": "David Watson",
+      "sub": "Defender · 1974–1982",
+      "value": 65,
+      "aliases": [
+        "Watson"
+      ]
+    },
+    {
+      "id": "ray-wilson",
+      "name": "Ray Wilson",
+      "sub": "Defender · 1960–1968",
+      "value": 63,
+      "aliases": [
+        "Wilson"
+      ]
+    },
+    {
+      "id": "kevin-keegan",
+      "name": "Kevin Keegan",
+      "sub": "Forward · 1972–1982",
+      "value": 63,
+      "aliases": [
+        "Keegan",
+        "King Kev"
+      ]
+    },
+    {
+      "id": "alan-shearer",
+      "name": "Alan Shearer",
+      "sub": "Forward · 1992–2000",
+      "value": 63,
+      "aliases": [
+        "Shearer"
+      ]
+    },
+    {
+      "id": "emlyn-hughes",
+      "name": "Emlyn Hughes",
+      "sub": "Defender / Midfielder · 1969–1980",
+      "value": 62,
+      "aliases": [
+        "Hughes"
+      ]
+    },
+    {
+      "id": "chris-waddle",
+      "name": "Chris Waddle",
+      "sub": "Midfielder · 1985–1991",
+      "value": 62,
+      "aliases": [
+        "Waddle"
+      ]
+    },
+    {
+      "id": "david-platt",
+      "name": "David Platt",
+      "sub": "Midfielder · 1989–1996",
+      "value": 62,
+      "aliases": [
+        "Platt"
+      ]
+    },
+    {
+      "id": "emile-heskey",
+      "name": "Emile Heskey",
+      "sub": "Forward · 1999–2010",
+      "value": 62,
+      "aliases": [
+        "Heskey"
+      ]
+    },
+    {
+      "id": "jude-bellingham",
+      "name": "Jude Bellingham",
+      "sub": "Midfielder · 2020–2026",
+      "value": 62,
+      "aliases": [
+        "Bellingham"
+      ]
+    },
+    {
+      "id": "ray-clemence",
+      "name": "Ray Clemence",
+      "sub": "Goalkeeper · 1972–1983",
+      "value": 61,
+      "aliases": [
+        "Clemence"
+      ]
+    },
+    {
+      "id": "james-milner",
+      "name": "James Milner",
+      "sub": "Midfielder / Defender · 2009–2016",
+      "value": 61,
+      "aliases": [
+        "Milner"
+      ]
+    },
+    {
+      "id": "gary-cahill",
+      "name": "Gary Cahill",
+      "sub": "Defender · 2010–2018",
+      "value": 61,
+      "aliases": [
+        "Cahill"
+      ]
+    },
+    {
+      "id": "peter-beardsley",
+      "name": "Peter Beardsley",
+      "sub": "Forward · 1986–1996",
+      "value": 59,
+      "aliases": [
+        "Beardsley"
+      ]
+    },
+    {
+      "id": "des-walker",
+      "name": "Des Walker",
+      "sub": "Defender · 1988–1993",
+      "value": 59,
+      "aliases": [
+        "Walker"
+      ]
+    },
+    {
+      "id": "phil-neville",
+      "name": "Phil Neville",
+      "sub": "Defender · 1996–2007",
+      "value": 59,
+      "aliases": [
+        "Neville"
+      ]
+    },
+    {
+      "id": "bukayo-saka",
+      "name": "Bukayo Saka",
+      "sub": "Forward · 2020–2026",
+      "value": 59,
+      "aliases": [
+        "Saka"
+      ]
+    },
+    {
+      "id": "jimmy-greaves",
+      "name": "Jimmy Greaves",
+      "sub": "Forward · 1959–1967",
+      "value": 57,
+      "aliases": [
+        "Greaves",
+        "Greavsie"
+      ]
+    },
+    {
+      "id": "paul-gascoigne",
+      "name": "Paul Gascoigne",
+      "sub": "Midfielder · 1988–1998",
+      "value": 57,
+      "aliases": [
+        "Gascoigne",
+        "Gazza"
+      ]
+    },
+    {
+      "id": "gareth-southgate",
+      "name": "Gareth Southgate",
+      "sub": "Defender · 1995–2004",
+      "value": 57,
+      "aliases": [
+        "Southgate"
+      ]
+    },
+    {
+      "id": "jermain-defoe",
+      "name": "Jermain Defoe",
+      "sub": "Forward · 2004–2017",
+      "value": 57,
+      "aliases": [
+        "Defoe"
+      ]
+    },
+    {
+      "id": "johnny-haynes",
+      "name": "Johnny Haynes",
+      "sub": "Forward · 1954–1962",
+      "value": 56,
+      "aliases": [
+        "Haynes"
+      ]
+    },
+    {
+      "id": "joe-cole",
+      "name": "Joe Cole",
+      "sub": "Midfielder · 2001–2010",
+      "value": 56,
+      "aliases": [
+        "Cole"
+      ]
+    },
+    {
+      "id": "stanley-matthews",
+      "name": "Stanley Matthews",
+      "sub": "Forward · 1934–1957",
+      "value": 54,
+      "aliases": [
+        "Matthews",
+        "Sir Stanley Matthews"
+      ]
+    },
+    {
+      "id": "glen-johnson",
+      "name": "Glen Johnson",
+      "sub": "Defender · 2003–2014",
+      "value": 54,
+      "aliases": [
+        "Johnson"
+      ]
+    },
+    {
+      "id": "kieran-trippier",
+      "name": "Kieran Trippier",
+      "sub": "Defender · 2017–2024",
+      "value": 54,
+      "aliases": [
+        "Trippier"
+      ]
+    },
+    {
+      "id": "glenn-hoddle",
+      "name": "Glenn Hoddle",
+      "sub": "Midfielder · 1979–1988",
+      "value": 53,
+      "aliases": [
+        "Hoddle"
+      ]
+    },
+    {
+      "id": "paul-ince",
+      "name": "Paul Ince",
+      "sub": "Midfielder · 1992–2000",
+      "value": 53,
+      "aliases": [
+        "Ince"
+      ]
+    },
+    {
+      "id": "david-james",
+      "name": "David James",
+      "sub": "Goalkeeper · 1997–2010",
+      "value": 53,
+      "aliases": [
+        "James"
+      ]
+    },
+    {
+      "id": "gareth-barry",
+      "name": "Gareth Barry",
+      "sub": "Defender / Midfielder · 2000–2012",
+      "value": 53,
+      "aliases": [
+        "Barry"
+      ]
+    },
+    {
+      "id": "trevor-francis",
+      "name": "Trevor Francis",
+      "sub": "Forward · 1977–1986",
+      "value": 52,
+      "aliases": [
+        "Francis"
+      ]
+    },
+    {
+      "id": "teddy-sheringham",
+      "name": "Teddy Sheringham",
+      "sub": "Forward · 1993–2002",
+      "value": 51,
+      "aliases": [
+        "Sheringham"
+      ]
+    },
+    {
+      "id": "phil-neal",
+      "name": "Phil Neal",
+      "sub": "Defender · 1976–1983",
+      "value": 50,
+      "aliases": [
+        "Neal"
+      ]
+    },
+    {
+      "id": "ron-flowers",
+      "name": "Ron Flowers",
+      "sub": "Half back · 1955–1966",
+      "value": 49,
+      "aliases": [
+        "Flowers"
+      ]
+    },
+    {
+      "id": "geoff-hurst",
+      "name": "Geoff Hurst",
+      "sub": "Forward · 1966–1972",
+      "value": 49,
+      "aliases": [
+        "Hurst",
+        "Sir Geoff Hurst"
+      ]
+    },
+    {
+      "id": "eric-dier",
+      "name": "Eric Dier",
+      "sub": "Midfielder / Defender · 2015–2022",
+      "value": 49,
+      "aliases": [
+        "Dier"
+      ]
+    },
+    {
+      "id": "phil-foden",
+      "name": "Phil Foden",
+      "sub": "Midfielder · 2020–2026",
+      "value": 49,
+      "aliases": [
+        "Foden"
+      ]
+    },
+    {
+      "id": "jimmy-dickinson",
+      "name": "Jimmy Dickinson",
+      "sub": "Half back · 1949–1956",
+      "value": 48,
+      "aliases": [
+        "Dickinson"
+      ]
+    },
+    {
+      "id": "colin-bell",
+      "name": "Colin Bell",
+      "sub": "Midfielder · 1968–1975",
+      "value": 48,
+      "aliases": [
+        "Bell"
+      ]
+    },
+    {
+      "id": "trevor-brooking",
+      "name": "Trevor Brooking",
+      "sub": "Midfielder · 1974–1982",
+      "value": 47,
+      "aliases": [
+        "Brooking"
+      ]
+    },
+    {
+      "id": "theo-walcott",
+      "name": "Theo Walcott",
+      "sub": "Forward / Midfielder · 2006–2016",
+      "value": 47,
+      "aliases": [
+        "Walcott"
+      ]
+    },
+    {
+      "id": "mick-channon",
+      "name": "Mick Channon",
+      "sub": "Forward · 1972–1977",
+      "value": 46,
+      "aliases": [
+        "Channon"
+      ]
+    },
+    {
+      "id": "gary-stevens",
+      "name": "Gary Stevens",
+      "sub": "Defender · 1985–1992",
+      "value": 46,
+      "aliases": [
+        "Stevens"
+      ]
+    },
+    {
+      "id": "mark-wright",
+      "name": "Mark Wright",
+      "sub": "Defender · 1984–1996",
+      "value": 45,
+      "aliases": [
+        "Wright"
+      ]
+    },
+    {
+      "id": "jimmy-armfield",
+      "name": "Jimmy Armfield",
+      "sub": "Defender · 1959–1966",
+      "value": 43,
+      "aliases": [
+        "Armfield"
+      ]
+    },
+    {
+      "id": "chris-woods",
+      "name": "Chris Woods",
+      "sub": "Goalkeeper · 1985–1993",
+      "value": 43,
+      "aliases": [
+        "Woods"
+      ]
+    },
+    {
+      "id": "martin-keown",
+      "name": "Martin Keown",
+      "sub": "Defender · 1992–2002",
+      "value": 43,
+      "aliases": [
+        "Keown"
+      ]
+    },
+    {
+      "id": "mick-mills",
+      "name": "Mick Mills",
+      "sub": "Defender / Midfielder · 1972–1982",
+      "value": 42,
+      "aliases": [
+        "Mills"
+      ]
+    },
+    {
+      "id": "phil-thompson",
+      "name": "Phil Thompson",
+      "sub": "Defender · 1976–1982",
+      "value": 42,
+      "aliases": [
+        "Thompson"
+      ]
+    },
+    {
+      "id": "steve-coppell",
+      "name": "Steve Coppell",
+      "sub": "Midfielder · 1977–1983",
+      "value": 42,
+      "aliases": [
+        "Coppell"
+      ]
+    },
+    {
+      "id": "tony-woodcock",
+      "name": "Tony Woodcock",
+      "sub": "Forward · 1978–1986",
+      "value": 42,
+      "aliases": [
+        "Woodcock"
+      ]
+    },
+    {
+      "id": "david-batty",
+      "name": "David Batty",
+      "sub": "Midfielder · 1991–1999",
+      "value": 42,
+      "aliases": [
+        "Batty"
+      ]
+    },
+    {
+      "id": "owen-hargreaves",
+      "name": "Owen Hargreaves",
+      "sub": "Midfielder / Defender · 2001–2008",
+      "value": 42,
+      "aliases": [
+        "Hargreaves"
+      ]
+    },
+    {
+      "id": "peter-crouch",
+      "name": "Peter Crouch",
+      "sub": "Forward · 2005–2010",
+      "value": 42,
+      "aliases": [
+        "Crouch",
+        "Crouchy"
+      ]
+    },
+    {
+      "id": "danny-welbeck",
+      "name": "Danny Welbeck",
+      "sub": "Forward · 2011–2018",
+      "value": 42,
+      "aliases": [
+        "Welbeck"
+      ]
+    },
+    {
+      "id": "bob-crompton",
+      "name": "Bob Crompton",
+      "sub": "Full back · 1902–1914",
+      "value": 41,
+      "aliases": [
+        "Crompton"
+      ]
+    },
+    {
+      "id": "paul-robinson",
+      "name": "Paul Robinson",
+      "sub": "Goalkeeper · 2003–2007",
+      "value": 41,
+      "aliases": [
+        "Robinson"
+      ]
+    },
+    {
+      "id": "marc-guehi",
+      "name": "Marc Guéhi",
+      "sub": "Defender · 2022–2026",
+      "value": 41,
+      "aliases": [
+        "Guéhi"
+      ]
+    },
+    {
+      "id": "phil-jagielka",
+      "name": "Phil Jagielka",
+      "sub": "Defender · 2008–2016",
+      "value": 40,
+      "aliases": [
+        "Jagielka"
+      ]
+    },
+    {
+      "id": "nicky-butt",
+      "name": "Nicky Butt",
+      "sub": "Midfielder · 1997–2004",
+      "value": 39,
+      "aliases": [
+        "Butt"
+      ]
+    },
+    {
+      "id": "ashley-young",
+      "name": "Ashley Young",
+      "sub": "Midfielder / Defender · 2007–2018",
+      "value": 39,
+      "aliases": [
+        "Young"
+      ]
+    },
+    {
+      "id": "jack-grealish",
+      "name": "Jack Grealish",
+      "sub": "Forward · 2020–2024",
+      "value": 39,
+      "aliases": [
+        "Grealish"
+      ]
+    },
+    {
+      "id": "jamie-carragher",
+      "name": "Jamie Carragher",
+      "sub": "Defender · 1999–2010",
+      "value": 38,
+      "aliases": [
+        "Carragher"
+      ]
+    },
+    {
+      "id": "george-cohen",
+      "name": "George Cohen",
+      "sub": "Defender · 1964–1967",
+      "value": 37,
+      "aliases": [
+        "Cohen"
+      ]
+    },
+    {
+      "id": "steve-mcmanaman",
+      "name": "Steve McManaman",
+      "sub": "Midfielder / Forward · 1994–2001",
+      "value": 37,
+      "aliases": [
+        "McManaman"
+      ]
+    },
+    {
+      "id": "dele-alli",
+      "name": "Dele Alli",
+      "sub": "Midfielder · 2015–2019",
+      "value": 37,
+      "aliases": [
+        "Alli"
+      ]
+    },
+    {
+      "id": "trent-alexander-arnold",
+      "name": "Trent Alexander-Arnold",
+      "sub": "Defender / Midfielder · 2018–2026",
+      "value": 37,
+      "aliases": [
+        "Alexander-Arnold",
+        "Trent",
+        "TAA"
+      ]
+    },
+    {
+      "id": "bryan-douglas",
+      "name": "Bryan Douglas",
+      "sub": "Forward · 1957–1963",
+      "value": 36,
+      "aliases": [
+        "Douglas"
+      ]
+    },
+    {
+      "id": "trevor-steven",
+      "name": "Trevor Steven",
+      "sub": "Midfielder · 1985–1992",
+      "value": 36,
+      "aliases": [
+        "Steven"
+      ]
+    },
+    {
+      "id": "graeme-le-saux",
+      "name": "Graeme Le Saux",
+      "sub": "Defender · 1994–2000",
+      "value": 36,
+      "aliases": [
+        "Le Saux"
+      ]
+    },
+    {
+      "id": "wayne-bridge",
+      "name": "Wayne Bridge",
+      "sub": "Defender · 2002–2009",
+      "value": 36,
+      "aliases": [
+        "Bridge"
+      ]
+    },
+    {
+      "id": "shaun-wright-phillips",
+      "name": "Shaun Wright-Phillips",
+      "sub": "Midfielder / Forward · 2004–2010",
+      "value": 36,
+      "aliases": [
+        "Wright-Phillips",
+        "SWP"
+      ]
+    },
+    {
+      "id": "mason-mount",
+      "name": "Mason Mount",
+      "sub": "Midfielder · 2019–2022",
+      "value": 36,
+      "aliases": [
+        "Mount"
+      ]
+    },
+    {
+      "id": "ronnie-clayton",
+      "name": "Ronnie Clayton",
+      "sub": "Half back · 1955–1960",
+      "value": 35,
+      "aliases": [
+        "Clayton"
+      ]
+    },
+    {
+      "id": "alan-mullery",
+      "name": "Alan Mullery",
+      "sub": "Midfielder · 1964–1971",
+      "value": 35,
+      "aliases": [
+        "Mullery"
+      ]
+    },
+    {
+      "id": "jack-charlton",
+      "name": "Jack Charlton",
+      "sub": "Defender · 1965–1970",
+      "value": 35,
+      "aliases": [
+        "Charlton"
+      ]
+    },
+    {
+      "id": "paul-mariner",
+      "name": "Paul Mariner",
+      "sub": "Forward · 1977–1985",
+      "value": 35,
+      "aliases": [
+        "Mariner"
+      ]
+    },
+    {
+      "id": "stewart-downing",
+      "name": "Stewart Downing",
+      "sub": "Midfielder · 2005–2014",
+      "value": 35,
+      "aliases": [
+        "Downing"
+      ]
+    },
+    {
+      "id": "alex-oxlade-chamberlain",
+      "name": "Alex Oxlade-Chamberlain",
+      "sub": "Midfielder · 2012–2019",
+      "value": 35,
+      "aliases": [
+        "Oxlade-Chamberlain",
+        "Ox"
+      ]
+    },
+    {
+      "id": "roger-hunt",
+      "name": "Roger Hunt",
+      "sub": "Forward · 1962–1969",
+      "value": 34,
+      "aliases": [
+        "Hunt"
+      ]
+    },
+    {
+      "id": "michael-carrick",
+      "name": "Michael Carrick",
+      "sub": "Midfielder · 2001–2015",
+      "value": 34,
+      "aliases": [
+        "Carrick"
+      ]
+    },
+    {
+      "id": "jack-wilshere",
+      "name": "Jack Wilshere",
+      "sub": "Midfielder · 2010–2016",
+      "value": 34,
+      "aliases": [
+        "Wilshere"
+      ]
+    },
+    {
+      "id": "adam-lallana",
+      "name": "Adam Lallana",
+      "sub": "Midfielder · 2013–2018",
+      "value": 34,
+      "aliases": [
+        "Lallana"
+      ]
+    },
+    {
+      "id": "luke-shaw",
+      "name": "Luke Shaw",
+      "sub": "Defender · 2014–2024",
+      "value": 34,
+      "aliases": [
+        "Shaw"
+      ]
+    },
+    {
+      "id": "nat-lofthouse",
+      "name": "Nat Lofthouse",
+      "sub": "Forward · 1950–1958",
+      "value": 33,
+      "aliases": [
+        "Lofthouse"
+      ]
+    },
+    {
+      "id": "roger-byrne",
+      "name": "Roger Byrne",
+      "sub": "Full back · 1954–1957",
+      "value": 33,
+      "aliases": [
+        "Byrne"
+      ]
+    },
+    {
+      "id": "ron-springett",
+      "name": "Ron Springett",
+      "sub": "Goalkeeper · 1959–1966",
+      "value": 33,
+      "aliases": [
+        "Springett"
+      ]
+    },
+    {
+      "id": "ian-wright",
+      "name": "Ian Wright",
+      "sub": "Forward · 1991–1998",
+      "value": 33,
+      "aliases": [
+        "Wright"
+      ]
+    },
+    {
+      "id": "kieron-dyer",
+      "name": "Kieron Dyer",
+      "sub": "Midfielder / Defender · 1999–2007",
+      "value": 33,
+      "aliases": [
+        "Dyer"
+      ]
+    },
+    {
+      "id": "ross-barkley",
+      "name": "Ross Barkley",
+      "sub": "Midfielder · 2013–2019",
+      "value": 33,
+      "aliases": [
+        "Barkley"
+      ]
+    },
+    {
+      "id": "alf-ramsey",
+      "name": "Alf Ramsey",
+      "sub": "Full back · 1948–1953",
+      "value": 32,
+      "aliases": [
+        "Ramsey",
+        "Sir Alf Ramsey"
+      ]
+    },
+    {
+      "id": "mark-hateley",
+      "name": "Mark Hateley",
+      "sub": "Forward · 1984–1992",
+      "value": 32,
+      "aliases": [
+        "Hateley"
+      ]
+    },
+    {
+      "id": "jesse-lingard",
+      "name": "Jesse Lingard",
+      "sub": "Midfielder · 2016–2021",
+      "value": 32,
+      "aliases": [
+        "Lingard"
+      ]
+    },
+    {
+      "id": "chris-smalling",
+      "name": "Chris Smalling",
+      "sub": "Defender · 2011–2017",
+      "value": 31,
+      "aliases": [
+        "Smalling"
+      ]
+    },
+    {
+      "id": "kalvin-phillips",
+      "name": "Kalvin Phillips",
+      "sub": "Midfielder · 2020–2023",
+      "value": 31,
+      "aliases": [
+        "Phillips"
+      ]
+    },
+    {
+      "id": "ezri-konsa",
+      "name": "Ezri Konsa",
+      "sub": "Defender · 2024–2026",
+      "value": 31,
+      "aliases": [
+        "Konsa"
+      ]
+    },
+    {
+      "id": "eddie-hapgood",
+      "name": "Eddie Hapgood",
+      "sub": "Full back · 1933–1939",
+      "value": 30,
+      "aliases": [
+        "Hapgood"
+      ]
+    },
+    {
+      "id": "viv-anderson",
+      "name": "Viv Anderson",
+      "sub": "Defender · 1978–1988",
+      "value": 30,
+      "aliases": [
+        "Anderson"
+      ]
+    },
+    {
+      "id": "darren-anderton",
+      "name": "Darren Anderton",
+      "sub": "Midfielder / Defender · 1994–2001",
+      "value": 30,
+      "aliases": [
+        "Anderton"
+      ]
+    },
+    {
+      "id": "leighton-baines",
+      "name": "Leighton Baines",
+      "sub": "Defender · 2010–2015",
+      "value": 30,
+      "aliases": [
+        "Baines"
+      ]
+    },
+    {
+      "id": "anthony-gordon",
+      "name": "Anthony Gordon",
+      "sub": "Forward · 2024–2026",
+      "value": 30,
+      "aliases": [
+        "Gordon"
+      ]
+    }
+  ]
+}

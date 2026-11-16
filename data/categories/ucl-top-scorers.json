@@ -1,0 +1,494 @@
+{
+  "id": "ucl-top-scorers",
+  "title": "Champions League top scorers",
+  "prompt": "most Champions League goals",
+  "noun": "player",
+  "nounPlural": "players",
+  "metric": "Goals",
+  "order": "desc",
+  "description": "All-time goals in the European Cup and Champions League, excluding qualifying rounds; every player with 25 or more.",
+  "tags": [
+    "champions-league",
+    "players",
+    "europe"
+  ],
+  "source": {
+    "name": "Wikipedia: List of UEFA Champions League top scorers",
+    "url": "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers",
+    "asOf": "2026-11-04"
+  },
+  "items": [
+    {
+      "id": "cristiano-ronaldo",
+      "name": "Cristiano Ronaldo",
+      "sub": "Portugal · Man Utd, Real Madrid",
+      "value": 140,
+      "aliases": [
+        "Ronaldo",
+        "CR7",
+        "Cristiano"
+      ]
+    },
+    {
+      "id": "lionel-messi",
+      "name": "Lionel Messi",
+      "sub": "Argentina · Barcelona",
+      "value": 129,
+      "aliases": [
+        "Messi",
+        "Leo Messi"
+      ]
+    },
+    {
+      "id": "robert-lewandowski",
+      "name": "Robert Lewandowski",
+      "sub": "Poland · Bayern, Barcelona",
+      "value": 109,
+      "aliases": [
+        "Lewandowski",
+        "Lewy"
+      ]
+    },
+    {
+      "id": "karim-benzema",
+      "name": "Karim Benzema",
+      "sub": "France · Real Madrid",
+      "value": 90,
+      "aliases": [
+        "Benzema"
+      ]
+    },
+    {
+      "id": "kylian-mbappe",
+      "name": "Kylian Mbappé",
+      "sub": "France · PSG, Real Madrid",
+      "value": 74,
+      "aliases": [
+        "Mbappé"
+      ]
+    },
+    {
+      "id": "raul",
+      "name": "Raúl",
+      "sub": "Spain · Real Madrid",
+      "value": 71,
+      "aliases": [
+        "Raúl González"
+      ]
+    },
+    {
+      "id": "erling-haaland",
+      "name": "Erling Haaland",
+      "sub": "Norway · Dortmund, Man City",
+      "value": 62,
+      "aliases": [
+        "Haaland"
+      ]
+    },
+    {
+      "id": "harry-kane",
+      "name": "Harry Kane",
+      "sub": "England · Tottenham, Bayern",
+      "value": 58,
+      "aliases": [
+        "Kane"
+      ]
+    },
+    {
+      "id": "thomas-muller",
+      "name": "Thomas Müller",
+      "sub": "Germany · Bayern",
+      "value": 57,
+      "aliases": [
+        "Müller"
+      ]
+    },
+    {
+      "id": "ruud-van-nistelrooy",
+      "name": "Ruud van Nistelrooy",
+      "sub": "Netherlands · Man Utd, Real Madrid",
+      "value": 56,
+      "aliases": [
+        "Van Nistelrooy",
+        "RVN"
+      ]
+    },
+    {
+      "id": "mohamed-salah",
+      "name": "Mohamed Salah",
+      "sub": "Egypt · Liverpool",
+      "value": 50,
+      "aliases": [
+        "Salah",
+        "Mo Salah"
+      ]
+    },
+    {
+      "id": "thierry-henry",
+      "name": "Thierry Henry",
+      "sub": "France · Arsenal, Barcelona",
+      "value": 50,
+      "aliases": [
+        "Henry"
+      ]
+    },
+    {
+      "id": "alfredo-di-stefano",
+      "name": "Alfredo Di Stéfano",
+      "sub": "Argentina/Spain · Real Madrid",
+      "value": 49,
+      "aliases": [
+        "Di Stéfano"
+      ]
+    },
+    {
+      "id": "andriy-shevchenko",
+      "name": "Andriy Shevchenko",
+      "sub": "Ukraine · Dynamo Kyiv, AC Milan",
+      "value": 48,
+      "aliases": [
+        "Shevchenko",
+        "Sheva"
+      ]
+    },
+    {
+      "id": "zlatan-ibrahimovic",
+      "name": "Zlatan Ibrahimović",
+      "sub": "Sweden · PSG",
+      "value": 48,
+      "aliases": [
+        "Ibrahimović",
+        "Zlatan",
+        "Ibra"
+      ]
+    },
+    {
+      "id": "eusebio",
+      "name": "Eusébio",
+      "sub": "Portugal · Benfica",
+      "value": 46
+    },
+    {
+      "id": "filippo-inzaghi",
+      "name": "Filippo Inzaghi",
+      "sub": "Italy · Juventus, AC Milan",
+      "value": 46,
+      "aliases": [
+        "Inzaghi",
+        "Pippo Inzaghi"
+      ]
+    },
+    {
+      "id": "didier-drogba",
+      "name": "Didier Drogba",
+      "sub": "Ivory Coast · Chelsea",
+      "value": 44,
+      "aliases": [
+        "Drogba"
+      ]
+    },
+    {
+      "id": "antoine-griezmann",
+      "name": "Antoine Griezmann",
+      "sub": "France · Atlético Madrid",
+      "value": 44,
+      "aliases": [
+        "Griezmann"
+      ]
+    },
+    {
+      "id": "neymar",
+      "name": "Neymar",
+      "sub": "Brazil · Barcelona, PSG",
+      "value": 43,
+      "aliases": [
+        "Neymar Jr"
+      ]
+    },
+    {
+      "id": "alessandro-del-piero",
+      "name": "Alessandro Del Piero",
+      "sub": "Italy · Juventus",
+      "value": 42,
+      "aliases": [
+        "Del Piero"
+      ]
+    },
+    {
+      "id": "sergio-aguero",
+      "name": "Sergio Agüero",
+      "sub": "Argentina · Man City",
+      "value": 41,
+      "aliases": [
+        "Agüero",
+        "Kun Agüero"
+      ]
+    },
+    {
+      "id": "ferenc-puskas",
+      "name": "Ferenc Puskás",
+      "sub": "Hungary · Real Madrid",
+      "value": 36,
+      "aliases": [
+        "Puskás"
+      ]
+    },
+    {
+      "id": "edinson-cavani",
+      "name": "Edinson Cavani",
+      "sub": "Uruguay · PSG",
+      "value": 35,
+      "aliases": [
+        "Cavani"
+      ]
+    },
+    {
+      "id": "gerd-muller",
+      "name": "Gerd Müller",
+      "sub": "West Germany · Bayern",
+      "value": 34,
+      "aliases": [
+        "Müller"
+      ]
+    },
+    {
+      "id": "vinicius-junior",
+      "name": "Vinícius Júnior",
+      "sub": "Brazil · Real Madrid",
+      "value": 34,
+      "aliases": [
+        "Vinícius",
+        "Vini Jr",
+        "Vinicius Jr"
+      ]
+    },
+    {
+      "id": "fernando-morientes",
+      "name": "Fernando Morientes",
+      "sub": "Spain · Real Madrid",
+      "value": 33,
+      "aliases": [
+        "Morientes"
+      ]
+    },
+    {
+      "id": "ousmane-dembele",
+      "name": "Ousmane Dembélé",
+      "sub": "France · Barcelona, PSG",
+      "value": 31,
+      "aliases": [
+        "Dembélé"
+      ]
+    },
+    {
+      "id": "arjen-robben",
+      "name": "Arjen Robben",
+      "sub": "Netherlands · Bayern",
+      "value": 31,
+      "aliases": [
+        "Robben"
+      ]
+    },
+    {
+      "id": "samuel-etoo",
+      "name": "Samuel Eto'o",
+      "sub": "Cameroon · Barcelona, Inter",
+      "value": 30,
+      "aliases": [
+        "Eto'o"
+      ]
+    },
+    {
+      "id": "wayne-rooney",
+      "name": "Wayne Rooney",
+      "sub": "England · Man Utd",
+      "value": 30,
+      "aliases": [
+        "Rooney"
+      ]
+    },
+    {
+      "id": "kaka",
+      "name": "Kaká",
+      "sub": "Brazil · AC Milan, Real Madrid",
+      "value": 30
+    },
+    {
+      "id": "paco-gento",
+      "name": "Paco Gento",
+      "sub": "Spain · Real Madrid",
+      "value": 30,
+      "aliases": [
+        "Francisco Gento"
+      ]
+    },
+    {
+      "id": "david-trezeguet",
+      "name": "David Trezeguet",
+      "sub": "France · Juventus",
+      "value": 29,
+      "aliases": [
+        "Trezeguet"
+      ]
+    },
+    {
+      "id": "roy-makaay",
+      "name": "Roy Makaay",
+      "sub": "Netherlands · Deportivo, Bayern",
+      "value": 29,
+      "aliases": [
+        "Makaay"
+      ]
+    },
+    {
+      "id": "patrick-kluivert",
+      "name": "Patrick Kluivert",
+      "sub": "Netherlands · Ajax, Barcelona",
+      "value": 29,
+      "aliases": [
+        "Kluivert"
+      ]
+    },
+    {
+      "id": "edin-dzeko",
+      "name": "Edin Džeko",
+      "sub": "Bosnia and Herzegovina · Man City, Roma",
+      "value": 29,
+      "aliases": [
+        "Džeko"
+      ]
+    },
+    {
+      "id": "alvaro-morata",
+      "name": "Álvaro Morata",
+      "sub": "Spain · Juventus, Atlético Madrid",
+      "value": 29,
+      "aliases": [
+        "Morata"
+      ]
+    },
+    {
+      "id": "jean-pierre-papin",
+      "name": "Jean-Pierre Papin",
+      "sub": "France · Marseille, AC Milan",
+      "value": 28,
+      "aliases": [
+        "Papin",
+        "JPP"
+      ]
+    },
+    {
+      "id": "ryan-giggs",
+      "name": "Ryan Giggs",
+      "sub": "Wales · Man Utd",
+      "value": 28,
+      "aliases": [
+        "Giggs"
+      ]
+    },
+    {
+      "id": "gabriel-jesus",
+      "name": "Gabriel Jesus",
+      "sub": "Brazil · Man City, Arsenal",
+      "value": 27,
+      "aliases": [
+        "Jesus"
+      ]
+    },
+    {
+      "id": "sadio-mane",
+      "name": "Sadio Mané",
+      "sub": "Senegal · Liverpool",
+      "value": 27,
+      "aliases": [
+        "Mané"
+      ]
+    },
+    {
+      "id": "lautaro-martinez",
+      "name": "Lautaro Martínez",
+      "sub": "Argentina · Inter",
+      "value": 27,
+      "aliases": [
+        "Martínez",
+        "Lautaro"
+      ]
+    },
+    {
+      "id": "rivaldo",
+      "name": "Rivaldo",
+      "sub": "Brazil · Barcelona, Olympiacos",
+      "value": 27
+    },
+    {
+      "id": "luis-suarez",
+      "name": "Luis Suárez",
+      "sub": "Uruguay · Barcelona",
+      "value": 27,
+      "aliases": [
+        "Suárez"
+      ]
+    },
+    {
+      "id": "raheem-sterling",
+      "name": "Raheem Sterling",
+      "sub": "England · Man City",
+      "value": 27,
+      "aliases": [
+        "Sterling"
+      ]
+    },
+    {
+      "id": "mario-gomez",
+      "name": "Mario Gómez",
+      "sub": "Germany · Bayern",
+      "value": 26,
+      "aliases": [
+        "Gómez"
+      ]
+    },
+    {
+      "id": "julian-alvarez",
+      "name": "Julián Alvarez",
+      "sub": "Argentina · Man City, Atlético Madrid",
+      "value": 26,
+      "aliases": [
+        "Alvarez"
+      ]
+    },
+    {
+      "id": "rodrygo",
+      "name": "Rodrygo",
+      "sub": "Brazil · Real Madrid",
+      "value": 26
+    },
+    {
+      "id": "mario-jardel",
+      "name": "Mário Jardel",
+      "sub": "Brazil · Porto, Galatasaray",
+      "value": 25,
+      "aliases": [
+        "Jardel"
+      ]
+    },
+    {
+      "id": "robin-van-persie",
+      "name": "Robin van Persie",
+      "sub": "Netherlands · Arsenal, Man Utd",
+      "value": 25,
+      "aliases": [
+        "Van Persie",
+        "RVP"
+      ]
+    },
+    {
+      "id": "hernan-crespo",
+      "name": "Hernán Crespo",
+      "sub": "Argentina · Inter, Chelsea",
+      "value": 25,
+      "aliases": [
+        "Crespo"
+      ]
+    }
+  ]
+}

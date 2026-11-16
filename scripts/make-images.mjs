@@ -44,7 +44,7 @@ p{margin:26px 0 0;font:600 34px/1.3 B;max-width:560px;opacity:.95}
 .q{margin-top:10px;font:800 40px/1.02 BC;text-transform:uppercase}
 .cta{display:inline-block;margin-top:34px;background:#ffd23f;color:#10200f;border:5px solid #10200f;border-radius:18px;box-shadow:0 7px 0 #10200f;padding:16px 30px;font:800 34px/1 BC;text-transform:uppercase;letter-spacing:.05em}
 </style></head><body><div class="wrap"><div class="left">${mark(110)}<h1>Football <span>Golf</span></h1>
-<p>Name the thing closest to the target rank. Fewest strokes wins.</p><div class="cta">You've been challenged</div></div>
+<p>Name the thing closest to the target rank. Fewest strokes wins.</p><div class="cta">Tap to play</div></div>
 <div class="card"><span class="chip">⚑ Hole 1</span><div class="n">42<sup>nd</sup></div><div class="q">most Champions League match wins</div></div></div></body></html>`;
 
 const browser = await puppeteer.launch({ executablePath: CHROME, headless: true });

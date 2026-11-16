@@ -97,6 +97,20 @@ export default function Join({ id }: { id: string }) {
         )}
       </div>
 
+      {done.length >= 2 && (
+        <section className="card form-card who-card" aria-label="Already played">
+          <h2 className="field-title">Already played this one?</h2>
+          <p className="field-help">Tap your name to watch the hole-by-hole reveal.</p>
+          <div className="who-buttons">
+            {done.map((i) => (
+              <button key={i} type="button" className="btn btn-secondary who-btn" onClick={() => claimCard(i)}>
+                I'm <Tag name={game.players[i].name} index={i} small />
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
+
       <form
         className="card form-card join-form"
         onSubmit={(e) => {
@@ -105,9 +119,9 @@ export default function Join({ id }: { id: string }) {
         }}
       >
         <label className="field-title" htmlFor="join-name">
-          Your name
+          {done.length >= 2 ? 'New player? Your name' : 'Your name'}
         </label>
-        {done.length > 0 && <p className="field-help">Already played this one? Enter the same name to see your card.</p>}
+        {done.length === 1 && <p className="field-help">Already played this one? Enter the same name to see your card.</p>}
         <input
           id="join-name"
           className={`input${error ? ' is-error' : ''}`}

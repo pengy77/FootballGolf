@@ -1,0 +1,514 @@
+{
+  "id": "uefa-club-coefficients",
+  "title": "UEFA club coefficients",
+  "prompt": "highest UEFA club coefficient (end of 2025–26)",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "metric": "Points",
+  "order": "desc",
+  "description": "UEFA five-year club coefficient (2021–22 to 2025–26), the final ranking at the end of 2025–26 used for 2026–27 seeding.",
+  "tags": [
+    "europe",
+    "clubs",
+    "champions-league"
+  ],
+  "source": {
+    "name": "Wikipedia (German): UEFA-Fünfjahreswertung",
+    "url": "https://de.wikipedia.org/wiki/UEFA-F%C3%BCnfjahreswertung",
+    "asOf": "2026-05-31"
+  },
+  "items": [
+    {
+      "id": "bayern-munich",
+      "name": "Bayern Munich",
+      "sub": "Germany",
+      "value": 147.5,
+      "display": "147.500",
+      "aliases": [
+        "Bayern",
+        "FC Bayern",
+        "Bayern München"
+      ]
+    },
+    {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "sub": "Spain",
+      "value": 144.5,
+      "display": "144.500",
+      "aliases": [
+        "Real",
+        "Los Blancos"
+      ]
+    },
+    {
+      "id": "paris-saint-germain",
+      "name": "Paris Saint-Germain",
+      "sub": "France",
+      "value": 132.0,
+      "display": "132.000",
+      "aliases": [
+        "PSG",
+        "Paris SG"
+      ]
+    },
+    {
+      "id": "liverpool",
+      "name": "Liverpool",
+      "sub": "England",
+      "value": 130.0,
+      "display": "130.000",
+      "aliases": [
+        "LFC"
+      ]
+    },
+    {
+      "id": "inter-milan",
+      "name": "Inter Milan",
+      "sub": "Italy",
+      "value": 127.0,
+      "display": "127.000",
+      "aliases": [
+        "Inter",
+        "Internazionale"
+      ]
+    },
+    {
+      "id": "manchester-city",
+      "name": "Manchester City",
+      "sub": "England",
+      "value": 125.5,
+      "display": "125.500",
+      "aliases": [
+        "Man City"
+      ]
+    },
+    {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "sub": "England",
+      "value": 119.0,
+      "display": "119.000",
+      "aliases": [
+        "Gunners"
+      ]
+    },
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "sub": "Spain",
+      "value": 113.25,
+      "display": "113.250",
+      "aliases": [
+        "Barça",
+        "FC Barcelona"
+      ]
+    },
+    {
+      "id": "bayer-leverkusen",
+      "name": "Bayer Leverkusen",
+      "sub": "Germany",
+      "value": 105.0,
+      "display": "105.000",
+      "aliases": [
+        "Leverkusen"
+      ]
+    },
+    {
+      "id": "atletico-madrid",
+      "name": "Atlético Madrid",
+      "sub": "Spain",
+      "value": 104.75,
+      "display": "104.750",
+      "aliases": [
+        "Atlético",
+        "Atleti"
+      ]
+    },
+    {
+      "id": "borussia-dortmund",
+      "name": "Borussia Dortmund",
+      "sub": "Germany",
+      "value": 100.75,
+      "display": "100.750",
+      "aliases": [
+        "Dortmund",
+        "BVB"
+      ]
+    },
+    {
+      "id": "chelsea",
+      "name": "Chelsea",
+      "sub": "England",
+      "value": 99.25,
+      "display": "99.250"
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "sub": "Italy",
+      "value": 97.75,
+      "display": "97.750",
+      "aliases": [
+        "AS Roma"
+      ]
+    },
+    {
+      "id": "benfica",
+      "name": "Benfica",
+      "sub": "Portugal",
+      "value": 90.0,
+      "display": "90.000",
+      "aliases": [
+        "SL Benfica"
+      ]
+    },
+    {
+      "id": "sporting-cp",
+      "name": "Sporting CP",
+      "sub": "Portugal",
+      "value": 84.0,
+      "display": "84.000",
+      "aliases": [
+        "Sporting Lisbon",
+        "Sporting"
+      ]
+    },
+    {
+      "id": "atalanta",
+      "name": "Atalanta",
+      "sub": "Italy",
+      "value": 84.0,
+      "display": "84.000"
+    },
+    {
+      "id": "aston-villa",
+      "name": "Aston Villa",
+      "sub": "England",
+      "value": 83.0,
+      "display": "83.000",
+      "aliases": [
+        "Villa"
+      ]
+    },
+    {
+      "id": "eintracht-frankfurt",
+      "name": "Eintracht Frankfurt",
+      "sub": "Germany",
+      "value": 83.0,
+      "display": "83.000",
+      "aliases": [
+        "Frankfurt"
+      ]
+    },
+    {
+      "id": "tottenham-hotspur",
+      "name": "Tottenham Hotspur",
+      "sub": "England",
+      "value": 82.0,
+      "display": "82.000",
+      "aliases": [
+        "Tottenham",
+        "Spurs"
+      ]
+    },
+    {
+      "id": "porto",
+      "name": "Porto",
+      "sub": "Portugal",
+      "value": 80.75,
+      "display": "80.750",
+      "aliases": [
+        "FC Porto"
+      ]
+    },
+    {
+      "id": "manchester-united",
+      "name": "Manchester United",
+      "sub": "England",
+      "value": 76.5,
+      "display": "76.500",
+      "aliases": [
+        "Man Utd",
+        "Man United"
+      ]
+    },
+    {
+      "id": "fiorentina",
+      "name": "Fiorentina",
+      "sub": "Italy",
+      "value": 76.25,
+      "display": "76.250"
+    },
+    {
+      "id": "club-brugge",
+      "name": "Club Brugge",
+      "sub": "Belgium",
+      "value": 75.25,
+      "display": "75.250",
+      "aliases": [
+        "Brugge",
+        "Bruges"
+      ]
+    },
+    {
+      "id": "real-betis",
+      "name": "Real Betis",
+      "sub": "Spain",
+      "value": 74.5,
+      "display": "74.500",
+      "aliases": [
+        "Betis"
+      ]
+    },
+    {
+      "id": "juventus",
+      "name": "Juventus",
+      "sub": "Italy",
+      "value": 72.25,
+      "display": "72.250",
+      "aliases": [
+        "Juve"
+      ]
+    },
+    {
+      "id": "psv-eindhoven",
+      "name": "PSV Eindhoven",
+      "sub": "Netherlands",
+      "value": 71.25,
+      "display": "71.250",
+      "aliases": [
+        "PSV"
+      ]
+    },
+    {
+      "id": "feyenoord",
+      "name": "Feyenoord",
+      "sub": "Netherlands",
+      "value": 71.0,
+      "display": "71.000"
+    },
+    {
+      "id": "west-ham-united",
+      "name": "West Ham United",
+      "sub": "England",
+      "value": 69.0,
+      "display": "69.000",
+      "aliases": [
+        "West Ham"
+      ]
+    },
+    {
+      "id": "lille",
+      "name": "Lille",
+      "sub": "France",
+      "value": 68.75,
+      "display": "68.750",
+      "aliases": [
+        "LOSC"
+      ]
+    },
+    {
+      "id": "ac-milan",
+      "name": "AC Milan",
+      "sub": "Italy",
+      "value": 66.0,
+      "display": "66.000",
+      "aliases": [
+        "Milan"
+      ]
+    },
+    {
+      "id": "lyon",
+      "name": "Lyon",
+      "sub": "France",
+      "value": 65.75,
+      "display": "65.750",
+      "aliases": [
+        "Olympique Lyonnais",
+        "OL"
+      ]
+    },
+    {
+      "id": "bodo-glimt",
+      "name": "Bodø/Glimt",
+      "sub": "Norway",
+      "value": 64.0,
+      "display": "64.000",
+      "aliases": [
+        "Glimt"
+      ]
+    },
+    {
+      "id": "braga",
+      "name": "Braga",
+      "sub": "Portugal",
+      "value": 63.75,
+      "display": "63.750",
+      "aliases": [
+        "Sporting Braga",
+        "SC Braga"
+      ]
+    },
+    {
+      "id": "napoli",
+      "name": "Napoli",
+      "sub": "Italy",
+      "value": 63.0,
+      "display": "63.000",
+      "aliases": [
+        "SSC Napoli"
+      ]
+    },
+    {
+      "id": "az-alkmaar",
+      "name": "AZ Alkmaar",
+      "sub": "Netherlands",
+      "value": 62.875,
+      "display": "62.875",
+      "aliases": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "olympiacos",
+      "name": "Olympiacos",
+      "sub": "Greece",
+      "value": 62.25,
+      "display": "62.250",
+      "aliases": [
+        "Olympiakos"
+      ]
+    },
+    {
+      "id": "rb-leipzig",
+      "name": "RB Leipzig",
+      "sub": "Germany",
+      "value": 61.0,
+      "display": "61.000",
+      "aliases": [
+        "Leipzig"
+      ]
+    },
+    {
+      "id": "rangers",
+      "name": "Rangers",
+      "sub": "Scotland",
+      "value": 59.25,
+      "display": "59.250",
+      "aliases": [
+        "Glasgow Rangers"
+      ]
+    },
+    {
+      "id": "villarreal",
+      "name": "Villarreal",
+      "sub": "Spain",
+      "value": 59.0,
+      "display": "59.000"
+    },
+    {
+      "id": "lazio",
+      "name": "Lazio",
+      "sub": "Italy",
+      "value": 59.0,
+      "display": "59.000",
+      "aliases": [
+        "SS Lazio"
+      ]
+    },
+    {
+      "id": "ajax",
+      "name": "Ajax",
+      "sub": "Netherlands",
+      "value": 58.25,
+      "display": "58.250",
+      "aliases": [
+        "Ajax Amsterdam"
+      ]
+    },
+    {
+      "id": "fenerbahce",
+      "name": "Fenerbahçe",
+      "sub": "Turkey",
+      "value": 57.75,
+      "display": "57.750"
+    },
+    {
+      "id": "real-sociedad",
+      "name": "Real Sociedad",
+      "sub": "Spain",
+      "value": 57.0,
+      "display": "57.000"
+    },
+    {
+      "id": "sc-freiburg",
+      "name": "SC Freiburg",
+      "sub": "Germany",
+      "value": 56.5,
+      "display": "56.500",
+      "aliases": [
+        "Freiburg"
+      ]
+    },
+    {
+      "id": "shakhtar-donetsk",
+      "name": "Shakhtar Donetsk",
+      "sub": "Ukraine",
+      "value": 56.25,
+      "display": "56.250",
+      "aliases": [
+        "Shakhtar"
+      ]
+    },
+    {
+      "id": "monaco",
+      "name": "Monaco",
+      "sub": "France",
+      "value": 56.0,
+      "display": "56.000",
+      "aliases": [
+        "AS Monaco"
+      ]
+    },
+    {
+      "id": "copenhagen",
+      "name": "Copenhagen",
+      "sub": "Denmark",
+      "value": 54.375,
+      "display": "54.375",
+      "aliases": [
+        "FC Copenhagen",
+        "FC København"
+      ]
+    },
+    {
+      "id": "marseille",
+      "name": "Marseille",
+      "sub": "France",
+      "value": 54.0,
+      "display": "54.000",
+      "aliases": [
+        "Olympique de Marseille",
+        "OM"
+      ]
+    },
+    {
+      "id": "galatasaray",
+      "name": "Galatasaray",
+      "sub": "Turkey",
+      "value": 53.5,
+      "display": "53.500"
+    },
+    {
+      "id": "ferencvaros",
+      "name": "Ferencváros",
+      "sub": "Hungary",
+      "value": 51.25,
+      "display": "51.250",
+      "aliases": [
+        "Fradi"
+      ]
+    }
+  ]
+}

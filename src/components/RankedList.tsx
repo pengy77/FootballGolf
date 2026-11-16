@@ -53,6 +53,7 @@ export function RankedList({ cat, target, marks }: { cat: Category; target: numb
           <div className="ranked-title">{cat.title}</div>
           <div className="ranked-meta">
             {cat.size} {cat.nounPlural} · ranked by {cat.metric.toLowerCase()}
+            {cat.items.some((x) => x.lo !== x.hi) && ' · ties share places'}
           </div>
         </div>
         <button type="button" className="chip chip-btn" onClick={() => setAll((a) => !a)} aria-pressed={all}>
@@ -74,9 +75,8 @@ export function RankedList({ cat, target, marks }: { cat: Category; target: numb
           const m = marks.get(it.id);
           return (
             <li key={it.id} className={`rl-row${isPin ? ' is-pin' : ''}${m ? ' is-pick' : ''}`}>
-              <span className="rl-pos">
-                {it.lo !== it.hi ? '=' : ''}
-                {it.lo}
+              <span className={`rl-pos${it.lo !== it.hi ? ' is-tie' : ''}`} title={it.lo !== it.hi ? `Tied ${it.lo}–${it.hi}` : undefined}>
+                {it.lo !== it.hi ? `${it.lo}–${it.hi}` : it.lo}
               </span>
               <span className="rl-main">
                 <span className="rl-name">{it.name}</span>

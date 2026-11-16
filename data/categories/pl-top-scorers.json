@@ -1,0 +1,352 @@
+{
+  "id": "pl-top-scorers",
+  "title": "Premier League all-time top scorers",
+  "prompt": "most Premier League goals",
+  "noun": "player",
+  "nounPlural": "players",
+  "metric": "Goals",
+  "order": "desc",
+  "description": "Every player with 100 or more Premier League goals since 1992–93; tied players share a rank.",
+  "tags": [
+    "premier-league",
+    "players"
+  ],
+  "source": {
+    "name": "Wikipedia: List of footballers with 100 or more Premier League goals",
+    "url": "https://en.wikipedia.org/wiki/List_of_footballers_with_100_or_more_Premier_League_goals",
+    "asOf": "2026-10-25"
+  },
+  "items": [
+    {
+      "id": "alan-shearer",
+      "name": "Alan Shearer",
+      "sub": "England · Newcastle, Blackburn",
+      "value": 260,
+      "aliases": [
+        "Shearer"
+      ]
+    },
+    {
+      "id": "harry-kane",
+      "name": "Harry Kane",
+      "sub": "England · Tottenham",
+      "value": 213,
+      "aliases": [
+        "Kane"
+      ]
+    },
+    {
+      "id": "wayne-rooney",
+      "name": "Wayne Rooney",
+      "sub": "England · Man Utd, Everton",
+      "value": 208,
+      "aliases": [
+        "Rooney",
+        "Wazza"
+      ]
+    },
+    {
+      "id": "mohamed-salah",
+      "name": "Mohamed Salah",
+      "sub": "Egypt · Liverpool",
+      "value": 193,
+      "aliases": [
+        "Salah",
+        "Mo Salah"
+      ]
+    },
+    {
+      "id": "andy-cole",
+      "name": "Andy Cole",
+      "sub": "England · Man Utd, Newcastle",
+      "value": 187,
+      "aliases": [
+        "Cole",
+        "Andrew Cole"
+      ]
+    },
+    {
+      "id": "sergio-aguero",
+      "name": "Sergio Agüero",
+      "sub": "Argentina · Man City",
+      "value": 184,
+      "aliases": [
+        "Agüero",
+        "Kun Agüero"
+      ]
+    },
+    {
+      "id": "frank-lampard",
+      "name": "Frank Lampard",
+      "sub": "England · Chelsea, West Ham",
+      "value": 177,
+      "aliases": [
+        "Lampard",
+        "Lamps"
+      ]
+    },
+    {
+      "id": "thierry-henry",
+      "name": "Thierry Henry",
+      "sub": "France · Arsenal",
+      "value": 175,
+      "aliases": [
+        "Henry",
+        "Titi"
+      ]
+    },
+    {
+      "id": "robbie-fowler",
+      "name": "Robbie Fowler",
+      "sub": "England · Liverpool, Man City",
+      "value": 163,
+      "aliases": [
+        "Fowler"
+      ]
+    },
+    {
+      "id": "jermain-defoe",
+      "name": "Jermain Defoe",
+      "sub": "England · Tottenham, Sunderland",
+      "value": 162,
+      "aliases": [
+        "Defoe"
+      ]
+    },
+    {
+      "id": "michael-owen",
+      "name": "Michael Owen",
+      "sub": "England · Liverpool, Newcastle",
+      "value": 150,
+      "aliases": [
+        "Owen"
+      ]
+    },
+    {
+      "id": "les-ferdinand",
+      "name": "Les Ferdinand",
+      "sub": "England · QPR, Newcastle",
+      "value": 149,
+      "aliases": [
+        "Ferdinand",
+        "Sir Les"
+      ]
+    },
+    {
+      "id": "teddy-sheringham",
+      "name": "Teddy Sheringham",
+      "sub": "England · Tottenham, Man Utd",
+      "value": 146,
+      "aliases": [
+        "Sheringham"
+      ]
+    },
+    {
+      "id": "jamie-vardy",
+      "name": "Jamie Vardy",
+      "sub": "England · Leicester",
+      "value": 145,
+      "aliases": [
+        "Vardy"
+      ]
+    },
+    {
+      "id": "robin-van-persie",
+      "name": "Robin van Persie",
+      "sub": "Netherlands · Arsenal, Man Utd",
+      "value": 144,
+      "aliases": [
+        "van Persie",
+        "RVP"
+      ]
+    },
+    {
+      "id": "jimmy-floyd-hasselbaink",
+      "name": "Jimmy Floyd Hasselbaink",
+      "sub": "Netherlands · Chelsea, Leeds",
+      "value": 127,
+      "aliases": [
+        "Hasselbaink",
+        "Jimmy Hasselbaink"
+      ]
+    },
+    {
+      "id": "son-heung-min",
+      "name": "Son Heung-min",
+      "sub": "South Korea · Tottenham",
+      "value": 127,
+      "aliases": [
+        "Son",
+        "Sonny",
+        "Heung-min Son"
+      ]
+    },
+    {
+      "id": "robbie-keane",
+      "name": "Robbie Keane",
+      "sub": "Ireland · Tottenham, Leeds",
+      "value": 126,
+      "aliases": [
+        "Keane"
+      ]
+    },
+    {
+      "id": "nicolas-anelka",
+      "name": "Nicolas Anelka",
+      "sub": "France · Chelsea, Man City",
+      "value": 125,
+      "aliases": [
+        "Anelka"
+      ]
+    },
+    {
+      "id": "dwight-yorke",
+      "name": "Dwight Yorke",
+      "sub": "Trinidad and Tobago · Aston Villa, Man Utd",
+      "value": 123,
+      "aliases": [
+        "Yorke"
+      ]
+    },
+    {
+      "id": "raheem-sterling",
+      "name": "Raheem Sterling",
+      "sub": "England · Man City, Liverpool",
+      "value": 123,
+      "aliases": [
+        "Sterling"
+      ]
+    },
+    {
+      "id": "erling-haaland",
+      "name": "Erling Haaland",
+      "sub": "Norway · Man City",
+      "value": 121,
+      "aliases": [
+        "Haaland"
+      ]
+    },
+    {
+      "id": "romelu-lukaku",
+      "name": "Romelu Lukaku",
+      "sub": "Belgium · Everton, Man Utd",
+      "value": 121,
+      "aliases": [
+        "Lukaku"
+      ]
+    },
+    {
+      "id": "steven-gerrard",
+      "name": "Steven Gerrard",
+      "sub": "England · Liverpool",
+      "value": 120,
+      "aliases": [
+        "Gerrard",
+        "Stevie G"
+      ]
+    },
+    {
+      "id": "ian-wright",
+      "name": "Ian Wright",
+      "sub": "England · Arsenal",
+      "value": 113,
+      "aliases": [
+        "Wright",
+        "Wrighty"
+      ]
+    },
+    {
+      "id": "sadio-mane",
+      "name": "Sadio Mané",
+      "sub": "Senegal · Liverpool, Southampton",
+      "value": 111,
+      "aliases": [
+        "Mané"
+      ]
+    },
+    {
+      "id": "dion-dublin",
+      "name": "Dion Dublin",
+      "sub": "England · Coventry, Aston Villa",
+      "value": 111,
+      "aliases": [
+        "Dublin"
+      ]
+    },
+    {
+      "id": "emile-heskey",
+      "name": "Emile Heskey",
+      "sub": "England · Liverpool, Leicester",
+      "value": 110,
+      "aliases": [
+        "Heskey"
+      ]
+    },
+    {
+      "id": "ryan-giggs",
+      "name": "Ryan Giggs",
+      "sub": "Wales · Man Utd",
+      "value": 109,
+      "aliases": [
+        "Giggs"
+      ]
+    },
+    {
+      "id": "peter-crouch",
+      "name": "Peter Crouch",
+      "sub": "England · Stoke, Liverpool",
+      "value": 108,
+      "aliases": [
+        "Crouch",
+        "Crouchy"
+      ]
+    },
+    {
+      "id": "paul-scholes",
+      "name": "Paul Scholes",
+      "sub": "England · Man Utd",
+      "value": 107,
+      "aliases": [
+        "Scholes"
+      ]
+    },
+    {
+      "id": "darren-bent",
+      "name": "Darren Bent",
+      "sub": "England · Sunderland, Charlton",
+      "value": 106,
+      "aliases": [
+        "Bent"
+      ]
+    },
+    {
+      "id": "didier-drogba",
+      "name": "Didier Drogba",
+      "sub": "Ivory Coast · Chelsea",
+      "value": 104,
+      "aliases": [
+        "Drogba"
+      ]
+    },
+    {
+      "id": "cristiano-ronaldo",
+      "name": "Cristiano Ronaldo",
+      "sub": "Portugal · Man Utd",
+      "value": 103,
+      "aliases": [
+        "Ronaldo",
+        "CR7"
+      ]
+    },
+    {
+      "id": "matt-le-tissier",
+      "name": "Matt Le Tissier",
+      "sub": "England · Southampton",
+      "value": 100,
+      "aliases": [
+        "Le Tissier",
+        "Le Tiss"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,529 @@
+{
+  "id": "ucl-appearances",
+  "title": "Champions League appearances",
+  "prompt": "most Champions League appearances",
+  "noun": "player",
+  "nounPlural": "players",
+  "metric": "Apps",
+  "order": "desc",
+  "description": "All-time appearances in the European Cup and Champions League (players with 100+), excluding qualifying rounds.",
+  "tags": [
+    "champions-league",
+    "players",
+    "europe"
+  ],
+  "source": {
+    "name": "Wikipedia: List of footballers with 100 or more UEFA Champions League appearances",
+    "url": "https://en.wikipedia.org/wiki/List_of_footballers_with_100_or_more_UEFA_Champions_League_appearances",
+    "asOf": "2026-11-04"
+  },
+  "items": [
+    {
+      "id": "cristiano-ronaldo",
+      "name": "Cristiano Ronaldo",
+      "sub": "Portugal · Man Utd, Real Madrid",
+      "value": 183,
+      "aliases": [
+        "Ronaldo",
+        "CR7",
+        "Cristiano"
+      ]
+    },
+    {
+      "id": "iker-casillas",
+      "name": "Iker Casillas",
+      "sub": "Spain · Real Madrid",
+      "value": 177,
+      "aliases": [
+        "Casillas",
+        "Iker"
+      ]
+    },
+    {
+      "id": "manuel-neuer",
+      "name": "Manuel Neuer",
+      "sub": "Germany · Bayern",
+      "value": 164,
+      "aliases": [
+        "Neuer"
+      ]
+    },
+    {
+      "id": "lionel-messi",
+      "name": "Lionel Messi",
+      "sub": "Argentina · Barcelona",
+      "value": 163,
+      "aliases": [
+        "Messi",
+        "Leo Messi"
+      ]
+    },
+    {
+      "id": "thomas-muller",
+      "name": "Thomas Müller",
+      "sub": "Germany · Bayern",
+      "value": 163,
+      "aliases": [
+        "Müller"
+      ]
+    },
+    {
+      "id": "karim-benzema",
+      "name": "Karim Benzema",
+      "sub": "France · Real Madrid",
+      "value": 152,
+      "aliases": [
+        "Benzema"
+      ]
+    },
+    {
+      "id": "xavi",
+      "name": "Xavi",
+      "sub": "Spain · Barcelona",
+      "value": 151,
+      "aliases": [
+        "Xavi Hernández"
+      ]
+    },
+    {
+      "id": "toni-kroos",
+      "name": "Toni Kroos",
+      "sub": "Germany · Bayern, Real Madrid",
+      "value": 151,
+      "aliases": [
+        "Kroos"
+      ]
+    },
+    {
+      "id": "robert-lewandowski",
+      "name": "Robert Lewandowski",
+      "sub": "Poland · Bayern, Barcelona",
+      "value": 144,
+      "aliases": [
+        "Lewandowski",
+        "Lewy"
+      ]
+    },
+    {
+      "id": "raul",
+      "name": "Raúl",
+      "sub": "Spain · Real Madrid",
+      "value": 142,
+      "aliases": [
+        "Raúl González"
+      ]
+    },
+    {
+      "id": "sergio-ramos",
+      "name": "Sergio Ramos",
+      "sub": "Spain · Real Madrid",
+      "value": 142,
+      "aliases": [
+        "Ramos"
+      ]
+    },
+    {
+      "id": "luka-modric",
+      "name": "Luka Modrić",
+      "sub": "Croatia · Real Madrid",
+      "value": 142,
+      "aliases": [
+        "Modrić"
+      ]
+    },
+    {
+      "id": "ryan-giggs",
+      "name": "Ryan Giggs",
+      "sub": "Wales · Man Utd",
+      "value": 141,
+      "aliases": [
+        "Giggs"
+      ]
+    },
+    {
+      "id": "andres-iniesta",
+      "name": "Andrés Iniesta",
+      "sub": "Spain · Barcelona",
+      "value": 130,
+      "aliases": [
+        "Iniesta"
+      ]
+    },
+    {
+      "id": "sergio-busquets",
+      "name": "Sergio Busquets",
+      "sub": "Spain · Barcelona",
+      "value": 129,
+      "aliases": [
+        "Busquets"
+      ]
+    },
+    {
+      "id": "gerard-pique",
+      "name": "Gerard Piqué",
+      "sub": "Spain · Barcelona",
+      "value": 128,
+      "aliases": [
+        "Piqué"
+      ]
+    },
+    {
+      "id": "clarence-seedorf",
+      "name": "Clarence Seedorf",
+      "sub": "Netherlands · Real Madrid, AC Milan",
+      "value": 125,
+      "aliases": [
+        "Seedorf"
+      ]
+    },
+    {
+      "id": "david-alaba",
+      "name": "David Alaba",
+      "sub": "Austria · Bayern, Real Madrid",
+      "value": 125,
+      "aliases": [
+        "Alaba"
+      ]
+    },
+    {
+      "id": "paul-scholes",
+      "name": "Paul Scholes",
+      "sub": "England · Man Utd",
+      "value": 124,
+      "aliases": [
+        "Scholes"
+      ]
+    },
+    {
+      "id": "gianluigi-buffon",
+      "name": "Gianluigi Buffon",
+      "sub": "Italy · Juventus",
+      "value": 124,
+      "aliases": [
+        "Buffon"
+      ]
+    },
+    {
+      "id": "zlatan-ibrahimovic",
+      "name": "Zlatan Ibrahimović",
+      "sub": "Sweden · PSG",
+      "value": 124,
+      "aliases": [
+        "Ibrahimović",
+        "Zlatan",
+        "Ibra"
+      ]
+    },
+    {
+      "id": "marquinhos",
+      "name": "Marquinhos",
+      "sub": "Brazil · PSG",
+      "value": 124
+    },
+    {
+      "id": "roberto-carlos",
+      "name": "Roberto Carlos",
+      "sub": "Brazil · Real Madrid",
+      "value": 120
+    },
+    {
+      "id": "pepe",
+      "name": "Pepe",
+      "sub": "Portugal · Porto, Real Madrid",
+      "value": 120
+    },
+    {
+      "id": "antoine-griezmann",
+      "name": "Antoine Griezmann",
+      "sub": "France · Atlético Madrid",
+      "value": 120,
+      "aliases": [
+        "Griezmann"
+      ]
+    },
+    {
+      "id": "koke",
+      "name": "Koke",
+      "sub": "Spain · Atlético Madrid",
+      "value": 120
+    },
+    {
+      "id": "xabi-alonso",
+      "name": "Xabi Alonso",
+      "sub": "Spain · Liverpool, Real Madrid",
+      "value": 119,
+      "aliases": [
+        "Alonso"
+      ]
+    },
+    {
+      "id": "ilkay-gundogan",
+      "name": "İlkay Gündoğan",
+      "sub": "Germany · Man City",
+      "value": 117,
+      "aliases": [
+        "Gündoğan"
+      ]
+    },
+    {
+      "id": "angel-di-maria",
+      "name": "Ángel Di María",
+      "sub": "Argentina · Real Madrid, PSG",
+      "value": 116,
+      "aliases": [
+        "Di María",
+        "Fideo"
+      ]
+    },
+    {
+      "id": "carles-puyol",
+      "name": "Carles Puyol",
+      "sub": "Spain · Barcelona",
+      "value": 115,
+      "aliases": [
+        "Puyol"
+      ]
+    },
+    {
+      "id": "thierry-henry",
+      "name": "Thierry Henry",
+      "sub": "France · Arsenal, Barcelona",
+      "value": 112,
+      "aliases": [
+        "Henry"
+      ]
+    },
+    {
+      "id": "philipp-lahm",
+      "name": "Philipp Lahm",
+      "sub": "Germany · Bayern",
+      "value": 112,
+      "aliases": [
+        "Lahm"
+      ]
+    },
+    {
+      "id": "joshua-kimmich",
+      "name": "Joshua Kimmich",
+      "sub": "Germany · Bayern",
+      "value": 112,
+      "aliases": [
+        "Kimmich"
+      ]
+    },
+    {
+      "id": "petr-cech",
+      "name": "Petr Čech",
+      "sub": "Czech Republic · Chelsea",
+      "value": 111,
+      "aliases": [
+        "Čech"
+      ]
+    },
+    {
+      "id": "dani-alves",
+      "name": "Dani Alves",
+      "sub": "Brazil · Barcelona",
+      "value": 111,
+      "aliases": [
+        "Alves",
+        "Daniel Alves"
+      ]
+    },
+    {
+      "id": "arjen-robben",
+      "name": "Arjen Robben",
+      "sub": "Netherlands · Bayern",
+      "value": 110,
+      "aliases": [
+        "Robben"
+      ]
+    },
+    {
+      "id": "jan-oblak",
+      "name": "Jan Oblak",
+      "sub": "Slovenia · Atlético Madrid",
+      "value": 110,
+      "aliases": [
+        "Oblak"
+      ]
+    },
+    {
+      "id": "paolo-maldini",
+      "name": "Paolo Maldini",
+      "sub": "Italy · AC Milan",
+      "value": 109,
+      "aliases": [
+        "Maldini"
+      ]
+    },
+    {
+      "id": "gary-neville",
+      "name": "Gary Neville",
+      "sub": "England · Man Utd",
+      "value": 109,
+      "aliases": [
+        "Neville"
+      ]
+    },
+    {
+      "id": "john-terry",
+      "name": "John Terry",
+      "sub": "England · Chelsea",
+      "value": 109,
+      "aliases": [
+        "Terry"
+      ]
+    },
+    {
+      "id": "andrea-pirlo",
+      "name": "Andrea Pirlo",
+      "sub": "Italy · AC Milan, Juventus",
+      "value": 108,
+      "aliases": [
+        "Pirlo"
+      ]
+    },
+    {
+      "id": "ashley-cole",
+      "name": "Ashley Cole",
+      "sub": "England · Arsenal, Chelsea",
+      "value": 108,
+      "aliases": [
+        "Cole"
+      ]
+    },
+    {
+      "id": "patrice-evra",
+      "name": "Patrice Evra",
+      "sub": "France · Man Utd, Juventus",
+      "value": 108,
+      "aliases": [
+        "Evra"
+      ]
+    },
+    {
+      "id": "david-beckham",
+      "name": "David Beckham",
+      "sub": "England · Man Utd, Real Madrid",
+      "value": 107,
+      "aliases": [
+        "Beckham"
+      ]
+    },
+    {
+      "id": "bernardo-silva",
+      "name": "Bernardo Silva",
+      "sub": "Portugal · Man City",
+      "value": 107,
+      "aliases": [
+        "Silva",
+        "Bernardo"
+      ]
+    },
+    {
+      "id": "victor-valdes",
+      "name": "Víctor Valdés",
+      "sub": "Spain · Barcelona",
+      "value": 106,
+      "aliases": [
+        "Valdés"
+      ]
+    },
+    {
+      "id": "frank-lampard",
+      "name": "Frank Lampard",
+      "sub": "England · Chelsea",
+      "value": 105,
+      "aliases": [
+        "Lampard"
+      ]
+    },
+    {
+      "id": "thiago-silva",
+      "name": "Thiago Silva",
+      "sub": "Brazil · PSG, Chelsea",
+      "value": 105,
+      "aliases": [
+        "Silva"
+      ]
+    },
+    {
+      "id": "cesc-fabregas",
+      "name": "Cesc Fàbregas",
+      "sub": "Spain · Arsenal, Barcelona",
+      "value": 104,
+      "aliases": [
+        "Fàbregas",
+        "Cesc"
+      ]
+    },
+    {
+      "id": "oliver-kahn",
+      "name": "Oliver Kahn",
+      "sub": "Germany · Bayern",
+      "value": 103,
+      "aliases": [
+        "Kahn"
+      ]
+    },
+    {
+      "id": "luis-figo",
+      "name": "Luís Figo",
+      "sub": "Portugal · Barcelona, Real Madrid",
+      "value": 103,
+      "aliases": [
+        "Figo"
+      ]
+    },
+    {
+      "id": "fernandinho",
+      "name": "Fernandinho",
+      "sub": "Brazil · Shakhtar, Man City",
+      "value": 103
+    },
+    {
+      "id": "thibaut-courtois",
+      "name": "Thibaut Courtois",
+      "sub": "Belgium · Real Madrid",
+      "value": 103,
+      "aliases": [
+        "Courtois"
+      ]
+    },
+    {
+      "id": "marcelo",
+      "name": "Marcelo",
+      "sub": "Brazil · Real Madrid",
+      "value": 102
+    },
+    {
+      "id": "nicolas-otamendi",
+      "name": "Nicolás Otamendi",
+      "sub": "Argentina · Man City, Benfica",
+      "value": 102,
+      "aliases": [
+        "Otamendi"
+      ]
+    },
+    {
+      "id": "kylian-mbappe",
+      "name": "Kylian Mbappé",
+      "sub": "France · PSG, Real Madrid",
+      "value": 102,
+      "aliases": [
+        "Mbappé"
+      ]
+    },
+    {
+      "id": "andriy-shevchenko",
+      "name": "Andriy Shevchenko",
+      "sub": "Ukraine · Dynamo Kyiv, AC Milan",
+      "value": 100,
+      "aliases": [
+        "Shevchenko",
+        "Sheva"
+      ]
+    }
+  ]
+}

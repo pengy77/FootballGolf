@@ -1,0 +1,755 @@
+{
+  "id": "la-liga-top-scorers",
+  "title": "La Liga all-time top scorers",
+  "prompt": "most La Liga goals",
+  "noun": "player",
+  "nounPlural": "players",
+  "metric": "Goals",
+  "order": "desc",
+  "description": "All-time La Liga goals, for every player who has scored 100 or more.",
+  "tags": [
+    "europe",
+    "players"
+  ],
+  "source": {
+    "name": "Wikipedia: List of La Liga top scorers",
+    "url": "https://en.wikipedia.org/wiki/List_of_La_Liga_top_scorers",
+    "asOf": "2026-11-08"
+  },
+  "items": [
+    {
+      "id": "lionel-messi",
+      "name": "Lionel Messi",
+      "sub": "Argentina · Barcelona",
+      "value": 474,
+      "aliases": [
+        "Messi",
+        "Leo Messi"
+      ]
+    },
+    {
+      "id": "cristiano-ronaldo",
+      "name": "Cristiano Ronaldo",
+      "sub": "Portugal · Real Madrid",
+      "value": 311,
+      "aliases": [
+        "Ronaldo",
+        "CR7",
+        "Cristiano"
+      ]
+    },
+    {
+      "id": "telmo-zarra",
+      "name": "Telmo Zarra",
+      "sub": "Spain · Athletic Bilbao",
+      "value": 251,
+      "aliases": [
+        "Zarra"
+      ]
+    },
+    {
+      "id": "karim-benzema",
+      "name": "Karim Benzema",
+      "sub": "France · Real Madrid",
+      "value": 238,
+      "aliases": [
+        "Benzema"
+      ]
+    },
+    {
+      "id": "hugo-sanchez",
+      "name": "Hugo Sánchez",
+      "sub": "Mexico · Atlético Madrid, Real Madrid",
+      "value": 234,
+      "aliases": [
+        "Sánchez",
+        "Hugol"
+      ]
+    },
+    {
+      "id": "raul",
+      "name": "Raúl",
+      "sub": "Spain · Real Madrid",
+      "value": 228,
+      "aliases": [
+        "Raúl González"
+      ]
+    },
+    {
+      "id": "alfredo-di-stefano",
+      "name": "Alfredo Di Stéfano",
+      "sub": "Argentina/Spain · Real Madrid",
+      "value": 227,
+      "aliases": [
+        "Di Stéfano"
+      ]
+    },
+    {
+      "id": "cesar",
+      "name": "César",
+      "sub": "Spain · Barcelona",
+      "value": 221,
+      "aliases": [
+        "César Rodríguez"
+      ]
+    },
+    {
+      "id": "quini",
+      "name": "Quini",
+      "sub": "Spain · Sporting Gijón, Barcelona",
+      "value": 219,
+      "aliases": [
+        "Enrique Castro"
+      ]
+    },
+    {
+      "id": "pahino",
+      "name": "Pahiño",
+      "sub": "Spain · Celta Vigo, Real Madrid",
+      "value": 212
+    },
+    {
+      "id": "antoine-griezmann",
+      "name": "Antoine Griezmann",
+      "sub": "France · Real Sociedad, Atlético Madrid",
+      "value": 205,
+      "aliases": [
+        "Griezmann"
+      ]
+    },
+    {
+      "id": "mundo",
+      "name": "Mundo",
+      "sub": "Spain · Valencia",
+      "value": 195,
+      "aliases": [
+        "Edmundo Suárez"
+      ]
+    },
+    {
+      "id": "david-villa",
+      "name": "David Villa",
+      "sub": "Spain · Valencia, Barcelona",
+      "value": 186,
+      "aliases": [
+        "Villa"
+      ]
+    },
+    {
+      "id": "santillana",
+      "name": "Santillana",
+      "sub": "Spain · Real Madrid",
+      "value": 186
+    },
+    {
+      "id": "guillermo-gorostiza",
+      "name": "Guillermo Gorostiza",
+      "sub": "Spain · Athletic Bilbao, Valencia",
+      "value": 183,
+      "aliases": [
+        "Gorostiza"
+      ]
+    },
+    {
+      "id": "juan-arza",
+      "name": "Juan Arza",
+      "sub": "Spain · Sevilla",
+      "value": 182,
+      "aliases": [
+        "Arza"
+      ]
+    },
+    {
+      "id": "luis-suarez",
+      "name": "Luis Suárez",
+      "sub": "Uruguay · Barcelona, Atlético Madrid",
+      "value": 179,
+      "aliases": [
+        "Suárez"
+      ]
+    },
+    {
+      "id": "iago-aspas",
+      "name": "Iago Aspas",
+      "sub": "Spain · Celta Vigo",
+      "value": 171
+    },
+    {
+      "id": "samuel-etoo",
+      "name": "Samuel Eto'o",
+      "sub": "Cameroon · Mallorca, Barcelona",
+      "value": 162,
+      "aliases": [
+        "Eto'o"
+      ]
+    },
+    {
+      "id": "luis-aragones",
+      "name": "Luis Aragonés",
+      "sub": "Spain · Real Betis, Atlético Madrid",
+      "value": 160,
+      "aliases": [
+        "Aragonés"
+      ]
+    },
+    {
+      "id": "aritz-aduriz",
+      "name": "Aritz Aduriz",
+      "sub": "Spain · Athletic Bilbao",
+      "value": 158,
+      "aliases": [
+        "Aduriz"
+      ]
+    },
+    {
+      "id": "ferenc-puskas",
+      "name": "Ferenc Puskás",
+      "sub": "Hungary · Real Madrid",
+      "value": 156,
+      "aliases": [
+        "Puskás"
+      ]
+    },
+    {
+      "id": "julio-salinas",
+      "name": "Julio Salinas",
+      "sub": "Spain · Barcelona",
+      "value": 152,
+      "aliases": [
+        "Salinas"
+      ]
+    },
+    {
+      "id": "adrian-escudero",
+      "name": "Adrián Escudero",
+      "sub": "Spain · Atlético Madrid",
+      "value": 150,
+      "aliases": [
+        "Escudero"
+      ]
+    },
+    {
+      "id": "dani",
+      "name": "Dani",
+      "sub": "Spain · Athletic Bilbao",
+      "value": 147
+    },
+    {
+      "id": "raul-tamudo",
+      "name": "Raúl Tamudo",
+      "sub": "Spain · Espanyol",
+      "value": 146,
+      "aliases": [
+        "Tamudo"
+      ]
+    },
+    {
+      "id": "silvestre-igoa",
+      "name": "Silvestre Igoa",
+      "sub": "Spain · Valencia, Real Sociedad",
+      "value": 140,
+      "aliases": [
+        "Igoa"
+      ]
+    },
+    {
+      "id": "manuel-badenes",
+      "name": "Manuel Badenes",
+      "sub": "Spain · Valencia, Valladolid",
+      "value": 139,
+      "aliases": [
+        "Badenes"
+      ]
+    },
+    {
+      "id": "juan-araujo",
+      "name": "Juan Araujo",
+      "sub": "Spain · Sevilla",
+      "value": 139,
+      "aliases": [
+        "Araujo"
+      ]
+    },
+    {
+      "id": "jose-mari-bakero",
+      "name": "José Mari Bakero",
+      "sub": "Spain · Real Sociedad, Barcelona",
+      "value": 139,
+      "aliases": [
+        "Bakero"
+      ]
+    },
+    {
+      "id": "laszlo-kubala",
+      "name": "László Kubala",
+      "sub": "Hungary · Barcelona",
+      "value": 138,
+      "aliases": [
+        "Kubala",
+        "Ladislao Kubala"
+      ]
+    },
+    {
+      "id": "jose-luis-panizo",
+      "name": "José Luis Panizo",
+      "sub": "Spain · Athletic Bilbao",
+      "value": 136,
+      "aliases": [
+        "Panizo"
+      ]
+    },
+    {
+      "id": "jesus-maria-satrustegui",
+      "name": "Jesús María Satrústegui",
+      "sub": "Spain · Real Sociedad",
+      "value": 133,
+      "aliases": [
+        "Satrústegui"
+      ]
+    },
+    {
+      "id": "gerard-moreno",
+      "name": "Gerard Moreno",
+      "sub": "Spain · Villarreal, Espanyol",
+      "value": 133,
+      "aliases": [
+        "Moreno"
+      ]
+    },
+    {
+      "id": "ismael-urzaiz",
+      "name": "Ismael Urzaiz",
+      "sub": "Spain · Athletic Bilbao",
+      "value": 133,
+      "aliases": [
+        "Urzaiz"
+      ]
+    },
+    {
+      "id": "joaquin-murillo",
+      "name": "Joaquín Murillo",
+      "sub": "Spain · Valladolid, Zaragoza",
+      "value": 131,
+      "aliases": [
+        "Murillo"
+      ]
+    },
+    {
+      "id": "fernando-ansola",
+      "name": "Fernando Ansola",
+      "sub": "Spain · Real Betis, Valencia",
+      "value": 130,
+      "aliases": [
+        "Ansola"
+      ]
+    },
+    {
+      "id": "lyuboslav-penev",
+      "name": "Lyuboslav Penev",
+      "sub": "Bulgaria · Valencia, Compostela",
+      "value": 129,
+      "aliases": [
+        "Penev"
+      ]
+    },
+    {
+      "id": "roberto-soldado",
+      "name": "Roberto Soldado",
+      "sub": "Spain · Valencia",
+      "value": 129,
+      "aliases": [
+        "Soldado"
+      ]
+    },
+    {
+      "id": "paco-gento",
+      "name": "Paco Gento",
+      "sub": "Spain · Real Madrid",
+      "value": 129,
+      "aliases": [
+        "Francisco Gento"
+      ]
+    },
+    {
+      "id": "diego-forlan",
+      "name": "Diego Forlán",
+      "sub": "Uruguay · Villarreal, Atlético Madrid",
+      "value": 128,
+      "aliases": [
+        "Forlán"
+      ]
+    },
+    {
+      "id": "eneko-arieta",
+      "name": "Eneko Arieta",
+      "sub": "Spain · Athletic Bilbao",
+      "value": 128,
+      "aliases": [
+        "Arieta"
+      ]
+    },
+    {
+      "id": "alvaro-negredo",
+      "name": "Álvaro Negredo",
+      "sub": "Spain · Sevilla, Cádiz",
+      "value": 128,
+      "aliases": [
+        "Negredo"
+      ]
+    },
+    {
+      "id": "paco-campos",
+      "name": "Paco Campos",
+      "sub": "Spain · Atlético Madrid",
+      "value": 127,
+      "aliases": [
+        "Campos"
+      ]
+    },
+    {
+      "id": "mario-kempes",
+      "name": "Mario Kempes",
+      "sub": "Argentina · Valencia",
+      "value": 126,
+      "aliases": [
+        "Kempes"
+      ]
+    },
+    {
+      "id": "epi-fernandez",
+      "name": "Epi Fernández",
+      "sub": "Spain · Valencia, Real Sociedad",
+      "value": 125,
+      "aliases": [
+        "Epi"
+      ]
+    },
+    {
+      "id": "fernando-morientes",
+      "name": "Fernando Morientes",
+      "sub": "Spain · Real Madrid",
+      "value": 124,
+      "aliases": [
+        "Morientes"
+      ]
+    },
+    {
+      "id": "emilio-butragueno",
+      "name": "Emilio Butragueño",
+      "sub": "Spain · Real Madrid",
+      "value": 123,
+      "aliases": [
+        "Butragueño",
+        "El Buitre"
+      ]
+    },
+    {
+      "id": "pirri",
+      "name": "Pirri",
+      "sub": "Spain · Real Madrid",
+      "value": 123
+    },
+    {
+      "id": "herrerita",
+      "name": "Herrerita",
+      "sub": "Spain · Oviedo",
+      "value": 119
+    },
+    {
+      "id": "amancio",
+      "name": "Amancio",
+      "sub": "Spain · Real Madrid",
+      "value": 119,
+      "aliases": [
+        "Amancio Amaro"
+      ]
+    },
+    {
+      "id": "ronaldo",
+      "name": "Ronaldo",
+      "sub": "Brazil · Barcelona, Real Madrid",
+      "value": 117,
+      "aliases": [
+        "Ronaldo Nazário",
+        "R9"
+      ]
+    },
+    {
+      "id": "agustin-gainza",
+      "name": "Agustín Gaínza",
+      "sub": "Spain · Athletic Bilbao",
+      "value": 117,
+      "aliases": [
+        "Gaínza"
+      ]
+    },
+    {
+      "id": "cristhian-stuani",
+      "name": "Cristhian Stuani",
+      "sub": "Uruguay · Espanyol, Girona",
+      "value": 116,
+      "aliases": [
+        "Stuani"
+      ]
+    },
+    {
+      "id": "waldo",
+      "name": "Waldo",
+      "sub": "Brazil · Valencia",
+      "value": 115,
+      "aliases": [
+        "Waldo Machado"
+      ]
+    },
+    {
+      "id": "maranon",
+      "name": "Marañón",
+      "sub": "Spain · Espanyol",
+      "value": 115,
+      "aliases": [
+        "Rafael Marañón"
+      ]
+    },
+    {
+      "id": "jose-juncosa",
+      "name": "José Juncosa",
+      "sub": "Spain · Atlético Madrid",
+      "value": 114,
+      "aliases": [
+        "Juncosa"
+      ]
+    },
+    {
+      "id": "davor-suker",
+      "name": "Davor Šuker",
+      "sub": "Croatia · Sevilla, Real Madrid",
+      "value": 114,
+      "aliases": [
+        "Šuker"
+      ]
+    },
+    {
+      "id": "roberto-lopez-ufarte",
+      "name": "Roberto López Ufarte",
+      "sub": "Spain · Real Sociedad",
+      "value": 112,
+      "aliases": [
+        "López Ufarte"
+      ]
+    },
+    {
+      "id": "raul-garcia",
+      "name": "Raúl García",
+      "sub": "Spain · Atlético Madrid, Athletic Bilbao",
+      "value": 112
+    },
+    {
+      "id": "carlos-munoz",
+      "name": "Carlos Muñoz",
+      "sub": "Spain · Oviedo",
+      "value": 111,
+      "aliases": [
+        "Muñoz"
+      ]
+    },
+    {
+      "id": "pedro-uralde",
+      "name": "Pedro Uralde",
+      "sub": "Spain · Real Sociedad, Athletic Bilbao",
+      "value": 111,
+      "aliases": [
+        "Uralde"
+      ]
+    },
+    {
+      "id": "jose-angel-ziganda",
+      "name": "José Ángel Ziganda",
+      "sub": "Spain · Osasuna, Athletic Bilbao",
+      "value": 111,
+      "aliases": [
+        "Ziganda"
+      ]
+    },
+    {
+      "id": "jose-eulogio-garate",
+      "name": "José Eulogio Gárate",
+      "sub": "Spain · Atlético Madrid",
+      "value": 109,
+      "aliases": [
+        "Gárate"
+      ]
+    },
+    {
+      "id": "bata",
+      "name": "Bata",
+      "sub": "Spain · Athletic Bilbao",
+      "value": 108
+    },
+    {
+      "id": "fernando-gomez",
+      "name": "Fernando Gómez",
+      "sub": "Spain · Valencia",
+      "value": 108,
+      "aliases": [
+        "Gómez"
+      ]
+    },
+    {
+      "id": "mariano-martin",
+      "name": "Mariano Martín",
+      "sub": "Spain · Barcelona",
+      "value": 107,
+      "aliases": [
+        "Martín"
+      ]
+    },
+    {
+      "id": "gonzalo-higuain",
+      "name": "Gonzalo Higuaín",
+      "sub": "Argentina · Real Madrid",
+      "value": 107,
+      "aliases": [
+        "Higuaín"
+      ]
+    },
+    {
+      "id": "rivaldo",
+      "name": "Rivaldo",
+      "sub": "Brazil · Deportivo, Barcelona",
+      "value": 107
+    },
+    {
+      "id": "pichi-alonso",
+      "name": "Pichi Alonso",
+      "sub": "Spain · Zaragoza, Espanyol",
+      "value": 107,
+      "aliases": [
+        "Pichi"
+      ]
+    },
+    {
+      "id": "jose-luis-artetxe",
+      "name": "José Luis Artetxe",
+      "sub": "Spain · Athletic Bilbao",
+      "value": 107,
+      "aliases": [
+        "Artetxe"
+      ]
+    },
+    {
+      "id": "isidro-langara",
+      "name": "Isidro Lángara",
+      "sub": "Spain · Oviedo",
+      "value": 105,
+      "aliases": [
+        "Lángara"
+      ]
+    },
+    {
+      "id": "meho-kodro",
+      "name": "Meho Kodro",
+      "sub": "Bosnia and Herzegovina · Real Sociedad",
+      "value": 105,
+      "aliases": [
+        "Kodro"
+      ]
+    },
+    {
+      "id": "fernando-hierro",
+      "name": "Fernando Hierro",
+      "sub": "Spain · Real Madrid",
+      "value": 105,
+      "aliases": [
+        "Hierro"
+      ]
+    },
+    {
+      "id": "hermidita",
+      "name": "Hermidita",
+      "sub": "Spain · Celta Vigo",
+      "value": 104
+    },
+    {
+      "id": "cayetano-re",
+      "name": "Cayetano Ré",
+      "sub": "Paraguay · Barcelona, Espanyol",
+      "value": 103,
+      "aliases": [
+        "Ré"
+      ]
+    },
+    {
+      "id": "luis-enrique",
+      "name": "Luis Enrique",
+      "sub": "Spain · Real Madrid, Barcelona",
+      "value": 103,
+      "aliases": [
+        "Lucho"
+      ]
+    },
+    {
+      "id": "guillermo-campanal",
+      "name": "Guillermo Campanal",
+      "sub": "Spain · Sevilla",
+      "value": 102,
+      "aliases": [
+        "Campanal"
+      ]
+    },
+    {
+      "id": "fernando-torres",
+      "name": "Fernando Torres",
+      "sub": "Spain · Atlético Madrid",
+      "value": 102,
+      "aliases": [
+        "Torres",
+        "El Niño"
+      ]
+    },
+    {
+      "id": "mikel-oyarzabal",
+      "name": "Mikel Oyarzabal",
+      "sub": "Spain · Real Sociedad",
+      "value": 102,
+      "aliases": [
+        "Oyarzabal"
+      ]
+    },
+    {
+      "id": "manuel-sarabia",
+      "name": "Manuel Sarabia",
+      "sub": "Spain · Athletic Bilbao, CD Logroñés",
+      "value": 102,
+      "aliases": [
+        "Sarabia"
+      ]
+    },
+    {
+      "id": "victorio-unamuno",
+      "name": "Victorio Unamuno",
+      "sub": "Spain · Athletic Bilbao, Real Betis",
+      "value": 101,
+      "aliases": [
+        "Unamuno"
+      ]
+    },
+    {
+      "id": "julen-guerrero",
+      "name": "Julen Guerrero",
+      "sub": "Spain · Athletic Bilbao",
+      "value": 101,
+      "aliases": [
+        "Guerrero"
+      ]
+    },
+    {
+      "id": "roy-makaay",
+      "name": "Roy Makaay",
+      "sub": "Netherlands · Tenerife, Deportivo",
+      "value": 100,
+      "aliases": [
+        "Makaay"
+      ]
+    }
+  ]
+}

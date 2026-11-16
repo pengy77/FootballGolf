@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { buildCategory, CATEGORIES, CATEGORY_BY_ID, type RawCategory } from './data';
-import { distance, holeResult, mergeGame, newCourse, obStrokes, ordinal, rankLabel, standings, targetRange, type Game } from './game';
+import { distance, HOLE_MAX, holeResult, mergeGame, newCourse, obStrokes, ordinal, rankLabel, standings, targetRange, type Game } from './game';
 import { decodeGame, encodeGame } from './link';
 import { norm, searchItems } from './search';
 import { findGame, mergeSaved } from './store';
@@ -31,7 +31,7 @@ describe('ranking & ties', () => {
   it('gives tied items a shared range', () => {
     expect([cat.byId.get('b')!.lo, cat.byId.get('b')!.hi]).toEqual([2, 4]);
     expect([cat.byId.get('d')!.lo, cat.byId.get('d')!.hi]).toEqual([2, 4]);
-    expect(rankLabel(cat.byId.get('c')!)).toBe('=2nd');
+    expect(rankLabel(cat.byId.get('c')!).replace(/\u2060/g, '')).toBe('2–4th');
     expect(rankLabel(cat.byId.get('e')!)).toBe('5th');
   });
   it('scores 0 anywhere inside a tie and distance to the nearest edge outside it', () => {
@@ -41,10 +41,18 @@ describe('ranking & ties', () => {
     expect(distance(c, 6)).toBe(2);
     expect(distance(cat.byId.get('a')!, 5)).toBe(4);
   });
-  it('makes out of bounds strictly worse than any listed answer', () => {
+  it('makes out of bounds worse than any listed answer (up to the hole cap)', () => {
     for (let t = 1; t <= cat.size; t++) {
       const worst = Math.max(...cat.items.map((it) => distance(it, t)));
-      expect(obStrokes(cat, t)).toBeGreaterThan(worst);
+      expect(obStrokes(cat, t)).toBe(Math.min(worst + 1, HOLE_MAX));
+    }
+  });
+  it('caps every hole at HOLE_MAX', () => {
+    for (const c of CATEGORIES) {
+      for (const t of [1, Math.ceil(c.size / 2), c.size]) {
+        expect(obStrokes(c, t)).toBeLessThanOrEqual(HOLE_MAX);
+        for (const it of c.items) expect(holeResult({ cat: c.id, target: t }, it.id).strokes).toBeLessThanOrEqual(HOLE_MAX);
+      }
     }
   });
 });

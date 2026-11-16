@@ -6,7 +6,7 @@ import { findGame } from '../lib/store';
 import { buzz } from '../lib/share';
 import { HoleCard } from '../components/HoleCard';
 import { PickBox, type Selection } from '../components/PickBox';
-import { Reveal } from '../components/Reveal';
+import { Reveal, RevealCta } from '../components/Reveal';
 import { Scorecard } from '../components/Scorecard';
 import { Icons, IconButton, Tag, TopBar } from '../components/ui';
 import Message from './Message';
@@ -41,7 +41,7 @@ function contextLabel(game: Game): string {
   if (game.mode === 'local') return 'Pass & play';
   const others = game.players.filter((_, i) => i !== game.me && isDone(game, i)).map((p) => p.name);
   if (!others.length) return 'Your round';
-  return others.length === 1 ? `v ${others[0]}` : `v ${others.length} players`;
+  return others.length === 1 ? `vs ${others[0]}` : `vs ${others.length} players`;
 }
 
 function Progress({ game, current }: { game: Game; current: number }) {
@@ -74,11 +74,10 @@ export default function Play({ id }: { id: string }) {
   useEffect(() => {
     setSelection(null);
     setSearching(false);
-    // A double-tap on "Lock it in" must not also hit the reveal's "Next" button underneath.
+    // The reveal arms its "next" button itself once the pin is showing (see Reveal onSettled).
     setArmed(false);
-    const t = setTimeout(() => setArmed(true), 700);
-    return () => clearTimeout(t);
   }, [stateKey]);
+  const onSettled = useCallback(() => setArmed(true), []);
 
   useEffect(() => {
     if (!game || state?.kind !== 'done') return;
@@ -126,21 +125,17 @@ export default function Play({ id }: { id: string }) {
           hole={state.hole}
           players={revealPlayers}
           animate
+          onSettled={onSettled}
           after={<Scorecard game={game} players={players} upTo={state.hole + 1} current={state.hole} />}
         />
-        <div className="sticky-cta">
-          <button
-            type="button"
-            className="btn btn-primary btn-block btn-lg"
-            onClick={() => {
-              if (!armed) return;
-              saveGame({ ...game, revealed: game.revealed + 1 });
-              window.scrollTo({ top: 0 });
-            }}
-          >
-            {last ? 'See final scores' : `On to hole ${state.hole + 2}`}
-          </button>
-        </div>
+        <RevealCta
+          armed={armed}
+          label={last ? 'See final scores' : `On to hole ${state.hole + 2}`}
+          onNext={() => {
+            saveGame({ ...game, revealed: game.revealed + 1 });
+            window.scrollTo({ top: 0 });
+          }}
+        />
       </main>
     );
   }

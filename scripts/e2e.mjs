@@ -49,6 +49,14 @@ async function clickText(page, text, selector = 'button') {
   await handle.asElement().tap();
 }
 
+// Pick the first suggestion; if nothing matches, type a longer name and play it as out of bounds.
+async function pickFirst(page) {
+  if (await page.$('.suggestions li')) return page.tap('.suggestions li');
+  await page.type('.search input', 'zzqq');
+  await page.waitForSelector('.sugg-anyway');
+  await page.tap('.sugg-anyway');
+}
+
 async function playHole(page, label, query, hole) {
   await page.waitForSelector('.search input', { timeout: 8000 });
   if (hole === 0) await snap(page, `${label}-hole-${hole + 1}`, false);
@@ -56,9 +64,7 @@ async function playHole(page, label, query, hole) {
   await page.type('.search input', query, { delay: 40 });
   await sleep(250);
   if (hole === 0) await snap(page, `${label}-suggestions`, false);
-  const hasSugg = await page.$('.suggestions li');
-  if (hasSugg) await page.tap('.suggestions li');
-  else await page.tap('.sugg-anyway');
+  await pickFirst(page);
   await sleep(300);
   if (hole === 0) await snap(page, `${label}-chosen`, false);
   await clickText(page, 'Lock it in');
@@ -96,8 +102,11 @@ try {
   await clickText(A.page, 'Tee off');
   await playRound(A.page, 'A', ['st', 'ma', 'ro']);
   await snap(A.page, 'A-final-solo');
-  const shareA = await A.page.$eval('.share-url', (el) => el.textContent.trim());
-  console.log('  share link length', shareA.length);
+  await clickText(A.page, 'Send to a friend');
+  await sleep(300);
+  const sharedA = await A.page.evaluate(() => window.__shared);
+  const shareA = sharedA.url;
+  console.log('  A shared:', sharedA.text, `(link ${shareA.length} chars)`);
 
   // --- Player B opens the link
   console.log('Player B: join & play');
@@ -110,7 +119,7 @@ try {
   await sleep(300);
   await playRound(B.page, 'B', ['ar', 'li', 'sa']);
   await snap(B.page, 'B-final-h2h');
-  await clickText(B.page, 'Share the result');
+  await clickText(B.page, 'Send to Hanif');
   await sleep(300);
   const shared = await B.page.evaluate(() => window.__shared);
   console.log('  B shared:', shared?.text);
@@ -125,6 +134,16 @@ try {
   await snap(A.page, 'A-final-h2h');
   await A.page.goto(BASE, { waitUntil: 'networkidle0' });
   await snap(A.page, 'A-home-recent');
+
+  // --- A opens B's result in a fresh browser (e.g. Home Screen app): one tap to claim the card
+  console.log('Player A: fresh browser');
+  const A2 = await newPage(browser);
+  await A2.page.goto(shared.url, { waitUntil: 'networkidle0' });
+  await sleep(300);
+  await snap(A2.page, 'A2-result-landing', false);
+  await clickText(A2.page, "I'm");
+  await sleep(3200);
+  await snap(A2.page, 'A2-replay-hole-1', false);
 
   // --- Pass & play
   console.log('Pass & play');
@@ -148,8 +167,7 @@ try {
     await L.page.tap('.search input');
     await L.page.type('.search input', q);
     await sleep(200);
-    if (await L.page.$('.suggestions li')) await L.page.tap('.suggestions li');
-    else await L.page.tap('.sugg-anyway');
+    await pickFirst(L.page);
     await clickText(L.page, 'Lock it in');
     await sleep(400);
   }

@@ -1,7 +1,7 @@
 {
   "id": "world-cup-top-scorers",
   "title": "World Cup top scorers",
-  "prompt": "most World Cup goals (men's)",
+  "prompt": "most men's World Cup goals",
   "noun": "player",
   "nounPlural": "players",
   "metric": "Goals",

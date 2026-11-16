@@ -1,0 +1,440 @@
+{
+  "id": "pl-appearances",
+  "title": "Premier League all-time appearances",
+  "prompt": "most Premier League appearances",
+  "noun": "player",
+  "nounPlural": "players",
+  "metric": "Appearances",
+  "order": "desc",
+  "description": "Players with 400 or more Premier League appearances since 1992–93, to the end of 2025–26; tied players share a rank.",
+  "tags": [
+    "premier-league",
+    "players"
+  ],
+  "source": {
+    "name": "Wikipedia (Dutch): Lijst van spelers in de Premier League",
+    "url": "https://nl.wikipedia.org/wiki/Lijst_van_spelers_in_de_Premier_League",
+    "asOf": "2026-05-24"
+  },
+  "items": [
+    {
+      "id": "james-milner",
+      "name": "James Milner",
+      "sub": "England · Liverpool, Man City",
+      "value": 658,
+      "aliases": [
+        "Milner"
+      ]
+    },
+    {
+      "id": "gareth-barry",
+      "name": "Gareth Barry",
+      "sub": "England · Aston Villa, Man City",
+      "value": 653,
+      "aliases": [
+        "Barry"
+      ]
+    },
+    {
+      "id": "ryan-giggs",
+      "name": "Ryan Giggs",
+      "sub": "Wales · Man Utd",
+      "value": 632,
+      "aliases": [
+        "Giggs"
+      ]
+    },
+    {
+      "id": "frank-lampard",
+      "name": "Frank Lampard",
+      "sub": "England · Chelsea, West Ham",
+      "value": 609,
+      "aliases": [
+        "Lampard"
+      ]
+    },
+    {
+      "id": "david-james",
+      "name": "David James",
+      "sub": "England · GK · Liverpool, Portsmouth",
+      "value": 572,
+      "aliases": [
+        "James"
+      ]
+    },
+    {
+      "id": "gary-speed",
+      "name": "Gary Speed",
+      "sub": "Wales · Newcastle, Leeds",
+      "value": 535,
+      "aliases": [
+        "Speed"
+      ]
+    },
+    {
+      "id": "emile-heskey",
+      "name": "Emile Heskey",
+      "sub": "England · Liverpool, Leicester",
+      "value": 516,
+      "aliases": [
+        "Heskey"
+      ]
+    },
+    {
+      "id": "mark-schwarzer",
+      "name": "Mark Schwarzer",
+      "sub": "Australia · GK · Middlesbrough, Fulham",
+      "value": 514,
+      "aliases": [
+        "Schwarzer"
+      ]
+    },
+    {
+      "id": "jamie-carragher",
+      "name": "Jamie Carragher",
+      "sub": "England · Liverpool",
+      "value": 508,
+      "aliases": [
+        "Carragher"
+      ]
+    },
+    {
+      "id": "phil-neville",
+      "name": "Phil Neville",
+      "sub": "England · Man Utd, Everton",
+      "value": 505,
+      "aliases": [
+        "Philip Neville"
+      ]
+    },
+    {
+      "id": "rio-ferdinand",
+      "name": "Rio Ferdinand",
+      "sub": "England · Man Utd, West Ham",
+      "value": 504,
+      "aliases": [
+        "Ferdinand"
+      ]
+    },
+    {
+      "id": "steven-gerrard",
+      "name": "Steven Gerrard",
+      "sub": "England · Liverpool",
+      "value": 504,
+      "aliases": [
+        "Gerrard",
+        "Stevie G"
+      ]
+    },
+    {
+      "id": "sol-campbell",
+      "name": "Sol Campbell",
+      "sub": "England · Tottenham, Arsenal",
+      "value": 503,
+      "aliases": [
+        "Campbell"
+      ]
+    },
+    {
+      "id": "paul-scholes",
+      "name": "Paul Scholes",
+      "sub": "England · Man Utd",
+      "value": 499,
+      "aliases": [
+        "Scholes"
+      ]
+    },
+    {
+      "id": "jermain-defoe",
+      "name": "Jermain Defoe",
+      "sub": "England · Tottenham, Sunderland",
+      "value": 496,
+      "aliases": [
+        "Defoe"
+      ]
+    },
+    {
+      "id": "john-terry",
+      "name": "John Terry",
+      "sub": "England · Chelsea",
+      "value": 492,
+      "aliases": [
+        "Terry"
+      ]
+    },
+    {
+      "id": "wayne-rooney",
+      "name": "Wayne Rooney",
+      "sub": "England · Man Utd, Everton",
+      "value": 491,
+      "aliases": [
+        "Rooney",
+        "Wazza"
+      ]
+    },
+    {
+      "id": "ashley-young",
+      "name": "Ashley Young",
+      "sub": "England · Aston Villa, Man Utd",
+      "value": 485,
+      "aliases": [
+        "Young"
+      ]
+    },
+    {
+      "id": "michael-carrick",
+      "name": "Michael Carrick",
+      "sub": "England · Man Utd, West Ham",
+      "value": 481,
+      "aliases": [
+        "Carrick"
+      ]
+    },
+    {
+      "id": "sylvain-distin",
+      "name": "Sylvain Distin",
+      "sub": "France · Man City, Everton",
+      "value": 469,
+      "aliases": [
+        "Distin"
+      ]
+    },
+    {
+      "id": "peter-crouch",
+      "name": "Peter Crouch",
+      "sub": "England · Stoke, Liverpool",
+      "value": 468,
+      "aliases": [
+        "Crouch",
+        "Crouchy"
+      ]
+    },
+    {
+      "id": "jordan-henderson",
+      "name": "Jordan Henderson",
+      "sub": "England · Liverpool, Sunderland",
+      "value": 463,
+      "aliases": [
+        "Henderson",
+        "Hendo"
+      ]
+    },
+    {
+      "id": "aaron-hughes",
+      "name": "Aaron Hughes",
+      "sub": "Northern Ireland · Newcastle, Fulham",
+      "value": 455,
+      "aliases": [
+        "Hughes"
+      ]
+    },
+    {
+      "id": "shay-given",
+      "name": "Shay Given",
+      "sub": "Ireland · GK · Newcastle",
+      "value": 451,
+      "aliases": [
+        "Given"
+      ]
+    },
+    {
+      "id": "brad-friedel",
+      "name": "Brad Friedel",
+      "sub": "United States · GK · Blackburn, Aston Villa",
+      "value": 450,
+      "aliases": [
+        "Friedel"
+      ]
+    },
+    {
+      "id": "kyle-walker",
+      "name": "Kyle Walker",
+      "sub": "England · Man City, Tottenham",
+      "value": 446,
+      "aliases": [
+        "Walker"
+      ]
+    },
+    {
+      "id": "john-o-shea",
+      "name": "John O'Shea",
+      "sub": "Ireland · Man Utd, Sunderland",
+      "value": 445,
+      "aliases": [
+        "O'Shea",
+        "OShea"
+      ]
+    },
+    {
+      "id": "kevin-davies",
+      "name": "Kevin Davies",
+      "sub": "England · Bolton, Blackburn",
+      "value": 444,
+      "aliases": [
+        "Davies"
+      ]
+    },
+    {
+      "id": "petr-cech",
+      "name": "Petr Čech",
+      "sub": "Czech Republic · GK · Chelsea, Arsenal",
+      "value": 443,
+      "aliases": [
+        "Čech"
+      ]
+    },
+    {
+      "id": "alan-shearer",
+      "name": "Alan Shearer",
+      "sub": "England · Newcastle, Blackburn",
+      "value": 441,
+      "aliases": [
+        "Shearer"
+      ]
+    },
+    {
+      "id": "jussi-jaaskelainen",
+      "name": "Jussi Jääskeläinen",
+      "sub": "Finland · GK · Bolton",
+      "value": 436,
+      "aliases": [
+        "Jääskeläinen",
+        "Jussi"
+      ]
+    },
+    {
+      "id": "richard-dunne",
+      "name": "Richard Dunne",
+      "sub": "Ireland · Man City, Aston Villa",
+      "value": 431,
+      "aliases": [
+        "Dunne"
+      ]
+    },
+    {
+      "id": "gareth-southgate",
+      "name": "Gareth Southgate",
+      "sub": "England · Aston Villa, Middlesbrough",
+      "value": 426,
+      "aliases": [
+        "Southgate"
+      ]
+    },
+    {
+      "id": "james-ward-prowse",
+      "name": "James Ward-Prowse",
+      "sub": "England · Southampton",
+      "value": 422,
+      "aliases": [
+        "Ward-Prowse"
+      ]
+    },
+    {
+      "id": "leighton-baines",
+      "name": "Leighton Baines",
+      "sub": "England · Everton, Wigan",
+      "value": 420,
+      "aliases": [
+        "Baines"
+      ]
+    },
+    {
+      "id": "teddy-sheringham",
+      "name": "Teddy Sheringham",
+      "sub": "England · Tottenham, Man Utd",
+      "value": 418,
+      "aliases": [
+        "Sheringham"
+      ]
+    },
+    {
+      "id": "danny-murphy",
+      "name": "Danny Murphy",
+      "sub": "England · Liverpool, Fulham",
+      "value": 417,
+      "aliases": [
+        "Murphy"
+      ]
+    },
+    {
+      "id": "aaron-lennon",
+      "name": "Aaron Lennon",
+      "sub": "England · Tottenham, Burnley",
+      "value": 416,
+      "aliases": [
+        "Lennon"
+      ]
+    },
+    {
+      "id": "david-de-gea",
+      "name": "David de Gea",
+      "sub": "Spain · GK · Man Utd",
+      "value": 415,
+      "aliases": [
+        "de Gea",
+        "Dave"
+      ]
+    },
+    {
+      "id": "andy-cole",
+      "name": "Andy Cole",
+      "sub": "England · Man Utd, Blackburn",
+      "value": 414,
+      "aliases": [
+        "Cole",
+        "Andrew Cole"
+      ]
+    },
+    {
+      "id": "mark-noble",
+      "name": "Mark Noble",
+      "sub": "England · West Ham",
+      "value": 414,
+      "aliases": [
+        "Noble"
+      ]
+    },
+    {
+      "id": "nicky-butt",
+      "name": "Nicky Butt",
+      "sub": "England · Man Utd, Newcastle",
+      "value": 411,
+      "aliases": [
+        "Butt"
+      ]
+    },
+    {
+      "id": "stewart-downing",
+      "name": "Stewart Downing",
+      "sub": "England · Middlesbrough, West Ham",
+      "value": 408,
+      "aliases": [
+        "Downing"
+      ]
+    },
+    {
+      "id": "kevin-nolan",
+      "name": "Kevin Nolan",
+      "sub": "England · Bolton, West Ham",
+      "value": 401,
+      "aliases": [
+        "Nolan"
+      ]
+    },
+    {
+      "id": "gary-neville",
+      "name": "Gary Neville",
+      "sub": "England · Man Utd",
+      "value": 400
+    },
+    {
+      "id": "danny-welbeck",
+      "name": "Danny Welbeck",
+      "sub": "England · Brighton, Man Utd",
+      "value": 400,
+      "aliases": [
+        "Welbeck"
+      ]
+    }
+  ]
+}

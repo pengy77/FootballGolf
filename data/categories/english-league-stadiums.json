@@ -1,0 +1,1086 @@
+{
+  "id": "english-league-stadiums",
+  "title": "English league stadiums by capacity",
+  "prompt": "biggest stadium in English league football",
+  "noun": "stadium",
+  "nounPlural": "stadiums",
+  "metric": "Capacity",
+  "order": "desc",
+  "description": "Home grounds of all 92 Premier League and EFL clubs in 2026–27 (including the four Welsh clubs), ranked by capacity.",
+  "tags": [
+    "stadiums",
+    "england",
+    "clubs"
+  ],
+  "source": {
+    "name": "Wikipedia: List of football stadiums in England",
+    "url": "https://en.wikipedia.org/wiki/List_of_football_stadiums_in_England",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "old-trafford",
+      "name": "Old Trafford",
+      "sub": "Manchester United",
+      "value": 74244,
+      "display": "74,244",
+      "aliases": [
+        "Manchester United",
+        "Man Utd",
+        "Man United",
+        "Theatre of Dreams"
+      ]
+    },
+    {
+      "id": "tottenham-hotspur-stadium",
+      "name": "Tottenham Hotspur Stadium",
+      "sub": "Tottenham Hotspur · London",
+      "value": 62850,
+      "display": "62,850",
+      "aliases": [
+        "Tottenham Hotspur",
+        "Tottenham",
+        "Spurs"
+      ]
+    },
+    {
+      "id": "london-stadium",
+      "name": "London Stadium",
+      "sub": "West Ham United · London",
+      "value": 62500,
+      "display": "62,500",
+      "aliases": [
+        "West Ham United",
+        "West Ham",
+        "Olympic Stadium"
+      ]
+    },
+    {
+      "id": "anfield",
+      "name": "Anfield",
+      "sub": "Liverpool",
+      "value": 61276,
+      "display": "61,276",
+      "aliases": [
+        "Liverpool",
+        "LFC"
+      ]
+    },
+    {
+      "id": "etihad-stadium",
+      "name": "Etihad Stadium",
+      "sub": "Manchester City",
+      "value": 61038,
+      "display": "61,038",
+      "aliases": [
+        "Manchester City",
+        "Man City",
+        "Etihad",
+        "City of Manchester Stadium"
+      ]
+    },
+    {
+      "id": "emirates-stadium",
+      "name": "Emirates Stadium",
+      "sub": "Arsenal · London",
+      "value": 60704,
+      "display": "60,704",
+      "aliases": [
+        "Arsenal",
+        "Emirates",
+        "Gunners"
+      ]
+    },
+    {
+      "id": "hill-dickinson-stadium",
+      "name": "Hill Dickinson Stadium",
+      "sub": "Everton · Liverpool",
+      "value": 52769,
+      "display": "52,769",
+      "aliases": [
+        "Everton",
+        "Everton Stadium",
+        "Bramley-Moore Dock",
+        "Toffees"
+      ]
+    },
+    {
+      "id": "st-james-park",
+      "name": "St James' Park",
+      "sub": "Newcastle United · Newcastle upon Tyne",
+      "value": 52719,
+      "display": "52,719",
+      "aliases": [
+        "Newcastle United",
+        "Newcastle",
+        "St James Park Newcastle",
+        "Toon"
+      ]
+    },
+    {
+      "id": "stadium-of-light",
+      "name": "Stadium of Light",
+      "sub": "Sunderland",
+      "value": 48095,
+      "display": "48,095",
+      "aliases": [
+        "Sunderland"
+      ]
+    },
+    {
+      "id": "villa-park",
+      "name": "Villa Park",
+      "sub": "Aston Villa · Birmingham",
+      "value": 43205,
+      "display": "43,205",
+      "aliases": [
+        "Aston Villa",
+        "Villa"
+      ]
+    },
+    {
+      "id": "stamford-bridge",
+      "name": "Stamford Bridge",
+      "sub": "Chelsea · London",
+      "value": 40044,
+      "display": "40,044",
+      "aliases": [
+        "Chelsea",
+        "The Bridge"
+      ]
+    },
+    {
+      "id": "elland-road",
+      "name": "Elland Road",
+      "sub": "Leeds United",
+      "value": 37645,
+      "display": "37,645",
+      "aliases": [
+        "Leeds United",
+        "Leeds"
+      ]
+    },
+    {
+      "id": "hillsborough",
+      "name": "Hillsborough",
+      "sub": "Sheffield Wednesday",
+      "value": 34835,
+      "display": "34,835",
+      "aliases": [
+        "Sheffield Wednesday",
+        "Sheff Wed",
+        "Wednesday",
+        "Hillsborough Stadium"
+      ]
+    },
+    {
+      "id": "riverside-stadium",
+      "name": "Riverside Stadium",
+      "sub": "Middlesbrough",
+      "value": 33931,
+      "display": "33,931",
+      "aliases": [
+        "Middlesbrough",
+        "Boro",
+        "The Riverside"
+      ]
+    },
+    {
+      "id": "cardiff-city-stadium",
+      "name": "Cardiff City Stadium",
+      "sub": "Cardiff City",
+      "value": 33280,
+      "display": "33,280",
+      "aliases": [
+        "Cardiff City",
+        "Cardiff"
+      ]
+    },
+    {
+      "id": "pride-park",
+      "name": "Pride Park",
+      "sub": "Derby County",
+      "value": 32956,
+      "display": "32,956",
+      "aliases": [
+        "Derby County",
+        "Derby",
+        "Pride Park Stadium"
+      ]
+    },
+    {
+      "id": "coventry-building-society-arena",
+      "name": "Coventry Building Society Arena",
+      "sub": "Coventry City",
+      "value": 32609,
+      "display": "32,609",
+      "aliases": [
+        "Coventry City",
+        "Coventry",
+        "CBS Arena",
+        "Ricoh Arena"
+      ]
+    },
+    {
+      "id": "st-mary-s-stadium",
+      "name": "St Mary's Stadium",
+      "sub": "Southampton",
+      "value": 32384,
+      "display": "32,384",
+      "aliases": [
+        "Southampton",
+        "Saints"
+      ]
+    },
+    {
+      "id": "king-power-stadium",
+      "name": "King Power Stadium",
+      "sub": "Leicester City",
+      "value": 32259,
+      "display": "32,259",
+      "aliases": [
+        "Leicester City",
+        "Leicester"
+      ]
+    },
+    {
+      "id": "bramall-lane",
+      "name": "Bramall Lane",
+      "sub": "Sheffield United",
+      "value": 32050,
+      "display": "32,050",
+      "aliases": [
+        "Sheffield United",
+        "Sheff Utd",
+        "Blades"
+      ]
+    },
+    {
+      "id": "falmer-stadium",
+      "name": "Falmer Stadium",
+      "sub": "Brighton & Hove Albion · Falmer",
+      "value": 31876,
+      "display": "31,876",
+      "aliases": [
+        "Brighton & Hove Albion",
+        "Brighton",
+        "Amex",
+        "Amex Stadium",
+        "American Express Stadium"
+      ]
+    },
+    {
+      "id": "molineux",
+      "name": "Molineux",
+      "sub": "Wolverhampton Wanderers",
+      "value": 31750,
+      "display": "31,750",
+      "aliases": [
+        "Wolverhampton Wanderers",
+        "Wolves",
+        "Molineux Stadium"
+      ]
+    },
+    {
+      "id": "ewood-park",
+      "name": "Ewood Park",
+      "sub": "Blackburn Rovers",
+      "value": 31363,
+      "display": "31,363",
+      "aliases": [
+        "Blackburn Rovers",
+        "Blackburn"
+      ]
+    },
+    {
+      "id": "city-ground",
+      "name": "City Ground",
+      "sub": "Nottingham Forest · West Bridgford",
+      "value": 30404,
+      "display": "30,404",
+      "aliases": [
+        "Nottingham Forest",
+        "Forest",
+        "Nottm Forest"
+      ]
+    },
+    {
+      "id": "stadium-mk",
+      "name": "Stadium MK",
+      "sub": "Milton Keynes Dons",
+      "value": 30303,
+      "display": "30,303",
+      "aliases": [
+        "Milton Keynes Dons",
+        "MK Dons"
+      ]
+    },
+    {
+      "id": "bet365-stadium",
+      "name": "bet365 Stadium",
+      "sub": "Stoke City · Stoke-on-Trent",
+      "value": 30089,
+      "display": "30,089",
+      "aliases": [
+        "Stoke City",
+        "Stoke",
+        "Britannia Stadium"
+      ]
+    },
+    {
+      "id": "portman-road",
+      "name": "Portman Road",
+      "sub": "Ipswich Town",
+      "value": 29813,
+      "display": "29,813",
+      "aliases": [
+        "Ipswich Town",
+        "Ipswich"
+      ]
+    },
+    {
+      "id": "st-andrew-s",
+      "name": "St Andrew's",
+      "sub": "Birmingham City",
+      "value": 29409,
+      "display": "29,409",
+      "aliases": [
+        "Birmingham City",
+        "Birmingham",
+        "Blues",
+        "St Andrews",
+        "Knighthead Park"
+      ]
+    },
+    {
+      "id": "toughsheet-community-stadium",
+      "name": "Toughsheet Community Stadium",
+      "sub": "Bolton Wanderers · Horwich",
+      "value": 28018,
+      "display": "28,018",
+      "aliases": [
+        "Bolton Wanderers",
+        "Bolton",
+        "University of Bolton Stadium",
+        "Reebok Stadium",
+        "Macron Stadium"
+      ]
+    },
+    {
+      "id": "craven-cottage",
+      "name": "Craven Cottage",
+      "sub": "Fulham · London",
+      "value": 27782,
+      "display": "27,782",
+      "aliases": [
+        "Fulham",
+        "The Cottage"
+      ]
+    },
+    {
+      "id": "carrow-road",
+      "name": "Carrow Road",
+      "sub": "Norwich City",
+      "value": 27359,
+      "display": "27,359",
+      "aliases": [
+        "Norwich City",
+        "Norwich"
+      ]
+    },
+    {
+      "id": "the-valley",
+      "name": "The Valley",
+      "sub": "Charlton Athletic · London",
+      "value": 27111,
+      "display": "27,111",
+      "aliases": [
+        "Charlton Athletic",
+        "Charlton"
+      ]
+    },
+    {
+      "id": "ashton-gate-stadium",
+      "name": "Ashton Gate Stadium",
+      "sub": "Bristol City",
+      "value": 27000,
+      "display": "27,000",
+      "aliases": [
+        "Bristol City",
+        "Ashton Gate"
+      ]
+    },
+    {
+      "id": "the-hawthorns",
+      "name": "The Hawthorns",
+      "sub": "West Bromwich Albion",
+      "value": 26688,
+      "display": "26,688",
+      "aliases": [
+        "West Bromwich Albion",
+        "West Brom",
+        "WBA"
+      ]
+    },
+    {
+      "id": "mkm-stadium",
+      "name": "MKM Stadium",
+      "sub": "Hull City · Kingston upon Hull",
+      "value": 25586,
+      "display": "25,586",
+      "aliases": [
+        "Hull City",
+        "Hull",
+        "KCOM Stadium",
+        "KC Stadium"
+      ]
+    },
+    {
+      "id": "selhurst-park",
+      "name": "Selhurst Park",
+      "sub": "Crystal Palace · London",
+      "value": 25194,
+      "display": "25,194",
+      "aliases": [
+        "Crystal Palace",
+        "Palace"
+      ]
+    },
+    {
+      "id": "brick-community-stadium",
+      "name": "Brick Community Stadium",
+      "sub": "Wigan Athletic",
+      "value": 25133,
+      "display": "25,133",
+      "aliases": [
+        "Wigan Athletic",
+        "Wigan",
+        "DW Stadium",
+        "JJB Stadium"
+      ]
+    },
+    {
+      "id": "valley-parade",
+      "name": "Valley Parade",
+      "sub": "Bradford City",
+      "value": 24433,
+      "display": "24,433",
+      "aliases": [
+        "Bradford City",
+        "Bradford"
+      ]
+    },
+    {
+      "id": "madejski-stadium",
+      "name": "Madejski Stadium",
+      "sub": "Reading",
+      "value": 24376,
+      "display": "24,376",
+      "aliases": [
+        "Reading",
+        "Select Car Leasing Stadium"
+      ]
+    },
+    {
+      "id": "kirklees-stadium",
+      "name": "Kirklees Stadium",
+      "sub": "Huddersfield Town",
+      "value": 24329,
+      "display": "24,329",
+      "aliases": [
+        "Huddersfield Town",
+        "Huddersfield",
+        "John Smith's Stadium",
+        "Accu Stadium",
+        "McAlpine Stadium"
+      ]
+    },
+    {
+      "id": "deepdale",
+      "name": "Deepdale",
+      "sub": "Preston North End",
+      "value": 23404,
+      "display": "23,404",
+      "aliases": [
+        "Preston North End",
+        "Preston",
+        "PNE"
+      ]
+    },
+    {
+      "id": "oakwell",
+      "name": "Oakwell",
+      "sub": "Barnsley",
+      "value": 23287,
+      "display": "23,287",
+      "aliases": [
+        "Barnsley"
+      ]
+    },
+    {
+      "id": "vicarage-road",
+      "name": "Vicarage Road",
+      "sub": "Watford",
+      "value": 22200,
+      "display": "22,200",
+      "aliases": [
+        "Watford"
+      ]
+    },
+    {
+      "id": "turf-moor",
+      "name": "Turf Moor",
+      "sub": "Burnley",
+      "value": 21990,
+      "display": "21,990",
+      "aliases": [
+        "Burnley"
+      ]
+    },
+    {
+      "id": "liberty-stadium",
+      "name": "Liberty Stadium",
+      "sub": "Swansea City",
+      "value": 20996,
+      "display": "20,996",
+      "aliases": [
+        "Swansea City",
+        "Swansea",
+        "Swansea.com Stadium"
+      ]
+    },
+    {
+      "id": "fratton-park",
+      "name": "Fratton Park",
+      "sub": "Portsmouth",
+      "value": 20899,
+      "display": "20,899",
+      "aliases": [
+        "Portsmouth",
+        "Pompey"
+      ]
+    },
+    {
+      "id": "meadow-lane",
+      "name": "Meadow Lane",
+      "sub": "Notts County · Nottingham",
+      "value": 19841,
+      "display": "19,841",
+      "aliases": [
+        "Notts County",
+        "Notts"
+      ]
+    },
+    {
+      "id": "the-den",
+      "name": "The Den",
+      "sub": "Millwall · London",
+      "value": 19369,
+      "display": "19,369",
+      "aliases": [
+        "Millwall"
+      ]
+    },
+    {
+      "id": "loftus-road",
+      "name": "Loftus Road",
+      "sub": "Queens Park Rangers · London",
+      "value": 18193,
+      "display": "18,193",
+      "aliases": [
+        "Queens Park Rangers",
+        "QPR"
+      ]
+    },
+    {
+      "id": "home-park",
+      "name": "Home Park",
+      "sub": "Plymouth Argyle",
+      "value": 17904,
+      "display": "17,904",
+      "aliases": [
+        "Plymouth Argyle",
+        "Plymouth"
+      ]
+    },
+    {
+      "id": "brentford-community-stadium",
+      "name": "Brentford Community Stadium",
+      "sub": "Brentford · London",
+      "value": 17250,
+      "display": "17,250",
+      "aliases": [
+        "Brentford",
+        "Gtech Community Stadium",
+        "Bees"
+      ]
+    },
+    {
+      "id": "bloomfield-road",
+      "name": "Bloomfield Road",
+      "sub": "Blackpool",
+      "value": 16616,
+      "display": "16,616",
+      "aliases": [
+        "Blackpool"
+      ]
+    },
+    {
+      "id": "county-ground",
+      "name": "County Ground",
+      "sub": "Swindon Town",
+      "value": 15547,
+      "display": "15,547",
+      "aliases": [
+        "Swindon Town",
+        "Swindon"
+      ]
+    },
+    {
+      "id": "eco-power-stadium",
+      "name": "Eco-Power Stadium",
+      "sub": "Doncaster Rovers",
+      "value": 15148,
+      "display": "15,148",
+      "aliases": [
+        "Doncaster Rovers",
+        "Doncaster",
+        "Keepmoat Stadium",
+        "Club Doncaster Sports Village"
+      ]
+    },
+    {
+      "id": "vale-park",
+      "name": "Vale Park",
+      "sub": "Port Vale · Stoke-on-Trent",
+      "value": 15036,
+      "display": "15,036",
+      "aliases": [
+        "Port Vale"
+      ]
+    },
+    {
+      "id": "prenton-park",
+      "name": "Prenton Park",
+      "sub": "Tranmere Rovers · Birkenhead",
+      "value": 15012,
+      "display": "15,012",
+      "aliases": [
+        "Tranmere Rovers",
+        "Tranmere"
+      ]
+    },
+    {
+      "id": "london-road",
+      "name": "London Road",
+      "sub": "Peterborough United",
+      "value": 13513,
+      "display": "13,513",
+      "aliases": [
+        "Peterborough United",
+        "Peterborough",
+        "Posh",
+        "London Road Stadium",
+        "Weston Homes Stadium"
+      ]
+    },
+    {
+      "id": "boundary-park",
+      "name": "Boundary Park",
+      "sub": "Oldham Athletic",
+      "value": 13513,
+      "display": "13,513",
+      "aliases": [
+        "Oldham Athletic",
+        "Oldham"
+      ]
+    },
+    {
+      "id": "kassam-stadium",
+      "name": "Kassam Stadium",
+      "sub": "Oxford United",
+      "value": 12537,
+      "display": "12,537",
+      "aliases": [
+        "Oxford United",
+        "Oxford",
+        "Kassam"
+      ]
+    },
+    {
+      "id": "memorial-stadium",
+      "name": "Memorial Stadium",
+      "sub": "Bristol Rovers",
+      "value": 12500,
+      "display": "12,500",
+      "aliases": [
+        "Bristol Rovers",
+        "The Mem"
+      ]
+    },
+    {
+      "id": "new-york-stadium",
+      "name": "New York Stadium",
+      "sub": "Rotherham United",
+      "value": 12088,
+      "display": "12,088",
+      "aliases": [
+        "Rotherham United",
+        "Rotherham",
+        "AESSEAL New York Stadium"
+      ]
+    },
+    {
+      "id": "priestfield-stadium",
+      "name": "Priestfield Stadium",
+      "sub": "Gillingham",
+      "value": 11582,
+      "display": "11,582",
+      "aliases": [
+        "Gillingham",
+        "Priestfield"
+      ]
+    },
+    {
+      "id": "dean-court",
+      "name": "Dean Court",
+      "sub": "Bournemouth",
+      "value": 11307,
+      "display": "11,307",
+      "aliases": [
+        "Bournemouth",
+        "AFC Bournemouth",
+        "Cherries",
+        "Vitality Stadium"
+      ]
+    },
+    {
+      "id": "bescot-stadium",
+      "name": "Bescot Stadium",
+      "sub": "Walsall",
+      "value": 10863,
+      "display": "10,863",
+      "aliases": [
+        "Walsall"
+      ]
+    },
+    {
+      "id": "edgeley-park",
+      "name": "Edgeley Park",
+      "sub": "Stockport County",
+      "value": 10800,
+      "display": "10,800",
+      "aliases": [
+        "Stockport County",
+        "Stockport"
+      ]
+    },
+    {
+      "id": "sincil-bank",
+      "name": "Sincil Bank",
+      "sub": "Lincoln City",
+      "value": 10780,
+      "display": "10,780",
+      "aliases": [
+        "Lincoln City",
+        "Lincoln",
+        "LNER Stadium"
+      ]
+    },
+    {
+      "id": "racecourse-ground",
+      "name": "Racecourse Ground",
+      "sub": "Wrexham",
+      "value": 10500,
+      "display": "10,500",
+      "aliases": [
+        "Wrexham",
+        "STōK Cae Ras"
+      ]
+    },
+    {
+      "id": "smh-group-stadium",
+      "name": "SMH Group Stadium",
+      "sub": "Chesterfield",
+      "value": 10400,
+      "display": "10,400",
+      "aliases": [
+        "Chesterfield",
+        "Proact Stadium"
+      ]
+    },
+    {
+      "id": "kenilworth-road",
+      "name": "Kenilworth Road",
+      "sub": "Luton Town",
+      "value": 10265,
+      "display": "10,265",
+      "aliases": [
+        "Luton Town",
+        "Luton"
+      ]
+    },
+    {
+      "id": "gresty-road",
+      "name": "Gresty Road",
+      "sub": "Crewe Alexandra",
+      "value": 10109,
+      "display": "10,109",
+      "aliases": [
+        "Crewe Alexandra",
+        "Crewe",
+        "Mornflake Stadium"
+      ]
+    },
+    {
+      "id": "colchester-community-stadium",
+      "name": "Colchester Community Stadium",
+      "sub": "Colchester United",
+      "value": 10105,
+      "display": "10,105",
+      "aliases": [
+        "Colchester United",
+        "Colchester",
+        "JobServe Community Stadium"
+      ]
+    },
+    {
+      "id": "new-meadow",
+      "name": "New Meadow",
+      "sub": "Shrewsbury Town",
+      "value": 9875,
+      "display": "9,875",
+      "aliases": [
+        "Shrewsbury Town",
+        "Shrewsbury"
+      ]
+    },
+    {
+      "id": "adams-park",
+      "name": "Adams Park",
+      "sub": "Wycombe Wanderers · High Wycombe",
+      "value": 9558,
+      "display": "9,558",
+      "aliases": [
+        "Wycombe Wanderers",
+        "Wycombe"
+      ]
+    },
+    {
+      "id": "blundell-park",
+      "name": "Blundell Park",
+      "sub": "Grimsby Town · Cleethorpes",
+      "value": 9546,
+      "display": "9,546",
+      "aliases": [
+        "Grimsby Town",
+        "Grimsby"
+      ]
+    },
+    {
+      "id": "spotland",
+      "name": "Spotland",
+      "sub": "Rochdale",
+      "value": 9507,
+      "display": "9,507",
+      "aliases": [
+        "Rochdale",
+        "Spotland Stadium",
+        "Crown Oil Arena"
+      ]
+    },
+    {
+      "id": "field-mill",
+      "name": "Field Mill",
+      "sub": "Mansfield Town",
+      "value": 9376,
+      "display": "9,376",
+      "aliases": [
+        "Mansfield Town",
+        "Mansfield",
+        "One Call Stadium"
+      ]
+    },
+    {
+      "id": "brisbane-road",
+      "name": "Brisbane Road",
+      "sub": "Leyton Orient · London",
+      "value": 9253,
+      "display": "9,253",
+      "aliases": [
+        "Leyton Orient",
+        "Orient"
+      ]
+    },
+    {
+      "id": "plough-lane",
+      "name": "Plough Lane",
+      "sub": "AFC Wimbledon · London",
+      "value": 9150,
+      "display": "9,150",
+      "aliases": [
+        "AFC Wimbledon",
+        "Wimbledon",
+        "Cherry Red Records Stadium"
+      ]
+    },
+    {
+      "id": "rodney-parade",
+      "name": "Rodney Parade",
+      "sub": "Newport County",
+      "value": 8722,
+      "display": "8,722",
+      "aliases": [
+        "Newport County",
+        "Newport"
+      ]
+    },
+    {
+      "id": "st-james-park-exeter-city",
+      "name": "St James Park",
+      "sub": "Exeter City",
+      "value": 8714,
+      "display": "8,714",
+      "aliases": [
+        "Exeter City",
+        "Exeter",
+        "St James Park Exeter"
+      ]
+    },
+    {
+      "id": "york-community-stadium",
+      "name": "York Community Stadium",
+      "sub": "York City",
+      "value": 8500,
+      "display": "8,500",
+      "aliases": [
+        "York City",
+        "York",
+        "LNER Community Stadium"
+      ]
+    },
+    {
+      "id": "sixfields-stadium",
+      "name": "Sixfields Stadium",
+      "sub": "Northampton Town",
+      "value": 8203,
+      "display": "8,203",
+      "aliases": [
+        "Northampton Town",
+        "Northampton",
+        "Cobblers"
+      ]
+    },
+    {
+      "id": "abbey-stadium",
+      "name": "Abbey Stadium",
+      "sub": "Cambridge United",
+      "value": 8024,
+      "display": "8,024",
+      "aliases": [
+        "Cambridge United",
+        "Cambridge"
+      ]
+    },
+    {
+      "id": "broadhall-way",
+      "name": "Broadhall Way",
+      "sub": "Stevenage",
+      "value": 7426,
+      "display": "7,426",
+      "aliases": [
+        "Stevenage",
+        "Lamex Stadium"
+      ]
+    },
+    {
+      "id": "pirelli-stadium",
+      "name": "Pirelli Stadium",
+      "sub": "Burton Albion · Burton upon Trent",
+      "value": 7088,
+      "display": "7,088",
+      "aliases": [
+        "Burton Albion",
+        "Burton"
+      ]
+    },
+    {
+      "id": "whaddon-road",
+      "name": "Whaddon Road",
+      "sub": "Cheltenham Town",
+      "value": 6923,
+      "display": "6,923",
+      "aliases": [
+        "Cheltenham Town",
+        "Cheltenham"
+      ]
+    },
+    {
+      "id": "broadfield-stadium",
+      "name": "Broadfield Stadium",
+      "sub": "Crawley Town",
+      "value": 5907,
+      "display": "5,907",
+      "aliases": [
+        "Crawley Town",
+        "Crawley"
+      ]
+    },
+    {
+      "id": "crown-ground",
+      "name": "Crown Ground",
+      "sub": "Accrington Stanley",
+      "value": 5278,
+      "display": "5,278",
+      "aliases": [
+        "Accrington Stanley",
+        "Accrington",
+        "Wham Stadium"
+      ]
+    },
+    {
+      "id": "the-hive-stadium",
+      "name": "The Hive Stadium",
+      "sub": "Barnet · London",
+      "value": 5233,
+      "display": "5,233",
+      "aliases": [
+        "Barnet",
+        "The Hive"
+      ]
+    },
+    {
+      "id": "highbury-stadium",
+      "name": "Highbury Stadium",
+      "sub": "Fleetwood Town",
+      "value": 5137,
+      "display": "5,137",
+      "aliases": [
+        "Fleetwood Town",
+        "Fleetwood"
+      ]
+    },
+    {
+      "id": "moor-lane",
+      "name": "Moor Lane",
+      "sub": "Salford City",
+      "value": 5032,
+      "display": "5,032",
+      "aliases": [
+        "Salford City",
+        "Salford",
+        "Peninsula Stadium"
+      ]
+    },
+    {
+      "id": "hayes-lane",
+      "name": "Hayes Lane",
+      "sub": "Bromley · London",
+      "value": 5000,
+      "display": "5,000",
+      "aliases": [
+        "Bromley"
+      ]
+    }
+  ]
+}

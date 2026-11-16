@@ -90,8 +90,17 @@ export function createGame(opts: { mode: Mode; course: CourseId; holes: number; 
   };
 }
 
+/** No hole costs more than this, so one long list (e.g. 211 nations) can't decide a match on its own. */
+export const HOLE_MAX = 40;
+
+/** Out of bounds: 1 worse than the worst answer on the list, capped at the hole maximum. */
 export function obStrokes(cat: Category, target: number): number {
-  return Math.max(target - 1, cat.size - target) + 1;
+  return Math.min(Math.max(target - 1, cat.size - target) + 1, HOLE_MAX);
+}
+
+/** The rank inside an item's (possibly tied) range that sits closest to the target. */
+export function nearestRank(item: Item, target: number): number {
+  return Math.min(Math.max(target, item.lo), item.hi);
 }
 
 export function distance(item: Item, target: number): number {
@@ -125,19 +134,30 @@ export interface HoleResult {
   /** Free text for an off-the-list answer ('' if they gave up) */
   offList?: string;
   strokes: number;
+  /** Strokes before the per-hole cap */
+  raw: number;
+  capped: boolean;
   verdict?: Verdict;
 }
 
 export function holeResult(hole: Hole, pick: Pick): HoleResult {
   const cat = CATEGORY_BY_ID.get(hole.cat);
-  if (pick === null || !cat) return { played: false, strokes: 0 };
+  if (pick === null || !cat) return { played: false, strokes: 0, raw: 0, capped: false };
   const item = pick.startsWith('~') ? undefined : cat.byId.get(pick);
   if (!item) {
     const strokes = obStrokes(cat, hole.target);
-    return { played: true, offList: pick.startsWith('~') ? pick.slice(1) : '', strokes, verdict: verdictFor(strokes, cat.size, true) };
+    return {
+      played: true,
+      offList: pick.startsWith('~') ? pick.slice(1) : '',
+      strokes,
+      raw: strokes,
+      capped: strokes === HOLE_MAX,
+      verdict: verdictFor(strokes, cat.size, true),
+    };
   }
-  const strokes = distance(item, hole.target);
-  return { played: true, item, strokes, verdict: verdictFor(strokes, cat.size, false) };
+  const raw = distance(item, hole.target);
+  const strokes = Math.min(raw, HOLE_MAX);
+  return { played: true, item, strokes, raw, capped: raw > HOLE_MAX, verdict: verdictFor(raw, cat.size, false) };
 }
 
 export function perfectAnswers(hole: Hole): Item[] {
@@ -181,8 +201,9 @@ export function ordinal(n: number): string {
   return `${n}${ordinalSuffix(n)}`;
 }
 
+/** "35th", or "20–21st" for a tie (tied entries share every place in the range). */
 export function rankLabel(item: Item): string {
-  return item.lo === item.hi ? ordinal(item.pos) : `=${ordinal(item.lo)}`;
+  return item.lo === item.hi ? ordinal(item.pos) : `${item.lo}\u2060–\u2060${ordinal(item.hi)}`; // word joiners: never wrap a range
 }
 
 export function cleanName(s: string): string {

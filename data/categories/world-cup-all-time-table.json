@@ -6,7 +6,7 @@
   "nounPlural": "nations",
   "metric": "Points",
   "order": "desc",
-  "description": "All-time men's World Cup finals points, 1930–2026 (3 per win, 1 per draw, shoot-outs count as draws); predecessor teams credited to successors (West Germany to Germany, Soviet Union to Russia, Yugoslavia to Serbia).",
+  "description": "All-time men's World Cup finals points, 1930–2026 (3 per win, 1 per draw, shoot-outs count as draws); predecessor teams credited to one successor each (West Germany to Germany, Soviet Union to Russia, Yugoslavia to Serbia, Czechoslovakia to the Czech Republic).",
   "tags": [
     "world-cup",
     "international"
@@ -163,15 +163,6 @@
         "US",
         "United States of America",
         "America"
-      ]
-    },
-    {
-      "id": "slovakia",
-      "name": "Slovakia",
-      "sub": "UEFA",
-      "value": 42,
-      "aliases": [
-        "Czechoslovakia"
       ]
     },
     {
@@ -424,6 +415,12 @@
       "name": "Canada",
       "sub": "CONCACAF",
       "value": 7
+    },
+    {
+      "id": "slovakia",
+      "name": "Slovakia",
+      "sub": "UEFA",
+      "value": 4
     },
     {
       "id": "slovenia",

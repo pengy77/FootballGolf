@@ -1,7 +1,7 @@
 {
   "id": "intl-goals",
   "title": "International goals",
-  "prompt": "most international goals (men's)",
+  "prompt": "most men's international goals",
   "noun": "player",
   "nounPlural": "players",
   "metric": "Goals",
@@ -221,8 +221,7 @@
       "value": 71,
       "aliases": [
         "Kiatisuk",
-        "Senamuang",
-        "Zico"
+        "Senamuang"
       ]
     },
     {

@@ -1,7 +1,7 @@
 {
   "id": "world-cup-appearances-players",
   "title": "World Cup appearances",
-  "prompt": "most World Cup matches played (men's)",
+  "prompt": "most men's World Cup matches played",
   "noun": "player",
   "nounPlural": "players",
   "metric": "Matches",
@@ -43,7 +43,7 @@
     {
       "id": "lothar-matthaus",
       "name": "Lothar Matthäus",
-      "sub": "Germany",
+      "sub": "West Germany / Germany",
       "value": 25,
       "aliases": [
         "Matthäus",
@@ -335,7 +335,7 @@
     {
       "id": "thomas-berthold",
       "name": "Thomas Berthold",
-      "sub": "Germany",
+      "sub": "West Germany / Germany",
       "value": 18,
       "aliases": [
         "Berthold"
@@ -541,7 +541,7 @@
     {
       "id": "jurgen-klinsmann",
       "name": "Jürgen Klinsmann",
-      "sub": "Germany",
+      "sub": "West Germany / Germany",
       "value": 17,
       "aliases": [
         "Klinsmann",
@@ -685,7 +685,7 @@
     {
       "id": "andreas-brehme",
       "name": "Andreas Brehme",
-      "sub": "Germany",
+      "sub": "West Germany / Germany",
       "value": 16,
       "aliases": [
         "Brehme"
@@ -932,7 +932,7 @@
     {
       "id": "rudi-voller",
       "name": "Rudi Völler",
-      "sub": "Germany",
+      "sub": "West Germany / Germany",
       "value": 15,
       "aliases": [
         "Völler",

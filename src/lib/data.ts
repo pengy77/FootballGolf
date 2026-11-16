@@ -51,6 +51,8 @@ export const COURSES: { id: CourseId; name: string; blurb: string; tags: string[
 export function buildCategory(raw: RawCategory): Category {
   const items: Item[] = raw.items.map((it, i) => ({
     ...it,
+    // "Málaga · Málaga" (club · city) reads as a glitch: drop repeated segments.
+    sub: it.sub ? [...new Set(it.sub.split(' · ').map((x) => x.trim()))].join(' · ') : it.sub,
     pos: i + 1,
     lo: i + 1,
     hi: i + 1,

@@ -52,7 +52,9 @@ export function PickBox({
   const [focused, setFocused] = useState(false);
   const [active, setActive] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
-  const results = useMemo(() => searchItems(cat, q), [cat, q]);
+  const results = useMemo(() => searchItems(cat, q, 6), [cat, q]);
+  // Only offer an off-the-list answer once it looks like a real name, not a 2-letter fragment.
+  const canPlayAnyway = norm(q).replace(/ /g, '').length >= 4;
   const open = focused && norm(q).length >= 2;
   const listId = `sugg-${cat.id}`;
 
@@ -134,7 +136,6 @@ export function PickBox({
             } else if (e.key === 'Enter') {
               e.preventDefault();
               if (results[active]) choose({ item: results[active] });
-              else if (norm(q).length >= 2) playAnyway();
             } else if (e.key === 'Escape') {
               setQ('');
             }
@@ -177,12 +178,14 @@ export function PickBox({
           </ul>
           {results.length === 0 && (
             <p className="sugg-empty">
-              No {cat.noun} on the list matches “{q.trim()}”.
+              No {cat.noun} on the list matches “{q.trim()}”.{!canPlayAnyway && ' Keep typing, or check the spelling.'}
             </p>
           )}
-          <button type="button" className="sugg-anyway" onClick={playAnyway}>
-            {results.length ? 'Not here? ' : ''}Play “{q.trim()}” anyway <span className="sugg-ob">Out of bounds</span>
-          </button>
+          {canPlayAnyway && (
+            <button type="button" className="sugg-anyway" onClick={playAnyway}>
+              {results.length ? 'Not here? ' : ''}Play “{q.trim()}” anyway <span className="sugg-ob">Out of bounds</span>
+            </button>
+          )}
         </div>
       )}
       {!open && (

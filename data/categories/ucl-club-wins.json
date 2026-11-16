@@ -1,0 +1,897 @@
+{
+  "id": "ucl-club-wins",
+  "title": "Champions League match wins",
+  "prompt": "most Champions League match wins (up to 2024–25)",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "metric": "Wins",
+  "order": "desc",
+  "description": "All-time match wins in the European Cup and Champions League since 1955, including qualifying rounds (shoot-outs count as draws), up to the end of the 2024–25 season.",
+  "tags": [
+    "champions-league",
+    "clubs",
+    "europe"
+  ],
+  "source": {
+    "name": "Wikipedia (German): Ewige Tabelle der UEFA Champions League und des Europapokals der Landesmeister",
+    "url": "https://de.wikipedia.org/wiki/Ewige_Tabelle_der_UEFA_Champions_League_und_des_Europapokals_der_Landesmeister",
+    "asOf": "2025-05-31"
+  },
+  "items": [
+    {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "sub": "Spain",
+      "value": 302,
+      "aliases": [
+        "Real",
+        "Los Blancos"
+      ]
+    },
+    {
+      "id": "bayern-munich",
+      "name": "Bayern Munich",
+      "sub": "Germany",
+      "value": 244,
+      "aliases": [
+        "Bayern",
+        "FC Bayern",
+        "Bayern München"
+      ]
+    },
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "sub": "Spain",
+      "value": 212,
+      "aliases": [
+        "Barça",
+        "FC Barcelona"
+      ]
+    },
+    {
+      "id": "manchester-united",
+      "name": "Manchester United",
+      "sub": "England",
+      "value": 161,
+      "aliases": [
+        "Man Utd",
+        "Man United"
+      ]
+    },
+    {
+      "id": "juventus",
+      "name": "Juventus",
+      "sub": "Italy",
+      "value": 157,
+      "aliases": [
+        "Juve"
+      ]
+    },
+    {
+      "id": "liverpool",
+      "name": "Liverpool",
+      "sub": "England",
+      "value": 150,
+      "aliases": [
+        "LFC"
+      ]
+    },
+    {
+      "id": "ac-milan",
+      "name": "AC Milan",
+      "sub": "Italy",
+      "value": 138,
+      "aliases": [
+        "Milan"
+      ]
+    },
+    {
+      "id": "benfica",
+      "name": "Benfica",
+      "sub": "Portugal",
+      "value": 136,
+      "aliases": [
+        "SL Benfica"
+      ]
+    },
+    {
+      "id": "porto",
+      "name": "Porto",
+      "sub": "Portugal",
+      "value": 126,
+      "aliases": [
+        "FC Porto"
+      ]
+    },
+    {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "sub": "England",
+      "value": 115,
+      "aliases": [
+        "Gunners"
+      ]
+    },
+    {
+      "id": "ajax",
+      "name": "Ajax",
+      "sub": "Netherlands",
+      "value": 112,
+      "aliases": [
+        "Ajax Amsterdam"
+      ]
+    },
+    {
+      "id": "inter-milan",
+      "name": "Inter Milan",
+      "sub": "Italy",
+      "value": 112,
+      "aliases": [
+        "Inter",
+        "Internazionale"
+      ]
+    },
+    {
+      "id": "dynamo-kyiv",
+      "name": "Dynamo Kyiv",
+      "sub": "Ukraine",
+      "value": 107,
+      "aliases": [
+        "Dynamo Kiev"
+      ]
+    },
+    {
+      "id": "celtic",
+      "name": "Celtic",
+      "sub": "Scotland",
+      "value": 105,
+      "aliases": [
+        "Celtic Glasgow"
+      ]
+    },
+    {
+      "id": "chelsea",
+      "name": "Chelsea",
+      "sub": "England",
+      "value": 104
+    },
+    {
+      "id": "borussia-dortmund",
+      "name": "Borussia Dortmund",
+      "sub": "Germany",
+      "value": 96,
+      "aliases": [
+        "Dortmund",
+        "BVB"
+      ]
+    },
+    {
+      "id": "paris-saint-germain",
+      "name": "Paris Saint-Germain",
+      "sub": "France",
+      "value": 94,
+      "aliases": [
+        "PSG",
+        "Paris SG"
+      ]
+    },
+    {
+      "id": "atletico-madrid",
+      "name": "Atlético Madrid",
+      "sub": "Spain",
+      "value": 89,
+      "aliases": [
+        "Atlético",
+        "Atleti"
+      ]
+    },
+    {
+      "id": "psv-eindhoven",
+      "name": "PSV Eindhoven",
+      "sub": "Netherlands",
+      "value": 79,
+      "aliases": [
+        "PSV"
+      ]
+    },
+    {
+      "id": "manchester-city",
+      "name": "Manchester City",
+      "sub": "England",
+      "value": 77,
+      "aliases": [
+        "Man City"
+      ]
+    },
+    {
+      "id": "red-star-belgrade",
+      "name": "Red Star Belgrade",
+      "sub": "Serbia",
+      "value": 73,
+      "aliases": [
+        "Red Star",
+        "Crvena zvezda"
+      ]
+    },
+    {
+      "id": "dinamo-zagreb",
+      "name": "Dinamo Zagreb",
+      "sub": "Croatia",
+      "value": 72
+    },
+    {
+      "id": "anderlecht",
+      "name": "Anderlecht",
+      "sub": "Belgium",
+      "value": 70
+    },
+    {
+      "id": "olympiacos",
+      "name": "Olympiacos",
+      "sub": "Greece",
+      "value": 66,
+      "aliases": [
+        "Olympiakos"
+      ]
+    },
+    {
+      "id": "rangers",
+      "name": "Rangers",
+      "sub": "Scotland",
+      "value": 65,
+      "aliases": [
+        "Glasgow Rangers"
+      ]
+    },
+    {
+      "id": "lyon",
+      "name": "Lyon",
+      "sub": "France",
+      "value": 65,
+      "aliases": [
+        "Olympique Lyonnais",
+        "OL"
+      ]
+    },
+    {
+      "id": "galatasaray",
+      "name": "Galatasaray",
+      "sub": "Turkey",
+      "value": 63
+    },
+    {
+      "id": "shakhtar-donetsk",
+      "name": "Shakhtar Donetsk",
+      "sub": "Ukraine",
+      "value": 63,
+      "aliases": [
+        "Shakhtar"
+      ]
+    },
+    {
+      "id": "sparta-prague",
+      "name": "Sparta Prague",
+      "sub": "Czech Republic",
+      "value": 60,
+      "aliases": [
+        "Sparta Praha"
+      ]
+    },
+    {
+      "id": "rosenborg",
+      "name": "Rosenborg",
+      "sub": "Norway",
+      "value": 58
+    },
+    {
+      "id": "valencia",
+      "name": "Valencia",
+      "sub": "Spain",
+      "value": 57
+    },
+    {
+      "id": "fcsb",
+      "name": "FCSB",
+      "sub": "Romania",
+      "value": 55,
+      "aliases": [
+        "Steaua Bucharest",
+        "Steaua București"
+      ]
+    },
+    {
+      "id": "panathinaikos",
+      "name": "Panathinaikos",
+      "sub": "Greece",
+      "value": 51
+    },
+    {
+      "id": "monaco",
+      "name": "Monaco",
+      "sub": "France",
+      "value": 50,
+      "aliases": [
+        "AS Monaco"
+      ]
+    },
+    {
+      "id": "club-brugge",
+      "name": "Club Brugge",
+      "sub": "Belgium",
+      "value": 48,
+      "aliases": [
+        "Brugge",
+        "Bruges"
+      ]
+    },
+    {
+      "id": "bayer-leverkusen",
+      "name": "Bayer Leverkusen",
+      "sub": "Germany",
+      "value": 48,
+      "aliases": [
+        "Leverkusen"
+      ]
+    },
+    {
+      "id": "basel",
+      "name": "Basel",
+      "sub": "Switzerland",
+      "value": 47,
+      "aliases": [
+        "FC Basel"
+      ]
+    },
+    {
+      "id": "marseille",
+      "name": "Marseille",
+      "sub": "France",
+      "value": 47,
+      "aliases": [
+        "Olympique de Marseille",
+        "OM"
+      ]
+    },
+    {
+      "id": "copenhagen",
+      "name": "Copenhagen",
+      "sub": "Denmark",
+      "value": 43,
+      "aliases": [
+        "FC Copenhagen",
+        "FC København"
+      ]
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "sub": "Italy",
+      "value": 41,
+      "aliases": [
+        "AS Roma"
+      ]
+    },
+    {
+      "id": "feyenoord",
+      "name": "Feyenoord",
+      "sub": "Netherlands",
+      "value": 41
+    },
+    {
+      "id": "partizan",
+      "name": "Partizan",
+      "sub": "Serbia",
+      "value": 41,
+      "aliases": [
+        "Partizan Belgrade"
+      ]
+    },
+    {
+      "id": "cska-sofia",
+      "name": "CSKA Sofia",
+      "sub": "Bulgaria",
+      "value": 41
+    },
+    {
+      "id": "spartak-moscow",
+      "name": "Spartak Moscow",
+      "sub": "Russia",
+      "value": 40
+    },
+    {
+      "id": "red-bull-salzburg",
+      "name": "Red Bull Salzburg",
+      "sub": "Austria",
+      "value": 39,
+      "aliases": [
+        "Salzburg",
+        "RB Salzburg"
+      ]
+    },
+    {
+      "id": "bate-borisov",
+      "name": "BATE Borisov",
+      "sub": "Belarus",
+      "value": 37,
+      "aliases": [
+        "BATE"
+      ]
+    },
+    {
+      "id": "legia-warsaw",
+      "name": "Legia Warsaw",
+      "sub": "Poland",
+      "value": 37,
+      "aliases": [
+        "Legia"
+      ]
+    },
+    {
+      "id": "malmo-ff",
+      "name": "Malmö FF",
+      "sub": "Sweden",
+      "value": 35,
+      "aliases": [
+        "Malmö"
+      ]
+    },
+    {
+      "id": "sheriff-tiraspol",
+      "name": "Sheriff Tiraspol",
+      "sub": "Moldova",
+      "value": 35,
+      "aliases": [
+        "Sheriff"
+      ]
+    },
+    {
+      "id": "ifk-goteborg",
+      "name": "IFK Göteborg",
+      "sub": "Sweden",
+      "value": 35,
+      "aliases": [
+        "IFK Gothenburg",
+        "Göteborg"
+      ]
+    },
+    {
+      "id": "rapid-wien",
+      "name": "Rapid Wien",
+      "sub": "Austria",
+      "value": 35,
+      "aliases": [
+        "Rapid Vienna"
+      ]
+    },
+    {
+      "id": "sporting-cp",
+      "name": "Sporting CP",
+      "sub": "Portugal",
+      "value": 34,
+      "aliases": [
+        "Sporting Lisbon",
+        "Sporting"
+      ]
+    },
+    {
+      "id": "cska-moscow",
+      "name": "CSKA Moscow",
+      "sub": "Russia",
+      "value": 34
+    },
+    {
+      "id": "fenerbahce",
+      "name": "Fenerbahçe",
+      "sub": "Turkey",
+      "value": 34
+    },
+    {
+      "id": "maribor",
+      "name": "Maribor",
+      "sub": "Slovenia",
+      "value": 32,
+      "aliases": [
+        "NK Maribor"
+      ]
+    },
+    {
+      "id": "napoli",
+      "name": "Napoli",
+      "sub": "Italy",
+      "value": 32,
+      "aliases": [
+        "SSC Napoli"
+      ]
+    },
+    {
+      "id": "schalke-04",
+      "name": "Schalke 04",
+      "sub": "Germany",
+      "value": 31,
+      "aliases": [
+        "Schalke"
+      ]
+    },
+    {
+      "id": "hjk-helsinki",
+      "name": "HJK Helsinki",
+      "sub": "Finland",
+      "value": 31,
+      "aliases": [
+        "HJK"
+      ]
+    },
+    {
+      "id": "apoel",
+      "name": "APOEL",
+      "sub": "Cyprus",
+      "value": 30,
+      "aliases": [
+        "APOEL Nicosia"
+      ]
+    },
+    {
+      "id": "sevilla",
+      "name": "Sevilla",
+      "sub": "Spain",
+      "value": 30,
+      "aliases": [
+        "Seville"
+      ]
+    },
+    {
+      "id": "zenit-saint-petersburg",
+      "name": "Zenit Saint Petersburg",
+      "sub": "Russia",
+      "value": 30,
+      "aliases": [
+        "Zenit"
+      ]
+    },
+    {
+      "id": "ferencvaros",
+      "name": "Ferencváros",
+      "sub": "Hungary",
+      "value": 28,
+      "aliases": [
+        "Fradi"
+      ]
+    },
+    {
+      "id": "lazio",
+      "name": "Lazio",
+      "sub": "Italy",
+      "value": 28,
+      "aliases": [
+        "SS Lazio"
+      ]
+    },
+    {
+      "id": "tottenham-hotspur",
+      "name": "Tottenham Hotspur",
+      "sub": "England",
+      "value": 28,
+      "aliases": [
+        "Tottenham",
+        "Spurs"
+      ]
+    },
+    {
+      "id": "besiktas",
+      "name": "Beşiktaş",
+      "sub": "Turkey",
+      "value": 27
+    },
+    {
+      "id": "werder-bremen",
+      "name": "Werder Bremen",
+      "sub": "Germany",
+      "value": 27,
+      "aliases": [
+        "Werder",
+        "Bremen"
+      ]
+    },
+    {
+      "id": "ludogorets-razgrad",
+      "name": "Ludogorets Razgrad",
+      "sub": "Bulgaria",
+      "value": 26,
+      "aliases": [
+        "Ludogorets"
+      ]
+    },
+    {
+      "id": "deportivo-la-coruna",
+      "name": "Deportivo La Coruña",
+      "sub": "Spain",
+      "value": 25,
+      "aliases": [
+        "Deportivo",
+        "Depor"
+      ]
+    },
+    {
+      "id": "austria-wien",
+      "name": "Austria Wien",
+      "sub": "Austria",
+      "value": 25,
+      "aliases": [
+        "Austria Vienna"
+      ]
+    },
+    {
+      "id": "standard-liege",
+      "name": "Standard Liège",
+      "sub": "Belgium",
+      "value": 25,
+      "aliases": [
+        "Standard"
+      ]
+    },
+    {
+      "id": "qarabag",
+      "name": "Qarabağ",
+      "sub": "Azerbaijan",
+      "value": 24
+    },
+    {
+      "id": "young-boys",
+      "name": "Young Boys",
+      "sub": "Switzerland",
+      "value": 24,
+      "aliases": [
+        "BSC Young Boys",
+        "YB"
+      ]
+    },
+    {
+      "id": "dinamo-bucuresti",
+      "name": "Dinamo București",
+      "sub": "Romania",
+      "value": 24,
+      "aliases": [
+        "Dinamo Bucharest"
+      ]
+    },
+    {
+      "id": "slovan-bratislava",
+      "name": "Slovan Bratislava",
+      "sub": "Slovakia",
+      "value": 23
+    },
+    {
+      "id": "maccabi-haifa",
+      "name": "Maccabi Haifa",
+      "sub": "Israel",
+      "value": 23
+    },
+    {
+      "id": "rb-leipzig",
+      "name": "RB Leipzig",
+      "sub": "Germany",
+      "value": 23,
+      "aliases": [
+        "Leipzig"
+      ]
+    },
+    {
+      "id": "borussia-monchengladbach",
+      "name": "Borussia Mönchengladbach",
+      "sub": "Germany",
+      "value": 22,
+      "aliases": [
+        "Gladbach",
+        "Mönchengladbach"
+      ]
+    },
+    {
+      "id": "dukla-prague",
+      "name": "Dukla Prague",
+      "sub": "Czech Republic",
+      "value": 22,
+      "aliases": [
+        "Dukla Praha"
+      ]
+    },
+    {
+      "id": "viktoria-plzen",
+      "name": "Viktoria Plzeň",
+      "sub": "Czech Republic",
+      "value": 22,
+      "aliases": [
+        "Plzeň",
+        "Viktoria Pilsen"
+      ]
+    },
+    {
+      "id": "leeds-united",
+      "name": "Leeds United",
+      "sub": "England",
+      "value": 22,
+      "aliases": [
+        "Leeds"
+      ]
+    },
+    {
+      "id": "lille",
+      "name": "Lille",
+      "sub": "France",
+      "value": 21,
+      "aliases": [
+        "LOSC"
+      ]
+    },
+    {
+      "id": "bordeaux",
+      "name": "Bordeaux",
+      "sub": "France",
+      "value": 21,
+      "aliases": [
+        "Girondins de Bordeaux"
+      ]
+    },
+    {
+      "id": "fiorentina",
+      "name": "Fiorentina",
+      "sub": "Italy",
+      "value": 21
+    },
+    {
+      "id": "gornik-zabrze",
+      "name": "Górnik Zabrze",
+      "sub": "Poland",
+      "value": 20
+    },
+    {
+      "id": "aek-athens",
+      "name": "AEK Athens",
+      "sub": "Greece",
+      "value": 19,
+      "aliases": [
+        "AEK"
+      ]
+    },
+    {
+      "id": "hamburger-sv",
+      "name": "Hamburger SV",
+      "sub": "Germany",
+      "value": 19,
+      "aliases": [
+        "Hamburg",
+        "HSV"
+      ]
+    },
+    {
+      "id": "saint-etienne",
+      "name": "Saint-Étienne",
+      "sub": "France",
+      "value": 19,
+      "aliases": [
+        "ASSE",
+        "St Etienne"
+      ]
+    },
+    {
+      "id": "hajduk-split",
+      "name": "Hajduk Split",
+      "sub": "Croatia",
+      "value": 18
+    },
+    {
+      "id": "ujpest",
+      "name": "Újpest",
+      "sub": "Hungary",
+      "value": 18
+    },
+    {
+      "id": "omonia",
+      "name": "Omonia",
+      "sub": "Cyprus",
+      "value": 17,
+      "aliases": [
+        "Omonia Nicosia"
+      ]
+    },
+    {
+      "id": "sturm-graz",
+      "name": "Sturm Graz",
+      "sub": "Austria",
+      "value": 17
+    },
+    {
+      "id": "zurich",
+      "name": "Zürich",
+      "sub": "Switzerland",
+      "value": 17,
+      "aliases": [
+        "FC Zürich"
+      ]
+    },
+    {
+      "id": "slavia-prague",
+      "name": "Slavia Prague",
+      "sub": "Czech Republic",
+      "value": 16,
+      "aliases": [
+        "Slavia Praha"
+      ]
+    },
+    {
+      "id": "cfr-cluj",
+      "name": "CFR Cluj",
+      "sub": "Romania",
+      "value": 16
+    },
+    {
+      "id": "skonto",
+      "name": "Skonto",
+      "sub": "Latvia",
+      "value": 16,
+      "aliases": [
+        "Skonto Riga"
+      ]
+    },
+    {
+      "id": "aston-villa",
+      "name": "Aston Villa",
+      "sub": "England",
+      "value": 16,
+      "aliases": [
+        "Villa"
+      ]
+    },
+    {
+      "id": "levski-sofia",
+      "name": "Levski Sofia",
+      "sub": "Bulgaria",
+      "value": 15
+    },
+    {
+      "id": "grasshoppers",
+      "name": "Grasshoppers",
+      "sub": "Switzerland",
+      "value": 15,
+      "aliases": [
+        "Grasshopper Club Zürich"
+      ]
+    },
+    {
+      "id": "maccabi-tel-aviv",
+      "name": "Maccabi Tel Aviv",
+      "sub": "Israel",
+      "value": 15
+    },
+    {
+      "id": "spartak-trnava",
+      "name": "Spartak Trnava",
+      "sub": "Slovakia",
+      "value": 15
+    },
+    {
+      "id": "bfc-dynamo",
+      "name": "BFC Dynamo",
+      "sub": "Germany",
+      "value": 15,
+      "aliases": [
+        "Dynamo Berlin"
+      ]
+    },
+    {
+      "id": "brondby",
+      "name": "Brøndby",
+      "sub": "Denmark",
+      "value": 15,
+      "aliases": [
+        "Brøndby IF"
+      ]
+    },
+    {
+      "id": "wisla-krakow",
+      "name": "Wisła Kraków",
+      "sub": "Poland",
+      "value": 15
+    }
+  ]
+}
