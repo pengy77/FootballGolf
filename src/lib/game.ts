@@ -33,7 +33,14 @@ export interface Game {
 }
 
 export const MAX_PLAYERS = 4;
+/** Most finished cards a share link carries (and so the most people who can join one course). */
+export const MAX_LINK_PLAYERS = 8;
 export const NAME_MAX = 14;
+
+/** False if a list this game uses has since been removed from the data. */
+export function isPlayable(game: { holes: Hole[] }): boolean {
+  return game.holes.every((h) => CATEGORY_BY_ID.has(h.cat));
+}
 
 export function randomId(len = 8): string {
   const abc = 'abcdefghjkmnpqrstuvwxyz23456789';
@@ -186,19 +193,22 @@ export function sameName(a: string, b: string): boolean {
   return a.trim().toLowerCase() === b.trim().toLowerCase();
 }
 
-/** Merge an incoming copy of a game (from a link) into the local one. Never loses local progress. */
-export function mergeGame(local: Game, incoming: Game): Game {
+/**
+ * Merge an incoming copy of a game (from a link) into the local one. Never loses local progress.
+ * Links only carry finished cards, so a same-named card with different picks is a different person.
+ */
+export function mergeGame(local: Game, incoming: { players: Player[] }): Game {
   const players = local.players.map((p) => ({ ...p, picks: [...p.picks] }));
+  let changed = false;
   for (const inc of incoming.players) {
-    const mine = players.find((p) => sameName(p.name, inc.name));
-    if (!mine) {
-      players.push({ name: inc.name, picks: [...inc.picks] });
-      continue;
-    }
-    const incDone = inc.picks.filter((x) => x !== null).length;
-    const myDone = mine.picks.filter((x) => x !== null).length;
-    const isMe = local.me !== null && sameName(local.players[local.me].name, inc.name);
-    if (!isMe && incDone > myDone) mine.picks = [...inc.picks];
+    const same = players.find((p) => sameName(p.name, inc.name));
+    if (same && JSON.stringify(same.picks) === JSON.stringify(inc.picks)) continue;
+    if (players.some((p) => JSON.stringify(p.picks) === JSON.stringify(inc.picks) && inc.picks.every((x) => x !== null))) continue;
+    if (players.length >= MAX_LINK_PLAYERS) break;
+    let name = inc.name;
+    for (let n = 2; players.some((p) => sameName(p.name, name)); n++) name = `${inc.name} (${n})`;
+    players.push({ name, picks: [...inc.picks] });
+    changed = true;
   }
-  return { ...local, players, updatedAt: Date.now() };
+  return changed ? { ...local, players, updatedAt: Date.now() } : local;
 }

@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useState } from 'react';
-import { NavGuard, useApp } from '../App';
+import { NavGuard, useApp, useCanonicalUrl } from '../App';
 import { CATEGORY_BY_ID } from '../lib/data';
-import { donePlayers, isDone, obStrokes, type Game } from '../lib/game';
+import { donePlayers, isDone, isPlayable, obStrokes, type Game } from '../lib/game';
+import { findGame } from '../lib/store';
 import { buzz } from '../lib/share';
 import { HoleCard } from '../components/HoleCard';
 import { PickBox, type Selection } from '../components/PickBox';
@@ -58,8 +59,11 @@ function Progress({ game, current }: { game: Game; current: number }) {
 
 export default function Play({ id }: { id: string }) {
   const { saved, saveGame, go, showHowTo, toast } = useApp();
-  const game = saved.games[id];
+  const found = findGame(saved, id);
+  const game = found && isPlayable(found) ? found : undefined;
   const [selection, setSelection] = useState<Selection | null>(null);
+  const [armed, setArmed] = useState(false);
+  useCanonicalUrl(game);
   const [searching, setSearching] = useState(false);
   const [readyFor, setReadyFor] = useState('');
   const onSearching = useCallback((b: boolean) => setSearching(b), []);
@@ -70,6 +74,10 @@ export default function Play({ id }: { id: string }) {
   useEffect(() => {
     setSelection(null);
     setSearching(false);
+    // A double-tap on "Lock it in" must not also hit the reveal's "Next" button underneath.
+    setArmed(false);
+    const t = setTimeout(() => setArmed(true), 700);
+    return () => clearTimeout(t);
   }, [stateKey]);
 
   useEffect(() => {
@@ -78,6 +86,8 @@ export default function Play({ id }: { id: string }) {
     go(`/results/${id}`, { replace: true });
   }, [state?.kind, game, id, go, saveGame]);
 
+  if (found && !game)
+    return <Message title="This course has closed" body="One of the lists this game used has been removed since it was made. Start a fresh game instead." />;
   if (!game || !state) return <Message title="Game not found" body="This game isn't saved on this phone any more." />;
   if (game.mode === 'challenge' && game.me === null) return <NavGuard to={`/join/${id}`} />;
   if (state.kind === 'done') return null;
@@ -123,6 +133,7 @@ export default function Play({ id }: { id: string }) {
             type="button"
             className="btn btn-primary btn-block btn-lg"
             onClick={() => {
+              if (!armed) return;
               saveGame({ ...game, revealed: game.revealed + 1 });
               window.scrollTo({ top: 0 });
             }}

@@ -3,6 +3,7 @@ import { buildCategory, CATEGORIES, CATEGORY_BY_ID, type RawCategory } from './d
 import { distance, holeResult, mergeGame, newCourse, obStrokes, ordinal, rankLabel, standings, targetRange, type Game } from './game';
 import { decodeGame, encodeGame } from './link';
 import { norm, searchItems } from './search';
+import { findGame, mergeSaved } from './store';
 
 const raw: RawCategory = {
   id: 'test',
@@ -144,5 +145,54 @@ describe('share links', () => {
     expect(merged.players[0].picks).toEqual(game.players[0].picks);
     const s = standings(merged);
     expect(s.length).toBe(2);
+  });
+});
+
+describe('review fixes', () => {
+  const holes = newCourse('mixed', 3);
+  const id = (h: number, k: number) => CATEGORY_BY_ID.get(holes[h].cat)!.items[k].id;
+  const base: Game = {
+    id: 'abcd2345', mode: 'challenge', course: 'mixed', holes,
+    players: [{ name: 'Ann', picks: [id(0, 0), id(1, 0), id(2, 0)] }],
+    me: 0, revealed: 3, seen: ['Ann'], createdAt: 0, updatedAt: 1,
+  };
+
+  it('keeps two different people who chose the same name', () => {
+    const b = { players: [base.players[0], { name: 'Sam', picks: [id(0, 1), id(1, 1), id(2, 1)] }] };
+    const c = { players: [base.players[0], { name: 'Sam', picks: [id(0, 2), id(1, 2), id(2, 2)] }] };
+    const merged = mergeGame(mergeGame(base, b), c);
+    expect(merged.players.map((p) => p.name)).toEqual(['Ann', 'Sam', 'Sam (2)']);
+    // Re-opening the same links changes nothing.
+    expect(mergeGame(mergeGame(merged, b), c).players.length).toBe(3);
+  });
+
+  it('scrambles links so picks are not readable, and still reads plain v1 links', () => {
+    const code = encodeGame(base);
+    expect(code.startsWith('2')).toBe(true);
+    expect(atob(code.slice(1).replace(/-/g, '+').replace(/_/g, '/'))).not.toContain(id(0, 0));
+    expect(decodeGame(code)!.players[0].picks).toEqual(base.players[0].picks);
+    const v1 = btoa(JSON.stringify({ v: 1, i: 'abcd2345', c: 'mixed', h: holes.map((h) => [h.cat, h.target]), p: [] }))
+      .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+    expect(decodeGame(v1)!.holes).toEqual(holes);
+  });
+
+  it('clamps a target that no longer fits a shrunken list instead of rejecting the link', () => {
+    const cat = CATEGORY_BY_ID.get(holes[0].cat)!;
+    const v1 = btoa(JSON.stringify({ v: 1, i: 'abcd2345', c: 'mixed', h: [[cat.id, cat.size + 50]], p: [] }));
+    expect(decodeGame(v1)!.holes[0].target).toBe(cat.size);
+  });
+
+  it("can't be crashed by a game id like 'constructor'", () => {
+    expect(findGame({ name: '', seenHowTo: false, games: {} }, 'constructor')).toBeUndefined();
+  });
+
+  it('merges saved state from two tabs, keeping the newest copy of each game', () => {
+    const older = { ...base, updatedAt: 1 };
+    const newer = { ...base, updatedAt: 2, players: [...base.players, { name: 'Bo', picks: base.players[0].picks }] };
+    const tabA = { name: 'Ann', seenHowTo: true, games: { [base.id]: older } };
+    const tabB = { name: 'Ann', seenHowTo: false, games: { [base.id]: newer, other1: { ...base, id: 'other1' } } };
+    const m = mergeSaved(tabA, tabB);
+    expect(m.games[base.id].players.length).toBe(2);
+    expect(Object.keys(m.games).sort()).toEqual([base.id, 'other1'].sort());
   });
 });

@@ -1,7 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { mergeGame, type Game } from './lib/game';
-import { decodeGame } from './lib/link';
-import { loadSaved, persist, type Saved } from './lib/store';
+import { decodeGame, encodeGame } from './lib/link';
+import { findGame, loadSaved, mergeSaved, persist, type Saved } from './lib/store';
 import Home from './screens/Home';
 import Setup from './screens/Setup';
 import Join from './screens/Join';
@@ -45,7 +45,6 @@ interface Ctx {
   route: Route;
   go: (hash: string, opts?: { replace?: boolean }) => void;
   saveGame: (g: Game) => void;
-  deleteGame: (id: string) => void;
   setName: (name: string) => void;
   showHowTo: () => void;
   toast: (msg: string) => void;
@@ -62,9 +61,10 @@ export default function App() {
   const savedRef = useRef(saved);
   savedRef.current = saved;
 
+  // Always fold in what other tabs have saved first, so one tab can't wipe another's games.
   const update = useCallback((fn: (s: Saved) => Saved) => {
     setSaved((prev) => {
-      const next = fn(prev);
+      const next = fn(mergeSaved(prev, loadSaved()));
       persist(next);
       return next;
     });
@@ -72,8 +72,13 @@ export default function App() {
 
   useEffect(() => {
     const onHash = () => setRoute(parseHash(location.hash));
+    const onStorage = () => setSaved((prev) => mergeSaved(prev, loadSaved()));
     window.addEventListener('hashchange', onHash);
-    return () => window.removeEventListener('hashchange', onHash);
+    window.addEventListener('storage', onStorage);
+    return () => {
+      window.removeEventListener('hashchange', onHash);
+      window.removeEventListener('storage', onStorage);
+    };
   }, []);
 
   const go = useCallback((hash: string, opts?: { replace?: boolean }) => {
@@ -97,7 +102,7 @@ export default function App() {
       go('/badlink', { replace: true });
       return;
     }
-    const existing = savedRef.current.games[decoded.id];
+    const existing = findGame(mergeSaved(savedRef.current, loadSaved()), decoded.id);
     const now = Date.now();
     const incoming: Game = { ...decoded, mode: 'challenge', me: null, revealed: 0, seen: [], createdAt: now, updatedAt: now };
     const game = existing ? mergeGame(existing, incoming) : incoming;
@@ -111,12 +116,6 @@ export default function App() {
       route,
       go,
       saveGame: (g) => update((s) => ({ ...s, games: { ...s.games, [g.id]: { ...g, updatedAt: Date.now() } } })),
-      deleteGame: (id) =>
-        update((s) => {
-          const games = { ...s.games };
-          delete games[id];
-          return { ...s, games };
-        }),
       setName: (name) => update((s) => ({ ...s, name })),
       showHowTo: () => {
         setHowTo(true);
@@ -145,7 +144,7 @@ export default function App() {
       screen = (
         <Message
           title="That link's gone wide"
-          body="The game link looks incomplete. It was probably cut off when it was copied. Ask your mate to send it again, or start your own game."
+          body="This game link doesn't work. It may have been cut off when it was copied, or it's from an older version of the game. Ask your mate to send it again, or start your own game."
         />
       );
       break;
@@ -163,6 +162,19 @@ export default function App() {
       {toastMsg && <Toast key={toastMsg.key} msg={toastMsg.msg} onDone={() => setToastMsg(null)} />}
     </AppCtx.Provider>
   );
+}
+
+/**
+ * Keep the address bar pointing at a link that rebuilds this game anywhere, so "Open in Safari",
+ * copying the URL, or reloading never loses it. replaceState doesn't add history or fire hashchange.
+ */
+export function useCanonicalUrl(game: Game | undefined) {
+  const code = game ? encodeGame(game) : '';
+  useEffect(() => {
+    if (!code) return;
+    const target = `#/c/${code}`;
+    if (location.hash !== target) history.replaceState(history.state, '', target);
+  }, [code]);
 }
 
 export function NavGuard({ to }: { to: string }) {

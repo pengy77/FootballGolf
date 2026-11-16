@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { NavGuard, useApp } from '../App';
+import { NavGuard, useApp, useCanonicalUrl } from '../App';
 import { COURSES } from '../lib/data';
-import { cleanName, donePlayers, isDone, NAME_MAX, sameName } from '../lib/game';
+import { cleanName, donePlayers, isDone, isPlayable, MAX_LINK_PLAYERS, NAME_MAX, sameName } from '../lib/game';
+import { findGame } from '../lib/store';
 import { HowToSteps } from '../components/HowTo';
 import { Icons, IconButton, Logo, Tag, TopBar } from '../components/ui';
 import Message from './Message';
@@ -13,23 +14,40 @@ function listNames(names: string[]): string {
 
 export default function Join({ id }: { id: string }) {
   const { saved, saveGame, setName, go } = useApp();
-  const game = saved.games[id];
+  const game = findGame(saved, id);
   const [name, setNameInput] = useState(saved.name);
   const [error, setError] = useState('');
+  const [claim, setClaim] = useState<number | null>(null);
   const [spoilerCheck, setSpoilerCheck] = useState(false);
+  useCanonicalUrl(game);
 
   if (!game) return <Message title="Game not found" body="We couldn't find that game on this phone. Open the link your friend sent you again." />;
+  if (!isPlayable(game))
+    return <Message title="This course has closed" body="One of the lists this game used has been removed since the link was made. Start a fresh game instead." />;
   if (game.me !== null) return <NavGuard to={isDone(game, game.me) ? `/results/${id}` : `/play/${id}`} />;
+  if (game.mode === 'local') return <NavGuard to={game.players.every((_, i) => isDone(game, i)) ? `/results/${id}` : `/play/${id}`} />;
 
   const done = donePlayers(game);
   const doneNames = done.map((i) => game.players[i].name);
   const course = COURSES.find((c) => c.id === game.course)?.name ?? 'Mixed';
+  const full = game.players.length >= MAX_LINK_PLAYERS;
+
+  // "That's me": the person who already played opens the link somewhere new (another browser, Home Screen app).
+  const claimCard = (index: number) => {
+    setName(game.players[index].name);
+    saveGame({ ...game, me: index, revealed: game.holes.length, seen: [game.players[index].name] });
+    go(`/results/${id}`, { replace: true });
+  };
 
   const teeOff = () => {
     const n = cleanName(name);
     if (!n) return setError('Pop your name in first.');
-    if (game.players.some((p) => sameName(p.name, n)))
-      return setError(`${n} has already played this one. Pick a different name.`);
+    const existing = game.players.findIndex((p) => sameName(p.name, n));
+    if (existing >= 0) {
+      setClaim(existing);
+      return setError('');
+    }
+    if (full) return setError(`This course already has ${MAX_LINK_PLAYERS} players. Have a look at the scores instead.`);
     setName(n);
     saveGame({
       ...game,
@@ -89,6 +107,7 @@ export default function Join({ id }: { id: string }) {
         <label className="field-title" htmlFor="join-name">
           Your name
         </label>
+        {done.length > 0 && <p className="field-help">Already played this one? Enter the same name to see your card.</p>}
         <input
           id="join-name"
           className={`input${error ? ' is-error' : ''}`}
@@ -101,6 +120,7 @@ export default function Join({ id }: { id: string }) {
           onChange={(e) => {
             setNameInput(e.target.value);
             setError('');
+            setClaim(null);
           }}
         />
         {error && (
@@ -108,9 +128,30 @@ export default function Join({ id }: { id: string }) {
             {error}
           </p>
         )}
-        <button type="submit" className="btn btn-primary btn-block btn-lg">
-          Tee off
-        </button>
+        {claim !== null ? (
+          <div className="claim" role="alert">
+            <p>
+              <b>{game.players[claim].name}</b> has already played this course. Is that you?
+            </p>
+            <button type="button" className="btn btn-primary btn-block" onClick={() => claimCard(claim)}>
+              Yes, that's me. Show my card
+            </button>
+            <button
+              type="button"
+              className="btn btn-secondary btn-block"
+              onClick={() => {
+                setClaim(null);
+                setNameInput('');
+              }}
+            >
+              No, I'll use another name
+            </button>
+          </div>
+        ) : (
+          <button type="submit" className="btn btn-primary btn-block btn-lg">
+            Tee off
+          </button>
+        )}
       </form>
 
       <section className="card howto-card">

@@ -1921,3 +1921,16 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+.claim {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--yellow-soft);
+}
+
+.claim p {
+  font-size: 16px;
+}

@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { NavGuard, useApp } from '../App';
+import { NavGuard, useApp, useCanonicalUrl } from '../App';
 import { CATEGORY_BY_ID } from '../lib/data';
-import { createGame, donePlayers, holeResult, isDone, ordinal, rankLabel, standings, type Game } from '../lib/game';
+import { createGame, donePlayers, holeResult, isDone, isPlayable, ordinal, rankLabel, standings, type Game } from '../lib/game';
+import { findGame } from '../lib/store';
 import { shareUrl } from '../lib/link';
 import { copyText, shareLink } from '../lib/share';
 import { Confetti } from '../components/Confetti';
@@ -52,12 +53,21 @@ function HoleRecap({ game, hole, players }: { game: Game; hole: number; players:
 
 export default function Results({ id }: { id: string }) {
   const { saved, saveGame, go, toast } = useApp();
-  const game = saved.games[id];
+  const found = findGame(saved, id);
+  const game = found && isPlayable(found) ? found : undefined;
+  useCanonicalUrl(game);
   const done = game ? donePlayers(game) : [];
   const unseen = game ? done.filter((i) => !game.seen.includes(game.players[i].name)) : [];
   const [step, setStep] = useState(() => (game && unseen.length > 0 ? 0 : (game?.holes.length ?? 0)));
   const [confetti, setConfetti] = useState(0);
+  const [armed, setArmed] = useState(false);
   const summary = !!game && step >= game.holes.length;
+
+  useEffect(() => {
+    setArmed(false);
+    const t = setTimeout(() => setArmed(true), 700);
+    return () => clearTimeout(t);
+  }, [step]);
 
   useEffect(() => {
     if (!game || !summary) return;
@@ -68,6 +78,8 @@ export default function Results({ id }: { id: string }) {
     // Only when arriving at the summary.
   }, [summary]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  if (found && !game)
+    return <Message title="This course has closed" body="One of the lists this game used has been removed since it was made. Start a fresh game instead." />;
   if (!game) return <Message title="Game not found" body="This game isn't saved on this phone any more." />;
   if (game.mode === 'challenge' && game.me !== null && !isDone(game, game.me)) return <NavGuard to={`/play/${id}`} />;
   if (done.length === 0) return <NavGuard to={`/join/${id}`} />;
@@ -118,6 +130,7 @@ export default function Results({ id }: { id: string }) {
             type="button"
             className="btn btn-primary btn-block btn-lg"
             onClick={() => {
+              if (!armed) return;
               setStep(step + 1);
               window.scrollTo({ top: 0 });
             }}
@@ -146,6 +159,8 @@ export default function Results({ id }: { id: string }) {
     if (out === 'copied') toast('Link copied. Paste it into your chat.');
     if (out === 'failed') toast("Couldn't share. Long-press the link below to copy it.");
   };
+
+  const copy = async () => toast((await copyText(url)) ? 'Link copied. Paste it into your chat.' : "Couldn't copy. Long-press the link below to copy it.");
 
   const rematch = () => {
     const names = game.mode === 'local' ? game.players.map((p) => p.name) : [game.players[meIndex ?? 0]?.name ?? saved.name];
@@ -201,11 +216,7 @@ export default function Results({ id }: { id: string }) {
           <button type="button" className="btn btn-primary btn-block btn-lg" onClick={share}>
             {Icons.share} Send to a friend
           </button>
-          <button
-            type="button"
-            className="btn btn-secondary btn-block"
-            onClick={async () => toast((await copyText(url)) ? 'Link copied.' : "Couldn't copy. Long-press the link below.")}
-          >
+          <button type="button" className="btn btn-secondary btn-block" onClick={copy}>
             {Icons.copy} Copy link
           </button>
           <p className="share-url" aria-label="Game link">
@@ -230,11 +241,17 @@ export default function Results({ id }: { id: string }) {
       )}
 
       {!solo && (
-        <section className="share-row">
+        <section className="card share-card">
           <button type="button" className="btn btn-primary btn-block btn-lg" onClick={share}>
             {Icons.share} {game.mode === 'local' ? 'Challenge someone else' : 'Share the result'}
           </button>
-          <p className="fine center">Anyone you send it to can play the same course and join the card.</p>
+          <button type="button" className="btn btn-secondary btn-block" onClick={copy}>
+            {Icons.copy} Copy link
+          </button>
+          <p className="share-url" aria-label="Game link">
+            {url}
+          </p>
+          <p className="fine">Anyone you send it to can play the same course and join the card.</p>
         </section>
       )}
 
