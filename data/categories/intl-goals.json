@@ -1,0 +1,846 @@
+{
+  "id": "intl-goals",
+  "title": "International goals",
+  "prompt": "most international goals (men's)",
+  "noun": "player",
+  "nounPlural": "players",
+  "metric": "Goals",
+  "order": "desc",
+  "description": "Men's senior international goals; every player with 50 or more.",
+  "tags": [
+    "international",
+    "players"
+  ],
+  "source": {
+    "name": "Wikipedia: List of men's footballers with 50 or more international goals",
+    "url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+    "asOf": "2026-11-15"
+  },
+  "items": [
+    {
+      "id": "cristiano-ronaldo",
+      "name": "Cristiano Ronaldo",
+      "sub": "Portugal",
+      "value": 146,
+      "aliases": [
+        "Ronaldo",
+        "CR7",
+        "Cristiano"
+      ]
+    },
+    {
+      "id": "lionel-messi",
+      "name": "Lionel Messi",
+      "sub": "Argentina",
+      "value": 126,
+      "aliases": [
+        "Messi",
+        "Leo Messi",
+        "La Pulga"
+      ]
+    },
+    {
+      "id": "ali-daei",
+      "name": "Ali Daei",
+      "sub": "Iran",
+      "value": 108,
+      "aliases": [
+        "Daei"
+      ]
+    },
+    {
+      "id": "sunil-chhetri",
+      "name": "Sunil Chhetri",
+      "sub": "India",
+      "value": 95,
+      "aliases": [
+        "Chhetri"
+      ]
+    },
+    {
+      "id": "romelu-lukaku",
+      "name": "Romelu Lukaku",
+      "sub": "Belgium",
+      "value": 94,
+      "aliases": [
+        "Lukaku"
+      ]
+    },
+    {
+      "id": "harry-kane",
+      "name": "Harry Kane",
+      "sub": "England",
+      "value": 93,
+      "aliases": [
+        "Kane"
+      ]
+    },
+    {
+      "id": "robert-lewandowski",
+      "name": "Robert Lewandowski",
+      "sub": "Poland",
+      "value": 92,
+      "aliases": [
+        "Lewandowski",
+        "Lewy"
+      ]
+    },
+    {
+      "id": "mokhtar-dahari",
+      "name": "Mokhtar Dahari",
+      "sub": "Malaysia",
+      "value": 89,
+      "aliases": [
+        "Mokhtar",
+        "Dahari",
+        "Super Mokh"
+      ]
+    },
+    {
+      "id": "ali-mabkhout",
+      "name": "Ali Mabkhout",
+      "sub": "United Arab Emirates",
+      "value": 85,
+      "aliases": [
+        "Mabkhout"
+      ]
+    },
+    {
+      "id": "ferenc-puskas",
+      "name": "Ferenc Puskás",
+      "sub": "Hungary / Spain",
+      "value": 84,
+      "aliases": [
+        "Puskás"
+      ]
+    },
+    {
+      "id": "neymar",
+      "name": "Neymar",
+      "sub": "Brazil",
+      "value": 80,
+      "aliases": [
+        "Neymar Jr",
+        "Neymar Júnior"
+      ]
+    },
+    {
+      "id": "godfrey-chitalu",
+      "name": "Godfrey Chitalu",
+      "sub": "Zambia",
+      "value": 79,
+      "aliases": [
+        "Chitalu"
+      ]
+    },
+    {
+      "id": "hussein-saeed",
+      "name": "Hussein Saeed",
+      "sub": "Iraq",
+      "value": 78,
+      "aliases": [
+        "Saeed"
+      ]
+    },
+    {
+      "id": "pele",
+      "name": "Pelé",
+      "sub": "Brazil",
+      "value": 77,
+      "aliases": [
+        "Edson Arantes do Nascimento"
+      ]
+    },
+    {
+      "id": "vivian-woodward",
+      "name": "Vivian Woodward",
+      "sub": "England",
+      "value": 75,
+      "aliases": [
+        "Woodward"
+      ]
+    },
+    {
+      "id": "sandor-kocsis",
+      "name": "Sándor Kocsis",
+      "sub": "Hungary",
+      "value": 75,
+      "aliases": [
+        "Kocsis"
+      ]
+    },
+    {
+      "id": "kunishige-kamamoto",
+      "name": "Kunishige Kamamoto",
+      "sub": "Japan",
+      "value": 75,
+      "aliases": [
+        "Kamamoto"
+      ]
+    },
+    {
+      "id": "bashar-abdullah",
+      "name": "Bashar Abdullah",
+      "sub": "Kuwait",
+      "value": 75,
+      "aliases": [
+        "Abdullah"
+      ]
+    },
+    {
+      "id": "edin-dzeko",
+      "name": "Edin Džeko",
+      "sub": "Bosnia and Herzegovina",
+      "value": 73,
+      "aliases": [
+        "Džeko"
+      ]
+    },
+    {
+      "id": "majed-abdullah",
+      "name": "Majed Abdullah",
+      "sub": "Saudi Arabia",
+      "value": 72,
+      "aliases": [
+        "Abdullah"
+      ]
+    },
+    {
+      "id": "kinnah-phiri",
+      "name": "Kinnah Phiri",
+      "sub": "Malawi",
+      "value": 71,
+      "aliases": [
+        "Phiri"
+      ]
+    },
+    {
+      "id": "kiatisuk-senamuang",
+      "name": "Kiatisuk Senamuang",
+      "sub": "Thailand",
+      "value": 71,
+      "aliases": [
+        "Kiatisuk",
+        "Senamuang",
+        "Zico"
+      ]
+    },
+    {
+      "id": "miroslav-klose",
+      "name": "Miroslav Klose",
+      "sub": "Germany",
+      "value": 71,
+      "aliases": [
+        "Klose"
+      ]
+    },
+    {
+      "id": "piyapong-pue-on",
+      "name": "Piyapong Pue-on",
+      "sub": "Thailand",
+      "value": 70,
+      "aliases": [
+        "Piyapong",
+        "Pue-on"
+      ]
+    },
+    {
+      "id": "abdul-kadir",
+      "name": "Abdul Kadir",
+      "sub": "Indonesia",
+      "value": 70,
+      "aliases": [
+        "Kadir"
+      ]
+    },
+    {
+      "id": "stern-john",
+      "name": "Stern John",
+      "sub": "Trinidad and Tobago",
+      "value": 70,
+      "aliases": [
+        "John"
+      ]
+    },
+    {
+      "id": "mohamed-salah",
+      "name": "Mohamed Salah",
+      "sub": "Egypt",
+      "value": 70,
+      "aliases": [
+        "Salah"
+      ]
+    },
+    {
+      "id": "luis-suarez",
+      "name": "Luis Suárez",
+      "sub": "Uruguay",
+      "value": 69,
+      "aliases": [
+        "Suárez",
+        "El Pistolero"
+      ]
+    },
+    {
+      "id": "hossam-hassan",
+      "name": "Hossam Hassan",
+      "sub": "Egypt",
+      "value": 69,
+      "aliases": [
+        "Hassan"
+      ]
+    },
+    {
+      "id": "gerd-muller",
+      "name": "Gerd Müller",
+      "sub": "West Germany",
+      "value": 68,
+      "aliases": [
+        "Müller",
+        "Der Bomber",
+        "Gerd Mueller",
+        "Mueller"
+      ]
+    },
+    {
+      "id": "carlos-ruiz",
+      "name": "Carlos Ruiz",
+      "sub": "Guatemala",
+      "value": 68,
+      "aliases": [
+        "Ruiz"
+      ]
+    },
+    {
+      "id": "robbie-keane",
+      "name": "Robbie Keane",
+      "sub": "Republic of Ireland",
+      "value": 68,
+      "aliases": [
+        "Keane"
+      ]
+    },
+    {
+      "id": "kylian-mbappe",
+      "name": "Kylian Mbappé",
+      "sub": "France",
+      "value": 67,
+      "aliases": [
+        "Mbappé"
+      ]
+    },
+    {
+      "id": "erling-haaland",
+      "name": "Erling Haaland",
+      "sub": "Norway",
+      "value": 66,
+      "aliases": [
+        "Haaland"
+      ]
+    },
+    {
+      "id": "didier-drogba",
+      "name": "Didier Drogba",
+      "sub": "Ivory Coast",
+      "value": 65,
+      "aliases": [
+        "Drogba"
+      ]
+    },
+    {
+      "id": "aleksandar-mitrovic",
+      "name": "Aleksandar Mitrović",
+      "sub": "Serbia",
+      "value": 64,
+      "aliases": [
+        "Mitrović"
+      ]
+    },
+    {
+      "id": "teerasil-dangda",
+      "name": "Teerasil Dangda",
+      "sub": "Thailand",
+      "value": 64,
+      "aliases": [
+        "Teerasil",
+        "Dangda"
+      ]
+    },
+    {
+      "id": "jasem-al-huwaidi",
+      "name": "Jasem Al-Huwaidi",
+      "sub": "Kuwait",
+      "value": 63,
+      "aliases": [
+        "Al-Huwaidi",
+        "Huwaidi"
+      ]
+    },
+    {
+      "id": "ronaldo",
+      "name": "Ronaldo",
+      "sub": "Brazil",
+      "value": 62,
+      "aliases": [
+        "Ronaldo Nazário",
+        "R9",
+        "Ronaldo Luís Nazário de Lima",
+        "O Fenômeno",
+        "Brazilian Ronaldo"
+      ]
+    },
+    {
+      "id": "ahmed-radhi",
+      "name": "Ahmed Radhi",
+      "sub": "Iraq",
+      "value": 62,
+      "aliases": [
+        "Radhi"
+      ]
+    },
+    {
+      "id": "zlatan-ibrahimovic",
+      "name": "Zlatan Ibrahimović",
+      "sub": "Sweden",
+      "value": 62,
+      "aliases": [
+        "Ibrahimović",
+        "Zlatan",
+        "Ibra"
+      ]
+    },
+    {
+      "id": "abdul-ghani-minhat",
+      "name": "Abdul Ghani Minhat",
+      "sub": "Malaya / Malaysia",
+      "value": 61,
+      "aliases": [
+        "Minhat",
+        "Abdul Ghani"
+      ]
+    },
+    {
+      "id": "almoez-ali",
+      "name": "Almoez Ali",
+      "sub": "Qatar",
+      "value": 61,
+      "aliases": [
+        "Almoez"
+      ]
+    },
+    {
+      "id": "mehdi-taremi",
+      "name": "Mehdi Taremi",
+      "sub": "Iran",
+      "value": 60,
+      "aliases": [
+        "Taremi"
+      ]
+    },
+    {
+      "id": "yousef-nasser",
+      "name": "Yousef Nasser",
+      "sub": "Kuwait",
+      "value": 60,
+      "aliases": [
+        "Nasser"
+      ]
+    },
+    {
+      "id": "imre-schlosser",
+      "name": "Imre Schlosser",
+      "sub": "Hungary",
+      "value": 59,
+      "aliases": [
+        "Schlosser"
+      ]
+    },
+    {
+      "id": "david-villa",
+      "name": "David Villa",
+      "sub": "Spain",
+      "value": 59,
+      "aliases": [
+        "Villa",
+        "El Guaje"
+      ]
+    },
+    {
+      "id": "son-heung-min",
+      "name": "Son Heung-min",
+      "sub": "South Korea",
+      "value": 59,
+      "aliases": [
+        "Son",
+        "Heung-min Son",
+        "Heungmin Son"
+      ]
+    },
+    {
+      "id": "sardar-azmoun",
+      "name": "Sardar Azmoun",
+      "sub": "Iran",
+      "value": 58,
+      "aliases": [
+        "Azmoun"
+      ]
+    },
+    {
+      "id": "ali-ashfaq",
+      "name": "Ali Ashfaq",
+      "sub": "Maldives",
+      "value": 58,
+      "aliases": [
+        "Ashfaq"
+      ]
+    },
+    {
+      "id": "cha-bum-kun",
+      "name": "Cha Bum-kun",
+      "sub": "South Korea",
+      "value": 58,
+      "aliases": [
+        "Cha",
+        "Bum-kun Cha",
+        "Cha Bum"
+      ]
+    },
+    {
+      "id": "edinson-cavani",
+      "name": "Edinson Cavani",
+      "sub": "Uruguay",
+      "value": 58,
+      "aliases": [
+        "Cavani"
+      ]
+    },
+    {
+      "id": "carlos-pavon",
+      "name": "Carlos Pavón",
+      "sub": "Honduras",
+      "value": 57,
+      "aliases": [
+        "Pavón"
+      ]
+    },
+    {
+      "id": "olivier-giroud",
+      "name": "Olivier Giroud",
+      "sub": "France",
+      "value": 57,
+      "aliases": [
+        "Giroud"
+      ]
+    },
+    {
+      "id": "clint-dempsey",
+      "name": "Clint Dempsey",
+      "sub": "United States",
+      "value": 57,
+      "aliases": [
+        "Dempsey"
+      ]
+    },
+    {
+      "id": "younis-mahmoud",
+      "name": "Younis Mahmoud",
+      "sub": "Iraq",
+      "value": 57,
+      "aliases": [
+        "Mahmoud"
+      ]
+    },
+    {
+      "id": "landon-donovan",
+      "name": "Landon Donovan",
+      "sub": "United States",
+      "value": 57,
+      "aliases": [
+        "Donovan"
+      ]
+    },
+    {
+      "id": "gabriel-batistuta",
+      "name": "Gabriel Batistuta",
+      "sub": "Argentina",
+      "value": 56,
+      "aliases": [
+        "Batistuta",
+        "Batigol"
+      ]
+    },
+    {
+      "id": "samuel-eto-o",
+      "name": "Samuel Eto'o",
+      "sub": "Cameroon",
+      "value": 56,
+      "aliases": [
+        "Eto'o",
+        "Etoo",
+        "Samuel Etoo"
+      ]
+    },
+    {
+      "id": "bader-al-mutawa",
+      "name": "Bader Al-Mutawa",
+      "sub": "Kuwait",
+      "value": 56,
+      "aliases": [
+        "Al-Mutawa",
+        "Mutawa"
+      ]
+    },
+    {
+      "id": "romario",
+      "name": "Romário",
+      "sub": "Brazil",
+      "value": 55
+    },
+    {
+      "id": "kazuyoshi-miura",
+      "name": "Kazuyoshi Miura",
+      "sub": "Japan",
+      "value": 55,
+      "aliases": [
+        "Miura",
+        "Kazu",
+        "King Kazu"
+      ]
+    },
+    {
+      "id": "jan-koller",
+      "name": "Jan Koller",
+      "sub": "Czech Republic",
+      "value": 55,
+      "aliases": [
+        "Koller"
+      ]
+    },
+    {
+      "id": "iswadi-idris",
+      "name": "Iswadi Idris",
+      "sub": "Indonesia",
+      "value": 55,
+      "aliases": [
+        "Iswadi",
+        "Idris"
+      ]
+    },
+    {
+      "id": "fandi-ahmad",
+      "name": "Fandi Ahmad",
+      "sub": "Singapore",
+      "value": 55,
+      "aliases": [
+        "Fandi",
+        "Ahmad"
+      ]
+    },
+    {
+      "id": "joachim-streich",
+      "name": "Joachim Streich",
+      "sub": "East Germany",
+      "value": 55,
+      "aliases": [
+        "Streich"
+      ]
+    },
+    {
+      "id": "memphis-depay",
+      "name": "Memphis Depay",
+      "sub": "Netherlands",
+      "value": 55,
+      "aliases": [
+        "Depay",
+        "Memphis"
+      ]
+    },
+    {
+      "id": "sadio-mane",
+      "name": "Sadio Mané",
+      "sub": "Senegal",
+      "value": 55,
+      "aliases": [
+        "Mané"
+      ]
+    },
+    {
+      "id": "wayne-rooney",
+      "name": "Wayne Rooney",
+      "sub": "England",
+      "value": 53,
+      "aliases": [
+        "Rooney"
+      ]
+    },
+    {
+      "id": "poul-nielsen",
+      "name": "Poul Nielsen",
+      "sub": "Denmark",
+      "value": 52,
+      "aliases": [
+        "Nielsen"
+      ]
+    },
+    {
+      "id": "phil-younghusband",
+      "name": "Phil Younghusband",
+      "sub": "Philippines",
+      "value": 52,
+      "aliases": [
+        "Younghusband"
+      ]
+    },
+    {
+      "id": "javier-hernandez",
+      "name": "Javier Hernández",
+      "sub": "Mexico",
+      "value": 52,
+      "aliases": [
+        "Hernández",
+        "Chicharito"
+      ]
+    },
+    {
+      "id": "jon-dahl-tomasson",
+      "name": "Jon Dahl Tomasson",
+      "sub": "Denmark",
+      "value": 52,
+      "aliases": [
+        "Tomasson",
+        "Dahl Tomasson"
+      ]
+    },
+    {
+      "id": "adnan-al-talyani",
+      "name": "Adnan Al Talyani",
+      "sub": "United Arab Emirates",
+      "value": 52,
+      "aliases": [
+        "Al Talyani",
+        "Talyani"
+      ]
+    },
+    {
+      "id": "lajos-tichy",
+      "name": "Lajos Tichy",
+      "sub": "Hungary",
+      "value": 51,
+      "aliases": [
+        "Tichy"
+      ]
+    },
+    {
+      "id": "le-cong-vinh",
+      "name": "Lê Công Vinh",
+      "sub": "Vietnam",
+      "value": 51,
+      "aliases": [
+        "Công Vinh"
+      ]
+    },
+    {
+      "id": "asamoah-gyan",
+      "name": "Asamoah Gyan",
+      "sub": "Ghana",
+      "value": 51,
+      "aliases": [
+        "Gyan"
+      ]
+    },
+    {
+      "id": "hakan-sukur",
+      "name": "Hakan Şükür",
+      "sub": "Turkey",
+      "value": 51,
+      "aliases": [
+        "Şükür"
+      ]
+    },
+    {
+      "id": "thierry-henry",
+      "name": "Thierry Henry",
+      "sub": "France",
+      "value": 51,
+      "aliases": [
+        "Henry"
+      ]
+    },
+    {
+      "id": "alexis-sanchez",
+      "name": "Alexis Sánchez",
+      "sub": "Chile",
+      "value": 51,
+      "aliases": [
+        "Sánchez",
+        "Alexis"
+      ]
+    },
+    {
+      "id": "karim-bagheri",
+      "name": "Karim Bagheri",
+      "sub": "Iran",
+      "value": 50,
+      "aliases": [
+        "Bagheri"
+      ]
+    },
+    {
+      "id": "robin-van-persie",
+      "name": "Robin van Persie",
+      "sub": "Netherlands",
+      "value": 50,
+      "aliases": [
+        "van Persie",
+        "RVP"
+      ]
+    },
+    {
+      "id": "hwang-sun-hong",
+      "name": "Hwang Sun-hong",
+      "sub": "South Korea",
+      "value": 50,
+      "aliases": [
+        "Hwang",
+        "Sun-hong Hwang"
+      ]
+    },
+    {
+      "id": "tim-cahill",
+      "name": "Tim Cahill",
+      "sub": "Australia",
+      "value": 50,
+      "aliases": [
+        "Cahill"
+      ]
+    },
+    {
+      "id": "shinji-okazaki",
+      "name": "Shinji Okazaki",
+      "sub": "Japan",
+      "value": 50,
+      "aliases": [
+        "Okazaki"
+      ]
+    },
+    {
+      "id": "salomon-rondon",
+      "name": "Salomón Rondón",
+      "sub": "Venezuela",
+      "value": 50,
+      "aliases": [
+        "Rondón"
+      ]
+    },
+    {
+      "id": "zainal-abidin-hassan",
+      "name": "Zainal Abidin Hassan",
+      "sub": "Malaysia",
+      "value": 50,
+      "aliases": [
+        "Zainal Abidin",
+        "Hassan"
+      ]
+    }
+  ]
+}

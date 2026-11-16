@@ -1,0 +1,144 @@
+import { useState } from 'react';
+import { useApp } from '../App';
+import { COURSES, categoriesFor, type CourseId } from '../lib/data';
+import { cleanName, createGame, MAX_PLAYERS, NAME_MAX, sameName } from '../lib/game';
+import { Icons, IconButton, TopBar, colorOf } from '../components/ui';
+
+const HOLE_OPTIONS = [3, 6, 9];
+
+export default function Setup({ mode }: { mode: 'challenge' | 'local' }) {
+  const { go, saved, saveGame, setName } = useApp();
+  const [names, setNames] = useState<string[]>(mode === 'local' ? [saved.name, ''] : [saved.name]);
+  const [holes, setHoles] = useState(3);
+  const [course, setCourse] = useState<CourseId>('mixed');
+  const [tried, setTried] = useState(false);
+
+  const pool = categoriesFor(course).length;
+  const holeCount = Math.min(holes, pool);
+  const cleaned = names.map(cleanName);
+  const dupes = cleaned.map((n, i) => !!n && cleaned.findIndex((m) => sameName(m, n)) !== i);
+  const valid = cleaned.every(Boolean) && !dupes.some(Boolean);
+
+  const start = () => {
+    setTried(true);
+    if (!valid) return;
+    setName(cleaned[0]);
+    const g = createGame({ mode, course, holes: holeCount, names: cleaned, me: mode === 'challenge' ? 0 : null });
+    saveGame(g);
+    go(`/play/${g.id}`, { replace: true });
+  };
+
+  return (
+    <main className="screen setup">
+      <TopBar
+        left={
+          <IconButton label="Back" onClick={() => go('/')}>
+            {Icons.back}
+          </IconButton>
+        }
+        title={mode === 'challenge' ? 'New challenge' : 'Pass & play'}
+      />
+
+      <form
+        className="stack"
+        onSubmit={(e) => {
+          e.preventDefault();
+          start();
+        }}
+      >
+        <section className="card form-card">
+          <h2 className="field-title">{mode === 'challenge' ? 'Your name' : 'Players'}</h2>
+          {mode === 'challenge' && <p className="field-help">Your friend sees this when you send the link.</p>}
+          {mode === 'local' && <p className="field-help">Everyone picks in secret, then you pass the phone on.</p>}
+          <div className="names">
+            {names.map((n, i) => (
+              <div key={i} className="name-row">
+                <span className={`name-dot dot-${colorOf(i)}`} aria-hidden="true" />
+                <input
+                  className={`input${tried && (!cleaned[i] || dupes[i]) ? ' is-error' : ''}`}
+                  value={n}
+                  maxLength={NAME_MAX}
+                  placeholder={mode === 'challenge' ? 'e.g. Jay' : `Player ${i + 1}`}
+                  aria-label={mode === 'challenge' ? 'Your name' : `Player ${i + 1} name`}
+                  autoCapitalize="words"
+                  autoComplete={i === 0 ? 'nickname' : 'off'}
+                  enterKeyHint={i === names.length - 1 ? 'go' : 'next'}
+                  onChange={(e) => setNames(names.map((x, j) => (j === i ? e.target.value : x)))}
+                />
+                {mode === 'local' && names.length > 2 && (
+                  <IconButton label={`Remove player ${i + 1}`} onClick={() => setNames(names.filter((_, j) => j !== i))}>
+                    {Icons.close}
+                  </IconButton>
+                )}
+              </div>
+            ))}
+          </div>
+          {tried && !valid && (
+            <p className="field-error" role="alert">
+              {cleaned.some((x) => !x) ? 'Every player needs a name.' : 'Names need to be different.'}
+            </p>
+          )}
+          {mode === 'local' && names.length < MAX_PLAYERS && (
+            <button type="button" className="link-btn add-player" onClick={() => setNames([...names, ''])}>
+              {Icons.plus} Add player
+            </button>
+          )}
+        </section>
+
+        <section className="card form-card">
+          <h2 className="field-title">Holes</h2>
+          <div className="segmented" role="radiogroup" aria-label="Number of holes">
+            {HOLE_OPTIONS.map((n) => (
+              <button
+                key={n}
+                type="button"
+                role="radio"
+                aria-checked={holes === n}
+                disabled={n > pool}
+                className={holes === n ? 'is-on' : undefined}
+                onClick={() => setHoles(n)}
+              >
+                <b>{n}</b>
+                <small>{n === 3 ? '~3 min' : n === 6 ? '~6 min' : '~10 min'}</small>
+              </button>
+            ))}
+          </div>
+        </section>
+
+        <section className="card form-card">
+          <h2 className="field-title">Course</h2>
+          <div className="courses" role="radiogroup" aria-label="Course">
+            {COURSES.map((c) => {
+              const n = categoriesFor(c.id).length;
+              if (!n) return null;
+              return (
+                <button
+                  key={c.id}
+                  type="button"
+                  role="radio"
+                  aria-checked={course === c.id}
+                  className={`course${course === c.id ? ' is-on' : ''}`}
+                  onClick={() => {
+                    setCourse(c.id);
+                    if (holes > n) setHoles(HOLE_OPTIONS.filter((x) => x <= n).pop() ?? 3);
+                  }}
+                >
+                  <span className="course-name">{c.name}</span>
+                  <span className="course-blurb">
+                    {c.blurb} · {n} lists
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </section>
+
+        <div className="sticky-cta">
+          <button type="submit" className="btn btn-primary btn-block btn-lg">
+            Tee off
+          </button>
+        </div>
+      </form>
+    </main>
+  );
+}

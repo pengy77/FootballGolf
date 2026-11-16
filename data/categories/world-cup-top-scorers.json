@@ -1,0 +1,1047 @@
+{
+  "id": "world-cup-top-scorers",
+  "title": "World Cup top scorers",
+  "prompt": "most World Cup goals (men's)",
+  "noun": "player",
+  "nounPlural": "players",
+  "metric": "Goals",
+  "order": "desc",
+  "description": "Goals scored at men's FIFA World Cup finals tournaments, 1930–2026; every player with 5 or more.",
+  "tags": [
+    "world-cup",
+    "players",
+    "international"
+  ],
+  "source": {
+    "name": "Wikipedia: List of FIFA World Cup top goalscorers",
+    "url": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_top_goalscorers",
+    "asOf": "2026-07-19"
+  },
+  "items": [
+    {
+      "id": "kylian-mbappe",
+      "name": "Kylian Mbappé",
+      "sub": "France",
+      "value": 22,
+      "aliases": [
+        "Mbappé"
+      ]
+    },
+    {
+      "id": "lionel-messi",
+      "name": "Lionel Messi",
+      "sub": "Argentina",
+      "value": 21,
+      "aliases": [
+        "Messi",
+        "Leo Messi",
+        "La Pulga"
+      ]
+    },
+    {
+      "id": "miroslav-klose",
+      "name": "Miroslav Klose",
+      "sub": "Germany",
+      "value": 16,
+      "aliases": [
+        "Klose"
+      ]
+    },
+    {
+      "id": "ronaldo",
+      "name": "Ronaldo",
+      "sub": "Brazil",
+      "value": 15,
+      "aliases": [
+        "Ronaldo Nazário",
+        "R9",
+        "Ronaldo Luís Nazário de Lima",
+        "O Fenômeno",
+        "Brazilian Ronaldo"
+      ]
+    },
+    {
+      "id": "gerd-muller",
+      "name": "Gerd Müller",
+      "sub": "West Germany",
+      "value": 14,
+      "aliases": [
+        "Müller",
+        "Der Bomber",
+        "Gerd Mueller",
+        "Mueller"
+      ]
+    },
+    {
+      "id": "harry-kane",
+      "name": "Harry Kane",
+      "sub": "England",
+      "value": 14,
+      "aliases": [
+        "Kane"
+      ]
+    },
+    {
+      "id": "just-fontaine",
+      "name": "Just Fontaine",
+      "sub": "France",
+      "value": 13,
+      "aliases": [
+        "Fontaine"
+      ]
+    },
+    {
+      "id": "pele",
+      "name": "Pelé",
+      "sub": "Brazil",
+      "value": 12,
+      "aliases": [
+        "Edson Arantes do Nascimento"
+      ]
+    },
+    {
+      "id": "sandor-kocsis",
+      "name": "Sándor Kocsis",
+      "sub": "Hungary",
+      "value": 11,
+      "aliases": [
+        "Kocsis"
+      ]
+    },
+    {
+      "id": "jurgen-klinsmann",
+      "name": "Jürgen Klinsmann",
+      "sub": "West Germany / Germany",
+      "value": 11,
+      "aliases": [
+        "Klinsmann",
+        "Klinsi",
+        "Juergen Klinsmann"
+      ]
+    },
+    {
+      "id": "cristiano-ronaldo",
+      "name": "Cristiano Ronaldo",
+      "sub": "Portugal",
+      "value": 11,
+      "aliases": [
+        "Ronaldo",
+        "CR7",
+        "Cristiano"
+      ]
+    },
+    {
+      "id": "helmut-rahn",
+      "name": "Helmut Rahn",
+      "sub": "West Germany",
+      "value": 10,
+      "aliases": [
+        "Rahn"
+      ]
+    },
+    {
+      "id": "gary-lineker",
+      "name": "Gary Lineker",
+      "sub": "England",
+      "value": 10,
+      "aliases": [
+        "Lineker"
+      ]
+    },
+    {
+      "id": "gabriel-batistuta",
+      "name": "Gabriel Batistuta",
+      "sub": "Argentina",
+      "value": 10,
+      "aliases": [
+        "Batistuta",
+        "Batigol"
+      ]
+    },
+    {
+      "id": "teofilo-cubillas",
+      "name": "Teófilo Cubillas",
+      "sub": "Peru",
+      "value": 10,
+      "aliases": [
+        "Cubillas"
+      ]
+    },
+    {
+      "id": "thomas-muller",
+      "name": "Thomas Müller",
+      "sub": "Germany",
+      "value": 10,
+      "aliases": [
+        "Müller",
+        "Thomas Mueller",
+        "Mueller"
+      ]
+    },
+    {
+      "id": "grzegorz-lato",
+      "name": "Grzegorz Lato",
+      "sub": "Poland",
+      "value": 10,
+      "aliases": [
+        "Lato"
+      ]
+    },
+    {
+      "id": "ademir",
+      "name": "Ademir",
+      "sub": "Brazil",
+      "value": 9,
+      "aliases": [
+        "Ademir de Menezes"
+      ]
+    },
+    {
+      "id": "eusebio",
+      "name": "Eusébio",
+      "sub": "Portugal",
+      "value": 9,
+      "aliases": [
+        "Eusébio da Silva Ferreira"
+      ]
+    },
+    {
+      "id": "christian-vieri",
+      "name": "Christian Vieri",
+      "sub": "Italy",
+      "value": 9,
+      "aliases": [
+        "Vieri",
+        "Bobo Vieri"
+      ]
+    },
+    {
+      "id": "vava",
+      "name": "Vavá",
+      "sub": "Brazil",
+      "value": 9
+    },
+    {
+      "id": "david-villa",
+      "name": "David Villa",
+      "sub": "Spain",
+      "value": 9,
+      "aliases": [
+        "Villa",
+        "El Guaje"
+      ]
+    },
+    {
+      "id": "paolo-rossi",
+      "name": "Paolo Rossi",
+      "sub": "Italy",
+      "value": 9,
+      "aliases": [
+        "Rossi",
+        "Pablito"
+      ]
+    },
+    {
+      "id": "neymar",
+      "name": "Neymar",
+      "sub": "Brazil",
+      "value": 9,
+      "aliases": [
+        "Neymar Jr",
+        "Neymar Júnior"
+      ]
+    },
+    {
+      "id": "jairzinho",
+      "name": "Jairzinho",
+      "sub": "Brazil",
+      "value": 9
+    },
+    {
+      "id": "roberto-baggio",
+      "name": "Roberto Baggio",
+      "sub": "Italy",
+      "value": 9,
+      "aliases": [
+        "Baggio"
+      ]
+    },
+    {
+      "id": "karl-heinz-rummenigge",
+      "name": "Karl-Heinz Rummenigge",
+      "sub": "West Germany",
+      "value": 9,
+      "aliases": [
+        "Rummenigge",
+        "Kalle Rummenigge"
+      ]
+    },
+    {
+      "id": "uwe-seeler",
+      "name": "Uwe Seeler",
+      "sub": "West Germany",
+      "value": 9,
+      "aliases": [
+        "Seeler"
+      ]
+    },
+    {
+      "id": "guillermo-stabile",
+      "name": "Guillermo Stábile",
+      "sub": "Argentina",
+      "value": 8,
+      "aliases": [
+        "Stábile"
+      ]
+    },
+    {
+      "id": "leonidas",
+      "name": "Leônidas",
+      "sub": "Brazil",
+      "value": 8,
+      "aliases": [
+        "Leônidas da Silva"
+      ]
+    },
+    {
+      "id": "oscar-miguez",
+      "name": "Óscar Míguez",
+      "sub": "Uruguay",
+      "value": 8,
+      "aliases": [
+        "Míguez"
+      ]
+    },
+    {
+      "id": "jude-bellingham",
+      "name": "Jude Bellingham",
+      "sub": "England",
+      "value": 8,
+      "aliases": [
+        "Bellingham"
+      ]
+    },
+    {
+      "id": "rivaldo",
+      "name": "Rivaldo",
+      "sub": "Brazil",
+      "value": 8
+    },
+    {
+      "id": "rudi-voller",
+      "name": "Rudi Völler",
+      "sub": "West Germany / Germany",
+      "value": 8,
+      "aliases": [
+        "Völler",
+        "Rudi Voeller",
+        "Voeller"
+      ]
+    },
+    {
+      "id": "romelu-lukaku",
+      "name": "Romelu Lukaku",
+      "sub": "Belgium",
+      "value": 8,
+      "aliases": [
+        "Lukaku"
+      ]
+    },
+    {
+      "id": "diego-maradona",
+      "name": "Diego Maradona",
+      "sub": "Argentina",
+      "value": 8,
+      "aliases": [
+        "Maradona",
+        "Diego Armando Maradona",
+        "El Pibe de Oro"
+      ]
+    },
+    {
+      "id": "erling-haaland",
+      "name": "Erling Haaland",
+      "sub": "Norway",
+      "value": 7,
+      "aliases": [
+        "Haaland"
+      ]
+    },
+    {
+      "id": "oldrich-nejedly",
+      "name": "Oldřich Nejedlý",
+      "sub": "Czechoslovakia",
+      "value": 7,
+      "aliases": [
+        "Nejedlý"
+      ]
+    },
+    {
+      "id": "lajos-tichy",
+      "name": "Lajos Tichy",
+      "sub": "Hungary",
+      "value": 7,
+      "aliases": [
+        "Tichy"
+      ]
+    },
+    {
+      "id": "careca",
+      "name": "Careca",
+      "sub": "Brazil",
+      "value": 7
+    },
+    {
+      "id": "johnny-rep",
+      "name": "Johnny Rep",
+      "sub": "Netherlands",
+      "value": 7,
+      "aliases": [
+        "Rep"
+      ]
+    },
+    {
+      "id": "andrzej-szarmach",
+      "name": "Andrzej Szarmach",
+      "sub": "Poland",
+      "value": 7,
+      "aliases": [
+        "Szarmach"
+      ]
+    },
+    {
+      "id": "hans-schafer",
+      "name": "Hans Schäfer",
+      "sub": "West Germany",
+      "value": 7,
+      "aliases": [
+        "Schäfer",
+        "Hans Schaefer",
+        "Schaefer"
+      ]
+    },
+    {
+      "id": "luis-suarez",
+      "name": "Luis Suárez",
+      "sub": "Uruguay",
+      "value": 7,
+      "aliases": [
+        "Suárez",
+        "El Pistolero"
+      ]
+    },
+    {
+      "id": "ivan-perisic",
+      "name": "Ivan Perišić",
+      "sub": "Croatia",
+      "value": 7,
+      "aliases": [
+        "Perišić"
+      ]
+    },
+    {
+      "id": "josef-hugi",
+      "name": "Josef Hügi",
+      "sub": "Switzerland",
+      "value": 6,
+      "aliases": [
+        "Hügi",
+        "Josef Huegi",
+        "Huegi"
+      ]
+    },
+    {
+      "id": "oleg-salenko",
+      "name": "Oleg Salenko",
+      "sub": "Russia",
+      "value": 6,
+      "aliases": [
+        "Salenko"
+      ]
+    },
+    {
+      "id": "gyorgy-sarosi",
+      "name": "György Sárosi",
+      "sub": "Hungary",
+      "value": 6,
+      "aliases": [
+        "Sárosi"
+      ]
+    },
+    {
+      "id": "max-morlock",
+      "name": "Max Morlock",
+      "sub": "West Germany",
+      "value": 6,
+      "aliases": [
+        "Morlock"
+      ]
+    },
+    {
+      "id": "erich-probst",
+      "name": "Erich Probst",
+      "sub": "Austria",
+      "value": 6,
+      "aliases": [
+        "Probst"
+      ]
+    },
+    {
+      "id": "salvatore-schillaci",
+      "name": "Salvatore Schillaci",
+      "sub": "Italy",
+      "value": 6,
+      "aliases": [
+        "Schillaci",
+        "Totò Schillaci"
+      ]
+    },
+    {
+      "id": "davor-suker",
+      "name": "Davor Šuker",
+      "sub": "Yugoslavia / Croatia",
+      "value": 6,
+      "aliases": [
+        "Šuker"
+      ]
+    },
+    {
+      "id": "helmut-haller",
+      "name": "Helmut Haller",
+      "sub": "West Germany",
+      "value": 6,
+      "aliases": [
+        "Haller"
+      ]
+    },
+    {
+      "id": "cody-gakpo",
+      "name": "Cody Gakpo",
+      "sub": "Netherlands",
+      "value": 6,
+      "aliases": [
+        "Gakpo"
+      ]
+    },
+    {
+      "id": "hristo-stoichkov",
+      "name": "Hristo Stoichkov",
+      "sub": "Bulgaria",
+      "value": 6,
+      "aliases": [
+        "Stoichkov"
+      ]
+    },
+    {
+      "id": "diego-forlan",
+      "name": "Diego Forlán",
+      "sub": "Uruguay",
+      "value": 6,
+      "aliases": [
+        "Forlán"
+      ]
+    },
+    {
+      "id": "enner-valencia",
+      "name": "Enner Valencia",
+      "sub": "Ecuador",
+      "value": 6,
+      "aliases": [
+        "Valencia"
+      ]
+    },
+    {
+      "id": "asamoah-gyan",
+      "name": "Asamoah Gyan",
+      "sub": "Ghana",
+      "value": 6,
+      "aliases": [
+        "Gyan"
+      ]
+    },
+    {
+      "id": "bukayo-saka",
+      "name": "Bukayo Saka",
+      "sub": "England",
+      "value": 6,
+      "aliases": [
+        "Saka"
+      ]
+    },
+    {
+      "id": "dennis-bergkamp",
+      "name": "Dennis Bergkamp",
+      "sub": "Netherlands",
+      "value": 6,
+      "aliases": [
+        "Bergkamp"
+      ]
+    },
+    {
+      "id": "rob-rensenbrink",
+      "name": "Rob Rensenbrink",
+      "sub": "Netherlands",
+      "value": 6,
+      "aliases": [
+        "Rensenbrink"
+      ]
+    },
+    {
+      "id": "james-rodriguez",
+      "name": "James Rodríguez",
+      "sub": "Colombia",
+      "value": 6,
+      "aliases": [
+        "Rodríguez",
+        "James"
+      ]
+    },
+    {
+      "id": "rivellino",
+      "name": "Rivellino",
+      "sub": "Brazil",
+      "value": 6,
+      "aliases": [
+        "Rivelino",
+        "Roberto Rivellino"
+      ]
+    },
+    {
+      "id": "bebeto",
+      "name": "Bebeto",
+      "sub": "Brazil",
+      "value": 6
+    },
+    {
+      "id": "arjen-robben",
+      "name": "Arjen Robben",
+      "sub": "Netherlands",
+      "value": 6,
+      "aliases": [
+        "Robben"
+      ]
+    },
+    {
+      "id": "zbigniew-boniek",
+      "name": "Zbigniew Boniek",
+      "sub": "Poland",
+      "value": 6,
+      "aliases": [
+        "Boniek"
+      ]
+    },
+    {
+      "id": "thierry-henry",
+      "name": "Thierry Henry",
+      "sub": "France",
+      "value": 6,
+      "aliases": [
+        "Henry"
+      ]
+    },
+    {
+      "id": "robin-van-persie",
+      "name": "Robin van Persie",
+      "sub": "Netherlands",
+      "value": 6,
+      "aliases": [
+        "van Persie",
+        "RVP"
+      ]
+    },
+    {
+      "id": "wesley-sneijder",
+      "name": "Wesley Sneijder",
+      "sub": "Netherlands",
+      "value": 6,
+      "aliases": [
+        "Sneijder"
+      ]
+    },
+    {
+      "id": "mario-kempes",
+      "name": "Mario Kempes",
+      "sub": "Argentina",
+      "value": 6,
+      "aliases": [
+        "Kempes",
+        "El Matador"
+      ]
+    },
+    {
+      "id": "ousmane-dembele",
+      "name": "Ousmane Dembélé",
+      "sub": "France",
+      "value": 6,
+      "aliases": [
+        "Dembélé"
+      ]
+    },
+    {
+      "id": "lothar-matthaus",
+      "name": "Lothar Matthäus",
+      "sub": "West Germany / Germany",
+      "value": 6,
+      "aliases": [
+        "Matthäus",
+        "Lothar Matthaeus",
+        "Matthaeus"
+      ]
+    },
+    {
+      "id": "pedro-cea",
+      "name": "Pedro Cea",
+      "sub": "Uruguay",
+      "value": 5,
+      "aliases": [
+        "Cea"
+      ]
+    },
+    {
+      "id": "silvio-piola",
+      "name": "Silvio Piola",
+      "sub": "Italy",
+      "value": 5,
+      "aliases": [
+        "Piola"
+      ]
+    },
+    {
+      "id": "gyula-zsengeller",
+      "name": "Gyula Zsengellér",
+      "sub": "Hungary",
+      "value": 5,
+      "aliases": [
+        "Zsengellér"
+      ]
+    },
+    {
+      "id": "peter-mcparland",
+      "name": "Peter McParland",
+      "sub": "Northern Ireland",
+      "value": 5,
+      "aliases": [
+        "McParland"
+      ]
+    },
+    {
+      "id": "tomas-skuhravy",
+      "name": "Tomáš Skuhravý",
+      "sub": "Czechoslovakia",
+      "value": 5,
+      "aliases": [
+        "Skuhravý"
+      ]
+    },
+    {
+      "id": "juan-alberto-schiaffino",
+      "name": "Juan Alberto Schiaffino",
+      "sub": "Uruguay",
+      "value": 5,
+      "aliases": [
+        "Schiaffino"
+      ]
+    },
+    {
+      "id": "geoff-hurst",
+      "name": "Geoff Hurst",
+      "sub": "England",
+      "value": 5,
+      "aliases": [
+        "Hurst"
+      ]
+    },
+    {
+      "id": "jon-dahl-tomasson",
+      "name": "Jon Dahl Tomasson",
+      "sub": "Denmark",
+      "value": 5,
+      "aliases": [
+        "Tomasson",
+        "Dahl Tomasson"
+      ]
+    },
+    {
+      "id": "kai-havertz",
+      "name": "Kai Havertz",
+      "sub": "Germany",
+      "value": 5,
+      "aliases": [
+        "Havertz"
+      ]
+    },
+    {
+      "id": "alessandro-altobelli",
+      "name": "Alessandro Altobelli",
+      "sub": "Italy",
+      "value": 5,
+      "aliases": [
+        "Altobelli"
+      ]
+    },
+    {
+      "id": "kennet-andersson",
+      "name": "Kennet Andersson",
+      "sub": "Sweden",
+      "value": 5,
+      "aliases": [
+        "Andersson"
+      ]
+    },
+    {
+      "id": "fernando-morientes",
+      "name": "Fernando Morientes",
+      "sub": "Spain",
+      "value": 5,
+      "aliases": [
+        "Morientes"
+      ]
+    },
+    {
+      "id": "romario",
+      "name": "Romário",
+      "sub": "Brazil",
+      "value": 5
+    },
+    {
+      "id": "marc-wilmots",
+      "name": "Marc Wilmots",
+      "sub": "Belgium",
+      "value": 5,
+      "aliases": [
+        "Wilmots"
+      ]
+    },
+    {
+      "id": "mario-mandzukic",
+      "name": "Mario Mandžukić",
+      "sub": "Croatia",
+      "value": 5,
+      "aliases": [
+        "Mandžukić"
+      ]
+    },
+    {
+      "id": "mikel-oyarzabal",
+      "name": "Mikel Oyarzabal",
+      "sub": "Spain",
+      "value": 5,
+      "aliases": [
+        "Oyarzabal"
+      ]
+    },
+    {
+      "id": "valentin-ivanov",
+      "name": "Valentin Ivanov",
+      "sub": "Soviet Union",
+      "value": 5,
+      "aliases": [
+        "Ivanov"
+      ]
+    },
+    {
+      "id": "emilio-butragueno",
+      "name": "Emilio Butragueño",
+      "sub": "Spain",
+      "value": 5,
+      "aliases": [
+        "Butragueño",
+        "El Buitre"
+      ]
+    },
+    {
+      "id": "roger-milla",
+      "name": "Roger Milla",
+      "sub": "Cameroon",
+      "value": 5,
+      "aliases": [
+        "Milla"
+      ]
+    },
+    {
+      "id": "tim-cahill",
+      "name": "Tim Cahill",
+      "sub": "Australia",
+      "value": 5,
+      "aliases": [
+        "Cahill"
+      ]
+    },
+    {
+      "id": "vinicius-junior",
+      "name": "Vinícius Júnior",
+      "sub": "Brazil",
+      "value": 5,
+      "aliases": [
+        "Vinícius",
+        "Vini Jr",
+        "Vinicius Jr",
+        "Vini"
+      ]
+    },
+    {
+      "id": "hans-krankl",
+      "name": "Hans Krankl",
+      "sub": "Austria",
+      "value": 5,
+      "aliases": [
+        "Krankl"
+      ]
+    },
+    {
+      "id": "raul",
+      "name": "Raúl",
+      "sub": "Spain",
+      "value": 5,
+      "aliases": [
+        "Raúl González"
+      ]
+    },
+    {
+      "id": "ismaila-sarr",
+      "name": "Ismaïla Sarr",
+      "sub": "Senegal",
+      "value": 5,
+      "aliases": [
+        "Sarr"
+      ]
+    },
+    {
+      "id": "garrincha",
+      "name": "Garrincha",
+      "sub": "Brazil",
+      "value": 5,
+      "aliases": [
+        "Mané Garrincha"
+      ]
+    },
+    {
+      "id": "johan-neeskens",
+      "name": "Johan Neeskens",
+      "sub": "Netherlands",
+      "value": 5,
+      "aliases": [
+        "Neeskens"
+      ]
+    },
+    {
+      "id": "fernando-hierro",
+      "name": "Fernando Hierro",
+      "sub": "Spain",
+      "value": 5,
+      "aliases": [
+        "Hierro"
+      ]
+    },
+    {
+      "id": "zinedine-zidane",
+      "name": "Zinedine Zidane",
+      "sub": "France",
+      "value": 5,
+      "aliases": [
+        "Zidane",
+        "Zizou"
+      ]
+    },
+    {
+      "id": "landon-donovan",
+      "name": "Landon Donovan",
+      "sub": "United States",
+      "value": 5,
+      "aliases": [
+        "Donovan"
+      ]
+    },
+    {
+      "id": "xherdan-shaqiri",
+      "name": "Xherdan Shaqiri",
+      "sub": "Switzerland",
+      "value": 5,
+      "aliases": [
+        "Shaqiri"
+      ]
+    },
+    {
+      "id": "henrik-larsson",
+      "name": "Henrik Larsson",
+      "sub": "Sweden",
+      "value": 5,
+      "aliases": [
+        "Larsson"
+      ]
+    },
+    {
+      "id": "zico",
+      "name": "Zico",
+      "sub": "Brazil",
+      "value": 5
+    },
+    {
+      "id": "michel-platini",
+      "name": "Michel Platini",
+      "sub": "France",
+      "value": 5,
+      "aliases": [
+        "Platini"
+      ]
+    },
+    {
+      "id": "gonzalo-higuain",
+      "name": "Gonzalo Higuaín",
+      "sub": "Argentina",
+      "value": 5,
+      "aliases": [
+        "Higuaín",
+        "Pipita"
+      ]
+    },
+    {
+      "id": "lukas-podolski",
+      "name": "Lukas Podolski",
+      "sub": "Germany",
+      "value": 5,
+      "aliases": [
+        "Podolski",
+        "Poldi"
+      ]
+    },
+    {
+      "id": "julian-alvarez",
+      "name": "Julián Alvarez",
+      "sub": "Argentina",
+      "value": 5,
+      "aliases": [
+        "Alvarez"
+      ]
+    },
+    {
+      "id": "edinson-cavani",
+      "name": "Edinson Cavani",
+      "sub": "Uruguay",
+      "value": 5,
+      "aliases": [
+        "Cavani"
+      ]
+    },
+    {
+      "id": "franz-beckenbauer",
+      "name": "Franz Beckenbauer",
+      "sub": "West Germany",
+      "value": 5,
+      "aliases": [
+        "Beckenbauer",
+        "Der Kaiser",
+        "Kaiser Franz"
+      ]
+    },
+    {
+      "id": "olivier-giroud",
+      "name": "Olivier Giroud",
+      "sub": "France",
+      "value": 5,
+      "aliases": [
+        "Giroud"
+      ]
+    }
+  ]
+}

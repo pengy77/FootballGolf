@@ -1,0 +1,620 @@
+{
+  "id": "world-cup-all-time-table",
+  "title": "World Cup all-time table",
+  "prompt": "most World Cup points of all time",
+  "noun": "nation",
+  "nounPlural": "nations",
+  "metric": "Points",
+  "order": "desc",
+  "description": "All-time men's World Cup finals points, 1930–2026 (3 per win, 1 per draw, shoot-outs count as draws); predecessor teams credited to successors (West Germany to Germany, Soviet Union to Russia, Yugoslavia to Serbia).",
+  "tags": [
+    "world-cup",
+    "international"
+  ],
+  "source": {
+    "name": "Wikipedia: FIFA World Cup records and statistics",
+    "url": "https://en.wikipedia.org/wiki/FIFA_World_Cup_records_and_statistics#Overall_team_records",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "brazil",
+      "name": "Brazil",
+      "sub": "CONMEBOL",
+      "value": 257
+    },
+    {
+      "id": "germany",
+      "name": "Germany",
+      "sub": "UEFA",
+      "value": 232,
+      "aliases": [
+        "West Germany",
+        "Deutschland"
+      ]
+    },
+    {
+      "id": "argentina",
+      "name": "Argentina",
+      "sub": "CONMEBOL",
+      "value": 179
+    },
+    {
+      "id": "italy",
+      "name": "Italy",
+      "sub": "UEFA",
+      "value": 156
+    },
+    {
+      "id": "france",
+      "name": "France",
+      "sub": "UEFA",
+      "value": 149
+    },
+    {
+      "id": "england",
+      "name": "England",
+      "sub": "UEFA",
+      "value": 137
+    },
+    {
+      "id": "spain",
+      "name": "Spain",
+      "sub": "UEFA",
+      "value": 132
+    },
+    {
+      "id": "netherlands",
+      "name": "Netherlands",
+      "sub": "UEFA",
+      "value": 112,
+      "aliases": [
+        "Holland",
+        "The Netherlands"
+      ]
+    },
+    {
+      "id": "uruguay",
+      "name": "Uruguay",
+      "sub": "CONMEBOL",
+      "value": 90
+    },
+    {
+      "id": "belgium",
+      "name": "Belgium",
+      "sub": "UEFA",
+      "value": 84
+    },
+    {
+      "id": "mexico",
+      "name": "Mexico",
+      "sub": "CONCACAF",
+      "value": 78
+    },
+    {
+      "id": "sweden",
+      "name": "Sweden",
+      "sub": "UEFA",
+      "value": 74
+    },
+    {
+      "id": "russia",
+      "name": "Russia",
+      "sub": "UEFA",
+      "value": 67,
+      "aliases": [
+        "Soviet Union",
+        "USSR"
+      ]
+    },
+    {
+      "id": "portugal",
+      "name": "Portugal",
+      "sub": "UEFA",
+      "value": 65
+    },
+    {
+      "id": "serbia",
+      "name": "Serbia",
+      "sub": "UEFA",
+      "value": 63,
+      "aliases": [
+        "Yugoslavia",
+        "Serbia and Montenegro"
+      ]
+    },
+    {
+      "id": "switzerland",
+      "name": "Switzerland",
+      "sub": "UEFA",
+      "value": 61
+    },
+    {
+      "id": "poland",
+      "name": "Poland",
+      "sub": "UEFA",
+      "value": 57
+    },
+    {
+      "id": "croatia",
+      "name": "Croatia",
+      "sub": "UEFA",
+      "value": 53
+    },
+    {
+      "id": "hungary",
+      "name": "Hungary",
+      "sub": "UEFA",
+      "value": 48
+    },
+    {
+      "id": "austria",
+      "name": "Austria",
+      "sub": "UEFA",
+      "value": 44
+    },
+    {
+      "id": "united-states",
+      "name": "United States",
+      "sub": "CONCACAF",
+      "value": 44,
+      "aliases": [
+        "USA",
+        "US",
+        "United States of America",
+        "America"
+      ]
+    },
+    {
+      "id": "slovakia",
+      "name": "Slovakia",
+      "sub": "UEFA",
+      "value": 42,
+      "aliases": [
+        "Czechoslovakia"
+      ]
+    },
+    {
+      "id": "czech-republic",
+      "name": "Czech Republic",
+      "sub": "UEFA",
+      "value": 42,
+      "aliases": [
+        "Czechia",
+        "Czechoslovakia"
+      ]
+    },
+    {
+      "id": "colombia",
+      "name": "Colombia",
+      "sub": "CONMEBOL",
+      "value": 41
+    },
+    {
+      "id": "chile",
+      "name": "Chile",
+      "sub": "CONMEBOL",
+      "value": 40
+    },
+    {
+      "id": "paraguay",
+      "name": "Paraguay",
+      "sub": "CONMEBOL",
+      "value": 36
+    },
+    {
+      "id": "south-korea",
+      "name": "South Korea",
+      "sub": "AFC",
+      "value": 34,
+      "aliases": [
+        "Korea Republic",
+        "Korea",
+        "Republic of Korea"
+      ]
+    },
+    {
+      "id": "denmark",
+      "name": "Denmark",
+      "sub": "UEFA",
+      "value": 33
+    },
+    {
+      "id": "morocco",
+      "name": "Morocco",
+      "sub": "CAF",
+      "value": 33
+    },
+    {
+      "id": "japan",
+      "name": "Japan",
+      "sub": "AFC",
+      "value": 32
+    },
+    {
+      "id": "romania",
+      "name": "Romania",
+      "sub": "UEFA",
+      "value": 29
+    },
+    {
+      "id": "costa-rica",
+      "name": "Costa Rica",
+      "sub": "CONCACAF",
+      "value": 23
+    },
+    {
+      "id": "cameroon",
+      "name": "Cameroon",
+      "sub": "CAF",
+      "value": 23
+    },
+    {
+      "id": "ghana",
+      "name": "Ghana",
+      "sub": "CAF",
+      "value": 22
+    },
+    {
+      "id": "scotland",
+      "name": "Scotland",
+      "sub": "UEFA",
+      "value": 22
+    },
+    {
+      "id": "norway",
+      "name": "Norway",
+      "sub": "UEFA",
+      "value": 21
+    },
+    {
+      "id": "senegal",
+      "name": "Senegal",
+      "sub": "CAF",
+      "value": 21
+    },
+    {
+      "id": "ecuador",
+      "name": "Ecuador",
+      "sub": "CONMEBOL",
+      "value": 21
+    },
+    {
+      "id": "nigeria",
+      "name": "Nigeria",
+      "sub": "CAF",
+      "value": 21
+    },
+    {
+      "id": "australia",
+      "name": "Australia",
+      "sub": "AFC",
+      "value": 21
+    },
+    {
+      "id": "turkey",
+      "name": "Turkey",
+      "sub": "UEFA",
+      "value": 19,
+      "aliases": [
+        "Türkiye",
+        "Turkiye"
+      ]
+    },
+    {
+      "id": "peru",
+      "name": "Peru",
+      "sub": "CONMEBOL",
+      "value": 18
+    },
+    {
+      "id": "bulgaria",
+      "name": "Bulgaria",
+      "sub": "UEFA",
+      "value": 17
+    },
+    {
+      "id": "ivory-coast",
+      "name": "Ivory Coast",
+      "sub": "CAF",
+      "value": 16,
+      "aliases": [
+        "Côte d'Ivoire",
+        "Cote d'Ivoire"
+      ]
+    },
+    {
+      "id": "algeria",
+      "name": "Algeria",
+      "sub": "CAF",
+      "value": 16
+    },
+    {
+      "id": "iran",
+      "name": "Iran",
+      "sub": "AFC",
+      "value": 16,
+      "aliases": [
+        "IR Iran"
+      ]
+    },
+    {
+      "id": "saudi-arabia",
+      "name": "Saudi Arabia",
+      "sub": "AFC",
+      "value": 16,
+      "aliases": [
+        "KSA"
+      ]
+    },
+    {
+      "id": "republic-of-ireland",
+      "name": "Republic of Ireland",
+      "sub": "UEFA",
+      "value": 14,
+      "aliases": [
+        "Ireland",
+        "Eire"
+      ]
+    },
+    {
+      "id": "south-africa",
+      "name": "South Africa",
+      "sub": "CAF",
+      "value": 14
+    },
+    {
+      "id": "northern-ireland",
+      "name": "Northern Ireland",
+      "sub": "UEFA",
+      "value": 14
+    },
+    {
+      "id": "tunisia",
+      "name": "Tunisia",
+      "sub": "CAF",
+      "value": 14
+    },
+    {
+      "id": "east-germany",
+      "name": "East Germany",
+      "sub": "UEFA (defunct)",
+      "value": 8,
+      "aliases": [
+        "GDR",
+        "DDR"
+      ]
+    },
+    {
+      "id": "egypt",
+      "name": "Egypt",
+      "sub": "CAF",
+      "value": 8
+    },
+    {
+      "id": "greece",
+      "name": "Greece",
+      "sub": "UEFA",
+      "value": 8
+    },
+    {
+      "id": "ukraine",
+      "name": "Ukraine",
+      "sub": "UEFA",
+      "value": 7
+    },
+    {
+      "id": "bosnia-and-herzegovina",
+      "name": "Bosnia and Herzegovina",
+      "sub": "UEFA",
+      "value": 7,
+      "aliases": [
+        "Bosnia",
+        "Bosnia-Herzegovina"
+      ]
+    },
+    {
+      "id": "wales",
+      "name": "Wales",
+      "sub": "UEFA",
+      "value": 7
+    },
+    {
+      "id": "canada",
+      "name": "Canada",
+      "sub": "CONCACAF",
+      "value": 7
+    },
+    {
+      "id": "slovenia",
+      "name": "Slovenia",
+      "sub": "UEFA",
+      "value": 4
+    },
+    {
+      "id": "cuba",
+      "name": "Cuba",
+      "sub": "CONCACAF",
+      "value": 4
+    },
+    {
+      "id": "dr-congo",
+      "name": "DR Congo",
+      "sub": "CAF",
+      "value": 4,
+      "aliases": [
+        "Congo DR",
+        "DRC",
+        "Democratic Republic of the Congo",
+        "Zaire"
+      ]
+    },
+    {
+      "id": "north-korea",
+      "name": "North Korea",
+      "sub": "AFC",
+      "value": 4,
+      "aliases": [
+        "Korea DPR",
+        "DPR Korea"
+      ]
+    },
+    {
+      "id": "new-zealand",
+      "name": "New Zealand",
+      "sub": "OFC",
+      "value": 4,
+      "aliases": [
+        "Aotearoa New Zealand",
+        "All Whites"
+      ]
+    },
+    {
+      "id": "cape-verde",
+      "name": "Cape Verde",
+      "sub": "CAF",
+      "value": 3,
+      "aliases": [
+        "Cabo Verde",
+        "Cape Verde Islands"
+      ]
+    },
+    {
+      "id": "jamaica",
+      "name": "Jamaica",
+      "sub": "CONCACAF",
+      "value": 3
+    },
+    {
+      "id": "honduras",
+      "name": "Honduras",
+      "sub": "CONCACAF",
+      "value": 3
+    },
+    {
+      "id": "angola",
+      "name": "Angola",
+      "sub": "CAF",
+      "value": 2
+    },
+    {
+      "id": "israel",
+      "name": "Israel",
+      "sub": "UEFA",
+      "value": 2
+    },
+    {
+      "id": "iceland",
+      "name": "Iceland",
+      "sub": "UEFA",
+      "value": 1
+    },
+    {
+      "id": "kuwait",
+      "name": "Kuwait",
+      "sub": "AFC",
+      "value": 1
+    },
+    {
+      "id": "trinidad-and-tobago",
+      "name": "Trinidad and Tobago",
+      "sub": "CONCACAF",
+      "value": 1,
+      "aliases": [
+        "Trinidad",
+        "T&T"
+      ]
+    },
+    {
+      "id": "curacao",
+      "name": "Curaçao",
+      "sub": "CONCACAF",
+      "value": 1,
+      "aliases": [
+        "Curacao"
+      ]
+    },
+    {
+      "id": "qatar",
+      "name": "Qatar",
+      "sub": "AFC",
+      "value": 1
+    },
+    {
+      "id": "bolivia",
+      "name": "Bolivia",
+      "sub": "CONMEBOL",
+      "value": 1
+    },
+    {
+      "id": "jordan",
+      "name": "Jordan",
+      "sub": "AFC",
+      "value": 0
+    },
+    {
+      "id": "togo",
+      "name": "Togo",
+      "sub": "CAF",
+      "value": 0
+    },
+    {
+      "id": "indonesia",
+      "name": "Indonesia",
+      "sub": "AFC",
+      "value": 0,
+      "aliases": [
+        "Dutch East Indies"
+      ]
+    },
+    {
+      "id": "united-arab-emirates",
+      "name": "United Arab Emirates",
+      "sub": "AFC",
+      "value": 0,
+      "aliases": [
+        "UAE",
+        "Emirates"
+      ]
+    },
+    {
+      "id": "uzbekistan",
+      "name": "Uzbekistan",
+      "sub": "AFC",
+      "value": 0
+    },
+    {
+      "id": "china",
+      "name": "China",
+      "sub": "AFC",
+      "value": 0,
+      "aliases": [
+        "China PR"
+      ]
+    },
+    {
+      "id": "panama",
+      "name": "Panama",
+      "sub": "CONCACAF",
+      "value": 0
+    },
+    {
+      "id": "iraq",
+      "name": "Iraq",
+      "sub": "AFC",
+      "value": 0
+    },
+    {
+      "id": "haiti",
+      "name": "Haiti",
+      "sub": "CONCACAF",
+      "value": 0
+    },
+    {
+      "id": "el-salvador",
+      "name": "El Salvador",
+      "sub": "CONCACAF",
+      "value": 0
+    }
+  ]
+}

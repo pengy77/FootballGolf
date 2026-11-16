@@ -1,0 +1,172 @@
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { mergeGame, type Game } from './lib/game';
+import { decodeGame } from './lib/link';
+import { loadSaved, persist, type Saved } from './lib/store';
+import Home from './screens/Home';
+import Setup from './screens/Setup';
+import Join from './screens/Join';
+import Play from './screens/Play';
+import Results from './screens/Results';
+import Message from './screens/Message';
+import { HowToSheet } from './components/HowTo';
+import { Toast } from './components/ui';
+
+export type Route =
+  | { name: 'home' }
+  | { name: 'setup'; mode: 'challenge' | 'local' }
+  | { name: 'incoming'; code: string }
+  | { name: 'join'; id: string }
+  | { name: 'play'; id: string }
+  | { name: 'results'; id: string }
+  | { name: 'badlink' };
+
+export function parseHash(hash: string): Route {
+  const parts = hash.replace(/^#\/?/, '').split('/');
+  switch (parts[0]) {
+    case 'new':
+      return { name: 'setup', mode: parts[1] === 'local' ? 'local' : 'challenge' };
+    case 'c':
+      return parts[1] ? { name: 'incoming', code: parts.slice(1).join('/') } : { name: 'badlink' };
+    case 'join':
+      return { name: 'join', id: parts[1] ?? '' };
+    case 'play':
+      return { name: 'play', id: parts[1] ?? '' };
+    case 'results':
+      return { name: 'results', id: parts[1] ?? '' };
+    case 'badlink':
+      return { name: 'badlink' };
+    default:
+      return { name: 'home' };
+  }
+}
+
+interface Ctx {
+  saved: Saved;
+  route: Route;
+  go: (hash: string, opts?: { replace?: boolean }) => void;
+  saveGame: (g: Game) => void;
+  deleteGame: (id: string) => void;
+  setName: (name: string) => void;
+  showHowTo: () => void;
+  toast: (msg: string) => void;
+}
+
+const AppCtx = createContext<Ctx>(null as unknown as Ctx);
+export const useApp = () => useContext(AppCtx);
+
+export default function App() {
+  const [saved, setSaved] = useState<Saved>(loadSaved);
+  const [route, setRoute] = useState<Route>(() => parseHash(location.hash));
+  const [howTo, setHowTo] = useState(false);
+  const [toastMsg, setToastMsg] = useState<{ msg: string; key: number } | null>(null);
+  const savedRef = useRef(saved);
+  savedRef.current = saved;
+
+  const update = useCallback((fn: (s: Saved) => Saved) => {
+    setSaved((prev) => {
+      const next = fn(prev);
+      persist(next);
+      return next;
+    });
+  }, []);
+
+  useEffect(() => {
+    const onHash = () => setRoute(parseHash(location.hash));
+    window.addEventListener('hashchange', onHash);
+    return () => window.removeEventListener('hashchange', onHash);
+  }, []);
+
+  const go = useCallback((hash: string, opts?: { replace?: boolean }) => {
+    const target = hash.startsWith('#') ? hash : `#${hash}`;
+    if (opts?.replace) {
+      history.replaceState(null, '', target);
+      setRoute(parseHash(target));
+    } else if (location.hash === target) {
+      setRoute(parseHash(target));
+    } else {
+      location.hash = target;
+    }
+    window.scrollTo({ top: 0 });
+  }, []);
+
+  // A share link: unpack it, merge with anything we already know about that game, then show the invite.
+  useEffect(() => {
+    if (route.name !== 'incoming') return;
+    const decoded = decodeGame(route.code);
+    if (!decoded) {
+      go('/badlink', { replace: true });
+      return;
+    }
+    const existing = savedRef.current.games[decoded.id];
+    const now = Date.now();
+    const incoming: Game = { ...decoded, mode: 'challenge', me: null, revealed: 0, seen: [], createdAt: now, updatedAt: now };
+    const game = existing ? mergeGame(existing, incoming) : incoming;
+    update((s) => ({ ...s, games: { ...s.games, [game.id]: game } }));
+    go(`/join/${game.id}`, { replace: true });
+  }, [route, go, update]);
+
+  const ctx = useMemo<Ctx>(
+    () => ({
+      saved,
+      route,
+      go,
+      saveGame: (g) => update((s) => ({ ...s, games: { ...s.games, [g.id]: { ...g, updatedAt: Date.now() } } })),
+      deleteGame: (id) =>
+        update((s) => {
+          const games = { ...s.games };
+          delete games[id];
+          return { ...s, games };
+        }),
+      setName: (name) => update((s) => ({ ...s, name })),
+      showHowTo: () => {
+        setHowTo(true);
+        update((s) => (s.seenHowTo ? s : { ...s, seenHowTo: true }));
+      },
+      toast: (msg) => setToastMsg({ msg, key: Date.now() }),
+    }),
+    [saved, route, go, update],
+  );
+
+  let screen: ReactNode;
+  switch (route.name) {
+    case 'setup':
+      screen = <Setup key={route.mode} mode={route.mode} />;
+      break;
+    case 'join':
+      screen = <Join key={route.id} id={route.id} />;
+      break;
+    case 'play':
+      screen = <Play key={route.id} id={route.id} />;
+      break;
+    case 'results':
+      screen = <Results key={route.id} id={route.id} />;
+      break;
+    case 'badlink':
+      screen = (
+        <Message
+          title="That link's gone wide"
+          body="The game link looks incomplete. It was probably cut off when it was copied. Ask your mate to send it again, or start your own game."
+        />
+      );
+      break;
+    case 'incoming':
+      screen = null;
+      break;
+    default:
+      screen = <Home />;
+  }
+
+  return (
+    <AppCtx.Provider value={ctx}>
+      {screen}
+      <HowToSheet open={howTo} onClose={() => setHowTo(false)} />
+      {toastMsg && <Toast key={toastMsg.key} msg={toastMsg.msg} onDone={() => setToastMsg(null)} />}
+    </AppCtx.Provider>
+  );
+}
+
+export function NavGuard({ to }: { to: string }) {
+  const { go } = useApp();
+  useEffect(() => go(to, { replace: true }), [go, to]);
+  return null;
+}
