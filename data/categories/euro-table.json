@@ -1,0 +1,488 @@
+{
+  "id": "euro-table",
+  "title": "European Championship all-time table",
+  "prompt": "highest-placed team in the all-time European Championship table",
+  "noun": "nation",
+  "nounPlural": "nations",
+  "kind": "nation",
+  "metric": "Points",
+  "order": "desc",
+  "tiebreak": "goal difference, then goals scored",
+  "description": "All-time men's European Championship finals table, 1960–2024: 3 points per win, 1 per draw, shoot-outs count as draws; level teams split by goal difference, then goals scored. As on Wikipedia, West Germany counts for Germany, the Soviet Union and CIS for Russia, Yugoslavia and Serbia and Montenegro for Serbia, and Czechoslovakia for the Czech Republic (as in the World Cup table).",
+  "tags": [
+    "international",
+    "europe"
+  ],
+  "source": {
+    "name": "Wikipedia: UEFA European Championship records and statistics (Overall team records)",
+    "url": "https://en.wikipedia.org/wiki/UEFA_European_Championship_records_and_statistics#Overall_team_records",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "germany",
+      "name": "Germany",
+      "sub": "UEFA",
+      "value": 104,
+      "display": "104 pts",
+      "aliases": [
+        "West Germany",
+        "Deutschland"
+      ],
+      "tb": [
+        30,
+        89
+      ],
+      "wd": "germany"
+    },
+    {
+      "id": "spain",
+      "name": "Spain",
+      "sub": "UEFA",
+      "value": 99,
+      "display": "99 pts",
+      "tb": [
+        37,
+        83
+      ],
+      "wd": "spain"
+    },
+    {
+      "id": "italy",
+      "name": "Italy",
+      "sub": "UEFA",
+      "value": 85,
+      "display": "85 pts",
+      "tb": [
+        19,
+        55
+      ],
+      "wd": "italy"
+    },
+    {
+      "id": "france",
+      "name": "France",
+      "sub": "UEFA",
+      "value": 84,
+      "display": "84 pts",
+      "tb": [
+        20,
+        73
+      ],
+      "wd": "france"
+    },
+    {
+      "id": "netherlands",
+      "name": "Netherlands",
+      "sub": "UEFA",
+      "value": 78,
+      "display": "78 pts",
+      "aliases": [
+        "Holland",
+        "The Netherlands"
+      ],
+      "tb": [
+        27,
+        75
+      ],
+      "wd": "netherlands"
+    },
+    {
+      "id": "portugal",
+      "name": "Portugal",
+      "sub": "UEFA",
+      "value": 75,
+      "display": "75 pts",
+      "tb": [
+        20,
+        61
+      ],
+      "wd": "portugal"
+    },
+    {
+      "id": "england",
+      "name": "England",
+      "sub": "UEFA",
+      "value": 70,
+      "display": "70 pts",
+      "tb": [
+        16,
+        59
+      ],
+      "wd": "england"
+    },
+    {
+      "id": "czech-republic",
+      "name": "Czech Republic",
+      "sub": "UEFA",
+      "value": 53,
+      "display": "53 pts",
+      "aliases": [
+        "Czechia",
+        "Czechoslovakia"
+      ],
+      "tb": [
+        -1,
+        51
+      ],
+      "wd": "czech-republic"
+    },
+    {
+      "id": "russia",
+      "name": "Russia",
+      "sub": "UEFA",
+      "value": 46,
+      "display": "46 pts",
+      "aliases": [
+        "Soviet Union",
+        "USSR",
+        "CIS"
+      ],
+      "tb": [
+        -12,
+        40
+      ],
+      "wd": "russia"
+    },
+    {
+      "id": "belgium",
+      "name": "Belgium",
+      "sub": "UEFA",
+      "value": 39,
+      "display": "39 pts",
+      "tb": [
+        3,
+        33
+      ],
+      "wd": "belgium"
+    },
+    {
+      "id": "denmark",
+      "name": "Denmark",
+      "sub": "UEFA",
+      "value": 39,
+      "display": "39 pts",
+      "tb": [
+        -10,
+        44
+      ],
+      "wd": "denmark"
+    },
+    {
+      "id": "croatia",
+      "name": "Croatia",
+      "sub": "UEFA",
+      "value": 35,
+      "display": "35 pts",
+      "tb": [
+        -1,
+        33
+      ],
+      "wd": "croatia"
+    },
+    {
+      "id": "sweden",
+      "name": "Sweden",
+      "sub": "UEFA",
+      "value": 28,
+      "display": "28 pts",
+      "tb": [
+        2,
+        30
+      ],
+      "wd": "sweden"
+    },
+    {
+      "id": "switzerland",
+      "name": "Switzerland",
+      "sub": "UEFA",
+      "value": 26,
+      "display": "26 pts",
+      "tb": [
+        -4,
+        24
+      ],
+      "wd": "switzerland"
+    },
+    {
+      "id": "turkey",
+      "name": "Turkey",
+      "sub": "UEFA",
+      "value": 23,
+      "display": "23 pts",
+      "aliases": [
+        "Türkiye",
+        "Turkiye"
+      ],
+      "tb": [
+        -16,
+        22
+      ],
+      "wd": "turkey"
+    },
+    {
+      "id": "greece",
+      "name": "Greece",
+      "sub": "UEFA",
+      "value": 18,
+      "display": "18 pts",
+      "tb": [
+        -6,
+        14
+      ],
+      "wd": "greece"
+    },
+    {
+      "id": "wales",
+      "name": "Wales",
+      "sub": "UEFA",
+      "value": 16,
+      "display": "16 pts",
+      "tb": [
+        1,
+        13
+      ],
+      "wd": "wales"
+    },
+    {
+      "id": "austria",
+      "name": "Austria",
+      "sub": "UEFA",
+      "value": 14,
+      "display": "14 pts",
+      "tb": [
+        -4,
+        14
+      ],
+      "wd": "austria"
+    },
+    {
+      "id": "poland",
+      "name": "Poland",
+      "sub": "UEFA",
+      "value": 14,
+      "display": "14 pts",
+      "tb": [
+        -7,
+        14
+      ],
+      "wd": "poland"
+    },
+    {
+      "id": "hungary",
+      "name": "Hungary",
+      "sub": "UEFA",
+      "value": 13,
+      "display": "13 pts",
+      "tb": [
+        -9,
+        16
+      ],
+      "wd": "hungary"
+    },
+    {
+      "id": "ukraine",
+      "name": "Ukraine",
+      "sub": "UEFA",
+      "value": 13,
+      "display": "13 pts",
+      "tb": [
+        -13,
+        10
+      ],
+      "wd": "ukraine"
+    },
+    {
+      "id": "serbia",
+      "name": "Serbia",
+      "sub": "UEFA",
+      "value": 13,
+      "display": "13 pts",
+      "aliases": [
+        "Yugoslavia",
+        "Serbia and Montenegro"
+      ],
+      "tb": [
+        -18,
+        23
+      ],
+      "wd": "serbia"
+    },
+    {
+      "id": "romania",
+      "name": "Romania",
+      "sub": "UEFA",
+      "value": 12,
+      "display": "12 pts",
+      "tb": [
+        -13,
+        14
+      ],
+      "wd": "romania"
+    },
+    {
+      "id": "slovakia",
+      "name": "Slovakia",
+      "sub": "UEFA",
+      "value": 11,
+      "display": "11 pts",
+      "tb": [
+        -9,
+        9
+      ],
+      "wd": "slovakia"
+    },
+    {
+      "id": "scotland",
+      "name": "Scotland",
+      "sub": "UEFA",
+      "value": 9,
+      "display": "9 pts",
+      "tb": [
+        -10,
+        7
+      ],
+      "wd": "scotland"
+    },
+    {
+      "id": "iceland",
+      "name": "Iceland",
+      "sub": "UEFA",
+      "value": 8,
+      "display": "8 pts",
+      "tb": [
+        -1,
+        8
+      ],
+      "wd": "iceland"
+    },
+    {
+      "id": "republic-of-ireland",
+      "name": "Republic of Ireland",
+      "sub": "UEFA",
+      "value": 8,
+      "display": "8 pts",
+      "aliases": [
+        "Ireland",
+        "Eire"
+      ],
+      "tb": [
+        -11,
+        6
+      ],
+      "wd": "republic-of-ireland"
+    },
+    {
+      "id": "slovenia",
+      "name": "Slovenia",
+      "sub": "UEFA",
+      "value": 6,
+      "display": "6 pts",
+      "tb": [
+        -1,
+        6
+      ],
+      "wd": "slovenia"
+    },
+    {
+      "id": "norway",
+      "name": "Norway",
+      "sub": "UEFA",
+      "value": 4,
+      "display": "4 pts",
+      "tb": [
+        0,
+        1
+      ],
+      "wd": "norway"
+    },
+    {
+      "id": "georgia",
+      "name": "Georgia",
+      "sub": "UEFA",
+      "value": 4,
+      "display": "4 pts",
+      "tb": [
+        -3,
+        5
+      ],
+      "wd": "georgia"
+    },
+    {
+      "id": "albania",
+      "name": "Albania",
+      "sub": "UEFA",
+      "value": 4,
+      "display": "4 pts",
+      "tb": [
+        -4,
+        4
+      ],
+      "wd": "albania"
+    },
+    {
+      "id": "bulgaria",
+      "name": "Bulgaria",
+      "sub": "UEFA",
+      "value": 4,
+      "display": "4 pts",
+      "tb": [
+        -9,
+        4
+      ],
+      "wd": "bulgaria"
+    },
+    {
+      "id": "northern-ireland",
+      "name": "Northern Ireland",
+      "sub": "UEFA",
+      "value": 3,
+      "display": "3 pts",
+      "tb": [
+        -1,
+        2
+      ],
+      "wd": "northern-ireland"
+    },
+    {
+      "id": "finland",
+      "name": "Finland",
+      "sub": "UEFA",
+      "value": 3,
+      "display": "3 pts",
+      "tb": [
+        -2,
+        1
+      ],
+      "wd": "finland"
+    },
+    {
+      "id": "latvia",
+      "name": "Latvia",
+      "sub": "UEFA",
+      "value": 1,
+      "display": "1 pt",
+      "tb": [
+        -4,
+        1
+      ],
+      "wd": "latvia"
+    },
+    {
+      "id": "north-macedonia",
+      "name": "North Macedonia",
+      "sub": "UEFA",
+      "value": 0,
+      "display": "0 pts",
+      "aliases": [
+        "Macedonia",
+        "FYR Macedonia"
+      ],
+      "tb": [
+        -6,
+        2
+      ],
+      "wd": "north-macedonia"
+    }
+  ]
+}

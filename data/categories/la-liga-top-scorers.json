@@ -4,6 +4,7 @@
   "prompt": "most La Liga goals",
   "noun": "player",
   "nounPlural": "players",
+  "kind": "player",
   "metric": "Goals",
   "order": "desc",
   "description": "All-time La Liga goals, for every player who has scored 100 or more.",
@@ -25,7 +26,8 @@
       "aliases": [
         "Messi",
         "Leo Messi"
-      ]
+      ],
+      "wd": "Q615"
     },
     {
       "id": "cristiano-ronaldo",
@@ -36,7 +38,8 @@
         "Ronaldo",
         "CR7",
         "Cristiano"
-      ]
+      ],
+      "wd": "Q11571"
     },
     {
       "id": "telmo-zarra",
@@ -45,7 +48,8 @@
       "value": 251,
       "aliases": [
         "Zarra"
-      ]
+      ],
+      "wd": "Q312408"
     },
     {
       "id": "karim-benzema",
@@ -54,7 +58,8 @@
       "value": 238,
       "aliases": [
         "Benzema"
-      ]
+      ],
+      "wd": "Q1912"
     },
     {
       "id": "hugo-sanchez",
@@ -64,7 +69,8 @@
       "aliases": [
         "Sánchez",
         "Hugol"
-      ]
+      ],
+      "wd": "Q487155"
     },
     {
       "id": "raul",
@@ -73,7 +79,8 @@
       "value": 228,
       "aliases": [
         "Raúl González"
-      ]
+      ],
+      "wd": "Q11576"
     },
     {
       "id": "alfredo-di-stefano",
@@ -82,7 +89,8 @@
       "value": 227,
       "aliases": [
         "Di Stéfano"
-      ]
+      ],
+      "wd": "Q164546"
     },
     {
       "id": "cesar",
@@ -91,7 +99,8 @@
       "value": 221,
       "aliases": [
         "César Rodríguez"
-      ]
+      ],
+      "wd": "Q110761637"
     },
     {
       "id": "quini",
@@ -100,13 +109,15 @@
       "value": 219,
       "aliases": [
         "Enrique Castro"
-      ]
+      ],
+      "wd": "Q379756"
     },
     {
       "id": "pahino",
       "name": "Pahiño",
       "sub": "Spain · Celta Vigo, Real Madrid",
-      "value": 212
+      "value": 212,
+      "wd": "Q525599"
     },
     {
       "id": "antoine-griezmann",
@@ -115,7 +126,8 @@
       "value": 205,
       "aliases": [
         "Griezmann"
-      ]
+      ],
+      "wd": "Q455462"
     },
     {
       "id": "mundo",
@@ -124,7 +136,8 @@
       "value": 195,
       "aliases": [
         "Edmundo Suárez"
-      ]
+      ],
+      "wd": "Q940035"
     },
     {
       "id": "david-villa",
@@ -133,13 +146,15 @@
       "value": 186,
       "aliases": [
         "Villa"
-      ]
+      ],
+      "wd": "Q83006"
     },
     {
       "id": "santillana",
       "name": "Santillana",
       "sub": "Spain · Real Madrid",
-      "value": 186
+      "value": 186,
+      "wd": "Q32763"
     },
     {
       "id": "guillermo-gorostiza",
@@ -148,7 +163,8 @@
       "value": 183,
       "aliases": [
         "Gorostiza"
-      ]
+      ],
+      "wd": "Q716545"
     },
     {
       "id": "juan-arza",
@@ -157,7 +173,8 @@
       "value": 182,
       "aliases": [
         "Arza"
-      ]
+      ],
+      "wd": "Q978159"
     },
     {
       "id": "luis-suarez",
@@ -166,13 +183,15 @@
       "value": 179,
       "aliases": [
         "Suárez"
-      ]
+      ],
+      "wd": "Q26517"
     },
     {
       "id": "iago-aspas",
       "name": "Iago Aspas",
       "sub": "Spain · Celta Vigo",
-      "value": 171
+      "value": 171,
+      "wd": "Q26380"
     },
     {
       "id": "samuel-etoo",
@@ -181,7 +200,8 @@
       "value": 162,
       "aliases": [
         "Eto'o"
-      ]
+      ],
+      "wd": "Q1255625"
     },
     {
       "id": "luis-aragones",
@@ -190,7 +210,8 @@
       "value": 160,
       "aliases": [
         "Aragonés"
-      ]
+      ],
+      "wd": "Q576614"
     },
     {
       "id": "aritz-aduriz",
@@ -199,7 +220,8 @@
       "value": 158,
       "aliases": [
         "Aduriz"
-      ]
+      ],
+      "wd": "Q54105"
     },
     {
       "id": "ferenc-puskas",
@@ -208,7 +230,8 @@
       "value": 156,
       "aliases": [
         "Puskás"
-      ]
+      ],
+      "wd": "Q482931"
     },
     {
       "id": "julio-salinas",
@@ -217,7 +240,8 @@
       "value": 152,
       "aliases": [
         "Salinas"
-      ]
+      ],
+      "wd": "Q155290"
     },
     {
       "id": "adrian-escudero",
@@ -226,13 +250,15 @@
       "value": 150,
       "aliases": [
         "Escudero"
-      ]
+      ],
+      "wd": "Q377873"
     },
     {
       "id": "dani",
       "name": "Dani",
       "sub": "Spain · Athletic Bilbao",
-      "value": 147
+      "value": 147,
+      "wd": "Q19372395"
     },
     {
       "id": "raul-tamudo",
@@ -241,7 +267,8 @@
       "value": 146,
       "aliases": [
         "Tamudo"
-      ]
+      ],
+      "wd": "Q312946"
     },
     {
       "id": "silvestre-igoa",
@@ -250,7 +277,8 @@
       "value": 140,
       "aliases": [
         "Igoa"
-      ]
+      ],
+      "wd": "Q771416"
     },
     {
       "id": "manuel-badenes",
@@ -259,7 +287,8 @@
       "value": 139,
       "aliases": [
         "Badenes"
-      ]
+      ],
+      "wd": "Q951937"
     },
     {
       "id": "juan-araujo",
@@ -268,7 +297,8 @@
       "value": 139,
       "aliases": [
         "Araujo"
-      ]
+      ],
+      "wd": "x-player-juan-araujo"
     },
     {
       "id": "jose-mari-bakero",
@@ -277,7 +307,8 @@
       "value": 139,
       "aliases": [
         "Bakero"
-      ]
+      ],
+      "wd": "Q325950"
     },
     {
       "id": "laszlo-kubala",
@@ -287,7 +318,8 @@
       "aliases": [
         "Kubala",
         "Ladislao Kubala"
-      ]
+      ],
+      "wd": "Q295732"
     },
     {
       "id": "jose-luis-panizo",
@@ -296,7 +328,8 @@
       "value": 136,
       "aliases": [
         "Panizo"
-      ]
+      ],
+      "wd": "Q31980"
     },
     {
       "id": "jesus-maria-satrustegui",
@@ -305,7 +338,8 @@
       "value": 133,
       "aliases": [
         "Satrústegui"
-      ]
+      ],
+      "wd": "Q562421"
     },
     {
       "id": "gerard-moreno",
@@ -314,7 +348,8 @@
       "value": 133,
       "aliases": [
         "Moreno"
-      ]
+      ],
+      "wd": "Q5550103"
     },
     {
       "id": "ismael-urzaiz",
@@ -323,7 +358,8 @@
       "value": 133,
       "aliases": [
         "Urzaiz"
-      ]
+      ],
+      "wd": "Q360177"
     },
     {
       "id": "joaquin-murillo",
@@ -332,7 +368,8 @@
       "value": 131,
       "aliases": [
         "Murillo"
-      ]
+      ],
+      "wd": "x-player-joaquin-murillo"
     },
     {
       "id": "fernando-ansola",
@@ -341,7 +378,8 @@
       "value": 130,
       "aliases": [
         "Ansola"
-      ]
+      ],
+      "wd": "Q3742881"
     },
     {
       "id": "lyuboslav-penev",
@@ -350,7 +388,8 @@
       "value": 129,
       "aliases": [
         "Penev"
-      ]
+      ],
+      "wd": "Q322073"
     },
     {
       "id": "roberto-soldado",
@@ -359,7 +398,8 @@
       "value": 129,
       "aliases": [
         "Soldado"
-      ]
+      ],
+      "wd": "Q218401"
     },
     {
       "id": "paco-gento",
@@ -368,7 +408,8 @@
       "value": 129,
       "aliases": [
         "Francisco Gento"
-      ]
+      ],
+      "wd": "Q493081"
     },
     {
       "id": "diego-forlan",
@@ -377,7 +418,8 @@
       "value": 128,
       "aliases": [
         "Forlán"
-      ]
+      ],
+      "wd": "Q261534"
     },
     {
       "id": "eneko-arieta",
@@ -386,7 +428,8 @@
       "value": 128,
       "aliases": [
         "Arieta"
-      ]
+      ],
+      "wd": "Q1646505"
     },
     {
       "id": "alvaro-negredo",
@@ -395,7 +438,8 @@
       "value": 128,
       "aliases": [
         "Negredo"
-      ]
+      ],
+      "wd": "Q210916"
     },
     {
       "id": "paco-campos",
@@ -404,7 +448,8 @@
       "value": 127,
       "aliases": [
         "Campos"
-      ]
+      ],
+      "wd": "Q38261"
     },
     {
       "id": "mario-kempes",
@@ -413,7 +458,8 @@
       "value": 126,
       "aliases": [
         "Kempes"
-      ]
+      ],
+      "wd": "Q180649"
     },
     {
       "id": "epi-fernandez",
@@ -422,7 +468,8 @@
       "value": 125,
       "aliases": [
         "Epi"
-      ]
+      ],
+      "wd": "x-player-epi-fernandez"
     },
     {
       "id": "fernando-morientes",
@@ -431,7 +478,8 @@
       "value": 124,
       "aliases": [
         "Morientes"
-      ]
+      ],
+      "wd": "Q45567"
     },
     {
       "id": "emilio-butragueno",
@@ -441,19 +489,22 @@
       "aliases": [
         "Butragueño",
         "El Buitre"
-      ]
+      ],
+      "wd": "Q41235"
     },
     {
       "id": "pirri",
       "name": "Pirri",
       "sub": "Spain · Real Madrid",
-      "value": 123
+      "value": 123,
+      "wd": "Q442441"
     },
     {
       "id": "herrerita",
       "name": "Herrerita",
       "sub": "Spain · Oviedo",
-      "value": 119
+      "value": 119,
+      "wd": "Q107011826"
     },
     {
       "id": "amancio",
@@ -462,7 +513,8 @@
       "value": 119,
       "aliases": [
         "Amancio Amaro"
-      ]
+      ],
+      "wd": "Q453653"
     },
     {
       "id": "ronaldo",
@@ -472,7 +524,8 @@
       "aliases": [
         "Ronaldo Nazário",
         "R9"
-      ]
+      ],
+      "wd": "Q529207"
     },
     {
       "id": "agustin-gainza",
@@ -481,7 +534,8 @@
       "value": 117,
       "aliases": [
         "Gaínza"
-      ]
+      ],
+      "wd": "Q399271"
     },
     {
       "id": "cristhian-stuani",
@@ -490,7 +544,8 @@
       "value": 116,
       "aliases": [
         "Stuani"
-      ]
+      ],
+      "wd": "Q2608851"
     },
     {
       "id": "waldo",
@@ -499,7 +554,8 @@
       "value": 115,
       "aliases": [
         "Waldo Machado"
-      ]
+      ],
+      "wd": "Q1333472"
     },
     {
       "id": "maranon",
@@ -508,7 +564,8 @@
       "value": 115,
       "aliases": [
         "Rafael Marañón"
-      ]
+      ],
+      "wd": "Q421810"
     },
     {
       "id": "jose-juncosa",
@@ -517,7 +574,8 @@
       "value": 114,
       "aliases": [
         "Juncosa"
-      ]
+      ],
+      "wd": "Q586164"
     },
     {
       "id": "davor-suker",
@@ -526,7 +584,8 @@
       "value": 114,
       "aliases": [
         "Šuker"
-      ]
+      ],
+      "wd": "Q189217"
     },
     {
       "id": "roberto-lopez-ufarte",
@@ -535,13 +594,15 @@
       "value": 112,
       "aliases": [
         "López Ufarte"
-      ]
+      ],
+      "wd": "Q2722051"
     },
     {
       "id": "raul-garcia",
       "name": "Raúl García",
       "sub": "Spain · Atlético Madrid, Athletic Bilbao",
-      "value": 112
+      "value": 112,
+      "wd": "Q316772"
     },
     {
       "id": "carlos-munoz",
@@ -550,7 +611,8 @@
       "value": 111,
       "aliases": [
         "Muñoz"
-      ]
+      ],
+      "wd": "Q517654"
     },
     {
       "id": "pedro-uralde",
@@ -559,7 +621,8 @@
       "value": 111,
       "aliases": [
         "Uralde"
-      ]
+      ],
+      "wd": "Q2554252"
     },
     {
       "id": "jose-angel-ziganda",
@@ -568,7 +631,8 @@
       "value": 111,
       "aliases": [
         "Ziganda"
-      ]
+      ],
+      "wd": "Q704571"
     },
     {
       "id": "jose-eulogio-garate",
@@ -577,13 +641,15 @@
       "value": 109,
       "aliases": [
         "Gárate"
-      ]
+      ],
+      "wd": "Q552946"
     },
     {
       "id": "bata",
       "name": "Bata",
       "sub": "Spain · Athletic Bilbao",
-      "value": 108
+      "value": 108,
+      "wd": "x-player-bata"
     },
     {
       "id": "fernando-gomez",
@@ -592,7 +658,8 @@
       "value": 108,
       "aliases": [
         "Gómez"
-      ]
+      ],
+      "wd": "x-player-fernando-gomez"
     },
     {
       "id": "mariano-martin",
@@ -601,7 +668,8 @@
       "value": 107,
       "aliases": [
         "Martín"
-      ]
+      ],
+      "wd": "Q554710"
     },
     {
       "id": "gonzalo-higuain",
@@ -610,13 +678,15 @@
       "value": 107,
       "aliases": [
         "Higuaín"
-      ]
+      ],
+      "wd": "Q483846"
     },
     {
       "id": "rivaldo",
       "name": "Rivaldo",
       "sub": "Brazil · Deportivo, Barcelona",
-      "value": 107
+      "value": 107,
+      "wd": "Q483577"
     },
     {
       "id": "pichi-alonso",
@@ -625,7 +695,8 @@
       "value": 107,
       "aliases": [
         "Pichi"
-      ]
+      ],
+      "wd": "Q2618093"
     },
     {
       "id": "jose-luis-artetxe",
@@ -634,7 +705,8 @@
       "value": 107,
       "aliases": [
         "Artetxe"
-      ]
+      ],
+      "wd": "x-player-jose-luis-artetxe"
     },
     {
       "id": "isidro-langara",
@@ -643,7 +715,8 @@
       "value": 105,
       "aliases": [
         "Lángara"
-      ]
+      ],
+      "wd": "Q470448"
     },
     {
       "id": "meho-kodro",
@@ -652,7 +725,8 @@
       "value": 105,
       "aliases": [
         "Kodro"
-      ]
+      ],
+      "wd": "Q380566"
     },
     {
       "id": "fernando-hierro",
@@ -661,13 +735,15 @@
       "value": 105,
       "aliases": [
         "Hierro"
-      ]
+      ],
+      "wd": "Q205499"
     },
     {
       "id": "hermidita",
       "name": "Hermidita",
       "sub": "Spain · Celta Vigo",
-      "value": 104
+      "value": 104,
+      "wd": "Q31878"
     },
     {
       "id": "cayetano-re",
@@ -676,7 +752,8 @@
       "value": 103,
       "aliases": [
         "Ré"
-      ]
+      ],
+      "wd": "Q598115"
     },
     {
       "id": "luis-enrique",
@@ -685,7 +762,8 @@
       "value": 103,
       "aliases": [
         "Lucho"
-      ]
+      ],
+      "wd": "Q222789"
     },
     {
       "id": "guillermo-campanal",
@@ -694,7 +772,8 @@
       "value": 102,
       "aliases": [
         "Campanal"
-      ]
+      ],
+      "wd": "x-player-guillermo-campanal"
     },
     {
       "id": "fernando-torres",
@@ -704,7 +783,8 @@
       "aliases": [
         "Torres",
         "El Niño"
-      ]
+      ],
+      "wd": "Q42731"
     },
     {
       "id": "mikel-oyarzabal",
@@ -713,7 +793,8 @@
       "value": 102,
       "aliases": [
         "Oyarzabal"
-      ]
+      ],
+      "wd": "Q21195147"
     },
     {
       "id": "manuel-sarabia",
@@ -722,7 +803,8 @@
       "value": 102,
       "aliases": [
         "Sarabia"
-      ]
+      ],
+      "wd": "Q930130"
     },
     {
       "id": "victorio-unamuno",
@@ -731,7 +813,8 @@
       "value": 101,
       "aliases": [
         "Unamuno"
-      ]
+      ],
+      "wd": "x-player-victorio-unamuno"
     },
     {
       "id": "julen-guerrero",
@@ -740,7 +823,8 @@
       "value": 101,
       "aliases": [
         "Guerrero"
-      ]
+      ],
+      "wd": "Q350851"
     },
     {
       "id": "roy-makaay",
@@ -749,7 +833,8 @@
       "value": 100,
       "aliases": [
         "Makaay"
-      ]
+      ],
+      "wd": "Q152725"
     }
   ]
 }

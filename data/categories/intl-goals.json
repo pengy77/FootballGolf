@@ -4,6 +4,7 @@
   "prompt": "most men's international goals",
   "noun": "player",
   "nounPlural": "players",
+  "kind": "player",
   "metric": "Goals",
   "order": "desc",
   "description": "Men's senior international goals; every player with 50 or more.",
@@ -26,7 +27,8 @@
         "Ronaldo",
         "CR7",
         "Cristiano"
-      ]
+      ],
+      "wd": "Q11571"
     },
     {
       "id": "lionel-messi",
@@ -37,7 +39,8 @@
         "Messi",
         "Leo Messi",
         "La Pulga"
-      ]
+      ],
+      "wd": "Q615"
     },
     {
       "id": "ali-daei",
@@ -46,7 +49,8 @@
       "value": 108,
       "aliases": [
         "Daei"
-      ]
+      ],
+      "wd": "Q159622"
     },
     {
       "id": "sunil-chhetri",
@@ -55,7 +59,8 @@
       "value": 95,
       "aliases": [
         "Chhetri"
-      ]
+      ],
+      "wd": "Q561004"
     },
     {
       "id": "romelu-lukaku",
@@ -64,7 +69,8 @@
       "value": 94,
       "aliases": [
         "Lukaku"
-      ]
+      ],
+      "wd": "Q313316"
     },
     {
       "id": "harry-kane",
@@ -73,7 +79,8 @@
       "value": 93,
       "aliases": [
         "Kane"
-      ]
+      ],
+      "wd": "Q969725"
     },
     {
       "id": "robert-lewandowski",
@@ -83,7 +90,8 @@
       "aliases": [
         "Lewandowski",
         "Lewy"
-      ]
+      ],
+      "wd": "Q151269"
     },
     {
       "id": "mokhtar-dahari",
@@ -94,7 +102,8 @@
         "Mokhtar",
         "Dahari",
         "Super Mokh"
-      ]
+      ],
+      "wd": "Q1943172"
     },
     {
       "id": "ali-mabkhout",
@@ -103,7 +112,8 @@
       "value": 85,
       "aliases": [
         "Mabkhout"
-      ]
+      ],
+      "wd": "Q1089907"
     },
     {
       "id": "ferenc-puskas",
@@ -112,7 +122,8 @@
       "value": 84,
       "aliases": [
         "Puskás"
-      ]
+      ],
+      "wd": "Q482931"
     },
     {
       "id": "neymar",
@@ -122,7 +133,8 @@
       "aliases": [
         "Neymar Jr",
         "Neymar Júnior"
-      ]
+      ],
+      "wd": "Q142794"
     },
     {
       "id": "godfrey-chitalu",
@@ -131,7 +143,8 @@
       "value": 79,
       "aliases": [
         "Chitalu"
-      ]
+      ],
+      "wd": "Q794512"
     },
     {
       "id": "hussein-saeed",
@@ -140,7 +153,8 @@
       "value": 78,
       "aliases": [
         "Saeed"
-      ]
+      ],
+      "wd": "Q1389004"
     },
     {
       "id": "pele",
@@ -149,7 +163,8 @@
       "value": 77,
       "aliases": [
         "Edson Arantes do Nascimento"
-      ]
+      ],
+      "wd": "Q12897"
     },
     {
       "id": "vivian-woodward",
@@ -158,7 +173,8 @@
       "value": 75,
       "aliases": [
         "Woodward"
-      ]
+      ],
+      "wd": "Q181512"
     },
     {
       "id": "sandor-kocsis",
@@ -167,7 +183,8 @@
       "value": 75,
       "aliases": [
         "Kocsis"
-      ]
+      ],
+      "wd": "Q295265"
     },
     {
       "id": "kunishige-kamamoto",
@@ -176,7 +193,8 @@
       "value": 75,
       "aliases": [
         "Kamamoto"
-      ]
+      ],
+      "wd": "Q380695"
     },
     {
       "id": "bashar-abdullah",
@@ -185,7 +203,8 @@
       "value": 75,
       "aliases": [
         "Abdullah"
-      ]
+      ],
+      "wd": "Q623283"
     },
     {
       "id": "edin-dzeko",
@@ -194,7 +213,8 @@
       "value": 73,
       "aliases": [
         "Džeko"
-      ]
+      ],
+      "wd": "Q153786"
     },
     {
       "id": "majed-abdullah",
@@ -203,7 +223,8 @@
       "value": 72,
       "aliases": [
         "Abdullah"
-      ]
+      ],
+      "wd": "Q446181"
     },
     {
       "id": "kinnah-phiri",
@@ -212,7 +233,8 @@
       "value": 71,
       "aliases": [
         "Phiri"
-      ]
+      ],
+      "wd": "Q369479"
     },
     {
       "id": "kiatisuk-senamuang",
@@ -222,7 +244,8 @@
       "aliases": [
         "Kiatisuk",
         "Senamuang"
-      ]
+      ],
+      "wd": "Q532438"
     },
     {
       "id": "miroslav-klose",
@@ -231,7 +254,8 @@
       "value": 71,
       "aliases": [
         "Klose"
-      ]
+      ],
+      "wd": "Q80471"
     },
     {
       "id": "piyapong-pue-on",
@@ -241,7 +265,8 @@
       "aliases": [
         "Piyapong",
         "Pue-on"
-      ]
+      ],
+      "wd": "Q483765"
     },
     {
       "id": "abdul-kadir",
@@ -250,7 +275,8 @@
       "value": 70,
       "aliases": [
         "Kadir"
-      ]
+      ],
+      "wd": "Q4665453"
     },
     {
       "id": "stern-john",
@@ -259,7 +285,8 @@
       "value": 70,
       "aliases": [
         "John"
-      ]
+      ],
+      "wd": "Q445801"
     },
     {
       "id": "mohamed-salah",
@@ -268,7 +295,8 @@
       "value": 70,
       "aliases": [
         "Salah"
-      ]
+      ],
+      "wd": "Q1354960"
     },
     {
       "id": "luis-suarez",
@@ -278,7 +306,8 @@
       "aliases": [
         "Suárez",
         "El Pistolero"
-      ]
+      ],
+      "wd": "Q26517"
     },
     {
       "id": "hossam-hassan",
@@ -287,7 +316,8 @@
       "value": 69,
       "aliases": [
         "Hassan"
-      ]
+      ],
+      "wd": "Q448937"
     },
     {
       "id": "gerd-muller",
@@ -299,7 +329,8 @@
         "Der Bomber",
         "Gerd Mueller",
         "Mueller"
-      ]
+      ],
+      "wd": "Q43744"
     },
     {
       "id": "carlos-ruiz",
@@ -308,7 +339,8 @@
       "value": 68,
       "aliases": [
         "Ruiz"
-      ]
+      ],
+      "wd": "Q475730"
     },
     {
       "id": "robbie-keane",
@@ -317,7 +349,8 @@
       "value": 68,
       "aliases": [
         "Keane"
-      ]
+      ],
+      "wd": "Q184612"
     },
     {
       "id": "kylian-mbappe",
@@ -326,7 +359,8 @@
       "value": 67,
       "aliases": [
         "Mbappé"
-      ]
+      ],
+      "wd": "Q21621995"
     },
     {
       "id": "erling-haaland",
@@ -335,7 +369,8 @@
       "value": 66,
       "aliases": [
         "Haaland"
-      ]
+      ],
+      "wd": "Q28967995"
     },
     {
       "id": "didier-drogba",
@@ -344,7 +379,8 @@
       "value": 65,
       "aliases": [
         "Drogba"
-      ]
+      ],
+      "wd": "Q48892"
     },
     {
       "id": "aleksandar-mitrovic",
@@ -353,7 +389,8 @@
       "value": 64,
       "aliases": [
         "Mitrović"
-      ]
+      ],
+      "wd": "Q84086"
     },
     {
       "id": "teerasil-dangda",
@@ -363,7 +400,8 @@
       "aliases": [
         "Teerasil",
         "Dangda"
-      ]
+      ],
+      "wd": "Q304901"
     },
     {
       "id": "jasem-al-huwaidi",
@@ -373,7 +411,8 @@
       "aliases": [
         "Al-Huwaidi",
         "Huwaidi"
-      ]
+      ],
+      "wd": "Q253945"
     },
     {
       "id": "ronaldo",
@@ -386,7 +425,8 @@
         "Ronaldo Luís Nazário de Lima",
         "O Fenômeno",
         "Brazilian Ronaldo"
-      ]
+      ],
+      "wd": "Q529207"
     },
     {
       "id": "ahmed-radhi",
@@ -395,7 +435,8 @@
       "value": 62,
       "aliases": [
         "Radhi"
-      ]
+      ],
+      "wd": "x-player-ahmed-radhi"
     },
     {
       "id": "zlatan-ibrahimovic",
@@ -406,7 +447,8 @@
         "Ibrahimović",
         "Zlatan",
         "Ibra"
-      ]
+      ],
+      "wd": "Q46896"
     },
     {
       "id": "abdul-ghani-minhat",
@@ -416,7 +458,8 @@
       "aliases": [
         "Minhat",
         "Abdul Ghani"
-      ]
+      ],
+      "wd": "Q4665342"
     },
     {
       "id": "almoez-ali",
@@ -425,7 +468,8 @@
       "value": 61,
       "aliases": [
         "Almoez"
-      ]
+      ],
+      "wd": "Q21011188"
     },
     {
       "id": "mehdi-taremi",
@@ -434,7 +478,8 @@
       "value": 60,
       "aliases": [
         "Taremi"
-      ]
+      ],
+      "wd": "Q17070837"
     },
     {
       "id": "yousef-nasser",
@@ -443,7 +488,8 @@
       "value": 60,
       "aliases": [
         "Nasser"
-      ]
+      ],
+      "wd": "Q4023099"
     },
     {
       "id": "imre-schlosser",
@@ -452,7 +498,8 @@
       "value": 59,
       "aliases": [
         "Schlosser"
-      ]
+      ],
+      "wd": "Q464646"
     },
     {
       "id": "david-villa",
@@ -462,7 +509,8 @@
       "aliases": [
         "Villa",
         "El Guaje"
-      ]
+      ],
+      "wd": "Q83006"
     },
     {
       "id": "son-heung-min",
@@ -473,7 +521,8 @@
         "Son",
         "Heung-min Son",
         "Heungmin Son"
-      ]
+      ],
+      "wd": "Q439722"
     },
     {
       "id": "sardar-azmoun",
@@ -482,7 +531,8 @@
       "value": 58,
       "aliases": [
         "Azmoun"
-      ]
+      ],
+      "wd": "Q5298679"
     },
     {
       "id": "ali-ashfaq",
@@ -491,7 +541,8 @@
       "value": 58,
       "aliases": [
         "Ashfaq"
-      ]
+      ],
+      "wd": "Q2057870"
     },
     {
       "id": "cha-bum-kun",
@@ -502,7 +553,8 @@
         "Cha",
         "Bum-kun Cha",
         "Cha Bum"
-      ]
+      ],
+      "wd": "Q346751"
     },
     {
       "id": "edinson-cavani",
@@ -511,7 +563,8 @@
       "value": 58,
       "aliases": [
         "Cavani"
-      ]
+      ],
+      "wd": "Q167790"
     },
     {
       "id": "carlos-pavon",
@@ -520,7 +573,8 @@
       "value": 57,
       "aliases": [
         "Pavón"
-      ]
+      ],
+      "wd": "Q350398"
     },
     {
       "id": "olivier-giroud",
@@ -529,7 +583,8 @@
       "value": 57,
       "aliases": [
         "Giroud"
-      ]
+      ],
+      "wd": "Q1911"
     },
     {
       "id": "clint-dempsey",
@@ -538,7 +593,8 @@
       "value": 57,
       "aliases": [
         "Dempsey"
-      ]
+      ],
+      "wd": "Q201860"
     },
     {
       "id": "younis-mahmoud",
@@ -547,7 +603,8 @@
       "value": 57,
       "aliases": [
         "Mahmoud"
-      ]
+      ],
+      "wd": "Q318780"
     },
     {
       "id": "landon-donovan",
@@ -556,7 +613,8 @@
       "value": 57,
       "aliases": [
         "Donovan"
-      ]
+      ],
+      "wd": "Q202237"
     },
     {
       "id": "gabriel-batistuta",
@@ -566,7 +624,8 @@
       "aliases": [
         "Batistuta",
         "Batigol"
-      ]
+      ],
+      "wd": "Q170376"
     },
     {
       "id": "samuel-eto-o",
@@ -577,7 +636,8 @@
         "Eto'o",
         "Etoo",
         "Samuel Etoo"
-      ]
+      ],
+      "wd": "Q1255625"
     },
     {
       "id": "bader-al-mutawa",
@@ -587,13 +647,15 @@
       "aliases": [
         "Al-Mutawa",
         "Mutawa"
-      ]
+      ],
+      "wd": "Q532893"
     },
     {
       "id": "romario",
       "name": "Romário",
       "sub": "Brazil",
-      "value": 55
+      "value": 55,
+      "wd": "Q178649"
     },
     {
       "id": "kazuyoshi-miura",
@@ -604,7 +666,8 @@
         "Miura",
         "Kazu",
         "King Kazu"
-      ]
+      ],
+      "wd": "Q331953"
     },
     {
       "id": "jan-koller",
@@ -613,7 +676,8 @@
       "value": 55,
       "aliases": [
         "Koller"
-      ]
+      ],
+      "wd": "Q152340"
     },
     {
       "id": "iswadi-idris",
@@ -623,7 +687,8 @@
       "aliases": [
         "Iswadi",
         "Idris"
-      ]
+      ],
+      "wd": "Q6089546"
     },
     {
       "id": "fandi-ahmad",
@@ -633,7 +698,8 @@
       "aliases": [
         "Fandi",
         "Ahmad"
-      ]
+      ],
+      "wd": "Q2556661"
     },
     {
       "id": "joachim-streich",
@@ -642,7 +708,8 @@
       "value": 55,
       "aliases": [
         "Streich"
-      ]
+      ],
+      "wd": "Q435542"
     },
     {
       "id": "memphis-depay",
@@ -652,7 +719,8 @@
       "aliases": [
         "Depay",
         "Memphis"
-      ]
+      ],
+      "wd": "Q1894"
     },
     {
       "id": "sadio-mane",
@@ -661,7 +729,8 @@
       "value": 55,
       "aliases": [
         "Mané"
-      ]
+      ],
+      "wd": "Q209942"
     },
     {
       "id": "wayne-rooney",
@@ -670,7 +739,8 @@
       "value": 53,
       "aliases": [
         "Rooney"
-      ]
+      ],
+      "wd": "Q266613"
     },
     {
       "id": "poul-nielsen",
@@ -679,7 +749,8 @@
       "value": 52,
       "aliases": [
         "Nielsen"
-      ]
+      ],
+      "wd": "Q555972"
     },
     {
       "id": "phil-younghusband",
@@ -688,7 +759,8 @@
       "value": 52,
       "aliases": [
         "Younghusband"
-      ]
+      ],
+      "wd": "Q240008"
     },
     {
       "id": "javier-hernandez",
@@ -698,7 +770,8 @@
       "aliases": [
         "Hernández",
         "Chicharito"
-      ]
+      ],
+      "wd": "Q165125"
     },
     {
       "id": "jon-dahl-tomasson",
@@ -708,7 +781,8 @@
       "aliases": [
         "Tomasson",
         "Dahl Tomasson"
-      ]
+      ],
+      "wd": "Q203657"
     },
     {
       "id": "adnan-al-talyani",
@@ -718,7 +792,8 @@
       "aliases": [
         "Al Talyani",
         "Talyani"
-      ]
+      ],
+      "wd": "Q359830"
     },
     {
       "id": "lajos-tichy",
@@ -727,7 +802,8 @@
       "value": 51,
       "aliases": [
         "Tichy"
-      ]
+      ],
+      "wd": "Q553339"
     },
     {
       "id": "le-cong-vinh",
@@ -736,7 +812,8 @@
       "value": 51,
       "aliases": [
         "Công Vinh"
-      ]
+      ],
+      "wd": "Q460346"
     },
     {
       "id": "asamoah-gyan",
@@ -745,7 +822,8 @@
       "value": 51,
       "aliases": [
         "Gyan"
-      ]
+      ],
+      "wd": "Q222746"
     },
     {
       "id": "hakan-sukur",
@@ -754,7 +832,8 @@
       "value": 51,
       "aliases": [
         "Şükür"
-      ]
+      ],
+      "wd": "Q192974"
     },
     {
       "id": "thierry-henry",
@@ -763,7 +842,8 @@
       "value": 51,
       "aliases": [
         "Henry"
-      ]
+      ],
+      "wd": "Q45901"
     },
     {
       "id": "alexis-sanchez",
@@ -773,7 +853,8 @@
       "aliases": [
         "Sánchez",
         "Alexis"
-      ]
+      ],
+      "wd": "Q180553"
     },
     {
       "id": "karim-bagheri",
@@ -782,7 +863,8 @@
       "value": 50,
       "aliases": [
         "Bagheri"
-      ]
+      ],
+      "wd": "Q466108"
     },
     {
       "id": "robin-van-persie",
@@ -792,7 +874,8 @@
       "aliases": [
         "van Persie",
         "RVP"
-      ]
+      ],
+      "wd": "Q2339"
     },
     {
       "id": "hwang-sun-hong",
@@ -802,7 +885,8 @@
       "aliases": [
         "Hwang",
         "Sun-hong Hwang"
-      ]
+      ],
+      "wd": "Q483065"
     },
     {
       "id": "tim-cahill",
@@ -811,7 +895,8 @@
       "value": 50,
       "aliases": [
         "Cahill"
-      ]
+      ],
+      "wd": "Q187238"
     },
     {
       "id": "shinji-okazaki",
@@ -820,7 +905,8 @@
       "value": 50,
       "aliases": [
         "Okazaki"
-      ]
+      ],
+      "wd": "Q310612"
     },
     {
       "id": "salomon-rondon",
@@ -829,7 +915,8 @@
       "value": 50,
       "aliases": [
         "Rondón"
-      ]
+      ],
+      "wd": "Q357613"
     },
     {
       "id": "zainal-abidin-hassan",
@@ -839,7 +926,8 @@
       "aliases": [
         "Zainal Abidin",
         "Hassan"
-      ]
+      ],
+      "wd": "Q3783618"
     }
   ]
 }

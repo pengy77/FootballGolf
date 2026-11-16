@@ -1,0 +1,600 @@
+{
+  "id": "bundesliga-top-scorers",
+  "title": "Bundesliga all-time top scorers",
+  "prompt": "most Bundesliga goals",
+  "noun": "player",
+  "nounPlural": "players",
+  "kind": "player",
+  "metric": "Goals",
+  "order": "desc",
+  "description": "All-time Bundesliga goals since 1963–64, for every player who has scored 100 or more.",
+  "tags": [
+    "europe",
+    "players"
+  ],
+  "source": {
+    "name": "Wikipedia: List of Bundesliga top scorers",
+    "url": "https://en.wikipedia.org/wiki/List_of_Bundesliga_top_scorers",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "gerd-muller",
+      "name": "Gerd Müller",
+      "sub": "Germany · Bayern",
+      "value": 365,
+      "aliases": [
+        "Müller",
+        "Der Bomber"
+      ],
+      "wd": "Q43744"
+    },
+    {
+      "id": "robert-lewandowski",
+      "name": "Robert Lewandowski",
+      "sub": "Poland · Bayern",
+      "value": 312,
+      "aliases": [
+        "Lewandowski",
+        "Lewy"
+      ],
+      "wd": "Q151269"
+    },
+    {
+      "id": "klaus-fischer",
+      "name": "Klaus Fischer",
+      "sub": "Germany · Schalke",
+      "value": 268,
+      "aliases": [
+        "Fischer"
+      ],
+      "wd": "Q169999"
+    },
+    {
+      "id": "jupp-heynckes",
+      "name": "Jupp Heynckes",
+      "sub": "Germany · Mönchengladbach",
+      "value": 220,
+      "aliases": [
+        "Heynckes",
+        "Josef Heynckes"
+      ],
+      "wd": "Q152107"
+    },
+    {
+      "id": "manfred-burgsmuller",
+      "name": "Manfred Burgsmüller",
+      "sub": "Germany · Dortmund",
+      "value": 213,
+      "aliases": [
+        "Burgsmüller"
+      ],
+      "wd": "Q63920"
+    },
+    {
+      "id": "claudio-pizarro",
+      "name": "Claudio Pizarro",
+      "sub": "Peru · Werder Bremen, Bayern",
+      "value": 197,
+      "aliases": [
+        "Pizarro"
+      ],
+      "wd": "Q109397"
+    },
+    {
+      "id": "ulf-kirsten",
+      "name": "Ulf Kirsten",
+      "sub": "Germany · Leverkusen",
+      "value": 181,
+      "aliases": [
+        "Kirsten"
+      ],
+      "wd": "Q310519"
+    },
+    {
+      "id": "stefan-kuntz",
+      "name": "Stefan Kuntz",
+      "sub": "Germany · Bochum, Kaiserslautern",
+      "value": 179,
+      "aliases": [
+        "Kuntz"
+      ],
+      "wd": "Q437241"
+    },
+    {
+      "id": "dieter-muller",
+      "name": "Dieter Müller",
+      "sub": "Germany · Köln",
+      "value": 177,
+      "aliases": [
+        "Müller"
+      ],
+      "wd": "Q60417"
+    },
+    {
+      "id": "klaus-allofs",
+      "name": "Klaus Allofs",
+      "sub": "Germany · Fortuna Düsseldorf, Köln",
+      "value": 177,
+      "aliases": [
+        "Allofs"
+      ],
+      "wd": "Q166336"
+    },
+    {
+      "id": "mario-gomez",
+      "name": "Mario Gómez",
+      "sub": "Germany · Stuttgart, Bayern",
+      "value": 170,
+      "aliases": [
+        "Gómez"
+      ],
+      "wd": "Q45766"
+    },
+    {
+      "id": "hannes-lohr",
+      "name": "Hannes Löhr",
+      "sub": "Germany · Köln",
+      "value": 166,
+      "aliases": [
+        "Löhr"
+      ],
+      "wd": "Q702406"
+    },
+    {
+      "id": "karl-heinz-rummenigge",
+      "name": "Karl-Heinz Rummenigge",
+      "sub": "Germany · Bayern",
+      "value": 162,
+      "aliases": [
+        "Rummenigge",
+        "Kalle Rummenigge"
+      ],
+      "wd": "Q152871"
+    },
+    {
+      "id": "bernd-holzenbein",
+      "name": "Bernd Hölzenbein",
+      "sub": "Germany · Eintracht Frankfurt",
+      "value": 160,
+      "aliases": [
+        "Hölzenbein"
+      ],
+      "wd": "Q44858"
+    },
+    {
+      "id": "fritz-walter",
+      "name": "Fritz Walter",
+      "sub": "Germany · Waldhof Mannheim, Stuttgart",
+      "value": 157,
+      "aliases": [
+        "Walter"
+      ],
+      "wd": "Q22717"
+    },
+    {
+      "id": "marco-reus",
+      "name": "Marco Reus",
+      "sub": "Germany · Dortmund",
+      "value": 156,
+      "aliases": [
+        "Reus"
+      ],
+      "wd": "Q152377"
+    },
+    {
+      "id": "thomas-muller",
+      "name": "Thomas Müller",
+      "sub": "Germany · Bayern",
+      "value": 150,
+      "aliases": [
+        "Müller"
+      ],
+      "wd": "Q43666"
+    },
+    {
+      "id": "thomas-allofs",
+      "name": "Thomas Allofs",
+      "sub": "Germany · Fortuna Düsseldorf, Kaiserslautern",
+      "value": 148,
+      "aliases": [
+        "Allofs"
+      ],
+      "wd": "Q703224"
+    },
+    {
+      "id": "stefan-kieling",
+      "name": "Stefan Kießling",
+      "sub": "Germany · Leverkusen",
+      "value": 144,
+      "aliases": [
+        "Kießling",
+        "Kiessling",
+        "Stefan Kiessling"
+      ],
+      "wd": "Q106387"
+    },
+    {
+      "id": "andrej-kramaric",
+      "name": "Andrej Kramarić",
+      "sub": "Croatia · Hoffenheim",
+      "value": 141,
+      "aliases": [
+        "Kramarić"
+      ],
+      "wd": "Q502898"
+    },
+    {
+      "id": "bernd-nickel",
+      "name": "Bernd Nickel",
+      "sub": "Germany · Eintracht Frankfurt",
+      "value": 141,
+      "aliases": [
+        "Nickel"
+      ],
+      "wd": "Q316902"
+    },
+    {
+      "id": "uwe-seeler",
+      "name": "Uwe Seeler",
+      "sub": "Germany · Hamburg",
+      "value": 137,
+      "aliases": [
+        "Seeler"
+      ],
+      "wd": "Q44470"
+    },
+    {
+      "id": "horst-hrubesch",
+      "name": "Horst Hrubesch",
+      "sub": "Germany · Rot-Weiss Essen, Hamburg",
+      "value": 136,
+      "aliases": [
+        "Hrubesch"
+      ],
+      "wd": "Q366559"
+    },
+    {
+      "id": "giovane-elber",
+      "name": "Giovane Élber",
+      "sub": "Brazil · Stuttgart, Bayern",
+      "value": 133,
+      "aliases": [
+        "Élber"
+      ],
+      "wd": "Q44815"
+    },
+    {
+      "id": "rudi-voller",
+      "name": "Rudi Völler",
+      "sub": "Germany · Werder Bremen",
+      "value": 132,
+      "aliases": [
+        "Völler",
+        "Rudolf Völler"
+      ],
+      "wd": "Q44464"
+    },
+    {
+      "id": "michael-zorc",
+      "name": "Michael Zorc",
+      "sub": "Germany · Dortmund",
+      "value": 131,
+      "aliases": [
+        "Zorc"
+      ],
+      "wd": "Q598387"
+    },
+    {
+      "id": "karl-allgower",
+      "name": "Karl Allgöwer",
+      "sub": "Germany · Stuttgart",
+      "value": 129,
+      "aliases": [
+        "Allgöwer"
+      ],
+      "wd": "Q68759"
+    },
+    {
+      "id": "dieter-hoene",
+      "name": "Dieter Hoeneß",
+      "sub": "Germany · Bayern",
+      "value": 127,
+      "aliases": [
+        "Hoeneß",
+        "Hoeness",
+        "Dieter Hoeness"
+      ],
+      "wd": "Q60414"
+    },
+    {
+      "id": "vedad-ibisevic",
+      "name": "Vedad Ibišević",
+      "sub": "Bosnia and Herzegovina · Hoffenheim, Stuttgart, Hertha BSC",
+      "value": 127,
+      "aliases": [
+        "Ibišević"
+      ],
+      "wd": "Q155604"
+    },
+    {
+      "id": "martin-max",
+      "name": "Martin Max",
+      "sub": "Germany · Schalke, 1860 Munich",
+      "value": 126,
+      "aliases": [
+        "Max"
+      ],
+      "wd": "Q703757"
+    },
+    {
+      "id": "georg-volkert",
+      "name": "Georg Volkert",
+      "sub": "Germany · Nürnberg, Hamburg",
+      "value": 125,
+      "aliases": [
+        "Volkert"
+      ],
+      "wd": "Q72801"
+    },
+    {
+      "id": "frank-mill",
+      "name": "Frank Mill",
+      "sub": "Germany · Mönchengladbach, Dortmund",
+      "value": 123,
+      "aliases": [
+        "Mill"
+      ],
+      "wd": "Q550144"
+    },
+    {
+      "id": "herbert-laumen",
+      "name": "Herbert Laumen",
+      "sub": "Germany · Mönchengladbach",
+      "value": 121,
+      "aliases": [
+        "Laumen"
+      ],
+      "wd": "Q878500"
+    },
+    {
+      "id": "miroslav-klose",
+      "name": "Miroslav Klose",
+      "sub": "Germany · Kaiserslautern, Werder Bremen",
+      "value": 121,
+      "aliases": [
+        "Klose"
+      ],
+      "wd": "Q80471"
+    },
+    {
+      "id": "lothar-matthaus",
+      "name": "Lothar Matthäus",
+      "sub": "Germany · Mönchengladbach, Bayern",
+      "value": 121,
+      "aliases": [
+        "Matthäus"
+      ],
+      "wd": "x-player-lothar-matthaus"
+    },
+    {
+      "id": "roland-wohlfarth",
+      "name": "Roland Wohlfarth",
+      "sub": "Germany · Bayern",
+      "value": 120,
+      "aliases": [
+        "Wohlfarth"
+      ],
+      "wd": "Q683030"
+    },
+    {
+      "id": "bernd-rupp",
+      "name": "Bernd Rupp",
+      "sub": "Germany · Mönchengladbach, Köln",
+      "value": 119,
+      "aliases": [
+        "Rupp"
+      ],
+      "wd": "Q824102"
+    },
+    {
+      "id": "ronnie-worm",
+      "name": "Ronnie Worm",
+      "sub": "Germany · Duisburg, Eintracht Braunschweig",
+      "value": 119,
+      "aliases": [
+        "Worm",
+        "Ronald Worm"
+      ],
+      "wd": "Q695256"
+    },
+    {
+      "id": "pierre-littbarski",
+      "name": "Pierre Littbarski",
+      "sub": "Germany · Köln",
+      "value": 116,
+      "aliases": [
+        "Littbarski"
+      ],
+      "wd": "Q47516"
+    },
+    {
+      "id": "lothar-emmerich",
+      "name": "Lothar Emmerich",
+      "sub": "Germany · Dortmund",
+      "value": 115,
+      "aliases": [
+        "Emmerich"
+      ],
+      "wd": "Q498257"
+    },
+    {
+      "id": "reiner-geye",
+      "name": "Reiner Geye",
+      "sub": "Germany · Fortuna Düsseldorf, Kaiserslautern",
+      "value": 113,
+      "aliases": [
+        "Geye"
+      ],
+      "wd": "Q486404"
+    },
+    {
+      "id": "kevin-kuranyi",
+      "name": "Kevin Kurányi",
+      "sub": "Germany · Stuttgart, Schalke",
+      "value": 111,
+      "aliases": [
+        "Kurányi"
+      ],
+      "wd": "Q152968"
+    },
+    {
+      "id": "jurgen-klinsmann",
+      "name": "Jürgen Klinsmann",
+      "sub": "Germany · Stuttgart, Bayern",
+      "value": 110,
+      "aliases": [
+        "Klinsmann"
+      ],
+      "wd": "Q57079"
+    },
+    {
+      "id": "andreas-moller",
+      "name": "Andreas Möller",
+      "sub": "Germany · Eintracht Frankfurt, Dortmund",
+      "value": 110,
+      "aliases": [
+        "Möller"
+      ],
+      "wd": "Q155919"
+    },
+    {
+      "id": "jurgen-grabowski",
+      "name": "Jürgen Grabowski",
+      "sub": "Germany · Eintracht Frankfurt",
+      "value": 109,
+      "aliases": [
+        "Grabowski"
+      ],
+      "wd": "Q44917"
+    },
+    {
+      "id": "klaus-toppmoller",
+      "name": "Klaus Toppmöller",
+      "sub": "Germany · Kaiserslautern",
+      "value": 108,
+      "aliases": [
+        "Toppmöller"
+      ],
+      "wd": "Q508529"
+    },
+    {
+      "id": "fredi-bobic",
+      "name": "Fredi Bobic",
+      "sub": "Germany · Stuttgart",
+      "value": 108,
+      "aliases": [
+        "Bobic"
+      ],
+      "wd": "Q61219"
+    },
+    {
+      "id": "uwe-rahn",
+      "name": "Uwe Rahn",
+      "sub": "Germany · Mönchengladbach",
+      "value": 107,
+      "aliases": [
+        "Rahn"
+      ],
+      "wd": "Q47470"
+    },
+    {
+      "id": "ailton",
+      "name": "Aílton",
+      "sub": "Brazil · Werder Bremen",
+      "value": 106,
+      "wd": "Q123310423"
+    },
+    {
+      "id": "stephane-chapuisat",
+      "name": "Stéphane Chapuisat",
+      "sub": "Switzerland · Dortmund",
+      "value": 106,
+      "aliases": [
+        "Chapuisat"
+      ],
+      "wd": "Q313438"
+    },
+    {
+      "id": "christian-schreier",
+      "name": "Christian Schreier",
+      "sub": "Germany · Bochum, Leverkusen",
+      "value": 106,
+      "aliases": [
+        "Schreier"
+      ],
+      "wd": "Q463919"
+    },
+    {
+      "id": "bruno-labbadia",
+      "name": "Bruno Labbadia",
+      "sub": "Germany · Kaiserslautern, Bayern, Werder Bremen",
+      "value": 103,
+      "aliases": [
+        "Labbadia"
+      ],
+      "wd": "Q57548"
+    },
+    {
+      "id": "harry-kane",
+      "name": "Harry Kane",
+      "sub": "England · Bayern",
+      "value": 102,
+      "aliases": [
+        "Kane"
+      ],
+      "wd": "Q969725"
+    },
+    {
+      "id": "timo-werner",
+      "name": "Timo Werner",
+      "sub": "Germany · RB Leipzig",
+      "value": 102,
+      "aliases": [
+        "Werner"
+      ],
+      "wd": "Q3529022"
+    },
+    {
+      "id": "marco-bode",
+      "name": "Marco Bode",
+      "sub": "Germany · Werder Bremen",
+      "value": 101,
+      "aliases": [
+        "Bode"
+      ],
+      "wd": "Q437274"
+    },
+    {
+      "id": "serge-gnabry",
+      "name": "Serge Gnabry",
+      "sub": "Germany · Bayern",
+      "value": 100,
+      "aliases": [
+        "Gnabry"
+      ],
+      "wd": "Q59490"
+    },
+    {
+      "id": "thomas-von-heesen",
+      "name": "Thomas von Heesen",
+      "sub": "Germany · Hamburg",
+      "value": 100,
+      "aliases": [
+        "von Heesen",
+        "Heesen"
+      ],
+      "wd": "Q642986"
+    }
+  ]
+}

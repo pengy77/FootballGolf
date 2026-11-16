@@ -4,6 +4,8 @@
   "prompt": "most Champions League appearances",
   "noun": "player",
   "nounPlural": "players",
+  "kind": "player",
+  "retired": true,
   "metric": "Apps",
   "order": "desc",
   "description": "All-time appearances in the European Cup and Champions League (players with 100+), excluding qualifying rounds.",
@@ -27,7 +29,8 @@
         "Ronaldo",
         "CR7",
         "Cristiano"
-      ]
+      ],
+      "wd": "Q11571"
     },
     {
       "id": "iker-casillas",
@@ -37,7 +40,8 @@
       "aliases": [
         "Casillas",
         "Iker"
-      ]
+      ],
+      "wd": "Q11584"
     },
     {
       "id": "manuel-neuer",
@@ -46,7 +50,8 @@
       "value": 164,
       "aliases": [
         "Neuer"
-      ]
+      ],
+      "wd": "Q107365"
     },
     {
       "id": "lionel-messi",
@@ -56,7 +61,8 @@
       "aliases": [
         "Messi",
         "Leo Messi"
-      ]
+      ],
+      "wd": "Q615"
     },
     {
       "id": "thomas-muller",
@@ -65,7 +71,8 @@
       "value": 163,
       "aliases": [
         "Müller"
-      ]
+      ],
+      "wd": "Q43666"
     },
     {
       "id": "karim-benzema",
@@ -74,7 +81,8 @@
       "value": 152,
       "aliases": [
         "Benzema"
-      ]
+      ],
+      "wd": "Q1912"
     },
     {
       "id": "xavi",
@@ -83,7 +91,8 @@
       "value": 151,
       "aliases": [
         "Xavi Hernández"
-      ]
+      ],
+      "wd": "Q17500"
     },
     {
       "id": "toni-kroos",
@@ -92,7 +101,8 @@
       "value": 151,
       "aliases": [
         "Kroos"
-      ]
+      ],
+      "wd": "Q131234"
     },
     {
       "id": "robert-lewandowski",
@@ -102,7 +112,8 @@
       "aliases": [
         "Lewandowski",
         "Lewy"
-      ]
+      ],
+      "wd": "Q151269"
     },
     {
       "id": "raul",
@@ -111,7 +122,8 @@
       "value": 142,
       "aliases": [
         "Raúl González"
-      ]
+      ],
+      "wd": "Q11576"
     },
     {
       "id": "sergio-ramos",
@@ -120,7 +132,8 @@
       "value": 142,
       "aliases": [
         "Ramos"
-      ]
+      ],
+      "wd": "Q483309"
     },
     {
       "id": "luka-modric",
@@ -129,7 +142,8 @@
       "value": 142,
       "aliases": [
         "Modrić"
-      ]
+      ],
+      "wd": "Q483837"
     },
     {
       "id": "ryan-giggs",
@@ -138,7 +152,8 @@
       "value": 141,
       "aliases": [
         "Giggs"
-      ]
+      ],
+      "wd": "Q10524"
     },
     {
       "id": "andres-iniesta",
@@ -147,7 +162,8 @@
       "value": 130,
       "aliases": [
         "Iniesta"
-      ]
+      ],
+      "wd": "Q43729"
     },
     {
       "id": "sergio-busquets",
@@ -156,7 +172,8 @@
       "value": 129,
       "aliases": [
         "Busquets"
-      ]
+      ],
+      "wd": "Q49704"
     },
     {
       "id": "gerard-pique",
@@ -165,7 +182,8 @@
       "value": 128,
       "aliases": [
         "Piqué"
-      ]
+      ],
+      "wd": "Q17507"
     },
     {
       "id": "clarence-seedorf",
@@ -174,7 +192,8 @@
       "value": 125,
       "aliases": [
         "Seedorf"
-      ]
+      ],
+      "wd": "Q484909"
     },
     {
       "id": "david-alaba",
@@ -183,7 +202,8 @@
       "value": 125,
       "aliases": [
         "Alaba"
-      ]
+      ],
+      "wd": "Q31981"
     },
     {
       "id": "paul-scholes",
@@ -192,7 +212,8 @@
       "value": 124,
       "aliases": [
         "Scholes"
-      ]
+      ],
+      "wd": "Q45613"
     },
     {
       "id": "gianluigi-buffon",
@@ -201,7 +222,8 @@
       "value": 124,
       "aliases": [
         "Buffon"
-      ]
+      ],
+      "wd": "Q68060"
     },
     {
       "id": "zlatan-ibrahimovic",
@@ -212,25 +234,29 @@
         "Ibrahimović",
         "Zlatan",
         "Ibra"
-      ]
+      ],
+      "wd": "Q46896"
     },
     {
       "id": "marquinhos",
       "name": "Marquinhos",
       "sub": "Brazil · PSG",
-      "value": 124
+      "value": 124,
+      "wd": "Q39230"
     },
     {
       "id": "roberto-carlos",
       "name": "Roberto Carlos",
       "sub": "Brazil · Real Madrid",
-      "value": 120
+      "value": 120,
+      "wd": "Q429039"
     },
     {
       "id": "pepe",
       "name": "Pepe",
       "sub": "Portugal · Porto, Real Madrid",
-      "value": 120
+      "value": 120,
+      "wd": "Q485697"
     },
     {
       "id": "antoine-griezmann",
@@ -239,13 +265,15 @@
       "value": 120,
       "aliases": [
         "Griezmann"
-      ]
+      ],
+      "wd": "Q455462"
     },
     {
       "id": "koke",
       "name": "Koke",
       "sub": "Spain · Atlético Madrid",
-      "value": 120
+      "value": 120,
+      "wd": "Q276091"
     },
     {
       "id": "xabi-alonso",
@@ -254,7 +282,8 @@
       "value": 119,
       "aliases": [
         "Alonso"
-      ]
+      ],
+      "wd": "Q208104"
     },
     {
       "id": "ilkay-gundogan",
@@ -263,7 +292,8 @@
       "value": 117,
       "aliases": [
         "Gündoğan"
-      ]
+      ],
+      "wd": "Q161089"
     },
     {
       "id": "angel-di-maria",
@@ -273,7 +303,8 @@
       "aliases": [
         "Di María",
         "Fideo"
-      ]
+      ],
+      "wd": "Q251683"
     },
     {
       "id": "carles-puyol",
@@ -282,7 +313,8 @@
       "value": 115,
       "aliases": [
         "Puyol"
-      ]
+      ],
+      "wd": "Q17158"
     },
     {
       "id": "thierry-henry",
@@ -291,7 +323,8 @@
       "value": 112,
       "aliases": [
         "Henry"
-      ]
+      ],
+      "wd": "Q45901"
     },
     {
       "id": "philipp-lahm",
@@ -300,7 +333,8 @@
       "value": 112,
       "aliases": [
         "Lahm"
-      ]
+      ],
+      "wd": "Q43682"
     },
     {
       "id": "joshua-kimmich",
@@ -309,7 +343,8 @@
       "value": 112,
       "aliases": [
         "Kimmich"
-      ]
+      ],
+      "wd": "Q13865408"
     },
     {
       "id": "petr-cech",
@@ -318,7 +353,8 @@
       "value": 111,
       "aliases": [
         "Čech"
-      ]
+      ],
+      "wd": "Q483137"
     },
     {
       "id": "dani-alves",
@@ -328,7 +364,8 @@
       "aliases": [
         "Alves",
         "Daniel Alves"
-      ]
+      ],
+      "wd": "Q172720"
     },
     {
       "id": "arjen-robben",
@@ -337,7 +374,8 @@
       "value": 110,
       "aliases": [
         "Robben"
-      ]
+      ],
+      "wd": "Q43913"
     },
     {
       "id": "jan-oblak",
@@ -346,7 +384,8 @@
       "value": 110,
       "aliases": [
         "Oblak"
-      ]
+      ],
+      "wd": "Q2058682"
     },
     {
       "id": "paolo-maldini",
@@ -355,7 +394,8 @@
       "value": 109,
       "aliases": [
         "Maldini"
-      ]
+      ],
+      "wd": "Q483027"
     },
     {
       "id": "gary-neville",
@@ -364,7 +404,8 @@
       "value": 109,
       "aliases": [
         "Neville"
-      ]
+      ],
+      "wd": "Q348857"
     },
     {
       "id": "john-terry",
@@ -373,7 +414,8 @@
       "value": 109,
       "aliases": [
         "Terry"
-      ]
+      ],
+      "wd": "Q83456"
     },
     {
       "id": "andrea-pirlo",
@@ -382,7 +424,8 @@
       "value": 108,
       "aliases": [
         "Pirlo"
-      ]
+      ],
+      "wd": "Q43926"
     },
     {
       "id": "ashley-cole",
@@ -391,7 +434,8 @@
       "value": 108,
       "aliases": [
         "Cole"
-      ]
+      ],
+      "wd": "Q133556"
     },
     {
       "id": "patrice-evra",
@@ -400,7 +444,8 @@
       "value": 108,
       "aliases": [
         "Evra"
-      ]
+      ],
+      "wd": "Q1916"
     },
     {
       "id": "david-beckham",
@@ -409,7 +454,8 @@
       "value": 107,
       "aliases": [
         "Beckham"
-      ]
+      ],
+      "wd": "Q10520"
     },
     {
       "id": "bernardo-silva",
@@ -419,7 +465,8 @@
       "aliases": [
         "Silva",
         "Bernardo"
-      ]
+      ],
+      "wd": "Q15521306"
     },
     {
       "id": "victor-valdes",
@@ -428,7 +475,8 @@
       "value": 106,
       "aliases": [
         "Valdés"
-      ]
+      ],
+      "wd": "Q47548"
     },
     {
       "id": "frank-lampard",
@@ -437,7 +485,8 @@
       "value": 105,
       "aliases": [
         "Lampard"
-      ]
+      ],
+      "wd": "Q41533"
     },
     {
       "id": "thiago-silva",
@@ -446,7 +495,8 @@
       "value": 105,
       "aliases": [
         "Silva"
-      ]
+      ],
+      "wd": "Q210453"
     },
     {
       "id": "cesc-fabregas",
@@ -456,7 +506,8 @@
       "aliases": [
         "Fàbregas",
         "Cesc"
-      ]
+      ],
+      "wd": "Q17499"
     },
     {
       "id": "oliver-kahn",
@@ -465,7 +516,8 @@
       "value": 103,
       "aliases": [
         "Kahn"
-      ]
+      ],
+      "wd": "Q131261"
     },
     {
       "id": "luis-figo",
@@ -474,13 +526,15 @@
       "value": 103,
       "aliases": [
         "Figo"
-      ]
+      ],
+      "wd": "Q483145"
     },
     {
       "id": "fernandinho",
       "name": "Fernandinho",
       "sub": "Brazil · Shakhtar, Man City",
-      "value": 103
+      "value": 103,
+      "wd": "Q459356"
     },
     {
       "id": "thibaut-courtois",
@@ -489,13 +543,15 @@
       "value": 103,
       "aliases": [
         "Courtois"
-      ]
+      ],
+      "wd": "Q73360"
     },
     {
       "id": "marcelo",
       "name": "Marcelo",
       "sub": "Brazil · Real Madrid",
-      "value": 102
+      "value": 102,
+      "wd": "Q84314202"
     },
     {
       "id": "nicolas-otamendi",
@@ -504,7 +560,8 @@
       "value": 102,
       "aliases": [
         "Otamendi"
-      ]
+      ],
+      "wd": "Q182063"
     },
     {
       "id": "kylian-mbappe",
@@ -513,7 +570,8 @@
       "value": 102,
       "aliases": [
         "Mbappé"
-      ]
+      ],
+      "wd": "Q21621995"
     },
     {
       "id": "andriy-shevchenko",
@@ -523,7 +581,8 @@
       "aliases": [
         "Shevchenko",
         "Sheva"
-      ]
+      ],
+      "wd": "Q41244"
     }
   ]
 }

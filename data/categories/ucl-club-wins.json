@@ -4,6 +4,7 @@
   "prompt": "most Champions League match wins (up to 2024–25)",
   "noun": "club",
   "nounPlural": "clubs",
+  "kind": "club",
   "metric": "Wins",
   "order": "desc",
   "description": "All-time match wins in the European Cup and Champions League since 1955, including qualifying rounds (shoot-outs count as draws), up to the end of the 2024–25 season.",
@@ -26,7 +27,8 @@
       "aliases": [
         "Real",
         "Los Blancos"
-      ]
+      ],
+      "wd": "Q8682"
     },
     {
       "id": "bayern-munich",
@@ -37,7 +39,8 @@
         "Bayern",
         "FC Bayern",
         "Bayern München"
-      ]
+      ],
+      "wd": "Q15789"
     },
     {
       "id": "barcelona",
@@ -47,7 +50,8 @@
       "aliases": [
         "Barça",
         "FC Barcelona"
-      ]
+      ],
+      "wd": "Q248782"
     },
     {
       "id": "manchester-united",
@@ -57,7 +61,8 @@
       "aliases": [
         "Man Utd",
         "Man United"
-      ]
+      ],
+      "wd": "Q18656"
     },
     {
       "id": "juventus",
@@ -66,7 +71,8 @@
       "value": 157,
       "aliases": [
         "Juve"
-      ]
+      ],
+      "wd": "Q1422"
     },
     {
       "id": "liverpool",
@@ -75,7 +81,8 @@
       "value": 150,
       "aliases": [
         "LFC"
-      ]
+      ],
+      "wd": "Q1130849"
     },
     {
       "id": "ac-milan",
@@ -84,7 +91,8 @@
       "value": 138,
       "aliases": [
         "Milan"
-      ]
+      ],
+      "wd": "Q1543"
     },
     {
       "id": "benfica",
@@ -93,7 +101,8 @@
       "value": 136,
       "aliases": [
         "SL Benfica"
-      ]
+      ],
+      "wd": "Q131499"
     },
     {
       "id": "porto",
@@ -102,7 +111,8 @@
       "value": 126,
       "aliases": [
         "FC Porto"
-      ]
+      ],
+      "wd": "Q128446"
     },
     {
       "id": "arsenal",
@@ -111,7 +121,8 @@
       "value": 115,
       "aliases": [
         "Gunners"
-      ]
+      ],
+      "wd": "Q9617"
     },
     {
       "id": "ajax",
@@ -120,7 +131,8 @@
       "value": 112,
       "aliases": [
         "Ajax Amsterdam"
-      ]
+      ],
+      "wd": "Q81888"
     },
     {
       "id": "inter-milan",
@@ -130,7 +142,8 @@
       "aliases": [
         "Inter",
         "Internazionale"
-      ]
+      ],
+      "wd": "Q631"
     },
     {
       "id": "dynamo-kyiv",
@@ -139,7 +152,8 @@
       "value": 107,
       "aliases": [
         "Dynamo Kiev"
-      ]
+      ],
+      "wd": "Q179075"
     },
     {
       "id": "celtic",
@@ -148,13 +162,15 @@
       "value": 105,
       "aliases": [
         "Celtic Glasgow"
-      ]
+      ],
+      "wd": "Q19593"
     },
     {
       "id": "chelsea",
       "name": "Chelsea",
       "sub": "England",
-      "value": 104
+      "value": 104,
+      "wd": "x-club-chelsea"
     },
     {
       "id": "borussia-dortmund",
@@ -164,7 +180,8 @@
       "aliases": [
         "Dortmund",
         "BVB"
-      ]
+      ],
+      "wd": "Q41420"
     },
     {
       "id": "paris-saint-germain",
@@ -174,7 +191,8 @@
       "aliases": [
         "PSG",
         "Paris SG"
-      ]
+      ],
+      "wd": "Q483020"
     },
     {
       "id": "atletico-madrid",
@@ -184,7 +202,8 @@
       "aliases": [
         "Atlético",
         "Atleti"
-      ]
+      ],
+      "wd": "Q8701"
     },
     {
       "id": "psv-eindhoven",
@@ -193,7 +212,8 @@
       "value": 79,
       "aliases": [
         "PSV"
-      ]
+      ],
+      "wd": "Q11938"
     },
     {
       "id": "manchester-city",
@@ -202,7 +222,8 @@
       "value": 77,
       "aliases": [
         "Man City"
-      ]
+      ],
+      "wd": "Q50602"
     },
     {
       "id": "red-star-belgrade",
@@ -212,19 +233,22 @@
       "aliases": [
         "Red Star",
         "Crvena zvezda"
-      ]
+      ],
+      "wd": "Q173009"
     },
     {
       "id": "dinamo-zagreb",
       "name": "Dinamo Zagreb",
       "sub": "Croatia",
-      "value": 72
+      "value": 72,
+      "wd": "Q172803"
     },
     {
       "id": "anderlecht",
       "name": "Anderlecht",
       "sub": "Belgium",
-      "value": 70
+      "value": 70,
+      "wd": "Q187528"
     },
     {
       "id": "olympiacos",
@@ -233,7 +257,8 @@
       "value": 66,
       "aliases": [
         "Olympiakos"
-      ]
+      ],
+      "wd": "x-club-olympiacos"
     },
     {
       "id": "rangers",
@@ -242,7 +267,8 @@
       "value": 65,
       "aliases": [
         "Glasgow Rangers"
-      ]
+      ],
+      "wd": "Q19597"
     },
     {
       "id": "lyon",
@@ -252,13 +278,15 @@
       "aliases": [
         "Olympique Lyonnais",
         "OL"
-      ]
+      ],
+      "wd": "Q704"
     },
     {
       "id": "galatasaray",
       "name": "Galatasaray",
       "sub": "Turkey",
-      "value": 63
+      "value": 63,
+      "wd": "Q495299"
     },
     {
       "id": "shakhtar-donetsk",
@@ -267,7 +295,8 @@
       "value": 63,
       "aliases": [
         "Shakhtar"
-      ]
+      ],
+      "wd": "Q172969"
     },
     {
       "id": "sparta-prague",
@@ -276,19 +305,22 @@
       "value": 60,
       "aliases": [
         "Sparta Praha"
-      ]
+      ],
+      "wd": "Q193481"
     },
     {
       "id": "rosenborg",
       "name": "Rosenborg",
       "sub": "Norway",
-      "value": 58
+      "value": 58,
+      "wd": "Q186785"
     },
     {
       "id": "valencia",
       "name": "Valencia",
       "sub": "Spain",
-      "value": 57
+      "value": 57,
+      "wd": "Q10333"
     },
     {
       "id": "fcsb",
@@ -298,13 +330,15 @@
       "aliases": [
         "Steaua Bucharest",
         "Steaua București"
-      ]
+      ],
+      "wd": "Q179658"
     },
     {
       "id": "panathinaikos",
       "name": "Panathinaikos",
       "sub": "Greece",
-      "value": 51
+      "value": 51,
+      "wd": "Q4122219"
     },
     {
       "id": "monaco",
@@ -313,7 +347,8 @@
       "value": 50,
       "aliases": [
         "AS Monaco"
-      ]
+      ],
+      "wd": "Q180305"
     },
     {
       "id": "club-brugge",
@@ -323,7 +358,8 @@
       "aliases": [
         "Brugge",
         "Bruges"
-      ]
+      ],
+      "wd": "Q190916"
     },
     {
       "id": "bayer-leverkusen",
@@ -332,7 +368,8 @@
       "value": 48,
       "aliases": [
         "Leverkusen"
-      ]
+      ],
+      "wd": "Q104761"
     },
     {
       "id": "basel",
@@ -341,7 +378,8 @@
       "value": 47,
       "aliases": [
         "FC Basel"
-      ]
+      ],
+      "wd": "Q189671"
     },
     {
       "id": "marseille",
@@ -351,7 +389,8 @@
       "aliases": [
         "Olympique de Marseille",
         "OM"
-      ]
+      ],
+      "wd": "Q132885"
     },
     {
       "id": "copenhagen",
@@ -361,7 +400,8 @@
       "aliases": [
         "FC Copenhagen",
         "FC København"
-      ]
+      ],
+      "wd": "Q188430"
     },
     {
       "id": "roma",
@@ -370,13 +410,15 @@
       "value": 41,
       "aliases": [
         "AS Roma"
-      ]
+      ],
+      "wd": "Q2739"
     },
     {
       "id": "feyenoord",
       "name": "Feyenoord",
       "sub": "Netherlands",
-      "value": 41
+      "value": 41,
+      "wd": "Q134241"
     },
     {
       "id": "partizan",
@@ -385,19 +427,22 @@
       "value": 41,
       "aliases": [
         "Partizan Belgrade"
-      ]
+      ],
+      "wd": "Q188656"
     },
     {
       "id": "cska-sofia",
       "name": "CSKA Sofia",
       "sub": "Bulgaria",
-      "value": 41
+      "value": 41,
+      "wd": "Q136433"
     },
     {
       "id": "spartak-moscow",
       "name": "Spartak Moscow",
       "sub": "Russia",
-      "value": 40
+      "value": 40,
+      "wd": "Q29112"
     },
     {
       "id": "red-bull-salzburg",
@@ -407,7 +452,8 @@
       "aliases": [
         "Salzburg",
         "RB Salzburg"
-      ]
+      ],
+      "wd": "Q994811"
     },
     {
       "id": "bate-borisov",
@@ -416,7 +462,8 @@
       "value": 37,
       "aliases": [
         "BATE"
-      ]
+      ],
+      "wd": "Q191101"
     },
     {
       "id": "legia-warsaw",
@@ -425,7 +472,8 @@
       "value": 37,
       "aliases": [
         "Legia"
-      ]
+      ],
+      "wd": "x-club-legia-warsaw"
     },
     {
       "id": "malmo-ff",
@@ -434,7 +482,8 @@
       "value": 35,
       "aliases": [
         "Malmö"
-      ]
+      ],
+      "wd": "Q204881"
     },
     {
       "id": "sheriff-tiraspol",
@@ -443,7 +492,8 @@
       "value": 35,
       "aliases": [
         "Sheriff"
-      ]
+      ],
+      "wd": "Q210768"
     },
     {
       "id": "ifk-goteborg",
@@ -453,7 +503,8 @@
       "aliases": [
         "IFK Gothenburg",
         "Göteborg"
-      ]
+      ],
+      "wd": "Q201567"
     },
     {
       "id": "rapid-wien",
@@ -462,7 +513,8 @@
       "value": 35,
       "aliases": [
         "Rapid Vienna"
-      ]
+      ],
+      "wd": "Q131215"
     },
     {
       "id": "sporting-cp",
@@ -472,19 +524,22 @@
       "aliases": [
         "Sporting Lisbon",
         "Sporting"
-      ]
+      ],
+      "wd": "Q75729"
     },
     {
       "id": "cska-moscow",
       "name": "CSKA Moscow",
       "sub": "Russia",
-      "value": 34
+      "value": 34,
+      "wd": "Q176371"
     },
     {
       "id": "fenerbahce",
       "name": "Fenerbahçe",
       "sub": "Turkey",
-      "value": 34
+      "value": 34,
+      "wd": "Q6601875"
     },
     {
       "id": "maribor",
@@ -493,7 +548,8 @@
       "value": 32,
       "aliases": [
         "NK Maribor"
-      ]
+      ],
+      "wd": "Q210530"
     },
     {
       "id": "napoli",
@@ -502,7 +558,8 @@
       "value": 32,
       "aliases": [
         "SSC Napoli"
-      ]
+      ],
+      "wd": "Q2641"
     },
     {
       "id": "schalke-04",
@@ -511,7 +568,8 @@
       "value": 31,
       "aliases": [
         "Schalke"
-      ]
+      ],
+      "wd": "Q32494"
     },
     {
       "id": "hjk-helsinki",
@@ -520,7 +578,8 @@
       "value": 31,
       "aliases": [
         "HJK"
-      ]
+      ],
+      "wd": "Q208584"
     },
     {
       "id": "apoel",
@@ -529,7 +588,8 @@
       "value": 30,
       "aliases": [
         "APOEL Nicosia"
-      ]
+      ],
+      "wd": "x-club-apoel"
     },
     {
       "id": "sevilla",
@@ -538,7 +598,8 @@
       "value": 30,
       "aliases": [
         "Seville"
-      ]
+      ],
+      "wd": "Q10329"
     },
     {
       "id": "zenit-saint-petersburg",
@@ -547,7 +608,8 @@
       "value": 30,
       "aliases": [
         "Zenit"
-      ]
+      ],
+      "wd": "Q29108"
     },
     {
       "id": "ferencvaros",
@@ -556,7 +618,8 @@
       "value": 28,
       "aliases": [
         "Fradi"
-      ]
+      ],
+      "wd": "x-club-ferencvaros"
     },
     {
       "id": "lazio",
@@ -565,7 +628,8 @@
       "value": 28,
       "aliases": [
         "SS Lazio"
-      ]
+      ],
+      "wd": "Q2609"
     },
     {
       "id": "tottenham-hotspur",
@@ -575,13 +639,15 @@
       "aliases": [
         "Tottenham",
         "Spurs"
-      ]
+      ],
+      "wd": "Q18741"
     },
     {
       "id": "besiktas",
       "name": "Beşiktaş",
       "sub": "Turkey",
-      "value": 27
+      "value": 27,
+      "wd": "Q172567"
     },
     {
       "id": "werder-bremen",
@@ -591,7 +657,8 @@
       "aliases": [
         "Werder",
         "Bremen"
-      ]
+      ],
+      "wd": "Q51976"
     },
     {
       "id": "ludogorets-razgrad",
@@ -600,7 +667,8 @@
       "value": 26,
       "aliases": [
         "Ludogorets"
-      ]
+      ],
+      "wd": "Q1339086"
     },
     {
       "id": "deportivo-la-coruna",
@@ -610,7 +678,8 @@
       "aliases": [
         "Deportivo",
         "Depor"
-      ]
+      ],
+      "wd": "x-club-deportivo-la-coruna"
     },
     {
       "id": "austria-wien",
@@ -619,7 +688,8 @@
       "value": 25,
       "aliases": [
         "Austria Vienna"
-      ]
+      ],
+      "wd": "Q131209"
     },
     {
       "id": "standard-liege",
@@ -628,13 +698,15 @@
       "value": 25,
       "aliases": [
         "Standard"
-      ]
+      ],
+      "wd": "Q190561"
     },
     {
       "id": "qarabag",
       "name": "Qarabağ",
       "sub": "Azerbaijan",
-      "value": 24
+      "value": 24,
+      "wd": "Q723476"
     },
     {
       "id": "young-boys",
@@ -644,7 +716,8 @@
       "aliases": [
         "BSC Young Boys",
         "YB"
-      ]
+      ],
+      "wd": "Q190526"
     },
     {
       "id": "dinamo-bucuresti",
@@ -653,19 +726,22 @@
       "value": 24,
       "aliases": [
         "Dinamo Bucharest"
-      ]
+      ],
+      "wd": "Q204237"
     },
     {
       "id": "slovan-bratislava",
       "name": "Slovan Bratislava",
       "sub": "Slovakia",
-      "value": 23
+      "value": 23,
+      "wd": "x-club-slovan-bratislava"
     },
     {
       "id": "maccabi-haifa",
       "name": "Maccabi Haifa",
       "sub": "Israel",
-      "value": 23
+      "value": 23,
+      "wd": "Q2129100"
     },
     {
       "id": "rb-leipzig",
@@ -674,7 +750,8 @@
       "value": 23,
       "aliases": [
         "Leipzig"
-      ]
+      ],
+      "wd": "Q702455"
     },
     {
       "id": "borussia-monchengladbach",
@@ -684,7 +761,8 @@
       "aliases": [
         "Gladbach",
         "Mönchengladbach"
-      ]
+      ],
+      "wd": "Q101959"
     },
     {
       "id": "dukla-prague",
@@ -693,7 +771,8 @@
       "value": 22,
       "aliases": [
         "Dukla Praha"
-      ]
+      ],
+      "wd": "Q2757426"
     },
     {
       "id": "viktoria-plzen",
@@ -703,7 +782,8 @@
       "aliases": [
         "Plzeň",
         "Viktoria Pilsen"
-      ]
+      ],
+      "wd": "Q206838"
     },
     {
       "id": "leeds-united",
@@ -712,7 +792,8 @@
       "value": 22,
       "aliases": [
         "Leeds"
-      ]
+      ],
+      "wd": "Q1128631"
     },
     {
       "id": "lille",
@@ -721,7 +802,8 @@
       "value": 21,
       "aliases": [
         "LOSC"
-      ]
+      ],
+      "wd": "Q19516"
     },
     {
       "id": "bordeaux",
@@ -730,19 +812,22 @@
       "value": 21,
       "aliases": [
         "Girondins de Bordeaux"
-      ]
+      ],
+      "wd": "Q172476"
     },
     {
       "id": "fiorentina",
       "name": "Fiorentina",
       "sub": "Italy",
-      "value": 21
+      "value": 21,
+      "wd": "Q2052"
     },
     {
       "id": "gornik-zabrze",
       "name": "Górnik Zabrze",
       "sub": "Poland",
-      "value": 20
+      "value": 20,
+      "wd": "Q134255"
     },
     {
       "id": "aek-athens",
@@ -751,7 +836,8 @@
       "value": 19,
       "aliases": [
         "AEK"
-      ]
+      ],
+      "wd": "x-club-aek-athens"
     },
     {
       "id": "hamburger-sv",
@@ -761,7 +847,8 @@
       "aliases": [
         "Hamburg",
         "HSV"
-      ]
+      ],
+      "wd": "Q51974"
     },
     {
       "id": "saint-etienne",
@@ -771,19 +858,22 @@
       "aliases": [
         "ASSE",
         "St Etienne"
-      ]
+      ],
+      "wd": "Q19521"
     },
     {
       "id": "hajduk-split",
       "name": "Hajduk Split",
       "sub": "Croatia",
-      "value": 18
+      "value": 18,
+      "wd": "Q181216"
     },
     {
       "id": "ujpest",
       "name": "Újpest",
       "sub": "Hungary",
-      "value": 18
+      "value": 18,
+      "wd": "Q244595"
     },
     {
       "id": "omonia",
@@ -792,13 +882,15 @@
       "value": 17,
       "aliases": [
         "Omonia Nicosia"
-      ]
+      ],
+      "wd": "x-club-omonia"
     },
     {
       "id": "sturm-graz",
       "name": "Sturm Graz",
       "sub": "Austria",
-      "value": 17
+      "value": 17,
+      "wd": "Q124007617"
     },
     {
       "id": "zurich",
@@ -807,7 +899,8 @@
       "value": 17,
       "aliases": [
         "FC Zürich"
-      ]
+      ],
+      "wd": "Q206692"
     },
     {
       "id": "slavia-prague",
@@ -816,13 +909,15 @@
       "value": 16,
       "aliases": [
         "Slavia Praha"
-      ]
+      ],
+      "wd": "Q194393"
     },
     {
       "id": "cfr-cluj",
       "name": "CFR Cluj",
       "sub": "Romania",
-      "value": 16
+      "value": 16,
+      "wd": "Q205998"
     },
     {
       "id": "skonto",
@@ -831,7 +926,8 @@
       "value": 16,
       "aliases": [
         "Skonto Riga"
-      ]
+      ],
+      "wd": "x-club-skonto"
     },
     {
       "id": "aston-villa",
@@ -840,13 +936,15 @@
       "value": 16,
       "aliases": [
         "Villa"
-      ]
+      ],
+      "wd": "Q18711"
     },
     {
       "id": "levski-sofia",
       "name": "Levski Sofia",
       "sub": "Bulgaria",
-      "value": 15
+      "value": 15,
+      "wd": "Q144190"
     },
     {
       "id": "grasshoppers",
@@ -855,19 +953,22 @@
       "value": 15,
       "aliases": [
         "Grasshopper Club Zürich"
-      ]
+      ],
+      "wd": "Q201360"
     },
     {
       "id": "maccabi-tel-aviv",
       "name": "Maccabi Tel Aviv",
       "sub": "Israel",
-      "value": 15
+      "value": 15,
+      "wd": "Q223728"
     },
     {
       "id": "spartak-trnava",
       "name": "Spartak Trnava",
       "sub": "Slovakia",
-      "value": 15
+      "value": 15,
+      "wd": "Q459218"
     },
     {
       "id": "bfc-dynamo",
@@ -876,7 +977,8 @@
       "value": 15,
       "aliases": [
         "Dynamo Berlin"
-      ]
+      ],
+      "wd": "Q159930"
     },
     {
       "id": "brondby",
@@ -885,13 +987,15 @@
       "value": 15,
       "aliases": [
         "Brøndby IF"
-      ]
+      ],
+      "wd": "Q211906"
     },
     {
       "id": "wisla-krakow",
       "name": "Wisła Kraków",
       "sub": "Poland",
-      "value": 15
+      "value": 15,
+      "wd": "Q190943"
     }
   ]
 }

@@ -4,6 +4,7 @@
   "prompt": "highest-ranked nation in the FIFA world ranking",
   "noun": "nation",
   "nounPlural": "nations",
+  "kind": "nation",
   "metric": "Points",
   "order": "desc",
   "description": "FIFA/Coca-Cola Men's World Ranking published 7 October 2026, all 211 ranked nations, ordered by ranking points.",
@@ -21,56 +22,64 @@
       "name": "Spain",
       "sub": "UEFA",
       "value": 2011.57,
-      "display": "2011.57"
+      "display": "2011.57",
+      "wd": "spain"
     },
     {
       "id": "argentina",
       "name": "Argentina",
       "sub": "CONMEBOL",
       "value": 1972.8,
-      "display": "1972.80"
+      "display": "1972.80",
+      "wd": "argentina"
     },
     {
       "id": "france",
       "name": "France",
       "sub": "UEFA",
       "value": 1958.86,
-      "display": "1958.86"
+      "display": "1958.86",
+      "wd": "france"
     },
     {
       "id": "england",
       "name": "England",
       "sub": "UEFA",
       "value": 1925.59,
-      "display": "1925.59"
+      "display": "1925.59",
+      "wd": "england"
     },
     {
       "id": "portugal",
       "name": "Portugal",
       "sub": "UEFA",
       "value": 1807.69,
-      "display": "1807.69"
+      "display": "1807.69",
+      "wd": "portugal"
     },
     {
       "id": "brazil",
       "name": "Brazil",
       "sub": "CONMEBOL",
       "value": 1806.51,
-      "display": "1806.51"
+      "display": "1806.51",
+      "wd": "brazil"
     },
     {
       "id": "morocco",
       "name": "Morocco",
       "sub": "CAF",
       "value": 1805.34,
-      "display": "1805.34"
+      "display": "1805.34",
+      "wd": "morocco"
     },
     {
       "id": "belgium",
       "name": "Belgium",
       "sub": "UEFA",
       "value": 1779.17,
-      "display": "1779.17"
+      "display": "1779.17",
+      "wd": "belgium"
     },
     {
       "id": "netherlands",
@@ -81,49 +90,56 @@
       "aliases": [
         "Holland",
         "The Netherlands"
-      ]
+      ],
+      "wd": "netherlands"
     },
     {
       "id": "mexico",
       "name": "Mexico",
       "sub": "CONCACAF",
       "value": 1738.48,
-      "display": "1738.48"
+      "display": "1738.48",
+      "wd": "mexico"
     },
     {
       "id": "colombia",
       "name": "Colombia",
       "sub": "CONMEBOL",
       "value": 1735.8,
-      "display": "1735.80"
+      "display": "1735.80",
+      "wd": "colombia"
     },
     {
       "id": "switzerland",
       "name": "Switzerland",
       "sub": "UEFA",
       "value": 1725.39,
-      "display": "1725.39"
+      "display": "1725.39",
+      "wd": "switzerland"
     },
     {
       "id": "germany",
       "name": "Germany",
       "sub": "UEFA",
       "value": 1717.52,
-      "display": "1717.52"
+      "display": "1717.52",
+      "wd": "germany"
     },
     {
       "id": "croatia",
       "name": "Croatia",
       "sub": "UEFA",
       "value": 1714.74,
-      "display": "1714.74"
+      "display": "1714.74",
+      "wd": "croatia"
     },
     {
       "id": "italy",
       "name": "Italy",
       "sub": "UEFA",
       "value": 1713.04,
-      "display": "1713.04"
+      "display": "1713.04",
+      "wd": "italy"
     },
     {
       "id": "united-states",
@@ -136,49 +152,56 @@
         "US",
         "United States of America",
         "America"
-      ]
+      ],
+      "wd": "united-states"
     },
     {
       "id": "japan",
       "name": "Japan",
       "sub": "AFC",
       "value": 1684.75,
-      "display": "1684.75"
+      "display": "1684.75",
+      "wd": "japan"
     },
     {
       "id": "senegal",
       "name": "Senegal",
       "sub": "CAF",
       "value": 1648.84,
-      "display": "1648.84"
+      "display": "1648.84",
+      "wd": "senegal"
     },
     {
       "id": "norway",
       "name": "Norway",
       "sub": "UEFA",
       "value": 1637.89,
-      "display": "1637.89"
+      "display": "1637.89",
+      "wd": "norway"
     },
     {
       "id": "uruguay",
       "name": "Uruguay",
       "sub": "CONMEBOL",
       "value": 1635.54,
-      "display": "1635.54"
+      "display": "1635.54",
+      "wd": "uruguay"
     },
     {
       "id": "denmark",
       "name": "Denmark",
       "sub": "UEFA",
       "value": 1619.62,
-      "display": "1619.62"
+      "display": "1619.62",
+      "wd": "denmark"
     },
     {
       "id": "austria",
       "name": "Austria",
       "sub": "UEFA",
       "value": 1600.66,
-      "display": "1600.66"
+      "display": "1600.66",
+      "wd": "austria"
     },
     {
       "id": "iran",
@@ -188,42 +211,48 @@
       "display": "1597.31",
       "aliases": [
         "IR Iran"
-      ]
+      ],
+      "wd": "iran"
     },
     {
       "id": "ecuador",
       "name": "Ecuador",
       "sub": "CONMEBOL",
       "value": 1587.07,
-      "display": "1587.07"
+      "display": "1587.07",
+      "wd": "ecuador"
     },
     {
       "id": "egypt",
       "name": "Egypt",
       "sub": "CAF",
       "value": 1585.86,
-      "display": "1585.86"
+      "display": "1585.86",
+      "wd": "egypt"
     },
     {
       "id": "australia",
       "name": "Australia",
       "sub": "AFC",
       "value": 1585.52,
-      "display": "1585.52"
+      "display": "1585.52",
+      "wd": "australia"
     },
     {
       "id": "canada",
       "name": "Canada",
       "sub": "CONCACAF",
       "value": 1575.31,
-      "display": "1575.31"
+      "display": "1575.31",
+      "wd": "canada"
     },
     {
       "id": "algeria",
       "name": "Algeria",
       "sub": "CAF",
       "value": 1574.77,
-      "display": "1574.77"
+      "display": "1574.77",
+      "wd": "algeria"
     },
     {
       "id": "ivory-coast",
@@ -234,14 +263,16 @@
       "aliases": [
         "Côte d'Ivoire",
         "Cote d'Ivoire"
-      ]
+      ],
+      "wd": "ivory-coast"
     },
     {
       "id": "nigeria",
       "name": "Nigeria",
       "sub": "CAF",
       "value": 1567.97,
-      "display": "1567.97"
+      "display": "1567.97",
+      "wd": "nigeria"
     },
     {
       "id": "turkey",
@@ -252,7 +283,8 @@
       "aliases": [
         "Türkiye",
         "Turkiye"
-      ]
+      ],
+      "wd": "turkey"
     },
     {
       "id": "south-korea",
@@ -264,56 +296,64 @@
         "Korea Republic",
         "Korea",
         "Republic of Korea"
-      ]
+      ],
+      "wd": "south-korea"
     },
     {
       "id": "paraguay",
       "name": "Paraguay",
       "sub": "CONMEBOL",
       "value": 1552.3,
-      "display": "1552.30"
+      "display": "1552.30",
+      "wd": "paraguay"
     },
     {
       "id": "sweden",
       "name": "Sweden",
       "sub": "UEFA",
       "value": 1543.8,
-      "display": "1543.80"
+      "display": "1543.80",
+      "wd": "sweden"
     },
     {
       "id": "russia",
       "name": "Russia",
       "sub": "UEFA",
       "value": 1537.45,
-      "display": "1537.45"
+      "display": "1537.45",
+      "wd": "russia"
     },
     {
       "id": "ukraine",
       "name": "Ukraine",
       "sub": "UEFA",
       "value": 1535.27,
-      "display": "1535.27"
+      "display": "1535.27",
+      "wd": "ukraine"
     },
     {
       "id": "poland",
       "name": "Poland",
       "sub": "UEFA",
       "value": 1514.58,
-      "display": "1514.58"
+      "display": "1514.58",
+      "wd": "poland"
     },
     {
       "id": "hungary",
       "name": "Hungary",
       "sub": "UEFA",
       "value": 1511.24,
-      "display": "1511.24"
+      "display": "1511.24",
+      "wd": "hungary"
     },
     {
       "id": "wales",
       "name": "Wales",
       "sub": "UEFA",
       "value": 1510.37,
-      "display": "1510.37"
+      "display": "1510.37",
+      "wd": "wales"
     },
     {
       "id": "dr-congo",
@@ -325,77 +365,88 @@
         "Congo DR",
         "DRC",
         "Democratic Republic of the Congo"
-      ]
+      ],
+      "wd": "dr-congo"
     },
     {
       "id": "greece",
       "name": "Greece",
       "sub": "UEFA",
       "value": 1498.71,
-      "display": "1498.71"
+      "display": "1498.71",
+      "wd": "greece"
     },
     {
       "id": "cameroon",
       "name": "Cameroon",
       "sub": "CAF",
       "value": 1485.3,
-      "display": "1485.30"
+      "display": "1485.30",
+      "wd": "cameroon"
     },
     {
       "id": "scotland",
       "name": "Scotland",
       "sub": "UEFA",
       "value": 1483.57,
-      "display": "1483.57"
+      "display": "1483.57",
+      "wd": "scotland"
     },
     {
       "id": "serbia",
       "name": "Serbia",
       "sub": "UEFA",
       "value": 1482.24,
-      "display": "1482.24"
+      "display": "1482.24",
+      "wd": "serbia"
     },
     {
       "id": "slovakia",
       "name": "Slovakia",
       "sub": "UEFA",
       "value": 1477.34,
-      "display": "1477.34"
+      "display": "1477.34",
+      "wd": "slovakia"
     },
     {
       "id": "panama",
       "name": "Panama",
       "sub": "CONCACAF",
       "value": 1476.97,
-      "display": "1476.97"
+      "display": "1476.97",
+      "wd": "panama"
     },
     {
       "id": "mali",
       "name": "Mali",
       "sub": "CAF",
       "value": 1474.14,
-      "display": "1474.14"
+      "display": "1474.14",
+      "wd": "mali"
     },
     {
       "id": "south-africa",
       "name": "South Africa",
       "sub": "CAF",
       "value": 1468.88,
-      "display": "1468.88"
+      "display": "1468.88",
+      "wd": "south-africa"
     },
     {
       "id": "venezuela",
       "name": "Venezuela",
       "sub": "CONMEBOL",
       "value": 1465.87,
-      "display": "1465.87"
+      "display": "1465.87",
+      "wd": "venezuela"
     },
     {
       "id": "chile",
       "name": "Chile",
       "sub": "CONMEBOL",
       "value": 1458.97,
-      "display": "1458.97"
+      "display": "1458.97",
+      "wd": "chile"
     },
     {
       "id": "czech-republic",
@@ -405,28 +456,32 @@
       "display": "1457.12",
       "aliases": [
         "Czechia"
-      ]
+      ],
+      "wd": "czech-republic"
     },
     {
       "id": "slovenia",
       "name": "Slovenia",
       "sub": "UEFA",
       "value": 1452.48,
-      "display": "1452.48"
+      "display": "1452.48",
+      "wd": "slovenia"
     },
     {
       "id": "peru",
       "name": "Peru",
       "sub": "CONMEBOL",
       "value": 1450.95,
-      "display": "1450.95"
+      "display": "1450.95",
+      "wd": "peru"
     },
     {
       "id": "costa-rica",
       "name": "Costa Rica",
       "sub": "CONCACAF",
       "value": 1444.85,
-      "display": "1444.85"
+      "display": "1444.85",
+      "wd": "costa-rica"
     },
     {
       "id": "saudi-arabia",
@@ -436,7 +491,8 @@
       "display": "1443.17",
       "aliases": [
         "KSA"
-      ]
+      ],
+      "wd": "saudi-arabia"
     },
     {
       "id": "republic-of-ireland",
@@ -447,7 +503,8 @@
       "aliases": [
         "Ireland",
         "Eire"
-      ]
+      ],
+      "wd": "republic-of-ireland"
     },
     {
       "id": "bosnia-and-herzegovina",
@@ -458,56 +515,64 @@
       "aliases": [
         "Bosnia",
         "Bosnia-Herzegovina"
-      ]
+      ],
+      "wd": "bosnia-and-herzegovina"
     },
     {
       "id": "romania",
       "name": "Romania",
       "sub": "UEFA",
       "value": 1428.88,
-      "display": "1428.88"
+      "display": "1428.88",
+      "wd": "romania"
     },
     {
       "id": "uzbekistan",
       "name": "Uzbekistan",
       "sub": "AFC",
       "value": 1416.61,
-      "display": "1416.61"
+      "display": "1416.61",
+      "wd": "uzbekistan"
     },
     {
       "id": "qatar",
       "name": "Qatar",
       "sub": "AFC",
       "value": 1416.47,
-      "display": "1416.47"
+      "display": "1416.47",
+      "wd": "qatar"
     },
     {
       "id": "tunisia",
       "name": "Tunisia",
       "sub": "CAF",
       "value": 1415.38,
-      "display": "1415.38"
+      "display": "1415.38",
+      "wd": "tunisia"
     },
     {
       "id": "burkina-faso",
       "name": "Burkina Faso",
       "sub": "CAF",
       "value": 1407.8,
-      "display": "1407.80"
+      "display": "1407.80",
+      "wd": "burkina-faso"
     },
     {
       "id": "iraq",
       "name": "Iraq",
       "sub": "AFC",
       "value": 1400.91,
-      "display": "1400.91"
+      "display": "1400.91",
+      "wd": "iraq"
     },
     {
       "id": "northern-ireland",
       "name": "Northern Ireland",
       "sub": "UEFA",
       "value": 1383.86,
-      "display": "1383.86"
+      "display": "1383.86",
+      "wd": "northern-ireland"
     },
     {
       "id": "united-arab-emirates",
@@ -518,21 +583,24 @@
       "aliases": [
         "UAE",
         "Emirates"
-      ]
+      ],
+      "wd": "united-arab-emirates"
     },
     {
       "id": "albania",
       "name": "Albania",
       "sub": "UEFA",
       "value": 1375.78,
-      "display": "1375.78"
+      "display": "1375.78",
+      "wd": "albania"
     },
     {
       "id": "honduras",
       "name": "Honduras",
       "sub": "CONCACAF",
       "value": 1375.4,
-      "display": "1375.40"
+      "display": "1375.40",
+      "wd": "honduras"
     },
     {
       "id": "cape-verde",
@@ -543,21 +611,24 @@
       "aliases": [
         "Cabo Verde",
         "Cape Verde Islands"
-      ]
+      ],
+      "wd": "cape-verde"
     },
     {
       "id": "jamaica",
       "name": "Jamaica",
       "sub": "CONCACAF",
       "value": 1361.97,
-      "display": "1361.97"
+      "display": "1361.97",
+      "wd": "jamaica"
     },
     {
       "id": "ghana",
       "name": "Ghana",
       "sub": "CAF",
       "value": 1361.27,
-      "display": "1361.27"
+      "display": "1361.27",
+      "wd": "ghana"
     },
     {
       "id": "north-macedonia",
@@ -567,63 +638,72 @@
       "display": "1350.91",
       "aliases": [
         "Macedonia"
-      ]
+      ],
+      "wd": "north-macedonia"
     },
     {
       "id": "jordan",
       "name": "Jordan",
       "sub": "AFC",
       "value": 1350.88,
-      "display": "1350.88"
+      "display": "1350.88",
+      "wd": "jordan"
     },
     {
       "id": "iceland",
       "name": "Iceland",
       "sub": "UEFA",
       "value": 1349.42,
-      "display": "1349.42"
+      "display": "1349.42",
+      "wd": "iceland"
     },
     {
       "id": "georgia",
       "name": "Georgia",
       "sub": "UEFA",
       "value": 1345.88,
-      "display": "1345.88"
+      "display": "1345.88",
+      "wd": "georgia"
     },
     {
       "id": "finland",
       "name": "Finland",
       "sub": "UEFA",
       "value": 1340.73,
-      "display": "1340.73"
+      "display": "1340.73",
+      "wd": "finland"
     },
     {
       "id": "kosovo",
       "name": "Kosovo",
       "sub": "UEFA",
       "value": 1328.14,
-      "display": "1328.14"
+      "display": "1328.14",
+      "wd": "kosovo"
     },
     {
       "id": "israel",
       "name": "Israel",
       "sub": "UEFA",
       "value": 1325.52,
-      "display": "1325.52"
+      "display": "1325.52",
+      "wd": "israel"
     },
     {
       "id": "bolivia",
       "name": "Bolivia",
       "sub": "CONMEBOL",
       "value": 1322.19,
-      "display": "1322.19"
+      "display": "1322.19",
+      "wd": "bolivia"
     },
     {
       "id": "montenegro",
       "name": "Montenegro",
       "sub": "UEFA",
       "value": 1315.49,
-      "display": "1315.49"
+      "display": "1315.49",
+      "wd": "montenegro"
     },
     {
       "id": "curacao",
@@ -633,56 +713,64 @@
       "display": "1304.98",
       "aliases": [
         "Curacao"
-      ]
+      ],
+      "wd": "curacao"
     },
     {
       "id": "oman",
       "name": "Oman",
       "sub": "AFC",
       "value": 1302.77,
-      "display": "1302.77"
+      "display": "1302.77",
+      "wd": "oman"
     },
     {
       "id": "guinea",
       "name": "Guinea",
       "sub": "CAF",
       "value": 1296.67,
-      "display": "1296.67"
+      "display": "1296.67",
+      "wd": "guinea"
     },
     {
       "id": "angola",
       "name": "Angola",
       "sub": "CAF",
       "value": 1281.79,
-      "display": "1281.79"
+      "display": "1281.79",
+      "wd": "angola"
     },
     {
       "id": "haiti",
       "name": "Haiti",
       "sub": "CONCACAF",
       "value": 1280.91,
-      "display": "1280.91"
+      "display": "1280.91",
+      "wd": "haiti"
     },
     {
       "id": "gabon",
       "name": "Gabon",
       "sub": "CAF",
       "value": 1280.12,
-      "display": "1280.12"
+      "display": "1280.12",
+      "wd": "gabon"
     },
     {
       "id": "syria",
       "name": "Syria",
       "sub": "AFC",
       "value": 1279.94,
-      "display": "1279.94"
+      "display": "1279.94",
+      "wd": "syria"
     },
     {
       "id": "uganda",
       "name": "Uganda",
       "sub": "CAF",
       "value": 1278.26,
-      "display": "1278.26"
+      "display": "1278.26",
+      "wd": "uganda"
     },
     {
       "id": "new-zealand",
@@ -693,56 +781,64 @@
       "aliases": [
         "Aotearoa New Zealand",
         "All Whites"
-      ]
+      ],
+      "wd": "new-zealand"
     },
     {
       "id": "benin",
       "name": "Benin",
       "sub": "CAF",
       "value": 1266.01,
-      "display": "1266.01"
+      "display": "1266.01",
+      "wd": "benin"
     },
     {
       "id": "bulgaria",
       "name": "Bulgaria",
       "sub": "UEFA",
       "value": 1262.57,
-      "display": "1262.57"
+      "display": "1262.57",
+      "wd": "bulgaria"
     },
     {
       "id": "zambia",
       "name": "Zambia",
       "sub": "CAF",
       "value": 1260.61,
-      "display": "1260.61"
+      "display": "1260.61",
+      "wd": "zambia"
     },
     {
       "id": "palestine",
       "name": "Palestine",
       "sub": "AFC",
       "value": 1253.75,
-      "display": "1253.75"
+      "display": "1253.75",
+      "wd": "palestine"
     },
     {
       "id": "thailand",
       "name": "Thailand",
       "sub": "AFC",
       "value": 1251.42,
-      "display": "1251.42"
+      "display": "1251.42",
+      "wd": "thailand"
     },
     {
       "id": "belarus",
       "name": "Belarus",
       "sub": "UEFA",
       "value": 1249.6,
-      "display": "1249.60"
+      "display": "1249.60",
+      "wd": "belarus"
     },
     {
       "id": "guatemala",
       "name": "Guatemala",
       "sub": "CONCACAF",
       "value": 1245.1,
-      "display": "1245.10"
+      "display": "1245.10",
+      "wd": "guatemala"
     },
     {
       "id": "china",
@@ -752,56 +848,64 @@
       "display": "1241.90",
       "aliases": [
         "China PR"
-      ]
+      ],
+      "wd": "china"
     },
     {
       "id": "bahrain",
       "name": "Bahrain",
       "sub": "AFC",
       "value": 1240.3,
-      "display": "1240.30"
+      "display": "1240.30",
+      "wd": "bahrain"
     },
     {
       "id": "mozambique",
       "name": "Mozambique",
       "sub": "CAF",
       "value": 1238.23,
-      "display": "1238.23"
+      "display": "1238.23",
+      "wd": "mozambique"
     },
     {
       "id": "vietnam",
       "name": "Vietnam",
       "sub": "AFC",
       "value": 1231.29,
-      "display": "1231.29"
+      "display": "1231.29",
+      "wd": "vietnam"
     },
     {
       "id": "tajikistan",
       "name": "Tajikistan",
       "sub": "AFC",
       "value": 1218.88,
-      "display": "1218.88"
+      "display": "1218.88",
+      "wd": "tajikistan"
     },
     {
       "id": "luxembourg",
       "name": "Luxembourg",
       "sub": "UEFA",
       "value": 1218.8,
-      "display": "1218.80"
+      "display": "1218.80",
+      "wd": "luxembourg"
     },
     {
       "id": "el-salvador",
       "name": "El Salvador",
       "sub": "CONCACAF",
       "value": 1212.4,
-      "display": "1212.40"
+      "display": "1212.40",
+      "wd": "el-salvador"
     },
     {
       "id": "equatorial-guinea",
       "name": "Equatorial Guinea",
       "sub": "CAF",
       "value": 1200.39,
-      "display": "1200.39"
+      "display": "1200.39",
+      "wd": "equatorial-guinea"
     },
     {
       "id": "kyrgyzstan",
@@ -811,7 +915,8 @@
       "display": "1199.73",
       "aliases": [
         "Kyrgyz Republic"
-      ]
+      ],
+      "wd": "kyrgyzstan"
     },
     {
       "id": "trinidad-and-tobago",
@@ -822,28 +927,32 @@
       "aliases": [
         "Trinidad",
         "T&T"
-      ]
+      ],
+      "wd": "trinidad-and-tobago"
     },
     {
       "id": "madagascar",
       "name": "Madagascar",
       "sub": "CAF",
       "value": 1197.24,
-      "display": "1197.24"
+      "display": "1197.24",
+      "wd": "madagascar"
     },
     {
       "id": "comoros",
       "name": "Comoros",
       "sub": "CAF",
       "value": 1192.28,
-      "display": "1192.28"
+      "display": "1192.28",
+      "wd": "comoros"
     },
     {
       "id": "armenia",
       "name": "Armenia",
       "sub": "UEFA",
       "value": 1183.26,
-      "display": "1183.26"
+      "display": "1183.26",
+      "wd": "armenia"
     },
     {
       "id": "gambia",
@@ -853,84 +962,96 @@
       "display": "1182.64",
       "aliases": [
         "The Gambia"
-      ]
+      ],
+      "wd": "gambia"
     },
     {
       "id": "mauritania",
       "name": "Mauritania",
       "sub": "CAF",
       "value": 1176.05,
-      "display": "1176.05"
+      "display": "1176.05",
+      "wd": "mauritania"
     },
     {
       "id": "niger",
       "name": "Niger",
       "sub": "CAF",
       "value": 1172.93,
-      "display": "1172.93"
+      "display": "1172.93",
+      "wd": "niger"
     },
     {
       "id": "lebanon",
       "name": "Lebanon",
       "sub": "AFC",
       "value": 1170.3,
-      "display": "1170.30"
+      "display": "1170.30",
+      "wd": "lebanon"
     },
     {
       "id": "libya",
       "name": "Libya",
       "sub": "CAF",
       "value": 1168.89,
-      "display": "1168.89"
+      "display": "1168.89",
+      "wd": "libya"
     },
     {
       "id": "kenya",
       "name": "Kenya",
       "sub": "CAF",
       "value": 1168.67,
-      "display": "1168.67"
+      "display": "1168.67",
+      "wd": "kenya"
     },
     {
       "id": "tanzania",
       "name": "Tanzania",
       "sub": "CAF",
       "value": 1166.82,
-      "display": "1166.82"
+      "display": "1166.82",
+      "wd": "tanzania"
     },
     {
       "id": "indonesia",
       "name": "Indonesia",
       "sub": "AFC",
       "value": 1166.5,
-      "display": "1166.50"
+      "display": "1166.50",
+      "wd": "indonesia"
     },
     {
       "id": "kazakhstan",
       "name": "Kazakhstan",
       "sub": "UEFA",
       "value": 1166.26,
-      "display": "1166.26"
+      "display": "1166.26",
+      "wd": "kazakhstan"
     },
     {
       "id": "sudan",
       "name": "Sudan",
       "sub": "CAF",
       "value": 1156.74,
-      "display": "1156.74"
+      "display": "1156.74",
+      "wd": "sudan"
     },
     {
       "id": "rwanda",
       "name": "Rwanda",
       "sub": "CAF",
       "value": 1156.16,
-      "display": "1156.16"
+      "display": "1156.16",
+      "wd": "rwanda"
     },
     {
       "id": "togo",
       "name": "Togo",
       "sub": "CAF",
       "value": 1153.04,
-      "display": "1153.04"
+      "display": "1153.04",
+      "wd": "togo"
     },
     {
       "id": "north-korea",
@@ -941,77 +1062,88 @@
       "aliases": [
         "Korea DPR",
         "DPR Korea"
-      ]
+      ],
+      "wd": "north-korea"
     },
     {
       "id": "estonia",
       "name": "Estonia",
       "sub": "UEFA",
       "value": 1147.12,
-      "display": "1147.12"
+      "display": "1147.12",
+      "wd": "estonia"
     },
     {
       "id": "namibia",
       "name": "Namibia",
       "sub": "CAF",
       "value": 1146.48,
-      "display": "1146.48"
+      "display": "1146.48",
+      "wd": "namibia"
     },
     {
       "id": "guinea-bissau",
       "name": "Guinea-Bissau",
       "sub": "CAF",
       "value": 1144.03,
-      "display": "1144.03"
+      "display": "1144.03",
+      "wd": "guinea-bissau"
     },
     {
       "id": "cyprus",
       "name": "Cyprus",
       "sub": "UEFA",
       "value": 1142.43,
-      "display": "1142.43"
+      "display": "1142.43",
+      "wd": "cyprus"
     },
     {
       "id": "faroe-islands",
       "name": "Faroe Islands",
       "sub": "UEFA",
       "value": 1140.1,
-      "display": "1140.10"
+      "display": "1140.10",
+      "wd": "faroe-islands"
     },
     {
       "id": "azerbaijan",
       "name": "Azerbaijan",
       "sub": "UEFA",
       "value": 1138.96,
-      "display": "1138.96"
+      "display": "1138.96",
+      "wd": "azerbaijan"
     },
     {
       "id": "suriname",
       "name": "Suriname",
       "sub": "CONCACAF",
       "value": 1138.46,
-      "display": "1138.46"
+      "display": "1138.46",
+      "wd": "suriname"
     },
     {
       "id": "zimbabwe",
       "name": "Zimbabwe",
       "sub": "CAF",
       "value": 1128.05,
-      "display": "1128.05"
+      "display": "1128.05",
+      "wd": "zimbabwe"
     },
     {
       "id": "sierra-leone",
       "name": "Sierra Leone",
       "sub": "CAF",
       "value": 1123.2,
-      "display": "1123.20"
+      "display": "1123.20",
+      "wd": "sierra-leone"
     },
     {
       "id": "malawi",
       "name": "Malawi",
       "sub": "CAF",
       "value": 1121.84,
-      "display": "1121.84"
+      "display": "1121.84",
+      "wd": "malawi"
     },
     {
       "id": "congo",
@@ -1022,91 +1154,104 @@
       "aliases": [
         "Republic of the Congo",
         "Congo-Brazzaville"
-      ]
+      ],
+      "wd": "congo"
     },
     {
       "id": "malaysia",
       "name": "Malaysia",
       "sub": "AFC",
       "value": 1102.09,
-      "display": "1102.09"
+      "display": "1102.09",
+      "wd": "malaysia"
     },
     {
       "id": "kuwait",
       "name": "Kuwait",
       "sub": "AFC",
       "value": 1098.64,
-      "display": "1098.64"
+      "display": "1098.64",
+      "wd": "kuwait"
     },
     {
       "id": "dominican-republic",
       "name": "Dominican Republic",
       "sub": "CONCACAF",
       "value": 1096.58,
-      "display": "1096.58"
+      "display": "1096.58",
+      "wd": "dominican-republic"
     },
     {
       "id": "philippines",
       "name": "Philippines",
       "sub": "AFC",
       "value": 1095.85,
-      "display": "1095.85"
+      "display": "1095.85",
+      "wd": "philippines"
     },
     {
       "id": "nicaragua",
       "name": "Nicaragua",
       "sub": "CONCACAF",
       "value": 1090.8,
-      "display": "1090.80"
+      "display": "1090.80",
+      "wd": "nicaragua"
     },
     {
       "id": "india",
       "name": "India",
       "sub": "AFC",
       "value": 1086.43,
-      "display": "1086.43"
+      "display": "1086.43",
+      "wd": "india"
     },
     {
       "id": "turkmenistan",
       "name": "Turkmenistan",
       "sub": "AFC",
       "value": 1078.65,
-      "display": "1078.65"
+      "display": "1078.65",
+      "wd": "turkmenistan"
     },
     {
       "id": "burundi",
       "name": "Burundi",
       "sub": "CAF",
       "value": 1076.75,
-      "display": "1076.75"
+      "display": "1076.75",
+      "wd": "burundi"
     },
     {
       "id": "botswana",
       "name": "Botswana",
       "sub": "CAF",
       "value": 1073.85,
-      "display": "1073.85"
+      "display": "1073.85",
+      "wd": "botswana"
     },
     {
       "id": "guyana",
       "name": "Guyana",
       "sub": "CONCACAF",
       "value": 1071.38,
-      "display": "1071.38"
+      "display": "1071.38",
+      "wd": "guyana"
     },
     {
       "id": "latvia",
       "name": "Latvia",
       "sub": "UEFA",
       "value": 1069.33,
-      "display": "1069.33"
+      "display": "1069.33",
+      "wd": "latvia"
     },
     {
       "id": "yemen",
       "name": "Yemen",
       "sub": "AFC",
       "value": 1067.53,
-      "display": "1067.53"
+      "display": "1067.53",
+      "wd": "yemen"
     },
     {
       "id": "central-african-republic",
@@ -1116,42 +1261,48 @@
       "display": "1065.15",
       "aliases": [
         "CAR"
-      ]
+      ],
+      "wd": "central-african-republic"
     },
     {
       "id": "liberia",
       "name": "Liberia",
       "sub": "CAF",
       "value": 1064.58,
-      "display": "1064.58"
+      "display": "1064.58",
+      "wd": "liberia"
     },
     {
       "id": "ethiopia",
       "name": "Ethiopia",
       "sub": "CAF",
       "value": 1064.46,
-      "display": "1064.46"
+      "display": "1064.46",
+      "wd": "ethiopia"
     },
     {
       "id": "lithuania",
       "name": "Lithuania",
       "sub": "UEFA",
       "value": 1059.28,
-      "display": "1059.28"
+      "display": "1059.28",
+      "wd": "lithuania"
     },
     {
       "id": "singapore",
       "name": "Singapore",
       "sub": "AFC",
       "value": 1058.95,
-      "display": "1058.95"
+      "display": "1058.95",
+      "wd": "singapore"
     },
     {
       "id": "lesotho",
       "name": "Lesotho",
       "sub": "CAF",
       "value": 1053.09,
-      "display": "1053.09"
+      "display": "1053.09",
+      "wd": "lesotho"
     },
     {
       "id": "saint-kitts-and-nevis",
@@ -1163,14 +1314,16 @@
         "St Kitts and Nevis",
         "St. Kitts and Nevis",
         "St Kitts"
-      ]
+      ],
+      "wd": "saint-kitts-and-nevis"
     },
     {
       "id": "solomon-islands",
       "name": "Solomon Islands",
       "sub": "OFC",
       "value": 1035.95,
-      "display": "1035.95"
+      "display": "1035.95",
+      "wd": "solomon-islands"
     },
     {
       "id": "hong-kong",
@@ -1180,42 +1333,48 @@
       "display": "1035.23",
       "aliases": [
         "Hong Kong, China"
-      ]
+      ],
+      "wd": "hong-kong"
     },
     {
       "id": "fiji",
       "name": "Fiji",
       "sub": "OFC",
       "value": 1033.44,
-      "display": "1033.44"
+      "display": "1033.44",
+      "wd": "fiji"
     },
     {
       "id": "puerto-rico",
       "name": "Puerto Rico",
       "sub": "CONCACAF",
       "value": 1032.97,
-      "display": "1032.97"
+      "display": "1032.97",
+      "wd": "puerto-rico"
     },
     {
       "id": "new-caledonia",
       "name": "New Caledonia",
       "sub": "OFC",
       "value": 1026.01,
-      "display": "1026.01"
+      "display": "1026.01",
+      "wd": "new-caledonia"
     },
     {
       "id": "tahiti",
       "name": "Tahiti",
       "sub": "OFC",
       "value": 1016.32,
-      "display": "1016.32"
+      "display": "1016.32",
+      "wd": "tahiti"
     },
     {
       "id": "moldova",
       "name": "Moldova",
       "sub": "UEFA",
       "value": 1015.57,
-      "display": "1015.57"
+      "display": "1015.57",
+      "wd": "moldova"
     },
     {
       "id": "myanmar",
@@ -1225,21 +1384,24 @@
       "display": "1008.08",
       "aliases": [
         "Burma"
-      ]
+      ],
+      "wd": "myanmar"
     },
     {
       "id": "malta",
       "name": "Malta",
       "sub": "UEFA",
       "value": 1006.8,
-      "display": "1006.80"
+      "display": "1006.80",
+      "wd": "malta"
     },
     {
       "id": "vanuatu",
       "name": "Vanuatu",
       "sub": "OFC",
       "value": 1005.9,
-      "display": "1005.90"
+      "display": "1005.90",
+      "wd": "vanuatu"
     },
     {
       "id": "antigua-and-barbuda",
@@ -1249,14 +1411,16 @@
       "display": "992.54",
       "aliases": [
         "Antigua"
-      ]
+      ],
+      "wd": "antigua-and-barbuda"
     },
     {
       "id": "cuba",
       "name": "Cuba",
       "sub": "CONCACAF",
       "value": 990.46,
-      "display": "990.46"
+      "display": "990.46",
+      "wd": "cuba"
     },
     {
       "id": "eswatini",
@@ -1266,7 +1430,8 @@
       "display": "979.01",
       "aliases": [
         "Swaziland"
-      ]
+      ],
+      "wd": "eswatini"
     },
     {
       "id": "saint-lucia",
@@ -1277,7 +1442,8 @@
       "aliases": [
         "St Lucia",
         "St. Lucia"
-      ]
+      ],
+      "wd": "saint-lucia"
     },
     {
       "id": "saint-vincent-and-the-grenadines",
@@ -1289,7 +1455,8 @@
         "St Vincent and the Grenadines",
         "St. Vincent and the Grenadines",
         "St Vincent"
-      ]
+      ],
+      "wd": "saint-vincent-and-the-grenadines"
     },
     {
       "id": "papua-new-guinea",
@@ -1299,63 +1466,72 @@
       "display": "969.14",
       "aliases": [
         "PNG"
-      ]
+      ],
+      "wd": "papua-new-guinea"
     },
     {
       "id": "afghanistan",
       "name": "Afghanistan",
       "sub": "AFC",
       "value": 968.07,
-      "display": "968.07"
+      "display": "968.07",
+      "wd": "afghanistan"
     },
     {
       "id": "grenada",
       "name": "Grenada",
       "sub": "CONCACAF",
       "value": 967.71,
-      "display": "967.71"
+      "display": "967.71",
+      "wd": "grenada"
     },
     {
       "id": "south-sudan",
       "name": "South Sudan",
       "sub": "CAF",
       "value": 959.91,
-      "display": "959.91"
+      "display": "959.91",
+      "wd": "south-sudan"
     },
     {
       "id": "bermuda",
       "name": "Bermuda",
       "sub": "CONCACAF",
       "value": 951.28,
-      "display": "951.28"
+      "display": "951.28",
+      "wd": "bermuda"
     },
     {
       "id": "montserrat",
       "name": "Montserrat",
       "sub": "CONCACAF",
       "value": 939.13,
-      "display": "939.13"
+      "display": "939.13",
+      "wd": "montserrat"
     },
     {
       "id": "maldives",
       "name": "Maldives",
       "sub": "AFC",
       "value": 935.93,
-      "display": "935.93"
+      "display": "935.93",
+      "wd": "maldives"
     },
     {
       "id": "barbados",
       "name": "Barbados",
       "sub": "CONCACAF",
       "value": 934.52,
-      "display": "934.52"
+      "display": "934.52",
+      "wd": "barbados"
     },
     {
       "id": "andorra",
       "name": "Andorra",
       "sub": "UEFA",
       "value": 927.53,
-      "display": "927.53"
+      "display": "927.53",
+      "wd": "andorra"
     },
     {
       "id": "chinese-taipei",
@@ -1365,119 +1541,136 @@
       "display": "923.78",
       "aliases": [
         "Taiwan"
-      ]
+      ],
+      "wd": "chinese-taipei"
     },
     {
       "id": "cambodia",
       "name": "Cambodia",
       "sub": "AFC",
       "value": 920.83,
-      "display": "920.83"
+      "display": "920.83",
+      "wd": "cambodia"
     },
     {
       "id": "nepal",
       "name": "Nepal",
       "sub": "AFC",
       "value": 914.54,
-      "display": "914.54"
+      "display": "914.54",
+      "wd": "nepal"
     },
     {
       "id": "mauritius",
       "name": "Mauritius",
       "sub": "CAF",
       "value": 906.24,
-      "display": "906.24"
+      "display": "906.24",
+      "wd": "mauritius"
     },
     {
       "id": "belize",
       "name": "Belize",
       "sub": "CONCACAF",
       "value": 900.38,
-      "display": "900.38"
+      "display": "900.38",
+      "wd": "belize"
     },
     {
       "id": "chad",
       "name": "Chad",
       "sub": "CAF",
       "value": 896.85,
-      "display": "896.85"
+      "display": "896.85",
+      "wd": "chad"
     },
     {
       "id": "bangladesh",
       "name": "Bangladesh",
       "sub": "AFC",
       "value": 893.46,
-      "display": "893.46"
+      "display": "893.46",
+      "wd": "bangladesh"
     },
     {
       "id": "eritrea",
       "name": "Eritrea",
       "sub": "CAF",
       "value": 890.97,
-      "display": "890.97"
+      "display": "890.97",
+      "wd": "eritrea"
     },
     {
       "id": "sri-lanka",
       "name": "Sri Lanka",
       "sub": "AFC",
       "value": 890.64,
-      "display": "890.64"
+      "display": "890.64",
+      "wd": "sri-lanka"
     },
     {
       "id": "aruba",
       "name": "Aruba",
       "sub": "CONCACAF",
       "value": 889.53,
-      "display": "889.53"
+      "display": "889.53",
+      "wd": "aruba"
     },
     {
       "id": "dominica",
       "name": "Dominica",
       "sub": "CONCACAF",
       "value": 884.58,
-      "display": "884.58"
+      "display": "884.58",
+      "wd": "dominica"
     },
     {
       "id": "cook-islands",
       "name": "Cook Islands",
       "sub": "OFC",
       "value": 880.25,
-      "display": "880.25"
+      "display": "880.25",
+      "wd": "cook-islands"
     },
     {
       "id": "laos",
       "name": "Laos",
       "sub": "AFC",
       "value": 880.17,
-      "display": "880.17"
+      "display": "880.17",
+      "wd": "laos"
     },
     {
       "id": "samoa",
       "name": "Samoa",
       "sub": "OFC",
       "value": 876.41,
-      "display": "876.41"
+      "display": "876.41",
+      "wd": "samoa"
     },
     {
       "id": "mongolia",
       "name": "Mongolia",
       "sub": "AFC",
       "value": 874.47,
-      "display": "874.47"
+      "display": "874.47",
+      "wd": "mongolia"
     },
     {
       "id": "american-samoa",
       "name": "American Samoa",
       "sub": "OFC",
       "value": 871.61,
-      "display": "871.61"
+      "display": "871.61",
+      "wd": "american-samoa"
     },
     {
       "id": "bhutan",
       "name": "Bhutan",
       "sub": "AFC",
       "value": 870.81,
-      "display": "870.81"
+      "display": "870.81",
+      "wd": "bhutan"
     },
     {
       "id": "macau",
@@ -1487,7 +1680,8 @@
       "display": "858.03",
       "aliases": [
         "Macao"
-      ]
+      ],
+      "wd": "macau"
     },
     {
       "id": "sao-tome-and-principe",
@@ -1498,14 +1692,16 @@
       "aliases": [
         "São Tomé e Príncipe",
         "Sao Tome"
-      ]
+      ],
+      "wd": "sao-tome-and-principe"
     },
     {
       "id": "djibouti",
       "name": "Djibouti",
       "sub": "CAF",
       "value": 853.58,
-      "display": "853.58"
+      "display": "853.58",
+      "wd": "djibouti"
     },
     {
       "id": "brunei",
@@ -1515,42 +1711,48 @@
       "display": "849.56",
       "aliases": [
         "Brunei Darussalam"
-      ]
+      ],
+      "wd": "brunei"
     },
     {
       "id": "pakistan",
       "name": "Pakistan",
       "sub": "AFC",
       "value": 839.03,
-      "display": "839.03"
+      "display": "839.03",
+      "wd": "pakistan"
     },
     {
       "id": "cayman-islands",
       "name": "Cayman Islands",
       "sub": "CONCACAF",
       "value": 836.15,
-      "display": "836.15"
+      "display": "836.15",
+      "wd": "cayman-islands"
     },
     {
       "id": "tonga",
       "name": "Tonga",
       "sub": "OFC",
       "value": 835.64,
-      "display": "835.64"
+      "display": "835.64",
+      "wd": "tonga"
     },
     {
       "id": "somalia",
       "name": "Somalia",
       "sub": "CAF",
       "value": 832.14,
-      "display": "832.14"
+      "display": "832.14",
+      "wd": "somalia"
     },
     {
       "id": "gibraltar",
       "name": "Gibraltar",
       "sub": "UEFA",
       "value": 829.49,
-      "display": "829.49"
+      "display": "829.49",
+      "wd": "gibraltar"
     },
     {
       "id": "timor-leste",
@@ -1560,28 +1762,32 @@
       "display": "823.16",
       "aliases": [
         "East Timor"
-      ]
+      ],
+      "wd": "timor-leste"
     },
     {
       "id": "guam",
       "name": "Guam",
       "sub": "AFC",
       "value": 819.54,
-      "display": "819.54"
+      "display": "819.54",
+      "wd": "guam"
     },
     {
       "id": "turks-and-caicos-islands",
       "name": "Turks and Caicos Islands",
       "sub": "CONCACAF",
       "value": 806.26,
-      "display": "806.26"
+      "display": "806.26",
+      "wd": "turks-and-caicos-islands"
     },
     {
       "id": "seychelles",
       "name": "Seychelles",
       "sub": "CAF",
       "value": 795.63,
-      "display": "795.63"
+      "display": "795.63",
+      "wd": "seychelles"
     },
     {
       "id": "us-virgin-islands",
@@ -1592,42 +1798,48 @@
       "aliases": [
         "U.S. Virgin Islands",
         "United States Virgin Islands"
-      ]
+      ],
+      "wd": "us-virgin-islands"
     },
     {
       "id": "liechtenstein",
       "name": "Liechtenstein",
       "sub": "UEFA",
       "value": 790.18,
-      "display": "790.18"
+      "display": "790.18",
+      "wd": "liechtenstein"
     },
     {
       "id": "bahamas",
       "name": "Bahamas",
       "sub": "CONCACAF",
       "value": 771.83,
-      "display": "771.83"
+      "display": "771.83",
+      "wd": "bahamas"
     },
     {
       "id": "british-virgin-islands",
       "name": "British Virgin Islands",
       "sub": "CONCACAF",
       "value": 752.75,
-      "display": "752.75"
+      "display": "752.75",
+      "wd": "british-virgin-islands"
     },
     {
       "id": "anguilla",
       "name": "Anguilla",
       "sub": "CONCACAF",
       "value": 736.67,
-      "display": "736.67"
+      "display": "736.67",
+      "wd": "anguilla"
     },
     {
       "id": "san-marino",
       "name": "San Marino",
       "sub": "UEFA",
       "value": 715.93,
-      "display": "715.93"
+      "display": "715.93",
+      "wd": "san-marino"
     }
   ]
 }

@@ -4,6 +4,7 @@
   "prompt": "most Premier League goals",
   "noun": "player",
   "nounPlural": "players",
+  "kind": "player",
   "metric": "Goals",
   "order": "desc",
   "description": "Every player with 100 or more Premier League goals since 1992–93; tied players share a rank.",
@@ -24,7 +25,8 @@
       "value": 260,
       "aliases": [
         "Shearer"
-      ]
+      ],
+      "wd": "Q483583"
     },
     {
       "id": "harry-kane",
@@ -33,7 +35,8 @@
       "value": 213,
       "aliases": [
         "Kane"
-      ]
+      ],
+      "wd": "Q969725"
     },
     {
       "id": "wayne-rooney",
@@ -43,7 +46,8 @@
       "aliases": [
         "Rooney",
         "Wazza"
-      ]
+      ],
+      "wd": "Q266613"
     },
     {
       "id": "mohamed-salah",
@@ -53,7 +57,8 @@
       "aliases": [
         "Salah",
         "Mo Salah"
-      ]
+      ],
+      "wd": "Q1354960"
     },
     {
       "id": "andy-cole",
@@ -63,7 +68,8 @@
       "aliases": [
         "Cole",
         "Andrew Cole"
-      ]
+      ],
+      "wd": "Q216928"
     },
     {
       "id": "sergio-aguero",
@@ -73,7 +79,8 @@
       "aliases": [
         "Agüero",
         "Kun Agüero"
-      ]
+      ],
+      "wd": "Q119562"
     },
     {
       "id": "frank-lampard",
@@ -83,7 +90,8 @@
       "aliases": [
         "Lampard",
         "Lamps"
-      ]
+      ],
+      "wd": "Q41533"
     },
     {
       "id": "thierry-henry",
@@ -93,7 +101,8 @@
       "aliases": [
         "Henry",
         "Titi"
-      ]
+      ],
+      "wd": "Q45901"
     },
     {
       "id": "robbie-fowler",
@@ -102,7 +111,8 @@
       "value": 163,
       "aliases": [
         "Fowler"
-      ]
+      ],
+      "wd": "Q206548"
     },
     {
       "id": "jermain-defoe",
@@ -111,7 +121,8 @@
       "value": 162,
       "aliases": [
         "Defoe"
-      ]
+      ],
+      "wd": "Q188746"
     },
     {
       "id": "michael-owen",
@@ -120,7 +131,8 @@
       "value": 150,
       "aliases": [
         "Owen"
-      ]
+      ],
+      "wd": "Q128829"
     },
     {
       "id": "les-ferdinand",
@@ -130,7 +142,8 @@
       "aliases": [
         "Ferdinand",
         "Sir Les"
-      ]
+      ],
+      "wd": "Q311709"
     },
     {
       "id": "teddy-sheringham",
@@ -139,7 +152,8 @@
       "value": 146,
       "aliases": [
         "Sheringham"
-      ]
+      ],
+      "wd": "Q234576"
     },
     {
       "id": "jamie-vardy",
@@ -148,7 +162,8 @@
       "value": 145,
       "aliases": [
         "Vardy"
-      ]
+      ],
+      "wd": "Q6147586"
     },
     {
       "id": "robin-van-persie",
@@ -158,7 +173,8 @@
       "aliases": [
         "van Persie",
         "RVP"
-      ]
+      ],
+      "wd": "Q2339"
     },
     {
       "id": "jimmy-floyd-hasselbaink",
@@ -168,7 +184,8 @@
       "aliases": [
         "Hasselbaink",
         "Jimmy Hasselbaink"
-      ]
+      ],
+      "wd": "Q223176"
     },
     {
       "id": "son-heung-min",
@@ -179,7 +196,8 @@
         "Son",
         "Sonny",
         "Heung-min Son"
-      ]
+      ],
+      "wd": "Q439722"
     },
     {
       "id": "robbie-keane",
@@ -188,7 +206,8 @@
       "value": 126,
       "aliases": [
         "Keane"
-      ]
+      ],
+      "wd": "Q184612"
     },
     {
       "id": "nicolas-anelka",
@@ -197,7 +216,8 @@
       "value": 125,
       "aliases": [
         "Anelka"
-      ]
+      ],
+      "wd": "Q1939"
     },
     {
       "id": "dwight-yorke",
@@ -206,7 +226,8 @@
       "value": 123,
       "aliases": [
         "Yorke"
-      ]
+      ],
+      "wd": "Q192175"
     },
     {
       "id": "raheem-sterling",
@@ -215,7 +236,8 @@
       "value": 123,
       "aliases": [
         "Sterling"
-      ]
+      ],
+      "wd": "Q312157"
     },
     {
       "id": "erling-haaland",
@@ -224,7 +246,8 @@
       "value": 121,
       "aliases": [
         "Haaland"
-      ]
+      ],
+      "wd": "Q28967995"
     },
     {
       "id": "romelu-lukaku",
@@ -233,7 +256,8 @@
       "value": 121,
       "aliases": [
         "Lukaku"
-      ]
+      ],
+      "wd": "Q313316"
     },
     {
       "id": "steven-gerrard",
@@ -243,7 +267,8 @@
       "aliases": [
         "Gerrard",
         "Stevie G"
-      ]
+      ],
+      "wd": "Q459830"
     },
     {
       "id": "ian-wright",
@@ -253,7 +278,8 @@
       "aliases": [
         "Wright",
         "Wrighty"
-      ]
+      ],
+      "wd": "Q312595"
     },
     {
       "id": "sadio-mane",
@@ -262,7 +288,8 @@
       "value": 111,
       "aliases": [
         "Mané"
-      ]
+      ],
+      "wd": "Q209942"
     },
     {
       "id": "dion-dublin",
@@ -271,7 +298,8 @@
       "value": 111,
       "aliases": [
         "Dublin"
-      ]
+      ],
+      "wd": "Q531093"
     },
     {
       "id": "emile-heskey",
@@ -280,7 +308,8 @@
       "value": 110,
       "aliases": [
         "Heskey"
-      ]
+      ],
+      "wd": "Q191162"
     },
     {
       "id": "ryan-giggs",
@@ -289,7 +318,8 @@
       "value": 109,
       "aliases": [
         "Giggs"
-      ]
+      ],
+      "wd": "Q10524"
     },
     {
       "id": "peter-crouch",
@@ -299,7 +329,8 @@
       "aliases": [
         "Crouch",
         "Crouchy"
-      ]
+      ],
+      "wd": "Q180939"
     },
     {
       "id": "paul-scholes",
@@ -308,7 +339,8 @@
       "value": 107,
       "aliases": [
         "Scholes"
-      ]
+      ],
+      "wd": "Q45613"
     },
     {
       "id": "darren-bent",
@@ -317,7 +349,8 @@
       "value": 106,
       "aliases": [
         "Bent"
-      ]
+      ],
+      "wd": "Q213459"
     },
     {
       "id": "didier-drogba",
@@ -326,7 +359,8 @@
       "value": 104,
       "aliases": [
         "Drogba"
-      ]
+      ],
+      "wd": "Q48892"
     },
     {
       "id": "cristiano-ronaldo",
@@ -336,7 +370,8 @@
       "aliases": [
         "Ronaldo",
         "CR7"
-      ]
+      ],
+      "wd": "Q11571"
     },
     {
       "id": "matt-le-tissier",
@@ -346,7 +381,8 @@
       "aliases": [
         "Le Tissier",
         "Le Tiss"
-      ]
+      ],
+      "wd": "Q317803"
     }
   ]
 }

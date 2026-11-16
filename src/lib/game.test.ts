@@ -11,6 +11,7 @@ const raw: RawCategory = {
   prompt: 'most test things',
   noun: 'thing',
   nounPlural: 'things',
+  kind: 'club',
   metric: 'Points',
   order: 'desc',
   description: 'x',

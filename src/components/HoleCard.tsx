@@ -54,7 +54,8 @@ export function HoleCard({ hole, index, count, compact }: { hole: Hole; index: n
           <a href={cat.source.url} target="_blank" rel="noreferrer">
             {cat.source.name}
           </a>{' '}
-          (CC BY-SA). Tied {cat.nounPlural} share a place.
+          (CC BY-SA). {cat.tiebreak ? `Level on ${cat.metric.toLowerCase()}? Split by ${cat.tiebreak}.` : `Tied ${cat.nounPlural} share a place.`} The target
+          is always a place only one {cat.noun} holds.
         </p>
       </Sheet>
     </section>

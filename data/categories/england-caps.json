@@ -4,6 +4,7 @@
   "prompt": "most caps for the England men's team",
   "noun": "player",
   "nounPlural": "players",
+  "kind": "player",
   "metric": "Caps",
   "order": "desc",
   "description": "England men's internationals with 30 or more caps since 1872; tied players share a rank.",
@@ -25,7 +26,8 @@
       "value": 127,
       "aliases": [
         "Kane"
-      ]
+      ],
+      "wd": "Q969725"
     },
     {
       "id": "peter-shilton",
@@ -34,7 +36,8 @@
       "value": 125,
       "aliases": [
         "Shilton"
-      ]
+      ],
+      "wd": "Q244799"
     },
     {
       "id": "wayne-rooney",
@@ -44,7 +47,8 @@
       "aliases": [
         "Rooney",
         "Wazza"
-      ]
+      ],
+      "wd": "Q266613"
     },
     {
       "id": "david-beckham",
@@ -54,7 +58,8 @@
       "aliases": [
         "Beckham",
         "Becks"
-      ]
+      ],
+      "wd": "Q10520"
     },
     {
       "id": "steven-gerrard",
@@ -64,7 +69,8 @@
       "aliases": [
         "Gerrard",
         "Stevie G"
-      ]
+      ],
+      "wd": "Q459830"
     },
     {
       "id": "bobby-moore",
@@ -74,7 +80,8 @@
       "aliases": [
         "Moore",
         "Sir Bobby Moore"
-      ]
+      ],
+      "wd": "Q191492"
     },
     {
       "id": "ashley-cole",
@@ -83,7 +90,8 @@
       "value": 107,
       "aliases": [
         "Cole"
-      ]
+      ],
+      "wd": "Q133556"
     },
     {
       "id": "bobby-charlton",
@@ -93,7 +101,8 @@
       "aliases": [
         "Charlton",
         "Sir Bobby Charlton"
-      ]
+      ],
+      "wd": "Q171583"
     },
     {
       "id": "frank-lampard",
@@ -102,7 +111,8 @@
       "value": 106,
       "aliases": [
         "Lampard"
-      ]
+      ],
+      "wd": "Q41533"
     },
     {
       "id": "billy-wright",
@@ -111,7 +121,8 @@
       "value": 105,
       "aliases": [
         "Wright"
-      ]
+      ],
+      "wd": "Q223234"
     },
     {
       "id": "kyle-walker",
@@ -120,7 +131,8 @@
       "value": 96,
       "aliases": [
         "Walker"
-      ]
+      ],
+      "wd": "Q59108"
     },
     {
       "id": "john-stones",
@@ -129,7 +141,8 @@
       "value": 94,
       "aliases": [
         "Stones"
-      ]
+      ],
+      "wd": "Q2025900"
     },
     {
       "id": "jordan-pickford",
@@ -138,7 +151,8 @@
       "value": 94,
       "aliases": [
         "Pickford"
-      ]
+      ],
+      "wd": "Q13014035"
     },
     {
       "id": "jordan-henderson",
@@ -148,7 +162,8 @@
       "aliases": [
         "Henderson",
         "Hendo"
-      ]
+      ],
+      "wd": "Q273715"
     },
     {
       "id": "bryan-robson",
@@ -157,7 +172,8 @@
       "value": 90,
       "aliases": [
         "Robson"
-      ]
+      ],
+      "wd": "Q296583"
     },
     {
       "id": "michael-owen",
@@ -166,7 +182,8 @@
       "value": 89,
       "aliases": [
         "Owen"
-      ]
+      ],
+      "wd": "Q128829"
     },
     {
       "id": "kenny-sansom",
@@ -175,7 +192,8 @@
       "value": 86,
       "aliases": [
         "Sansom"
-      ]
+      ],
+      "wd": "Q286448"
     },
     {
       "id": "gary-neville",
@@ -184,7 +202,8 @@
       "value": 85,
       "aliases": [
         "Neville"
-      ]
+      ],
+      "wd": "Q348857"
     },
     {
       "id": "ray-wilkins",
@@ -193,7 +212,8 @@
       "value": 84,
       "aliases": [
         "Wilkins"
-      ]
+      ],
+      "wd": "Q352820"
     },
     {
       "id": "raheem-sterling",
@@ -202,7 +222,8 @@
       "value": 82,
       "aliases": [
         "Sterling"
-      ]
+      ],
+      "wd": "Q312157"
     },
     {
       "id": "declan-rice",
@@ -211,7 +232,8 @@
       "value": 82,
       "aliases": [
         "Rice"
-      ]
+      ],
+      "wd": "Q30007142"
     },
     {
       "id": "rio-ferdinand",
@@ -220,7 +242,8 @@
       "value": 81,
       "aliases": [
         "Ferdinand"
-      ]
+      ],
+      "wd": "Q483417"
     },
     {
       "id": "gary-lineker",
@@ -229,7 +252,8 @@
       "value": 80,
       "aliases": [
         "Lineker"
-      ]
+      ],
+      "wd": "Q47778"
     },
     {
       "id": "john-barnes",
@@ -238,7 +262,8 @@
       "value": 79,
       "aliases": [
         "Barnes"
-      ]
+      ],
+      "wd": "x-player-john-barnes"
     },
     {
       "id": "stuart-pearce",
@@ -248,7 +273,8 @@
       "aliases": [
         "Pearce",
         "Psycho"
-      ]
+      ],
+      "wd": "Q356418"
     },
     {
       "id": "john-terry",
@@ -257,7 +283,8 @@
       "value": 78,
       "aliases": [
         "Terry"
-      ]
+      ],
+      "wd": "Q83456"
     },
     {
       "id": "marcus-rashford",
@@ -266,7 +293,8 @@
       "value": 78,
       "aliases": [
         "Rashford"
-      ]
+      ],
+      "wd": "Q22951255"
     },
     {
       "id": "terry-butcher",
@@ -275,7 +303,8 @@
       "value": 77,
       "aliases": [
         "Butcher"
-      ]
+      ],
+      "wd": "Q362585"
     },
     {
       "id": "tom-finney",
@@ -285,7 +314,8 @@
       "aliases": [
         "Finney",
         "Sir Tom Finney"
-      ]
+      ],
+      "wd": "Q352338"
     },
     {
       "id": "david-seaman",
@@ -294,7 +324,8 @@
       "value": 75,
       "aliases": [
         "Seaman"
-      ]
+      ],
+      "wd": "Q214498"
     },
     {
       "id": "joe-hart",
@@ -303,7 +334,8 @@
       "value": 75,
       "aliases": [
         "Hart"
-      ]
+      ],
+      "wd": "Q187184"
     },
     {
       "id": "gordon-banks",
@@ -312,7 +344,8 @@
       "value": 73,
       "aliases": [
         "Banks"
-      ]
+      ],
+      "wd": "Q213879"
     },
     {
       "id": "sol-campbell",
@@ -321,7 +354,8 @@
       "value": 73,
       "aliases": [
         "Campbell"
-      ]
+      ],
+      "wd": "Q214734"
     },
     {
       "id": "alan-ball-jr",
@@ -331,7 +365,8 @@
       "aliases": [
         "Ball",
         "Alan Ball"
-      ]
+      ],
+      "wd": "Q310058"
     },
     {
       "id": "martin-peters",
@@ -340,7 +375,8 @@
       "value": 67,
       "aliases": [
         "Peters"
-      ]
+      ],
+      "wd": "Q505028"
     },
     {
       "id": "tony-adams",
@@ -349,7 +385,8 @@
       "value": 66,
       "aliases": [
         "Adams"
-      ]
+      ],
+      "wd": "Q299391"
     },
     {
       "id": "paul-scholes",
@@ -358,7 +395,8 @@
       "value": 66,
       "aliases": [
         "Scholes"
-      ]
+      ],
+      "wd": "Q45613"
     },
     {
       "id": "harry-maguire",
@@ -367,7 +405,8 @@
       "value": 66,
       "aliases": [
         "Maguire"
-      ]
+      ],
+      "wd": "Q165772"
     },
     {
       "id": "david-watson",
@@ -376,7 +415,8 @@
       "value": 65,
       "aliases": [
         "Watson"
-      ]
+      ],
+      "wd": "Q1177104"
     },
     {
       "id": "ray-wilson",
@@ -385,7 +425,8 @@
       "value": 63,
       "aliases": [
         "Wilson"
-      ]
+      ],
+      "wd": "Q249912"
     },
     {
       "id": "kevin-keegan",
@@ -395,7 +436,8 @@
       "aliases": [
         "Keegan",
         "King Kev"
-      ]
+      ],
+      "wd": "Q152832"
     },
     {
       "id": "alan-shearer",
@@ -404,7 +446,8 @@
       "value": 63,
       "aliases": [
         "Shearer"
-      ]
+      ],
+      "wd": "Q483583"
     },
     {
       "id": "emlyn-hughes",
@@ -413,7 +456,8 @@
       "value": 62,
       "aliases": [
         "Hughes"
-      ]
+      ],
+      "wd": "Q453337"
     },
     {
       "id": "chris-waddle",
@@ -422,7 +466,8 @@
       "value": 62,
       "aliases": [
         "Waddle"
-      ]
+      ],
+      "wd": "Q352878"
     },
     {
       "id": "david-platt",
@@ -431,7 +476,8 @@
       "value": 62,
       "aliases": [
         "Platt"
-      ]
+      ],
+      "wd": "Q312143"
     },
     {
       "id": "emile-heskey",
@@ -440,7 +486,8 @@
       "value": 62,
       "aliases": [
         "Heskey"
-      ]
+      ],
+      "wd": "Q191162"
     },
     {
       "id": "jude-bellingham",
@@ -449,7 +496,8 @@
       "value": 62,
       "aliases": [
         "Bellingham"
-      ]
+      ],
+      "wd": "Q66241169"
     },
     {
       "id": "ray-clemence",
@@ -458,7 +506,8 @@
       "value": 61,
       "aliases": [
         "Clemence"
-      ]
+      ],
+      "wd": "Q363148"
     },
     {
       "id": "james-milner",
@@ -467,7 +516,8 @@
       "value": 61,
       "aliases": [
         "Milner"
-      ]
+      ],
+      "wd": "Q191136"
     },
     {
       "id": "gary-cahill",
@@ -476,7 +526,8 @@
       "value": 61,
       "aliases": [
         "Cahill"
-      ]
+      ],
+      "wd": "Q223827"
     },
     {
       "id": "peter-beardsley",
@@ -485,7 +536,8 @@
       "value": 59,
       "aliases": [
         "Beardsley"
-      ]
+      ],
+      "wd": "Q344989"
     },
     {
       "id": "des-walker",
@@ -494,7 +546,8 @@
       "value": 59,
       "aliases": [
         "Walker"
-      ]
+      ],
+      "wd": "Q709059"
     },
     {
       "id": "phil-neville",
@@ -503,7 +556,8 @@
       "value": 59,
       "aliases": [
         "Neville"
-      ]
+      ],
+      "wd": "Q218063"
     },
     {
       "id": "bukayo-saka",
@@ -512,7 +566,8 @@
       "value": 59,
       "aliases": [
         "Saka"
-      ]
+      ],
+      "wd": "Q59306386"
     },
     {
       "id": "jimmy-greaves",
@@ -522,7 +577,8 @@
       "aliases": [
         "Greaves",
         "Greavsie"
-      ]
+      ],
+      "wd": "Q297271"
     },
     {
       "id": "paul-gascoigne",
@@ -532,7 +588,8 @@
       "aliases": [
         "Gascoigne",
         "Gazza"
-      ]
+      ],
+      "wd": "Q13002"
     },
     {
       "id": "gareth-southgate",
@@ -541,7 +598,8 @@
       "value": 57,
       "aliases": [
         "Southgate"
-      ]
+      ],
+      "wd": "Q316681"
     },
     {
       "id": "jermain-defoe",
@@ -550,7 +608,8 @@
       "value": 57,
       "aliases": [
         "Defoe"
-      ]
+      ],
+      "wd": "Q188746"
     },
     {
       "id": "johnny-haynes",
@@ -559,7 +618,8 @@
       "value": 56,
       "aliases": [
         "Haynes"
-      ]
+      ],
+      "wd": "Q319193"
     },
     {
       "id": "joe-cole",
@@ -568,7 +628,8 @@
       "value": 56,
       "aliases": [
         "Cole"
-      ]
+      ],
+      "wd": "Q184946"
     },
     {
       "id": "stanley-matthews",
@@ -578,7 +639,8 @@
       "aliases": [
         "Matthews",
         "Sir Stanley Matthews"
-      ]
+      ],
+      "wd": "Q216140"
     },
     {
       "id": "glen-johnson",
@@ -587,7 +649,8 @@
       "value": 54,
       "aliases": [
         "Johnson"
-      ]
+      ],
+      "wd": "Q185208"
     },
     {
       "id": "kieran-trippier",
@@ -596,7 +659,8 @@
       "value": 54,
       "aliases": [
         "Trippier"
-      ]
+      ],
+      "wd": "Q1083432"
     },
     {
       "id": "glenn-hoddle",
@@ -605,7 +669,8 @@
       "value": 53,
       "aliases": [
         "Hoddle"
-      ]
+      ],
+      "wd": "Q296666"
     },
     {
       "id": "paul-ince",
@@ -614,7 +679,8 @@
       "value": 53,
       "aliases": [
         "Ince"
-      ]
+      ],
+      "wd": "Q311171"
     },
     {
       "id": "david-james",
@@ -623,7 +689,8 @@
       "value": 53,
       "aliases": [
         "James"
-      ]
+      ],
+      "wd": "Q10598"
     },
     {
       "id": "gareth-barry",
@@ -632,7 +699,8 @@
       "value": 53,
       "aliases": [
         "Barry"
-      ]
+      ],
+      "wd": "Q191855"
     },
     {
       "id": "trevor-francis",
@@ -641,7 +709,8 @@
       "value": 52,
       "aliases": [
         "Francis"
-      ]
+      ],
+      "wd": "Q345221"
     },
     {
       "id": "teddy-sheringham",
@@ -650,7 +719,8 @@
       "value": 51,
       "aliases": [
         "Sheringham"
-      ]
+      ],
+      "wd": "Q234576"
     },
     {
       "id": "phil-neal",
@@ -659,7 +729,8 @@
       "value": 50,
       "aliases": [
         "Neal"
-      ]
+      ],
+      "wd": "Q465956"
     },
     {
       "id": "ron-flowers",
@@ -668,7 +739,8 @@
       "value": 49,
       "aliases": [
         "Flowers"
-      ]
+      ],
+      "wd": "Q959933"
     },
     {
       "id": "geoff-hurst",
@@ -678,7 +750,8 @@
       "aliases": [
         "Hurst",
         "Sir Geoff Hurst"
-      ]
+      ],
+      "wd": "Q212738"
     },
     {
       "id": "eric-dier",
@@ -687,7 +760,8 @@
       "value": 49,
       "aliases": [
         "Dier"
-      ]
+      ],
+      "wd": "Q1439915"
     },
     {
       "id": "phil-foden",
@@ -696,7 +770,8 @@
       "value": 49,
       "aliases": [
         "Foden"
-      ]
+      ],
+      "wd": "Q30729096"
     },
     {
       "id": "jimmy-dickinson",
@@ -705,7 +780,8 @@
       "value": 48,
       "aliases": [
         "Dickinson"
-      ]
+      ],
+      "wd": "Q1352718"
     },
     {
       "id": "colin-bell",
@@ -714,7 +790,8 @@
       "value": 48,
       "aliases": [
         "Bell"
-      ]
+      ],
+      "wd": "Q452563"
     },
     {
       "id": "trevor-brooking",
@@ -723,7 +800,8 @@
       "value": 47,
       "aliases": [
         "Brooking"
-      ]
+      ],
+      "wd": "Q431084"
     },
     {
       "id": "theo-walcott",
@@ -732,7 +810,8 @@
       "value": 47,
       "aliases": [
         "Walcott"
-      ]
+      ],
+      "wd": "Q29516"
     },
     {
       "id": "mick-channon",
@@ -741,7 +820,8 @@
       "value": 46,
       "aliases": [
         "Channon"
-      ]
+      ],
+      "wd": "Q1399290"
     },
     {
       "id": "gary-stevens",
@@ -750,7 +830,8 @@
       "value": 46,
       "aliases": [
         "Stevens"
-      ]
+      ],
+      "wd": "Q431278"
     },
     {
       "id": "mark-wright",
@@ -759,7 +840,8 @@
       "value": 45,
       "aliases": [
         "Wright"
-      ]
+      ],
+      "wd": "Q526694"
     },
     {
       "id": "jimmy-armfield",
@@ -768,7 +850,8 @@
       "value": 43,
       "aliases": [
         "Armfield"
-      ]
+      ],
+      "wd": "Q124495"
     },
     {
       "id": "chris-woods",
@@ -777,7 +860,8 @@
       "value": 43,
       "aliases": [
         "Woods"
-      ]
+      ],
+      "wd": "Q726234"
     },
     {
       "id": "martin-keown",
@@ -786,7 +870,8 @@
       "value": 43,
       "aliases": [
         "Keown"
-      ]
+      ],
+      "wd": "Q314405"
     },
     {
       "id": "mick-mills",
@@ -795,7 +880,8 @@
       "value": 42,
       "aliases": [
         "Mills"
-      ]
+      ],
+      "wd": "Q729841"
     },
     {
       "id": "phil-thompson",
@@ -804,7 +890,8 @@
       "value": 42,
       "aliases": [
         "Thompson"
-      ]
+      ],
+      "wd": "Q430706"
     },
     {
       "id": "steve-coppell",
@@ -813,7 +900,8 @@
       "value": 42,
       "aliases": [
         "Coppell"
-      ]
+      ],
+      "wd": "Q438005"
     },
     {
       "id": "tony-woodcock",
@@ -822,7 +910,8 @@
       "value": 42,
       "aliases": [
         "Woodcock"
-      ]
+      ],
+      "wd": "Q167133"
     },
     {
       "id": "david-batty",
@@ -831,7 +920,8 @@
       "value": 42,
       "aliases": [
         "Batty"
-      ]
+      ],
+      "wd": "Q362555"
     },
     {
       "id": "owen-hargreaves",
@@ -840,7 +930,8 @@
       "value": 42,
       "aliases": [
         "Hargreaves"
-      ]
+      ],
+      "wd": "Q437545"
     },
     {
       "id": "peter-crouch",
@@ -850,7 +941,8 @@
       "aliases": [
         "Crouch",
         "Crouchy"
-      ]
+      ],
+      "wd": "Q180939"
     },
     {
       "id": "danny-welbeck",
@@ -859,7 +951,8 @@
       "value": 42,
       "aliases": [
         "Welbeck"
-      ]
+      ],
+      "wd": "Q188457"
     },
     {
       "id": "bob-crompton",
@@ -868,7 +961,8 @@
       "value": 41,
       "aliases": [
         "Crompton"
-      ]
+      ],
+      "wd": "Q676318"
     },
     {
       "id": "paul-robinson",
@@ -877,7 +971,8 @@
       "value": 41,
       "aliases": [
         "Robinson"
-      ]
+      ],
+      "wd": "Q215824"
     },
     {
       "id": "marc-guehi",
@@ -886,7 +981,8 @@
       "value": 41,
       "aliases": [
         "Guéhi"
-      ]
+      ],
+      "wd": "Q44737396"
     },
     {
       "id": "phil-jagielka",
@@ -895,7 +991,8 @@
       "value": 40,
       "aliases": [
         "Jagielka"
-      ]
+      ],
+      "wd": "Q208933"
     },
     {
       "id": "nicky-butt",
@@ -904,7 +1001,8 @@
       "value": 39,
       "aliases": [
         "Butt"
-      ]
+      ],
+      "wd": "Q295506"
     },
     {
       "id": "ashley-young",
@@ -913,7 +1011,8 @@
       "value": 39,
       "aliases": [
         "Young"
-      ]
+      ],
+      "wd": "Q10602"
     },
     {
       "id": "jack-grealish",
@@ -922,7 +1021,8 @@
       "value": 39,
       "aliases": [
         "Grealish"
-      ]
+      ],
+      "wd": "Q16056053"
     },
     {
       "id": "jamie-carragher",
@@ -931,7 +1031,8 @@
       "value": 38,
       "aliases": [
         "Carragher"
-      ]
+      ],
+      "wd": "Q172211"
     },
     {
       "id": "george-cohen",
@@ -940,7 +1041,8 @@
       "value": 37,
       "aliases": [
         "Cohen"
-      ]
+      ],
+      "wd": "Q446908"
     },
     {
       "id": "steve-mcmanaman",
@@ -949,7 +1051,8 @@
       "value": 37,
       "aliases": [
         "McManaman"
-      ]
+      ],
+      "wd": "Q294501"
     },
     {
       "id": "dele-alli",
@@ -958,7 +1061,8 @@
       "value": 37,
       "aliases": [
         "Alli"
-      ]
+      ],
+      "wd": "Q10553748"
     },
     {
       "id": "trent-alexander-arnold",
@@ -969,7 +1073,8 @@
         "Alexander-Arnold",
         "Trent",
         "TAA"
-      ]
+      ],
+      "wd": "Q27569376"
     },
     {
       "id": "bryan-douglas",
@@ -978,7 +1083,8 @@
       "value": 36,
       "aliases": [
         "Douglas"
-      ]
+      ],
+      "wd": "Q592615"
     },
     {
       "id": "trevor-steven",
@@ -987,7 +1093,8 @@
       "value": 36,
       "aliases": [
         "Steven"
-      ]
+      ],
+      "wd": "Q465970"
     },
     {
       "id": "graeme-le-saux",
@@ -996,7 +1103,8 @@
       "value": 36,
       "aliases": [
         "Le Saux"
-      ]
+      ],
+      "wd": "Q360616"
     },
     {
       "id": "wayne-bridge",
@@ -1005,7 +1113,8 @@
       "value": 36,
       "aliases": [
         "Bridge"
-      ]
+      ],
+      "wd": "Q206677"
     },
     {
       "id": "shaun-wright-phillips",
@@ -1015,7 +1124,8 @@
       "aliases": [
         "Wright-Phillips",
         "SWP"
-      ]
+      ],
+      "wd": "Q192747"
     },
     {
       "id": "mason-mount",
@@ -1024,7 +1134,8 @@
       "value": 36,
       "aliases": [
         "Mount"
-      ]
+      ],
+      "wd": "Q38000669"
     },
     {
       "id": "ronnie-clayton",
@@ -1033,7 +1144,8 @@
       "value": 35,
       "aliases": [
         "Clayton"
-      ]
+      ],
+      "wd": "Q201217"
     },
     {
       "id": "alan-mullery",
@@ -1042,7 +1154,8 @@
       "value": 35,
       "aliases": [
         "Mullery"
-      ]
+      ],
+      "wd": "Q1343112"
     },
     {
       "id": "jack-charlton",
@@ -1051,7 +1164,8 @@
       "value": 35,
       "aliases": [
         "Charlton"
-      ]
+      ],
+      "wd": "Q313674"
     },
     {
       "id": "paul-mariner",
@@ -1060,7 +1174,8 @@
       "value": 35,
       "aliases": [
         "Mariner"
-      ]
+      ],
+      "wd": "Q537783"
     },
     {
       "id": "stewart-downing",
@@ -1069,7 +1184,8 @@
       "value": 35,
       "aliases": [
         "Downing"
-      ]
+      ],
+      "wd": "Q202312"
     },
     {
       "id": "alex-oxlade-chamberlain",
@@ -1079,7 +1195,8 @@
       "aliases": [
         "Oxlade-Chamberlain",
         "Ox"
-      ]
+      ],
+      "wd": "Q194149"
     },
     {
       "id": "roger-hunt",
@@ -1088,7 +1205,8 @@
       "value": 34,
       "aliases": [
         "Hunt"
-      ]
+      ],
+      "wd": "Q366022"
     },
     {
       "id": "michael-carrick",
@@ -1097,7 +1215,8 @@
       "value": 34,
       "aliases": [
         "Carrick"
-      ]
+      ],
+      "wd": "Q29566"
     },
     {
       "id": "jack-wilshere",
@@ -1106,7 +1225,8 @@
       "value": 34,
       "aliases": [
         "Wilshere"
-      ]
+      ],
+      "wd": "Q15199"
     },
     {
       "id": "adam-lallana",
@@ -1115,7 +1235,8 @@
       "value": 34,
       "aliases": [
         "Lallana"
-      ]
+      ],
+      "wd": "Q59719"
     },
     {
       "id": "luke-shaw",
@@ -1124,7 +1245,8 @@
       "value": 34,
       "aliases": [
         "Shaw"
-      ]
+      ],
+      "wd": "Q93563"
     },
     {
       "id": "nat-lofthouse",
@@ -1133,7 +1255,8 @@
       "value": 33,
       "aliases": [
         "Lofthouse"
-      ]
+      ],
+      "wd": "Q351978"
     },
     {
       "id": "roger-byrne",
@@ -1142,7 +1265,8 @@
       "value": 33,
       "aliases": [
         "Byrne"
-      ]
+      ],
+      "wd": "Q344862"
     },
     {
       "id": "ron-springett",
@@ -1151,7 +1275,8 @@
       "value": 33,
       "aliases": [
         "Springett"
-      ]
+      ],
+      "wd": "Q532442"
     },
     {
       "id": "ian-wright",
@@ -1160,7 +1285,8 @@
       "value": 33,
       "aliases": [
         "Wright"
-      ]
+      ],
+      "wd": "Q312595"
     },
     {
       "id": "kieron-dyer",
@@ -1169,7 +1295,8 @@
       "value": 33,
       "aliases": [
         "Dyer"
-      ]
+      ],
+      "wd": "Q299455"
     },
     {
       "id": "ross-barkley",
@@ -1178,7 +1305,8 @@
       "value": 33,
       "aliases": [
         "Barkley"
-      ]
+      ],
+      "wd": "Q326240"
     },
     {
       "id": "alf-ramsey",
@@ -1188,7 +1316,8 @@
       "aliases": [
         "Ramsey",
         "Sir Alf Ramsey"
-      ]
+      ],
+      "wd": "Q311029"
     },
     {
       "id": "mark-hateley",
@@ -1197,7 +1326,8 @@
       "value": 32,
       "aliases": [
         "Hateley"
-      ]
+      ],
+      "wd": "Q703717"
     },
     {
       "id": "jesse-lingard",
@@ -1206,7 +1336,8 @@
       "value": 32,
       "aliases": [
         "Lingard"
-      ]
+      ],
+      "wd": "Q6186603"
     },
     {
       "id": "chris-smalling",
@@ -1215,7 +1346,8 @@
       "value": 31,
       "aliases": [
         "Smalling"
-      ]
+      ],
+      "wd": "Q29491"
     },
     {
       "id": "kalvin-phillips",
@@ -1224,7 +1356,8 @@
       "value": 31,
       "aliases": [
         "Phillips"
-      ]
+      ],
+      "wd": "Q20641319"
     },
     {
       "id": "ezri-konsa",
@@ -1233,7 +1366,8 @@
       "value": 31,
       "aliases": [
         "Konsa"
-      ]
+      ],
+      "wd": "Q27063854"
     },
     {
       "id": "eddie-hapgood",
@@ -1242,7 +1376,8 @@
       "value": 30,
       "aliases": [
         "Hapgood"
-      ]
+      ],
+      "wd": "Q1282813"
     },
     {
       "id": "viv-anderson",
@@ -1251,7 +1386,8 @@
       "value": 30,
       "aliases": [
         "Anderson"
-      ]
+      ],
+      "wd": "Q357281"
     },
     {
       "id": "darren-anderton",
@@ -1260,7 +1396,8 @@
       "value": 30,
       "aliases": [
         "Anderton"
-      ]
+      ],
+      "wd": "Q363608"
     },
     {
       "id": "leighton-baines",
@@ -1269,7 +1406,8 @@
       "value": 30,
       "aliases": [
         "Baines"
-      ]
+      ],
+      "wd": "Q187989"
     },
     {
       "id": "anthony-gordon",
@@ -1278,7 +1416,8 @@
       "value": 30,
       "aliases": [
         "Gordon"
-      ]
+      ],
+      "wd": "Q45179405"
     }
   ]
 }

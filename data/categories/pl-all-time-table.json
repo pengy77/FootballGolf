@@ -4,6 +4,7 @@
   "prompt": "most all-time Premier League points",
   "noun": "club",
   "nounPlural": "clubs",
+  "kind": "club",
   "metric": "Points",
   "order": "desc",
   "description": "Every club that has played in the Premier League, ranked by total points from 1992–93 to the end of 2025–26.",
@@ -26,7 +27,8 @@
         "Man Utd",
         "Man United",
         "MUFC"
-      ]
+      ],
+      "wd": "Q18656"
     },
     {
       "id": "arsenal",
@@ -35,7 +37,8 @@
       "value": 2473,
       "aliases": [
         "Gunners"
-      ]
+      ],
+      "wd": "Q9617"
     },
     {
       "id": "liverpool",
@@ -44,7 +47,8 @@
       "value": 2402,
       "aliases": [
         "LFC"
-      ]
+      ],
+      "wd": "Q1130849"
     },
     {
       "id": "chelsea",
@@ -53,7 +57,8 @@
       "value": 2366,
       "aliases": [
         "CFC"
-      ]
+      ],
+      "wd": "x-club-chelsea"
     },
     {
       "id": "tottenham-hotspur",
@@ -64,7 +69,8 @@
         "Tottenham",
         "Spurs",
         "THFC"
-      ]
+      ],
+      "wd": "Q18741"
     },
     {
       "id": "manchester-city",
@@ -74,7 +80,8 @@
       "aliases": [
         "Man City",
         "MCFC"
-      ]
+      ],
+      "wd": "Q50602"
     },
     {
       "id": "everton",
@@ -83,7 +90,8 @@
       "value": 1747,
       "aliases": [
         "Toffees"
-      ]
+      ],
+      "wd": "Q5794"
     },
     {
       "id": "newcastle-united",
@@ -95,7 +103,8 @@
         "Toon",
         "Magpies",
         "NUFC"
-      ]
+      ],
+      "wd": "Q18716"
     },
     {
       "id": "aston-villa",
@@ -105,7 +114,8 @@
       "aliases": [
         "Villa",
         "AVFC"
-      ]
+      ],
+      "wd": "Q18711"
     },
     {
       "id": "west-ham-united",
@@ -116,7 +126,8 @@
         "West Ham",
         "Hammers",
         "Irons"
-      ]
+      ],
+      "wd": "Q18747"
     },
     {
       "id": "southampton",
@@ -125,7 +136,8 @@
       "value": 1100,
       "aliases": [
         "Saints"
-      ]
+      ],
+      "wd": "Q18732"
     },
     {
       "id": "blackburn-rovers",
@@ -134,7 +146,8 @@
       "value": 970,
       "aliases": [
         "Blackburn"
-      ]
+      ],
+      "wd": "Q19446"
     },
     {
       "id": "leeds-united",
@@ -144,7 +157,8 @@
       "aliases": [
         "Leeds",
         "LUFC"
-      ]
+      ],
+      "wd": "Q1128631"
     },
     {
       "id": "leicester-city",
@@ -154,7 +168,8 @@
       "aliases": [
         "Leicester",
         "Foxes"
-      ]
+      ],
+      "wd": "Q19481"
     },
     {
       "id": "fulham",
@@ -163,7 +178,8 @@
       "value": 845,
       "aliases": [
         "Cottagers"
-      ]
+      ],
+      "wd": "Q18708"
     },
     {
       "id": "crystal-palace",
@@ -173,7 +189,8 @@
       "aliases": [
         "Palace",
         "Eagles"
-      ]
+      ],
+      "wd": "Q19467"
     },
     {
       "id": "sunderland",
@@ -182,7 +199,8 @@
       "value": 672,
       "aliases": [
         "Black Cats"
-      ]
+      ],
+      "wd": "Q18739"
     },
     {
       "id": "middlesbrough",
@@ -191,7 +209,8 @@
       "value": 661,
       "aliases": [
         "Boro"
-      ]
+      ],
+      "wd": "Q18661"
     },
     {
       "id": "bolton-wanderers",
@@ -201,7 +220,8 @@
       "aliases": [
         "Bolton",
         "Trotters"
-      ]
+      ],
+      "wd": "Q19451"
     },
     {
       "id": "wolverhampton-wanderers",
@@ -211,7 +231,8 @@
       "aliases": [
         "Wolves",
         "Wolverhampton"
-      ]
+      ],
+      "wd": "Q19500"
     },
     {
       "id": "west-bromwich-albion",
@@ -222,7 +243,8 @@
         "West Brom",
         "WBA",
         "Baggies"
-      ]
+      ],
+      "wd": "Q18744"
     },
     {
       "id": "stoke-city",
@@ -232,7 +254,8 @@
       "aliases": [
         "Stoke",
         "Potters"
-      ]
+      ],
+      "wd": "Q18736"
     },
     {
       "id": "brighton-hove-albion",
@@ -243,7 +266,8 @@
         "Brighton",
         "Brighton and Hove Albion",
         "Seagulls"
-      ]
+      ],
+      "wd": "Q19453"
     },
     {
       "id": "nottingham-forest",
@@ -253,7 +277,8 @@
       "aliases": [
         "Forest",
         "Nottm Forest"
-      ]
+      ],
+      "wd": "Q19490"
     },
     {
       "id": "bournemouth",
@@ -263,7 +288,8 @@
       "aliases": [
         "AFC Bournemouth",
         "Cherries"
-      ]
+      ],
+      "wd": "Q19568"
     },
     {
       "id": "coventry-city",
@@ -273,7 +299,8 @@
       "aliases": [
         "Coventry",
         "Sky Blues"
-      ]
+      ],
+      "wd": "Q19580"
     },
     {
       "id": "norwich-city",
@@ -283,7 +310,8 @@
       "aliases": [
         "Norwich",
         "Canaries"
-      ]
+      ],
+      "wd": "Q18721"
     },
     {
       "id": "sheffield-wednesday",
@@ -294,7 +322,8 @@
         "Sheff Wed",
         "Wednesday",
         "Owls"
-      ]
+      ],
+      "wd": "Q19498"
     },
     {
       "id": "wimbledon",
@@ -305,7 +334,8 @@
         "Wimbledon FC",
         "Crazy Gang",
         "Dons"
-      ]
+      ],
+      "wd": "Q48851"
     },
     {
       "id": "burnley",
@@ -314,7 +344,8 @@
       "value": 371,
       "aliases": [
         "Clarets"
-      ]
+      ],
+      "wd": "Q19458"
     },
     {
       "id": "charlton-athletic",
@@ -324,7 +355,8 @@
       "aliases": [
         "Charlton",
         "Addicks"
-      ]
+      ],
+      "wd": "Q19462"
     },
     {
       "id": "wigan-athletic",
@@ -333,7 +365,8 @@
       "value": 331,
       "aliases": [
         "Wigan"
-      ]
+      ],
+      "wd": "Q18750"
     },
     {
       "id": "swansea-city",
@@ -343,7 +376,8 @@
       "aliases": [
         "Swansea",
         "Swans"
-      ]
+      ],
+      "wd": "Q18659"
     },
     {
       "id": "queens-park-rangers",
@@ -352,7 +386,8 @@
       "value": 308,
       "aliases": [
         "QPR"
-      ]
+      ],
+      "wd": "Q18723"
     },
     {
       "id": "birmingham-city",
@@ -361,7 +396,8 @@
       "value": 301,
       "aliases": [
         "Birmingham"
-      ]
+      ],
+      "wd": "Q19444"
     },
     {
       "id": "portsmouth",
@@ -370,7 +406,8 @@
       "value": 293,
       "aliases": [
         "Pompey"
-      ]
+      ],
+      "wd": "Q19604"
     },
     {
       "id": "watford",
@@ -379,7 +416,8 @@
       "value": 285,
       "aliases": [
         "Hornets"
-      ]
+      ],
+      "wd": "Q2714"
     },
     {
       "id": "derby-county",
@@ -389,7 +427,8 @@
       "aliases": [
         "Derby",
         "Rams"
-      ]
+      ],
+      "wd": "Q19470"
     },
     {
       "id": "brentford",
@@ -398,7 +437,8 @@
       "value": 253,
       "aliases": [
         "Bees"
-      ]
+      ],
+      "wd": "Q19571"
     },
     {
       "id": "ipswich-town",
@@ -408,7 +448,8 @@
       "aliases": [
         "Ipswich",
         "Tractor Boys"
-      ]
+      ],
+      "wd": "Q9653"
     },
     {
       "id": "sheffield-united",
@@ -418,7 +459,8 @@
       "aliases": [
         "Sheff Utd",
         "Blades"
-      ]
+      ],
+      "wd": "Q19607"
     },
     {
       "id": "hull-city",
@@ -428,7 +470,8 @@
       "aliases": [
         "Hull",
         "Tigers"
-      ]
+      ],
+      "wd": "Q19477"
     },
     {
       "id": "reading",
@@ -437,7 +480,8 @@
       "value": 119,
       "aliases": [
         "Royals"
-      ]
+      ],
+      "wd": "Q18729"
     },
     {
       "id": "oldham-athletic",
@@ -446,7 +490,8 @@
       "value": 89,
       "aliases": [
         "Oldham"
-      ]
+      ],
+      "wd": "Q19601"
     },
     {
       "id": "cardiff-city",
@@ -456,7 +501,8 @@
       "aliases": [
         "Cardiff",
         "Bluebirds"
-      ]
+      ],
+      "wd": "Q18662"
     },
     {
       "id": "bradford-city",
@@ -466,7 +512,8 @@
       "aliases": [
         "Bradford",
         "Bantams"
-      ]
+      ],
+      "wd": "Q48879"
     },
     {
       "id": "huddersfield-town",
@@ -476,7 +523,8 @@
       "aliases": [
         "Huddersfield",
         "Terriers"
-      ]
+      ],
+      "wd": "Q19473"
     },
     {
       "id": "blackpool",
@@ -485,7 +533,8 @@
       "value": 39,
       "aliases": [
         "Seasiders"
-      ]
+      ],
+      "wd": "Q19449"
     },
     {
       "id": "barnsley",
@@ -494,7 +543,8 @@
       "value": 35,
       "aliases": [
         "Tykes"
-      ]
+      ],
+      "wd": "Q19442"
     },
     {
       "id": "swindon-town",
@@ -503,7 +553,8 @@
       "value": 30,
       "aliases": [
         "Swindon"
-      ]
+      ],
+      "wd": "Q19634"
     },
     {
       "id": "luton-town",
@@ -513,7 +564,8 @@
       "aliases": [
         "Luton",
         "Hatters"
-      ]
+      ],
+      "wd": "Q18520"
     }
   ]
 }

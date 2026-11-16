@@ -1,4 +1,4 @@
-import { CATEGORY_BY_ID, categoriesFor, type Category, type CourseId, type Item } from './data';
+import { CATEGORY_BY_ID, categoriesFor, targetRange, type Category, type CourseId, type Item } from './data';
 
 export interface Hole {
   cat: string;
@@ -53,12 +53,7 @@ export function randInt(min: number, max: number, rand: () => number = Math.rand
   return Math.floor(rand() * (max - min + 1)) + min;
 }
 
-/** Sensible target range for a list: not trivially near the top, not lost in the depths. */
-export function targetRange(size: number): [number, number] {
-  const lo = Math.max(2, Math.ceil(size * 0.08));
-  const hi = Math.max(lo, Math.min(Math.floor(size * 0.85), 100));
-  return [lo, hi];
-}
+export { targetRange } from './data';
 
 export function newCourse(course: CourseId, count: number, rand: () => number = Math.random, pool?: Category[]): Hole[] {
   const cats = [...(pool ?? categoriesFor(course))];
@@ -67,9 +62,13 @@ export function newCourse(course: CourseId, count: number, rand: () => number = 
     const j = Math.floor(rand() * (i + 1));
     [cats[i], cats[j]] = [cats[j], cats[i]];
   }
+  // Pins only go where exactly one entry sits, so every hole has one clear answer (never a tie, never a 0).
   return cats.slice(0, Math.min(count, cats.length)).map((c) => {
-    const [lo, hi] = targetRange(c.size);
-    return { cat: c.id, target: randInt(lo, hi, rand) };
+    if (!c.pins.length) {
+      const [lo, hi] = targetRange(c.size);
+      return { cat: c.id, target: randInt(lo, hi, rand) };
+    }
+    return { cat: c.id, target: c.pins[randInt(0, c.pins.length - 1, rand)] };
   });
 }
 

@@ -1,0 +1,2776 @@
+{
+  "id": "world-stadiums",
+  "title": "Biggest football stadiums in the world",
+  "prompt": "biggest football stadium in the world",
+  "noun": "stadium",
+  "nounPlural": "stadiums",
+  "kind": "stadium",
+  "metric": "Capacity",
+  "order": "desc",
+  "description": "The world's largest stadiums used for association football, by seated capacity as listed on Wikipedia (multi-sport grounds included); stadiums with the same capacity share a rank.",
+  "tags": [
+    "stadiums",
+    "international"
+  ],
+  "source": {
+    "name": "Wikipedia: List of association football stadiums by capacity",
+    "url": "https://en.wikipedia.org/wiki/List_of_association_football_stadiums_by_capacity",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "rungrado-1st-of-may-stadium",
+      "name": "Rungrado 1st of May Stadium",
+      "sub": "Pyongyang · North Korea",
+      "value": 113281,
+      "display": "113,281",
+      "aliases": [
+        "May Day Stadium",
+        "Rungrado May Day Stadium"
+      ],
+      "wd": "x-stadium-rungrado-1st-of-may-stadium"
+    },
+    {
+      "id": "camp-nou",
+      "name": "Camp Nou",
+      "sub": "Barcelona · Spain",
+      "value": 99354,
+      "display": "99,354",
+      "aliases": [
+        "Spotify Camp Nou",
+        "Nou Camp",
+        "FC Barcelona",
+        "Barça"
+      ],
+      "wd": "Q159848"
+    },
+    {
+      "id": "fnb-stadium",
+      "name": "FNB Stadium",
+      "sub": "Johannesburg · South Africa",
+      "value": 94736,
+      "display": "94,736",
+      "aliases": [
+        "Soccer City"
+      ],
+      "wd": "Q163521"
+    },
+    {
+      "id": "new-administrative-capital-stadium",
+      "name": "New Administrative Capital Stadium",
+      "sub": "New Administrative Capital · Egypt",
+      "value": 93940,
+      "display": "93,940",
+      "wd": "x-stadium-new-administrative-capital-stadium"
+    },
+    {
+      "id": "cotton-bowl",
+      "name": "Cotton Bowl",
+      "sub": "Dallas · United States",
+      "value": 92100,
+      "display": "92,100",
+      "aliases": [
+        "Cotton Bowl Stadium"
+      ],
+      "wd": "x-stadium-cotton-bowl"
+    },
+    {
+      "id": "wembley-stadium",
+      "name": "Wembley Stadium",
+      "sub": "London · England",
+      "value": 90000,
+      "display": "90,000",
+      "aliases": [
+        "Wembley"
+      ],
+      "wd": "x-stadium-wembley-stadium"
+    },
+    {
+      "id": "lusail-stadium",
+      "name": "Lusail Stadium",
+      "sub": "Lusail · Qatar",
+      "value": 88966,
+      "display": "88,966",
+      "aliases": [
+        "Lusail Iconic Stadium"
+      ],
+      "wd": "Q1186333"
+    },
+    {
+      "id": "estadio-azteca",
+      "name": "Estadio Azteca",
+      "sub": "Mexico City · Mexico",
+      "value": 87523,
+      "display": "87,523",
+      "aliases": [
+        "Azteca",
+        "Azteca Stadium",
+        "Estadio Banorte",
+        "Estadio Ciudad de México",
+        "Mexico City Stadium"
+      ],
+      "wd": "Q320454"
+    },
+    {
+      "id": "bukit-jalil-national-stadium",
+      "name": "Bukit Jalil National Stadium",
+      "sub": "Kuala Lumpur · Malaysia",
+      "value": 87411,
+      "display": "87,411",
+      "aliases": [
+        "Bukit Jalil",
+        "National Stadium Bukit Jalil"
+      ],
+      "wd": "Q635363"
+    },
+    {
+      "id": "borg-el-arab-stadium",
+      "name": "Borg El Arab Stadium",
+      "sub": "Alexandria · Egypt",
+      "value": 86000,
+      "display": "86,000",
+      "aliases": [
+        "Borg El Arab"
+      ],
+      "wd": "Q557578"
+    },
+    {
+      "id": "estadio-monumental",
+      "name": "Estadio Monumental",
+      "sub": "Buenos Aires · Argentina",
+      "value": 85018,
+      "display": "85,018",
+      "aliases": [
+        "Estadio Mâs Monumental",
+        "Mâs Monumental",
+        "El Monumental",
+        "Monumental",
+        "Estadio Antonio Vespucio Liberti",
+        "River Plate"
+      ],
+      "wd": "x-stadium-estadio-monumental"
+    },
+    {
+      "id": "salt-lake-stadium",
+      "name": "Salt Lake Stadium",
+      "sub": "Kolkata · India",
+      "value": 85000,
+      "display": "85,000",
+      "aliases": [
+        "Yuva Bharati Krirangan"
+      ],
+      "wd": "Q787124"
+    },
+    {
+      "id": "stadium-australia",
+      "name": "Stadium Australia",
+      "sub": "Sydney · Australia",
+      "value": 83500,
+      "display": "83,500",
+      "aliases": [
+        "Accor Stadium",
+        "ANZ Stadium",
+        "Sydney Olympic Stadium"
+      ],
+      "wd": "x-stadium-stadium-australia"
+    },
+    {
+      "id": "santiago-bernabeu",
+      "name": "Santiago Bernabéu",
+      "sub": "Madrid · Spain",
+      "value": 83186,
+      "display": "83,186",
+      "aliases": [
+        "Estadio Santiago Bernabéu",
+        "Bernabéu",
+        "Real Madrid"
+      ],
+      "wd": "Q164027"
+    },
+    {
+      "id": "croke-park",
+      "name": "Croke Park",
+      "sub": "Dublin · Ireland",
+      "value": 82300,
+      "display": "82,300",
+      "wd": "x-stadium-croke-park"
+    },
+    {
+      "id": "jakarta-international-stadium",
+      "name": "Jakarta International Stadium",
+      "sub": "Jakarta · Indonesia",
+      "value": 82000,
+      "display": "82,000",
+      "aliases": [
+        "JIS"
+      ],
+      "wd": "Q6124453"
+    },
+    {
+      "id": "signal-iduna-park",
+      "name": "Signal Iduna Park",
+      "sub": "Dortmund · Germany",
+      "value": 81365,
+      "display": "81,365",
+      "aliases": [
+        "Westfalenstadion",
+        "Borussia Dortmund",
+        "Dortmund",
+        "BVB"
+      ],
+      "wd": "Q150928"
+    },
+    {
+      "id": "stade-de-france",
+      "name": "Stade de France",
+      "sub": "Saint-Denis · France",
+      "value": 81338,
+      "display": "81,338",
+      "wd": "Q13205"
+    },
+    {
+      "id": "luzhniki-stadium",
+      "name": "Luzhniki Stadium",
+      "sub": "Moscow · Russia",
+      "value": 81000,
+      "display": "81,000",
+      "aliases": [
+        "Grand Sports Arena of the Luzhniki Olympic Complex",
+        "Luzhniki"
+      ],
+      "wd": "Q202163"
+    },
+    {
+      "id": "shah-alam-stadium",
+      "name": "Shah Alam Stadium",
+      "sub": "Shah Alam · Malaysia",
+      "value": 80372,
+      "display": "80,372",
+      "wd": "Q1651698"
+    },
+    {
+      "id": "estadio-monumental-u",
+      "name": "Estadio Monumental \"U\"",
+      "sub": "Lima · Peru",
+      "value": 80093,
+      "display": "80,093",
+      "aliases": [
+        "Monumental de Lima",
+        "Estadio Monumental de Lima",
+        "Universitario"
+      ],
+      "wd": "Q1369426"
+    },
+    {
+      "id": "san-siro",
+      "name": "San Siro",
+      "sub": "Milan · Italy",
+      "value": 80018,
+      "display": "80,018",
+      "aliases": [
+        "Stadio Giuseppe Meazza",
+        "Giuseppe Meazza",
+        "Meazza",
+        "AC Milan",
+        "Inter Milan",
+        "Inter"
+      ],
+      "wd": "x-stadium-san-siro"
+    },
+    {
+      "id": "guangdong-olympic-stadium",
+      "name": "Guangdong Olympic Stadium",
+      "sub": "Guangzhou · China",
+      "value": 80012,
+      "display": "80,012",
+      "wd": "x-stadium-guangdong-olympic-stadium"
+    },
+    {
+      "id": "hangzhou-olympic-sports-expo-centre-stadium",
+      "name": "Hangzhou Olympic Sports Expo Centre Stadium",
+      "sub": "Hangzhou · China",
+      "value": 80000,
+      "display": "80,000",
+      "aliases": [
+        "Hangzhou Olympic Sports Center Stadium",
+        "Big Lotus"
+      ],
+      "wd": "x-stadium-hangzhou-olympic-sports-expo-centre-stadium"
+    },
+    {
+      "id": "stade-des-martyrs",
+      "name": "Stade des Martyrs",
+      "sub": "Kinshasa · DR Congo",
+      "value": 80000,
+      "display": "80,000",
+      "wd": "x-stadium-stade-des-martyrs"
+    },
+    {
+      "id": "beijing-national-stadium",
+      "name": "Beijing National Stadium",
+      "sub": "Beijing · China",
+      "value": 80000,
+      "display": "80,000",
+      "aliases": [
+        "Bird's Nest"
+      ],
+      "wd": "x-stadium-beijing-national-stadium"
+    },
+    {
+      "id": "maracana",
+      "name": "Maracanã",
+      "sub": "Rio de Janeiro · Brazil",
+      "value": 78838,
+      "display": "78,838",
+      "aliases": [
+        "Maracanã Stadium",
+        "Estádio do Maracanã",
+        "Estádio Jornalista Mário Filho"
+      ],
+      "wd": "Q155174"
+    },
+    {
+      "id": "azadi-stadium",
+      "name": "Azadi Stadium",
+      "sub": "Tehran · Iran",
+      "value": 78116,
+      "display": "78,116",
+      "aliases": [
+        "Azadi"
+      ],
+      "wd": "Q653535"
+    },
+    {
+      "id": "gelora-bung-karno-stadium",
+      "name": "Gelora Bung Karno Stadium",
+      "sub": "Jakarta · Indonesia",
+      "value": 77193,
+      "display": "77,193",
+      "aliases": [
+        "Stadion Utama Gelora Bung Karno",
+        "Gelora Bung Karno",
+        "GBK"
+      ],
+      "wd": "Q1068044"
+    },
+    {
+      "id": "ataturk-olympic-stadium",
+      "name": "Atatürk Olympic Stadium",
+      "sub": "Istanbul · Turkey",
+      "value": 76092,
+      "display": "76,092",
+      "aliases": [
+        "Atatürk Olimpiyat Stadyumu"
+      ],
+      "wd": "Q221122"
+    },
+    {
+      "id": "old-trafford",
+      "name": "Old Trafford",
+      "sub": "Manchester · England",
+      "value": 76000,
+      "display": "76,000",
+      "aliases": [
+        "Manchester United",
+        "Man Utd",
+        "Man United",
+        "Theatre of Dreams"
+      ],
+      "wd": "Q83457"
+    },
+    {
+      "id": "tangier-grand-stadium",
+      "name": "Tangier Grand Stadium",
+      "sub": "Tangier · Morocco",
+      "value": 75500,
+      "display": "75,500",
+      "aliases": [
+        "Ibn Batouta Stadium",
+        "Grand Stade de Tanger"
+      ],
+      "wd": "Q3107495"
+    },
+    {
+      "id": "allianz-arena",
+      "name": "Allianz Arena",
+      "sub": "Munich · Germany",
+      "value": 75024,
+      "display": "75,024",
+      "aliases": [
+        "Bayern Munich",
+        "Bayern",
+        "FC Bayern",
+        "Fußball Arena München"
+      ],
+      "wd": "Q127429"
+    },
+    {
+      "id": "naghsh-e-jahan-stadium",
+      "name": "Naghsh-e-Jahan Stadium",
+      "sub": "Isfahan · Iran",
+      "value": 75000,
+      "display": "75,000",
+      "wd": "Q5931161"
+    },
+    {
+      "id": "bank-of-america-stadium",
+      "name": "Bank of America Stadium",
+      "sub": "Charlotte · United States",
+      "value": 74867,
+      "display": "74,867",
+      "wd": "x-stadium-bank-of-america-stadium"
+    },
+    {
+      "id": "principality-stadium",
+      "name": "Principality Stadium",
+      "sub": "Cardiff · Wales",
+      "value": 74500,
+      "display": "74,500",
+      "aliases": [
+        "Millennium Stadium"
+      ],
+      "wd": "Q204496"
+    },
+    {
+      "id": "olympiastadion",
+      "name": "Olympiastadion",
+      "sub": "Berlin · Germany",
+      "value": 74475,
+      "display": "74,475",
+      "aliases": [
+        "Olympiastadion Berlin",
+        "Berlin Olympic Stadium",
+        "Hertha BSC",
+        "Hertha Berlin"
+      ],
+      "wd": "Q131610"
+    },
+    {
+      "id": "cairo-international-stadium",
+      "name": "Cairo International Stadium",
+      "sub": "Cairo · Egypt",
+      "value": 74100,
+      "display": "74,100",
+      "aliases": [
+        "Cairo Stadium"
+      ],
+      "wd": "Q158985"
+    },
+    {
+      "id": "estadio-nacional-mane-garrincha",
+      "name": "Estádio Nacional Mané Garrincha",
+      "sub": "Brasília · Brazil",
+      "value": 72788,
+      "display": "72,788",
+      "aliases": [
+        "Mané Garrincha",
+        "Estádio Mané Garrincha"
+      ],
+      "wd": "Q336088"
+    },
+    {
+      "id": "stadio-olimpico",
+      "name": "Stadio Olimpico",
+      "sub": "Rome · Italy",
+      "value": 72698,
+      "display": "72,698",
+      "aliases": [
+        "Olimpico",
+        "AS Roma",
+        "Roma",
+        "Lazio"
+      ],
+      "wd": "Q159884"
+    },
+    {
+      "id": "nissan-stadium",
+      "name": "Nissan Stadium",
+      "sub": "Yokohama · Japan",
+      "value": 72327,
+      "display": "72,327",
+      "aliases": [
+        "International Stadium Yokohama",
+        "Yokohama International Stadium"
+      ],
+      "wd": "Q1142992"
+    },
+    {
+      "id": "shanghai-stadium",
+      "name": "Shanghai Stadium",
+      "sub": "Shanghai · China",
+      "value": 72000,
+      "display": "72,000",
+      "wd": "Q739528"
+    },
+    {
+      "id": "estadio-la-cartuja",
+      "name": "Estadio La Cartuja",
+      "sub": "Seville · Spain",
+      "value": 71374,
+      "display": "71,374",
+      "aliases": [
+        "Estadio La Cartuja de Sevilla",
+        "Estadio de La Cartuja",
+        "La Cartuja",
+        "Estadio Olímpico de Sevilla"
+      ],
+      "wd": "Q368737"
+    },
+    {
+      "id": "mercedes-benz-stadium",
+      "name": "Mercedes-Benz Stadium",
+      "sub": "Atlanta · United States",
+      "value": 71000,
+      "display": "71,000",
+      "wd": "Q7007552"
+    },
+    {
+      "id": "riyadh-air-metropolitano",
+      "name": "Riyadh Air Metropolitano",
+      "sub": "Madrid · Spain",
+      "value": 70692,
+      "display": "70,692",
+      "aliases": [
+        "Metropolitano",
+        "Metropolitano Stadium",
+        "Estadio Riyadh Air Metropolitano",
+        "Wanda Metropolitano",
+        "Cívitas Metropolitano",
+        "Atlético Madrid",
+        "Atlético",
+        "Atleti"
+      ],
+      "wd": "x-stadium-riyadh-air-metropolitano"
+    },
+    {
+      "id": "nsc-olimpiyskiy",
+      "name": "NSC Olimpiyskiy",
+      "sub": "Kyiv · Ukraine",
+      "value": 70050,
+      "display": "70,050",
+      "aliases": [
+        "Olympic National Sports Complex Stadium",
+        "Olimpiyskiy",
+        "Olimpiyskiy National Sports Complex",
+        "Olympic National Sports Complex",
+        "Olympic Stadium Kyiv",
+        "Dynamo Kyiv"
+      ],
+      "wd": "x-stadium-nsc-olimpiyskiy"
+    },
+    {
+      "id": "nou-mestalla",
+      "name": "Nou Mestalla",
+      "sub": "Valencia · Spain",
+      "value": 70044,
+      "display": "70,044",
+      "aliases": [
+        "New Mestalla"
+      ],
+      "wd": "Q1138274"
+    },
+    {
+      "id": "seoul-olympic-stadium",
+      "name": "Seoul Olympic Stadium",
+      "sub": "Seoul · South Korea",
+      "value": 69950,
+      "display": "69,950",
+      "aliases": [
+        "Jamsil Olympic Stadium"
+      ],
+      "wd": "x-stadium-seoul-olympic-stadium"
+    },
+    {
+      "id": "baku-olympic-stadium",
+      "name": "Baku Olympic Stadium",
+      "sub": "Baku · Azerbaijan",
+      "value": 69870,
+      "display": "69,870",
+      "aliases": [
+        "Bakı Olimpiya stadionu"
+      ],
+      "wd": "x-stadium-baku-olympic-stadium"
+    },
+    {
+      "id": "athens-olympic-stadium",
+      "name": "Athens Olympic Stadium",
+      "sub": "Marousi · Greece",
+      "value": 69618,
+      "display": "69,618",
+      "aliases": [
+        "Olympic Stadium Athens",
+        "OAKA",
+        "Spyros Louis"
+      ],
+      "wd": "x-stadium-athens-olympic-stadium"
+    },
+    {
+      "id": "munich-olympic-stadium",
+      "name": "Munich Olympic Stadium",
+      "sub": "Munich · Germany",
+      "value": 69250,
+      "display": "69,250",
+      "aliases": [
+        "Olympiastadion München",
+        "Olympiastadion Munich"
+      ],
+      "wd": "x-stadium-munich-olympic-stadium"
+    },
+    {
+      "id": "lumen-field",
+      "name": "Lumen Field",
+      "sub": "Seattle · United States",
+      "value": 69000,
+      "display": "69,000",
+      "aliases": [
+        "CenturyLink Field",
+        "Qwest Field"
+      ],
+      "wd": "Q612736"
+    },
+    {
+      "id": "estadio-olimpico-universitario",
+      "name": "Estadio Olímpico Universitario",
+      "sub": "Mexico City · Mexico",
+      "value": 68954,
+      "display": "68,954",
+      "aliases": [
+        "Olímpico Universitario",
+        "Pumas UNAM",
+        "UNAM"
+      ],
+      "wd": "x-stadium-estadio-olimpico-universitario"
+    },
+    {
+      "id": "gillette-stadium",
+      "name": "Gillette Stadium",
+      "sub": "Foxborough · United States",
+      "value": 68756,
+      "display": "68,756",
+      "wd": "x-stadium-gillette-stadium"
+    },
+    {
+      "id": "prince-moulay-abdellah-stadium",
+      "name": "Prince Moulay Abdellah Stadium",
+      "sub": "Rabat · Morocco",
+      "value": 68700,
+      "display": "68,700",
+      "aliases": [
+        "Moulay Abdellah"
+      ],
+      "wd": "Q1858169"
+    },
+    {
+      "id": "king-abdullah-sports-city-stadium",
+      "name": "King Abdullah Sports City Stadium",
+      "sub": "Jeddah · Saudi Arabia",
+      "value": 68560,
+      "display": "68,560",
+      "aliases": [
+        "King Abdullah Sports City"
+      ],
+      "wd": "x-stadium-king-abdullah-sports-city-stadium"
+    },
+    {
+      "id": "gazprom-arena",
+      "name": "Gazprom Arena",
+      "sub": "Saint Petersburg · Russia",
+      "value": 68134,
+      "display": "68,134",
+      "aliases": [
+        "Krestovsky Stadium",
+        "Saint Petersburg Stadium",
+        "Zenit Arena",
+        "Zenit Saint Petersburg"
+      ],
+      "wd": "Q722970"
+    },
+    {
+      "id": "estadio-da-luz",
+      "name": "Estádio da Luz",
+      "sub": "Lisbon · Portugal",
+      "value": 68100,
+      "display": "68,100",
+      "aliases": [
+        "Estádio do Sport Lisboa e Benfica",
+        "Da Luz",
+        "Benfica"
+      ],
+      "wd": "Q7875112"
+    },
+    {
+      "id": "japan-national-stadium",
+      "name": "Japan National Stadium",
+      "sub": "Tokyo · Japan",
+      "value": 68000,
+      "display": "68,000",
+      "aliases": [
+        "National Stadium Tokyo",
+        "New National Stadium",
+        "Tokyo Olympic Stadium"
+      ],
+      "wd": "x-stadium-japan-national-stadium"
+    },
+    {
+      "id": "stade-velodrome",
+      "name": "Stade Vélodrome",
+      "sub": "Marseille · France",
+      "value": 67394,
+      "display": "67,394",
+      "aliases": [
+        "Orange Vélodrome",
+        "Vélodrome",
+        "Olympique de Marseille",
+        "Marseille",
+        "OM"
+      ],
+      "wd": "Q202150"
+    },
+    {
+      "id": "puskas-arena",
+      "name": "Puskás Aréna",
+      "sub": "Budapest · Hungary",
+      "value": 67215,
+      "display": "67,215",
+      "aliases": [
+        "Puskás Ferenc Stadion"
+      ],
+      "wd": "Q39069592"
+    },
+    {
+      "id": "murrayfield-stadium",
+      "name": "Murrayfield Stadium",
+      "sub": "Edinburgh · Scotland",
+      "value": 67144,
+      "display": "67,144",
+      "aliases": [
+        "Scottish Gas Murrayfield Stadium",
+        "Murrayfield",
+        "BT Murrayfield"
+      ],
+      "wd": "x-stadium-murrayfield-stadium"
+    },
+    {
+      "id": "stade-mohammed-v",
+      "name": "Stade Mohammed V",
+      "sub": "Casablanca · Morocco",
+      "value": 67000,
+      "display": "67,000",
+      "aliases": [
+        "Mohammed V Stadium"
+      ],
+      "wd": "Q1783824"
+    },
+    {
+      "id": "morumbi",
+      "name": "Morumbi",
+      "sub": "São Paulo · Brazil",
+      "value": 66975,
+      "display": "66,975",
+      "aliases": [
+        "MorumBIS",
+        "Estádio do Morumbi",
+        "Estádio Cícero Pompeu de Toledo",
+        "São Paulo FC"
+      ],
+      "wd": "Q821761"
+    },
+    {
+      "id": "yadegar-e-emam-stadium",
+      "name": "Yadegar-e-Emam Stadium",
+      "sub": "Tabriz · Iran",
+      "value": 66833,
+      "display": "66,833",
+      "wd": "Q3273189"
+    },
+    {
+      "id": "seoul-world-cup-stadium",
+      "name": "Seoul World Cup Stadium",
+      "sub": "Seoul · South Korea",
+      "value": 66704,
+      "display": "66,704",
+      "aliases": [
+        "Sangam Stadium"
+      ],
+      "wd": "Q175477"
+    },
+    {
+      "id": "daegu-stadium",
+      "name": "Daegu Stadium",
+      "sub": "Daegu · South Korea",
+      "value": 66422,
+      "display": "66,422",
+      "wd": "x-stadium-daegu-stadium"
+    },
+    {
+      "id": "workers-stadium",
+      "name": "Workers' Stadium",
+      "sub": "Beijing · China",
+      "value": 66161,
+      "display": "66,161",
+      "aliases": [
+        "Beijing Workers' Stadium",
+        "Gongti"
+      ],
+      "wd": "Q627250"
+    },
+    {
+      "id": "london-stadium",
+      "name": "London Stadium",
+      "sub": "London · England",
+      "value": 66000,
+      "display": "66,000",
+      "aliases": [
+        "Olympic Stadium London",
+        "West Ham United",
+        "West Ham"
+      ],
+      "wd": "Q172190"
+    },
+    {
+      "id": "montreal-olympic-stadium",
+      "name": "Montreal Olympic Stadium",
+      "sub": "Montreal · Canada",
+      "value": 65255,
+      "display": "65,255",
+      "aliases": [
+        "Stade olympique",
+        "Olympic Stadium Montreal",
+        "The Big O"
+      ],
+      "wd": "x-stadium-montreal-olympic-stadium"
+    },
+    {
+      "id": "basra-international-stadium",
+      "name": "Basra International Stadium",
+      "sub": "Basra · Iraq",
+      "value": 65227,
+      "display": "65,227",
+      "aliases": [
+        "Basra Sports City",
+        "Basra Stadium"
+      ],
+      "wd": "x-stadium-basra-international-stadium"
+    },
+    {
+      "id": "stade-du-5-juillet",
+      "name": "Stade du 5 Juillet",
+      "sub": "Algiers · Algeria",
+      "value": 64200,
+      "display": "64,200",
+      "aliases": [
+        "5 July Stadium",
+        "Stade du 5 Juillet 1962"
+      ],
+      "wd": "x-stadium-stade-du-5-juillet"
+    },
+    {
+      "id": "castelao",
+      "name": "Castelão",
+      "sub": "Fortaleza · Brazil",
+      "value": 63903,
+      "display": "63,903",
+      "aliases": [
+        "Arena Castelão",
+        "Estádio Governador Plácido Castelo"
+      ],
+      "wd": "Q958185"
+    },
+    {
+      "id": "saitama-stadium-2002",
+      "name": "Saitama Stadium 2002",
+      "sub": "Saitama · Japan",
+      "value": 63700,
+      "display": "63,700",
+      "aliases": [
+        "Saitama Stadium"
+      ],
+      "wd": "Q482446"
+    },
+    {
+      "id": "dalian-suoyuwan-football-stadium",
+      "name": "Dalian Suoyuwan Football Stadium",
+      "sub": "Dalian · China",
+      "value": 63677,
+      "display": "63,677",
+      "wd": "Q124031707"
+    },
+    {
+      "id": "oakland-coliseum",
+      "name": "Oakland Coliseum",
+      "sub": "Oakland · United States",
+      "value": 63132,
+      "display": "63,132",
+      "aliases": [
+        "Oakland–Alameda County Coliseum"
+      ],
+      "wd": "x-stadium-oakland-coliseum"
+    },
+    {
+      "id": "ellis-park-stadium",
+      "name": "Ellis Park Stadium",
+      "sub": "Johannesburg · South Africa",
+      "value": 62567,
+      "display": "62,567",
+      "aliases": [
+        "Ellis Park",
+        "Emirates Airline Park"
+      ],
+      "wd": "Q182081"
+    },
+    {
+      "id": "tottenham-hotspur-stadium",
+      "name": "Tottenham Hotspur Stadium",
+      "sub": "London · England",
+      "value": 62303,
+      "display": "62,303",
+      "aliases": [
+        "Tottenham Hotspur",
+        "Tottenham",
+        "Spurs"
+      ],
+      "wd": "Q55074091"
+    },
+    {
+      "id": "veltins-arena",
+      "name": "Veltins-Arena",
+      "sub": "Gelsenkirchen · Germany",
+      "value": 62271,
+      "display": "62,271",
+      "aliases": [
+        "Arena AufSchalke",
+        "Schalke 04",
+        "Schalke"
+      ],
+      "wd": "Q150961"
+    },
+    {
+      "id": "yizhong-sports-centre-stadium",
+      "name": "Yizhong Sports Centre Stadium",
+      "sub": "Qingdao · China",
+      "value": 62000,
+      "display": "62,000",
+      "wd": "x-stadium-yizhong-sports-centre-stadium"
+    },
+    {
+      "id": "mineirao",
+      "name": "Mineirão",
+      "sub": "Belo Horizonte · Brazil",
+      "value": 61846,
+      "display": "61,846",
+      "aliases": [
+        "Estádio Governador Magalhães Pinto",
+        "Estádio Mineirão",
+        "Cruzeiro"
+      ],
+      "wd": "Q910370"
+    },
+    {
+      "id": "king-fahd-international-stadium",
+      "name": "King Fahd International Stadium",
+      "sub": "Riyadh · Saudi Arabia",
+      "value": 61781,
+      "display": "61,781",
+      "aliases": [
+        "King Fahd Stadium"
+      ],
+      "wd": "x-stadium-king-fahd-international-stadium"
+    },
+    {
+      "id": "soldier-field",
+      "name": "Soldier Field",
+      "sub": "Chicago · United States",
+      "value": 61500,
+      "display": "61,500",
+      "wd": "Q1132413"
+    },
+    {
+      "id": "nanjing-olympic-sports-centre-stadium",
+      "name": "Nanjing Olympic Sports Centre Stadium",
+      "sub": "Nanjing · China",
+      "value": 61443,
+      "display": "61,443",
+      "aliases": [
+        "Nanjing Olympic Sports Center"
+      ],
+      "wd": "x-stadium-nanjing-olympic-sports-centre-stadium"
+    },
+    {
+      "id": "anfield",
+      "name": "Anfield",
+      "sub": "Liverpool · England",
+      "value": 61276,
+      "display": "61,276",
+      "aliases": [
+        "Liverpool FC",
+        "LFC"
+      ],
+      "wd": "Q45671"
+    },
+    {
+      "id": "estadio-benito-villamarin",
+      "name": "Estadio Benito Villamarín",
+      "sub": "Seville · Spain",
+      "value": 60720,
+      "display": "60,720",
+      "aliases": [
+        "Benito Villamarín",
+        "Villamarín",
+        "Real Betis",
+        "Betis"
+      ],
+      "wd": "Q126844"
+    },
+    {
+      "id": "abuja-stadium",
+      "name": "Abuja Stadium",
+      "sub": "Abuja · Nigeria",
+      "value": 60491,
+      "display": "60,491",
+      "aliases": [
+        "Moshood Abiola National Stadium",
+        "MKO Abiola Stadium",
+        "Abuja National Stadium"
+      ],
+      "wd": "Q335765"
+    },
+    {
+      "id": "mhparena",
+      "name": "MHPArena",
+      "sub": "Stuttgart · Germany",
+      "value": 60469,
+      "display": "60,469",
+      "aliases": [
+        "Mercedes-Benz Arena",
+        "Neckarstadion",
+        "VfB Stuttgart"
+      ],
+      "wd": "Q152349"
+    },
+    {
+      "id": "celtic-park",
+      "name": "Celtic Park",
+      "sub": "Glasgow · Scotland",
+      "value": 60411,
+      "display": "60,411",
+      "aliases": [
+        "Parkhead",
+        "Celtic"
+      ],
+      "wd": "Q216037"
+    },
+    {
+      "id": "estadio-de-la-unsa",
+      "name": "Estadio de la UNSA",
+      "sub": "Arequipa · Peru",
+      "value": 60370,
+      "display": "60,370",
+      "aliases": [
+        "Estadio Monumental Virgen de Chapi",
+        "Virgen de Chapi",
+        "Estadio Monumental de la UNSA"
+      ],
+      "wd": "x-stadium-estadio-de-la-unsa"
+    },
+    {
+      "id": "emirates-stadium",
+      "name": "Emirates Stadium",
+      "sub": "London · England",
+      "value": 60338,
+      "display": "60,338",
+      "aliases": [
+        "The Emirates",
+        "Ashburton Grove",
+        "Arsenal"
+      ],
+      "wd": "Q163995"
+    },
+    {
+      "id": "shenzhen-universiade-sports-centre-stadium",
+      "name": "Shenzhen Universiade Sports Centre Stadium",
+      "sub": "Shenzhen · China",
+      "value": 60334,
+      "display": "60,334",
+      "aliases": [
+        "Shenzhen Universiade Stadium"
+      ],
+      "wd": "x-stadium-shenzhen-universiade-sports-centre-stadium"
+    },
+    {
+      "id": "estadio-centenario",
+      "name": "Estadio Centenario",
+      "sub": "Montevideo · Uruguay",
+      "value": 60235,
+      "display": "60,235",
+      "aliases": [
+        "Centenario"
+      ],
+      "wd": "Q498245"
+    },
+    {
+      "id": "estadio-do-arruda",
+      "name": "Estádio do Arruda",
+      "sub": "Recife · Brazil",
+      "value": 60044,
+      "display": "60,044",
+      "aliases": [
+        "Estádio José do Rego Maciel",
+        "Arruda",
+        "Santa Cruz"
+      ],
+      "wd": "Q741064"
+    },
+    {
+      "id": "stade-leopold-sedar-senghor",
+      "name": "Stade Léopold Sédar Senghor",
+      "sub": "Dakar · Senegal",
+      "value": 60000,
+      "display": "60,000",
+      "aliases": [
+        "Stade de l'Amitié"
+      ],
+      "wd": "Q2116306"
+    },
+    {
+      "id": "al-bayt-stadium",
+      "name": "Al Bayt Stadium",
+      "sub": "Al-Khor · Qatar",
+      "value": 60000,
+      "display": "60,000",
+      "wd": "x-stadium-al-bayt-stadium"
+    },
+    {
+      "id": "benjamin-mkapa-national-stadium",
+      "name": "Benjamin Mkapa National Stadium",
+      "sub": "Dar es-Salaam · Tanzania",
+      "value": 60000,
+      "display": "60,000",
+      "aliases": [
+        "Benjamin Mkapa Stadium"
+      ],
+      "wd": "Q850225"
+    },
+    {
+      "id": "hefei-olympic-sports-centre-stadium",
+      "name": "Hefei Olympic Sports Centre Stadium",
+      "sub": "Hefei · China",
+      "value": 60000,
+      "display": "60,000",
+      "wd": "x-stadium-hefei-olympic-sports-centre-stadium"
+    },
+    {
+      "id": "jaber-al-ahmad-international-stadium",
+      "name": "Jaber al-Ahmad International Stadium",
+      "sub": "Kuwait City · Kuwait",
+      "value": 60000,
+      "display": "60,000",
+      "aliases": [
+        "Jaber Al-Ahmad Stadium"
+      ],
+      "wd": "x-stadium-jaber-al-ahmad-international-stadium"
+    },
+    {
+      "id": "hammadi-agrebi-stadium",
+      "name": "Hammadi Agrebi Stadium",
+      "sub": "Tunis · Tunisia",
+      "value": 60000,
+      "display": "60,000",
+      "aliases": [
+        "Stade Olympique de Radès",
+        "Radès Stadium",
+        "Stade 7 Novembre"
+      ],
+      "wd": "x-stadium-hammadi-agrebi-stadium"
+    },
+    {
+      "id": "jawaharlal-nehru-stadium",
+      "name": "Jawaharlal Nehru Stadium",
+      "sub": "New Delhi · India",
+      "value": 60000,
+      "display": "60,000",
+      "aliases": [
+        "JLN Stadium"
+      ],
+      "wd": "Q864849"
+    },
+    {
+      "id": "mogadishu-stadium",
+      "name": "Mogadishu Stadium",
+      "sub": "Mogadishu · Somalia",
+      "value": 60000,
+      "display": "60,000",
+      "wd": "Q6890414"
+    },
+    {
+      "id": "national-heroes-stadium",
+      "name": "National Heroes Stadium",
+      "sub": "Lusaka · Zambia",
+      "value": 60000,
+      "display": "60,000",
+      "wd": "x-stadium-national-heroes-stadium"
+    },
+    {
+      "id": "odi-stadium",
+      "name": "Odi Stadium",
+      "sub": "Mabopane · South Africa",
+      "value": 60000,
+      "display": "60,000",
+      "wd": "x-stadium-odi-stadium"
+    },
+    {
+      "id": "morodok-techo-national-stadium",
+      "name": "Morodok Techo National Stadium",
+      "sub": "Phnom Penh · Cambodia",
+      "value": 60000,
+      "display": "60,000",
+      "wd": "Q85786340"
+    },
+    {
+      "id": "shenyang-olympic-sports-centre-stadium",
+      "name": "Shenyang Olympic Sports Centre Stadium",
+      "sub": "Shenyang · China",
+      "value": 60000,
+      "display": "60,000",
+      "wd": "x-stadium-shenyang-olympic-sports-centre-stadium"
+    },
+    {
+      "id": "optus-stadium",
+      "name": "Optus Stadium",
+      "sub": "Perth · Australia",
+      "value": 60000,
+      "display": "60,000",
+      "aliases": [
+        "Perth Stadium"
+      ],
+      "wd": "x-stadium-optus-stadium"
+    },
+    {
+      "id": "national-sports-stadium",
+      "name": "National Sports Stadium",
+      "sub": "Harare · Zimbabwe",
+      "value": 60000,
+      "display": "60,000",
+      "wd": "Q1451543"
+    },
+    {
+      "id": "stade-tata-raphael",
+      "name": "Stade Tata Raphaël",
+      "sub": "Kinshasa · DR Congo",
+      "value": 60000,
+      "display": "60,000",
+      "wd": "Q3495887"
+    },
+    {
+      "id": "estadio-monumental-isidro-romero-carbo",
+      "name": "Estadio Monumental Isidro Romero Carbo",
+      "sub": "Guayaquil · Ecuador",
+      "value": 59283,
+      "display": "59,283",
+      "aliases": [
+        "Monumental Isidro Romero Carbo",
+        "Estadio Monumental de Guayaquil"
+      ],
+      "wd": "x-stadium-estadio-monumental-isidro-romero-carbo"
+    },
+    {
+      "id": "groupama-stadium",
+      "name": "Groupama Stadium",
+      "sub": "Lyon · France",
+      "value": 59186,
+      "display": "59,186",
+      "aliases": [
+        "Parc Olympique Lyonnais",
+        "OL Stadium",
+        "Olympique Lyonnais",
+        "Lyon"
+      ],
+      "wd": "Q8507"
+    },
+    {
+      "id": "chongqing-olympic-sports-centre-stadium",
+      "name": "Chongqing Olympic Sports Centre Stadium",
+      "sub": "Chongqing · China",
+      "value": 58680,
+      "display": "58,680",
+      "wd": "x-stadium-chongqing-olympic-sports-centre-stadium"
+    },
+    {
+      "id": "kazimierz-gorski-national-stadium",
+      "name": "Kazimierz Górski National Stadium",
+      "sub": "Warsaw · Poland",
+      "value": 58580,
+      "display": "58,580",
+      "aliases": [
+        "Stadion Narodowy",
+        "National Stadium Warsaw",
+        "PGE Narodowy"
+      ],
+      "wd": "Q179693"
+    },
+    {
+      "id": "stadio-san-nicola",
+      "name": "Stadio San Nicola",
+      "sub": "Bari · Italy",
+      "value": 58270,
+      "display": "58,270",
+      "aliases": [
+        "San Nicola"
+      ],
+      "wd": "Q328698"
+    },
+    {
+      "id": "deutsche-bank-park",
+      "name": "Deutsche Bank Park",
+      "sub": "Frankfurt · Germany",
+      "value": 58000,
+      "display": "58,000",
+      "aliases": [
+        "Waldstadion",
+        "Commerzbank-Arena",
+        "Frankfurt Stadium",
+        "Eintracht Frankfurt"
+      ],
+      "wd": "Q157273"
+    },
+    {
+      "id": "la-bombonera",
+      "name": "La Bombonera",
+      "sub": "Buenos Aires · Argentina",
+      "value": 57200,
+      "display": "57,200",
+      "aliases": [
+        "Bombonera",
+        "Estadio Alberto J. Armando",
+        "Boca Juniors"
+      ],
+      "wd": "Q499855"
+    },
+    {
+      "id": "volksparkstadion",
+      "name": "Volksparkstadion",
+      "sub": "Hamburg · Germany",
+      "value": 57030,
+      "display": "57,030",
+      "aliases": [
+        "Hamburger SV",
+        "HSV"
+      ],
+      "wd": "Q150933"
+    },
+    {
+      "id": "estadio-mario-alberto-kempes",
+      "name": "Estadio Mario Alberto Kempes",
+      "sub": "Córdoba · Argentina",
+      "value": 57000,
+      "display": "57,000",
+      "aliases": [
+        "Estadio Kempes"
+      ],
+      "wd": "x-stadium-estadio-mario-alberto-kempes"
+    },
+    {
+      "id": "jinan-olympic-sports-centre-stadium",
+      "name": "Jinan Olympic Sports Centre Stadium",
+      "sub": "Jinan · China",
+      "value": 56808,
+      "display": "56,808",
+      "wd": "x-stadium-jinan-olympic-sports-centre-stadium"
+    },
+    {
+      "id": "estadio-jalisco",
+      "name": "Estadio Jalisco",
+      "sub": "Guadalajara · Mexico",
+      "value": 56713,
+      "display": "56,713",
+      "wd": "Q1346716"
+    },
+    {
+      "id": "commonwealth-stadium",
+      "name": "Commonwealth Stadium",
+      "sub": "Edmonton · Canada",
+      "value": 56302,
+      "display": "56,302",
+      "wd": "x-stadium-commonwealth-stadium"
+    },
+    {
+      "id": "19-may-1956-stadium",
+      "name": "19 May 1956 Stadium",
+      "sub": "Annaba · Algeria",
+      "value": 56000,
+      "display": "56,000",
+      "aliases": [
+        "Stade du 19 Mai 1956"
+      ],
+      "wd": "x-stadium-19-may-1956-stadium"
+    },
+    {
+      "id": "estadi-olimpic-lluis-companys",
+      "name": "Estadi Olímpic Lluís Companys",
+      "sub": "Barcelona · Spain",
+      "value": 55926,
+      "display": "55,926",
+      "aliases": [
+        "Montjuïc",
+        "Estadi Olímpic",
+        "Lluís Companys"
+      ],
+      "wd": "x-stadium-estadi-olimpic-lluis-companys"
+    },
+    {
+      "id": "el-cilindro",
+      "name": "El Cilindro",
+      "sub": "Avellaneda · Argentina",
+      "value": 55880,
+      "display": "55,880",
+      "aliases": [
+        "Estadio Presidente Perón",
+        "Racing Club"
+      ],
+      "wd": "Q1196031"
+    },
+    {
+      "id": "arena-do-gremio",
+      "name": "Arena do Grêmio",
+      "sub": "Porto Alegre · Brazil",
+      "value": 55662,
+      "display": "55,662",
+      "aliases": [
+        "Grêmio"
+      ],
+      "wd": "Q655753"
+    },
+    {
+      "id": "arena-nationala",
+      "name": "Arena Națională",
+      "sub": "Bucharest · Romania",
+      "value": 55634,
+      "display": "55,634",
+      "aliases": [
+        "National Arena"
+      ],
+      "wd": "x-stadium-arena-nationala"
+    },
+    {
+      "id": "stadion-rajko-mitic",
+      "name": "Stadion Rajko Mitić",
+      "sub": "Belgrade · Serbia",
+      "value": 55538,
+      "display": "55,538",
+      "aliases": [
+        "Red Star Stadium",
+        "Marakana",
+        "Rajko Mitić Stadium",
+        "Red Star Belgrade"
+      ],
+      "wd": "Q478000"
+    },
+    {
+      "id": "stadion-slaski",
+      "name": "Stadion Śląski",
+      "sub": "Chorzów · Poland",
+      "value": 55211,
+      "display": "55,211",
+      "aliases": [
+        "Silesian Stadium"
+      ],
+      "wd": "Q599592"
+    },
+    {
+      "id": "etihad-stadium",
+      "name": "Etihad Stadium",
+      "sub": "Manchester · England",
+      "value": 55097,
+      "display": "55,097",
+      "aliases": [
+        "City of Manchester Stadium",
+        "Etihad",
+        "Manchester City",
+        "Man City"
+      ],
+      "wd": "x-stadium-etihad-stadium"
+    },
+    {
+      "id": "moi-international-sports-centre",
+      "name": "Moi International Sports Centre",
+      "sub": "Nairobi · Kenya",
+      "value": 55000,
+      "display": "55,000",
+      "aliases": [
+        "Kasarani",
+        "Kasarani Stadium"
+      ],
+      "wd": "Q1385710"
+    },
+    {
+      "id": "singapore-national-stadium",
+      "name": "Singapore National Stadium",
+      "sub": "Singapore · Singapore",
+      "value": 55000,
+      "display": "55,000",
+      "aliases": [
+        "National Stadium Singapore"
+      ],
+      "wd": "x-stadium-singapore-national-stadium"
+    },
+    {
+      "id": "kaohsiung-national-stadium",
+      "name": "Kaohsiung National Stadium",
+      "sub": "Kaohsiung · Taiwan",
+      "value": 55000,
+      "display": "55,000",
+      "aliases": [
+        "National Stadium Kaohsiung",
+        "World Games Stadium"
+      ],
+      "wd": "x-stadium-kaohsiung-national-stadium"
+    },
+    {
+      "id": "helong-stadium",
+      "name": "Helong Stadium",
+      "sub": "Changsha · China",
+      "value": 55000,
+      "display": "55,000",
+      "aliases": [
+        "He Long Stadium"
+      ],
+      "wd": "Q282533"
+    },
+    {
+      "id": "cape-town-stadium",
+      "name": "Cape Town Stadium",
+      "sub": "Cape Town · South Africa",
+      "value": 55000,
+      "display": "55,000",
+      "aliases": [
+        "DHL Stadium",
+        "Green Point Stadium"
+      ],
+      "wd": "Q173559"
+    },
+    {
+      "id": "plovdiv-stadium",
+      "name": "Plovdiv Stadium",
+      "sub": "Plovdiv · Bulgaria",
+      "value": 55000,
+      "display": "55,000",
+      "wd": "Q613759"
+    },
+    {
+      "id": "johan-cruyff-arena",
+      "name": "Johan Cruyff Arena",
+      "sub": "Amsterdam · Netherlands",
+      "value": 54990,
+      "display": "54,990",
+      "aliases": [
+        "Johan Cruijff Arena",
+        "Amsterdam Arena",
+        "Ajax"
+      ],
+      "wd": "Q207109"
+    },
+    {
+      "id": "tianhe-stadium",
+      "name": "Tianhe Stadium",
+      "sub": "Guangzhou · China",
+      "value": 54856,
+      "display": "54,856",
+      "wd": "Q929126"
+    },
+    {
+      "id": "stadio-diego-armando-maradona",
+      "name": "Stadio Diego Armando Maradona",
+      "sub": "Naples · Italy",
+      "value": 54726,
+      "display": "54,726",
+      "aliases": [
+        "Stadio San Paolo",
+        "San Paolo",
+        "Napoli"
+      ],
+      "wd": "x-stadium-stadio-diego-armando-maradona"
+    },
+    {
+      "id": "tianjin-olympic-sports-centre-stadium",
+      "name": "Tianjin Olympic Sports Centre Stadium",
+      "sub": "Tianjin · China",
+      "value": 54696,
+      "display": "54,696",
+      "aliases": [
+        "Tianjin Olympic Center Stadium"
+      ],
+      "wd": "Q834369"
+    },
+    {
+      "id": "merkur-spiel-arena",
+      "name": "Merkur Spiel-Arena",
+      "sub": "Düsseldorf · Germany",
+      "value": 54600,
+      "display": "54,600",
+      "aliases": [
+        "Esprit Arena",
+        "LTU Arena",
+        "Fortuna Düsseldorf"
+      ],
+      "wd": "Q155351"
+    },
+    {
+      "id": "boris-paichadze-dinamo-arena",
+      "name": "Boris Paichadze Dinamo Arena",
+      "sub": "Tbilisi · Georgia",
+      "value": 54549,
+      "display": "54,549",
+      "aliases": [
+        "Boris Paitchadze Dinamo Arena",
+        "Dinamo Arena",
+        "Dinamo Tbilisi"
+      ],
+      "wd": "Q290801"
+    },
+    {
+      "id": "wuhan-sports-centre-stadium",
+      "name": "Wuhan Sports Centre Stadium",
+      "sub": "Wuhan · China",
+      "value": 54357,
+      "display": "54,357",
+      "wd": "x-stadium-wuhan-sports-centre-stadium"
+    },
+    {
+      "id": "bc-place",
+      "name": "BC Place",
+      "sub": "Vancouver · Canada",
+      "value": 54320,
+      "display": "54,320",
+      "aliases": [
+        "BC Place Stadium"
+      ],
+      "wd": "Q612227"
+    },
+    {
+      "id": "hrazdan-stadium",
+      "name": "Hrazdan Stadium",
+      "sub": "Yerevan · Armenia",
+      "value": 54208,
+      "display": "54,208",
+      "wd": "Q683493"
+    },
+    {
+      "id": "war-memorial-stadium",
+      "name": "War Memorial Stadium",
+      "sub": "Little Rock · United States",
+      "value": 54120,
+      "display": "54,120",
+      "wd": "x-stadium-war-memorial-stadium"
+    },
+    {
+      "id": "borussia-park",
+      "name": "Borussia-Park",
+      "sub": "Mönchengladbach · Germany",
+      "value": 54057,
+      "display": "54,057",
+      "aliases": [
+        "Borussia Mönchengladbach",
+        "Gladbach"
+      ],
+      "wd": "x-stadium-borussia-park"
+    },
+    {
+      "id": "moses-mabhida-stadium",
+      "name": "Moses Mabhida Stadium",
+      "sub": "Durban · South Africa",
+      "value": 54000,
+      "display": "54,000",
+      "wd": "Q175289"
+    },
+    {
+      "id": "rams-park",
+      "name": "RAMS Park",
+      "sub": "Istanbul · Turkey",
+      "value": 53978,
+      "display": "53,978",
+      "aliases": [
+        "Nef Stadium",
+        "Türk Telekom Arena",
+        "Galatasaray"
+      ],
+      "wd": "Q81492"
+    },
+    {
+      "id": "busan-asiad-main-stadium",
+      "name": "Busan Asiad Main Stadium",
+      "sub": "Busan · South Korea",
+      "value": 53864,
+      "display": "53,864",
+      "aliases": [
+        "Busan Asiad Stadium"
+      ],
+      "wd": "x-stadium-busan-asiad-main-stadium"
+    },
+    {
+      "id": "mangueirao",
+      "name": "Mangueirão",
+      "sub": "Belém · Brazil",
+      "value": 53645,
+      "display": "53,645",
+      "aliases": [
+        "Estádio Estadual Jornalista Edgar Augusto Proença"
+      ],
+      "wd": "Q1370732"
+    },
+    {
+      "id": "estadio-unico-diego-armando-maradona",
+      "name": "Estadio Único Diego Armando Maradona",
+      "sub": "La Plata · Argentina",
+      "value": 53600,
+      "display": "53,600",
+      "aliases": [
+        "Estadio Ciudad de La Plata",
+        "Estadio Único de La Plata"
+      ],
+      "wd": "x-stadium-estadio-unico-diego-armando-maradona"
+    },
+    {
+      "id": "estadio-bbva",
+      "name": "Estadio BBVA",
+      "sub": "Monterrey · Mexico",
+      "value": 53529,
+      "display": "53,529",
+      "aliases": [
+        "Estadio BBVA Bancomer",
+        "Estadio Monterrey",
+        "CF Monterrey"
+      ],
+      "wd": "Q3058827"
+    },
+    {
+      "id": "adelaide-oval",
+      "name": "Adelaide Oval",
+      "sub": "Adelaide · Australia",
+      "value": 53500,
+      "display": "53,500",
+      "wd": "x-stadium-adelaide-oval"
+    },
+    {
+      "id": "docklands-stadium",
+      "name": "Docklands Stadium",
+      "sub": "Melbourne · Australia",
+      "value": 53359,
+      "display": "53,359",
+      "aliases": [
+        "Marvel Stadium"
+      ],
+      "wd": "x-stadium-docklands-stadium"
+    },
+    {
+      "id": "parque-do-sabia",
+      "name": "Parque do Sabiá",
+      "sub": "Uberlândia · Brazil",
+      "value": 53350,
+      "display": "53,350",
+      "aliases": [
+        "Estádio Municipal João Havelange",
+        "Estádio Parque do Sabiá"
+      ],
+      "wd": "Q1370705"
+    },
+    {
+      "id": "san-mames",
+      "name": "San Mamés",
+      "sub": "Bilbao · Spain",
+      "value": 53332,
+      "display": "53,332",
+      "aliases": [
+        "Athletic Bilbao",
+        "Athletic Club"
+      ],
+      "wd": "Q182864"
+    },
+    {
+      "id": "aleppo-international-stadium",
+      "name": "Aleppo International Stadium",
+      "sub": "Aleppo · Syria",
+      "value": 53200,
+      "display": "53,200",
+      "wd": "Q734097"
+    },
+    {
+      "id": "estadio-nacional-del-peru",
+      "name": "Estadio Nacional del Perú",
+      "sub": "Lima · Peru",
+      "value": 53086,
+      "display": "53,086",
+      "aliases": [
+        "Estadio Nacional de Lima"
+      ],
+      "wd": "x-stadium-estadio-nacional-del-peru"
+    },
+    {
+      "id": "hill-dickinson-stadium",
+      "name": "Hill Dickinson Stadium",
+      "sub": "Liverpool · England",
+      "value": 52769,
+      "display": "52,769",
+      "aliases": [
+        "Everton Stadium",
+        "Bramley-Moore Dock Stadium",
+        "Everton"
+      ],
+      "wd": "x-stadium-hill-dickinson-stadium"
+    },
+    {
+      "id": "huanglong-stadium",
+      "name": "Huanglong Stadium",
+      "sub": "Hangzhou · China",
+      "value": 52672,
+      "display": "52,672",
+      "aliases": [
+        "Yellow Dragon Stadium",
+        "Yellow Dragon Sports Center"
+      ],
+      "wd": "x-stadium-huanglong-stadium"
+    },
+    {
+      "id": "suncorp-stadium",
+      "name": "Suncorp Stadium",
+      "sub": "Brisbane · Australia",
+      "value": 52500,
+      "display": "52,500",
+      "aliases": [
+        "Lang Park"
+      ],
+      "wd": "Q643328"
+    },
+    {
+      "id": "st-james-park",
+      "name": "St James' Park",
+      "sub": "Newcastle upon Tyne · England",
+      "value": 52405,
+      "display": "52,405",
+      "aliases": [
+        "Newcastle United",
+        "Newcastle"
+      ],
+      "wd": "Q1856701"
+    },
+    {
+      "id": "estadio-jose-alvalade",
+      "name": "Estádio José Alvalade",
+      "sub": "Lisbon · Portugal",
+      "value": 52095,
+      "display": "52,095",
+      "aliases": [
+        "Alvalade",
+        "Sporting CP",
+        "Sporting Lisbon"
+      ],
+      "wd": "Q287359"
+    },
+    {
+      "id": "kings-park-stadium",
+      "name": "Kings Park Stadium",
+      "sub": "Durban · South Africa",
+      "value": 52000,
+      "display": "52,000",
+      "aliases": [
+        "Kings Park"
+      ],
+      "wd": "x-stadium-kings-park-stadium"
+    },
+    {
+      "id": "newlands-stadium",
+      "name": "Newlands Stadium",
+      "sub": "Cape Town · South Africa",
+      "value": 51900,
+      "display": "51,900",
+      "aliases": [
+        "Newlands"
+      ],
+      "wd": "Q1368280"
+    },
+    {
+      "id": "hampden-park",
+      "name": "Hampden Park",
+      "sub": "Glasgow · Scotland",
+      "value": 51866,
+      "display": "51,866",
+      "aliases": [
+        "Hampden"
+      ],
+      "wd": "Q193651"
+    },
+    {
+      "id": "estadio-monumental-de-maturin",
+      "name": "Estadio Monumental de Maturín",
+      "sub": "Maturín · Venezuela",
+      "value": 51796,
+      "display": "51,796",
+      "wd": "Q647312"
+    },
+    {
+      "id": "loftus-versfeld-stadium",
+      "name": "Loftus Versfeld Stadium",
+      "sub": "Pretoria · South Africa",
+      "value": 51762,
+      "display": "51,762",
+      "aliases": [
+        "Loftus Versfeld",
+        "Loftus"
+      ],
+      "wd": "Q181398"
+    },
+    {
+      "id": "aviva-stadium",
+      "name": "Aviva Stadium",
+      "sub": "Dublin · Ireland",
+      "value": 51711,
+      "display": "51,711",
+      "aliases": [
+        "Lansdowne Road"
+      ],
+      "wd": "Q244402"
+    },
+    {
+      "id": "ibrox-stadium",
+      "name": "Ibrox Stadium",
+      "sub": "Glasgow · Scotland",
+      "value": 51700,
+      "display": "51,700",
+      "aliases": [
+        "Ibrox",
+        "Rangers"
+      ],
+      "wd": "Q208709"
+    },
+    {
+      "id": "guiyang-olympic-sports-centre-stadium",
+      "name": "Guiyang Olympic Sports Centre Stadium",
+      "sub": "Guiyang · China",
+      "value": 51638,
+      "display": "51,638",
+      "wd": "x-stadium-guiyang-olympic-sports-centre-stadium"
+    },
+    {
+      "id": "hohhot-city-stadium",
+      "name": "Hohhot City Stadium",
+      "sub": "Hohhot · China",
+      "value": 51632,
+      "display": "51,632",
+      "wd": "x-stadium-hohhot-city-stadium"
+    },
+    {
+      "id": "rajamangala-national-stadium",
+      "name": "Rajamangala National Stadium",
+      "sub": "Bangkok · Thailand",
+      "value": 51552,
+      "display": "51,552",
+      "aliases": [
+        "Rajamangala Stadium"
+      ],
+      "wd": "x-stadium-rajamangala-national-stadium"
+    },
+    {
+      "id": "donbas-arena",
+      "name": "Donbas Arena",
+      "sub": "Donetsk · Ukraine",
+      "value": 51504,
+      "display": "51,504",
+      "wd": "Q180479"
+    },
+    {
+      "id": "izmir-ataturk-stadium",
+      "name": "İzmir Atatürk Stadium",
+      "sub": "İzmir · Turkey",
+      "value": 51295,
+      "display": "51,295",
+      "aliases": [
+        "İzmir Atatürk Stadyumu"
+      ],
+      "wd": "Q259830"
+    },
+    {
+      "id": "de-kuip",
+      "name": "De Kuip",
+      "sub": "Rotterdam · Netherlands",
+      "value": 51117,
+      "display": "51,117",
+      "aliases": [
+        "Stadion Feijenoord",
+        "Feyenoord"
+      ],
+      "wd": "Q330298"
+    },
+    {
+      "id": "ghadir-stadium",
+      "name": "Ghadir Stadium",
+      "sub": "Ahvaz · Iran",
+      "value": 51000,
+      "display": "51,000",
+      "wd": "Q5555191"
+    },
+    {
+      "id": "estadio-beira-rio",
+      "name": "Estádio Beira-Rio",
+      "sub": "Porto Alegre · Brazil",
+      "value": 50942,
+      "display": "50,942",
+      "aliases": [
+        "Estádio José Pinheiro Borda",
+        "Beira-Rio",
+        "Internacional"
+      ],
+      "wd": "Q1050224"
+    },
+    {
+      "id": "shizuoka-stadium",
+      "name": "Shizuoka Stadium",
+      "sub": "Fukuroi · Japan",
+      "value": 50889,
+      "display": "50,889",
+      "aliases": [
+        "Ecopa Stadium"
+      ],
+      "wd": "Q482591"
+    },
+    {
+      "id": "ernst-happel-stadion",
+      "name": "Ernst-Happel-Stadion",
+      "sub": "Vienna · Austria",
+      "value": 50865,
+      "display": "50,865",
+      "aliases": [
+        "Ernst Happel Stadium",
+        "Praterstadion",
+        "Prater Stadium"
+      ],
+      "wd": "Q185741"
+    },
+    {
+      "id": "hocine-ait-ahmed-stadium",
+      "name": "Hocine Ait Ahmed Stadium",
+      "sub": "Tizi Ouzou · Algeria",
+      "value": 50766,
+      "display": "50,766",
+      "wd": "Q3495484"
+    },
+    {
+      "id": "estadio-cuauhtemoc",
+      "name": "Estadio Cuauhtémoc",
+      "sub": "Puebla · Mexico",
+      "value": 50754,
+      "display": "50,754",
+      "wd": "Q124769"
+    },
+    {
+      "id": "phoenix-hill-football-stadium",
+      "name": "Phoenix Hill Football Stadium",
+      "sub": "Chengdu · China",
+      "value": 50695,
+      "display": "50,695",
+      "wd": "x-stadium-phoenix-hill-football-stadium"
+    },
+    {
+      "id": "strawberry-arena",
+      "name": "Strawberry Arena",
+      "sub": "Solna · Sweden",
+      "value": 50653,
+      "display": "50,653",
+      "aliases": [
+        "Friends Arena",
+        "Nationalarenan"
+      ],
+      "wd": "Q1138684"
+    },
+    {
+      "id": "sukru-saracoglu-stadium",
+      "name": "Şükrü Saracoğlu Stadium",
+      "sub": "Istanbul · Turkey",
+      "value": 50509,
+      "display": "50,509",
+      "aliases": [
+        "Ülker Stadyumu",
+        "Ülker Stadium",
+        "Fenerbahçe"
+      ],
+      "wd": "Q222865"
+    },
+    {
+      "id": "stade-pierre-mauroy",
+      "name": "Stade Pierre-Mauroy",
+      "sub": "Lille · France",
+      "value": 50186,
+      "display": "50,186",
+      "aliases": [
+        "Decathlon Arena",
+        "Grand Stade Lille Métropole",
+        "Lille"
+      ],
+      "wd": "x-stadium-stade-pierre-mauroy"
+    },
+    {
+      "id": "king-baudouin-stadium",
+      "name": "King Baudouin Stadium",
+      "sub": "Brussels · Belgium",
+      "value": 50122,
+      "display": "50,122",
+      "aliases": [
+        "Stade Roi Baudouin",
+        "Koning Boudewijnstadion",
+        "Heysel Stadium",
+        "Heysel"
+      ],
+      "wd": "x-stadium-king-baudouin-stadium"
+    },
+    {
+      "id": "shaanxi-province-stadium",
+      "name": "Shaanxi Province Stadium",
+      "sub": "Xi'an · China",
+      "value": 50100,
+      "display": "50,100",
+      "wd": "Q3272603"
+    },
+    {
+      "id": "ajinomoto-stadium",
+      "name": "Ajinomoto Stadium",
+      "sub": "Chofu · Japan",
+      "value": 50100,
+      "display": "50,100",
+      "aliases": [
+        "Tokyo Stadium"
+      ],
+      "wd": "Q412824"
+    },
+    {
+      "id": "estadio-do-dragao",
+      "name": "Estádio do Dragão",
+      "sub": "Porto · Portugal",
+      "value": 50033,
+      "display": "50,033",
+      "aliases": [
+        "Dragão",
+        "FC Porto"
+      ],
+      "wd": "Q271454"
+    },
+    {
+      "id": "arena-fonte-nova",
+      "name": "Arena Fonte Nova",
+      "sub": "Salvador · Brazil",
+      "value": 50025,
+      "display": "50,025",
+      "aliases": [
+        "Casa de Apostas Arena Fonte Nova",
+        "Fonte Nova",
+        "Itaipava Arena Fonte Nova"
+      ],
+      "wd": "Q6499360"
+    },
+    {
+      "id": "kai-tak-stadium",
+      "name": "Kai Tak Stadium",
+      "sub": "Kowloon City · Hong Kong",
+      "value": 50000,
+      "display": "50,000",
+      "wd": "x-stadium-kai-tak-stadium"
+    },
+    {
+      "id": "stade-olympique-de-sousse",
+      "name": "Stade Olympique de Sousse",
+      "sub": "Sousse · Tunisia",
+      "value": 50000,
+      "display": "50,000",
+      "wd": "Q919953"
+    },
+    {
+      "id": "rheinenergiestadion",
+      "name": "RheinEnergieStadion",
+      "sub": "Cologne · Germany",
+      "value": 50000,
+      "display": "50,000",
+      "aliases": [
+        "Müngersdorfer Stadion",
+        "1. FC Köln",
+        "FC Köln"
+      ],
+      "wd": "x-stadium-rheinenergiestadion"
+    },
+    {
+      "id": "harbin-sports-city-centre-stadium",
+      "name": "Harbin Sports City Centre Stadium",
+      "sub": "Harbin · China",
+      "value": 50000,
+      "display": "50,000",
+      "wd": "x-stadium-harbin-sports-city-centre-stadium"
+    },
+    {
+      "id": "greenfield-international-stadium",
+      "name": "Greenfield International Stadium",
+      "sub": "Trivandrum · India",
+      "value": 50000,
+      "display": "50,000",
+      "wd": "x-stadium-greenfield-international-stadium"
+    },
+    {
+      "id": "ems-stadium",
+      "name": "EMS Stadium",
+      "sub": "Kozhikode · India",
+      "value": 50000,
+      "display": "50,000",
+      "wd": "x-stadium-ems-stadium"
+    },
+    {
+      "id": "kd-singh-babu-stadium",
+      "name": "KD Singh Babu Stadium",
+      "sub": "Lucknow · India",
+      "value": 50000,
+      "display": "50,000",
+      "aliases": [
+        "K. D. Singh Babu Stadium"
+      ],
+      "wd": "x-stadium-kd-singh-babu-stadium"
+    },
+    {
+      "id": "eden-park",
+      "name": "Eden Park",
+      "sub": "Auckland · New Zealand",
+      "value": 50000,
+      "display": "50,000",
+      "wd": "x-stadium-eden-park"
+    },
+    {
+      "id": "estadio-11-de-novembro",
+      "name": "Estádio 11 de Novembro",
+      "sub": "Luanda · Angola",
+      "value": 50000,
+      "display": "50,000",
+      "wd": "Q1370665"
+    },
+    {
+      "id": "henan-provincial-stadium",
+      "name": "Henan Provincial Stadium",
+      "sub": "Zhengzhou · China",
+      "value": 50000,
+      "display": "50,000",
+      "wd": "x-stadium-henan-provincial-stadium"
+    },
+    {
+      "id": "jiangxi-olympic-sports-center",
+      "name": "Jiangxi Olympic Sports Center",
+      "sub": "Nanchang · China",
+      "value": 50000,
+      "display": "50,000",
+      "wd": "x-stadium-jiangxi-olympic-sports-center"
+    },
+    {
+      "id": "max-morlock-stadion",
+      "name": "Max-Morlock-Stadion",
+      "sub": "Nuremberg · Germany",
+      "value": 50000,
+      "display": "50,000",
+      "aliases": [
+        "Frankenstadion",
+        "1. FC Nürnberg"
+      ],
+      "wd": "Q152599"
+    },
+    {
+      "id": "june-11-stadium",
+      "name": "June 11 Stadium",
+      "sub": "Tripoli · Libya",
+      "value": 50000,
+      "display": "50,000",
+      "aliases": [
+        "11 June Stadium"
+      ],
+      "wd": "x-stadium-june-11-stadium"
+    },
+    {
+      "id": "xinjiang-sports-centre-stadium",
+      "name": "Xinjiang Sports Centre Stadium",
+      "sub": "Urumqi · China",
+      "value": 50000,
+      "display": "50,000",
+      "wd": "x-stadium-xinjiang-sports-centre-stadium"
+    },
+    {
+      "id": "kim-il-sung-stadium",
+      "name": "Kim Il-sung Stadium",
+      "sub": "Pyongyang · North Korea",
+      "value": 50000,
+      "display": "50,000",
+      "wd": "Q1137515"
+    },
+    {
+      "id": "edion-stadium-hiroshima",
+      "name": "Edion Stadium Hiroshima",
+      "sub": "Hiroshima · Japan",
+      "value": 50000,
+      "display": "50,000",
+      "aliases": [
+        "Hiroshima Big Arch",
+        "Hiroshima Stadium"
+      ],
+      "wd": "Q1366020"
+    },
+    {
+      "id": "pars-shiraz-stadium",
+      "name": "Pars Shiraz Stadium",
+      "sub": "Shiraz · Iran",
+      "value": 50000,
+      "display": "50,000",
+      "wd": "Q210151"
+    },
+    {
+      "id": "stade-du-26-mars",
+      "name": "Stade du 26 Mars",
+      "sub": "Bamako · Mali",
+      "value": 50000,
+      "display": "50,000",
+      "wd": "Q3496077"
+    },
+    {
+      "id": "stade-abdoulaye-wade",
+      "name": "Stade Abdoulaye Wade",
+      "sub": "Dakar · Senegal",
+      "value": 50000,
+      "display": "50,000",
+      "aliases": [
+        "Diamniadio Olympic Stadium",
+        "Stade Olympique de Diamniadio"
+      ],
+      "wd": "x-stadium-stade-abdoulaye-wade"
+    },
+    {
+      "id": "sultan-mizan-zainal-abidin-stadium",
+      "name": "Sultan Mizan Zainal Abidin Stadium",
+      "sub": "Kuala Terengganu · Malaysia",
+      "value": 50000,
+      "display": "50,000",
+      "wd": "Q7636706"
+    },
+    {
+      "id": "estadio-akron",
+      "name": "Estadio Akron",
+      "sub": "Guadalajara · Mexico",
+      "value": 49850,
+      "display": "49,850",
+      "aliases": [
+        "Estadio Omnilife",
+        "Estadio Chivas",
+        "Estadio Guadalajara",
+        "Chivas"
+      ],
+      "wd": "Q666183"
+    },
+    {
+      "id": "levy-mwanawasa-stadium",
+      "name": "Levy Mwanawasa Stadium",
+      "sub": "Lusaka · Zambia",
+      "value": 49800,
+      "display": "49,800",
+      "wd": "x-stadium-levy-mwanawasa-stadium"
+    },
+    {
+      "id": "fritz-walter-stadion",
+      "name": "Fritz-Walter-Stadion",
+      "sub": "Kaiserslautern · Germany",
+      "value": 49780,
+      "display": "49,780",
+      "aliases": [
+        "Betzenberg",
+        "1. FC Kaiserslautern"
+      ],
+      "wd": "x-stadium-fritz-walter-stadion"
+    },
+    {
+      "id": "estadio-jose-amalfitani",
+      "name": "Estadio José Amalfitani",
+      "sub": "Buenos Aires · Argentina",
+      "value": 49540,
+      "display": "49,540",
+      "aliases": [
+        "José Amalfitani Stadium",
+        "Vélez Sarsfield"
+      ],
+      "wd": "Q1196603"
+    },
+    {
+      "id": "camille-chamoun-sports-city-stadium",
+      "name": "Camille Chamoun Sports City Stadium",
+      "sub": "Beirut · Lebanon",
+      "value": 49500,
+      "display": "49,500",
+      "wd": "x-stadium-camille-chamoun-sports-city-stadium"
+    },
+    {
+      "id": "mestalla",
+      "name": "Mestalla",
+      "sub": "Valencia · Spain",
+      "value": 49430,
+      "display": "49,430",
+      "aliases": [
+        "Estadio Mestalla",
+        "Valencia CF"
+      ],
+      "wd": "Q202762"
+    },
+    {
+      "id": "miyagi-stadium",
+      "name": "Miyagi Stadium",
+      "sub": "Rifu · Japan",
+      "value": 49133,
+      "display": "49,133",
+      "wd": "Q494773"
+    },
+    {
+      "id": "incheon-munhak-stadium",
+      "name": "Incheon Munhak Stadium",
+      "sub": "Incheon · South Korea",
+      "value": 49084,
+      "display": "49,084",
+      "wd": "Q138554"
+    },
+    {
+      "id": "heinz-von-heiden-arena",
+      "name": "Heinz-von-Heiden-Arena",
+      "sub": "Hanover · Germany",
+      "value": 49000,
+      "display": "49,000",
+      "aliases": [
+        "Niedersachsenstadion",
+        "AWD-Arena",
+        "HDI-Arena",
+        "Hannover 96"
+      ],
+      "wd": "Q152633"
+    },
+    {
+      "id": "parc-des-princes",
+      "name": "Parc des Princes",
+      "sub": "Paris · France",
+      "value": 48712,
+      "display": "48,712",
+      "aliases": [
+        "Paris Saint-Germain",
+        "PSG"
+      ],
+      "wd": "x-stadium-parc-des-princes"
+    },
+    {
+      "id": "stadium-of-light",
+      "name": "Stadium of Light",
+      "sub": "Sunderland · England",
+      "value": 48707,
+      "display": "48,707",
+      "aliases": [
+        "Sunderland"
+      ],
+      "wd": "x-stadium-stadium-of-light"
+    },
+    {
+      "id": "estadio-nacional-de-chile",
+      "name": "Estadio Nacional de Chile",
+      "sub": "Santiago · Chile",
+      "value": 48665,
+      "display": "48,665",
+      "aliases": [
+        "Estadio Nacional Julio Martínez Prádanos"
+      ],
+      "wd": "x-stadium-estadio-nacional-de-chile"
+    },
+    {
+      "id": "nelson-mandela-bay-stadium",
+      "name": "Nelson Mandela Bay Stadium",
+      "sub": "Port Elizabeth · South Africa",
+      "value": 48459,
+      "display": "48,459",
+      "wd": "Q181445"
+    },
+    {
+      "id": "estadio-tomas-adolfo-duco",
+      "name": "Estadio Tomás Adolfo Ducó",
+      "sub": "Buenos Aires · Argentina",
+      "value": 48314,
+      "display": "48,314",
+      "aliases": [
+        "Huracán"
+      ],
+      "wd": "Q280141"
+    },
+    {
+      "id": "jinnah-sports-stadium",
+      "name": "Jinnah Sports Stadium",
+      "sub": "Islamabad · Pakistan",
+      "value": 48200,
+      "display": "48,200",
+      "aliases": [
+        "Jinnah Stadium"
+      ],
+      "wd": "x-stadium-jinnah-sports-stadium"
+    },
+    {
+      "id": "choctaw-stadium",
+      "name": "Choctaw Stadium",
+      "sub": "Arlington · United States",
+      "value": 48114,
+      "display": "48,114",
+      "aliases": [
+        "Globe Life Park"
+      ],
+      "wd": "x-stadium-choctaw-stadium"
+    },
+    {
+      "id": "estadio-libertadores-de-america",
+      "name": "Estadio Libertadores de América",
+      "sub": "Avellaneda · Argentina",
+      "value": 48069,
+      "display": "48,069",
+      "aliases": [
+        "Independiente"
+      ],
+      "wd": "Q1192458"
+    },
+    {
+      "id": "free-state-stadium",
+      "name": "Free State Stadium",
+      "sub": "Bloemfontein · South Africa",
+      "value": 48000,
+      "display": "48,000",
+      "wd": "Q181439"
+    },
+    {
+      "id": "nagai-stadium",
+      "name": "Nagai Stadium",
+      "sub": "Osaka · Japan",
+      "value": 47816,
+      "display": "47,816",
+      "aliases": [
+        "Yanmar Stadium Nagai"
+      ],
+      "wd": "Q494832"
+    },
+    {
+      "id": "neo-quimica-arena",
+      "name": "Neo Química Arena",
+      "sub": "São Paulo · Brazil",
+      "value": 47605,
+      "display": "47,605",
+      "aliases": [
+        "Arena Corinthians",
+        "Itaquerão",
+        "Corinthians"
+      ],
+      "wd": "Q1362236"
+    },
+    {
+      "id": "rogers-centre",
+      "name": "Rogers Centre",
+      "sub": "Toronto · Canada",
+      "value": 47568,
+      "display": "47,568",
+      "aliases": [
+        "SkyDome"
+      ],
+      "wd": "Q76318"
+    },
+    {
+      "id": "estadio-monumental-david-arellano",
+      "name": "Estadio Monumental David Arellano",
+      "sub": "Santiago · Chile",
+      "value": 47347,
+      "display": "47,347",
+      "aliases": [
+        "Monumental David Arellano",
+        "Colo-Colo"
+      ],
+      "wd": "x-stadium-estadio-monumental-david-arellano"
+    },
+    {
+      "id": "yankee-stadium",
+      "name": "Yankee Stadium",
+      "sub": "New York City · United States",
+      "value": 47309,
+      "display": "47,309",
+      "wd": "x-stadium-yankee-stadium"
+    },
+    {
+      "id": "stadio-artemio-franchi",
+      "name": "Stadio Artemio Franchi",
+      "sub": "Florence · Italy",
+      "value": 47282,
+      "display": "47,282",
+      "aliases": [
+        "Artemio Franchi",
+        "Fiorentina"
+      ],
+      "wd": "Q270474"
+    },
+    {
+      "id": "protective-stadium",
+      "name": "Protective Stadium",
+      "sub": "Birmingham · United States",
+      "value": 47100,
+      "display": "47,100",
+      "wd": "x-stadium-protective-stadium"
+    },
+    {
+      "id": "estadio-ciudad-de-lanus-nestor-diaz-perez",
+      "name": "Estadio Ciudad de Lanús – Néstor Díaz Pérez",
+      "sub": "Lanús · Argentina",
+      "value": 47027,
+      "display": "47,027",
+      "aliases": [
+        "Estadio Ciudad de Lanús",
+        "Lanús"
+      ],
+      "wd": "Q533015"
+    },
+    {
+      "id": "estadio-olimpico-nilton-santos",
+      "name": "Estádio Olímpico Nilton Santos",
+      "sub": "Rio de Janeiro · Brazil",
+      "value": 46831,
+      "display": "46,831",
+      "aliases": [
+        "Nilton Santos",
+        "Engenhão",
+        "Botafogo"
+      ],
+      "wd": "x-stadium-estadio-olimpico-nilton-santos"
+    },
+    {
+      "id": "estadio-metropolitano-roberto-melendez",
+      "name": "Estadio Metropolitano Roberto Meléndez",
+      "sub": "Barranquilla · Colombia",
+      "value": 46788,
+      "display": "46,788",
+      "aliases": [
+        "Roberto Meléndez"
+      ],
+      "wd": "Q1369387"
+    },
+    {
+      "id": "arena-pernambuco",
+      "name": "Arena Pernambuco",
+      "sub": "São Lourenço da Mata · Brazil",
+      "value": 46154,
+      "display": "46,154",
+      "aliases": [
+        "Itaipava Arena Pernambuco"
+      ],
+      "wd": "x-stadium-arena-pernambuco"
+    },
+    {
+      "id": "arena-mrv",
+      "name": "Arena MRV",
+      "sub": "Belo Horizonte · Brazil",
+      "value": 46000,
+      "display": "46,000",
+      "aliases": [
+        "Atlético Mineiro"
+      ],
+      "wd": "Q97177489"
+    },
+    {
+      "id": "estadio-paulo-constantino",
+      "name": "Estádio Paulo Constantino",
+      "sub": "Presidente Prudente · Brazil",
+      "value": 45954,
+      "display": "45,954",
+      "aliases": [
+        "Prudentão"
+      ],
+      "wd": "Q1370694"
+    },
+    {
+      "id": "estadio-atanasio-girardot",
+      "name": "Estadio Atanasio Girardot",
+      "sub": "Medellín · Colombia",
+      "value": 45739,
+      "display": "45,739",
+      "aliases": [
+        "Atanasio Girardot"
+      ],
+      "wd": "Q6156079"
+    },
+    {
+      "id": "amahoro-stadium",
+      "name": "Amahoro Stadium",
+      "sub": "Kigali · Rwanda",
+      "value": 45508,
+      "display": "45,508",
+      "wd": "x-stadium-amahoro-stadium"
+    },
+    {
+      "id": "adrar-stadium",
+      "name": "Adrar Stadium",
+      "sub": "Agadir · Morocco",
+      "value": 45480,
+      "display": "45,480",
+      "aliases": [
+        "Grand Stade d'Agadir"
+      ],
+      "wd": "Q1579227"
+    },
+    {
+      "id": "lukoil-arena",
+      "name": "Lukoil Arena",
+      "sub": "Moscow · Russia",
+      "value": 45360,
+      "display": "45,360",
+      "aliases": [
+        "Otkritie Arena",
+        "Spartak Stadium",
+        "Spartak Moscow"
+      ],
+      "wd": "Q1190634"
+    },
+    {
+      "id": "grand-stade-de-marrakech",
+      "name": "Grand Stade de Marrakech",
+      "sub": "Marrakesh · Morocco",
+      "value": 45240,
+      "display": "45,240",
+      "aliases": [
+        "Marrakesh Stadium",
+        "Marrakech Stadium"
+      ],
+      "wd": "Q1578430"
+    },
+    {
+      "id": "mandela-national-stadium",
+      "name": "Mandela National Stadium",
+      "sub": "Kampala · Uganda",
+      "value": 45202,
+      "display": "45,202",
+      "aliases": [
+        "Namboole Stadium",
+        "Namboole"
+      ],
+      "wd": "Q4118193"
+    },
+    {
+      "id": "tarczynski-arena-wroclaw",
+      "name": "Tarczyński Arena Wrocław",
+      "sub": "Wrocław · Poland",
+      "value": 45105,
+      "display": "45,105",
+      "aliases": [
+        "Stadion Miejski Wrocław",
+        "Wrocław Stadium",
+        "Śląsk Wrocław"
+      ],
+      "wd": "Q188706"
+    },
+    {
+      "id": "kazan-arena",
+      "name": "Kazan Arena",
+      "sub": "Kazan · Russia",
+      "value": 45105,
+      "display": "45,105",
+      "aliases": [
+        "Ak Bars Arena",
+        "Rubin Kazan"
+      ],
+      "wd": "Q33993"
+    }
+  ]
+}

@@ -4,6 +4,8 @@
   "prompt": "most men's World Cup goals",
   "noun": "player",
   "nounPlural": "players",
+  "kind": "player",
+  "retired": true,
   "metric": "Goals",
   "order": "desc",
   "description": "Goals scored at men's FIFA World Cup finals tournaments, 1930–2026; every player with 5 or more.",
@@ -25,7 +27,8 @@
       "value": 22,
       "aliases": [
         "Mbappé"
-      ]
+      ],
+      "wd": "Q21621995"
     },
     {
       "id": "lionel-messi",
@@ -36,7 +39,8 @@
         "Messi",
         "Leo Messi",
         "La Pulga"
-      ]
+      ],
+      "wd": "Q615"
     },
     {
       "id": "miroslav-klose",
@@ -45,7 +49,8 @@
       "value": 16,
       "aliases": [
         "Klose"
-      ]
+      ],
+      "wd": "Q80471"
     },
     {
       "id": "ronaldo",
@@ -58,7 +63,8 @@
         "Ronaldo Luís Nazário de Lima",
         "O Fenômeno",
         "Brazilian Ronaldo"
-      ]
+      ],
+      "wd": "Q529207"
     },
     {
       "id": "gerd-muller",
@@ -70,7 +76,8 @@
         "Der Bomber",
         "Gerd Mueller",
         "Mueller"
-      ]
+      ],
+      "wd": "Q43744"
     },
     {
       "id": "harry-kane",
@@ -79,7 +86,8 @@
       "value": 14,
       "aliases": [
         "Kane"
-      ]
+      ],
+      "wd": "Q969725"
     },
     {
       "id": "just-fontaine",
@@ -88,7 +96,8 @@
       "value": 13,
       "aliases": [
         "Fontaine"
-      ]
+      ],
+      "wd": "Q192749"
     },
     {
       "id": "pele",
@@ -97,7 +106,8 @@
       "value": 12,
       "aliases": [
         "Edson Arantes do Nascimento"
-      ]
+      ],
+      "wd": "Q12897"
     },
     {
       "id": "sandor-kocsis",
@@ -106,7 +116,8 @@
       "value": 11,
       "aliases": [
         "Kocsis"
-      ]
+      ],
+      "wd": "Q295265"
     },
     {
       "id": "jurgen-klinsmann",
@@ -117,7 +128,8 @@
         "Klinsmann",
         "Klinsi",
         "Juergen Klinsmann"
-      ]
+      ],
+      "wd": "Q57079"
     },
     {
       "id": "cristiano-ronaldo",
@@ -128,7 +140,8 @@
         "Ronaldo",
         "CR7",
         "Cristiano"
-      ]
+      ],
+      "wd": "Q11571"
     },
     {
       "id": "helmut-rahn",
@@ -137,7 +150,8 @@
       "value": 10,
       "aliases": [
         "Rahn"
-      ]
+      ],
+      "wd": "Q60691"
     },
     {
       "id": "gary-lineker",
@@ -146,7 +160,8 @@
       "value": 10,
       "aliases": [
         "Lineker"
-      ]
+      ],
+      "wd": "Q47778"
     },
     {
       "id": "gabriel-batistuta",
@@ -156,7 +171,8 @@
       "aliases": [
         "Batistuta",
         "Batigol"
-      ]
+      ],
+      "wd": "Q170376"
     },
     {
       "id": "teofilo-cubillas",
@@ -165,7 +181,8 @@
       "value": 10,
       "aliases": [
         "Cubillas"
-      ]
+      ],
+      "wd": "Q311403"
     },
     {
       "id": "thomas-muller",
@@ -176,7 +193,8 @@
         "Müller",
         "Thomas Mueller",
         "Mueller"
-      ]
+      ],
+      "wd": "Q43666"
     },
     {
       "id": "grzegorz-lato",
@@ -185,7 +203,8 @@
       "value": 10,
       "aliases": [
         "Lato"
-      ]
+      ],
+      "wd": "Q271557"
     },
     {
       "id": "ademir",
@@ -194,7 +213,8 @@
       "value": 9,
       "aliases": [
         "Ademir de Menezes"
-      ]
+      ],
+      "wd": "Q332012"
     },
     {
       "id": "eusebio",
@@ -203,7 +223,8 @@
       "value": 9,
       "aliases": [
         "Eusébio da Silva Ferreira"
-      ]
+      ],
+      "wd": "Q162043"
     },
     {
       "id": "christian-vieri",
@@ -213,13 +234,15 @@
       "aliases": [
         "Vieri",
         "Bobo Vieri"
-      ]
+      ],
+      "wd": "Q188696"
     },
     {
       "id": "vava",
       "name": "Vavá",
       "sub": "Brazil",
-      "value": 9
+      "value": 9,
+      "wd": "Q311445"
     },
     {
       "id": "david-villa",
@@ -229,7 +252,8 @@
       "aliases": [
         "Villa",
         "El Guaje"
-      ]
+      ],
+      "wd": "Q83006"
     },
     {
       "id": "paolo-rossi",
@@ -239,7 +263,8 @@
       "aliases": [
         "Rossi",
         "Pablito"
-      ]
+      ],
+      "wd": "Q178628"
     },
     {
       "id": "neymar",
@@ -249,13 +274,15 @@
       "aliases": [
         "Neymar Jr",
         "Neymar Júnior"
-      ]
+      ],
+      "wd": "Q142794"
     },
     {
       "id": "jairzinho",
       "name": "Jairzinho",
       "sub": "Brazil",
-      "value": 9
+      "value": 9,
+      "wd": "Q210102"
     },
     {
       "id": "roberto-baggio",
@@ -264,7 +291,8 @@
       "value": 9,
       "aliases": [
         "Baggio"
-      ]
+      ],
+      "wd": "Q67964"
     },
     {
       "id": "karl-heinz-rummenigge",
@@ -274,7 +302,8 @@
       "aliases": [
         "Rummenigge",
         "Kalle Rummenigge"
-      ]
+      ],
+      "wd": "Q152871"
     },
     {
       "id": "uwe-seeler",
@@ -283,7 +312,8 @@
       "value": 9,
       "aliases": [
         "Seeler"
-      ]
+      ],
+      "wd": "Q44470"
     },
     {
       "id": "guillermo-stabile",
@@ -292,7 +322,8 @@
       "value": 8,
       "aliases": [
         "Stábile"
-      ]
+      ],
+      "wd": "Q309645"
     },
     {
       "id": "leonidas",
@@ -301,7 +332,8 @@
       "value": 8,
       "aliases": [
         "Leônidas da Silva"
-      ]
+      ],
+      "wd": "Q311739"
     },
     {
       "id": "oscar-miguez",
@@ -310,7 +342,8 @@
       "value": 8,
       "aliases": [
         "Míguez"
-      ]
+      ],
+      "wd": "Q24347"
     },
     {
       "id": "jude-bellingham",
@@ -319,13 +352,15 @@
       "value": 8,
       "aliases": [
         "Bellingham"
-      ]
+      ],
+      "wd": "Q66241169"
     },
     {
       "id": "rivaldo",
       "name": "Rivaldo",
       "sub": "Brazil",
-      "value": 8
+      "value": 8,
+      "wd": "Q483577"
     },
     {
       "id": "rudi-voller",
@@ -336,7 +371,8 @@
         "Völler",
         "Rudi Voeller",
         "Voeller"
-      ]
+      ],
+      "wd": "Q44464"
     },
     {
       "id": "romelu-lukaku",
@@ -345,7 +381,8 @@
       "value": 8,
       "aliases": [
         "Lukaku"
-      ]
+      ],
+      "wd": "Q313316"
     },
     {
       "id": "diego-maradona",
@@ -356,7 +393,8 @@
         "Maradona",
         "Diego Armando Maradona",
         "El Pibe de Oro"
-      ]
+      ],
+      "wd": "Q17515"
     },
     {
       "id": "erling-haaland",
@@ -365,7 +403,8 @@
       "value": 7,
       "aliases": [
         "Haaland"
-      ]
+      ],
+      "wd": "Q28967995"
     },
     {
       "id": "oldrich-nejedly",
@@ -374,7 +413,8 @@
       "value": 7,
       "aliases": [
         "Nejedlý"
-      ]
+      ],
+      "wd": "Q266489"
     },
     {
       "id": "lajos-tichy",
@@ -383,13 +423,15 @@
       "value": 7,
       "aliases": [
         "Tichy"
-      ]
+      ],
+      "wd": "Q553339"
     },
     {
       "id": "careca",
       "name": "Careca",
       "sub": "Brazil",
-      "value": 7
+      "value": 7,
+      "wd": "Q342489"
     },
     {
       "id": "johnny-rep",
@@ -398,7 +440,8 @@
       "value": 7,
       "aliases": [
         "Rep"
-      ]
+      ],
+      "wd": "Q313382"
     },
     {
       "id": "andrzej-szarmach",
@@ -407,7 +450,8 @@
       "value": 7,
       "aliases": [
         "Szarmach"
-      ]
+      ],
+      "wd": "Q353105"
     },
     {
       "id": "hans-schafer",
@@ -418,7 +462,8 @@
         "Schäfer",
         "Hans Schaefer",
         "Schaefer"
-      ]
+      ],
+      "wd": "Q455823"
     },
     {
       "id": "luis-suarez",
@@ -428,7 +473,8 @@
       "aliases": [
         "Suárez",
         "El Pistolero"
-      ]
+      ],
+      "wd": "Q26517"
     },
     {
       "id": "ivan-perisic",
@@ -437,7 +483,8 @@
       "value": 7,
       "aliases": [
         "Perišić"
-      ]
+      ],
+      "wd": "Q161054"
     },
     {
       "id": "josef-hugi",
@@ -448,7 +495,8 @@
         "Hügi",
         "Josef Huegi",
         "Huegi"
-      ]
+      ],
+      "wd": "Q665684"
     },
     {
       "id": "oleg-salenko",
@@ -457,7 +505,8 @@
       "value": 6,
       "aliases": [
         "Salenko"
-      ]
+      ],
+      "wd": "Q295746"
     },
     {
       "id": "gyorgy-sarosi",
@@ -466,7 +515,8 @@
       "value": 6,
       "aliases": [
         "Sárosi"
-      ]
+      ],
+      "wd": "Q502942"
     },
     {
       "id": "max-morlock",
@@ -475,7 +525,8 @@
       "value": 6,
       "aliases": [
         "Morlock"
-      ]
+      ],
+      "wd": "Q366361"
     },
     {
       "id": "erich-probst",
@@ -484,7 +535,8 @@
       "value": 6,
       "aliases": [
         "Probst"
-      ]
+      ],
+      "wd": "Q224612"
     },
     {
       "id": "salvatore-schillaci",
@@ -494,7 +546,8 @@
       "aliases": [
         "Schillaci",
         "Totò Schillaci"
-      ]
+      ],
+      "wd": "Q295307"
     },
     {
       "id": "davor-suker",
@@ -503,7 +556,8 @@
       "value": 6,
       "aliases": [
         "Šuker"
-      ]
+      ],
+      "wd": "Q189217"
     },
     {
       "id": "helmut-haller",
@@ -512,7 +566,8 @@
       "value": 6,
       "aliases": [
         "Haller"
-      ]
+      ],
+      "wd": "Q57375"
     },
     {
       "id": "cody-gakpo",
@@ -521,7 +576,8 @@
       "value": 6,
       "aliases": [
         "Gakpo"
-      ]
+      ],
+      "wd": "Q28801927"
     },
     {
       "id": "hristo-stoichkov",
@@ -530,7 +586,8 @@
       "value": 6,
       "aliases": [
         "Stoichkov"
-      ]
+      ],
+      "wd": "Q187125"
     },
     {
       "id": "diego-forlan",
@@ -539,7 +596,8 @@
       "value": 6,
       "aliases": [
         "Forlán"
-      ]
+      ],
+      "wd": "Q261534"
     },
     {
       "id": "enner-valencia",
@@ -548,7 +606,8 @@
       "value": 6,
       "aliases": [
         "Valencia"
-      ]
+      ],
+      "wd": "Q2843080"
     },
     {
       "id": "asamoah-gyan",
@@ -557,7 +616,8 @@
       "value": 6,
       "aliases": [
         "Gyan"
-      ]
+      ],
+      "wd": "Q222746"
     },
     {
       "id": "bukayo-saka",
@@ -566,7 +626,8 @@
       "value": 6,
       "aliases": [
         "Saka"
-      ]
+      ],
+      "wd": "Q59306386"
     },
     {
       "id": "dennis-bergkamp",
@@ -575,7 +636,8 @@
       "value": 6,
       "aliases": [
         "Bergkamp"
-      ]
+      ],
+      "wd": "Q185389"
     },
     {
       "id": "rob-rensenbrink",
@@ -584,7 +646,8 @@
       "value": 6,
       "aliases": [
         "Rensenbrink"
-      ]
+      ],
+      "wd": "Q311393"
     },
     {
       "id": "james-rodriguez",
@@ -594,7 +657,8 @@
       "aliases": [
         "Rodríguez",
         "James"
-      ]
+      ],
+      "wd": "Q368441"
     },
     {
       "id": "rivellino",
@@ -604,13 +668,15 @@
       "aliases": [
         "Rivelino",
         "Roberto Rivellino"
-      ]
+      ],
+      "wd": "x-player-rivellino"
     },
     {
       "id": "bebeto",
       "name": "Bebeto",
       "sub": "Brazil",
-      "value": 6
+      "value": 6,
+      "wd": "Q204825"
     },
     {
       "id": "arjen-robben",
@@ -619,7 +685,8 @@
       "value": 6,
       "aliases": [
         "Robben"
-      ]
+      ],
+      "wd": "Q43913"
     },
     {
       "id": "zbigniew-boniek",
@@ -628,7 +695,8 @@
       "value": 6,
       "aliases": [
         "Boniek"
-      ]
+      ],
+      "wd": "Q68039"
     },
     {
       "id": "thierry-henry",
@@ -637,7 +705,8 @@
       "value": 6,
       "aliases": [
         "Henry"
-      ]
+      ],
+      "wd": "Q45901"
     },
     {
       "id": "robin-van-persie",
@@ -647,7 +716,8 @@
       "aliases": [
         "van Persie",
         "RVP"
-      ]
+      ],
+      "wd": "Q2339"
     },
     {
       "id": "wesley-sneijder",
@@ -656,7 +726,8 @@
       "value": 6,
       "aliases": [
         "Sneijder"
-      ]
+      ],
+      "wd": "Q124086"
     },
     {
       "id": "mario-kempes",
@@ -666,7 +737,8 @@
       "aliases": [
         "Kempes",
         "El Matador"
-      ]
+      ],
+      "wd": "Q180649"
     },
     {
       "id": "ousmane-dembele",
@@ -675,7 +747,8 @@
       "value": 6,
       "aliases": [
         "Dembélé"
-      ]
+      ],
+      "wd": "Q20851003"
     },
     {
       "id": "lothar-matthaus",
@@ -686,7 +759,8 @@
         "Matthäus",
         "Lothar Matthaeus",
         "Matthaeus"
-      ]
+      ],
+      "wd": "x-player-lothar-matthaus"
     },
     {
       "id": "pedro-cea",
@@ -695,7 +769,8 @@
       "value": 5,
       "aliases": [
         "Cea"
-      ]
+      ],
+      "wd": "Q191471"
     },
     {
       "id": "silvio-piola",
@@ -704,7 +779,8 @@
       "value": 5,
       "aliases": [
         "Piola"
-      ]
+      ],
+      "wd": "Q296276"
     },
     {
       "id": "gyula-zsengeller",
@@ -713,7 +789,8 @@
       "value": 5,
       "aliases": [
         "Zsengellér"
-      ]
+      ],
+      "wd": "Q444839"
     },
     {
       "id": "peter-mcparland",
@@ -722,7 +799,8 @@
       "value": 5,
       "aliases": [
         "McParland"
-      ]
+      ],
+      "wd": "Q1342674"
     },
     {
       "id": "tomas-skuhravy",
@@ -731,7 +809,8 @@
       "value": 5,
       "aliases": [
         "Skuhravý"
-      ]
+      ],
+      "wd": "Q444293"
     },
     {
       "id": "juan-alberto-schiaffino",
@@ -740,7 +819,8 @@
       "value": 5,
       "aliases": [
         "Schiaffino"
-      ]
+      ],
+      "wd": "Q332064"
     },
     {
       "id": "geoff-hurst",
@@ -749,7 +829,8 @@
       "value": 5,
       "aliases": [
         "Hurst"
-      ]
+      ],
+      "wd": "Q212738"
     },
     {
       "id": "jon-dahl-tomasson",
@@ -759,7 +840,8 @@
       "aliases": [
         "Tomasson",
         "Dahl Tomasson"
-      ]
+      ],
+      "wd": "Q203657"
     },
     {
       "id": "kai-havertz",
@@ -768,7 +850,8 @@
       "value": 5,
       "aliases": [
         "Havertz"
-      ]
+      ],
+      "wd": "Q27310755"
     },
     {
       "id": "alessandro-altobelli",
@@ -777,7 +860,8 @@
       "value": 5,
       "aliases": [
         "Altobelli"
-      ]
+      ],
+      "wd": "Q346945"
     },
     {
       "id": "kennet-andersson",
@@ -786,7 +870,8 @@
       "value": 5,
       "aliases": [
         "Andersson"
-      ]
+      ],
+      "wd": "Q352241"
     },
     {
       "id": "fernando-morientes",
@@ -795,13 +880,15 @@
       "value": 5,
       "aliases": [
         "Morientes"
-      ]
+      ],
+      "wd": "Q45567"
     },
     {
       "id": "romario",
       "name": "Romário",
       "sub": "Brazil",
-      "value": 5
+      "value": 5,
+      "wd": "Q178649"
     },
     {
       "id": "marc-wilmots",
@@ -810,7 +897,8 @@
       "value": 5,
       "aliases": [
         "Wilmots"
-      ]
+      ],
+      "wd": "Q346427"
     },
     {
       "id": "mario-mandzukic",
@@ -819,7 +907,8 @@
       "value": 5,
       "aliases": [
         "Mandžukić"
-      ]
+      ],
+      "wd": "Q187171"
     },
     {
       "id": "mikel-oyarzabal",
@@ -828,7 +917,8 @@
       "value": 5,
       "aliases": [
         "Oyarzabal"
-      ]
+      ],
+      "wd": "Q21195147"
     },
     {
       "id": "valentin-ivanov",
@@ -837,7 +927,8 @@
       "value": 5,
       "aliases": [
         "Ivanov"
-      ]
+      ],
+      "wd": "Q313309"
     },
     {
       "id": "emilio-butragueno",
@@ -847,7 +938,8 @@
       "aliases": [
         "Butragueño",
         "El Buitre"
-      ]
+      ],
+      "wd": "Q41235"
     },
     {
       "id": "roger-milla",
@@ -856,7 +948,8 @@
       "value": 5,
       "aliases": [
         "Milla"
-      ]
+      ],
+      "wd": "Q168540"
     },
     {
       "id": "tim-cahill",
@@ -865,7 +958,8 @@
       "value": 5,
       "aliases": [
         "Cahill"
-      ]
+      ],
+      "wd": "Q187238"
     },
     {
       "id": "vinicius-junior",
@@ -877,7 +971,8 @@
         "Vini Jr",
         "Vinicius Jr",
         "Vini"
-      ]
+      ],
+      "wd": "Q28973866"
     },
     {
       "id": "hans-krankl",
@@ -886,7 +981,8 @@
       "value": 5,
       "aliases": [
         "Krankl"
-      ]
+      ],
+      "wd": "Q131529"
     },
     {
       "id": "raul",
@@ -895,7 +991,8 @@
       "value": 5,
       "aliases": [
         "Raúl González"
-      ]
+      ],
+      "wd": "Q11576"
     },
     {
       "id": "ismaila-sarr",
@@ -904,7 +1001,8 @@
       "value": 5,
       "aliases": [
         "Sarr"
-      ]
+      ],
+      "wd": "Q26924482"
     },
     {
       "id": "garrincha",
@@ -913,7 +1011,8 @@
       "value": 5,
       "aliases": [
         "Mané Garrincha"
-      ]
+      ],
+      "wd": "Q180642"
     },
     {
       "id": "johan-neeskens",
@@ -922,7 +1021,8 @@
       "value": 5,
       "aliases": [
         "Neeskens"
-      ]
+      ],
+      "wd": "Q233819"
     },
     {
       "id": "fernando-hierro",
@@ -931,7 +1031,8 @@
       "value": 5,
       "aliases": [
         "Hierro"
-      ]
+      ],
+      "wd": "Q205499"
     },
     {
       "id": "zinedine-zidane",
@@ -941,7 +1042,8 @@
       "aliases": [
         "Zidane",
         "Zizou"
-      ]
+      ],
+      "wd": "Q1835"
     },
     {
       "id": "landon-donovan",
@@ -950,7 +1052,8 @@
       "value": 5,
       "aliases": [
         "Donovan"
-      ]
+      ],
+      "wd": "Q202237"
     },
     {
       "id": "xherdan-shaqiri",
@@ -959,7 +1062,8 @@
       "value": 5,
       "aliases": [
         "Shaqiri"
-      ]
+      ],
+      "wd": "Q252190"
     },
     {
       "id": "henrik-larsson",
@@ -968,13 +1072,15 @@
       "value": 5,
       "aliases": [
         "Larsson"
-      ]
+      ],
+      "wd": "Q179334"
     },
     {
       "id": "zico",
       "name": "Zico",
       "sub": "Brazil",
-      "value": 5
+      "value": 5,
+      "wd": "Q47526"
     },
     {
       "id": "michel-platini",
@@ -983,7 +1089,8 @@
       "value": 5,
       "aliases": [
         "Platini"
-      ]
+      ],
+      "wd": "Q4261"
     },
     {
       "id": "gonzalo-higuain",
@@ -993,7 +1100,8 @@
       "aliases": [
         "Higuaín",
         "Pipita"
-      ]
+      ],
+      "wd": "Q483846"
     },
     {
       "id": "lukas-podolski",
@@ -1003,7 +1111,8 @@
       "aliases": [
         "Podolski",
         "Poldi"
-      ]
+      ],
+      "wd": "Q134976"
     },
     {
       "id": "julian-alvarez",
@@ -1012,7 +1121,8 @@
       "value": 5,
       "aliases": [
         "Alvarez"
-      ]
+      ],
+      "wd": "Q59381180"
     },
     {
       "id": "edinson-cavani",
@@ -1021,7 +1131,8 @@
       "value": 5,
       "aliases": [
         "Cavani"
-      ]
+      ],
+      "wd": "Q167790"
     },
     {
       "id": "franz-beckenbauer",
@@ -1032,7 +1143,8 @@
         "Beckenbauer",
         "Der Kaiser",
         "Kaiser Franz"
-      ]
+      ],
+      "wd": "Q4457"
     },
     {
       "id": "olivier-giroud",
@@ -1041,7 +1153,8 @@
       "value": 5,
       "aliases": [
         "Giroud"
-      ]
+      ],
+      "wd": "Q1911"
     }
   ]
 }

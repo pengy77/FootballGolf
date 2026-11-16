@@ -1,0 +1,767 @@
+{
+  "id": "serie-a-top-scorers",
+  "title": "Serie A all-time top scorers",
+  "prompt": "most Serie A goals",
+  "noun": "player",
+  "nounPlural": "players",
+  "kind": "player",
+  "metric": "Goals",
+  "order": "desc",
+  "description": "All-time Serie A goals since 1929–30, for every player who has scored 110 or more. Lautaro Martínez and Domenico Berardi updated to 8 November 2026 from Italian Wikipedia’s all-time list.",
+  "tags": [
+    "europe",
+    "players"
+  ],
+  "source": {
+    "name": "Wikipedia: List of Serie A players with 100 or more goals",
+    "url": "https://en.wikipedia.org/wiki/List_of_Serie_A_players_with_100_or_more_goals",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "silvio-piola",
+      "name": "Silvio Piola",
+      "sub": "Italy · Lazio, Novara",
+      "value": 274,
+      "aliases": [
+        "Piola"
+      ],
+      "wd": "Q296276"
+    },
+    {
+      "id": "francesco-totti",
+      "name": "Francesco Totti",
+      "sub": "Italy · Roma",
+      "value": 250,
+      "aliases": [
+        "Totti"
+      ],
+      "wd": "Q20110"
+    },
+    {
+      "id": "gunnar-nordahl",
+      "name": "Gunnar Nordahl",
+      "sub": "Sweden · AC Milan",
+      "value": 225,
+      "aliases": [
+        "Nordahl"
+      ],
+      "wd": "Q110111"
+    },
+    {
+      "id": "giuseppe-meazza",
+      "name": "Giuseppe Meazza",
+      "sub": "Italy · Inter",
+      "value": 216,
+      "aliases": [
+        "Meazza"
+      ],
+      "wd": "Q192131"
+    },
+    {
+      "id": "jose-altafini",
+      "name": "José Altafini",
+      "sub": "Brazil/Italy · AC Milan, Napoli",
+      "value": 216,
+      "aliases": [
+        "Altafini"
+      ],
+      "wd": "Q62182"
+    },
+    {
+      "id": "antonio-di-natale",
+      "name": "Antonio Di Natale",
+      "sub": "Italy · Udinese",
+      "value": 209,
+      "aliases": [
+        "Di Natale",
+        "Totò Di Natale"
+      ],
+      "wd": "Q167281"
+    },
+    {
+      "id": "roberto-baggio",
+      "name": "Roberto Baggio",
+      "sub": "Italy · Fiorentina, Juventus, Brescia",
+      "value": 205,
+      "aliases": [
+        "Baggio"
+      ],
+      "wd": "Q67964"
+    },
+    {
+      "id": "ciro-immobile",
+      "name": "Ciro Immobile",
+      "sub": "Italy · Lazio",
+      "value": 201,
+      "aliases": [
+        "Immobile"
+      ],
+      "wd": "Q458101"
+    },
+    {
+      "id": "kurt-hamrin",
+      "name": "Kurt Hamrin",
+      "sub": "Sweden · Fiorentina",
+      "value": 190,
+      "aliases": [
+        "Hamrin"
+      ],
+      "wd": "Q363766"
+    },
+    {
+      "id": "giuseppe-signori",
+      "name": "Giuseppe Signori",
+      "sub": "Italy · Lazio, Bologna",
+      "value": 188,
+      "aliases": [
+        "Signori",
+        "Beppe Signori"
+      ],
+      "wd": "Q334684"
+    },
+    {
+      "id": "alessandro-del-piero",
+      "name": "Alessandro Del Piero",
+      "sub": "Italy · Juventus",
+      "value": 188,
+      "aliases": [
+        "Del Piero"
+      ],
+      "wd": "Q624"
+    },
+    {
+      "id": "alberto-gilardino",
+      "name": "Alberto Gilardino",
+      "sub": "Italy · Parma, AC Milan, Fiorentina",
+      "value": 188,
+      "aliases": [
+        "Gilardino"
+      ],
+      "wd": "Q182451"
+    },
+    {
+      "id": "gabriel-batistuta",
+      "name": "Gabriel Batistuta",
+      "sub": "Argentina · Fiorentina",
+      "value": 183,
+      "aliases": [
+        "Batistuta",
+        "Batigol"
+      ],
+      "wd": "Q170376"
+    },
+    {
+      "id": "fabio-quagliarella",
+      "name": "Fabio Quagliarella",
+      "sub": "Italy · Sampdoria",
+      "value": 182,
+      "aliases": [
+        "Quagliarella"
+      ],
+      "wd": "Q45900"
+    },
+    {
+      "id": "giampiero-boniperti",
+      "name": "Giampiero Boniperti",
+      "sub": "Italy · Juventus",
+      "value": 178,
+      "aliases": [
+        "Boniperti"
+      ],
+      "wd": "Q68050"
+    },
+    {
+      "id": "amedeo-amadei",
+      "name": "Amedeo Amadei",
+      "sub": "Italy · Roma, Napoli",
+      "value": 174,
+      "aliases": [
+        "Amadei"
+      ],
+      "wd": "Q460577"
+    },
+    {
+      "id": "giuseppe-savoldi",
+      "name": "Giuseppe Savoldi",
+      "sub": "Italy · Bologna, Napoli",
+      "value": 168,
+      "aliases": [
+        "Savoldi",
+        "Beppe Savoldi"
+      ],
+      "wd": "Q1377845"
+    },
+    {
+      "id": "guglielmo-gabetto",
+      "name": "Guglielmo Gabetto",
+      "sub": "Italy · Juventus, Torino",
+      "value": 164,
+      "aliases": [
+        "Gabetto"
+      ],
+      "wd": "Q723371"
+    },
+    {
+      "id": "roberto-boninsegna",
+      "name": "Roberto Boninsegna",
+      "sub": "Italy · Inter",
+      "value": 162,
+      "aliases": [
+        "Boninsegna"
+      ],
+      "wd": "Q448752"
+    },
+    {
+      "id": "luca-toni",
+      "name": "Luca Toni",
+      "sub": "Italy · Fiorentina, Hellas Verona",
+      "value": 157,
+      "aliases": [
+        "Toni"
+      ],
+      "wd": "Q186478"
+    },
+    {
+      "id": "zlatan-ibrahimovic",
+      "name": "Zlatan Ibrahimović",
+      "sub": "Sweden · Juventus, Inter, AC Milan",
+      "value": 156,
+      "aliases": [
+        "Ibrahimović",
+        "Zlatan"
+      ],
+      "wd": "Q46896"
+    },
+    {
+      "id": "gigi-riva",
+      "name": "Gigi Riva",
+      "sub": "Italy · Cagliari",
+      "value": 156,
+      "aliases": [
+        "Riva",
+        "Luigi Riva"
+      ],
+      "wd": "Q276026"
+    },
+    {
+      "id": "filippo-inzaghi",
+      "name": "Filippo Inzaghi",
+      "sub": "Italy · Juventus, AC Milan",
+      "value": 156,
+      "aliases": [
+        "Inzaghi",
+        "Pippo Inzaghi"
+      ],
+      "wd": "Q126503"
+    },
+    {
+      "id": "roberto-mancini",
+      "name": "Roberto Mancini",
+      "sub": "Italy · Sampdoria",
+      "value": 156,
+      "aliases": [
+        "Mancini"
+      ],
+      "wd": "Q48330"
+    },
+    {
+      "id": "luis-vinicio",
+      "name": "Luís Vinício",
+      "sub": "Brazil · Napoli, Vicenza",
+      "value": 155,
+      "aliases": [
+        "Vinício"
+      ],
+      "wd": "Q48955"
+    },
+    {
+      "id": "carlo-reguzzoni",
+      "name": "Carlo Reguzzoni",
+      "sub": "Italy · Bologna",
+      "value": 155,
+      "aliases": [
+        "Reguzzoni"
+      ],
+      "wd": "Q3659772"
+    },
+    {
+      "id": "istvan-nyers",
+      "name": "István Nyers",
+      "sub": "Hungary · Inter",
+      "value": 153,
+      "aliases": [
+        "Nyers"
+      ],
+      "wd": "Q255515"
+    },
+    {
+      "id": "hernan-crespo",
+      "name": "Hernán Crespo",
+      "sub": "Argentina · Parma, Lazio",
+      "value": 153,
+      "aliases": [
+        "Crespo"
+      ],
+      "wd": "Q160206"
+    },
+    {
+      "id": "adriano-bassetto",
+      "name": "Adriano Bassetto",
+      "sub": "Italy · Sampdoria, Atalanta",
+      "value": 149,
+      "aliases": [
+        "Bassetto"
+      ],
+      "wd": "Q1318350"
+    },
+    {
+      "id": "omar-sivori",
+      "name": "Omar Sívori",
+      "sub": "Argentina/Italy · Juventus",
+      "value": 147,
+      "aliases": [
+        "Sívori"
+      ],
+      "wd": "Q220700"
+    },
+    {
+      "id": "christian-vieri",
+      "name": "Christian Vieri",
+      "sub": "Italy · Inter",
+      "value": 142,
+      "aliases": [
+        "Vieri",
+        "Bobo Vieri"
+      ],
+      "wd": "Q188696"
+    },
+    {
+      "id": "benito-lorenzi",
+      "name": "Benito Lorenzi",
+      "sub": "Italy · Inter",
+      "value": 142,
+      "aliases": [
+        "Lorenzi"
+      ],
+      "wd": "Q705162"
+    },
+    {
+      "id": "marco-di-vaio",
+      "name": "Marco Di Vaio",
+      "sub": "Italy · Parma, Bologna",
+      "value": 142,
+      "aliases": [
+        "Di Vaio"
+      ],
+      "wd": "Q136940"
+    },
+    {
+      "id": "paolo-pulici",
+      "name": "Paolo Pulici",
+      "sub": "Italy · Torino",
+      "value": 142,
+      "aliases": [
+        "Pulici"
+      ],
+      "wd": "Q167936"
+    },
+    {
+      "id": "vincenzo-montella",
+      "name": "Vincenzo Montella",
+      "sub": "Italy · Sampdoria, Roma",
+      "value": 141,
+      "aliases": [
+        "Montella"
+      ],
+      "wd": "Q297768"
+    },
+    {
+      "id": "john-hansen",
+      "name": "John Hansen",
+      "sub": "Denmark · Juventus",
+      "value": 139,
+      "aliases": [
+        "Hansen"
+      ],
+      "wd": "Q728031"
+    },
+    {
+      "id": "enrico-chiesa",
+      "name": "Enrico Chiesa",
+      "sub": "Italy · Parma, Fiorentina, Siena",
+      "value": 138,
+      "aliases": [
+        "Chiesa"
+      ],
+      "wd": "Q345026"
+    },
+    {
+      "id": "sergio-brighenti",
+      "name": "Sergio Brighenti",
+      "sub": "Italy · Padova, Sampdoria",
+      "value": 136,
+      "aliases": [
+        "Brighenti"
+      ],
+      "wd": "Q989525"
+    },
+    {
+      "id": "lautaro-martinez",
+      "name": "Lautaro Martínez",
+      "sub": "Argentina · Inter",
+      "value": 136,
+      "aliases": [
+        "Lautaro",
+        "Martínez"
+      ],
+      "wd": "Q21484126"
+    },
+    {
+      "id": "roberto-pruzzo",
+      "name": "Roberto Pruzzo",
+      "sub": "Italy · Roma",
+      "value": 133,
+      "aliases": [
+        "Pruzzo"
+      ],
+      "wd": "Q515901"
+    },
+    {
+      "id": "alessandro-altobelli",
+      "name": "Alessandro Altobelli",
+      "sub": "Italy · Inter",
+      "value": 132,
+      "aliases": [
+        "Altobelli"
+      ],
+      "wd": "Q346945"
+    },
+    {
+      "id": "domenico-berardi",
+      "name": "Domenico Berardi",
+      "sub": "Italy · Sassuolo",
+      "value": 132,
+      "aliases": [
+        "Berardi"
+      ],
+      "wd": "Q348407"
+    },
+    {
+      "id": "felice-borel",
+      "name": "Felice Borel",
+      "sub": "Italy · Juventus",
+      "value": 131,
+      "aliases": [
+        "Borel"
+      ],
+      "wd": "Q68053"
+    },
+    {
+      "id": "paulo-dybala",
+      "name": "Paulo Dybala",
+      "sub": "Argentina · Juventus, Roma",
+      "value": 131,
+      "aliases": [
+        "Dybala"
+      ],
+      "wd": "Q166317"
+    },
+    {
+      "id": "ezio-pascutti",
+      "name": "Ezio Pascutti",
+      "sub": "Italy · Bologna",
+      "value": 130,
+      "aliases": [
+        "Pascutti"
+      ],
+      "wd": "Q983267"
+    },
+    {
+      "id": "francesco-graziani",
+      "name": "Francesco Graziani",
+      "sub": "Italy · Torino",
+      "value": 130,
+      "aliases": [
+        "Graziani",
+        "Ciccio Graziani"
+      ],
+      "wd": "Q355897"
+    },
+    {
+      "id": "roberto-bettega",
+      "name": "Roberto Bettega",
+      "sub": "Italy · Juventus",
+      "value": 129,
+      "aliases": [
+        "Bettega"
+      ],
+      "wd": "Q67990"
+    },
+    {
+      "id": "gianni-rivera",
+      "name": "Gianni Rivera",
+      "sub": "Italy · AC Milan",
+      "value": 128,
+      "aliases": [
+        "Rivera"
+      ],
+      "wd": "Q230046"
+    },
+    {
+      "id": "andriy-shevchenko",
+      "name": "Andriy Shevchenko",
+      "sub": "Ukraine · AC Milan",
+      "value": 127,
+      "aliases": [
+        "Shevchenko",
+        "Sheva"
+      ],
+      "wd": "Q41244"
+    },
+    {
+      "id": "duvan-zapata",
+      "name": "Duván Zapata",
+      "sub": "Colombia · Atalanta",
+      "value": 127,
+      "aliases": [
+        "Zapata"
+      ],
+      "wd": "Q577481"
+    },
+    {
+      "id": "gonzalo-higuain",
+      "name": "Gonzalo Higuaín",
+      "sub": "Argentina · Napoli, Juventus",
+      "value": 125,
+      "aliases": [
+        "Higuaín",
+        "Pipita"
+      ],
+      "wd": "Q483846"
+    },
+    {
+      "id": "pietro-ferraris",
+      "name": "Pietro Ferraris",
+      "sub": "Italy · Inter, Torino",
+      "value": 124,
+      "aliases": [
+        "Ferraris",
+        "Ferraris II",
+        "Pietro Ferraris II"
+      ],
+      "wd": "Q723583"
+    },
+    {
+      "id": "david-trezeguet",
+      "name": "David Trezeguet",
+      "sub": "France · Juventus",
+      "value": 123,
+      "aliases": [
+        "Trezeguet"
+      ],
+      "wd": "Q183967"
+    },
+    {
+      "id": "gianluca-vialli",
+      "name": "Gianluca Vialli",
+      "sub": "Italy · Sampdoria, Juventus",
+      "value": 123,
+      "aliases": [
+        "Vialli"
+      ],
+      "wd": "Q239688"
+    },
+    {
+      "id": "renzo-burini",
+      "name": "Renzo Burini",
+      "sub": "Italy · AC Milan, Lazio",
+      "value": 123,
+      "aliases": [
+        "Burini"
+      ],
+      "wd": "Q1487896"
+    },
+    {
+      "id": "mauro-icardi",
+      "name": "Mauro Icardi",
+      "sub": "Argentina · Inter",
+      "value": 121,
+      "aliases": [
+        "Icardi"
+      ],
+      "wd": "Q136986"
+    },
+    {
+      "id": "cristiano-lucarelli",
+      "name": "Cristiano Lucarelli",
+      "sub": "Italy · Livorno",
+      "value": 120,
+      "aliases": [
+        "Lucarelli"
+      ],
+      "wd": "Q310034"
+    },
+    {
+      "id": "ettore-puricelli",
+      "name": "Ettore Puricelli",
+      "sub": "Uruguay/Italy · Bologna, AC Milan",
+      "value": 119,
+      "aliases": [
+        "Puricelli"
+      ],
+      "wd": "Q969232"
+    },
+    {
+      "id": "gino-pivatelli",
+      "name": "Gino Pivatelli",
+      "sub": "Italy · Bologna",
+      "value": 118,
+      "aliases": [
+        "Pivatelli"
+      ],
+      "wd": "Q945747"
+    },
+    {
+      "id": "abel-balbo",
+      "name": "Abel Balbo",
+      "sub": "Argentina · Udinese, Roma",
+      "value": 117,
+      "aliases": [
+        "Balbo"
+      ],
+      "wd": "Q318387"
+    },
+    {
+      "id": "andrea-belotti",
+      "name": "Andrea Belotti",
+      "sub": "Italy · Torino",
+      "value": 116,
+      "aliases": [
+        "Belotti"
+      ],
+      "wd": "Q4754963"
+    },
+    {
+      "id": "sandro-mazzola",
+      "name": "Sandro Mazzola",
+      "sub": "Italy · Inter",
+      "value": 116,
+      "aliases": [
+        "Mazzola",
+        "Alessandro Mazzola"
+      ],
+      "wd": "Q314856"
+    },
+    {
+      "id": "giampaolo-pazzini",
+      "name": "Giampaolo Pazzini",
+      "sub": "Italy · Sampdoria",
+      "value": 114,
+      "aliases": [
+        "Pazzini"
+      ],
+      "wd": "Q219389"
+    },
+    {
+      "id": "dries-mertens",
+      "name": "Dries Mertens",
+      "sub": "Belgium · Napoli",
+      "value": 113,
+      "aliases": [
+        "Mertens"
+      ],
+      "wd": "Q11954"
+    },
+    {
+      "id": "nicola-amoruso",
+      "name": "Nicola Amoruso",
+      "sub": "Italy · Perugia, Reggina",
+      "value": 113,
+      "aliases": [
+        "Amoruso"
+      ],
+      "wd": "Q62244"
+    },
+    {
+      "id": "antonio-cassano",
+      "name": "Antonio Cassano",
+      "sub": "Italy · Roma, Sampdoria",
+      "value": 113,
+      "aliases": [
+        "Cassano"
+      ],
+      "wd": "Q180993"
+    },
+    {
+      "id": "edinson-cavani",
+      "name": "Edinson Cavani",
+      "sub": "Uruguay · Palermo, Napoli",
+      "value": 112,
+      "aliases": [
+        "Cavani"
+      ],
+      "wd": "Q167790"
+    },
+    {
+      "id": "sergio-pellissier",
+      "name": "Sergio Pellissier",
+      "sub": "Italy · Chievo",
+      "value": 112,
+      "aliases": [
+        "Pellissier"
+      ],
+      "wd": "Q465699"
+    },
+    {
+      "id": "riccardo-carapellese",
+      "name": "Riccardo Carapellese",
+      "sub": "Italy · AC Milan, Torino",
+      "value": 111,
+      "aliases": [
+        "Carapellese"
+      ],
+      "wd": "Q1360161"
+    },
+    {
+      "id": "lorenzo-bettini",
+      "name": "Lorenzo Bettini",
+      "sub": "Italy · Udinese",
+      "value": 110,
+      "aliases": [
+        "Bettini"
+      ],
+      "wd": "Q1409166"
+    },
+    {
+      "id": "carlo-galli",
+      "name": "Carlo Galli",
+      "sub": "Italy · Roma, AC Milan",
+      "value": 110,
+      "aliases": [
+        "Galli"
+      ],
+      "wd": "Q2721098"
+    },
+    {
+      "id": "giovanni-ferrari",
+      "name": "Giovanni Ferrari",
+      "sub": "Italy · Juventus",
+      "value": 110,
+      "aliases": [
+        "Ferrari"
+      ],
+      "wd": "Q382987"
+    },
+    {
+      "id": "giuseppe-baldini",
+      "name": "Giuseppe Baldini",
+      "sub": "Italy · Sampdoria",
+      "value": 110,
+      "aliases": [
+        "Baldini"
+      ],
+      "wd": "Q708936"
+    }
+  ]
+}

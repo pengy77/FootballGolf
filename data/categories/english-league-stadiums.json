@@ -4,6 +4,7 @@
   "prompt": "biggest stadium in English league football",
   "noun": "stadium",
   "nounPlural": "stadiums",
+  "kind": "stadium",
   "metric": "Capacity",
   "order": "desc",
   "description": "Home grounds of all 92 Premier League and EFL clubs in 2026–27 (including the four Welsh clubs), ranked by capacity.",
@@ -29,7 +30,8 @@
         "Man Utd",
         "Man United",
         "Theatre of Dreams"
-      ]
+      ],
+      "wd": "Q83457"
     },
     {
       "id": "tottenham-hotspur-stadium",
@@ -41,7 +43,8 @@
         "Tottenham Hotspur",
         "Tottenham",
         "Spurs"
-      ]
+      ],
+      "wd": "Q55074091"
     },
     {
       "id": "london-stadium",
@@ -53,7 +56,8 @@
         "West Ham United",
         "West Ham",
         "Olympic Stadium"
-      ]
+      ],
+      "wd": "Q172190"
     },
     {
       "id": "anfield",
@@ -64,7 +68,8 @@
       "aliases": [
         "Liverpool",
         "LFC"
-      ]
+      ],
+      "wd": "Q45671"
     },
     {
       "id": "etihad-stadium",
@@ -77,7 +82,8 @@
         "Man City",
         "Etihad",
         "City of Manchester Stadium"
-      ]
+      ],
+      "wd": "x-stadium-etihad-stadium"
     },
     {
       "id": "emirates-stadium",
@@ -89,7 +95,8 @@
         "Arsenal",
         "Emirates",
         "Gunners"
-      ]
+      ],
+      "wd": "Q163995"
     },
     {
       "id": "hill-dickinson-stadium",
@@ -102,7 +109,8 @@
         "Everton Stadium",
         "Bramley-Moore Dock",
         "Toffees"
-      ]
+      ],
+      "wd": "x-stadium-hill-dickinson-stadium"
     },
     {
       "id": "st-james-park",
@@ -115,7 +123,8 @@
         "Newcastle",
         "St James Park Newcastle",
         "Toon"
-      ]
+      ],
+      "wd": "Q1856701"
     },
     {
       "id": "stadium-of-light",
@@ -125,7 +134,8 @@
       "display": "48,095",
       "aliases": [
         "Sunderland"
-      ]
+      ],
+      "wd": "Q7875112"
     },
     {
       "id": "villa-park",
@@ -136,7 +146,8 @@
       "aliases": [
         "Aston Villa",
         "Villa"
-      ]
+      ],
+      "wd": "Q175339"
     },
     {
       "id": "stamford-bridge",
@@ -147,7 +158,8 @@
       "aliases": [
         "Chelsea",
         "The Bridge"
-      ]
+      ],
+      "wd": "Q171458"
     },
     {
       "id": "elland-road",
@@ -158,7 +170,8 @@
       "aliases": [
         "Leeds United",
         "Leeds"
-      ]
+      ],
+      "wd": "Q619505"
     },
     {
       "id": "hillsborough",
@@ -171,7 +184,8 @@
         "Sheff Wed",
         "Wednesday",
         "Hillsborough Stadium"
-      ]
+      ],
+      "wd": "Q642557"
     },
     {
       "id": "riverside-stadium",
@@ -183,7 +197,8 @@
         "Middlesbrough",
         "Boro",
         "The Riverside"
-      ]
+      ],
+      "wd": "Q822886"
     },
     {
       "id": "cardiff-city-stadium",
@@ -194,7 +209,8 @@
       "aliases": [
         "Cardiff City",
         "Cardiff"
-      ]
+      ],
+      "wd": "Q867902"
     },
     {
       "id": "pride-park",
@@ -206,7 +222,8 @@
         "Derby County",
         "Derby",
         "Pride Park Stadium"
-      ]
+      ],
+      "wd": "Q201612"
     },
     {
       "id": "coventry-building-society-arena",
@@ -219,7 +236,8 @@
         "Coventry",
         "CBS Arena",
         "Ricoh Arena"
-      ]
+      ],
+      "wd": "Q842077"
     },
     {
       "id": "st-mary-s-stadium",
@@ -230,7 +248,8 @@
       "aliases": [
         "Southampton",
         "Saints"
-      ]
+      ],
+      "wd": "Q567339"
     },
     {
       "id": "king-power-stadium",
@@ -241,7 +260,8 @@
       "aliases": [
         "Leicester City",
         "Leicester"
-      ]
+      ],
+      "wd": "Q620031"
     },
     {
       "id": "bramall-lane",
@@ -253,7 +273,8 @@
         "Sheffield United",
         "Sheff Utd",
         "Blades"
-      ]
+      ],
+      "wd": "Q897533"
     },
     {
       "id": "falmer-stadium",
@@ -267,7 +288,8 @@
         "Amex",
         "Amex Stadium",
         "American Express Stadium"
-      ]
+      ],
+      "wd": "Q619409"
     },
     {
       "id": "molineux",
@@ -279,7 +301,8 @@
         "Wolverhampton Wanderers",
         "Wolves",
         "Molineux Stadium"
-      ]
+      ],
+      "wd": "Q380823"
     },
     {
       "id": "ewood-park",
@@ -290,7 +313,8 @@
       "aliases": [
         "Blackburn Rovers",
         "Blackburn"
-      ]
+      ],
+      "wd": "Q245085"
     },
     {
       "id": "city-ground",
@@ -302,7 +326,8 @@
         "Nottingham Forest",
         "Forest",
         "Nottm Forest"
-      ]
+      ],
+      "wd": "Q593446"
     },
     {
       "id": "stadium-mk",
@@ -313,7 +338,8 @@
       "aliases": [
         "Milton Keynes Dons",
         "MK Dons"
-      ]
+      ],
+      "wd": "Q1144973"
     },
     {
       "id": "bet365-stadium",
@@ -325,7 +351,8 @@
         "Stoke City",
         "Stoke",
         "Britannia Stadium"
-      ]
+      ],
+      "wd": "Q500922"
     },
     {
       "id": "portman-road",
@@ -336,7 +363,8 @@
       "aliases": [
         "Ipswich Town",
         "Ipswich"
-      ]
+      ],
+      "wd": "Q619558"
     },
     {
       "id": "st-andrew-s",
@@ -350,7 +378,8 @@
         "Blues",
         "St Andrews",
         "Knighthead Park"
-      ]
+      ],
+      "wd": "Q819179"
     },
     {
       "id": "toughsheet-community-stadium",
@@ -364,7 +393,8 @@
         "University of Bolton Stadium",
         "Reebok Stadium",
         "Macron Stadium"
-      ]
+      ],
+      "wd": "Q242772"
     },
     {
       "id": "craven-cottage",
@@ -375,7 +405,8 @@
       "aliases": [
         "Fulham",
         "The Cottage"
-      ]
+      ],
+      "wd": "Q318043"
     },
     {
       "id": "carrow-road",
@@ -386,7 +417,8 @@
       "aliases": [
         "Norwich City",
         "Norwich"
-      ]
+      ],
+      "wd": "Q123017"
     },
     {
       "id": "the-valley",
@@ -397,7 +429,8 @@
       "aliases": [
         "Charlton Athletic",
         "Charlton"
-      ]
+      ],
+      "wd": "Q958319"
     },
     {
       "id": "ashton-gate-stadium",
@@ -408,7 +441,8 @@
       "aliases": [
         "Bristol City",
         "Ashton Gate"
-      ]
+      ],
+      "wd": "Q726370"
     },
     {
       "id": "the-hawthorns",
@@ -420,7 +454,8 @@
         "West Bromwich Albion",
         "West Brom",
         "WBA"
-      ]
+      ],
+      "wd": "Q31678"
     },
     {
       "id": "mkm-stadium",
@@ -433,7 +468,8 @@
         "Hull",
         "KCOM Stadium",
         "KC Stadium"
-      ]
+      ],
+      "wd": "Q630160"
     },
     {
       "id": "selhurst-park",
@@ -444,7 +480,8 @@
       "aliases": [
         "Crystal Palace",
         "Palace"
-      ]
+      ],
+      "wd": "Q1066373"
     },
     {
       "id": "brick-community-stadium",
@@ -457,7 +494,8 @@
         "Wigan",
         "DW Stadium",
         "JJB Stadium"
-      ]
+      ],
+      "wd": "Q494388"
     },
     {
       "id": "valley-parade",
@@ -468,7 +506,8 @@
       "aliases": [
         "Bradford City",
         "Bradford"
-      ]
+      ],
+      "wd": "Q969279"
     },
     {
       "id": "madejski-stadium",
@@ -479,7 +518,8 @@
       "aliases": [
         "Reading",
         "Select Car Leasing Stadium"
-      ]
+      ],
+      "wd": "Q31656"
     },
     {
       "id": "kirklees-stadium",
@@ -493,7 +533,8 @@
         "John Smith's Stadium",
         "Accu Stadium",
         "McAlpine Stadium"
-      ]
+      ],
+      "wd": "Q619407"
     },
     {
       "id": "deepdale",
@@ -505,7 +546,8 @@
         "Preston North End",
         "Preston",
         "PNE"
-      ]
+      ],
+      "wd": "Q1141958"
     },
     {
       "id": "oakwell",
@@ -515,7 +557,8 @@
       "display": "23,287",
       "aliases": [
         "Barnsley"
-      ]
+      ],
+      "wd": "Q1138270"
     },
     {
       "id": "vicarage-road",
@@ -525,7 +568,8 @@
       "display": "22,200",
       "aliases": [
         "Watford"
-      ]
+      ],
+      "wd": "Q10626"
     },
     {
       "id": "turf-moor",
@@ -535,7 +579,8 @@
       "display": "21,990",
       "aliases": [
         "Burnley"
-      ]
+      ],
+      "wd": "Q683112"
     },
     {
       "id": "liberty-stadium",
@@ -547,7 +592,8 @@
         "Swansea City",
         "Swansea",
         "Swansea.com Stadium"
-      ]
+      ],
+      "wd": "Q580480"
     },
     {
       "id": "fratton-park",
@@ -558,7 +604,8 @@
       "aliases": [
         "Portsmouth",
         "Pompey"
-      ]
+      ],
+      "wd": "Q619531"
     },
     {
       "id": "meadow-lane",
@@ -569,7 +616,8 @@
       "aliases": [
         "Notts County",
         "Notts"
-      ]
+      ],
+      "wd": "Q1192396"
     },
     {
       "id": "the-den",
@@ -579,7 +627,8 @@
       "display": "19,369",
       "aliases": [
         "Millwall"
-      ]
+      ],
+      "wd": "Q908481"
     },
     {
       "id": "loftus-road",
@@ -590,7 +639,8 @@
       "aliases": [
         "Queens Park Rangers",
         "QPR"
-      ]
+      ],
+      "wd": "x-stadium-loftus-road"
     },
     {
       "id": "home-park",
@@ -601,7 +651,8 @@
       "aliases": [
         "Plymouth Argyle",
         "Plymouth"
-      ]
+      ],
+      "wd": "Q619350"
     },
     {
       "id": "brentford-community-stadium",
@@ -613,7 +664,8 @@
         "Brentford",
         "Gtech Community Stadium",
         "Bees"
-      ]
+      ],
+      "wd": "Q4961609"
     },
     {
       "id": "bloomfield-road",
@@ -623,7 +675,8 @@
       "display": "16,616",
       "aliases": [
         "Blackpool"
-      ]
+      ],
+      "wd": "Q870859"
     },
     {
       "id": "county-ground",
@@ -634,7 +687,8 @@
       "aliases": [
         "Swindon Town",
         "Swindon"
-      ]
+      ],
+      "wd": "Q1137293"
     },
     {
       "id": "eco-power-stadium",
@@ -647,7 +701,8 @@
         "Doncaster",
         "Keepmoat Stadium",
         "Club Doncaster Sports Village"
-      ]
+      ],
+      "wd": "Q1336402"
     },
     {
       "id": "vale-park",
@@ -657,7 +712,8 @@
       "display": "15,036",
       "aliases": [
         "Port Vale"
-      ]
+      ],
+      "wd": "Q1724993"
     },
     {
       "id": "prenton-park",
@@ -668,7 +724,8 @@
       "aliases": [
         "Tranmere Rovers",
         "Tranmere"
-      ]
+      ],
+      "wd": "Q619072"
     },
     {
       "id": "london-road",
@@ -682,7 +739,8 @@
         "Posh",
         "London Road Stadium",
         "Weston Homes Stadium"
-      ]
+      ],
+      "wd": "Q1156350"
     },
     {
       "id": "boundary-park",
@@ -693,7 +751,8 @@
       "aliases": [
         "Oldham Athletic",
         "Oldham"
-      ]
+      ],
+      "wd": "Q895151"
     },
     {
       "id": "kassam-stadium",
@@ -705,7 +764,8 @@
         "Oxford United",
         "Oxford",
         "Kassam"
-      ]
+      ],
+      "wd": "Q1672134"
     },
     {
       "id": "memorial-stadium",
@@ -716,7 +776,8 @@
       "aliases": [
         "Bristol Rovers",
         "The Mem"
-      ]
+      ],
+      "wd": "Q508121"
     },
     {
       "id": "new-york-stadium",
@@ -728,7 +789,8 @@
         "Rotherham United",
         "Rotherham",
         "AESSEAL New York Stadium"
-      ]
+      ],
+      "wd": "Q1983118"
     },
     {
       "id": "priestfield-stadium",
@@ -739,7 +801,8 @@
       "aliases": [
         "Gillingham",
         "Priestfield"
-      ]
+      ],
+      "wd": "Q619148"
     },
     {
       "id": "dean-court",
@@ -752,7 +815,8 @@
         "AFC Bournemouth",
         "Cherries",
         "Vitality Stadium"
-      ]
+      ],
+      "wd": "Q619094"
     },
     {
       "id": "bescot-stadium",
@@ -762,7 +826,8 @@
       "display": "10,863",
       "aliases": [
         "Walsall"
-      ]
+      ],
+      "wd": "Q609268"
     },
     {
       "id": "edgeley-park",
@@ -773,7 +838,8 @@
       "aliases": [
         "Stockport County",
         "Stockport"
-      ]
+      ],
+      "wd": "Q1284381"
     },
     {
       "id": "sincil-bank",
@@ -785,7 +851,8 @@
         "Lincoln City",
         "Lincoln",
         "LNER Stadium"
-      ]
+      ],
+      "wd": "Q619105"
     },
     {
       "id": "racecourse-ground",
@@ -796,7 +863,8 @@
       "aliases": [
         "Wrexham",
         "STōK Cae Ras"
-      ]
+      ],
+      "wd": "Q1202579"
     },
     {
       "id": "smh-group-stadium",
@@ -807,7 +875,8 @@
       "aliases": [
         "Chesterfield",
         "Proact Stadium"
-      ]
+      ],
+      "wd": "Q619112"
     },
     {
       "id": "kenilworth-road",
@@ -818,7 +887,8 @@
       "aliases": [
         "Luton Town",
         "Luton"
-      ]
+      ],
+      "wd": "Q1613767"
     },
     {
       "id": "gresty-road",
@@ -830,7 +900,8 @@
         "Crewe Alexandra",
         "Crewe",
         "Mornflake Stadium"
-      ]
+      ],
+      "wd": "x-stadium-gresty-road"
     },
     {
       "id": "colchester-community-stadium",
@@ -842,7 +913,8 @@
         "Colchester United",
         "Colchester",
         "JobServe Community Stadium"
-      ]
+      ],
+      "wd": "Q1141371"
     },
     {
       "id": "new-meadow",
@@ -853,7 +925,8 @@
       "aliases": [
         "Shrewsbury Town",
         "Shrewsbury"
-      ]
+      ],
+      "wd": "Q619070"
     },
     {
       "id": "adams-park",
@@ -864,7 +937,8 @@
       "aliases": [
         "Wycombe Wanderers",
         "Wycombe"
-      ]
+      ],
+      "wd": "Q351946"
     },
     {
       "id": "blundell-park",
@@ -875,7 +949,8 @@
       "aliases": [
         "Grimsby Town",
         "Grimsby"
-      ]
+      ],
+      "wd": "Q3641228"
     },
     {
       "id": "spotland",
@@ -887,7 +962,8 @@
         "Rochdale",
         "Spotland Stadium",
         "Crown Oil Arena"
-      ]
+      ],
+      "wd": "Q619466"
     },
     {
       "id": "field-mill",
@@ -899,7 +975,8 @@
         "Mansfield Town",
         "Mansfield",
         "One Call Stadium"
-      ]
+      ],
+      "wd": "Q619071"
     },
     {
       "id": "brisbane-road",
@@ -910,7 +987,8 @@
       "aliases": [
         "Leyton Orient",
         "Orient"
-      ]
+      ],
+      "wd": "Q917727"
     },
     {
       "id": "plough-lane",
@@ -922,7 +1000,8 @@
         "AFC Wimbledon",
         "Wimbledon",
         "Cherry Red Records Stadium"
-      ]
+      ],
+      "wd": "Q48699006"
     },
     {
       "id": "rodney-parade",
@@ -933,7 +1012,8 @@
       "aliases": [
         "Newport County",
         "Newport"
-      ]
+      ],
+      "wd": "x-stadium-rodney-parade"
     },
     {
       "id": "st-james-park-exeter-city",
@@ -945,7 +1025,8 @@
         "Exeter City",
         "Exeter",
         "St James Park Exeter"
-      ]
+      ],
+      "wd": "x-stadium-st-james-park-exeter-city"
     },
     {
       "id": "york-community-stadium",
@@ -957,7 +1038,8 @@
         "York City",
         "York",
         "LNER Community Stadium"
-      ]
+      ],
+      "wd": "x-stadium-york-community-stadium"
     },
     {
       "id": "sixfields-stadium",
@@ -969,7 +1051,8 @@
         "Northampton Town",
         "Northampton",
         "Cobblers"
-      ]
+      ],
+      "wd": "Q619615"
     },
     {
       "id": "abbey-stadium",
@@ -980,7 +1063,8 @@
       "aliases": [
         "Cambridge United",
         "Cambridge"
-      ]
+      ],
+      "wd": "Q2444574"
     },
     {
       "id": "broadhall-way",
@@ -991,7 +1075,8 @@
       "aliases": [
         "Stevenage",
         "Lamex Stadium"
-      ]
+      ],
+      "wd": "Q619353"
     },
     {
       "id": "pirelli-stadium",
@@ -1002,7 +1087,8 @@
       "aliases": [
         "Burton Albion",
         "Burton"
-      ]
+      ],
+      "wd": "Q619136"
     },
     {
       "id": "whaddon-road",
@@ -1013,7 +1099,8 @@
       "aliases": [
         "Cheltenham Town",
         "Cheltenham"
-      ]
+      ],
+      "wd": "Q541299"
     },
     {
       "id": "broadfield-stadium",
@@ -1024,7 +1111,8 @@
       "aliases": [
         "Crawley Town",
         "Crawley"
-      ]
+      ],
+      "wd": "Q609115"
     },
     {
       "id": "crown-ground",
@@ -1036,7 +1124,8 @@
         "Accrington Stanley",
         "Accrington",
         "Wham Stadium"
-      ]
+      ],
+      "wd": "Q620815"
     },
     {
       "id": "the-hive-stadium",
@@ -1047,7 +1136,8 @@
       "aliases": [
         "Barnet",
         "The Hive"
-      ]
+      ],
+      "wd": "Q14437690"
     },
     {
       "id": "highbury-stadium",
@@ -1058,7 +1148,8 @@
       "aliases": [
         "Fleetwood Town",
         "Fleetwood"
-      ]
+      ],
+      "wd": "Q619024"
     },
     {
       "id": "moor-lane",
@@ -1070,7 +1161,8 @@
         "Salford City",
         "Salford",
         "Peninsula Stadium"
-      ]
+      ],
+      "wd": "Q54817852"
     },
     {
       "id": "hayes-lane",
@@ -1080,7 +1172,8 @@
       "display": "5,000",
       "aliases": [
         "Bromley"
-      ]
+      ],
+      "wd": "Q3986424"
     }
   ]
 }

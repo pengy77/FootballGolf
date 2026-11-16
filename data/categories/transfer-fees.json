@@ -1,0 +1,522 @@
+{
+  "id": "transfer-fees",
+  "title": "Biggest transfer fees",
+  "prompt": "biggest transfer fee ever paid for a player",
+  "noun": "transfer",
+  "nounPlural": "transfers",
+  "kind": "player",
+  "metric": "Fee",
+  "order": "desc",
+  "description": "The biggest transfer fees ever paid, in euros at the exchange rate of the time. Each player appears once, at their most expensive move, so name the player.",
+  "tags": [
+    "transfers",
+    "players",
+    "europe"
+  ],
+  "source": {
+    "name": "Wikipedia: List of most expensive association football transfers",
+    "url": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+    "asOf": "2026-09-01"
+  },
+  "items": [
+    {
+      "id": "neymar",
+      "name": "Neymar",
+      "sub": "Barcelona → PSG, 2017",
+      "value": 222,
+      "display": "€222m",
+      "aliases": [
+        "Neymar Jr"
+      ],
+      "wd": "Q142794"
+    },
+    {
+      "id": "kylian-mbappe",
+      "name": "Kylian Mbappé",
+      "sub": "Monaco → PSG, 2017",
+      "value": 180,
+      "display": "€180m",
+      "aliases": [
+        "Mbappé"
+      ],
+      "wd": "Q21621995"
+    },
+    {
+      "id": "enzo-fernandez",
+      "name": "Enzo Fernández",
+      "sub": "Chelsea → Man City, 2026",
+      "value": 145.8,
+      "display": "€145.8m",
+      "aliases": [
+        "Fernández",
+        "Enzo"
+      ],
+      "wd": "Q96105248"
+    },
+    {
+      "id": "alexander-isak",
+      "name": "Alexander Isak",
+      "sub": "Newcastle → Liverpool, 2025",
+      "value": 144.5,
+      "display": "€144.5m",
+      "aliases": [
+        "Isak"
+      ],
+      "wd": "Q23759917"
+    },
+    {
+      "id": "morgan-rogers",
+      "name": "Morgan Rogers",
+      "sub": "Aston Villa → Chelsea, 2026",
+      "value": 137.3,
+      "display": "€137.3m",
+      "aliases": [
+        "Rogers"
+      ],
+      "wd": "Q61598452"
+    },
+    {
+      "id": "elliot-anderson",
+      "name": "Elliot Anderson",
+      "sub": "Nottm Forest → Man City, 2026",
+      "value": 135.5,
+      "display": "€135.5m",
+      "aliases": [
+        "Anderson"
+      ],
+      "wd": "Q104762954"
+    },
+    {
+      "id": "joao-felix",
+      "name": "João Félix",
+      "sub": "Benfica → Atlético Madrid, 2019",
+      "value": 126,
+      "display": "€126m",
+      "aliases": [
+        "Félix"
+      ],
+      "wd": "Q27049064"
+    },
+    {
+      "id": "yan-diomande",
+      "name": "Yan Diomande",
+      "sub": "RB Leipzig → Real Madrid, 2026",
+      "value": 125,
+      "display": "€125m",
+      "aliases": [
+        "Diomande"
+      ],
+      "wd": "x-player-yan-diomande"
+    },
+    {
+      "id": "bradley-barcola",
+      "name": "Bradley Barcola",
+      "sub": "PSG → Liverpool, 2026",
+      "value": 125,
+      "display": "€125m",
+      "aliases": [
+        "Barcola"
+      ],
+      "wd": "Q99670930"
+    },
+    {
+      "id": "antoine-griezmann",
+      "name": "Antoine Griezmann",
+      "sub": "Atlético Madrid → Barcelona, 2019",
+      "value": 120,
+      "display": "€120m",
+      "aliases": [
+        "Griezmann"
+      ],
+      "wd": "Q455462"
+    },
+    {
+      "id": "philippe-coutinho",
+      "name": "Philippe Coutinho",
+      "sub": "Liverpool → Barcelona, 2018",
+      "value": 118.4,
+      "display": "€118.4m",
+      "aliases": [
+        "Coutinho"
+      ],
+      "wd": "Q311872"
+    },
+    {
+      "id": "jack-grealish",
+      "name": "Jack Grealish",
+      "sub": "Aston Villa → Man City, 2021",
+      "value": 117.7,
+      "display": "€117.7m",
+      "aliases": [
+        "Grealish"
+      ],
+      "wd": "Q16056053"
+    },
+    {
+      "id": "florian-wirtz",
+      "name": "Florian Wirtz",
+      "sub": "Leverkusen → Liverpool, 2025",
+      "value": 117.5,
+      "display": "€117.5m",
+      "aliases": [
+        "Wirtz"
+      ],
+      "wd": "Q94699949"
+    },
+    {
+      "id": "declan-rice",
+      "name": "Declan Rice",
+      "sub": "West Ham → Arsenal, 2023",
+      "value": 116.5,
+      "display": "€116.5m",
+      "aliases": [
+        "Rice"
+      ],
+      "wd": "Q30007142"
+    },
+    {
+      "id": "moises-caicedo",
+      "name": "Moisés Caicedo",
+      "sub": "Brighton → Chelsea, 2023",
+      "value": 116.3,
+      "display": "€116.3m",
+      "aliases": [
+        "Caicedo"
+      ],
+      "wd": "Q87715532"
+    },
+    {
+      "id": "romelu-lukaku",
+      "name": "Romelu Lukaku",
+      "sub": "Inter → Chelsea, 2021",
+      "value": 115,
+      "display": "€115m",
+      "aliases": [
+        "Lukaku"
+      ],
+      "wd": "Q313316"
+    },
+    {
+      "id": "sandro-tonali",
+      "name": "Sandro Tonali",
+      "sub": "Newcastle → Tottenham, 2026",
+      "value": 108.1,
+      "display": "€108.1m",
+      "aliases": [
+        "Tonali"
+      ],
+      "wd": "Q43402334"
+    },
+    {
+      "id": "ousmane-dembele",
+      "name": "Ousmane Dembélé",
+      "sub": "Dortmund → Barcelona, 2017",
+      "value": 105,
+      "display": "€105m",
+      "aliases": [
+        "Dembélé"
+      ],
+      "wd": "Q20851003"
+    },
+    {
+      "id": "paul-pogba",
+      "name": "Paul Pogba",
+      "sub": "Juventus → Man Utd, 2016",
+      "value": 105,
+      "display": "€105m",
+      "aliases": [
+        "Pogba"
+      ],
+      "wd": "Q129027"
+    },
+    {
+      "id": "jude-bellingham",
+      "name": "Jude Bellingham",
+      "sub": "Dortmund → Real Madrid, 2023",
+      "value": 103,
+      "display": "€103m",
+      "aliases": [
+        "Bellingham"
+      ],
+      "wd": "Q66241169"
+    },
+    {
+      "id": "eden-hazard",
+      "name": "Eden Hazard",
+      "sub": "Chelsea → Real Madrid, 2019",
+      "value": 100,
+      "display": "€100m",
+      "aliases": [
+        "Hazard"
+      ],
+      "wd": "Q214204"
+    },
+    {
+      "id": "cristiano-ronaldo",
+      "name": "Cristiano Ronaldo",
+      "sub": "Real Madrid → Juventus, 2018",
+      "value": 100,
+      "display": "€100m",
+      "aliases": [
+        "Ronaldo",
+        "CR7"
+      ],
+      "wd": "Q11571"
+    },
+    {
+      "id": "harry-kane",
+      "name": "Harry Kane",
+      "sub": "Tottenham → Bayern, 2023",
+      "value": 100,
+      "display": "€100m",
+      "aliases": [
+        "Kane"
+      ],
+      "wd": "Q969725"
+    },
+    {
+      "id": "gareth-bale",
+      "name": "Gareth Bale",
+      "sub": "Tottenham → Real Madrid, 2013",
+      "value": 100,
+      "display": "€100m",
+      "aliases": [
+        "Bale"
+      ],
+      "wd": "Q184586"
+    },
+    {
+      "id": "mateus-fernandes",
+      "name": "Mateus Fernandes",
+      "sub": "West Ham → Tottenham, 2026",
+      "value": 99.3,
+      "display": "€99.3m",
+      "aliases": [
+        "Fernandes"
+      ],
+      "wd": "Q114870703"
+    },
+    {
+      "id": "ayyoub-bouaddi",
+      "name": "Ayyoub Bouaddi",
+      "sub": "Lille → Man City, 2026",
+      "value": 95,
+      "display": "€95m",
+      "aliases": [
+        "Bouaddi"
+      ],
+      "wd": "Q122971833"
+    },
+    {
+      "id": "antony",
+      "name": "Antony",
+      "sub": "Ajax → Man Utd, 2022",
+      "value": 95,
+      "display": "€95m",
+      "wd": "Q124511365"
+    },
+    {
+      "id": "josko-gvardiol",
+      "name": "Joško Gvardiol",
+      "sub": "RB Leipzig → Man City, 2023",
+      "value": 90,
+      "display": "€90m",
+      "aliases": [
+        "Gvardiol"
+      ],
+      "wd": "Q73400656"
+    },
+    {
+      "id": "gonzalo-higuain",
+      "name": "Gonzalo Higuaín",
+      "sub": "Napoli → Juventus, 2016",
+      "value": 90,
+      "display": "€90m",
+      "aliases": [
+        "Higuaín",
+        "Pipita"
+      ],
+      "wd": "Q483846"
+    },
+    {
+      "id": "savio",
+      "name": "Sávio",
+      "sub": "Man City → Tottenham, 2026",
+      "value": 87.7,
+      "display": "€87.7m",
+      "aliases": [
+        "Savinho"
+      ],
+      "wd": "Q372451"
+    },
+    {
+      "id": "bruno-guimaraes",
+      "name": "Bruno Guimarães",
+      "sub": "Newcastle → Arsenal, 2026",
+      "value": 87.5,
+      "display": "€87.5m",
+      "aliases": [
+        "Guimarães"
+      ],
+      "wd": "Q58323172"
+    },
+    {
+      "id": "harry-maguire",
+      "name": "Harry Maguire",
+      "sub": "Leicester → Man Utd, 2019",
+      "value": 86.6,
+      "display": "€86.6m",
+      "aliases": [
+        "Maguire"
+      ],
+      "wd": "Q165772"
+    },
+    {
+      "id": "jadon-sancho",
+      "name": "Jadon Sancho",
+      "sub": "Dortmund → Man Utd, 2021",
+      "value": 85,
+      "display": "€85m",
+      "aliases": [
+        "Sancho"
+      ],
+      "wd": "Q30148558"
+    },
+    {
+      "id": "virgil-van-dijk",
+      "name": "Virgil van Dijk",
+      "sub": "Southampton → Liverpool, 2018",
+      "value": 84.4,
+      "display": "€84.4m",
+      "aliases": [
+        "Van Dijk",
+        "VVD"
+      ],
+      "wd": "Q133903"
+    },
+    {
+      "id": "luis-suarez",
+      "name": "Luis Suárez",
+      "sub": "Liverpool → Barcelona, 2014",
+      "value": 82.3,
+      "display": "€82.3m",
+      "aliases": [
+        "Suárez"
+      ],
+      "wd": "Q26517"
+    },
+    {
+      "id": "wesley-fofana",
+      "name": "Wesley Fofana",
+      "sub": "Leicester → Chelsea, 2022",
+      "value": 80.9,
+      "display": "€80.9m",
+      "aliases": [
+        "Fofana"
+      ],
+      "wd": "Q65029821"
+    },
+    {
+      "id": "nicolas-pepe",
+      "name": "Nicolas Pépé",
+      "sub": "Lille → Arsenal, 2019",
+      "value": 80,
+      "display": "€80m",
+      "aliases": [
+        "Pépé"
+      ],
+      "wd": "Q20641306"
+    },
+    {
+      "id": "kepa-arrizabalaga",
+      "name": "Kepa Arrizabalaga",
+      "sub": "Athletic Bilbao → Chelsea, 2018",
+      "value": 80,
+      "display": "€80m",
+      "aliases": [
+        "Arrizabalaga",
+        "Kepa"
+      ],
+      "wd": "Q3195361"
+    },
+    {
+      "id": "hugo-ekitike",
+      "name": "Hugo Ekitike",
+      "sub": "Frankfurt → Liverpool, 2025",
+      "value": 80,
+      "display": "€80m",
+      "aliases": [
+        "Ekitike"
+      ],
+      "wd": "Q100602910"
+    },
+    {
+      "id": "aurelien-tchouameni",
+      "name": "Aurélien Tchouaméni",
+      "sub": "Monaco → Real Madrid, 2022",
+      "value": 80,
+      "display": "€80m",
+      "aliases": [
+        "Tchouaméni"
+      ],
+      "wd": "Q46951844"
+    },
+    {
+      "id": "lucas-hernandez",
+      "name": "Lucas Hernandez",
+      "sub": "Atlético Madrid → Bayern, 2019",
+      "value": 80,
+      "display": "€80m",
+      "aliases": [
+        "Hernandez"
+      ],
+      "wd": "Q18924954"
+    },
+    {
+      "id": "james-rodriguez",
+      "name": "James Rodríguez",
+      "sub": "Monaco → Real Madrid, 2014",
+      "value": 80,
+      "display": "€80m",
+      "aliases": [
+        "Rodríguez",
+        "James"
+      ],
+      "wd": "Q368441"
+    },
+    {
+      "id": "zinedine-zidane",
+      "name": "Zinedine Zidane",
+      "sub": "Juventus → Real Madrid, 2001",
+      "value": 77.5,
+      "display": "€77.5m",
+      "aliases": [
+        "Zidane",
+        "Zizou"
+      ],
+      "wd": "Q1835"
+    },
+    {
+      "id": "jhon-duran",
+      "name": "Jhon Durán",
+      "sub": "Aston Villa → Al-Nassr, 2025",
+      "value": 77,
+      "display": "€77m",
+      "aliases": [
+        "Durán"
+      ],
+      "wd": "Q64748320"
+    },
+    {
+      "id": "benjamin-sesko",
+      "name": "Benjamin Šeško",
+      "sub": "RB Leipzig → Man Utd, 2025",
+      "value": 76.5,
+      "display": "€76.5m",
+      "aliases": [
+        "Šeško"
+      ],
+      "wd": "Q65950315"
+    }
+  ]
+}

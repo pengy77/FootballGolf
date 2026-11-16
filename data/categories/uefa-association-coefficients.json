@@ -4,6 +4,7 @@
   "prompt": "highest UEFA country coefficient",
   "noun": "country",
   "nounPlural": "countries",
+  "kind": "nation",
   "metric": "Coefficient",
   "order": "desc",
   "description": "UEFA men's association coefficient: five-season total of club results in European competitions, 2022–23 to 2026–27 (2026–27 still in progress).",
@@ -22,49 +23,56 @@
       "name": "England",
       "sub": "Premier League",
       "value": 107.685,
-      "display": "107.685"
+      "display": "107.685",
+      "wd": "england"
     },
     {
       "id": "italy",
       "name": "Italy",
       "sub": "Serie A",
       "value": 91.732,
-      "display": "91.732"
+      "display": "91.732",
+      "wd": "italy"
     },
     {
       "id": "spain",
       "name": "Spain",
       "sub": "La Liga",
       "value": 86.493,
-      "display": "86.493"
+      "display": "86.493",
+      "wd": "spain"
     },
     {
       "id": "germany",
       "name": "Germany",
       "sub": "Bundesliga",
       "value": 84.973,
-      "display": "84.973"
+      "display": "84.973",
+      "wd": "germany"
     },
     {
       "id": "france",
       "name": "France",
       "sub": "Ligue 1",
       "value": 72.296,
-      "display": "72.296"
+      "display": "72.296",
+      "wd": "france"
     },
     {
       "id": "portugal",
       "name": "Portugal",
       "sub": "Primeira Liga",
       "value": 69.15,
-      "display": "69.150"
+      "display": "69.150",
+      "wd": "portugal"
     },
     {
       "id": "belgium",
       "name": "Belgium",
       "sub": "Belgian Pro League",
       "value": 64.05,
-      "display": "64.050"
+      "display": "64.050",
+      "wd": "belgium"
     },
     {
       "id": "netherlands",
@@ -75,7 +83,8 @@
       "aliases": [
         "Holland",
         "The Netherlands"
-      ]
+      ],
+      "wd": "netherlands"
     },
     {
       "id": "turkey",
@@ -86,14 +95,16 @@
       "aliases": [
         "Türkiye",
         "Turkiye"
-      ]
+      ],
+      "wd": "turkey"
     },
     {
       "id": "greece",
       "name": "Greece",
       "sub": "Super League Greece",
       "value": 47.612,
-      "display": "47.612"
+      "display": "47.612",
+      "wd": "greece"
     },
     {
       "id": "czechia",
@@ -103,147 +114,168 @@
       "display": "46.325",
       "aliases": [
         "Czech Republic"
-      ]
+      ],
+      "wd": "czech-republic"
     },
     {
       "id": "poland",
       "name": "Poland",
       "sub": "Ekstraklasa",
       "value": 45.725,
-      "display": "45.725"
+      "display": "45.725",
+      "wd": "poland"
     },
     {
       "id": "norway",
       "name": "Norway",
       "sub": "Eliteserien",
       "value": 41.012,
-      "display": "41.012"
+      "display": "41.012",
+      "wd": "norway"
     },
     {
       "id": "denmark",
       "name": "Denmark",
       "sub": "Danish Superliga",
       "value": 40.806,
-      "display": "40.806"
+      "display": "40.806",
+      "wd": "denmark"
     },
     {
       "id": "cyprus",
       "name": "Cyprus",
       "sub": "Cypriot First Division",
       "value": 35.443,
-      "display": "35.443"
+      "display": "35.443",
+      "wd": "cyprus"
     },
     {
       "id": "switzerland",
       "name": "Switzerland",
       "sub": "Swiss Super League",
       "value": 32.2,
-      "display": "32.200"
+      "display": "32.200",
+      "wd": "switzerland"
     },
     {
       "id": "austria",
       "name": "Austria",
       "sub": "Austrian Football Bundesliga",
       "value": 29.65,
-      "display": "29.650"
+      "display": "29.650",
+      "wd": "austria"
     },
     {
       "id": "hungary",
       "name": "Hungary",
       "sub": "Nemzeti Bajnokság I",
       "value": 29.312,
-      "display": "29.312"
+      "display": "29.312",
+      "wd": "hungary"
     },
     {
       "id": "croatia",
       "name": "Croatia",
       "sub": "Croatian Football League",
       "value": 27.906,
-      "display": "27.906"
+      "display": "27.906",
+      "wd": "croatia"
     },
     {
       "id": "sweden",
       "name": "Sweden",
       "sub": "Allsvenskan",
-      "value": 27.0,
-      "display": "27.000"
+      "value": 27,
+      "display": "27.000",
+      "wd": "sweden"
     },
     {
       "id": "scotland",
       "name": "Scotland",
       "sub": "Scottish Premiership",
       "value": 26.85,
-      "display": "26.850"
+      "display": "26.850",
+      "wd": "scotland"
     },
     {
       "id": "romania",
       "name": "Romania",
       "sub": "Liga I",
       "value": 26.125,
-      "display": "26.125"
+      "display": "26.125",
+      "wd": "romania"
     },
     {
       "id": "ukraine",
       "name": "Ukraine",
       "sub": "Ukrainian Premier League",
       "value": 24.837,
-      "display": "24.837"
+      "display": "24.837",
+      "wd": "ukraine"
     },
     {
       "id": "azerbaijan",
       "name": "Azerbaijan",
       "sub": "Azerbaijan Premier League",
       "value": 24.187,
-      "display": "24.187"
+      "display": "24.187",
+      "wd": "azerbaijan"
     },
     {
       "id": "israel",
       "name": "Israel",
       "sub": "Israeli Premier League",
       "value": 24.125,
-      "display": "24.125"
+      "display": "24.125",
+      "wd": "israel"
     },
     {
       "id": "slovenia",
       "name": "Slovenia",
       "sub": "Slovenian PrvaLiga",
       "value": 23.593,
-      "display": "23.593"
+      "display": "23.593",
+      "wd": "slovenia"
     },
     {
       "id": "slovakia",
       "name": "Slovakia",
       "sub": "Slovak First Football League",
       "value": 22.375,
-      "display": "22.375"
+      "display": "22.375",
+      "wd": "slovakia"
     },
     {
       "id": "bulgaria",
       "name": "Bulgaria",
       "sub": "First Professional Football League",
       "value": 22.062,
-      "display": "22.062"
+      "display": "22.062",
+      "wd": "bulgaria"
     },
     {
       "id": "serbia",
       "name": "Serbia",
       "sub": "Serbian SuperLiga",
-      "value": 19.0,
-      "display": "19.000"
+      "value": 19,
+      "display": "19.000",
+      "wd": "serbia"
     },
     {
       "id": "russia",
       "name": "Russia",
       "sub": "Russian Premier League",
       "value": 17.332,
-      "display": "17.332"
+      "display": "17.332",
+      "wd": "russia"
     },
     {
       "id": "iceland",
       "name": "Iceland",
       "sub": "Besta deild karla",
       "value": 17.02,
-      "display": "17.020"
+      "display": "17.020",
+      "wd": "iceland"
     },
     {
       "id": "republic-of-ireland",
@@ -254,21 +286,24 @@
       "aliases": [
         "Ireland",
         "Eire"
-      ]
+      ],
+      "wd": "republic-of-ireland"
     },
     {
       "id": "armenia",
       "name": "Armenia",
       "sub": "Armenian Premier League",
       "value": 15.812,
-      "display": "15.812"
+      "display": "15.812",
+      "wd": "armenia"
     },
     {
       "id": "latvia",
       "name": "Latvia",
       "sub": "Latvian Higher League",
       "value": 14.625,
-      "display": "14.625"
+      "display": "14.625",
+      "wd": "latvia"
     },
     {
       "id": "bosnia-and-herzegovina",
@@ -279,56 +314,64 @@
       "aliases": [
         "Bosnia",
         "Bosnia-Herzegovina"
-      ]
+      ],
+      "wd": "bosnia-and-herzegovina"
     },
     {
       "id": "kosovo",
       "name": "Kosovo",
       "sub": "Football Superleague of Kosovo",
       "value": 14.031,
-      "display": "14.031"
+      "display": "14.031",
+      "wd": "kosovo"
     },
     {
       "id": "finland",
       "name": "Finland",
       "sub": "Veikkausliiga",
       "value": 13.875,
-      "display": "13.875"
+      "display": "13.875",
+      "wd": "finland"
     },
     {
       "id": "kazakhstan",
       "name": "Kazakhstan",
       "sub": "Kazakhstan Premier League",
       "value": 12.875,
-      "display": "12.875"
+      "display": "12.875",
+      "wd": "kazakhstan"
     },
     {
       "id": "liechtenstein",
       "name": "Liechtenstein",
       "sub": "Liechtenstein Football Cup",
-      "value": 11.0,
-      "display": "11.000"
+      "value": 11,
+      "display": "11.000",
+      "wd": "liechtenstein"
     },
     {
       "id": "moldova",
       "name": "Moldova",
       "sub": "Moldovan Liga",
       "value": 10.25,
-      "display": "10.250"
+      "display": "10.250",
+      "wd": "moldova"
     },
     {
       "id": "faroe-islands",
       "name": "Faroe Islands",
       "sub": "Faroe Islands Premier League",
       "value": 9.875,
-      "display": "9.875"
+      "display": "9.875",
+      "wd": "faroe-islands"
     },
     {
       "id": "albania",
       "name": "Albania",
       "sub": "Kategoria Superiore",
       "value": 9.5,
-      "display": "9.500"
+      "display": "9.500",
+      "wd": "albania"
     },
     {
       "id": "north-macedonia",
@@ -338,91 +381,104 @@
       "display": "8.967",
       "aliases": [
         "Macedonia"
-      ]
+      ],
+      "wd": "north-macedonia"
     },
     {
       "id": "belarus",
       "name": "Belarus",
       "sub": "Belarusian Premier League",
       "value": 8.708,
-      "display": "8.708"
+      "display": "8.708",
+      "wd": "belarus"
     },
     {
       "id": "lithuania",
       "name": "Lithuania",
       "sub": "Toplyga",
       "value": 8.125,
-      "display": "8.125"
+      "display": "8.125",
+      "wd": "lithuania"
     },
     {
       "id": "gibraltar",
       "name": "Gibraltar",
       "sub": "Gibraltar Football League",
       "value": 7.874,
-      "display": "7.874"
+      "display": "7.874",
+      "wd": "gibraltar"
     },
     {
       "id": "andorra",
       "name": "Andorra",
       "sub": "Primera Divisió",
       "value": 7.832,
-      "display": "7.832"
+      "display": "7.832",
+      "wd": "andorra"
     },
     {
       "id": "malta",
       "name": "Malta",
       "sub": "Maltese Premier League",
       "value": 7.625,
-      "display": "7.625"
+      "display": "7.625",
+      "wd": "malta"
     },
     {
       "id": "estonia",
       "name": "Estonia",
       "sub": "Meistriliiga",
       "value": 7.041,
-      "display": "7.041"
+      "display": "7.041",
+      "wd": "estonia"
     },
     {
       "id": "georgia",
       "name": "Georgia",
       "sub": "Erovnuli Liga",
       "value": 6.75,
-      "display": "6.750"
+      "display": "6.750",
+      "wd": "georgia"
     },
     {
       "id": "northern-ireland",
       "name": "Northern Ireland",
       "sub": "NIFL Premiership",
       "value": 6.625,
-      "display": "6.625"
+      "display": "6.625",
+      "wd": "northern-ireland"
     },
     {
       "id": "luxembourg",
       "name": "Luxembourg",
       "sub": "Luxembourg National Division",
       "value": 6.25,
-      "display": "6.250"
+      "display": "6.250",
+      "wd": "luxembourg"
     },
     {
       "id": "montenegro",
       "name": "Montenegro",
       "sub": "Montenegrin First League",
       "value": 5.833,
-      "display": "5.833"
+      "display": "5.833",
+      "wd": "montenegro"
     },
     {
       "id": "wales",
       "name": "Wales",
       "sub": "Cymru Premier",
       "value": 4.499,
-      "display": "4.499"
+      "display": "4.499",
+      "wd": "wales"
     },
     {
       "id": "san-marino",
       "name": "San Marino",
       "sub": "Campionato Sammarinese",
       "value": 2.998,
-      "display": "2.998"
+      "display": "2.998",
+      "wd": "san-marino"
     }
   ]
 }

@@ -4,6 +4,7 @@
   "prompt": "biggest stadium in Europe's top 5 leagues",
   "noun": "stadium",
   "nounPlural": "stadiums",
+  "kind": "stadium",
   "metric": "Capacity",
   "order": "desc",
   "description": "Home grounds of every 2026–27 Premier League, La Liga, Serie A, Bundesliga and Ligue 1 club, by listed capacity; shared grounds appear once.",
@@ -29,7 +30,8 @@
         "Real",
         "Bernabéu",
         "Estadio Santiago Bernabéu"
-      ]
+      ],
+      "wd": "Q164027"
     },
     {
       "id": "signal-iduna-park",
@@ -42,7 +44,8 @@
         "Dortmund",
         "BVB",
         "Westfalenstadion"
-      ]
+      ],
+      "wd": "Q150928"
     },
     {
       "id": "san-siro",
@@ -59,7 +62,8 @@
         "Stadio Giuseppe Meazza",
         "Giuseppe Meazza",
         "Meazza"
-      ]
+      ],
+      "wd": "x-stadium-san-siro"
     },
     {
       "id": "allianz-arena",
@@ -71,7 +75,8 @@
         "Bayern Munich",
         "Bayern",
         "FC Bayern"
-      ]
+      ],
+      "wd": "Q127429"
     },
     {
       "id": "old-trafford",
@@ -84,7 +89,8 @@
         "Man Utd",
         "Man United",
         "Theatre of Dreams"
-      ]
+      ],
+      "wd": "Q83457"
     },
     {
       "id": "estadio-riyadh-air-metropolitano",
@@ -100,7 +106,8 @@
         "Metropolitano",
         "Wanda Metropolitano",
         "Cívitas Metropolitano"
-      ]
+      ],
+      "wd": "x-stadium-estadio-riyadh-air-metropolitano"
     },
     {
       "id": "stadio-olimpico",
@@ -113,7 +120,8 @@
         "Roma",
         "AS Roma",
         "Olimpico"
-      ]
+      ],
+      "wd": "Q159884"
     },
     {
       "id": "estadio-la-cartuja-de-sevilla",
@@ -126,7 +134,8 @@
         "Betis",
         "Estadio de La Cartuja",
         "La Cartuja"
-      ]
+      ],
+      "wd": "Q368737"
     },
     {
       "id": "stade-velodrome",
@@ -140,7 +149,8 @@
         "Olympique de Marseille",
         "Vélodrome",
         "Orange Vélodrome"
-      ]
+      ],
+      "wd": "Q202150"
     },
     {
       "id": "tottenham-hotspur-stadium",
@@ -152,7 +162,8 @@
         "Tottenham Hotspur",
         "Tottenham",
         "Spurs"
-      ]
+      ],
+      "wd": "Q55074091"
     },
     {
       "id": "spotify-camp-nou",
@@ -166,7 +177,8 @@
         "FC Barcelona",
         "Camp Nou",
         "Nou Camp"
-      ]
+      ],
+      "wd": "Q159848"
     },
     {
       "id": "veltins-arena",
@@ -178,7 +190,8 @@
         "Schalke 04",
         "Schalke",
         "Arena AufSchalke"
-      ]
+      ],
+      "wd": "Q150961"
     },
     {
       "id": "anfield",
@@ -189,7 +202,8 @@
       "aliases": [
         "Liverpool",
         "LFC"
-      ]
+      ],
+      "wd": "Q45671"
     },
     {
       "id": "etihad-stadium",
@@ -202,7 +216,8 @@
         "Man City",
         "City of Manchester Stadium",
         "Etihad"
-      ]
+      ],
+      "wd": "x-stadium-etihad-stadium"
     },
     {
       "id": "emirates-stadium",
@@ -213,7 +228,8 @@
       "aliases": [
         "Arsenal",
         "Gunners"
-      ]
+      ],
+      "wd": "Q163995"
     },
     {
       "id": "mhparena",
@@ -227,7 +243,8 @@
         "MHP Arena",
         "Neckarstadion",
         "Mercedes-Benz Arena"
-      ]
+      ],
+      "wd": "Q152349"
     },
     {
       "id": "deutsche-bank-park",
@@ -240,7 +257,8 @@
         "Frankfurt",
         "Waldstadion",
         "Commerzbank-Arena"
-      ]
+      ],
+      "wd": "Q157273"
     },
     {
       "id": "groupama-stadium",
@@ -253,7 +271,8 @@
         "Olympique Lyonnais",
         "OL",
         "Parc Olympique Lyonnais"
-      ]
+      ],
+      "wd": "Q8507"
     },
     {
       "id": "volksparkstadion",
@@ -265,7 +284,8 @@
         "Hamburger SV",
         "Hamburg",
         "HSV"
-      ]
+      ],
+      "wd": "Q150933"
     },
     {
       "id": "stadio-diego-armando-maradona",
@@ -277,7 +297,8 @@
         "Napoli",
         "Maradona",
         "San Paolo"
-      ]
+      ],
+      "wd": "x-stadium-stadio-diego-armando-maradona"
     },
     {
       "id": "borussia-park",
@@ -289,7 +310,8 @@
         "Borussia Mönchengladbach",
         "Gladbach",
         "Mönchengladbach"
-      ]
+      ],
+      "wd": "x-stadium-borussia-park"
     },
     {
       "id": "estadio-san-mames",
@@ -303,7 +325,8 @@
         "Athletic",
         "San Mamés Stadium",
         "San Mamés"
-      ]
+      ],
+      "wd": "Q182864"
     },
     {
       "id": "hill-dickinson-stadium",
@@ -316,7 +339,8 @@
         "Toffees",
         "Everton Stadium",
         "Bramley-Moore Dock"
-      ]
+      ],
+      "wd": "x-stadium-hill-dickinson-stadium"
     },
     {
       "id": "st-james-park",
@@ -328,7 +352,8 @@
         "Newcastle United",
         "Newcastle",
         "Toon"
-      ]
+      ],
+      "wd": "Q1856701"
     },
     {
       "id": "stade-pierre-mauroy",
@@ -340,7 +365,8 @@
         "Lille",
         "LOSC",
         "Pierre-Mauroy"
-      ]
+      ],
+      "wd": "x-stadium-stade-pierre-mauroy"
     },
     {
       "id": "rheinenergiestadion",
@@ -354,7 +380,8 @@
         "Cologne",
         "FC Köln",
         "Müngersdorfer Stadion"
-      ]
+      ],
+      "wd": "x-stadium-rheinenergiestadion"
     },
     {
       "id": "camp-de-mestalla",
@@ -366,7 +393,8 @@
         "Valencia",
         "Mestalla Stadium",
         "Mestalla"
-      ]
+      ],
+      "wd": "Q202762"
     },
     {
       "id": "stadium-of-light",
@@ -376,7 +404,8 @@
       "display": "48,095",
       "aliases": [
         "Sunderland"
-      ]
+      ],
+      "wd": "Q7875112"
     },
     {
       "id": "parc-des-princes",
@@ -387,7 +416,8 @@
       "aliases": [
         "Paris Saint-Germain",
         "PSG"
-      ]
+      ],
+      "wd": "x-stadium-parc-des-princes"
     },
     {
       "id": "red-bull-arena",
@@ -398,7 +428,8 @@
       "aliases": [
         "RB Leipzig",
         "Leipzig"
-      ]
+      ],
+      "wd": "Q210466"
     },
     {
       "id": "estadio-ramon-sanchez-pizjuan",
@@ -412,7 +443,8 @@
         "Ramón Sánchez-Pizjuán Stadium",
         "Sánchez-Pizjuán",
         "Pizjuán"
-      ]
+      ],
+      "wd": "Q275429"
     },
     {
       "id": "stadio-artemio-franchi",
@@ -424,7 +456,8 @@
         "Fiorentina",
         "Artemio Franchi",
         "Franchi"
-      ]
+      ],
+      "wd": "Q270474"
     },
     {
       "id": "weserstadion",
@@ -436,7 +469,8 @@
         "Werder Bremen",
         "Werder",
         "Bremen"
-      ]
+      ],
+      "wd": "Q154475"
     },
     {
       "id": "allianz-stadium",
@@ -448,7 +482,8 @@
         "Juventus",
         "Juve",
         "Juventus Stadium"
-      ]
+      ],
+      "wd": "Q1053447"
     },
     {
       "id": "stamford-bridge",
@@ -459,7 +494,8 @@
       "aliases": [
         "Chelsea",
         "The Bridge"
-      ]
+      ],
+      "wd": "Q171458"
     },
     {
       "id": "reale-arena",
@@ -472,7 +508,8 @@
         "La Real",
         "Anoeta Stadium",
         "Anoeta"
-      ]
+      ],
+      "wd": "Q917845"
     },
     {
       "id": "stadio-renato-dallara",
@@ -483,7 +520,8 @@
       "aliases": [
         "Bologna",
         "Dall'Ara"
-      ]
+      ],
+      "wd": "Q757182"
     },
     {
       "id": "stade-bollaert-delelis",
@@ -494,7 +532,8 @@
       "aliases": [
         "Lens",
         "Bollaert"
-      ]
+      ],
+      "wd": "Q854122"
     },
     {
       "id": "estadi-cornella-el-prat",
@@ -507,7 +546,8 @@
         "RCD Espanyol",
         "RCDE Stadium",
         "Cornellà-El Prat"
-      ]
+      ],
+      "wd": "Q473223"
     },
     {
       "id": "elland-road",
@@ -518,7 +558,8 @@
       "aliases": [
         "Leeds United",
         "Leeds"
-      ]
+      ],
+      "wd": "Q619505"
     },
     {
       "id": "villa-park",
@@ -529,7 +570,8 @@
       "aliases": [
         "Aston Villa",
         "Villa"
-      ]
+      ],
+      "wd": "Q175339"
     },
     {
       "id": "allianz-riviera",
@@ -540,7 +582,8 @@
       "aliases": [
         "Nice",
         "OGC Nice"
-      ]
+      ],
+      "wd": "Q127372"
     },
     {
       "id": "europa-park-stadion",
@@ -551,7 +594,8 @@
       "aliases": [
         "SC Freiburg",
         "Freiburg"
-      ]
+      ],
+      "wd": "Q64586775"
     },
     {
       "id": "mewa-arena",
@@ -562,7 +606,8 @@
       "aliases": [
         "Mainz 05",
         "Mainz"
-      ]
+      ],
+      "wd": "Q392494"
     },
     {
       "id": "stadio-luigi-ferraris",
@@ -574,7 +619,8 @@
         "Genoa",
         "Marassi",
         "Luigi Ferraris"
-      ]
+      ],
+      "wd": "Q271568"
     },
     {
       "id": "stadium-de-toulouse",
@@ -584,7 +630,8 @@
       "display": "33,150",
       "aliases": [
         "Toulouse"
-      ]
+      ],
+      "wd": "Q738044"
     },
     {
       "id": "estadio-abanca-riazor",
@@ -599,7 +646,8 @@
         "Deportivo La Coruña",
         "Estadio Riazor",
         "Riazor"
-      ]
+      ],
+      "wd": "x-stadium-estadio-abanca-riazor"
     },
     {
       "id": "coventry-building-society-arena",
@@ -612,7 +660,8 @@
         "Coventry",
         "CBS Arena",
         "Ricoh Arena"
-      ]
+      ],
+      "wd": "Q842077"
     },
     {
       "id": "falmer-stadium",
@@ -625,7 +674,8 @@
         "Brighton",
         "Amex Stadium",
         "American Express Stadium"
-      ]
+      ],
+      "wd": "Q619409"
     },
     {
       "id": "stade-de-la-meinau",
@@ -637,7 +687,8 @@
         "Strasbourg",
         "La Meinau",
         "Meinau"
-      ]
+      ],
+      "wd": "Q374883"
     },
     {
       "id": "estadio-martinez-valero",
@@ -648,7 +699,8 @@
       "aliases": [
         "Elche",
         "Martínez Valero"
-      ]
+      ],
+      "wd": "x-stadium-estadio-martinez-valero"
     },
     {
       "id": "city-ground",
@@ -660,7 +712,8 @@
         "Nottingham Forest",
         "Forest",
         "Nottm Forest"
-      ]
+      ],
+      "wd": "Q593446"
     },
     {
       "id": "wwk-arena",
@@ -672,7 +725,8 @@
         "FC Augsburg",
         "Augsburg",
         "Augsburg Arena"
-      ]
+      ],
+      "wd": "Q167418"
     },
     {
       "id": "stadio-via-del-mare-ettore-giardiniero",
@@ -684,7 +738,8 @@
         "Lecce",
         "Stadio Via del mare",
         "Via del Mare"
-      ]
+      ],
+      "wd": "Q684727"
     },
     {
       "id": "bayarena",
@@ -695,7 +750,8 @@
       "aliases": [
         "Bayer Leverkusen",
         "Leverkusen"
-      ]
+      ],
+      "wd": "Q156630"
     },
     {
       "id": "prezero-arena",
@@ -707,7 +763,8 @@
         "TSG Hoffenheim",
         "Hoffenheim",
         "Rhein-Neckar-Arena"
-      ]
+      ],
+      "wd": "Q129870"
     },
     {
       "id": "portman-road",
@@ -718,7 +775,8 @@
       "aliases": [
         "Ipswich Town",
         "Ipswich"
-      ]
+      ],
+      "wd": "Q619558"
     },
     {
       "id": "estadio-la-rosaleda",
@@ -729,7 +787,8 @@
       "aliases": [
         "Málaga",
         "La Rosaleda"
-      ]
+      ],
+      "wd": "Q695879"
     },
     {
       "id": "roazhon-park",
@@ -740,7 +799,8 @@
       "aliases": [
         "Rennes",
         "Stade Rennais"
-      ]
+      ],
+      "wd": "Q1121760"
     },
     {
       "id": "stadio-olimpico-grande-torino",
@@ -751,7 +811,8 @@
       "aliases": [
         "Torino",
         "Olimpico Grande Torino"
-      ]
+      ],
+      "wd": "x-stadium-stadio-olimpico-grande-torino"
     },
     {
       "id": "craven-cottage",
@@ -761,7 +822,8 @@
       "display": "28,107",
       "aliases": [
         "Fulham"
-      ]
+      ],
+      "wd": "Q318043"
     },
     {
       "id": "estadi-ciutat-de-valencia",
@@ -772,7 +834,8 @@
       "aliases": [
         "Levante",
         "Ciutat de València"
-      ]
+      ],
+      "wd": "Q1122715"
     },
     {
       "id": "selhurst-park",
@@ -783,7 +846,8 @@
       "aliases": [
         "Crystal Palace",
         "Palace"
-      ]
+      ],
+      "wd": "Q1066373"
     },
     {
       "id": "stade-oceane",
@@ -793,7 +857,8 @@
       "display": "25,181",
       "aliases": [
         "Le Havre"
-      ]
+      ],
+      "wd": "Q219462"
     },
     {
       "id": "bluenergy-stadium",
@@ -805,7 +870,8 @@
         "Udinese",
         "Stadio Friuli",
         "Dacia Arena"
-      ]
+      ],
+      "wd": "Q640031"
     },
     {
       "id": "stade-marie-marvingt",
@@ -816,7 +882,8 @@
       "aliases": [
         "Le Mans",
         "MMArena"
-      ]
+      ],
+      "wd": "x-stadium-stade-marie-marvingt"
     },
     {
       "id": "mkm-stadium",
@@ -828,7 +895,8 @@
         "Hull City",
         "Hull",
         "KCOM Stadium"
-      ]
+      ],
+      "wd": "Q630160"
     },
     {
       "id": "estadio-abanca-balaidos",
@@ -841,7 +909,8 @@
         "Celta",
         "Balaídos Stadium",
         "Balaídos"
-      ]
+      ],
+      "wd": "x-stadium-estadio-abanca-balaidos"
     },
     {
       "id": "estadio-el-sadar",
@@ -853,7 +922,8 @@
         "Osasuna",
         "El Sadar Stadium",
         "El Sadar"
-      ]
+      ],
+      "wd": "Q735783"
     },
     {
       "id": "new-balance-arena",
@@ -866,7 +936,8 @@
         "Stadio di Bergamo",
         "Gewiss Stadium",
         "Atleti Azzurri d'Italia"
-      ]
+      ],
+      "wd": "x-stadium-new-balance-arena"
     },
     {
       "id": "estadio-de-la-ceramica",
@@ -878,7 +949,8 @@
         "Villarreal",
         "La Cerámica",
         "El Madrigal"
-      ]
+      ],
+      "wd": "Q741157"
     },
     {
       "id": "stadio-ennio-tardini",
@@ -889,7 +961,8 @@
       "aliases": [
         "Parma",
         "Tardini"
-      ]
+      ],
+      "wd": "Q610546"
     },
     {
       "id": "campos-de-sport-de-el-sardinero",
@@ -901,7 +974,8 @@
         "Racing Santander",
         "Racing",
         "El Sardinero"
-      ]
+      ],
+      "wd": "Q195391"
     },
     {
       "id": "stadion-an-der-alten-forsterei",
@@ -913,7 +987,8 @@
         "Union Berlin",
         "Union",
         "Alte Försterei"
-      ]
+      ],
+      "wd": "Q749172"
     },
     {
       "id": "stade-de-laube",
@@ -923,7 +998,8 @@
       "display": "21,877",
       "aliases": [
         "Troyes"
-      ]
+      ],
+      "wd": "Q2001732"
     },
     {
       "id": "mapei-stadium-citta-del-tricolore",
@@ -934,7 +1010,8 @@
       "aliases": [
         "Sassuolo",
         "Mapei Stadium"
-      ]
+      ],
+      "wd": "Q1887221"
     },
     {
       "id": "stade-jean-bouin",
@@ -945,7 +1022,8 @@
       "aliases": [
         "Paris FC",
         "Jean-Bouin"
-      ]
+      ],
+      "wd": "x-stadium-stade-jean-bouin"
     },
     {
       "id": "campo-de-futbol-de-mendizorrotza",
@@ -958,7 +1036,8 @@
         "Deportivo Alavés",
         "Mendizorrotza Stadium",
         "Mendizorrotza"
-      ]
+      ],
+      "wd": "Q1369390"
     },
     {
       "id": "stade-raymond-kopa",
@@ -968,7 +1047,8 @@
       "display": "19,800",
       "aliases": [
         "Angers"
-      ]
+      ],
+      "wd": "Q387213"
     },
     {
       "id": "stade-du-moustoir",
@@ -978,7 +1058,8 @@
       "display": "18,110",
       "aliases": [
         "Lorient"
-      ]
+      ],
+      "wd": "Q39189"
     },
     {
       "id": "stade-abbe-deschamps",
@@ -988,7 +1069,8 @@
       "display": "17,897",
       "aliases": [
         "Auxerre"
-      ]
+      ],
+      "wd": "Q1347183"
     },
     {
       "id": "brentford-community-stadium",
@@ -1000,7 +1082,8 @@
         "Brentford",
         "Bees",
         "Gtech Community Stadium"
-      ]
+      ],
+      "wd": "Q4961609"
     },
     {
       "id": "stadio-brianteo",
@@ -1012,7 +1095,8 @@
         "Monza",
         "Brianteo",
         "U-Power Stadium"
-      ]
+      ],
+      "wd": "Q1851616"
     },
     {
       "id": "estadio-coliseum",
@@ -1024,7 +1108,8 @@
         "Getafe",
         "Coliseum",
         "Coliseum Alfonso Pérez"
-      ]
+      ],
+      "wd": "Q929109"
     },
     {
       "id": "unipol-domus",
@@ -1035,7 +1120,8 @@
       "aliases": [
         "Cagliari",
         "Sardegna Arena"
-      ]
+      ],
+      "wd": "Q30880646"
     },
     {
       "id": "stade-louis-ii",
@@ -1047,7 +1133,8 @@
         "Monaco",
         "AS Monaco",
         "Louis II"
-      ]
+      ],
+      "wd": "Q318851"
     },
     {
       "id": "stadio-benito-stirpe",
@@ -1058,7 +1145,8 @@
       "aliases": [
         "Frosinone",
         "Stirpe"
-      ]
+      ],
+      "wd": "Q29655396"
     },
     {
       "id": "stade-francis-le-ble",
@@ -1068,7 +1156,8 @@
       "display": "15,220",
       "aliases": [
         "Brest"
-      ]
+      ],
+      "wd": "Q1432517"
     },
     {
       "id": "home-deluxe-arena",
@@ -1079,7 +1168,8 @@
       "aliases": [
         "SC Paderborn",
         "Paderborn"
-      ]
+      ],
+      "wd": "Q567402"
     },
     {
       "id": "campo-de-futbol-de-vallecas",
@@ -1093,7 +1183,8 @@
         "Vallecas Stadium",
         "Vallecas",
         "Estadio de Vallecas"
-      ]
+      ],
+      "wd": "Q983806"
     },
     {
       "id": "stadio-giuseppe-sinigaglia",
@@ -1104,7 +1195,8 @@
       "aliases": [
         "Como",
         "Sinigaglia"
-      ]
+      ],
+      "wd": "Q115372"
     },
     {
       "id": "dean-court",
@@ -1117,7 +1209,8 @@
         "AFC Bournemouth",
         "Cherries",
         "Vitality Stadium"
-      ]
+      ],
+      "wd": "Q619094"
     },
     {
       "id": "stadio-pier-luigi-penzo",
@@ -1128,7 +1221,8 @@
       "aliases": [
         "Venezia",
         "Penzo"
-      ]
+      ],
+      "wd": "x-stadium-stadio-pier-luigi-penzo"
     },
     {
       "id": "waldstadion-an-der-kaiserlinde",
@@ -1140,7 +1234,8 @@
         "SV Elversberg",
         "Elversberg",
         "Ursapharm-Arena"
-      ]
+      ],
+      "wd": "Q474858"
     }
   ]
 }
