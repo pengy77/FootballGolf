@@ -12,7 +12,7 @@ export function HowToSteps() {
       <li>
         <span className="howto-n">2</span>
         <div>
-          <b>Name what you think sits closest to it.</b> Start typing and pick from the list.
+          <b>Name what you think sits closest to it.</b> Start typing: every player, manager, club and ground is in there, so you only find out at the reveal whether yours made the list.
         </div>
       </li>
       <li>

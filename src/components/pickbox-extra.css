@@ -1,0 +1,5 @@
+/* Search database loading state (PickBox). Kept apart from styles.css, which another workstream is editing. */
+.sugg-loading {
+  opacity: 0.7;
+  font-style: italic;
+}

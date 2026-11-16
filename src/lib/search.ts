@@ -14,18 +14,29 @@ export function norm(s: string): string {
     .trim();
 }
 
-function scoreKey(key: string, q: string, qWords: string[]): number {
+/**
+ * How well a normalised key matches a normalised query: exact 100, a whole word 90 ("kane" → Harry Kane),
+ * start of the name or any word 75 (first name and surname count the same, so fame can decide), every
+ * query word starts a word 55, contains 35.
+ */
+export function scoreKey(
+  key: string,
+  q: string,
+  qWords: string[],
+  words = key.split(' '),
+  qCompact = q.replace(/ /g, ''),
+  keyCompact = key.replace(/ /g, ''),
+): number {
   if (key === q) return 100;
-  if (key.startsWith(q)) return 80;
-  const words = key.split(' ');
-  if (words.some((w) => w.startsWith(q))) return 65;
+  if (words.includes(q)) return 90;
+  if (key.startsWith(q) || words.some((w) => w.startsWith(q))) return 75;
   if (qWords.length > 1 && qWords.every((qw) => words.some((w) => w.startsWith(qw)))) return 55;
-  if (q.length >= 3 && key.replace(/ /g, '').includes(q.replace(/ /g, ''))) return 35;
+  if (q.length >= 3 && keyCompact.includes(qCompact)) return 35;
   return 0;
 }
 
 /**
- * Suggestions for the pick box. Ties are broken alphabetically, never by list position,
+ * List-only suggestions (fallback when the search database can't load; see entities.ts). Ties are broken alphabetically, never by list position,
  * so the order of suggestions can't leak anything about the ranking.
  */
 export function searchItems(cat: Category, query: string, limit = 8): Item[] {

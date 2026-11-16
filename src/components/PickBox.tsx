@@ -1,9 +1,34 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Category, Item } from '../lib/data';
-import { exactMatch, norm, searchItems } from '../lib/search';
+import { entitiesNow, exactSuggestion, loadEntities, suggest, type Entity, type Suggestion } from '../lib/entities';
+import { norm } from '../lib/search';
 import { Icons } from './ui';
+import './pickbox-extra.css';
 
-export type Selection = { item: Item } | { offList: string };
+/**
+ * What the player picked. `shown` is how it looked in the suggestions: identical for on-list and
+ * off-list names, so the pick card can't give away whether it's on the list either.
+ */
+export type Selection = ({ item: Item } | { offList: string }) & { shown?: { name: string; sub: string } };
+
+function fromSuggestion(s: Suggestion): Selection {
+  const shown = { name: s.name, sub: s.sub };
+  return s.item ? { item: s.item, shown } : { offList: s.name, shown };
+}
+
+/** The hole's search database: loads once per kind, re-renders when ready. */
+function useEntities(cat: Category): Entity[] | null | undefined {
+  const [ents, setEnts] = useState(() => entitiesNow(cat.kind));
+  useEffect(() => {
+    let live = true;
+    setEnts(entitiesNow(cat.kind));
+    loadEntities(cat.kind).then((e) => live && setEnts(e));
+    return () => {
+      live = false;
+    };
+  }, [cat.kind]);
+  return ents;
+}
 
 function Highlight({ text, query }: { text: string; query: string }) {
   // Highlight the first accent-insensitive match of the query inside the text.
@@ -52,9 +77,13 @@ export function PickBox({
   const [focused, setFocused] = useState(false);
   const [active, setActive] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
-  const results = useMemo(() => searchItems(cat, q, 6), [cat, q]);
-  // Only offer an off-the-list answer once it looks like a real name, not a 2-letter fragment.
-  const canPlayAnyway = norm(q).replace(/ /g, '').length >= 4;
+  const ents = useEntities(cat);
+  const waiting = ents === undefined;
+  const results = useMemo(() => (waiting ? [] : suggest(cat, ents, q, 6)), [cat, ents, waiting, q]);
+  const exact = useMemo(() => (waiting ? undefined : exactSuggestion(cat, ents, q)), [cat, ents, waiting, q]);
+  // Only offer a name we don't know once it looks like a real name, not a 2-letter fragment
+  // (and not when the text already names a suggestion: that one's right there).
+  const canPlayAnyway = !waiting && !exact && norm(q).replace(/ /g, '').length >= 4;
   const open = focused && norm(q).length >= 2;
   const listId = `sugg-${cat.id}`;
 
@@ -72,19 +101,24 @@ export function PickBox({
   };
 
   const playAnyway = () => {
-    const text = q.trim().slice(0, 50);
-    const hit = exactMatch(cat, text);
-    choose(hit ? { item: hit } : { offList: text });
+    choose({ offList: q.trim().slice(0, 50) });
   };
 
   if (selection) {
     const isItem = 'item' in selection;
+    const shown = selection.shown ?? (isItem ? { name: selection.item.name, sub: selection.item.sub ?? '' } : undefined);
+    // Only a name nobody recognises is flagged: a known name stays a surprise until the reveal.
+    const unknown = !shown;
     return (
-      <div className={`pick-chosen${isItem ? '' : ' is-ob'}`}>
+      <div className={`pick-chosen${unknown ? ' is-ob' : ''}`}>
         <div className="pick-chosen-label">Your pick</div>
-        <div className="pick-chosen-name">{isItem ? selection.item.name : selection.offList ? `“${selection.offList}”` : 'No answer'}</div>
-        {isItem && selection.item.sub && <div className="pick-chosen-sub">{selection.item.sub}</div>}
-        {!isItem && <div className="pick-chosen-warn">Not on the list, so this counts as out of bounds.</div>}
+        <div className="pick-chosen-name">{shown ? shown.name : !isItem && selection.offList ? `“${selection.offList}”` : 'No answer'}</div>
+        {shown?.sub && <div className="pick-chosen-sub">{shown.sub}</div>}
+        {unknown && (
+          <div className="pick-chosen-warn">
+            {!isItem && selection.offList ? `We don't know that ${cat.noun}, so it counts as out of bounds.` : 'Counts as out of bounds.'}
+          </div>
+        )}
         <button
           type="button"
           className="link-btn pick-change"
@@ -135,7 +169,7 @@ export function PickBox({
               setActive((a) => Math.max(a - 1, 0));
             } else if (e.key === 'Enter') {
               e.preventDefault();
-              if (results[active]) choose({ item: results[active] });
+              if (results[active]) choose(fromSuggestion(results[active]));
             } else if (e.key === 'Escape') {
               setQ('');
             }
@@ -161,12 +195,12 @@ export function PickBox({
           <ul id={listId} role="listbox" aria-label="Suggestions">
             {results.map((it, i) => (
               <li
-                key={it.id}
+                key={it.key}
                 id={`${listId}-${i}`}
                 role="option"
                 aria-selected={i === active}
                 className={i === active ? 'is-active' : undefined}
-                onClick={() => choose({ item: it })}
+                onClick={() => choose(fromSuggestion(it))}
                 onPointerEnter={() => setActive(i)}
               >
                 <span className="sugg-name">
@@ -176,9 +210,10 @@ export function PickBox({
               </li>
             ))}
           </ul>
-          {results.length === 0 && (
+          {waiting && <p className="sugg-empty sugg-loading">Loading {cat.nounPlural}…</p>}
+          {!waiting && results.length === 0 && (
             <p className="sugg-empty">
-              No {cat.noun} on the list matches “{q.trim()}”.{!canPlayAnyway && ' Keep typing, or check the spelling.'}
+              No {cat.noun} called “{q.trim()}” that we know of.{!canPlayAnyway && ' Keep typing, or check the spelling.'}
             </p>
           )}
           {canPlayAnyway && (
@@ -190,7 +225,7 @@ export function PickBox({
       )}
       {!open && (
         <p className="pick-hint">
-          {focused ? 'Keep typing…' : `Type 2 or more letters and pick from the list. Accents don't matter.`}
+          {focused ? 'Keep typing…' : `Type 2 or more letters, then pick a name. Accents don't matter.`}
         </p>
       )}
     </div>
