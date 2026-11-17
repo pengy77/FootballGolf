@@ -1,0 +1,186 @@
+{
+  "id": "la-liga-2014-15",
+  "title": "2014–⁠15 La Liga table",
+  "prompt": "place in the 2014–⁠15 La Liga",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "la-liga-table",
+  "season": "2014–15",
+  "tiebreak": "head-to-head points, then head-to-head goal difference",
+  "description": "Final 2014–15 La Liga table: all 20 clubs in the order they finished. Points include a deduction: Almería −3.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2014–15 La Liga",
+    "url": "https://en.wikipedia.org/wiki/2014%E2%80%9315_La_Liga#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "value": 94,
+      "display": "94 pts",
+      "aliases": [
+        "Barça",
+        "FC Barcelona"
+      ],
+      "wd": "Q7156"
+    },
+    {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "value": 92,
+      "display": "92 pts",
+      "aliases": [
+        "Real",
+        "Los Blancos"
+      ],
+      "wd": "Q8682"
+    },
+    {
+      "id": "atletico-madrid",
+      "name": "Atlético Madrid",
+      "value": 78,
+      "display": "78 pts",
+      "aliases": [
+        "Atlético",
+        "Atleti"
+      ],
+      "wd": "Q8701"
+    },
+    {
+      "id": "valencia",
+      "name": "Valencia",
+      "value": 77,
+      "display": "77 pts",
+      "wd": "Q10333"
+    },
+    {
+      "id": "sevilla",
+      "name": "Sevilla",
+      "value": 76,
+      "display": "76 pts",
+      "aliases": [
+        "Seville"
+      ],
+      "wd": "Q10329"
+    },
+    {
+      "id": "villarreal",
+      "name": "Villarreal",
+      "value": 60,
+      "display": "60 pts",
+      "wd": "Q12297"
+    },
+    {
+      "id": "athletic-bilbao",
+      "name": "Athletic Bilbao",
+      "value": 55,
+      "display": "55 pts",
+      "wd": "Q8687"
+    },
+    {
+      "id": "celta-vigo",
+      "name": "Celta Vigo",
+      "value": 51,
+      "display": "51 pts",
+      "wd": "Q8749"
+    },
+    {
+      "id": "malaga",
+      "name": "Málaga",
+      "value": 50,
+      "display": "50 pts",
+      "wd": "Q8857"
+    },
+    {
+      "id": "espanyol",
+      "name": "Espanyol",
+      "value": 49,
+      "display": "49 pts",
+      "wd": "Q8780"
+    },
+    {
+      "id": "rayo-vallecano",
+      "name": "Rayo Vallecano",
+      "value": 49,
+      "display": "49 pts",
+      "wd": "Q10300"
+    },
+    {
+      "id": "real-sociedad",
+      "name": "Real Sociedad",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q10315"
+    },
+    {
+      "id": "elche",
+      "name": "Elche",
+      "value": 41,
+      "display": "41 pts",
+      "wd": "Q10512"
+    },
+    {
+      "id": "levante",
+      "name": "Levante",
+      "value": 37,
+      "display": "37 pts",
+      "wd": "Q8823"
+    },
+    {
+      "id": "getafe",
+      "name": "Getafe",
+      "value": 37,
+      "display": "37 pts",
+      "wd": "Q8806"
+    },
+    {
+      "id": "deportivo-la-coruna",
+      "name": "Deportivo La Coruña",
+      "value": 35,
+      "display": "35 pts",
+      "aliases": [
+        "Deportivo",
+        "Depor"
+      ],
+      "wd": "Q8760"
+    },
+    {
+      "id": "granada",
+      "name": "Granada",
+      "value": 35,
+      "display": "35 pts",
+      "wd": "Q8812"
+    },
+    {
+      "id": "eibar",
+      "name": "Eibar",
+      "value": 35,
+      "display": "35 pts",
+      "wd": "Q770740"
+    },
+    {
+      "id": "almeria",
+      "name": "Almería",
+      "value": 29,
+      "display": "29 pts",
+      "wd": "Q10407"
+    },
+    {
+      "id": "cordoba",
+      "name": "Córdoba",
+      "value": 20,
+      "display": "20 pts",
+      "wd": "Q10499"
+    }
+  ]
+}

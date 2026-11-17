@@ -1,0 +1,245 @@
+{
+  "id": "premier-league-2024-25",
+  "title": "2024–⁠25 Premier League table",
+  "prompt": "place in the 2024–⁠25 Premier League",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "premier-league-table",
+  "season": "2024–25",
+  "tiebreak": "goal difference, then goals scored",
+  "description": "Final 2024–25 Premier League table: all 20 clubs in the order they finished.",
+  "tags": [
+    "premier-league",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2024–25 Premier League",
+    "url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Premier_League#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "liverpool",
+      "name": "Liverpool",
+      "value": 84,
+      "display": "84 pts",
+      "aliases": [
+        "LFC"
+      ],
+      "wd": "Q1130849"
+    },
+    {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "value": 74,
+      "display": "74 pts",
+      "aliases": [
+        "Gunners"
+      ],
+      "wd": "Q9617"
+    },
+    {
+      "id": "manchester-city",
+      "name": "Manchester City",
+      "value": 71,
+      "display": "71 pts",
+      "aliases": [
+        "Man City",
+        "MCFC"
+      ],
+      "wd": "Q50602"
+    },
+    {
+      "id": "chelsea",
+      "name": "Chelsea",
+      "value": 69,
+      "display": "69 pts",
+      "aliases": [
+        "CFC"
+      ],
+      "wd": "Q9616"
+    },
+    {
+      "id": "newcastle-united",
+      "name": "Newcastle United",
+      "value": 66,
+      "display": "66 pts",
+      "aliases": [
+        "Newcastle",
+        "Toon",
+        "Magpies",
+        "NUFC"
+      ],
+      "wd": "Q18716"
+    },
+    {
+      "id": "aston-villa",
+      "name": "Aston Villa",
+      "value": 66,
+      "display": "66 pts",
+      "aliases": [
+        "Villa",
+        "AVFC"
+      ],
+      "wd": "Q18711"
+    },
+    {
+      "id": "nottingham-forest",
+      "name": "Nottingham Forest",
+      "value": 65,
+      "display": "65 pts",
+      "aliases": [
+        "Forest",
+        "Nottm Forest"
+      ],
+      "wd": "Q19490"
+    },
+    {
+      "id": "brighton-and-hove-albion",
+      "name": "Brighton & Hove Albion",
+      "value": 61,
+      "display": "61 pts",
+      "aliases": [
+        "Brighton",
+        "Seagulls"
+      ],
+      "wd": "Q19453"
+    },
+    {
+      "id": "bournemouth",
+      "name": "Bournemouth",
+      "value": 56,
+      "display": "56 pts",
+      "aliases": [
+        "AFC Bournemouth",
+        "Cherries"
+      ],
+      "wd": "Q19568"
+    },
+    {
+      "id": "brentford",
+      "name": "Brentford",
+      "value": 56,
+      "display": "56 pts",
+      "aliases": [
+        "Bees"
+      ],
+      "wd": "Q19571"
+    },
+    {
+      "id": "fulham",
+      "name": "Fulham",
+      "value": 54,
+      "display": "54 pts",
+      "aliases": [
+        "Cottagers"
+      ],
+      "wd": "Q18708"
+    },
+    {
+      "id": "crystal-palace",
+      "name": "Crystal Palace",
+      "value": 53,
+      "display": "53 pts",
+      "aliases": [
+        "Palace",
+        "Eagles"
+      ],
+      "wd": "Q19467"
+    },
+    {
+      "id": "everton",
+      "name": "Everton",
+      "value": 48,
+      "display": "48 pts",
+      "aliases": [
+        "Toffees"
+      ],
+      "wd": "Q5794"
+    },
+    {
+      "id": "west-ham-united",
+      "name": "West Ham United",
+      "value": 43,
+      "display": "43 pts",
+      "aliases": [
+        "West Ham",
+        "Hammers",
+        "Irons"
+      ],
+      "wd": "Q18747"
+    },
+    {
+      "id": "manchester-united",
+      "name": "Manchester United",
+      "value": 42,
+      "display": "42 pts",
+      "aliases": [
+        "Man Utd",
+        "Man United",
+        "MUFC"
+      ],
+      "wd": "Q18656"
+    },
+    {
+      "id": "wolverhampton-wanderers",
+      "name": "Wolverhampton Wanderers",
+      "value": 42,
+      "display": "42 pts",
+      "aliases": [
+        "Wolves",
+        "Wolverhampton"
+      ],
+      "wd": "Q19500"
+    },
+    {
+      "id": "tottenham-hotspur",
+      "name": "Tottenham Hotspur",
+      "value": 38,
+      "display": "38 pts",
+      "aliases": [
+        "Tottenham",
+        "Spurs",
+        "THFC"
+      ],
+      "wd": "Q18741"
+    },
+    {
+      "id": "leicester-city",
+      "name": "Leicester City",
+      "value": 25,
+      "display": "25 pts",
+      "aliases": [
+        "Leicester",
+        "Foxes"
+      ],
+      "wd": "Q19481"
+    },
+    {
+      "id": "ipswich-town",
+      "name": "Ipswich Town",
+      "value": 22,
+      "display": "22 pts",
+      "aliases": [
+        "Ipswich",
+        "Tractor Boys"
+      ],
+      "wd": "Q9653"
+    },
+    {
+      "id": "southampton",
+      "name": "Southampton",
+      "value": 12,
+      "display": "12 pts",
+      "aliases": [
+        "Saints"
+      ],
+      "wd": "Q18732"
+    }
+  ]
+}

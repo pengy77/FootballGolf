@@ -1,0 +1,186 @@
+{
+  "id": "serie-a-2011-12",
+  "title": "2011–⁠12 Serie A table",
+  "prompt": "place in the 2011–⁠12 Serie A",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "serie-a-table",
+  "season": "2011–12",
+  "tiebreak": "head-to-head points, then head-to-head goal difference",
+  "description": "Final 2011–12 Serie A table: all 20 clubs in the order they finished. Points include a deduction: Atalanta −6.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2011–12 Serie A",
+    "url": "https://en.wikipedia.org/wiki/2011%E2%80%9312_Serie_A#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "juventus",
+      "name": "Juventus",
+      "value": 84,
+      "display": "84 pts",
+      "aliases": [
+        "Juve"
+      ],
+      "wd": "Q1422"
+    },
+    {
+      "id": "ac-milan",
+      "name": "AC Milan",
+      "value": 80,
+      "display": "80 pts",
+      "aliases": [
+        "Milan"
+      ],
+      "wd": "Q1543"
+    },
+    {
+      "id": "udinese",
+      "name": "Udinese",
+      "value": 64,
+      "display": "64 pts",
+      "wd": "Q2798"
+    },
+    {
+      "id": "lazio",
+      "name": "Lazio",
+      "value": 62,
+      "display": "62 pts",
+      "aliases": [
+        "SS Lazio"
+      ],
+      "wd": "Q2609"
+    },
+    {
+      "id": "napoli",
+      "name": "Napoli",
+      "value": 61,
+      "display": "61 pts",
+      "aliases": [
+        "SSC Napoli"
+      ],
+      "wd": "Q2641"
+    },
+    {
+      "id": "inter-milan",
+      "name": "Inter Milan",
+      "value": 58,
+      "display": "58 pts",
+      "aliases": [
+        "Inter",
+        "Internazionale"
+      ],
+      "wd": "Q631"
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "value": 56,
+      "display": "56 pts",
+      "aliases": [
+        "AS Roma"
+      ],
+      "wd": "Q2739"
+    },
+    {
+      "id": "parma",
+      "name": "Parma",
+      "value": 56,
+      "display": "56 pts",
+      "wd": "Q2693"
+    },
+    {
+      "id": "bologna",
+      "name": "Bologna",
+      "value": 51,
+      "display": "51 pts",
+      "wd": "Q1893"
+    },
+    {
+      "id": "chievo",
+      "name": "Chievo",
+      "value": 49,
+      "display": "49 pts",
+      "wd": "Q2037"
+    },
+    {
+      "id": "catania",
+      "name": "Catania",
+      "value": 48,
+      "display": "48 pts",
+      "wd": "Q2018"
+    },
+    {
+      "id": "atalanta",
+      "name": "Atalanta",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q1886"
+    },
+    {
+      "id": "fiorentina",
+      "name": "Fiorentina",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q2052"
+    },
+    {
+      "id": "siena",
+      "name": "Siena",
+      "value": 44,
+      "display": "44 pts",
+      "wd": "Q2756"
+    },
+    {
+      "id": "cagliari",
+      "name": "Cagliari",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q1900"
+    },
+    {
+      "id": "palermo",
+      "name": "Palermo",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q2674"
+    },
+    {
+      "id": "genoa",
+      "name": "Genoa",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q2074"
+    },
+    {
+      "id": "lecce",
+      "name": "Lecce",
+      "value": 36,
+      "display": "36 pts",
+      "wd": "Q13391"
+    },
+    {
+      "id": "novara",
+      "name": "Novara",
+      "value": 32,
+      "display": "32 pts",
+      "wd": "Q8416"
+    },
+    {
+      "id": "cesena",
+      "name": "Cesena",
+      "value": 22,
+      "display": "22 pts",
+      "wd": "Q6664"
+    }
+  ]
+}

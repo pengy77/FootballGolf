@@ -1,0 +1,186 @@
+{
+  "id": "bundesliga-2015-16",
+  "title": "2015–⁠16 Bundesliga table",
+  "prompt": "place in the 2015–⁠16 Bundesliga",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "bundesliga-table",
+  "season": "2015–16",
+  "tiebreak": "goal difference, then goals scored",
+  "description": "Final 2015–16 Bundesliga table: all 18 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2015–16 Bundesliga",
+    "url": "https://en.wikipedia.org/wiki/2015%E2%80%9316_Bundesliga#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "bayern-munich",
+      "name": "Bayern Munich",
+      "value": 88,
+      "display": "88 pts",
+      "aliases": [
+        "Bayern",
+        "FC Bayern",
+        "Bayern München"
+      ],
+      "wd": "Q15789"
+    },
+    {
+      "id": "borussia-dortmund",
+      "name": "Borussia Dortmund",
+      "value": 78,
+      "display": "78 pts",
+      "aliases": [
+        "Dortmund",
+        "BVB"
+      ],
+      "wd": "Q41420"
+    },
+    {
+      "id": "bayer-leverkusen",
+      "name": "Bayer Leverkusen",
+      "value": 60,
+      "display": "60 pts",
+      "aliases": [
+        "Leverkusen"
+      ],
+      "wd": "Q104761"
+    },
+    {
+      "id": "borussia-monchengladbach",
+      "name": "Borussia Mönchengladbach",
+      "value": 55,
+      "display": "55 pts",
+      "aliases": [
+        "Gladbach",
+        "Mönchengladbach"
+      ],
+      "wd": "Q101959"
+    },
+    {
+      "id": "schalke-04",
+      "name": "Schalke 04",
+      "value": 52,
+      "display": "52 pts",
+      "aliases": [
+        "Schalke"
+      ],
+      "wd": "Q32494"
+    },
+    {
+      "id": "mainz-05",
+      "name": "Mainz 05",
+      "value": 50,
+      "display": "50 pts",
+      "wd": "Q105254"
+    },
+    {
+      "id": "hertha-bsc",
+      "name": "Hertha BSC",
+      "value": 50,
+      "display": "50 pts",
+      "wd": "Q102720"
+    },
+    {
+      "id": "vfl-wolfsburg",
+      "name": "VfL Wolfsburg",
+      "value": 45,
+      "display": "45 pts",
+      "wd": "Q101859"
+    },
+    {
+      "id": "1-fc-koln",
+      "name": "1. FC Köln",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q104770"
+    },
+    {
+      "id": "hamburger-sv",
+      "name": "Hamburger SV",
+      "value": 41,
+      "display": "41 pts",
+      "aliases": [
+        "Hamburg",
+        "HSV"
+      ],
+      "wd": "Q51974"
+    },
+    {
+      "id": "fc-ingolstadt",
+      "name": "FC Ingolstadt",
+      "value": 40,
+      "display": "40 pts",
+      "wd": "Q170117"
+    },
+    {
+      "id": "fc-augsburg",
+      "name": "FC Augsburg",
+      "value": 38,
+      "display": "38 pts",
+      "wd": "Q15755"
+    },
+    {
+      "id": "werder-bremen",
+      "name": "Werder Bremen",
+      "value": 38,
+      "display": "38 pts",
+      "aliases": [
+        "Werder",
+        "Bremen"
+      ],
+      "wd": "Q51976"
+    },
+    {
+      "id": "darmstadt-98",
+      "name": "Darmstadt 98",
+      "value": 38,
+      "display": "38 pts",
+      "wd": "Q479351"
+    },
+    {
+      "id": "tsg-hoffenheim",
+      "name": "TSG Hoffenheim",
+      "value": 37,
+      "display": "37 pts",
+      "aliases": [
+        "1899 Hoffenheim"
+      ],
+      "wd": "Q22707"
+    },
+    {
+      "id": "eintracht-frankfurt",
+      "name": "Eintracht Frankfurt",
+      "value": 36,
+      "display": "36 pts",
+      "aliases": [
+        "Frankfurt"
+      ],
+      "wd": "Q38245"
+    },
+    {
+      "id": "vfb-stuttgart",
+      "name": "VfB Stuttgart",
+      "value": 33,
+      "display": "33 pts",
+      "wd": "Q4512"
+    },
+    {
+      "id": "hannover-96",
+      "name": "Hannover 96",
+      "value": 25,
+      "display": "25 pts",
+      "wd": "Q33748"
+    }
+  ]
+}

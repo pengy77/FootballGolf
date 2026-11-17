@@ -1,0 +1,186 @@
+{
+  "id": "serie-a-2025-26",
+  "title": "2025–⁠26 Serie A table",
+  "prompt": "place in the 2025–⁠26 Serie A",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "serie-a-table",
+  "season": "2025–26",
+  "tiebreak": "head-to-head points, then head-to-head goal difference",
+  "description": "Final 2025–26 Serie A table: all 20 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2025–26 Serie A",
+    "url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_Serie_A#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "inter-milan",
+      "name": "Inter Milan",
+      "value": 87,
+      "display": "87 pts",
+      "aliases": [
+        "Inter",
+        "Internazionale"
+      ],
+      "wd": "Q631"
+    },
+    {
+      "id": "napoli",
+      "name": "Napoli",
+      "value": 76,
+      "display": "76 pts",
+      "aliases": [
+        "SSC Napoli"
+      ],
+      "wd": "Q2641"
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "value": 73,
+      "display": "73 pts",
+      "aliases": [
+        "AS Roma"
+      ],
+      "wd": "Q2739"
+    },
+    {
+      "id": "como",
+      "name": "Como",
+      "value": 71,
+      "display": "71 pts",
+      "wd": "Q1120838"
+    },
+    {
+      "id": "ac-milan",
+      "name": "AC Milan",
+      "value": 70,
+      "display": "70 pts",
+      "aliases": [
+        "Milan"
+      ],
+      "wd": "Q1543"
+    },
+    {
+      "id": "juventus",
+      "name": "Juventus",
+      "value": 69,
+      "display": "69 pts",
+      "aliases": [
+        "Juve"
+      ],
+      "wd": "Q1422"
+    },
+    {
+      "id": "atalanta",
+      "name": "Atalanta",
+      "value": 59,
+      "display": "59 pts",
+      "wd": "Q1886"
+    },
+    {
+      "id": "bologna",
+      "name": "Bologna",
+      "value": 56,
+      "display": "56 pts",
+      "wd": "Q1893"
+    },
+    {
+      "id": "lazio",
+      "name": "Lazio",
+      "value": 54,
+      "display": "54 pts",
+      "aliases": [
+        "SS Lazio"
+      ],
+      "wd": "Q2609"
+    },
+    {
+      "id": "udinese",
+      "name": "Udinese",
+      "value": 50,
+      "display": "50 pts",
+      "wd": "Q2798"
+    },
+    {
+      "id": "sassuolo",
+      "name": "Sassuolo",
+      "value": 49,
+      "display": "49 pts",
+      "wd": "Q8603"
+    },
+    {
+      "id": "torino",
+      "name": "Torino",
+      "value": 45,
+      "display": "45 pts",
+      "wd": "Q2768"
+    },
+    {
+      "id": "parma",
+      "name": "Parma",
+      "value": 45,
+      "display": "45 pts",
+      "wd": "Q2693"
+    },
+    {
+      "id": "cagliari",
+      "name": "Cagliari",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q1900"
+    },
+    {
+      "id": "fiorentina",
+      "name": "Fiorentina",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q2052"
+    },
+    {
+      "id": "genoa",
+      "name": "Genoa",
+      "value": 41,
+      "display": "41 pts",
+      "wd": "Q2074"
+    },
+    {
+      "id": "lecce",
+      "name": "Lecce",
+      "value": 38,
+      "display": "38 pts",
+      "wd": "Q13391"
+    },
+    {
+      "id": "cremonese",
+      "name": "Cremonese",
+      "value": 34,
+      "display": "34 pts",
+      "wd": "Q759482"
+    },
+    {
+      "id": "hellas-verona",
+      "name": "Hellas Verona",
+      "value": 21,
+      "display": "21 pts",
+      "wd": "Q8639"
+    },
+    {
+      "id": "pisa",
+      "name": "Pisa",
+      "value": 18,
+      "display": "18 pts",
+      "wd": "Q289613"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { CATEGORY_BY_ID, categoriesFor, targetRange, type Category, type CourseId, type Item } from './data';
+import { CATEGORY_BY_ID, categoriesFor, drawGroups, targetRange, type Category, type CourseId, type Item } from './data';
 
 export interface Hole {
   cat: string;
@@ -56,14 +56,17 @@ export function randInt(min: number, max: number, rand: () => number = Math.rand
 export { targetRange } from './data';
 
 export function newCourse(course: CourseId, count: number, rand: () => number = Math.random, pool?: Category[]): Hole[] {
-  const cats = [...(pool ?? categoriesFor(course))];
+  // A series (every season of one league's table) is drawn once, then one season from it.
+  const groups = drawGroups(pool ?? categoriesFor(course));
   // Fisher–Yates
-  for (let i = cats.length - 1; i > 0; i--) {
+  for (let i = groups.length - 1; i > 0; i--) {
     const j = Math.floor(rand() * (i + 1));
-    [cats[i], cats[j]] = [cats[j], cats[i]];
+    [groups[i], groups[j]] = [groups[j], groups[i]];
   }
   // Pins only go where exactly one entry sits, so every hole has one clear answer (never a tie, never a 0).
-  return cats.slice(0, Math.min(count, cats.length)).map((c) => {
+  return groups.slice(0, Math.min(count, groups.length)).map(({ cats }) => {
+    // A lone list uses no extra randomness, so courses without series come out exactly as before.
+    const c = cats.length > 1 ? cats[randInt(0, cats.length - 1, rand)] : cats[0];
     if (!c.pins.length) {
       const [lo, hi] = targetRange(c.size);
       return { cat: c.id, target: randInt(lo, hi, rand) };

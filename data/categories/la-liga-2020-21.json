@@ -1,0 +1,185 @@
+{
+  "id": "la-liga-2020-21",
+  "title": "2020–⁠21 La Liga table",
+  "prompt": "place in the 2020–⁠21 La Liga",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "la-liga-table",
+  "season": "2020–21",
+  "tiebreak": "head-to-head points, then head-to-head goal difference",
+  "description": "Final 2020–21 La Liga table: all 20 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2020–21 La Liga",
+    "url": "https://en.wikipedia.org/wiki/2020%E2%80%9321_La_Liga#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "atletico-madrid",
+      "name": "Atlético Madrid",
+      "value": 86,
+      "display": "86 pts",
+      "aliases": [
+        "Atlético",
+        "Atleti"
+      ],
+      "wd": "Q8701"
+    },
+    {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "value": 84,
+      "display": "84 pts",
+      "aliases": [
+        "Real",
+        "Los Blancos"
+      ],
+      "wd": "Q8682"
+    },
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "value": 79,
+      "display": "79 pts",
+      "aliases": [
+        "Barça",
+        "FC Barcelona"
+      ],
+      "wd": "Q7156"
+    },
+    {
+      "id": "sevilla",
+      "name": "Sevilla",
+      "value": 77,
+      "display": "77 pts",
+      "aliases": [
+        "Seville"
+      ],
+      "wd": "Q10329"
+    },
+    {
+      "id": "real-sociedad",
+      "name": "Real Sociedad",
+      "value": 62,
+      "display": "62 pts",
+      "wd": "Q10315"
+    },
+    {
+      "id": "real-betis",
+      "name": "Real Betis",
+      "value": 61,
+      "display": "61 pts",
+      "aliases": [
+        "Betis"
+      ],
+      "wd": "Q8723"
+    },
+    {
+      "id": "villarreal",
+      "name": "Villarreal",
+      "value": 58,
+      "display": "58 pts",
+      "wd": "Q12297"
+    },
+    {
+      "id": "celta-vigo",
+      "name": "Celta Vigo",
+      "value": 53,
+      "display": "53 pts",
+      "wd": "Q8749"
+    },
+    {
+      "id": "granada",
+      "name": "Granada",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q8812"
+    },
+    {
+      "id": "athletic-bilbao",
+      "name": "Athletic Bilbao",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q8687"
+    },
+    {
+      "id": "osasuna",
+      "name": "Osasuna",
+      "value": 44,
+      "display": "44 pts",
+      "wd": "Q10286"
+    },
+    {
+      "id": "cadiz",
+      "name": "Cádiz",
+      "value": 44,
+      "display": "44 pts",
+      "wd": "Q460448"
+    },
+    {
+      "id": "valencia",
+      "name": "Valencia",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q10333"
+    },
+    {
+      "id": "levante",
+      "name": "Levante",
+      "value": 41,
+      "display": "41 pts",
+      "wd": "Q8823"
+    },
+    {
+      "id": "getafe",
+      "name": "Getafe",
+      "value": 38,
+      "display": "38 pts",
+      "wd": "Q8806"
+    },
+    {
+      "id": "alaves",
+      "name": "Alavés",
+      "value": 38,
+      "display": "38 pts",
+      "wd": "Q223620"
+    },
+    {
+      "id": "elche",
+      "name": "Elche",
+      "value": 36,
+      "display": "36 pts",
+      "wd": "Q10512"
+    },
+    {
+      "id": "huesca",
+      "name": "Huesca",
+      "value": 34,
+      "display": "34 pts",
+      "wd": "Q11971"
+    },
+    {
+      "id": "valladolid",
+      "name": "Valladolid",
+      "value": 31,
+      "display": "31 pts",
+      "wd": "Q10319"
+    },
+    {
+      "id": "eibar",
+      "name": "Eibar",
+      "value": 30,
+      "display": "30 pts",
+      "wd": "Q770740"
+    }
+  ]
+}

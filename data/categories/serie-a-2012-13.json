@@ -1,0 +1,186 @@
+{
+  "id": "serie-a-2012-13",
+  "title": "2012–⁠13 Serie A table",
+  "prompt": "place in the 2012–⁠13 Serie A",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "serie-a-table",
+  "season": "2012–13",
+  "tiebreak": "head-to-head points, then head-to-head goal difference",
+  "description": "Final 2012–13 Serie A table: all 20 clubs in the order they finished. Points include deductions: Sampdoria −1, Atalanta −2, Torino −1, Siena −6.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2012–13 Serie A",
+    "url": "https://en.wikipedia.org/wiki/2012%E2%80%9313_Serie_A#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "juventus",
+      "name": "Juventus",
+      "value": 87,
+      "display": "87 pts",
+      "aliases": [
+        "Juve"
+      ],
+      "wd": "Q1422"
+    },
+    {
+      "id": "napoli",
+      "name": "Napoli",
+      "value": 78,
+      "display": "78 pts",
+      "aliases": [
+        "SSC Napoli"
+      ],
+      "wd": "Q2641"
+    },
+    {
+      "id": "ac-milan",
+      "name": "AC Milan",
+      "value": 72,
+      "display": "72 pts",
+      "aliases": [
+        "Milan"
+      ],
+      "wd": "Q1543"
+    },
+    {
+      "id": "fiorentina",
+      "name": "Fiorentina",
+      "value": 70,
+      "display": "70 pts",
+      "wd": "Q2052"
+    },
+    {
+      "id": "udinese",
+      "name": "Udinese",
+      "value": 66,
+      "display": "66 pts",
+      "wd": "Q2798"
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "value": 62,
+      "display": "62 pts",
+      "aliases": [
+        "AS Roma"
+      ],
+      "wd": "Q2739"
+    },
+    {
+      "id": "lazio",
+      "name": "Lazio",
+      "value": 61,
+      "display": "61 pts",
+      "aliases": [
+        "SS Lazio"
+      ],
+      "wd": "Q2609"
+    },
+    {
+      "id": "catania",
+      "name": "Catania",
+      "value": 56,
+      "display": "56 pts",
+      "wd": "Q2018"
+    },
+    {
+      "id": "inter-milan",
+      "name": "Inter Milan",
+      "value": 54,
+      "display": "54 pts",
+      "aliases": [
+        "Inter",
+        "Internazionale"
+      ],
+      "wd": "Q631"
+    },
+    {
+      "id": "parma",
+      "name": "Parma",
+      "value": 49,
+      "display": "49 pts",
+      "wd": "Q2693"
+    },
+    {
+      "id": "cagliari",
+      "name": "Cagliari",
+      "value": 47,
+      "display": "47 pts",
+      "wd": "Q1900"
+    },
+    {
+      "id": "chievo",
+      "name": "Chievo",
+      "value": 45,
+      "display": "45 pts",
+      "wd": "Q2037"
+    },
+    {
+      "id": "bologna",
+      "name": "Bologna",
+      "value": 44,
+      "display": "44 pts",
+      "wd": "Q1893"
+    },
+    {
+      "id": "sampdoria",
+      "name": "Sampdoria",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q1457"
+    },
+    {
+      "id": "atalanta",
+      "name": "Atalanta",
+      "value": 40,
+      "display": "40 pts",
+      "wd": "Q1886"
+    },
+    {
+      "id": "torino",
+      "name": "Torino",
+      "value": 39,
+      "display": "39 pts",
+      "wd": "Q2768"
+    },
+    {
+      "id": "genoa",
+      "name": "Genoa",
+      "value": 38,
+      "display": "38 pts",
+      "wd": "Q2074"
+    },
+    {
+      "id": "palermo",
+      "name": "Palermo",
+      "value": 32,
+      "display": "32 pts",
+      "wd": "Q2674"
+    },
+    {
+      "id": "siena",
+      "name": "Siena",
+      "value": 30,
+      "display": "30 pts",
+      "wd": "Q2756"
+    },
+    {
+      "id": "pescara",
+      "name": "Pescara",
+      "value": 22,
+      "display": "22 pts",
+      "wd": "Q2710"
+    }
+  ]
+}

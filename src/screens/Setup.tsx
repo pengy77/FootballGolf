@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useApp } from '../App';
-import { COURSES, categoriesFor, type CourseId } from '../lib/data';
+import { COURSES, poolSize, type CourseId } from '../lib/data';
 import { cleanName, createGame, MAX_PLAYERS, NAME_MAX, sameName } from '../lib/game';
 import { newSecret } from '../live/crypto';
 import { newDoc, newRoom } from '../live/room';
@@ -18,7 +18,8 @@ export default function Setup({ mode }: { mode: 'live' | 'local' }) {
   const [clock, setClock] = useState(60);
   const [tried, setTried] = useState(false);
 
-  const pool = categoriesFor(course).length;
+  // A league table's seasons count once: a round never has two seasons of the same table.
+  const pool = poolSize(course);
   const holeCount = Math.min(holes, pool);
   const cleaned = names.map(cleanName);
   const dupes = cleaned.map((n, i) => !!n && cleaned.findIndex((m) => sameName(m, n)) !== i);
@@ -122,7 +123,7 @@ export default function Setup({ mode }: { mode: 'live' | 'local' }) {
           <h2 className="field-title">Course</h2>
           <div className="courses" role="radiogroup" aria-label="Course">
             {COURSES.map((c) => {
-              const n = categoriesFor(c.id).length;
+              const n = poolSize(c.id);
               if (!n) return null;
               return (
                 <button

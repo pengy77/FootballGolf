@@ -1,0 +1,192 @@
+{
+  "id": "ligue-1-2020-21",
+  "title": "2020–⁠21 Ligue 1 table",
+  "prompt": "place in the 2020–⁠21 Ligue 1",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "ligue-1-table",
+  "season": "2020–21",
+  "tiebreak": "goal difference, then goals scored",
+  "description": "Final 2020–21 Ligue 1 table: all 20 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2020–21 Ligue 1",
+    "url": "https://en.wikipedia.org/wiki/2020%E2%80%9321_Ligue_1#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "lille",
+      "name": "Lille",
+      "value": 83,
+      "display": "83 pts",
+      "aliases": [
+        "LOSC"
+      ],
+      "wd": "Q19516"
+    },
+    {
+      "id": "paris-saint-germain",
+      "name": "Paris Saint-Germain",
+      "value": 82,
+      "display": "82 pts",
+      "aliases": [
+        "PSG",
+        "Paris SG"
+      ],
+      "wd": "Q483020"
+    },
+    {
+      "id": "monaco",
+      "name": "Monaco",
+      "value": 78,
+      "display": "78 pts",
+      "aliases": [
+        "AS Monaco"
+      ],
+      "wd": "Q180305"
+    },
+    {
+      "id": "lyon",
+      "name": "Lyon",
+      "value": 76,
+      "display": "76 pts",
+      "aliases": [
+        "Olympique Lyonnais",
+        "OL"
+      ],
+      "wd": "Q704"
+    },
+    {
+      "id": "marseille",
+      "name": "Marseille",
+      "value": 60,
+      "display": "60 pts",
+      "aliases": [
+        "Olympique de Marseille",
+        "OM"
+      ],
+      "wd": "Q132885"
+    },
+    {
+      "id": "rennes",
+      "name": "Rennes",
+      "value": 58,
+      "display": "58 pts",
+      "wd": "Q19509"
+    },
+    {
+      "id": "lens",
+      "name": "Lens",
+      "value": 57,
+      "display": "57 pts",
+      "wd": "Q191843"
+    },
+    {
+      "id": "montpellier",
+      "name": "Montpellier",
+      "value": 54,
+      "display": "54 pts",
+      "wd": "Q19513"
+    },
+    {
+      "id": "nice",
+      "name": "Nice",
+      "value": 52,
+      "display": "52 pts",
+      "wd": "Q185163"
+    },
+    {
+      "id": "metz",
+      "name": "Metz",
+      "value": 47,
+      "display": "47 pts",
+      "wd": "Q221525"
+    },
+    {
+      "id": "saint-etienne",
+      "name": "Saint-Étienne",
+      "value": 46,
+      "display": "46 pts",
+      "aliases": [
+        "ASSE",
+        "St Etienne"
+      ],
+      "wd": "Q19521"
+    },
+    {
+      "id": "bordeaux",
+      "name": "Bordeaux",
+      "value": 45,
+      "display": "45 pts",
+      "aliases": [
+        "Girondins de Bordeaux"
+      ],
+      "wd": "Q172476"
+    },
+    {
+      "id": "angers",
+      "name": "Angers",
+      "value": 44,
+      "display": "44 pts",
+      "wd": "Q845137"
+    },
+    {
+      "id": "reims",
+      "name": "Reims",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q208228"
+    },
+    {
+      "id": "strasbourg",
+      "name": "Strasbourg",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q126334"
+    },
+    {
+      "id": "lorient",
+      "name": "Lorient",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q48911"
+    },
+    {
+      "id": "brest",
+      "name": "Brest",
+      "value": 41,
+      "display": "41 pts",
+      "wd": "Q218372"
+    },
+    {
+      "id": "nantes",
+      "name": "Nantes",
+      "value": 40,
+      "display": "40 pts",
+      "wd": "Q192071"
+    },
+    {
+      "id": "nimes",
+      "name": "Nîmes",
+      "value": 35,
+      "display": "35 pts",
+      "wd": "Q730809"
+    },
+    {
+      "id": "dijon",
+      "name": "Dijon",
+      "value": 21,
+      "display": "21 pts",
+      "wd": "Q503317"
+    }
+  ]
+}

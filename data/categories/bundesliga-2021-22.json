@@ -1,0 +1,181 @@
+{
+  "id": "bundesliga-2021-22",
+  "title": "2021–⁠22 Bundesliga table",
+  "prompt": "place in the 2021–⁠22 Bundesliga",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "bundesliga-table",
+  "season": "2021–22",
+  "tiebreak": "goal difference, then goals scored",
+  "description": "Final 2021–22 Bundesliga table: all 18 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2021–22 Bundesliga",
+    "url": "https://en.wikipedia.org/wiki/2021%E2%80%9322_Bundesliga#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "bayern-munich",
+      "name": "Bayern Munich",
+      "value": 77,
+      "display": "77 pts",
+      "aliases": [
+        "Bayern",
+        "FC Bayern",
+        "Bayern München"
+      ],
+      "wd": "Q15789"
+    },
+    {
+      "id": "borussia-dortmund",
+      "name": "Borussia Dortmund",
+      "value": 69,
+      "display": "69 pts",
+      "aliases": [
+        "Dortmund",
+        "BVB"
+      ],
+      "wd": "Q41420"
+    },
+    {
+      "id": "bayer-leverkusen",
+      "name": "Bayer Leverkusen",
+      "value": 64,
+      "display": "64 pts",
+      "aliases": [
+        "Leverkusen"
+      ],
+      "wd": "Q104761"
+    },
+    {
+      "id": "rb-leipzig",
+      "name": "RB Leipzig",
+      "value": 58,
+      "display": "58 pts",
+      "aliases": [
+        "Leipzig"
+      ],
+      "wd": "Q702455"
+    },
+    {
+      "id": "union-berlin",
+      "name": "Union Berlin",
+      "value": 57,
+      "display": "57 pts",
+      "wd": "Q141971"
+    },
+    {
+      "id": "sc-freiburg",
+      "name": "SC Freiburg",
+      "value": 55,
+      "display": "55 pts",
+      "aliases": [
+        "Freiburg"
+      ],
+      "wd": "Q106394"
+    },
+    {
+      "id": "1-fc-koln",
+      "name": "1. FC Köln",
+      "value": 52,
+      "display": "52 pts",
+      "wd": "Q104770"
+    },
+    {
+      "id": "mainz-05",
+      "name": "Mainz 05",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q105254"
+    },
+    {
+      "id": "tsg-hoffenheim",
+      "name": "TSG Hoffenheim",
+      "value": 46,
+      "display": "46 pts",
+      "aliases": [
+        "1899 Hoffenheim"
+      ],
+      "wd": "Q22707"
+    },
+    {
+      "id": "borussia-monchengladbach",
+      "name": "Borussia Mönchengladbach",
+      "value": 45,
+      "display": "45 pts",
+      "aliases": [
+        "Gladbach",
+        "Mönchengladbach"
+      ],
+      "wd": "Q101959"
+    },
+    {
+      "id": "eintracht-frankfurt",
+      "name": "Eintracht Frankfurt",
+      "value": 42,
+      "display": "42 pts",
+      "aliases": [
+        "Frankfurt"
+      ],
+      "wd": "Q38245"
+    },
+    {
+      "id": "vfl-wolfsburg",
+      "name": "VfL Wolfsburg",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q101859"
+    },
+    {
+      "id": "vfl-bochum",
+      "name": "VfL Bochum",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q105861"
+    },
+    {
+      "id": "fc-augsburg",
+      "name": "FC Augsburg",
+      "value": 38,
+      "display": "38 pts",
+      "wd": "Q15755"
+    },
+    {
+      "id": "vfb-stuttgart",
+      "name": "VfB Stuttgart",
+      "value": 33,
+      "display": "33 pts",
+      "wd": "Q4512"
+    },
+    {
+      "id": "hertha-bsc",
+      "name": "Hertha BSC",
+      "value": 33,
+      "display": "33 pts",
+      "wd": "Q102720"
+    },
+    {
+      "id": "arminia-bielefeld",
+      "name": "Arminia Bielefeld",
+      "value": 28,
+      "display": "28 pts",
+      "wd": "Q105844"
+    },
+    {
+      "id": "greuther-furth",
+      "name": "Greuther Fürth",
+      "value": 18,
+      "display": "18 pts",
+      "wd": "Q153539"
+    }
+  ]
+}

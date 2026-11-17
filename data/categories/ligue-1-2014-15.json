@@ -1,0 +1,192 @@
+{
+  "id": "ligue-1-2014-15",
+  "title": "2014–⁠15 Ligue 1 table",
+  "prompt": "place in the 2014–⁠15 Ligue 1",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "ligue-1-table",
+  "season": "2014–15",
+  "tiebreak": "goal difference, then goals scored",
+  "description": "Final 2014–15 Ligue 1 table: all 20 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2014–15 Ligue 1",
+    "url": "https://en.wikipedia.org/wiki/2014%E2%80%9315_Ligue_1#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "paris-saint-germain",
+      "name": "Paris Saint-Germain",
+      "value": 83,
+      "display": "83 pts",
+      "aliases": [
+        "PSG",
+        "Paris SG"
+      ],
+      "wd": "Q483020"
+    },
+    {
+      "id": "lyon",
+      "name": "Lyon",
+      "value": 75,
+      "display": "75 pts",
+      "aliases": [
+        "Olympique Lyonnais",
+        "OL"
+      ],
+      "wd": "Q704"
+    },
+    {
+      "id": "monaco",
+      "name": "Monaco",
+      "value": 71,
+      "display": "71 pts",
+      "aliases": [
+        "AS Monaco"
+      ],
+      "wd": "Q180305"
+    },
+    {
+      "id": "marseille",
+      "name": "Marseille",
+      "value": 69,
+      "display": "69 pts",
+      "aliases": [
+        "Olympique de Marseille",
+        "OM"
+      ],
+      "wd": "Q132885"
+    },
+    {
+      "id": "saint-etienne",
+      "name": "Saint-Étienne",
+      "value": 69,
+      "display": "69 pts",
+      "aliases": [
+        "ASSE",
+        "St Etienne"
+      ],
+      "wd": "Q19521"
+    },
+    {
+      "id": "bordeaux",
+      "name": "Bordeaux",
+      "value": 63,
+      "display": "63 pts",
+      "aliases": [
+        "Girondins de Bordeaux"
+      ],
+      "wd": "Q172476"
+    },
+    {
+      "id": "montpellier",
+      "name": "Montpellier",
+      "value": 56,
+      "display": "56 pts",
+      "wd": "Q19513"
+    },
+    {
+      "id": "lille",
+      "name": "Lille",
+      "value": 56,
+      "display": "56 pts",
+      "aliases": [
+        "LOSC"
+      ],
+      "wd": "Q19516"
+    },
+    {
+      "id": "rennes",
+      "name": "Rennes",
+      "value": 50,
+      "display": "50 pts",
+      "wd": "Q19509"
+    },
+    {
+      "id": "guingamp",
+      "name": "Guingamp",
+      "value": 49,
+      "display": "49 pts",
+      "wd": "Q459148"
+    },
+    {
+      "id": "nice",
+      "name": "Nice",
+      "value": 48,
+      "display": "48 pts",
+      "wd": "Q185163"
+    },
+    {
+      "id": "bastia",
+      "name": "Bastia",
+      "value": 47,
+      "display": "47 pts",
+      "wd": "Q208399"
+    },
+    {
+      "id": "caen",
+      "name": "Caen",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q193377"
+    },
+    {
+      "id": "nantes",
+      "name": "Nantes",
+      "value": 45,
+      "display": "45 pts",
+      "wd": "Q192071"
+    },
+    {
+      "id": "reims",
+      "name": "Reims",
+      "value": 44,
+      "display": "44 pts",
+      "wd": "Q208228"
+    },
+    {
+      "id": "lorient",
+      "name": "Lorient",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q48911"
+    },
+    {
+      "id": "toulouse",
+      "name": "Toulouse",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q19518"
+    },
+    {
+      "id": "evian",
+      "name": "Evian",
+      "value": 37,
+      "display": "37 pts",
+      "wd": "Q333838"
+    },
+    {
+      "id": "metz",
+      "name": "Metz",
+      "value": 30,
+      "display": "30 pts",
+      "wd": "Q221525"
+    },
+    {
+      "id": "lens",
+      "name": "Lens",
+      "value": 29,
+      "display": "29 pts",
+      "wd": "Q191843"
+    }
+  ]
+}

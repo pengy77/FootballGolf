@@ -1,0 +1,186 @@
+{
+  "id": "serie-a-2019-20",
+  "title": "2019–⁠20 Serie A table",
+  "prompt": "place in the 2019–⁠20 Serie A",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "serie-a-table",
+  "season": "2019–20",
+  "tiebreak": "head-to-head points, then head-to-head goal difference",
+  "description": "Final 2019–20 Serie A table: all 20 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2019–20 Serie A",
+    "url": "https://en.wikipedia.org/wiki/2019%E2%80%9320_Serie_A#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "juventus",
+      "name": "Juventus",
+      "value": 83,
+      "display": "83 pts",
+      "aliases": [
+        "Juve"
+      ],
+      "wd": "Q1422"
+    },
+    {
+      "id": "inter-milan",
+      "name": "Inter Milan",
+      "value": 82,
+      "display": "82 pts",
+      "aliases": [
+        "Inter",
+        "Internazionale"
+      ],
+      "wd": "Q631"
+    },
+    {
+      "id": "atalanta",
+      "name": "Atalanta",
+      "value": 78,
+      "display": "78 pts",
+      "wd": "Q1886"
+    },
+    {
+      "id": "lazio",
+      "name": "Lazio",
+      "value": 78,
+      "display": "78 pts",
+      "aliases": [
+        "SS Lazio"
+      ],
+      "wd": "Q2609"
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "value": 70,
+      "display": "70 pts",
+      "aliases": [
+        "AS Roma"
+      ],
+      "wd": "Q2739"
+    },
+    {
+      "id": "ac-milan",
+      "name": "AC Milan",
+      "value": 66,
+      "display": "66 pts",
+      "aliases": [
+        "Milan"
+      ],
+      "wd": "Q1543"
+    },
+    {
+      "id": "napoli",
+      "name": "Napoli",
+      "value": 62,
+      "display": "62 pts",
+      "aliases": [
+        "SSC Napoli"
+      ],
+      "wd": "Q2641"
+    },
+    {
+      "id": "sassuolo",
+      "name": "Sassuolo",
+      "value": 51,
+      "display": "51 pts",
+      "wd": "Q8603"
+    },
+    {
+      "id": "hellas-verona",
+      "name": "Hellas Verona",
+      "value": 49,
+      "display": "49 pts",
+      "wd": "Q8639"
+    },
+    {
+      "id": "fiorentina",
+      "name": "Fiorentina",
+      "value": 49,
+      "display": "49 pts",
+      "wd": "Q2052"
+    },
+    {
+      "id": "parma",
+      "name": "Parma",
+      "value": 49,
+      "display": "49 pts",
+      "wd": "Q2693"
+    },
+    {
+      "id": "bologna",
+      "name": "Bologna",
+      "value": 47,
+      "display": "47 pts",
+      "wd": "Q1893"
+    },
+    {
+      "id": "udinese",
+      "name": "Udinese",
+      "value": 45,
+      "display": "45 pts",
+      "wd": "Q2798"
+    },
+    {
+      "id": "cagliari",
+      "name": "Cagliari",
+      "value": 45,
+      "display": "45 pts",
+      "wd": "Q1900"
+    },
+    {
+      "id": "sampdoria",
+      "name": "Sampdoria",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q1457"
+    },
+    {
+      "id": "torino",
+      "name": "Torino",
+      "value": 40,
+      "display": "40 pts",
+      "wd": "Q2768"
+    },
+    {
+      "id": "genoa",
+      "name": "Genoa",
+      "value": 39,
+      "display": "39 pts",
+      "wd": "Q2074"
+    },
+    {
+      "id": "lecce",
+      "name": "Lecce",
+      "value": 35,
+      "display": "35 pts",
+      "wd": "Q13391"
+    },
+    {
+      "id": "brescia",
+      "name": "Brescia",
+      "value": 25,
+      "display": "25 pts",
+      "wd": "Q6651"
+    },
+    {
+      "id": "spal",
+      "name": "SPAL",
+      "value": 20,
+      "display": "20 pts",
+      "wd": "Q13385"
+    }
+  ]
+}

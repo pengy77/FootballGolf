@@ -1,0 +1,185 @@
+{
+  "id": "la-liga-2019-20",
+  "title": "2019–⁠20 La Liga table",
+  "prompt": "place in the 2019–⁠20 La Liga",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "la-liga-table",
+  "season": "2019–20",
+  "tiebreak": "head-to-head points, then head-to-head goal difference",
+  "description": "Final 2019–20 La Liga table: all 20 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2019–20 La Liga",
+    "url": "https://en.wikipedia.org/wiki/2019%E2%80%9320_La_Liga#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "value": 87,
+      "display": "87 pts",
+      "aliases": [
+        "Real",
+        "Los Blancos"
+      ],
+      "wd": "Q8682"
+    },
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "value": 82,
+      "display": "82 pts",
+      "aliases": [
+        "Barça",
+        "FC Barcelona"
+      ],
+      "wd": "Q7156"
+    },
+    {
+      "id": "atletico-madrid",
+      "name": "Atlético Madrid",
+      "value": 70,
+      "display": "70 pts",
+      "aliases": [
+        "Atlético",
+        "Atleti"
+      ],
+      "wd": "Q8701"
+    },
+    {
+      "id": "sevilla",
+      "name": "Sevilla",
+      "value": 70,
+      "display": "70 pts",
+      "aliases": [
+        "Seville"
+      ],
+      "wd": "Q10329"
+    },
+    {
+      "id": "villarreal",
+      "name": "Villarreal",
+      "value": 60,
+      "display": "60 pts",
+      "wd": "Q12297"
+    },
+    {
+      "id": "real-sociedad",
+      "name": "Real Sociedad",
+      "value": 56,
+      "display": "56 pts",
+      "wd": "Q10315"
+    },
+    {
+      "id": "granada",
+      "name": "Granada",
+      "value": 56,
+      "display": "56 pts",
+      "wd": "Q8812"
+    },
+    {
+      "id": "getafe",
+      "name": "Getafe",
+      "value": 54,
+      "display": "54 pts",
+      "wd": "Q8806"
+    },
+    {
+      "id": "valencia",
+      "name": "Valencia",
+      "value": 53,
+      "display": "53 pts",
+      "wd": "Q10333"
+    },
+    {
+      "id": "osasuna",
+      "name": "Osasuna",
+      "value": 52,
+      "display": "52 pts",
+      "wd": "Q10286"
+    },
+    {
+      "id": "athletic-bilbao",
+      "name": "Athletic Bilbao",
+      "value": 51,
+      "display": "51 pts",
+      "wd": "Q8687"
+    },
+    {
+      "id": "levante",
+      "name": "Levante",
+      "value": 49,
+      "display": "49 pts",
+      "wd": "Q8823"
+    },
+    {
+      "id": "valladolid",
+      "name": "Valladolid",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q10319"
+    },
+    {
+      "id": "eibar",
+      "name": "Eibar",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q770740"
+    },
+    {
+      "id": "real-betis",
+      "name": "Real Betis",
+      "value": 41,
+      "display": "41 pts",
+      "aliases": [
+        "Betis"
+      ],
+      "wd": "Q8723"
+    },
+    {
+      "id": "alaves",
+      "name": "Alavés",
+      "value": 39,
+      "display": "39 pts",
+      "wd": "Q223620"
+    },
+    {
+      "id": "celta-vigo",
+      "name": "Celta Vigo",
+      "value": 37,
+      "display": "37 pts",
+      "wd": "Q8749"
+    },
+    {
+      "id": "leganes",
+      "name": "Leganés",
+      "value": 36,
+      "display": "36 pts",
+      "wd": "Q856119"
+    },
+    {
+      "id": "mallorca",
+      "name": "Mallorca",
+      "value": 33,
+      "display": "33 pts",
+      "wd": "Q8835"
+    },
+    {
+      "id": "espanyol",
+      "name": "Espanyol",
+      "value": 25,
+      "display": "25 pts",
+      "wd": "Q8780"
+    }
+  ]
+}

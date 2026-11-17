@@ -1,0 +1,186 @@
+{
+  "id": "serie-a-2024-25",
+  "title": "2024–⁠25 Serie A table",
+  "prompt": "place in the 2024–⁠25 Serie A",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "serie-a-table",
+  "season": "2024–25",
+  "tiebreak": "head-to-head points, then head-to-head goal difference",
+  "description": "Final 2024–25 Serie A table: all 20 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2024–25 Serie A",
+    "url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Serie_A#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "napoli",
+      "name": "Napoli",
+      "value": 82,
+      "display": "82 pts",
+      "aliases": [
+        "SSC Napoli"
+      ],
+      "wd": "Q2641"
+    },
+    {
+      "id": "inter-milan",
+      "name": "Inter Milan",
+      "value": 81,
+      "display": "81 pts",
+      "aliases": [
+        "Inter",
+        "Internazionale"
+      ],
+      "wd": "Q631"
+    },
+    {
+      "id": "atalanta",
+      "name": "Atalanta",
+      "value": 74,
+      "display": "74 pts",
+      "wd": "Q1886"
+    },
+    {
+      "id": "juventus",
+      "name": "Juventus",
+      "value": 70,
+      "display": "70 pts",
+      "aliases": [
+        "Juve"
+      ],
+      "wd": "Q1422"
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "value": 69,
+      "display": "69 pts",
+      "aliases": [
+        "AS Roma"
+      ],
+      "wd": "Q2739"
+    },
+    {
+      "id": "fiorentina",
+      "name": "Fiorentina",
+      "value": 65,
+      "display": "65 pts",
+      "wd": "Q2052"
+    },
+    {
+      "id": "lazio",
+      "name": "Lazio",
+      "value": 65,
+      "display": "65 pts",
+      "aliases": [
+        "SS Lazio"
+      ],
+      "wd": "Q2609"
+    },
+    {
+      "id": "ac-milan",
+      "name": "AC Milan",
+      "value": 63,
+      "display": "63 pts",
+      "aliases": [
+        "Milan"
+      ],
+      "wd": "Q1543"
+    },
+    {
+      "id": "bologna",
+      "name": "Bologna",
+      "value": 62,
+      "display": "62 pts",
+      "wd": "Q1893"
+    },
+    {
+      "id": "como",
+      "name": "Como",
+      "value": 49,
+      "display": "49 pts",
+      "wd": "Q1120838"
+    },
+    {
+      "id": "torino",
+      "name": "Torino",
+      "value": 44,
+      "display": "44 pts",
+      "wd": "Q2768"
+    },
+    {
+      "id": "udinese",
+      "name": "Udinese",
+      "value": 44,
+      "display": "44 pts",
+      "wd": "Q2798"
+    },
+    {
+      "id": "genoa",
+      "name": "Genoa",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q2074"
+    },
+    {
+      "id": "hellas-verona",
+      "name": "Hellas Verona",
+      "value": 37,
+      "display": "37 pts",
+      "wd": "Q8639"
+    },
+    {
+      "id": "cagliari",
+      "name": "Cagliari",
+      "value": 36,
+      "display": "36 pts",
+      "wd": "Q1900"
+    },
+    {
+      "id": "parma",
+      "name": "Parma",
+      "value": 36,
+      "display": "36 pts",
+      "wd": "Q2693"
+    },
+    {
+      "id": "lecce",
+      "name": "Lecce",
+      "value": 34,
+      "display": "34 pts",
+      "wd": "Q13391"
+    },
+    {
+      "id": "empoli",
+      "name": "Empoli",
+      "value": 31,
+      "display": "31 pts",
+      "wd": "Q6703"
+    },
+    {
+      "id": "venezia",
+      "name": "Venezia",
+      "value": 29,
+      "display": "29 pts",
+      "wd": "Q501245"
+    },
+    {
+      "id": "monza",
+      "name": "Monza",
+      "value": 18,
+      "display": "18 pts",
+      "wd": "Q289482"
+    }
+  ]
+}

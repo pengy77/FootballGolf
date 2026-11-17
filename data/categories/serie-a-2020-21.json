@@ -1,0 +1,186 @@
+{
+  "id": "serie-a-2020-21",
+  "title": "2020–⁠21 Serie A table",
+  "prompt": "place in the 2020–⁠21 Serie A",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "serie-a-table",
+  "season": "2020–21",
+  "tiebreak": "head-to-head points, then head-to-head goal difference",
+  "description": "Final 2020–21 Serie A table: all 20 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2020–21 Serie A",
+    "url": "https://en.wikipedia.org/wiki/2020%E2%80%9321_Serie_A#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "inter-milan",
+      "name": "Inter Milan",
+      "value": 91,
+      "display": "91 pts",
+      "aliases": [
+        "Inter",
+        "Internazionale"
+      ],
+      "wd": "Q631"
+    },
+    {
+      "id": "ac-milan",
+      "name": "AC Milan",
+      "value": 79,
+      "display": "79 pts",
+      "aliases": [
+        "Milan"
+      ],
+      "wd": "Q1543"
+    },
+    {
+      "id": "atalanta",
+      "name": "Atalanta",
+      "value": 78,
+      "display": "78 pts",
+      "wd": "Q1886"
+    },
+    {
+      "id": "juventus",
+      "name": "Juventus",
+      "value": 78,
+      "display": "78 pts",
+      "aliases": [
+        "Juve"
+      ],
+      "wd": "Q1422"
+    },
+    {
+      "id": "napoli",
+      "name": "Napoli",
+      "value": 77,
+      "display": "77 pts",
+      "aliases": [
+        "SSC Napoli"
+      ],
+      "wd": "Q2641"
+    },
+    {
+      "id": "lazio",
+      "name": "Lazio",
+      "value": 68,
+      "display": "68 pts",
+      "aliases": [
+        "SS Lazio"
+      ],
+      "wd": "Q2609"
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "value": 62,
+      "display": "62 pts",
+      "aliases": [
+        "AS Roma"
+      ],
+      "wd": "Q2739"
+    },
+    {
+      "id": "sassuolo",
+      "name": "Sassuolo",
+      "value": 62,
+      "display": "62 pts",
+      "wd": "Q8603"
+    },
+    {
+      "id": "sampdoria",
+      "name": "Sampdoria",
+      "value": 52,
+      "display": "52 pts",
+      "wd": "Q1457"
+    },
+    {
+      "id": "hellas-verona",
+      "name": "Hellas Verona",
+      "value": 45,
+      "display": "45 pts",
+      "wd": "Q8639"
+    },
+    {
+      "id": "genoa",
+      "name": "Genoa",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q2074"
+    },
+    {
+      "id": "bologna",
+      "name": "Bologna",
+      "value": 41,
+      "display": "41 pts",
+      "wd": "Q1893"
+    },
+    {
+      "id": "fiorentina",
+      "name": "Fiorentina",
+      "value": 40,
+      "display": "40 pts",
+      "wd": "Q2052"
+    },
+    {
+      "id": "udinese",
+      "name": "Udinese",
+      "value": 40,
+      "display": "40 pts",
+      "wd": "Q2798"
+    },
+    {
+      "id": "spezia",
+      "name": "Spezia",
+      "value": 39,
+      "display": "39 pts",
+      "wd": "Q8615"
+    },
+    {
+      "id": "cagliari",
+      "name": "Cagliari",
+      "value": 37,
+      "display": "37 pts",
+      "wd": "Q1900"
+    },
+    {
+      "id": "torino",
+      "name": "Torino",
+      "value": 37,
+      "display": "37 pts",
+      "wd": "Q2768"
+    },
+    {
+      "id": "benevento",
+      "name": "Benevento",
+      "value": 33,
+      "display": "33 pts",
+      "wd": "Q652516"
+    },
+    {
+      "id": "crotone",
+      "name": "Crotone",
+      "value": 23,
+      "display": "23 pts",
+      "wd": "Q6690"
+    },
+    {
+      "id": "parma",
+      "name": "Parma",
+      "value": 20,
+      "display": "20 pts",
+      "wd": "Q2693"
+    }
+  ]
+}

@@ -7,6 +7,10 @@
 // Usage:
 //   node scripts/build-entities.mjs            # rebuild from the Wikidata cache (fetches only what's missing)
 //   node scripts/build-entities.mjs --refresh  # re-download everything from Wikidata
+//   node scripts/build-entities.mjs --relink   # re-match every entry by name (season tables keep the ids
+//                                              # their Wikipedia tables link to)
+//
+// An entry that already links to a real Wikidata entity keeps that link unless --relink is given.
 //
 // Source: Wikidata (CC0). Raw query results are cached in .cache/wikidata/ (git-ignored).
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
@@ -18,6 +22,7 @@ const catDir = join(root, 'data', 'categories');
 const outDir = join(root, 'data', 'entities');
 const cacheDir = join(root, '.cache', 'wikidata');
 const REFRESH = process.argv.includes('--refresh');
+const RELINK = process.argv.includes('--relink');
 
 /** Minimum Wikipedia language editions for a person to be searchable: covers journeymen pros, skips amateurs. */
 const PERSON_MIN_SITELINKS = 12;
@@ -43,19 +48,33 @@ const qid = (uri) => (uri ? uri.slice(uri.lastIndexOf('/') + 1) : undefined);
 /** "1987-05-04T00:00:00Z" → 1987 */
 const year = (date) => Number(/^[+]?(\d{4})-/.exec(date)?.[1]) || undefined;
 
+// QLever (University of Freiburg) serves the same Wikidata dump and answers whole-database queries in under a
+// second; the official endpoint is the fallback, but it times out at 60s and is often overloaded.
+const ENDPOINTS = [
+  { id: 'ql', url: 'https://qlever.dev/api/wikidata' },
+  { id: 'wd', url: 'https://query.wikidata.org/sparql' },
+];
+const PREFIXES = `PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+`;
+let endpoint = 0;
+
 async function sparql(name, query, maxAttempts = 4) {
-  const file = join(cacheDir, `${name}.json`);
+  const file = join(cacheDir, `${ENDPOINTS[endpoint].id}-${name}.json`);
   if (!REFRESH && existsSync(file)) return JSON.parse(readFileSync(file, 'utf8'));
   for (let attempt = 1; ; attempt++) {
-    process.stdout.write(`  fetching ${name}… `);
-    const res = await fetch('https://query.wikidata.org/sparql', {
+    process.stdout.write(`  fetching ${name} (${ENDPOINTS[endpoint].id})… `);
+    const res = await fetch(ENDPOINTS[endpoint].url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
         Accept: 'application/sparql-results+json',
         'User-Agent': 'FootballGolfDataBuilder/1.0 (open-source football quiz; data build script)',
       },
-      body: new URLSearchParams({ query }),
+      body: new URLSearchParams({ query: PREFIXES + query }),
     }).catch((e) => ({ ok: false, status: String(e) }));
     // A query that hits Wikidata's 60s limit can come back "200 OK" with the JSON cut off: treat that as a failure.
     const body = res.ok ? await res.text().catch(() => '') : '';
@@ -74,7 +93,13 @@ async function sparql(name, query, maxAttempts = 4) {
       return rows;
     }
     console.log(res.ok ? 'failed (timed out mid-response)' : `failed (${res.status})`);
-    if (attempt >= maxAttempts) throw new Error(`Wikidata query ${name} failed`);
+    if (attempt >= maxAttempts) {
+      if (endpoint + 1 < ENDPOINTS.length) {
+        // Switch every remaining query to the fallback (one endpoint per build keeps the data consistent).
+        throw new Error(`SWITCH`);
+      }
+      throw new Error(`Wikidata query ${name} failed`);
+    }
     await sleep(attempt * 10_000);
   }
 }
@@ -82,6 +107,22 @@ async function sparql(name, query, maxAttempts = 4) {
 const LABELS = `
   OPTIONAL { ?p rdfs:label ?en FILTER(LANG(?en) = "en") }
   OPTIONAL { ?p rdfs:label ?mul FILTER(LANG(?mul) = "mul") }`;
+
+/** England/Scotland/Wales/Northern Ireland for UK entities, via where they are (clubs, grounds) or were born (people). */
+async function ukNations(name, ids, path) {
+  const out = new Map();
+  const nations = { Q21: 'England', Q22: 'Scotland', Q25: 'Wales', Q26: 'Northern Ireland' };
+  const list = [...ids].filter(Boolean);
+  for (let i = 0; i < list.length; i += 400) {
+    const chunk = list.slice(i, i + 400);
+    const rows = await sparql(
+      `${name}-${hash(chunk.join('|'))}`,
+      `SELECT DISTINCT ?p ?n WHERE { VALUES ?p { ${chunk.map((q) => `wd:${q}`).join(' ')} } VALUES ?n { wd:Q21 wd:Q22 wd:Q25 wd:Q26 } ?p ${path} ?n }`,
+    );
+    for (const r of rows) out.set(qid(r.p), nations[qid(r.n)]);
+  }
+  return out;
+}
 
 async function labelsFor(name, ids) {
   const out = new Map();
@@ -145,7 +186,7 @@ const country = (s) => (s ? (COUNTRY_FIX[s] ?? s) : '');
 function cleanClub(label) {
   let s = label
     .replace(/\s+\((?:football club|men's football|club)\)$/i, '')
-    .replace(/\s+(?:F\.C\.|FC|A\.F\.C\.|AFC|CF|C\.F\.|S\.K\.|SAD|S\.A\.D\.|J\.K\.|F\.K\.|FK|C\.D\.|CD|S\.C\.|SC|S\.A\.)$/u, '')
+    .replace(/\s+(?:F\.C\.|FC|A\.F\.C\.|AFC|CF|C\.F\.|S\.K\.|SAD|S\.A\.D\.|J\.K\.|F\.K\.|FK|C\.D\.|CD|S\.C\.|SC|S\.A\.|BC|B\.C\.|KV)$/u, '')
     .replace(/^(?:FC|AFC|F\.C\.|SL|SSC|AS|A\.S\.|SS|ACF|OGC|RC|SV|VfL|TSG|1\. FC|1\. FSV|FK|NK|HNK|GNK|PFC|KRC|KAA|RSC|SK|AC Sparta|Real Club Deportivo|RCD)\s+/u, '')
     .trim();
   if (/^AC Sparta/.test(label)) s = label.replace(/^AC /, '');
@@ -156,14 +197,15 @@ function cleanClub(label) {
 
 /** Who counts as a footballer/manager. Occupation alone misses people (Matthäus is only "coach" on Wikidata). */
 const PERSON = {
-  Q937857: ['{ ?p wdt:P106 wd:Q937857 }', '{ ?p wdt:P641 wd:Q2736; wdt:P413 [] }'],
+  Q937857: ['{ ?p wdt:P106 wd:Q937857 }', '{ ?p wdt:P641 wd:Q2736; wdt:P413 ?position }'],
   Q628099: ['{ ?p wdt:P106 wd:Q628099 }'],
 };
 const union = (parts) => parts.join(' UNION ');
 
 async function fetchPeople(kind, occupation) {
   // Split by fame so each query stays under the 60s Wikidata limit.
-  const bands = [
+  // QLever takes the whole set in one go; the official endpoint needs it in slices to stay under 60s.
+  const bands = ENDPOINTS[endpoint].id === 'ql' ? [[PERSON_MIN_SITELINKS, 100000]] : [
     [PERSON_MIN_SITELINKS, 14],
     [14, 15],
     [15, 16],
@@ -192,6 +234,7 @@ async function fetchPeople(kind, occupation) {
     try {
       return await sparql(name, query, 2);
     } catch (e) {
+      if (e.message === 'SWITCH') throw e;
       if (hi - lo > 1 && hi < 100000) {
         const mid = Math.floor((lo + hi) / 2);
         return [...(await band(lo, mid, parts, tag)), ...(await band(mid, hi, parts, tag))];
@@ -328,6 +371,37 @@ function hash(s) {
   return (h >>> 0).toString(36);
 }
 
+/**
+ * List entries whose Wikidata entity goes by another name (sponsor names, translations, a vandalised label),
+ * so name matching misses it or picks a namesake. Keyed by kind and the list's name for the entry.
+ */
+const OVERRIDES = {
+  player: { 'Rafael Márquez': 'Q186330', Rivellino: 'Q220283' },
+  club: { Braga: 'Q75684' },
+  stadium: {
+    Olympiastadion: 'Q151374', // Berlin; Munich's (Q131610) is "Munich Olympic Stadium" on the world list
+    'Munich Olympic Stadium': 'Q131610',
+    'Borussia-Park': 'Q154074',
+    'Estadio Martínez Valero': 'Q953600',
+    'Estadio ABANCA Balaídos': 'Q1326578',
+    'Estadio de la UNSA': 'Q1331178',
+    'Estadio Monumental': 'Q276354',
+    'Estádio Olímpico Nilton Santos': 'Q17489',
+    'Estadio Único Diego Armando Maradona': 'Q1369163',
+    'Fritz-Walter-Stadion': 'Q154298',
+    'Gresty Road': 'Q389544',
+    'New Balance Arena': 'Q780526',
+    RheinEnergieStadion: 'Q151893',
+    'Stadio Pier Luigi Penzo': 'Q588926',
+    'Stade Marie-Marvingt': 'Q1862372',
+    'Seoul Olympic Stadium': 'Q392086',
+    'Athens Olympic Stadium': 'Q189663',
+    'Montreal Olympic Stadium': 'Q285467',
+    'Croke Park': 'Q478225',
+    'Murrayfield Stadium': 'Q1024926',
+  },
+};
+
 // ---------- 2. Lists ----------
 
 const cats = readdirSync(catDir)
@@ -345,7 +419,7 @@ function countryHint(cat, item) {
 
 // ---------- 3. Build ----------
 
-console.log('Wikidata…');
+async function fetchAll() {
 const players = await fetchPeople('players', 'Q937857');
 const managers = await fetchPeople('managers', 'Q628099');
 const clubs = await fetchClubs();
@@ -372,6 +446,25 @@ const placeNames = await labelsFor('places', new Set(stadiums.map((s) => s.city)
 const clubById = new Map(clubs.map((c) => [c.id, c]));
 const extraOcc = new Set(stadiums.flatMap((s) => [...s.occ]).filter((id) => !clubById.has(id)));
 const occNames = await labelsFor('occupants', extraOcc);
+const isUK = (q) => country(countryNames.get(q)) === 'UK';
+const homeNation = new Map([
+  ...(await ukNations('uk-people', new Set([...players, ...managers].filter((e) => !e.sport && isUK(e.cit)).map((e) => e.id)), 'wdt:P19/wdt:P131*')),
+  ...(await ukNations('uk-places', new Set([...clubs, ...stadiums].filter((e) => isUK(e.c)).map((e) => e.id)), '(wdt:P131|wdt:P159)/wdt:P131*')),
+]);
+return { players, managers, clubs, stadiums, countryNames, placeNames, clubById, occNames, homeNation };
+}
+
+console.log('Wikidata…');
+let fetched;
+try {
+  fetched = await fetchAll();
+} catch (e) {
+  if (e.message !== 'SWITCH') throw e;
+  console.log('QLever is unavailable: using query.wikidata.org for this build.');
+  endpoint = 1;
+  fetched = await fetchAll();
+}
+const { players, managers, clubs, stadiums, countryNames, placeNames, clubById, occNames, homeNation } = fetched;
 
 /**
  * Entity: { id, name, sub, keys:Set, sl, hint }. `keys` are what search matches (name + aliases).
@@ -379,27 +472,28 @@ const occNames = await labelsFor('occupants', extraOcc);
  */
 const entities = { player: [], manager: [], club: [], stadium: [], nation: [] };
 
+const personCountry = (e) => homeNation.get(e.id) ?? country(countryNames.get(e.sport) ?? countryNames.get(e.cit));
 const personSub = (e) => {
-  const c = country(countryNames.get(e.sport) ?? countryNames.get(e.cit));
+  const c = personCountry(e);
   return [c, e.born ? `b. ${e.born}` : ''].filter(Boolean).join(' · ');
 };
 for (const [kind, arr] of [
   ['player', players],
   ['manager', managers],
 ]) {
-  for (const e of arr) entities[kind].push({ id: e.id, name: e.name, sub: personSub(e), aliases: [], sl: e.sl, hint: country(countryNames.get(e.sport) ?? countryNames.get(e.cit)) });
+  for (const e of arr) entities[kind].push({ id: e.id, name: e.name, sub: personSub(e), aliases: [], sl: e.sl, hint: personCountry(e) });
 }
 for (const c of clubs) {
   const name = cleanClub(c.label);
-  entities.club.push({ id: c.id, name, sub: country(countryNames.get(c.c)), aliases: [c.label, ...c.aliases].filter((a) => a !== name), sl: c.sl, hint: country(countryNames.get(c.c)) });
+  const where = homeNation.get(c.id) ?? country(countryNames.get(c.c));
+  entities.club.push({ id: c.id, name, sub: where, aliases: [c.label, ...c.aliases].filter((a) => a !== name), sl: c.sl, hint: where });
 }
 for (const s of stadiums) {
-  // The main club decides the subtitle ("Arsenal · London"); every resident club's name finds the stadium.
+  // Subtitle: the best-known resident club ("Liverpool"), else the city. Every resident's name finds the stadium.
   const occ = [...s.occ].map((id) => clubById.get(id) ?? { id, label: occNames.get(id), sl: 0, aliases: [] }).filter((o) => o.label);
   occ.sort((a, b) => b.sl - a.sl);
-  const main = occ[0] ? cleanClub(occ[0].label) : '';
-  const city = placeNames.get(s.city) ?? '';
-  const sub = [main, city || country(countryNames.get(s.c))].filter(Boolean).join(' · ');
+  const club = occ.find((o) => clubById.has(o.id));
+  const sub = club ? cleanClub(club.label) : (placeNames.get(s.city) ?? country(countryNames.get(s.c)));
   const aliases = [...s.aliases, ...occ.flatMap((o) => [cleanClub(o.label), o.label])];
   entities.stadium.push({ id: s.id, name: s.label, sub, aliases, sl: s.sl, hint: country(countryNames.get(s.c)) });
 }
@@ -439,10 +533,12 @@ for (const kind of Object.keys(entities)) {
     add(e.name, e, true);
     for (const a of e.aliases) add(a, e, false);
   }
+  const byId = new Map(ents.map((e) => [e.id, e]));
   for (const c of byKind(kind)) {
     const used = new Map();
     for (const it of c.data.items) {
       const hint = countryHint(c.data, it);
+      const kept = it.wd && /^Q\d+$/.test(it.wd) && (!RELINK || c.data.standings) ? byId.get(it.wd) : undefined;
       // Exact name on the entity's own name first, then the entry's aliases, then the entity's aliases.
       const names = [it.name, ...(it.aliases ?? [])];
       let cands = [];
@@ -458,13 +554,22 @@ for (const kind of Object.keys(entities)) {
         const n = norm(it.name);
         cands = ents.filter((e) => norm(e.name) === n || e.aliases.some((a) => norm(a) === n)).map((e) => ({ e, primary: false }));
       }
-      let pick;
-      if (cands.length) {
+      const forced = OVERRIDES[kind]?.[it.name];
+      let pick = forced ? byId.get(forced) : kept;
+      if (forced && !pick) {
+        // A real entity we didn't fetch (below the cut-off or an unusual type): add it under its Wikidata id.
+        pick = { id: forced, name: it.name, sub: (it.sub ?? '').split(' · ')[0].trim(), aliases: [], sl: 10, hint };
+        ents.push(pick);
+        byId.set(forced, pick);
+      }
+      if (!pick && cands.length) {
         const uniq = [...new Map(cands.map((h) => [h.e.id, h])).values()];
         uniq.sort((a, b) => (hint ? Number(b.e.hint === hint) - Number(a.e.hint === hint) : 0) || Number(b.primary) - Number(a.primary) || b.e.sl - a.e.sl);
-        pick = uniq[0].e;
+        // Two entries with the same name (St James' Park, Newcastle / St James Park, Exeter): take the next one.
+        pick = (uniq.find((h) => !used.has(h.e.id)) ?? uniq[0]).e;
       }
-      if (pick && used.has(pick.id)) {
+      // A retired list may name one entity twice (old transfer list: Neymar ×2); it's never played anew, so share it.
+      if (pick && used.has(pick.id) && !c.data.retired) {
         report.push(`  ! ${c.data.id}: "${it.name}" and "${used.get(pick.id)}" both matched ${pick.id} (${pick.name}); "${it.name}" gets its own entry`);
         pick = undefined;
       }
@@ -474,7 +579,7 @@ for (const kind of Object.keys(entities)) {
         pick = ents.find((e) => e.id === id);
         if (!pick) {
           // List subtitles are written for that list ("PL debut 1992–93 · 34 seasons"); only keep ones that describe the thing itself.
-          const sub = kind === 'player' || kind === 'manager' ? hint : kind === 'club' ? hint || '' : /PL debut/.test(it.sub ?? '') ? '' : (it.sub ?? '');
+          const sub = kind === 'player' || kind === 'manager' ? hint : kind === 'club' ? hint || '' : (it.sub ?? '').split(' · ')[0].trim();
           pick = { id, name: it.name, sub, aliases: [], sl: 0, hint };
           ents.push(pick);
           report.push(`  + ${c.data.id}: "${it.name}" not found in Wikidata, added from the list`);
@@ -487,9 +592,10 @@ for (const kind of Object.keys(entities)) {
         if (norm(pick.name) !== norm(it.name)) pick.aliases.unshift(pick.name);
         pick.name = it.name;
         pick.curated = true;
-        if ((kind === 'stadium' || kind === 'club') && it.sub && !/^PL debut/.test(it.sub) && !pick.sub.includes(' · ') && it.sub.includes(' · ')) pick.sub = it.sub;
       }
-      for (const a of it.aliases ?? []) if (!pick.aliases.some((x) => norm(x) === norm(a)) && norm(a) !== norm(pick.name)) pick.aliases.push(a);
+      // The list's own aliases ("Barça", "Spurs") are curated, so they go first and survive the cap below.
+      const mine = (it.aliases ?? []).filter((a) => norm(a) !== norm(pick.name));
+      pick.aliases = [...mine, ...pick.aliases.filter((x) => !mine.some((a) => norm(a) === norm(x)))];
       if (!pick.sl) pick.sl = 10;
     }
   }
@@ -502,7 +608,7 @@ for (const [kind, ents] of Object.entries(entities)) {
   if (!ents.length) continue;
   ents.sort((a, b) => b.sl - a.sl || a.name.localeCompare(b.name));
   const rows = ents.map((e) => {
-    const aliases = [...new Set(e.aliases.filter((a) => a && norm(a) !== norm(e.name)))].slice(0, 8);
+    const aliases = [...new Set(e.aliases.filter((a) => a && norm(a) !== norm(e.name)))].slice(0, 12);
     return aliases.length ? [e.id, e.name, e.sub, aliases] : [e.id, e.name, e.sub];
   });
   const file = join(outDir, `${kind}s.json`);

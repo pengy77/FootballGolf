@@ -915,7 +915,7 @@
       "name": "Iceland",
       "sub": "UEFA",
       "value": 1,
-      "display": "1 pts",
+      "display": "1 pt",
       "tb": [
         -3,
         2
@@ -927,7 +927,7 @@
       "name": "Kuwait",
       "sub": "AFC",
       "value": 1,
-      "display": "1 pts",
+      "display": "1 pt",
       "tb": [
         -4,
         2
@@ -939,7 +939,7 @@
       "name": "Trinidad and Tobago",
       "sub": "CONCACAF",
       "value": 1,
-      "display": "1 pts",
+      "display": "1 pt",
       "aliases": [
         "Trinidad",
         "T&T"
@@ -955,7 +955,7 @@
       "name": "Curaçao",
       "sub": "CONCACAF",
       "value": 1,
-      "display": "1 pts",
+      "display": "1 pt",
       "aliases": [
         "Curacao"
       ],
@@ -970,7 +970,7 @@
       "name": "Qatar",
       "sub": "AFC",
       "value": 1,
-      "display": "1 pts",
+      "display": "1 pt",
       "tb": [
         -14,
         3
@@ -982,7 +982,7 @@
       "name": "Bolivia",
       "sub": "CONMEBOL",
       "value": 1,
-      "display": "1 pts",
+      "display": "1 pt",
       "tb": [
         -19,
         1

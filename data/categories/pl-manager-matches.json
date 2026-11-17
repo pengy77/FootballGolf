@@ -1,0 +1,262 @@
+{
+  "id": "pl-manager-matches",
+  "title": "Most Premier League games managed",
+  "prompt": "most Premier League games managed",
+  "noun": "manager",
+  "nounPlural": "managers",
+  "kind": "manager",
+  "metric": "Games managed",
+  "order": "desc",
+  "description": "Every manager with 300 or more Premier League games in charge, across all their clubs. Up to 12 November 2026.",
+  "tags": [
+    "premier-league",
+    "managers"
+  ],
+  "source": {
+    "name": "Wikipedia: List of Premier League managers",
+    "url": "https://en.wikipedia.org/wiki/List_of_Premier_League_managers#Most_games_managed_in_the_Premier_League",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "arsene-wenger",
+      "name": "Arsène Wenger",
+      "sub": "France · Arsenal",
+      "value": 828,
+      "display": "828 games",
+      "aliases": [
+        "Wenger",
+        "Arsene Wenger"
+      ],
+      "wd": "Q47576"
+    },
+    {
+      "id": "alex-ferguson",
+      "name": "Alex Ferguson",
+      "sub": "Scotland · Man Utd",
+      "value": 810,
+      "display": "810 games",
+      "aliases": [
+        "Ferguson",
+        "Fergie",
+        "Sir Alex Ferguson",
+        "Sir Alex"
+      ],
+      "wd": "Q44980"
+    },
+    {
+      "id": "david-moyes",
+      "name": "David Moyes",
+      "sub": "Scotland · Everton, West Ham",
+      "value": 764,
+      "display": "764 games",
+      "aliases": [
+        "Moyes"
+      ],
+      "wd": "Q297252"
+    },
+    {
+      "id": "harry-redknapp",
+      "name": "Harry Redknapp",
+      "sub": "England · West Ham, Portsmouth, Spurs",
+      "value": 641,
+      "display": "641 games",
+      "aliases": [
+        "Redknapp",
+        "Harry"
+      ],
+      "wd": "Q221349"
+    },
+    {
+      "id": "sam-allardyce",
+      "name": "Sam Allardyce",
+      "sub": "England · Bolton, West Ham",
+      "value": 541,
+      "display": "541 games",
+      "aliases": [
+        "Allardyce",
+        "Big Sam"
+      ],
+      "wd": "Q334388"
+    },
+    {
+      "id": "steve-bruce",
+      "name": "Steve Bruce",
+      "sub": "England · Birmingham, Sunderland",
+      "value": 476,
+      "display": "476 games",
+      "aliases": [
+        "Bruce"
+      ],
+      "wd": "Q331904"
+    },
+    {
+      "id": "mark-hughes",
+      "name": "Mark Hughes",
+      "sub": "Wales · Stoke, Blackburn",
+      "value": 466,
+      "display": "466 games",
+      "aliases": [
+        "Hughes",
+        "Sparky"
+      ],
+      "wd": "Q214513"
+    },
+    {
+      "id": "roy-hodgson",
+      "name": "Roy Hodgson",
+      "sub": "England · Crystal Palace, Fulham",
+      "value": 416,
+      "display": "416 games",
+      "aliases": [
+        "Hodgson"
+      ],
+      "wd": "Q203781"
+    },
+    {
+      "id": "pep-guardiola",
+      "name": "Pep Guardiola",
+      "sub": "Spain · Man City",
+      "value": 380,
+      "display": "380 games",
+      "aliases": [
+        "Guardiola",
+        "Pep",
+        "Josep Guardiola"
+      ],
+      "wd": "Q164038"
+    },
+    {
+      "id": "eddie-howe",
+      "name": "Eddie Howe",
+      "sub": "England · Bournemouth, Newcastle",
+      "value": 369,
+      "display": "369 games",
+      "aliases": [
+        "Howe"
+      ],
+      "wd": "Q5336135"
+    },
+    {
+      "id": "jose-mourinho",
+      "name": "José Mourinho",
+      "sub": "Portugal · Chelsea, Man Utd",
+      "value": 363,
+      "display": "363 games",
+      "aliases": [
+        "Mourinho",
+        "Jose Mourinho",
+        "The Special One"
+      ],
+      "wd": "Q79983"
+    },
+    {
+      "id": "martin-oneill",
+      "name": "Martin O’Neill",
+      "sub": "Northern Ireland · Leicester, Aston Villa",
+      "value": 359,
+      "display": "359 games",
+      "aliases": [
+        "O’Neill",
+        "ONeill",
+        "Martin O Neill",
+        "Martin ONeill"
+      ],
+      "wd": "Q310263"
+    },
+    {
+      "id": "rafael-benitez",
+      "name": "Rafael Benítez",
+      "sub": "Spain · Liverpool, Newcastle",
+      "value": 359,
+      "display": "359 games",
+      "aliases": [
+        "Benítez",
+        "Benitez",
+        "Rafa Benitez",
+        "Rafa Benítez",
+        "Rafa"
+      ],
+      "wd": "Q144048"
+    },
+    {
+      "id": "sean-dyche",
+      "name": "Sean Dyche",
+      "sub": "England · Burnley, Everton",
+      "value": 351,
+      "display": "351 games",
+      "aliases": [
+        "Dyche"
+      ],
+      "wd": "Q10599"
+    },
+    {
+      "id": "jurgen-klopp",
+      "name": "Jürgen Klopp",
+      "sub": "Germany · Liverpool",
+      "value": 334,
+      "display": "334 games",
+      "aliases": [
+        "Klopp",
+        "Jurgen Klopp"
+      ],
+      "wd": "Q83106"
+    },
+    {
+      "id": "alan-curbishley",
+      "name": "Alan Curbishley",
+      "sub": "England · Charlton, West Ham",
+      "value": 328,
+      "display": "328 games",
+      "aliases": [
+        "Curbishley",
+        "Curbs"
+      ],
+      "wd": "Q470741"
+    },
+    {
+      "id": "tony-pulis",
+      "name": "Tony Pulis",
+      "sub": "Wales · Stoke, West Brom",
+      "value": 322,
+      "display": "322 games",
+      "aliases": [
+        "Pulis"
+      ],
+      "wd": "Q334541"
+    },
+    {
+      "id": "alan-pardew",
+      "name": "Alan Pardew",
+      "sub": "England · Newcastle, Crystal Palace",
+      "value": 320,
+      "display": "320 games",
+      "aliases": [
+        "Pardew"
+      ],
+      "wd": "Q360491"
+    },
+    {
+      "id": "brendan-rodgers",
+      "name": "Brendan Rodgers",
+      "sub": "Northern Ireland · Leicester, Liverpool",
+      "value": 312,
+      "display": "312 games",
+      "aliases": [
+        "Rodgers"
+      ],
+      "wd": "Q310623"
+    },
+    {
+      "id": "joe-kinnear",
+      "name": "Joe Kinnear",
+      "sub": "Ireland · Wimbledon, Newcastle",
+      "value": 302,
+      "display": "302 games",
+      "aliases": [
+        "Kinnear"
+      ],
+      "wd": "Q556620"
+    }
+  ]
+}

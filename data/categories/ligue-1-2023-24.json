@@ -1,0 +1,171 @@
+{
+  "id": "ligue-1-2023-24",
+  "title": "2023–⁠24 Ligue 1 table",
+  "prompt": "place in the 2023–⁠24 Ligue 1",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "ligue-1-table",
+  "season": "2023–24",
+  "tiebreak": "goal difference, then head-to-head points",
+  "description": "Final 2023–24 Ligue 1 table: all 18 clubs in the order they finished. Points include a deduction: Montpellier −1.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2023–24 Ligue 1",
+    "url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Ligue_1#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "paris-saint-germain",
+      "name": "Paris Saint-Germain",
+      "value": 76,
+      "display": "76 pts",
+      "aliases": [
+        "PSG",
+        "Paris SG"
+      ],
+      "wd": "Q483020"
+    },
+    {
+      "id": "monaco",
+      "name": "Monaco",
+      "value": 67,
+      "display": "67 pts",
+      "aliases": [
+        "AS Monaco"
+      ],
+      "wd": "Q180305"
+    },
+    {
+      "id": "brest",
+      "name": "Brest",
+      "value": 61,
+      "display": "61 pts",
+      "wd": "Q218372"
+    },
+    {
+      "id": "lille",
+      "name": "Lille",
+      "value": 59,
+      "display": "59 pts",
+      "aliases": [
+        "LOSC"
+      ],
+      "wd": "Q19516"
+    },
+    {
+      "id": "nice",
+      "name": "Nice",
+      "value": 55,
+      "display": "55 pts",
+      "wd": "Q185163"
+    },
+    {
+      "id": "lyon",
+      "name": "Lyon",
+      "value": 53,
+      "display": "53 pts",
+      "aliases": [
+        "Olympique Lyonnais",
+        "OL"
+      ],
+      "wd": "Q704"
+    },
+    {
+      "id": "lens",
+      "name": "Lens",
+      "value": 51,
+      "display": "51 pts",
+      "wd": "Q191843"
+    },
+    {
+      "id": "marseille",
+      "name": "Marseille",
+      "value": 50,
+      "display": "50 pts",
+      "aliases": [
+        "Olympique de Marseille",
+        "OM"
+      ],
+      "wd": "Q132885"
+    },
+    {
+      "id": "reims",
+      "name": "Reims",
+      "value": 47,
+      "display": "47 pts",
+      "wd": "Q208228"
+    },
+    {
+      "id": "rennes",
+      "name": "Rennes",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q19509"
+    },
+    {
+      "id": "toulouse",
+      "name": "Toulouse",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q19518"
+    },
+    {
+      "id": "montpellier",
+      "name": "Montpellier",
+      "value": 41,
+      "display": "41 pts",
+      "wd": "Q19513"
+    },
+    {
+      "id": "strasbourg",
+      "name": "Strasbourg",
+      "value": 39,
+      "display": "39 pts",
+      "wd": "Q126334"
+    },
+    {
+      "id": "nantes",
+      "name": "Nantes",
+      "value": 33,
+      "display": "33 pts",
+      "wd": "Q192071"
+    },
+    {
+      "id": "le-havre",
+      "name": "Le Havre",
+      "value": 32,
+      "display": "32 pts",
+      "wd": "Q328658"
+    },
+    {
+      "id": "metz",
+      "name": "Metz",
+      "value": 29,
+      "display": "29 pts",
+      "wd": "Q221525"
+    },
+    {
+      "id": "lorient",
+      "name": "Lorient",
+      "value": 29,
+      "display": "29 pts",
+      "wd": "Q48911"
+    },
+    {
+      "id": "clermont",
+      "name": "Clermont",
+      "value": 25,
+      "display": "25 pts",
+      "wd": "Q870182"
+    }
+  ]
+}

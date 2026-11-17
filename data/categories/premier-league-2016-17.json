@@ -1,0 +1,242 @@
+{
+  "id": "premier-league-2016-17",
+  "title": "2016–⁠17 Premier League table",
+  "prompt": "place in the 2016–⁠17 Premier League",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "premier-league-table",
+  "season": "2016–17",
+  "tiebreak": "goal difference, then goals scored",
+  "description": "Final 2016–17 Premier League table: all 20 clubs in the order they finished.",
+  "tags": [
+    "premier-league",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2016–17 Premier League",
+    "url": "https://en.wikipedia.org/wiki/2016%E2%80%9317_Premier_League#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "chelsea",
+      "name": "Chelsea",
+      "value": 93,
+      "display": "93 pts",
+      "aliases": [
+        "CFC"
+      ],
+      "wd": "Q9616"
+    },
+    {
+      "id": "tottenham-hotspur",
+      "name": "Tottenham Hotspur",
+      "value": 86,
+      "display": "86 pts",
+      "aliases": [
+        "Tottenham",
+        "Spurs",
+        "THFC"
+      ],
+      "wd": "Q18741"
+    },
+    {
+      "id": "manchester-city",
+      "name": "Manchester City",
+      "value": 78,
+      "display": "78 pts",
+      "aliases": [
+        "Man City",
+        "MCFC"
+      ],
+      "wd": "Q50602"
+    },
+    {
+      "id": "liverpool",
+      "name": "Liverpool",
+      "value": 76,
+      "display": "76 pts",
+      "aliases": [
+        "LFC"
+      ],
+      "wd": "Q1130849"
+    },
+    {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "value": 75,
+      "display": "75 pts",
+      "aliases": [
+        "Gunners"
+      ],
+      "wd": "Q9617"
+    },
+    {
+      "id": "manchester-united",
+      "name": "Manchester United",
+      "value": 69,
+      "display": "69 pts",
+      "aliases": [
+        "Man Utd",
+        "Man United",
+        "MUFC"
+      ],
+      "wd": "Q18656"
+    },
+    {
+      "id": "everton",
+      "name": "Everton",
+      "value": 61,
+      "display": "61 pts",
+      "aliases": [
+        "Toffees"
+      ],
+      "wd": "Q5794"
+    },
+    {
+      "id": "southampton",
+      "name": "Southampton",
+      "value": 46,
+      "display": "46 pts",
+      "aliases": [
+        "Saints"
+      ],
+      "wd": "Q18732"
+    },
+    {
+      "id": "bournemouth",
+      "name": "Bournemouth",
+      "value": 46,
+      "display": "46 pts",
+      "aliases": [
+        "AFC Bournemouth",
+        "Cherries"
+      ],
+      "wd": "Q19568"
+    },
+    {
+      "id": "west-bromwich-albion",
+      "name": "West Bromwich Albion",
+      "value": 45,
+      "display": "45 pts",
+      "aliases": [
+        "West Brom",
+        "WBA",
+        "Baggies"
+      ],
+      "wd": "Q18744"
+    },
+    {
+      "id": "west-ham-united",
+      "name": "West Ham United",
+      "value": 45,
+      "display": "45 pts",
+      "aliases": [
+        "West Ham",
+        "Hammers",
+        "Irons"
+      ],
+      "wd": "Q18747"
+    },
+    {
+      "id": "leicester-city",
+      "name": "Leicester City",
+      "value": 44,
+      "display": "44 pts",
+      "aliases": [
+        "Leicester",
+        "Foxes"
+      ],
+      "wd": "Q19481"
+    },
+    {
+      "id": "stoke-city",
+      "name": "Stoke City",
+      "value": 44,
+      "display": "44 pts",
+      "aliases": [
+        "Stoke",
+        "Potters"
+      ],
+      "wd": "Q18736"
+    },
+    {
+      "id": "crystal-palace",
+      "name": "Crystal Palace",
+      "value": 41,
+      "display": "41 pts",
+      "aliases": [
+        "Palace",
+        "Eagles"
+      ],
+      "wd": "Q19467"
+    },
+    {
+      "id": "swansea-city",
+      "name": "Swansea City",
+      "value": 41,
+      "display": "41 pts",
+      "aliases": [
+        "Swansea",
+        "Swans"
+      ],
+      "wd": "Q18659"
+    },
+    {
+      "id": "burnley",
+      "name": "Burnley",
+      "value": 40,
+      "display": "40 pts",
+      "aliases": [
+        "Clarets"
+      ],
+      "wd": "Q19458"
+    },
+    {
+      "id": "watford",
+      "name": "Watford",
+      "value": 40,
+      "display": "40 pts",
+      "aliases": [
+        "Hornets"
+      ],
+      "wd": "Q2714"
+    },
+    {
+      "id": "hull-city",
+      "name": "Hull City",
+      "value": 34,
+      "display": "34 pts",
+      "aliases": [
+        "Hull",
+        "Tigers"
+      ],
+      "wd": "Q19477"
+    },
+    {
+      "id": "middlesbrough",
+      "name": "Middlesbrough",
+      "value": 28,
+      "display": "28 pts",
+      "aliases": [
+        "Boro"
+      ],
+      "wd": "Q18661"
+    },
+    {
+      "id": "sunderland",
+      "name": "Sunderland",
+      "value": 24,
+      "display": "24 pts",
+      "aliases": [
+        "Black Cats"
+      ],
+      "wd": "Q18739"
+    }
+  ]
+}

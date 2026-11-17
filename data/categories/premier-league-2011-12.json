@@ -1,0 +1,243 @@
+{
+  "id": "premier-league-2011-12",
+  "title": "2011–⁠12 Premier League table",
+  "prompt": "place in the 2011–⁠12 Premier League",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "premier-league-table",
+  "season": "2011–12",
+  "tiebreak": "goal difference, then goals scored",
+  "description": "Final 2011–12 Premier League table: all 20 clubs in the order they finished.",
+  "tags": [
+    "premier-league",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2011–12 Premier League",
+    "url": "https://en.wikipedia.org/wiki/2011%E2%80%9312_Premier_League#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "manchester-city",
+      "name": "Manchester City",
+      "value": 89,
+      "display": "89 pts",
+      "aliases": [
+        "Man City",
+        "MCFC"
+      ],
+      "wd": "Q50602"
+    },
+    {
+      "id": "manchester-united",
+      "name": "Manchester United",
+      "value": 89,
+      "display": "89 pts",
+      "aliases": [
+        "Man Utd",
+        "Man United",
+        "MUFC"
+      ],
+      "wd": "Q18656"
+    },
+    {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "value": 70,
+      "display": "70 pts",
+      "aliases": [
+        "Gunners"
+      ],
+      "wd": "Q9617"
+    },
+    {
+      "id": "tottenham-hotspur",
+      "name": "Tottenham Hotspur",
+      "value": 69,
+      "display": "69 pts",
+      "aliases": [
+        "Tottenham",
+        "Spurs",
+        "THFC"
+      ],
+      "wd": "Q18741"
+    },
+    {
+      "id": "newcastle-united",
+      "name": "Newcastle United",
+      "value": 65,
+      "display": "65 pts",
+      "aliases": [
+        "Newcastle",
+        "Toon",
+        "Magpies",
+        "NUFC"
+      ],
+      "wd": "Q18716"
+    },
+    {
+      "id": "chelsea",
+      "name": "Chelsea",
+      "value": 64,
+      "display": "64 pts",
+      "aliases": [
+        "CFC"
+      ],
+      "wd": "Q9616"
+    },
+    {
+      "id": "everton",
+      "name": "Everton",
+      "value": 56,
+      "display": "56 pts",
+      "aliases": [
+        "Toffees"
+      ],
+      "wd": "Q5794"
+    },
+    {
+      "id": "liverpool",
+      "name": "Liverpool",
+      "value": 52,
+      "display": "52 pts",
+      "aliases": [
+        "LFC"
+      ],
+      "wd": "Q1130849"
+    },
+    {
+      "id": "fulham",
+      "name": "Fulham",
+      "value": 52,
+      "display": "52 pts",
+      "aliases": [
+        "Cottagers"
+      ],
+      "wd": "Q18708"
+    },
+    {
+      "id": "west-bromwich-albion",
+      "name": "West Bromwich Albion",
+      "value": 47,
+      "display": "47 pts",
+      "aliases": [
+        "West Brom",
+        "WBA",
+        "Baggies"
+      ],
+      "wd": "Q18744"
+    },
+    {
+      "id": "swansea-city",
+      "name": "Swansea City",
+      "value": 47,
+      "display": "47 pts",
+      "aliases": [
+        "Swansea",
+        "Swans"
+      ],
+      "wd": "Q18659"
+    },
+    {
+      "id": "norwich-city",
+      "name": "Norwich City",
+      "value": 47,
+      "display": "47 pts",
+      "aliases": [
+        "Norwich",
+        "Canaries"
+      ],
+      "wd": "Q18721"
+    },
+    {
+      "id": "sunderland",
+      "name": "Sunderland",
+      "value": 45,
+      "display": "45 pts",
+      "aliases": [
+        "Black Cats"
+      ],
+      "wd": "Q18739"
+    },
+    {
+      "id": "stoke-city",
+      "name": "Stoke City",
+      "value": 45,
+      "display": "45 pts",
+      "aliases": [
+        "Stoke",
+        "Potters"
+      ],
+      "wd": "Q18736"
+    },
+    {
+      "id": "wigan-athletic",
+      "name": "Wigan Athletic",
+      "value": 43,
+      "display": "43 pts",
+      "aliases": [
+        "Wigan"
+      ],
+      "wd": "Q18750"
+    },
+    {
+      "id": "aston-villa",
+      "name": "Aston Villa",
+      "value": 38,
+      "display": "38 pts",
+      "aliases": [
+        "Villa",
+        "AVFC"
+      ],
+      "wd": "Q18711"
+    },
+    {
+      "id": "queens-park-rangers",
+      "name": "Queens Park Rangers",
+      "value": 37,
+      "display": "37 pts",
+      "aliases": [
+        "QPR"
+      ],
+      "wd": "Q18723"
+    },
+    {
+      "id": "bolton-wanderers",
+      "name": "Bolton Wanderers",
+      "value": 36,
+      "display": "36 pts",
+      "aliases": [
+        "Bolton",
+        "Trotters"
+      ],
+      "wd": "Q19451"
+    },
+    {
+      "id": "blackburn-rovers",
+      "name": "Blackburn Rovers",
+      "value": 31,
+      "display": "31 pts",
+      "aliases": [
+        "Blackburn"
+      ],
+      "wd": "Q19446"
+    },
+    {
+      "id": "wolverhampton-wanderers",
+      "name": "Wolverhampton Wanderers",
+      "value": 25,
+      "display": "25 pts",
+      "aliases": [
+        "Wolves",
+        "Wolverhampton"
+      ],
+      "wd": "Q19500"
+    }
+  ]
+}

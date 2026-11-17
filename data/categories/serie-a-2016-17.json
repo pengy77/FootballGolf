@@ -1,0 +1,186 @@
+{
+  "id": "serie-a-2016-17",
+  "title": "2016–⁠17 Serie A table",
+  "prompt": "place in the 2016–⁠17 Serie A",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "serie-a-table",
+  "season": "2016–17",
+  "tiebreak": "head-to-head points, then head-to-head goal difference",
+  "description": "Final 2016–17 Serie A table: all 20 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2016–17 Serie A",
+    "url": "https://en.wikipedia.org/wiki/2016%E2%80%9317_Serie_A#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "juventus",
+      "name": "Juventus",
+      "value": 91,
+      "display": "91 pts",
+      "aliases": [
+        "Juve"
+      ],
+      "wd": "Q1422"
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "value": 87,
+      "display": "87 pts",
+      "aliases": [
+        "AS Roma"
+      ],
+      "wd": "Q2739"
+    },
+    {
+      "id": "napoli",
+      "name": "Napoli",
+      "value": 86,
+      "display": "86 pts",
+      "aliases": [
+        "SSC Napoli"
+      ],
+      "wd": "Q2641"
+    },
+    {
+      "id": "atalanta",
+      "name": "Atalanta",
+      "value": 72,
+      "display": "72 pts",
+      "wd": "Q1886"
+    },
+    {
+      "id": "lazio",
+      "name": "Lazio",
+      "value": 70,
+      "display": "70 pts",
+      "aliases": [
+        "SS Lazio"
+      ],
+      "wd": "Q2609"
+    },
+    {
+      "id": "ac-milan",
+      "name": "AC Milan",
+      "value": 63,
+      "display": "63 pts",
+      "aliases": [
+        "Milan"
+      ],
+      "wd": "Q1543"
+    },
+    {
+      "id": "inter-milan",
+      "name": "Inter Milan",
+      "value": 62,
+      "display": "62 pts",
+      "aliases": [
+        "Inter",
+        "Internazionale"
+      ],
+      "wd": "Q631"
+    },
+    {
+      "id": "fiorentina",
+      "name": "Fiorentina",
+      "value": 60,
+      "display": "60 pts",
+      "wd": "Q2052"
+    },
+    {
+      "id": "torino",
+      "name": "Torino",
+      "value": 53,
+      "display": "53 pts",
+      "wd": "Q2768"
+    },
+    {
+      "id": "sampdoria",
+      "name": "Sampdoria",
+      "value": 48,
+      "display": "48 pts",
+      "wd": "Q1457"
+    },
+    {
+      "id": "cagliari",
+      "name": "Cagliari",
+      "value": 47,
+      "display": "47 pts",
+      "wd": "Q1900"
+    },
+    {
+      "id": "sassuolo",
+      "name": "Sassuolo",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q8603"
+    },
+    {
+      "id": "udinese",
+      "name": "Udinese",
+      "value": 45,
+      "display": "45 pts",
+      "wd": "Q2798"
+    },
+    {
+      "id": "chievo",
+      "name": "Chievo",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q2037"
+    },
+    {
+      "id": "bologna",
+      "name": "Bologna",
+      "value": 41,
+      "display": "41 pts",
+      "wd": "Q1893"
+    },
+    {
+      "id": "genoa",
+      "name": "Genoa",
+      "value": 36,
+      "display": "36 pts",
+      "wd": "Q2074"
+    },
+    {
+      "id": "crotone",
+      "name": "Crotone",
+      "value": 34,
+      "display": "34 pts",
+      "wd": "Q6690"
+    },
+    {
+      "id": "empoli",
+      "name": "Empoli",
+      "value": 32,
+      "display": "32 pts",
+      "wd": "Q6703"
+    },
+    {
+      "id": "palermo",
+      "name": "Palermo",
+      "value": 26,
+      "display": "26 pts",
+      "wd": "Q2674"
+    },
+    {
+      "id": "pescara",
+      "name": "Pescara",
+      "value": 18,
+      "display": "18 pts",
+      "wd": "Q2710"
+    }
+  ]
+}

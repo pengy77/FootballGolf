@@ -1,0 +1,192 @@
+{
+  "id": "ligue-1-2021-22",
+  "title": "2021–⁠22 Ligue 1 table",
+  "prompt": "place in the 2021–⁠22 Ligue 1",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "ligue-1-table",
+  "season": "2021–22",
+  "tiebreak": "goal difference, then head-to-head points",
+  "description": "Final 2021–22 Ligue 1 table: all 20 clubs in the order they finished. Points include deductions: Nice −1, Lyon −1.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2021–22 Ligue 1",
+    "url": "https://en.wikipedia.org/wiki/2021%E2%80%9322_Ligue_1#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "paris-saint-germain",
+      "name": "Paris Saint-Germain",
+      "value": 86,
+      "display": "86 pts",
+      "aliases": [
+        "PSG",
+        "Paris SG"
+      ],
+      "wd": "Q483020"
+    },
+    {
+      "id": "marseille",
+      "name": "Marseille",
+      "value": 71,
+      "display": "71 pts",
+      "aliases": [
+        "Olympique de Marseille",
+        "OM"
+      ],
+      "wd": "Q132885"
+    },
+    {
+      "id": "monaco",
+      "name": "Monaco",
+      "value": 69,
+      "display": "69 pts",
+      "aliases": [
+        "AS Monaco"
+      ],
+      "wd": "Q180305"
+    },
+    {
+      "id": "rennes",
+      "name": "Rennes",
+      "value": 66,
+      "display": "66 pts",
+      "wd": "Q19509"
+    },
+    {
+      "id": "nice",
+      "name": "Nice",
+      "value": 66,
+      "display": "66 pts",
+      "wd": "Q185163"
+    },
+    {
+      "id": "strasbourg",
+      "name": "Strasbourg",
+      "value": 63,
+      "display": "63 pts",
+      "wd": "Q126334"
+    },
+    {
+      "id": "lens",
+      "name": "Lens",
+      "value": 62,
+      "display": "62 pts",
+      "wd": "Q191843"
+    },
+    {
+      "id": "lyon",
+      "name": "Lyon",
+      "value": 61,
+      "display": "61 pts",
+      "aliases": [
+        "Olympique Lyonnais",
+        "OL"
+      ],
+      "wd": "Q704"
+    },
+    {
+      "id": "nantes",
+      "name": "Nantes",
+      "value": 55,
+      "display": "55 pts",
+      "wd": "Q192071"
+    },
+    {
+      "id": "lille",
+      "name": "Lille",
+      "value": 55,
+      "display": "55 pts",
+      "aliases": [
+        "LOSC"
+      ],
+      "wd": "Q19516"
+    },
+    {
+      "id": "brest",
+      "name": "Brest",
+      "value": 48,
+      "display": "48 pts",
+      "wd": "Q218372"
+    },
+    {
+      "id": "reims",
+      "name": "Reims",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q208228"
+    },
+    {
+      "id": "montpellier",
+      "name": "Montpellier",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q19513"
+    },
+    {
+      "id": "angers",
+      "name": "Angers",
+      "value": 41,
+      "display": "41 pts",
+      "wd": "Q845137"
+    },
+    {
+      "id": "troyes",
+      "name": "Troyes",
+      "value": 38,
+      "display": "38 pts",
+      "wd": "Q501693"
+    },
+    {
+      "id": "lorient",
+      "name": "Lorient",
+      "value": 36,
+      "display": "36 pts",
+      "wd": "Q48911"
+    },
+    {
+      "id": "clermont",
+      "name": "Clermont",
+      "value": 36,
+      "display": "36 pts",
+      "wd": "Q870182"
+    },
+    {
+      "id": "saint-etienne",
+      "name": "Saint-Étienne",
+      "value": 32,
+      "display": "32 pts",
+      "aliases": [
+        "ASSE",
+        "St Etienne"
+      ],
+      "wd": "Q19521"
+    },
+    {
+      "id": "metz",
+      "name": "Metz",
+      "value": 31,
+      "display": "31 pts",
+      "wd": "Q221525"
+    },
+    {
+      "id": "bordeaux",
+      "name": "Bordeaux",
+      "value": 31,
+      "display": "31 pts",
+      "aliases": [
+        "Girondins de Bordeaux"
+      ],
+      "wd": "Q172476"
+    }
+  ]
+}

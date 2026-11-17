@@ -1,4 +1,4 @@
-import { categoriesFor } from './data';
+import { categoriesFor, drawGroups } from './data';
 import { newCourse, type Game, type Hole } from './game';
 
 /**
@@ -49,13 +49,21 @@ function seeded(text: string): () => number {
  * Each list gets a score from hash(date, list id) and the day takes the lowest five. That's the same
  * on every phone whatever its language or list order, and adding or retiring a list only changes
  * the days where that list would have made the cut. Each hole's target is seeded the same way.
+ *
+ * A series (every season of one league's table) is scored once under its series name, like a single
+ * list, and the day's season is then picked with its own seed. So the series takes one slot at most,
+ * and a list that isn't in a series keeps exactly the score it always had.
  */
 export function dailyHoles(key = dailyKey()): Hole[] {
-  const ranked = categoriesFor('mixed')
-    .map((c) => ({ c, score: seeded(`football-golf-daily:${key}:${c.id}`)() }))
-    .sort((a, b) => a.score - b.score || (a.c.id < b.c.id ? -1 : 1))
+  const ranked = drawGroups(categoriesFor('mixed'))
+    .map((g) => ({ g, score: seeded(`football-golf-daily:${key}:${g.key}`)() }))
+    .sort((a, b) => a.score - b.score || (a.g.key < b.g.key ? -1 : 1))
     .slice(0, DAILY_HOLES);
-  return ranked.map(({ c }) => newCourse('mixed', 1, seeded(`football-golf-daily:${key}:${c.id}:pin`), [c])[0]);
+  return ranked.map(({ g }) => {
+    // g.cats is sorted by id, so every phone picks the same season.
+    const c = g.cats.length > 1 ? g.cats[Math.floor(seeded(`football-golf-daily:${key}:${g.key}:season`)() * g.cats.length)] : g.cats[0];
+    return newCourse('mixed', 1, seeded(`football-golf-daily:${key}:${c.id}:pin`), [c])[0];
+  });
 }
 
 export function newDailyGame(name: string, key = dailyKey()): Game {

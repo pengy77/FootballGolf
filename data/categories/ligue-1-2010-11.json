@@ -1,0 +1,192 @@
+{
+  "id": "ligue-1-2010-11",
+  "title": "2010–⁠11 Ligue 1 table",
+  "prompt": "place in the 2010–⁠11 Ligue 1",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "ligue-1-table",
+  "season": "2010–11",
+  "tiebreak": "goal difference, then goals scored",
+  "description": "Final 2010–11 Ligue 1 table: all 20 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2010–11 Ligue 1",
+    "url": "https://en.wikipedia.org/wiki/2010%E2%80%9311_Ligue_1#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "lille",
+      "name": "Lille",
+      "value": 76,
+      "display": "76 pts",
+      "aliases": [
+        "LOSC"
+      ],
+      "wd": "Q19516"
+    },
+    {
+      "id": "marseille",
+      "name": "Marseille",
+      "value": 68,
+      "display": "68 pts",
+      "aliases": [
+        "Olympique de Marseille",
+        "OM"
+      ],
+      "wd": "Q132885"
+    },
+    {
+      "id": "lyon",
+      "name": "Lyon",
+      "value": 64,
+      "display": "64 pts",
+      "aliases": [
+        "Olympique Lyonnais",
+        "OL"
+      ],
+      "wd": "Q704"
+    },
+    {
+      "id": "paris-saint-germain",
+      "name": "Paris Saint-Germain",
+      "value": 60,
+      "display": "60 pts",
+      "aliases": [
+        "PSG",
+        "Paris SG"
+      ],
+      "wd": "Q483020"
+    },
+    {
+      "id": "sochaux",
+      "name": "Sochaux",
+      "value": 58,
+      "display": "58 pts",
+      "wd": "Q19512"
+    },
+    {
+      "id": "rennes",
+      "name": "Rennes",
+      "value": 56,
+      "display": "56 pts",
+      "wd": "Q19509"
+    },
+    {
+      "id": "bordeaux",
+      "name": "Bordeaux",
+      "value": 51,
+      "display": "51 pts",
+      "aliases": [
+        "Girondins de Bordeaux"
+      ],
+      "wd": "Q172476"
+    },
+    {
+      "id": "toulouse",
+      "name": "Toulouse",
+      "value": 50,
+      "display": "50 pts",
+      "wd": "Q19518"
+    },
+    {
+      "id": "auxerre",
+      "name": "Auxerre",
+      "value": 49,
+      "display": "49 pts",
+      "wd": "Q182876"
+    },
+    {
+      "id": "saint-etienne",
+      "name": "Saint-Étienne",
+      "value": 49,
+      "display": "49 pts",
+      "aliases": [
+        "ASSE",
+        "St Etienne"
+      ],
+      "wd": "Q19521"
+    },
+    {
+      "id": "lorient",
+      "name": "Lorient",
+      "value": 49,
+      "display": "49 pts",
+      "wd": "Q48911"
+    },
+    {
+      "id": "valenciennes",
+      "name": "Valenciennes",
+      "value": 48,
+      "display": "48 pts",
+      "wd": "Q212269"
+    },
+    {
+      "id": "nancy",
+      "name": "Nancy",
+      "value": 48,
+      "display": "48 pts",
+      "wd": "Q19523"
+    },
+    {
+      "id": "montpellier",
+      "name": "Montpellier",
+      "value": 47,
+      "display": "47 pts",
+      "wd": "Q19513"
+    },
+    {
+      "id": "caen",
+      "name": "Caen",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q193377"
+    },
+    {
+      "id": "brest",
+      "name": "Brest",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q218372"
+    },
+    {
+      "id": "nice",
+      "name": "Nice",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q185163"
+    },
+    {
+      "id": "monaco",
+      "name": "Monaco",
+      "value": 44,
+      "display": "44 pts",
+      "aliases": [
+        "AS Monaco"
+      ],
+      "wd": "Q180305"
+    },
+    {
+      "id": "lens",
+      "name": "Lens",
+      "value": 35,
+      "display": "35 pts",
+      "wd": "Q191843"
+    },
+    {
+      "id": "arles-avignon",
+      "name": "Arles-Avignon",
+      "value": 20,
+      "display": "20 pts",
+      "wd": "Q222837"
+    }
+  ]
+}

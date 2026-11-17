@@ -1,0 +1,189 @@
+{
+  "id": "ligue-1-2012-13",
+  "title": "2012–⁠13 Ligue 1 table",
+  "prompt": "place in the 2012–⁠13 Ligue 1",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "ligue-1-table",
+  "season": "2012–13",
+  "tiebreak": "goal difference, then goals scored",
+  "description": "Final 2012–13 Ligue 1 table: all 20 clubs in the order they finished. Points include a deduction: Ajaccio −2.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2012–13 Ligue 1",
+    "url": "https://en.wikipedia.org/wiki/2012%E2%80%9313_Ligue_1#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "paris-saint-germain",
+      "name": "Paris Saint-Germain",
+      "value": 83,
+      "display": "83 pts",
+      "aliases": [
+        "PSG",
+        "Paris SG"
+      ],
+      "wd": "Q483020"
+    },
+    {
+      "id": "marseille",
+      "name": "Marseille",
+      "value": 71,
+      "display": "71 pts",
+      "aliases": [
+        "Olympique de Marseille",
+        "OM"
+      ],
+      "wd": "Q132885"
+    },
+    {
+      "id": "lyon",
+      "name": "Lyon",
+      "value": 67,
+      "display": "67 pts",
+      "aliases": [
+        "Olympique Lyonnais",
+        "OL"
+      ],
+      "wd": "Q704"
+    },
+    {
+      "id": "nice",
+      "name": "Nice",
+      "value": 64,
+      "display": "64 pts",
+      "wd": "Q185163"
+    },
+    {
+      "id": "saint-etienne",
+      "name": "Saint-Étienne",
+      "value": 63,
+      "display": "63 pts",
+      "aliases": [
+        "ASSE",
+        "St Etienne"
+      ],
+      "wd": "Q19521"
+    },
+    {
+      "id": "lille",
+      "name": "Lille",
+      "value": 62,
+      "display": "62 pts",
+      "aliases": [
+        "LOSC"
+      ],
+      "wd": "Q19516"
+    },
+    {
+      "id": "bordeaux",
+      "name": "Bordeaux",
+      "value": 55,
+      "display": "55 pts",
+      "aliases": [
+        "Girondins de Bordeaux"
+      ],
+      "wd": "Q172476"
+    },
+    {
+      "id": "lorient",
+      "name": "Lorient",
+      "value": 53,
+      "display": "53 pts",
+      "wd": "Q48911"
+    },
+    {
+      "id": "montpellier",
+      "name": "Montpellier",
+      "value": 52,
+      "display": "52 pts",
+      "wd": "Q19513"
+    },
+    {
+      "id": "toulouse",
+      "name": "Toulouse",
+      "value": 51,
+      "display": "51 pts",
+      "wd": "Q19518"
+    },
+    {
+      "id": "valenciennes",
+      "name": "Valenciennes",
+      "value": 48,
+      "display": "48 pts",
+      "wd": "Q212269"
+    },
+    {
+      "id": "bastia",
+      "name": "Bastia",
+      "value": 47,
+      "display": "47 pts",
+      "wd": "Q208399"
+    },
+    {
+      "id": "rennes",
+      "name": "Rennes",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q19509"
+    },
+    {
+      "id": "reims",
+      "name": "Reims",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q208228"
+    },
+    {
+      "id": "sochaux",
+      "name": "Sochaux",
+      "value": 41,
+      "display": "41 pts",
+      "wd": "Q19512"
+    },
+    {
+      "id": "evian",
+      "name": "Evian",
+      "value": 40,
+      "display": "40 pts",
+      "wd": "Q333838"
+    },
+    {
+      "id": "ajaccio",
+      "name": "Ajaccio",
+      "value": 40,
+      "display": "40 pts",
+      "wd": "Q270051"
+    },
+    {
+      "id": "nancy",
+      "name": "Nancy",
+      "value": 38,
+      "display": "38 pts",
+      "wd": "Q19523"
+    },
+    {
+      "id": "troyes",
+      "name": "Troyes",
+      "value": 37,
+      "display": "37 pts",
+      "wd": "Q501693"
+    },
+    {
+      "id": "brest",
+      "name": "Brest",
+      "value": 29,
+      "display": "29 pts",
+      "wd": "Q218372"
+    }
+  ]
+}

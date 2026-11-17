@@ -28,7 +28,7 @@
         "May Day Stadium",
         "Rungrado May Day Stadium"
       ],
-      "wd": "x-stadium-rungrado-1st-of-may-stadium"
+      "wd": "Q211618"
     },
     {
       "id": "camp-nou",
@@ -72,7 +72,7 @@
       "aliases": [
         "Cotton Bowl Stadium"
       ],
-      "wd": "x-stadium-cotton-bowl"
+      "wd": "Q1136764"
     },
     {
       "id": "wembley-stadium",
@@ -83,7 +83,7 @@
       "aliases": [
         "Wembley"
       ],
-      "wd": "x-stadium-wembley-stadium"
+      "wd": "Q128468"
     },
     {
       "id": "lusail-stadium",
@@ -148,7 +148,7 @@
         "Estadio Antonio Vespucio Liberti",
         "River Plate"
       ],
-      "wd": "x-stadium-estadio-monumental"
+      "wd": "Q276354"
     },
     {
       "id": "salt-lake-stadium",
@@ -172,7 +172,7 @@
         "ANZ Stadium",
         "Sydney Olympic Stadium"
       ],
-      "wd": "x-stadium-stadium-australia"
+      "wd": "Q295886"
     },
     {
       "id": "santiago-bernabeu",
@@ -193,7 +193,7 @@
       "sub": "Dublin · Ireland",
       "value": 82300,
       "display": "82,300",
-      "wd": "x-stadium-croke-park"
+      "wd": "Q478225"
     },
     {
       "id": "jakarta-international-stadium",
@@ -275,7 +275,7 @@
         "Inter Milan",
         "Inter"
       ],
-      "wd": "x-stadium-san-siro"
+      "wd": "Q133566"
     },
     {
       "id": "guangdong-olympic-stadium",
@@ -295,7 +295,7 @@
         "Hangzhou Olympic Sports Center Stadium",
         "Big Lotus"
       ],
-      "wd": "x-stadium-hangzhou-olympic-sports-expo-centre-stadium"
+      "wd": "Q97582124"
     },
     {
       "id": "stade-des-martyrs",
@@ -314,7 +314,7 @@
       "aliases": [
         "Bird's Nest"
       ],
-      "wd": "x-stadium-beijing-national-stadium"
+      "wd": "Q133525"
     },
     {
       "id": "maracana",
@@ -443,7 +443,7 @@
         "Hertha BSC",
         "Hertha Berlin"
       ],
-      "wd": "Q131610"
+      "wd": "Q151374"
     },
     {
       "id": "cairo-international-stadium",
@@ -540,7 +540,7 @@
         "Atlético",
         "Atleti"
       ],
-      "wd": "x-stadium-riyadh-air-metropolitano"
+      "wd": "Q1369687"
     },
     {
       "id": "nsc-olimpiyskiy",
@@ -556,7 +556,7 @@
         "Olympic Stadium Kyiv",
         "Dynamo Kyiv"
       ],
-      "wd": "x-stadium-nsc-olimpiyskiy"
+      "wd": "Q183529"
     },
     {
       "id": "nou-mestalla",
@@ -578,7 +578,7 @@
       "aliases": [
         "Jamsil Olympic Stadium"
       ],
-      "wd": "x-stadium-seoul-olympic-stadium"
+      "wd": "Q392086"
     },
     {
       "id": "baku-olympic-stadium",
@@ -589,7 +589,7 @@
       "aliases": [
         "Bakı Olimpiya stadionu"
       ],
-      "wd": "x-stadium-baku-olympic-stadium"
+      "wd": "Q2612138"
     },
     {
       "id": "athens-olympic-stadium",
@@ -602,7 +602,7 @@
         "OAKA",
         "Spyros Louis"
       ],
-      "wd": "x-stadium-athens-olympic-stadium"
+      "wd": "Q189663"
     },
     {
       "id": "munich-olympic-stadium",
@@ -614,7 +614,7 @@
         "Olympiastadion München",
         "Olympiastadion Munich"
       ],
-      "wd": "x-stadium-munich-olympic-stadium"
+      "wd": "Q131610"
     },
     {
       "id": "lumen-field",
@@ -647,7 +647,7 @@
       "sub": "Foxborough · United States",
       "value": 68756,
       "display": "68,756",
-      "wd": "x-stadium-gillette-stadium"
+      "wd": "Q373355"
     },
     {
       "id": "prince-moulay-abdellah-stadium",
@@ -748,7 +748,7 @@
         "Murrayfield",
         "BT Murrayfield"
       ],
-      "wd": "x-stadium-murrayfield-stadium"
+      "wd": "Q1024926"
     },
     {
       "id": "stade-mohammed-v",
@@ -800,7 +800,7 @@
       "sub": "Daegu · South Korea",
       "value": 66422,
       "display": "66,422",
-      "wd": "x-stadium-daegu-stadium"
+      "wd": "Q482441"
     },
     {
       "id": "workers-stadium",
@@ -838,7 +838,7 @@
         "Olympic Stadium Montreal",
         "The Big O"
       ],
-      "wd": "x-stadium-montreal-olympic-stadium"
+      "wd": "Q285467"
     },
     {
       "id": "basra-international-stadium",
@@ -904,7 +904,7 @@
       "aliases": [
         "Oakland–Alameda County Coliseum"
       ],
-      "wd": "x-stadium-oakland-coliseum"
+      "wd": "Q1147732"
     },
     {
       "id": "ellis-park-stadium",
@@ -1070,7 +1070,7 @@
         "Virgen de Chapi",
         "Estadio Monumental de la UNSA"
       ],
-      "wd": "x-stadium-estadio-de-la-unsa"
+      "wd": "Q1331178"
     },
     {
       "id": "emirates-stadium",
@@ -1137,7 +1137,7 @@
       "sub": "Al-Khor · Qatar",
       "value": 60000,
       "display": "60,000",
-      "wd": "x-stadium-al-bayt-stadium"
+      "wd": "Q1050220"
     },
     {
       "id": "benjamin-mkapa-national-stadium",
@@ -1167,7 +1167,7 @@
       "aliases": [
         "Jaber Al-Ahmad Stadium"
       ],
-      "wd": "x-stadium-jaber-al-ahmad-international-stadium"
+      "wd": "Q648214"
     },
     {
       "id": "hammadi-agrebi-stadium",
@@ -1207,7 +1207,7 @@
       "sub": "Lusaka · Zambia",
       "value": 60000,
       "display": "60,000",
-      "wd": "x-stadium-national-heroes-stadium"
+      "wd": "Q16632749"
     },
     {
       "id": "odi-stadium",
@@ -1215,7 +1215,7 @@
       "sub": "Mabopane · South Africa",
       "value": 60000,
       "display": "60,000",
-      "wd": "x-stadium-odi-stadium"
+      "wd": "Q3643425"
     },
     {
       "id": "morodok-techo-national-stadium",
@@ -1390,7 +1390,7 @@
       "sub": "Edmonton · Canada",
       "value": 56302,
       "display": "56,302",
-      "wd": "x-stadium-commonwealth-stadium"
+      "wd": "Q130381"
     },
     {
       "id": "19-may-1956-stadium",
@@ -1448,7 +1448,7 @@
       "aliases": [
         "National Arena"
       ],
-      "wd": "x-stadium-arena-nationala"
+      "wd": "Q338602"
     },
     {
       "id": "stadion-rajko-mitic",
@@ -1487,7 +1487,7 @@
         "Manchester City",
         "Man City"
       ],
-      "wd": "x-stadium-etihad-stadium"
+      "wd": "Q48159"
     },
     {
       "id": "moi-international-sports-centre",
@@ -1522,7 +1522,7 @@
         "National Stadium Kaohsiung",
         "World Games Stadium"
       ],
-      "wd": "x-stadium-kaohsiung-national-stadium"
+      "wd": "Q713442"
     },
     {
       "id": "helong-stadium",
@@ -1587,7 +1587,7 @@
         "San Paolo",
         "Napoli"
       ],
-      "wd": "x-stadium-stadio-diego-armando-maradona"
+      "wd": "Q82709"
     },
     {
       "id": "tianjin-olympic-sports-centre-stadium",
@@ -1659,7 +1659,7 @@
       "sub": "Little Rock · United States",
       "value": 54120,
       "display": "54,120",
-      "wd": "x-stadium-war-memorial-stadium"
+      "wd": "Q7968482"
     },
     {
       "id": "borussia-park",
@@ -1671,7 +1671,7 @@
         "Borussia Mönchengladbach",
         "Gladbach"
       ],
-      "wd": "x-stadium-borussia-park"
+      "wd": "Q154074"
     },
     {
       "id": "moses-mabhida-stadium",
@@ -1726,7 +1726,7 @@
         "Estadio Ciudad de La Plata",
         "Estadio Único de La Plata"
       ],
-      "wd": "x-stadium-estadio-unico-diego-armando-maradona"
+      "wd": "Q1369163"
     },
     {
       "id": "estadio-bbva",
@@ -1747,7 +1747,7 @@
       "sub": "Adelaide · Australia",
       "value": 53500,
       "display": "53,500",
-      "wd": "x-stadium-adelaide-oval"
+      "wd": "Q2462430"
     },
     {
       "id": "docklands-stadium",
@@ -1758,7 +1758,7 @@
       "aliases": [
         "Marvel Stadium"
       ],
-      "wd": "x-stadium-docklands-stadium"
+      "wd": "Q917998"
     },
     {
       "id": "parque-do-sabia",
@@ -1814,7 +1814,7 @@
         "Bramley-Moore Dock Stadium",
         "Everton"
       ],
-      "wd": "x-stadium-hill-dickinson-stadium"
+      "wd": "Q29347805"
     },
     {
       "id": "huanglong-stadium",
@@ -1954,7 +1954,7 @@
       "sub": "Hohhot · China",
       "value": 51632,
       "display": "51,632",
-      "wd": "x-stadium-hohhot-city-stadium"
+      "wd": "Q4439094"
     },
     {
       "id": "rajamangala-national-stadium",
@@ -1965,7 +1965,7 @@
       "aliases": [
         "Rajamangala Stadium"
       ],
-      "wd": "x-stadium-rajamangala-national-stadium"
+      "wd": "Q840546"
     },
     {
       "id": "donbas-arena",
@@ -2103,7 +2103,7 @@
         "Grand Stade Lille Métropole",
         "Lille"
       ],
-      "wd": "x-stadium-stade-pierre-mauroy"
+      "wd": "Q1410402"
     },
     {
       "id": "king-baudouin-stadium",
@@ -2117,7 +2117,7 @@
         "Heysel Stadium",
         "Heysel"
       ],
-      "wd": "x-stadium-king-baudouin-stadium"
+      "wd": "Q622671"
     },
     {
       "id": "shaanxi-province-stadium",
@@ -2190,7 +2190,7 @@
         "1. FC Köln",
         "FC Köln"
       ],
-      "wd": "x-stadium-rheinenergiestadion"
+      "wd": "Q151893"
     },
     {
       "id": "harbin-sports-city-centre-stadium",
@@ -2366,7 +2366,7 @@
       "sub": "Lusaka · Zambia",
       "value": 49800,
       "display": "49,800",
-      "wd": "x-stadium-levy-mwanawasa-stadium"
+      "wd": "Q2385498"
     },
     {
       "id": "fritz-walter-stadion",
@@ -2378,7 +2378,7 @@
         "Betzenberg",
         "1. FC Kaiserslautern"
       ],
-      "wd": "x-stadium-fritz-walter-stadion"
+      "wd": "Q154298"
     },
     {
       "id": "estadio-jose-amalfitani",
@@ -2398,7 +2398,7 @@
       "sub": "Beirut · Lebanon",
       "value": 49500,
       "display": "49,500",
-      "wd": "x-stadium-camille-chamoun-sports-city-stadium"
+      "wd": "Q590474"
     },
     {
       "id": "mestalla",
@@ -2452,7 +2452,7 @@
         "Paris Saint-Germain",
         "PSG"
       ],
-      "wd": "x-stadium-parc-des-princes"
+      "wd": "Q193431"
     },
     {
       "id": "stadium-of-light",
@@ -2463,7 +2463,7 @@
       "aliases": [
         "Sunderland"
       ],
-      "wd": "x-stadium-stadium-of-light"
+      "wd": "Q31969"
     },
     {
       "id": "estadio-nacional-de-chile",
@@ -2504,7 +2504,7 @@
       "aliases": [
         "Jinnah Stadium"
       ],
-      "wd": "x-stadium-jinnah-sports-stadium"
+      "wd": "Q1689612"
     },
     {
       "id": "choctaw-stadium",
@@ -2515,7 +2515,7 @@
       "aliases": [
         "Globe Life Park"
       ],
-      "wd": "x-stadium-choctaw-stadium"
+      "wd": "Q1634492"
     },
     {
       "id": "estadio-libertadores-de-america",
@@ -2634,7 +2634,7 @@
         "Engenhão",
         "Botafogo"
       ],
-      "wd": "x-stadium-estadio-olimpico-nilton-santos"
+      "wd": "Q17489"
     },
     {
       "id": "estadio-metropolitano-roberto-melendez",

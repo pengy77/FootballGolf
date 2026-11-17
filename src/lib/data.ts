@@ -27,6 +27,15 @@ export interface RawCategory {
   retired?: boolean;
   /** How entries level on `value` are separated, e.g. "goal difference, then goals scored". */
   tiebreak?: string;
+  /**
+   * Official final standings (a season's league table): the items are in the competition's own finishing
+   * order, so every entry holds its own place, even when level on `value` (head-to-head, points per game, …).
+   */
+  standings?: boolean;
+  /** Lists that are editions of the same thing, e.g. "serie-a-table". A course draws the series once, then one edition. */
+  series?: string;
+  /** Which edition of its series this list is, e.g. "2015–16". */
+  season?: string;
   metric: string;
   order: 'asc' | 'desc';
   description: string;
@@ -59,7 +68,7 @@ export type CourseId = 'mixed' | 'premier-league' | 'europe' | 'international';
 export const COURSES: { id: CourseId; name: string; blurb: string; tags: string[] | null }[] = [
   { id: 'mixed', name: 'Mixed', blurb: 'A bit of everything', tags: null },
   { id: 'premier-league', name: 'Premier League', blurb: 'PL & English football', tags: ['premier-league', 'england'] },
-  { id: 'europe', name: 'European clubs', blurb: 'Champions League, stadiums, transfers', tags: ['europe', 'champions-league', 'transfers'] },
+  { id: 'europe', name: 'European clubs', blurb: 'Top leagues, Champions League, transfers', tags: ['europe', 'champions-league', 'transfers'] },
   { id: 'international', name: 'International', blurb: 'World Cup & national teams', tags: ['international', 'world-cup'] },
 ];
 
@@ -75,7 +84,8 @@ export function buildCategory(raw: RawCategory): Category {
     subKey: norm(it.sub ?? ''),
   }));
   // Equal values (and equal tiebreaks) share a rank range so a tie can't cost anyone strokes.
-  const level = (a: Item, b: Item) => a.value === b.value && (a.tb ?? []).join() === (b.tb ?? []).join();
+  // Official standings never share a place: the finishing order already settled every tie.
+  const level = (a: Item, b: Item) => !raw.standings && a.value === b.value && (a.tb ?? []).join() === (b.tb ?? []).join();
   let i = 0;
   while (i < items.length) {
     let j = i;
@@ -120,6 +130,32 @@ export function categoriesFor(course: CourseId, from: Category[] = LIVE_CATEGORI
   const def = COURSES.find((c) => c.id === course);
   if (!def || !def.tags) return from;
   return from.filter((c) => c.tags.some((t) => def.tags!.includes(t)));
+}
+
+export interface DrawGroup {
+  /** The series name, or the list id for a list that isn't part of one. */
+  key: string;
+  /** The lists in the group, by id (so oldest season first). */
+  cats: Category[];
+}
+
+/**
+ * Lists the way courses draw them: a series (every season of a league table) is one group, every other list
+ * its own. Drawing groups instead of lists keeps 16 seasons of Serie A from crowding out everything else,
+ * and a round never has two seasons of the same table.
+ */
+export function drawGroups(cats: Category[]): DrawGroup[] {
+  const groups = new Map<string, Category[]>();
+  for (const c of cats) {
+    const key = c.series ?? c.id;
+    groups.set(key, [...(groups.get(key) ?? []), c]);
+  }
+  return [...groups].map(([key, list]) => ({ key, cats: list.sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0)) }));
+}
+
+/** How many different holes a course can deal: one per group. */
+export function poolSize(course: CourseId): number {
+  return drawGroups(categoriesFor(course)).length;
 }
 
 export function formatValue(_cat: Category, item: Item): string {

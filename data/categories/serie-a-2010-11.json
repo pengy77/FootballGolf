@@ -1,0 +1,189 @@
+{
+  "id": "serie-a-2010-11",
+  "title": "2010–⁠11 Serie A table",
+  "prompt": "place in the 2010–⁠11 Serie A",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "serie-a-table",
+  "season": "2010–11",
+  "tiebreak": "head-to-head points, then head-to-head goal difference",
+  "description": "Final 2010–11 Serie A table: all 20 clubs in the order they finished. Points include a deduction: Bologna −3.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2010–11 Serie A",
+    "url": "https://en.wikipedia.org/wiki/2010%E2%80%9311_Serie_A#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "ac-milan",
+      "name": "AC Milan",
+      "value": 82,
+      "display": "82 pts",
+      "aliases": [
+        "Milan"
+      ],
+      "wd": "Q1543"
+    },
+    {
+      "id": "inter-milan",
+      "name": "Inter Milan",
+      "value": 76,
+      "display": "76 pts",
+      "aliases": [
+        "Inter",
+        "Internazionale"
+      ],
+      "wd": "Q631"
+    },
+    {
+      "id": "napoli",
+      "name": "Napoli",
+      "value": 70,
+      "display": "70 pts",
+      "aliases": [
+        "SSC Napoli"
+      ],
+      "wd": "Q2641"
+    },
+    {
+      "id": "udinese",
+      "name": "Udinese",
+      "value": 66,
+      "display": "66 pts",
+      "wd": "Q2798"
+    },
+    {
+      "id": "lazio",
+      "name": "Lazio",
+      "value": 66,
+      "display": "66 pts",
+      "aliases": [
+        "SS Lazio"
+      ],
+      "wd": "Q2609"
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "value": 63,
+      "display": "63 pts",
+      "aliases": [
+        "AS Roma"
+      ],
+      "wd": "Q2739"
+    },
+    {
+      "id": "juventus",
+      "name": "Juventus",
+      "value": 58,
+      "display": "58 pts",
+      "aliases": [
+        "Juve"
+      ],
+      "wd": "Q1422"
+    },
+    {
+      "id": "palermo",
+      "name": "Palermo",
+      "value": 56,
+      "display": "56 pts",
+      "wd": "Q2674"
+    },
+    {
+      "id": "fiorentina",
+      "name": "Fiorentina",
+      "value": 51,
+      "display": "51 pts",
+      "wd": "Q2052"
+    },
+    {
+      "id": "genoa",
+      "name": "Genoa",
+      "value": 51,
+      "display": "51 pts",
+      "wd": "Q2074"
+    },
+    {
+      "id": "chievo",
+      "name": "Chievo",
+      "value": 46,
+      "display": "46 pts",
+      "aliases": [
+        "ChievoVerona"
+      ],
+      "wd": "Q2037"
+    },
+    {
+      "id": "parma",
+      "name": "Parma",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q2693"
+    },
+    {
+      "id": "catania",
+      "name": "Catania",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q2018"
+    },
+    {
+      "id": "cagliari",
+      "name": "Cagliari",
+      "value": 45,
+      "display": "45 pts",
+      "wd": "Q1900"
+    },
+    {
+      "id": "cesena",
+      "name": "Cesena",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q6664"
+    },
+    {
+      "id": "bologna",
+      "name": "Bologna",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q1893"
+    },
+    {
+      "id": "lecce",
+      "name": "Lecce",
+      "value": 41,
+      "display": "41 pts",
+      "wd": "Q13391"
+    },
+    {
+      "id": "sampdoria",
+      "name": "Sampdoria",
+      "value": 36,
+      "display": "36 pts",
+      "wd": "Q1457"
+    },
+    {
+      "id": "brescia",
+      "name": "Brescia",
+      "value": 32,
+      "display": "32 pts",
+      "wd": "Q6651"
+    },
+    {
+      "id": "bari",
+      "name": "Bari",
+      "value": 24,
+      "display": "24 pts",
+      "wd": "Q6641"
+    }
+  ]
+}

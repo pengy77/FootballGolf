@@ -1,0 +1,189 @@
+{
+  "id": "la-liga-2015-16",
+  "title": "2015–⁠16 La Liga table",
+  "prompt": "place in the 2015–⁠16 La Liga",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "la-liga-table",
+  "season": "2015–16",
+  "tiebreak": "head-to-head points, then head-to-head goal difference",
+  "description": "Final 2015–16 La Liga table: all 20 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2015–16 La Liga",
+    "url": "https://en.wikipedia.org/wiki/2015%E2%80%9316_La_Liga#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "value": 91,
+      "display": "91 pts",
+      "aliases": [
+        "Barça",
+        "FC Barcelona"
+      ],
+      "wd": "Q7156"
+    },
+    {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "value": 90,
+      "display": "90 pts",
+      "aliases": [
+        "Real",
+        "Los Blancos"
+      ],
+      "wd": "Q8682"
+    },
+    {
+      "id": "atletico-madrid",
+      "name": "Atlético Madrid",
+      "value": 88,
+      "display": "88 pts",
+      "aliases": [
+        "Atlético",
+        "Atleti"
+      ],
+      "wd": "Q8701"
+    },
+    {
+      "id": "villarreal",
+      "name": "Villarreal",
+      "value": 64,
+      "display": "64 pts",
+      "wd": "Q12297"
+    },
+    {
+      "id": "athletic-bilbao",
+      "name": "Athletic Bilbao",
+      "value": 62,
+      "display": "62 pts",
+      "wd": "Q8687"
+    },
+    {
+      "id": "celta-vigo",
+      "name": "Celta Vigo",
+      "value": 60,
+      "display": "60 pts",
+      "wd": "Q8749"
+    },
+    {
+      "id": "sevilla",
+      "name": "Sevilla",
+      "value": 52,
+      "display": "52 pts",
+      "aliases": [
+        "Seville"
+      ],
+      "wd": "Q10329"
+    },
+    {
+      "id": "malaga",
+      "name": "Málaga",
+      "value": 48,
+      "display": "48 pts",
+      "wd": "Q8857"
+    },
+    {
+      "id": "real-sociedad",
+      "name": "Real Sociedad",
+      "value": 48,
+      "display": "48 pts",
+      "wd": "Q10315"
+    },
+    {
+      "id": "real-betis",
+      "name": "Real Betis",
+      "value": 45,
+      "display": "45 pts",
+      "aliases": [
+        "Betis"
+      ],
+      "wd": "Q8723"
+    },
+    {
+      "id": "las-palmas",
+      "name": "Las Palmas",
+      "value": 44,
+      "display": "44 pts",
+      "wd": "Q11979"
+    },
+    {
+      "id": "valencia",
+      "name": "Valencia",
+      "value": 44,
+      "display": "44 pts",
+      "wd": "Q10333"
+    },
+    {
+      "id": "espanyol",
+      "name": "Espanyol",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q8780"
+    },
+    {
+      "id": "eibar",
+      "name": "Eibar",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q770740"
+    },
+    {
+      "id": "deportivo-la-coruna",
+      "name": "Deportivo La Coruña",
+      "value": 42,
+      "display": "42 pts",
+      "aliases": [
+        "Deportivo",
+        "Depor"
+      ],
+      "wd": "Q8760"
+    },
+    {
+      "id": "granada",
+      "name": "Granada",
+      "value": 39,
+      "display": "39 pts",
+      "wd": "Q8812"
+    },
+    {
+      "id": "sporting-gijon",
+      "name": "Sporting Gijón",
+      "value": 39,
+      "display": "39 pts",
+      "wd": "Q12278"
+    },
+    {
+      "id": "rayo-vallecano",
+      "name": "Rayo Vallecano",
+      "value": 38,
+      "display": "38 pts",
+      "wd": "Q10300"
+    },
+    {
+      "id": "getafe",
+      "name": "Getafe",
+      "value": 36,
+      "display": "36 pts",
+      "wd": "Q8806"
+    },
+    {
+      "id": "levante",
+      "name": "Levante",
+      "value": 32,
+      "display": "32 pts",
+      "wd": "Q8823"
+    }
+  ]
+}

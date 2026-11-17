@@ -111,7 +111,7 @@
         "Barça",
         "FC Barcelona"
       ],
-      "wd": "Q248782"
+      "wd": "Q7156"
     },
     {
       "id": "bayer-leverkusen",
@@ -154,7 +154,7 @@
       "sub": "England",
       "value": 99.25,
       "display": "99.250",
-      "wd": "x-club-chelsea"
+      "wd": "Q9616"
     },
     {
       "id": "roma",
@@ -382,7 +382,7 @@
         "Sporting Braga",
         "SC Braga"
       ],
-      "wd": "x-club-braga"
+      "wd": "Q75684"
     },
     {
       "id": "napoli",
@@ -415,7 +415,7 @@
       "aliases": [
         "Olympiakos"
       ],
-      "wd": "x-club-olympiacos"
+      "wd": "Q19628"
     },
     {
       "id": "rb-leipzig",

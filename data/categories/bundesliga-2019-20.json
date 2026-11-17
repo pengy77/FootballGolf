@@ -1,0 +1,188 @@
+{
+  "id": "bundesliga-2019-20",
+  "title": "2019–⁠20 Bundesliga table",
+  "prompt": "place in the 2019–⁠20 Bundesliga",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "bundesliga-table",
+  "season": "2019–20",
+  "tiebreak": "goal difference, then goals scored",
+  "description": "Final 2019–20 Bundesliga table: all 18 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2019–20 Bundesliga",
+    "url": "https://en.wikipedia.org/wiki/2019%E2%80%9320_Bundesliga#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "bayern-munich",
+      "name": "Bayern Munich",
+      "value": 82,
+      "display": "82 pts",
+      "aliases": [
+        "Bayern",
+        "FC Bayern",
+        "Bayern München"
+      ],
+      "wd": "Q15789"
+    },
+    {
+      "id": "borussia-dortmund",
+      "name": "Borussia Dortmund",
+      "value": 69,
+      "display": "69 pts",
+      "aliases": [
+        "Dortmund",
+        "BVB"
+      ],
+      "wd": "Q41420"
+    },
+    {
+      "id": "rb-leipzig",
+      "name": "RB Leipzig",
+      "value": 66,
+      "display": "66 pts",
+      "aliases": [
+        "Leipzig"
+      ],
+      "wd": "Q702455"
+    },
+    {
+      "id": "borussia-monchengladbach",
+      "name": "Borussia Mönchengladbach",
+      "value": 65,
+      "display": "65 pts",
+      "aliases": [
+        "Gladbach",
+        "Mönchengladbach"
+      ],
+      "wd": "Q101959"
+    },
+    {
+      "id": "bayer-leverkusen",
+      "name": "Bayer Leverkusen",
+      "value": 63,
+      "display": "63 pts",
+      "aliases": [
+        "Leverkusen"
+      ],
+      "wd": "Q104761"
+    },
+    {
+      "id": "tsg-hoffenheim",
+      "name": "TSG Hoffenheim",
+      "value": 52,
+      "display": "52 pts",
+      "aliases": [
+        "1899 Hoffenheim"
+      ],
+      "wd": "Q22707"
+    },
+    {
+      "id": "vfl-wolfsburg",
+      "name": "VfL Wolfsburg",
+      "value": 49,
+      "display": "49 pts",
+      "wd": "Q101859"
+    },
+    {
+      "id": "sc-freiburg",
+      "name": "SC Freiburg",
+      "value": 48,
+      "display": "48 pts",
+      "aliases": [
+        "Freiburg"
+      ],
+      "wd": "Q106394"
+    },
+    {
+      "id": "eintracht-frankfurt",
+      "name": "Eintracht Frankfurt",
+      "value": 45,
+      "display": "45 pts",
+      "aliases": [
+        "Frankfurt"
+      ],
+      "wd": "Q38245"
+    },
+    {
+      "id": "hertha-bsc",
+      "name": "Hertha BSC",
+      "value": 41,
+      "display": "41 pts",
+      "wd": "Q102720"
+    },
+    {
+      "id": "union-berlin",
+      "name": "Union Berlin",
+      "value": 41,
+      "display": "41 pts",
+      "wd": "Q141971"
+    },
+    {
+      "id": "schalke-04",
+      "name": "Schalke 04",
+      "value": 39,
+      "display": "39 pts",
+      "aliases": [
+        "Schalke"
+      ],
+      "wd": "Q32494"
+    },
+    {
+      "id": "mainz-05",
+      "name": "Mainz 05",
+      "value": 37,
+      "display": "37 pts",
+      "wd": "Q105254"
+    },
+    {
+      "id": "1-fc-koln",
+      "name": "1. FC Köln",
+      "value": 36,
+      "display": "36 pts",
+      "wd": "Q104770"
+    },
+    {
+      "id": "fc-augsburg",
+      "name": "FC Augsburg",
+      "value": 36,
+      "display": "36 pts",
+      "wd": "Q15755"
+    },
+    {
+      "id": "werder-bremen",
+      "name": "Werder Bremen",
+      "value": 31,
+      "display": "31 pts",
+      "aliases": [
+        "Werder",
+        "Bremen"
+      ],
+      "wd": "Q51976"
+    },
+    {
+      "id": "fortuna-dusseldorf",
+      "name": "Fortuna Düsseldorf",
+      "value": 30,
+      "display": "30 pts",
+      "wd": "Q151747"
+    },
+    {
+      "id": "sc-paderborn",
+      "name": "SC Paderborn",
+      "value": 20,
+      "display": "20 pts",
+      "wd": "Q160532"
+    }
+  ]
+}

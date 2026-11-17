@@ -43,6 +43,8 @@ function cmp(order, a, b) {
 }
 
 let failed = 0;
+/** "series|season" → file, so a season can't be in its series twice. */
+const seasons = new Map();
 for (const file of files) {
   const errs = [];
   const warn = [];
@@ -67,6 +69,16 @@ for (const file of files) {
   if (!KINDS.includes(c.kind)) errs.push(`kind must be one of ${KINDS.join('|')} (what the answer is, for search)`);
   if (c.retired !== undefined && typeof c.retired !== 'boolean') errs.push('retired must be a boolean');
   if (c.tiebreak !== undefined && (typeof c.tiebreak !== 'string' || !c.tiebreak.trim())) errs.push('tiebreak must be a sentence, e.g. "goal difference, then goals scored"');
+  if (c.standings !== undefined && typeof c.standings !== 'boolean') errs.push('standings must be a boolean');
+  // Standings never share a place, so the hole's "Level on points? Split by …" line needs the real rule.
+  if (c.standings && !c.tiebreak) errs.push('standings lists need a "tiebreak" sentence saying how level entries were separated');
+  if (c.series !== undefined || c.season !== undefined) {
+    if (typeof c.series !== 'string' || !SLUG.test(c.series)) errs.push('series must be a kebab slug, e.g. "serie-a-table" (and goes with "season")');
+    if (typeof c.season !== 'string' || !/^\d{4}(–\d{2})?$/.test(c.season)) errs.push('season must look like "2015–16" (en dash) or "2018"');
+    const key = `${c.series}|${c.season}`;
+    if (seasons.has(key)) errs.push(`${c.series} ${c.season} is also ${seasons.get(key)}`);
+    seasons.set(key, basename(file));
+  }
   if (c.id && !SLUG.test(c.id)) errs.push(`id "${c.id}" is not a kebab slug`);
   if (c.id && basename(file, '.json') !== c.id) errs.push(`file name must equal id (${c.id}.json)`);
   if (c.prompt && /^\d|^the /i.test(c.prompt)) errs.push('prompt must read naturally after an ordinal, e.g. "most Premier League goals"');
@@ -78,7 +90,8 @@ for (const file of files) {
   let pins = 0;
   if (!Array.isArray(c.items)) errs.push('items must be an array');
   else {
-    if (c.items.length < 20) errs.push(`only ${c.items.length} items (need >= 20)`);
+    // 18 is an 18-club league table: its target range (2nd–15th) still has 14 places.
+    if (c.items.length < 18) errs.push(`only ${c.items.length} items (need >= 18)`);
     if (c.items.length > 250) errs.push(`${c.items.length} items (max 250)`);
     const ids = new Set();
     const names = new Map();
@@ -102,18 +115,20 @@ for (const file of files) {
       if (it.wd !== undefined) {
         if (typeof it.wd !== 'string') errs.push(`${at}.wd must be an entity id`);
         else if (entityIds[c.kind] && !entityIds[c.kind].has(it.wd)) errs.push(`${at}.wd ${it.wd} is not in data/entities/${c.kind}s.json`);
-        if (wds.has(it.wd)) errs.push(`${at}.wd ${it.wd} also used by items[${wds.get(it.wd)}]: one entry per ${c.kind}, or search can't tell them apart`);
+        if (wds.has(it.wd) && !c.retired) errs.push(`${at}.wd ${it.wd} also used by items[${wds.get(it.wd)}]: one entry per ${c.kind}, or search can't tell them apart`);
         wds.set(it.wd, i);
       } else if (entityIds[c.kind]) errs.push(`${at} (${it.name}) has no "wd" link to the search database — run node scripts/build-entities.mjs`);
       const n = norm(it.name || '');
       if (names.has(n)) warn.push(`duplicate display name "${it.name}" at ${names.get(n)} and ${i} — make "sub" distinguish them`);
       names.set(n, i);
-      if (i > 0 && typeof it.value === 'number' && cmp(c.order, c.items[i - 1], it) > 0)
+      // Standings are in the competition's own order, which can put fewer points above more
+      // (head-to-head, points per game in a season stopped early), so only other lists are checked.
+      if (!c.standings && i > 0 && typeof it.value === 'number' && cmp(c.order, c.items[i - 1], it) > 0)
         errs.push(`${at} (${it.name}) ranks above the entry before it but comes after it (order is ${c.order}${c.tiebreak ? ', then tiebreaks' : ''})`);
     });
     // A pin is a rank only one entry holds (no tie), with a real value: one clear answer per hole.
     const n = c.items.length;
-    const same = (a, b) => a && b && cmp(c.order, a, b) === 0;
+    const same = (a, b) => !c.standings && a && b && cmp(c.order, a, b) === 0;
     const [lo, hi] = targetRange(n);
     for (let r = lo; r <= hi; r++) {
       const it = c.items[r - 1];

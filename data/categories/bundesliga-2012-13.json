@@ -1,0 +1,189 @@
+{
+  "id": "bundesliga-2012-13",
+  "title": "2012–⁠13 Bundesliga table",
+  "prompt": "place in the 2012–⁠13 Bundesliga",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "bundesliga-table",
+  "season": "2012–13",
+  "tiebreak": "goal difference, then goals scored",
+  "description": "Final 2012–13 Bundesliga table: all 18 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2012–13 Bundesliga",
+    "url": "https://en.wikipedia.org/wiki/2012%E2%80%9313_Bundesliga#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "bayern-munich",
+      "name": "Bayern Munich",
+      "value": 91,
+      "display": "91 pts",
+      "aliases": [
+        "Bayern",
+        "FC Bayern",
+        "Bayern München"
+      ],
+      "wd": "Q15789"
+    },
+    {
+      "id": "borussia-dortmund",
+      "name": "Borussia Dortmund",
+      "value": 66,
+      "display": "66 pts",
+      "aliases": [
+        "Dortmund",
+        "BVB"
+      ],
+      "wd": "Q41420"
+    },
+    {
+      "id": "bayer-leverkusen",
+      "name": "Bayer Leverkusen",
+      "value": 65,
+      "display": "65 pts",
+      "aliases": [
+        "Leverkusen"
+      ],
+      "wd": "Q104761"
+    },
+    {
+      "id": "schalke-04",
+      "name": "Schalke 04",
+      "value": 55,
+      "display": "55 pts",
+      "aliases": [
+        "Schalke"
+      ],
+      "wd": "Q32494"
+    },
+    {
+      "id": "sc-freiburg",
+      "name": "SC Freiburg",
+      "value": 51,
+      "display": "51 pts",
+      "aliases": [
+        "Freiburg"
+      ],
+      "wd": "Q106394"
+    },
+    {
+      "id": "eintracht-frankfurt",
+      "name": "Eintracht Frankfurt",
+      "value": 51,
+      "display": "51 pts",
+      "aliases": [
+        "Frankfurt"
+      ],
+      "wd": "Q38245"
+    },
+    {
+      "id": "hamburger-sv",
+      "name": "Hamburger SV",
+      "value": 48,
+      "display": "48 pts",
+      "aliases": [
+        "Hamburg",
+        "HSV"
+      ],
+      "wd": "Q51974"
+    },
+    {
+      "id": "borussia-monchengladbach",
+      "name": "Borussia Mönchengladbach",
+      "value": 47,
+      "display": "47 pts",
+      "aliases": [
+        "Gladbach",
+        "Mönchengladbach"
+      ],
+      "wd": "Q101959"
+    },
+    {
+      "id": "hannover-96",
+      "name": "Hannover 96",
+      "value": 45,
+      "display": "45 pts",
+      "wd": "Q33748"
+    },
+    {
+      "id": "1-fc-nurnberg",
+      "name": "1. FC Nürnberg",
+      "value": 44,
+      "display": "44 pts",
+      "wd": "Q15786"
+    },
+    {
+      "id": "vfl-wolfsburg",
+      "name": "VfL Wolfsburg",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q101859"
+    },
+    {
+      "id": "vfb-stuttgart",
+      "name": "VfB Stuttgart",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q4512"
+    },
+    {
+      "id": "mainz-05",
+      "name": "Mainz 05",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q105254"
+    },
+    {
+      "id": "werder-bremen",
+      "name": "Werder Bremen",
+      "value": 34,
+      "display": "34 pts",
+      "aliases": [
+        "Werder",
+        "Bremen"
+      ],
+      "wd": "Q51976"
+    },
+    {
+      "id": "fc-augsburg",
+      "name": "FC Augsburg",
+      "value": 33,
+      "display": "33 pts",
+      "wd": "Q15755"
+    },
+    {
+      "id": "tsg-hoffenheim",
+      "name": "TSG Hoffenheim",
+      "value": 31,
+      "display": "31 pts",
+      "aliases": [
+        "1899 Hoffenheim"
+      ],
+      "wd": "Q22707"
+    },
+    {
+      "id": "fortuna-dusseldorf",
+      "name": "Fortuna Düsseldorf",
+      "value": 30,
+      "display": "30 pts",
+      "wd": "Q151747"
+    },
+    {
+      "id": "greuther-furth",
+      "name": "Greuther Fürth",
+      "value": 21,
+      "display": "21 pts",
+      "wd": "Q153539"
+    }
+  ]
+}

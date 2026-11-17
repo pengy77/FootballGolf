@@ -1,0 +1,186 @@
+{
+  "id": "serie-a-2015-16",
+  "title": "2015–⁠16 Serie A table",
+  "prompt": "place in the 2015–⁠16 Serie A",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "serie-a-table",
+  "season": "2015–16",
+  "tiebreak": "head-to-head points, then head-to-head goal difference",
+  "description": "Final 2015–16 Serie A table: all 20 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2015–16 Serie A",
+    "url": "https://en.wikipedia.org/wiki/2015%E2%80%9316_Serie_A#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "juventus",
+      "name": "Juventus",
+      "value": 91,
+      "display": "91 pts",
+      "aliases": [
+        "Juve"
+      ],
+      "wd": "Q1422"
+    },
+    {
+      "id": "napoli",
+      "name": "Napoli",
+      "value": 82,
+      "display": "82 pts",
+      "aliases": [
+        "SSC Napoli"
+      ],
+      "wd": "Q2641"
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "value": 80,
+      "display": "80 pts",
+      "aliases": [
+        "AS Roma"
+      ],
+      "wd": "Q2739"
+    },
+    {
+      "id": "inter-milan",
+      "name": "Inter Milan",
+      "value": 67,
+      "display": "67 pts",
+      "aliases": [
+        "Inter",
+        "Internazionale"
+      ],
+      "wd": "Q631"
+    },
+    {
+      "id": "fiorentina",
+      "name": "Fiorentina",
+      "value": 64,
+      "display": "64 pts",
+      "wd": "Q2052"
+    },
+    {
+      "id": "sassuolo",
+      "name": "Sassuolo",
+      "value": 61,
+      "display": "61 pts",
+      "wd": "Q8603"
+    },
+    {
+      "id": "ac-milan",
+      "name": "AC Milan",
+      "value": 57,
+      "display": "57 pts",
+      "aliases": [
+        "Milan"
+      ],
+      "wd": "Q1543"
+    },
+    {
+      "id": "lazio",
+      "name": "Lazio",
+      "value": 54,
+      "display": "54 pts",
+      "aliases": [
+        "SS Lazio"
+      ],
+      "wd": "Q2609"
+    },
+    {
+      "id": "chievo",
+      "name": "Chievo",
+      "value": 50,
+      "display": "50 pts",
+      "wd": "Q2037"
+    },
+    {
+      "id": "empoli",
+      "name": "Empoli",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q6703"
+    },
+    {
+      "id": "genoa",
+      "name": "Genoa",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q2074"
+    },
+    {
+      "id": "torino",
+      "name": "Torino",
+      "value": 45,
+      "display": "45 pts",
+      "wd": "Q2768"
+    },
+    {
+      "id": "atalanta",
+      "name": "Atalanta",
+      "value": 45,
+      "display": "45 pts",
+      "wd": "Q1886"
+    },
+    {
+      "id": "bologna",
+      "name": "Bologna",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q1893"
+    },
+    {
+      "id": "sampdoria",
+      "name": "Sampdoria",
+      "value": 40,
+      "display": "40 pts",
+      "wd": "Q1457"
+    },
+    {
+      "id": "palermo",
+      "name": "Palermo",
+      "value": 39,
+      "display": "39 pts",
+      "wd": "Q2674"
+    },
+    {
+      "id": "udinese",
+      "name": "Udinese",
+      "value": 39,
+      "display": "39 pts",
+      "wd": "Q2798"
+    },
+    {
+      "id": "carpi",
+      "name": "Carpi",
+      "value": 38,
+      "display": "38 pts",
+      "wd": "Q610621"
+    },
+    {
+      "id": "frosinone",
+      "name": "Frosinone",
+      "value": 31,
+      "display": "31 pts",
+      "wd": "Q845043"
+    },
+    {
+      "id": "hellas-verona",
+      "name": "Hellas Verona",
+      "value": 28,
+      "display": "28 pts",
+      "wd": "Q8639"
+    }
+  ]
+}

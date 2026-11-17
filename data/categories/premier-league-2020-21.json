@@ -1,0 +1,246 @@
+{
+  "id": "premier-league-2020-21",
+  "title": "2020–⁠21 Premier League table",
+  "prompt": "place in the 2020–⁠21 Premier League",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "premier-league-table",
+  "season": "2020–21",
+  "tiebreak": "goal difference, then goals scored",
+  "description": "Final 2020–21 Premier League table: all 20 clubs in the order they finished.",
+  "tags": [
+    "premier-league",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2020–21 Premier League",
+    "url": "https://en.wikipedia.org/wiki/2020%E2%80%9321_Premier_League#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "manchester-city",
+      "name": "Manchester City",
+      "value": 86,
+      "display": "86 pts",
+      "aliases": [
+        "Man City",
+        "MCFC"
+      ],
+      "wd": "Q50602"
+    },
+    {
+      "id": "manchester-united",
+      "name": "Manchester United",
+      "value": 74,
+      "display": "74 pts",
+      "aliases": [
+        "Man Utd",
+        "Man United",
+        "MUFC"
+      ],
+      "wd": "Q18656"
+    },
+    {
+      "id": "liverpool",
+      "name": "Liverpool",
+      "value": 69,
+      "display": "69 pts",
+      "aliases": [
+        "LFC"
+      ],
+      "wd": "Q1130849"
+    },
+    {
+      "id": "chelsea",
+      "name": "Chelsea",
+      "value": 67,
+      "display": "67 pts",
+      "aliases": [
+        "CFC"
+      ],
+      "wd": "Q9616"
+    },
+    {
+      "id": "leicester-city",
+      "name": "Leicester City",
+      "value": 66,
+      "display": "66 pts",
+      "aliases": [
+        "Leicester",
+        "Foxes"
+      ],
+      "wd": "Q19481"
+    },
+    {
+      "id": "west-ham-united",
+      "name": "West Ham United",
+      "value": 65,
+      "display": "65 pts",
+      "aliases": [
+        "West Ham",
+        "Hammers",
+        "Irons"
+      ],
+      "wd": "Q18747"
+    },
+    {
+      "id": "tottenham-hotspur",
+      "name": "Tottenham Hotspur",
+      "value": 62,
+      "display": "62 pts",
+      "aliases": [
+        "Tottenham",
+        "Spurs",
+        "THFC"
+      ],
+      "wd": "Q18741"
+    },
+    {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "value": 61,
+      "display": "61 pts",
+      "aliases": [
+        "Gunners"
+      ],
+      "wd": "Q9617"
+    },
+    {
+      "id": "leeds-united",
+      "name": "Leeds United",
+      "value": 59,
+      "display": "59 pts",
+      "aliases": [
+        "Leeds",
+        "LUFC"
+      ],
+      "wd": "Q1128631"
+    },
+    {
+      "id": "everton",
+      "name": "Everton",
+      "value": 59,
+      "display": "59 pts",
+      "aliases": [
+        "Toffees"
+      ],
+      "wd": "Q5794"
+    },
+    {
+      "id": "aston-villa",
+      "name": "Aston Villa",
+      "value": 55,
+      "display": "55 pts",
+      "aliases": [
+        "Villa",
+        "AVFC"
+      ],
+      "wd": "Q18711"
+    },
+    {
+      "id": "newcastle-united",
+      "name": "Newcastle United",
+      "value": 45,
+      "display": "45 pts",
+      "aliases": [
+        "Newcastle",
+        "Toon",
+        "Magpies",
+        "NUFC"
+      ],
+      "wd": "Q18716"
+    },
+    {
+      "id": "wolverhampton-wanderers",
+      "name": "Wolverhampton Wanderers",
+      "value": 45,
+      "display": "45 pts",
+      "aliases": [
+        "Wolves",
+        "Wolverhampton"
+      ],
+      "wd": "Q19500"
+    },
+    {
+      "id": "crystal-palace",
+      "name": "Crystal Palace",
+      "value": 44,
+      "display": "44 pts",
+      "aliases": [
+        "Palace",
+        "Eagles"
+      ],
+      "wd": "Q19467"
+    },
+    {
+      "id": "southampton",
+      "name": "Southampton",
+      "value": 43,
+      "display": "43 pts",
+      "aliases": [
+        "Saints"
+      ],
+      "wd": "Q18732"
+    },
+    {
+      "id": "brighton-and-hove-albion",
+      "name": "Brighton & Hove Albion",
+      "value": 41,
+      "display": "41 pts",
+      "aliases": [
+        "Brighton",
+        "Seagulls"
+      ],
+      "wd": "Q19453"
+    },
+    {
+      "id": "burnley",
+      "name": "Burnley",
+      "value": 39,
+      "display": "39 pts",
+      "aliases": [
+        "Clarets"
+      ],
+      "wd": "Q19458"
+    },
+    {
+      "id": "fulham",
+      "name": "Fulham",
+      "value": 28,
+      "display": "28 pts",
+      "aliases": [
+        "Cottagers"
+      ],
+      "wd": "Q18708"
+    },
+    {
+      "id": "west-bromwich-albion",
+      "name": "West Bromwich Albion",
+      "value": 26,
+      "display": "26 pts",
+      "aliases": [
+        "West Brom",
+        "WBA",
+        "Baggies"
+      ],
+      "wd": "Q18744"
+    },
+    {
+      "id": "sheffield-united",
+      "name": "Sheffield United",
+      "value": 23,
+      "display": "23 pts",
+      "aliases": [
+        "Sheff Utd",
+        "Blades"
+      ],
+      "wd": "Q19607"
+    }
+  ]
+}

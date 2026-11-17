@@ -1,0 +1,189 @@
+{
+  "id": "la-liga-2012-13",
+  "title": "2012–⁠13 La Liga table",
+  "prompt": "place in the 2012–⁠13 La Liga",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "la-liga-table",
+  "season": "2012–13",
+  "tiebreak": "head-to-head points, then head-to-head goal difference",
+  "description": "Final 2012–13 La Liga table: all 20 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2012–13 La Liga",
+    "url": "https://en.wikipedia.org/wiki/2012%E2%80%9313_La_Liga#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "value": 100,
+      "display": "100 pts",
+      "aliases": [
+        "Barça",
+        "FC Barcelona"
+      ],
+      "wd": "Q7156"
+    },
+    {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "value": 85,
+      "display": "85 pts",
+      "aliases": [
+        "Real",
+        "Los Blancos"
+      ],
+      "wd": "Q8682"
+    },
+    {
+      "id": "atletico-madrid",
+      "name": "Atlético Madrid",
+      "value": 76,
+      "display": "76 pts",
+      "aliases": [
+        "Atlético",
+        "Atleti"
+      ],
+      "wd": "Q8701"
+    },
+    {
+      "id": "real-sociedad",
+      "name": "Real Sociedad",
+      "value": 66,
+      "display": "66 pts",
+      "wd": "Q10315"
+    },
+    {
+      "id": "valencia",
+      "name": "Valencia",
+      "value": 65,
+      "display": "65 pts",
+      "wd": "Q10333"
+    },
+    {
+      "id": "malaga",
+      "name": "Málaga",
+      "value": 57,
+      "display": "57 pts",
+      "wd": "Q8857"
+    },
+    {
+      "id": "real-betis",
+      "name": "Real Betis",
+      "value": 56,
+      "display": "56 pts",
+      "aliases": [
+        "Betis"
+      ],
+      "wd": "Q8723"
+    },
+    {
+      "id": "rayo-vallecano",
+      "name": "Rayo Vallecano",
+      "value": 53,
+      "display": "53 pts",
+      "wd": "Q10300"
+    },
+    {
+      "id": "sevilla",
+      "name": "Sevilla",
+      "value": 50,
+      "display": "50 pts",
+      "aliases": [
+        "Seville"
+      ],
+      "wd": "Q10329"
+    },
+    {
+      "id": "getafe",
+      "name": "Getafe",
+      "value": 47,
+      "display": "47 pts",
+      "wd": "Q8806"
+    },
+    {
+      "id": "levante",
+      "name": "Levante",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q8823"
+    },
+    {
+      "id": "athletic-bilbao",
+      "name": "Athletic Bilbao",
+      "value": 45,
+      "display": "45 pts",
+      "wd": "Q8687"
+    },
+    {
+      "id": "espanyol",
+      "name": "Espanyol",
+      "value": 44,
+      "display": "44 pts",
+      "wd": "Q8780"
+    },
+    {
+      "id": "valladolid",
+      "name": "Valladolid",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q10319"
+    },
+    {
+      "id": "granada",
+      "name": "Granada",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q8812"
+    },
+    {
+      "id": "osasuna",
+      "name": "Osasuna",
+      "value": 39,
+      "display": "39 pts",
+      "wd": "Q10286"
+    },
+    {
+      "id": "celta-vigo",
+      "name": "Celta Vigo",
+      "value": 37,
+      "display": "37 pts",
+      "wd": "Q8749"
+    },
+    {
+      "id": "mallorca",
+      "name": "Mallorca",
+      "value": 36,
+      "display": "36 pts",
+      "wd": "Q8835"
+    },
+    {
+      "id": "deportivo-la-coruna",
+      "name": "Deportivo La Coruña",
+      "value": 35,
+      "display": "35 pts",
+      "aliases": [
+        "Deportivo",
+        "Depor"
+      ],
+      "wd": "Q8760"
+    },
+    {
+      "id": "zaragoza",
+      "name": "Zaragoza",
+      "value": 34,
+      "display": "34 pts",
+      "wd": "Q10308"
+    }
+  ]
+}

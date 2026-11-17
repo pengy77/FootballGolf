@@ -63,7 +63,7 @@
         "Giuseppe Meazza",
         "Meazza"
       ],
-      "wd": "x-stadium-san-siro"
+      "wd": "Q133566"
     },
     {
       "id": "allianz-arena",
@@ -107,7 +107,7 @@
         "Wanda Metropolitano",
         "Cívitas Metropolitano"
       ],
-      "wd": "x-stadium-estadio-riyadh-air-metropolitano"
+      "wd": "Q1369687"
     },
     {
       "id": "stadio-olimpico",
@@ -217,7 +217,7 @@
         "City of Manchester Stadium",
         "Etihad"
       ],
-      "wd": "x-stadium-etihad-stadium"
+      "wd": "Q48159"
     },
     {
       "id": "emirates-stadium",
@@ -298,7 +298,7 @@
         "Maradona",
         "San Paolo"
       ],
-      "wd": "x-stadium-stadio-diego-armando-maradona"
+      "wd": "Q82709"
     },
     {
       "id": "borussia-park",
@@ -311,7 +311,7 @@
         "Gladbach",
         "Mönchengladbach"
       ],
-      "wd": "x-stadium-borussia-park"
+      "wd": "Q154074"
     },
     {
       "id": "estadio-san-mames",
@@ -340,7 +340,7 @@
         "Everton Stadium",
         "Bramley-Moore Dock"
       ],
-      "wd": "x-stadium-hill-dickinson-stadium"
+      "wd": "Q29347805"
     },
     {
       "id": "st-james-park",
@@ -366,7 +366,7 @@
         "LOSC",
         "Pierre-Mauroy"
       ],
-      "wd": "x-stadium-stade-pierre-mauroy"
+      "wd": "Q1410402"
     },
     {
       "id": "rheinenergiestadion",
@@ -381,7 +381,7 @@
         "FC Köln",
         "Müngersdorfer Stadion"
       ],
-      "wd": "x-stadium-rheinenergiestadion"
+      "wd": "Q151893"
     },
     {
       "id": "camp-de-mestalla",
@@ -405,7 +405,7 @@
       "aliases": [
         "Sunderland"
       ],
-      "wd": "Q7875112"
+      "wd": "Q31969"
     },
     {
       "id": "parc-des-princes",
@@ -417,7 +417,7 @@
         "Paris Saint-Germain",
         "PSG"
       ],
-      "wd": "x-stadium-parc-des-princes"
+      "wd": "Q193431"
     },
     {
       "id": "red-bull-arena",
@@ -700,7 +700,7 @@
         "Elche",
         "Martínez Valero"
       ],
-      "wd": "x-stadium-estadio-martinez-valero"
+      "wd": "Q953600"
     },
     {
       "id": "city-ground",
@@ -812,7 +812,7 @@
         "Torino",
         "Olimpico Grande Torino"
       ],
-      "wd": "x-stadium-stadio-olimpico-grande-torino"
+      "wd": "Q214629"
     },
     {
       "id": "craven-cottage",
@@ -883,7 +883,7 @@
         "Le Mans",
         "MMArena"
       ],
-      "wd": "x-stadium-stade-marie-marvingt"
+      "wd": "Q1862372"
     },
     {
       "id": "mkm-stadium",
@@ -910,7 +910,7 @@
         "Balaídos Stadium",
         "Balaídos"
       ],
-      "wd": "x-stadium-estadio-abanca-balaidos"
+      "wd": "Q1326578"
     },
     {
       "id": "estadio-el-sadar",
@@ -937,7 +937,7 @@
         "Gewiss Stadium",
         "Atleti Azzurri d'Italia"
       ],
-      "wd": "x-stadium-new-balance-arena"
+      "wd": "Q780526"
     },
     {
       "id": "estadio-de-la-ceramica",
@@ -1023,7 +1023,7 @@
         "Paris FC",
         "Jean-Bouin"
       ],
-      "wd": "x-stadium-stade-jean-bouin"
+      "wd": "Q670499"
     },
     {
       "id": "campo-de-futbol-de-mendizorrotza",
@@ -1134,7 +1134,7 @@
         "AS Monaco",
         "Louis II"
       ],
-      "wd": "Q318851"
+      "wd": "Q3446217"
     },
     {
       "id": "stadio-benito-stirpe",
@@ -1222,7 +1222,7 @@
         "Venezia",
         "Penzo"
       ],
-      "wd": "x-stadium-stadio-pier-luigi-penzo"
+      "wd": "Q588926"
     },
     {
       "id": "waldstadion-an-der-kaiserlinde",

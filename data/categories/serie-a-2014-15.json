@@ -1,0 +1,186 @@
+{
+  "id": "serie-a-2014-15",
+  "title": "2014–⁠15 Serie A table",
+  "prompt": "place in the 2014–⁠15 Serie A",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "serie-a-table",
+  "season": "2014–15",
+  "tiebreak": "head-to-head points, then head-to-head goal difference",
+  "description": "Final 2014–15 Serie A table: all 20 clubs in the order they finished. Points include a deduction: Parma −7.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2014–15 Serie A",
+    "url": "https://en.wikipedia.org/wiki/2014%E2%80%9315_Serie_A#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "juventus",
+      "name": "Juventus",
+      "value": 87,
+      "display": "87 pts",
+      "aliases": [
+        "Juve"
+      ],
+      "wd": "Q1422"
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "value": 70,
+      "display": "70 pts",
+      "aliases": [
+        "AS Roma"
+      ],
+      "wd": "Q2739"
+    },
+    {
+      "id": "lazio",
+      "name": "Lazio",
+      "value": 69,
+      "display": "69 pts",
+      "aliases": [
+        "SS Lazio"
+      ],
+      "wd": "Q2609"
+    },
+    {
+      "id": "fiorentina",
+      "name": "Fiorentina",
+      "value": 64,
+      "display": "64 pts",
+      "wd": "Q2052"
+    },
+    {
+      "id": "napoli",
+      "name": "Napoli",
+      "value": 63,
+      "display": "63 pts",
+      "aliases": [
+        "SSC Napoli"
+      ],
+      "wd": "Q2641"
+    },
+    {
+      "id": "genoa",
+      "name": "Genoa",
+      "value": 59,
+      "display": "59 pts",
+      "wd": "Q2074"
+    },
+    {
+      "id": "sampdoria",
+      "name": "Sampdoria",
+      "value": 56,
+      "display": "56 pts",
+      "wd": "Q1457"
+    },
+    {
+      "id": "inter-milan",
+      "name": "Inter Milan",
+      "value": 55,
+      "display": "55 pts",
+      "aliases": [
+        "Inter",
+        "Internazionale"
+      ],
+      "wd": "Q631"
+    },
+    {
+      "id": "torino",
+      "name": "Torino",
+      "value": 54,
+      "display": "54 pts",
+      "wd": "Q2768"
+    },
+    {
+      "id": "ac-milan",
+      "name": "AC Milan",
+      "value": 52,
+      "display": "52 pts",
+      "aliases": [
+        "Milan"
+      ],
+      "wd": "Q1543"
+    },
+    {
+      "id": "palermo",
+      "name": "Palermo",
+      "value": 49,
+      "display": "49 pts",
+      "wd": "Q2674"
+    },
+    {
+      "id": "sassuolo",
+      "name": "Sassuolo",
+      "value": 49,
+      "display": "49 pts",
+      "wd": "Q8603"
+    },
+    {
+      "id": "hellas-verona",
+      "name": "Hellas Verona",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q8639"
+    },
+    {
+      "id": "chievo",
+      "name": "Chievo",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q2037"
+    },
+    {
+      "id": "empoli",
+      "name": "Empoli",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q6703"
+    },
+    {
+      "id": "udinese",
+      "name": "Udinese",
+      "value": 41,
+      "display": "41 pts",
+      "wd": "Q2798"
+    },
+    {
+      "id": "atalanta",
+      "name": "Atalanta",
+      "value": 37,
+      "display": "37 pts",
+      "wd": "Q1886"
+    },
+    {
+      "id": "cagliari",
+      "name": "Cagliari",
+      "value": 34,
+      "display": "34 pts",
+      "wd": "Q1900"
+    },
+    {
+      "id": "cesena",
+      "name": "Cesena",
+      "value": 24,
+      "display": "24 pts",
+      "wd": "Q6664"
+    },
+    {
+      "id": "parma",
+      "name": "Parma",
+      "value": 19,
+      "display": "19 pts",
+      "wd": "Q2693"
+    }
+  ]
+}

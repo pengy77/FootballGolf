@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { buildCategory, CATEGORIES, CATEGORY_BY_ID, LIVE_CATEGORIES, type RawCategory } from './data';
+import { DAILY_HOLES, dailyHoles } from './daily';
+import { buildCategory, CATEGORIES, CATEGORY_BY_ID, drawGroups, LIVE_CATEGORIES, poolSize, type RawCategory } from './data';
 import { exactSuggestion, suggest, type Entity } from './entities';
 import { newCourse, perfectAnswers } from './game';
 import { norm } from './search';
@@ -85,6 +86,84 @@ describe('one clear answer per hole', () => {
     const c = buildCategory({ ...base, items });
     for (const p of c.pins) {
       expect(p).toBeLessThanOrEqual(20);
+    }
+  });
+
+  it('standings never share a place, even level on points or out of points order', () => {
+    // 2nd and 3rd are level (split by head-to-head); 5th has more points than 4th (points per game).
+    const values = [80, 70, 70, 60, 61, ...Array.from({ length: 15 }, (_, i) => 50 - i)];
+    const c = buildCategory({
+      ...base,
+      standings: true,
+      tiebreak: 'head-to-head points',
+      items: values.map((value, i) => ({ id: `c${i}`, name: `C${i}`, value })),
+    });
+    expect(c.items.every((it) => it.lo === it.pos && it.hi === it.pos)).toBe(true);
+    expect(c.pins).toEqual(Array.from({ length: 16 }, (_, i) => i + 2)); // every place from 2nd to 17th
+  });
+});
+
+describe('season tables', () => {
+  const seasonal = LIVE_CATEGORIES.filter((c) => c.series);
+  const seriesOf = (id: string) => CATEGORY_BY_ID.get(id)!.series ?? id;
+
+  it('every season list is official standings with a tiebreak, one file per season', () => {
+    expect(seasonal.length).toBeGreaterThan(0);
+    const seen = new Set<string>();
+    for (const c of seasonal) {
+      expect(c.standings, c.id).toBe(true);
+      expect(c.tiebreak, c.id).toBeTruthy();
+      expect(seen.has(`${c.series}|${c.season}`), c.id).toBe(false);
+      seen.add(`${c.series}|${c.season}`);
+    }
+  });
+
+  it('counts a series once, so a course never deals two seasons of the same table', () => {
+    const groups = drawGroups(LIVE_CATEGORIES);
+    expect(groups.length).toBe(new Set(LIVE_CATEGORIES.map((c) => c.series ?? c.id)).size);
+    expect(poolSize('mixed')).toBe(groups.length);
+    let seasonsDealt = 0;
+    for (let seed = 1; seed <= 300; seed++) {
+      const holes = newCourse('mixed', 9, seeded(seed));
+      expect(new Set(holes.map((h) => seriesOf(h.cat))).size).toBe(holes.length);
+      seasonsDealt += holes.filter((h) => CATEGORY_BY_ID.get(h.cat)!.series).length;
+    }
+    expect(seasonsDealt).toBeGreaterThan(0);
+  });
+
+  it('the daily takes at most one season per series, the same on every run', () => {
+    for (let d = 1; d <= 60; d++) {
+      const key = `202612${String((d % 28) + 1).padStart(2, '0')}`;
+      const holes = dailyHoles(key);
+      expect(holes).toHaveLength(DAILY_HOLES);
+      expect(new Set(holes.map((h) => seriesOf(h.cat))).size).toBe(DAILY_HOLES);
+      expect(dailyHoles(key)).toEqual(holes);
+    }
+  });
+
+  it('a list outside any series keeps its own id as its draw key (so its daily score never changes)', () => {
+    for (const g of drawGroups(LIVE_CATEGORIES)) {
+      if (g.cats.length === 1 && !g.cats[0].series) expect(g.key).toBe(g.cats[0].id);
+      else expect(g.cats.every((c) => c.series === g.key)).toBe(true);
+    }
+  });
+
+  it('a pool without series deals exactly what it did before series existed', () => {
+    const lone = LIVE_CATEGORIES.filter((c) => !c.series);
+    // The old draw: shuffle the lists, then one rand() per hole for the pin.
+    const old = (rand: () => number) => {
+      const cats = [...lone];
+      for (let i = cats.length - 1; i > 0; i--) {
+        const j = Math.floor(rand() * (i + 1));
+        [cats[i], cats[j]] = [cats[j], cats[i]];
+      }
+      return cats.slice(0, 5).map((c) => ({ cat: c.id, target: c.pins[Math.floor(rand() * c.pins.length)] }));
+    };
+    const byId = [...lone].sort((a, b) => (a.id < b.id ? -1 : 1));
+    for (let seed = 1; seed <= 50; seed++) {
+      // drawGroups orders lone lists as given, so compare on the same input order.
+      expect(newCourse('mixed', 5, seeded(seed), lone)).toEqual(old(seeded(seed)));
+      expect(newCourse('mixed', 5, seeded(seed), byId).length).toBe(5);
     }
   });
 });

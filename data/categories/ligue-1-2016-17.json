@@ -1,0 +1,192 @@
+{
+  "id": "ligue-1-2016-17",
+  "title": "2016–⁠17 Ligue 1 table",
+  "prompt": "place in the 2016–⁠17 Ligue 1",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "ligue-1-table",
+  "season": "2016–17",
+  "tiebreak": "goal difference, then goals scored",
+  "description": "Final 2016–17 Ligue 1 table: all 20 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2016–17 Ligue 1",
+    "url": "https://en.wikipedia.org/wiki/2016%E2%80%9317_Ligue_1#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "monaco",
+      "name": "Monaco",
+      "value": 95,
+      "display": "95 pts",
+      "aliases": [
+        "AS Monaco"
+      ],
+      "wd": "Q180305"
+    },
+    {
+      "id": "paris-saint-germain",
+      "name": "Paris Saint-Germain",
+      "value": 87,
+      "display": "87 pts",
+      "aliases": [
+        "PSG",
+        "Paris SG"
+      ],
+      "wd": "Q483020"
+    },
+    {
+      "id": "nice",
+      "name": "Nice",
+      "value": 78,
+      "display": "78 pts",
+      "wd": "Q185163"
+    },
+    {
+      "id": "lyon",
+      "name": "Lyon",
+      "value": 67,
+      "display": "67 pts",
+      "aliases": [
+        "Olympique Lyonnais",
+        "OL"
+      ],
+      "wd": "Q704"
+    },
+    {
+      "id": "marseille",
+      "name": "Marseille",
+      "value": 62,
+      "display": "62 pts",
+      "aliases": [
+        "Olympique de Marseille",
+        "OM"
+      ],
+      "wd": "Q132885"
+    },
+    {
+      "id": "bordeaux",
+      "name": "Bordeaux",
+      "value": 59,
+      "display": "59 pts",
+      "aliases": [
+        "Girondins de Bordeaux"
+      ],
+      "wd": "Q172476"
+    },
+    {
+      "id": "nantes",
+      "name": "Nantes",
+      "value": 51,
+      "display": "51 pts",
+      "wd": "Q192071"
+    },
+    {
+      "id": "saint-etienne",
+      "name": "Saint-Étienne",
+      "value": 50,
+      "display": "50 pts",
+      "aliases": [
+        "ASSE",
+        "St Etienne"
+      ],
+      "wd": "Q19521"
+    },
+    {
+      "id": "rennes",
+      "name": "Rennes",
+      "value": 50,
+      "display": "50 pts",
+      "wd": "Q19509"
+    },
+    {
+      "id": "guingamp",
+      "name": "Guingamp",
+      "value": 50,
+      "display": "50 pts",
+      "wd": "Q459148"
+    },
+    {
+      "id": "lille",
+      "name": "Lille",
+      "value": 46,
+      "display": "46 pts",
+      "aliases": [
+        "LOSC"
+      ],
+      "wd": "Q19516"
+    },
+    {
+      "id": "angers",
+      "name": "Angers",
+      "value": 46,
+      "display": "46 pts",
+      "wd": "Q845137"
+    },
+    {
+      "id": "toulouse",
+      "name": "Toulouse",
+      "value": 44,
+      "display": "44 pts",
+      "wd": "Q19518"
+    },
+    {
+      "id": "metz",
+      "name": "Metz",
+      "value": 43,
+      "display": "43 pts",
+      "wd": "Q221525"
+    },
+    {
+      "id": "montpellier",
+      "name": "Montpellier",
+      "value": 39,
+      "display": "39 pts",
+      "wd": "Q19513"
+    },
+    {
+      "id": "dijon",
+      "name": "Dijon",
+      "value": 37,
+      "display": "37 pts",
+      "wd": "Q503317"
+    },
+    {
+      "id": "caen",
+      "name": "Caen",
+      "value": 37,
+      "display": "37 pts",
+      "wd": "Q193377"
+    },
+    {
+      "id": "lorient",
+      "name": "Lorient",
+      "value": 36,
+      "display": "36 pts",
+      "wd": "Q48911"
+    },
+    {
+      "id": "nancy",
+      "name": "Nancy",
+      "value": 35,
+      "display": "35 pts",
+      "wd": "Q19523"
+    },
+    {
+      "id": "bastia",
+      "name": "Bastia",
+      "value": 34,
+      "display": "34 pts",
+      "wd": "Q208399"
+    }
+  ]
+}

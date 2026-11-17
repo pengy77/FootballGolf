@@ -1,0 +1,246 @@
+{
+  "id": "premier-league-2013-14",
+  "title": "2013–⁠14 Premier League table",
+  "prompt": "place in the 2013–⁠14 Premier League",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "premier-league-table",
+  "season": "2013–14",
+  "tiebreak": "goal difference, then goals scored",
+  "description": "Final 2013–14 Premier League table: all 20 clubs in the order they finished.",
+  "tags": [
+    "premier-league",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2013–14 Premier League",
+    "url": "https://en.wikipedia.org/wiki/2013%E2%80%9314_Premier_League#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "manchester-city",
+      "name": "Manchester City",
+      "value": 86,
+      "display": "86 pts",
+      "aliases": [
+        "Man City",
+        "MCFC"
+      ],
+      "wd": "Q50602"
+    },
+    {
+      "id": "liverpool",
+      "name": "Liverpool",
+      "value": 84,
+      "display": "84 pts",
+      "aliases": [
+        "LFC"
+      ],
+      "wd": "Q1130849"
+    },
+    {
+      "id": "chelsea",
+      "name": "Chelsea",
+      "value": 82,
+      "display": "82 pts",
+      "aliases": [
+        "CFC"
+      ],
+      "wd": "Q9616"
+    },
+    {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "value": 79,
+      "display": "79 pts",
+      "aliases": [
+        "Gunners"
+      ],
+      "wd": "Q9617"
+    },
+    {
+      "id": "everton",
+      "name": "Everton",
+      "value": 72,
+      "display": "72 pts",
+      "aliases": [
+        "Toffees"
+      ],
+      "wd": "Q5794"
+    },
+    {
+      "id": "tottenham-hotspur",
+      "name": "Tottenham Hotspur",
+      "value": 69,
+      "display": "69 pts",
+      "aliases": [
+        "Tottenham",
+        "Spurs",
+        "THFC"
+      ],
+      "wd": "Q18741"
+    },
+    {
+      "id": "manchester-united",
+      "name": "Manchester United",
+      "value": 64,
+      "display": "64 pts",
+      "aliases": [
+        "Man Utd",
+        "Man United",
+        "MUFC"
+      ],
+      "wd": "Q18656"
+    },
+    {
+      "id": "southampton",
+      "name": "Southampton",
+      "value": 56,
+      "display": "56 pts",
+      "aliases": [
+        "Saints"
+      ],
+      "wd": "Q18732"
+    },
+    {
+      "id": "stoke-city",
+      "name": "Stoke City",
+      "value": 50,
+      "display": "50 pts",
+      "aliases": [
+        "Stoke",
+        "Potters"
+      ],
+      "wd": "Q18736"
+    },
+    {
+      "id": "newcastle-united",
+      "name": "Newcastle United",
+      "value": 49,
+      "display": "49 pts",
+      "aliases": [
+        "Newcastle",
+        "Toon",
+        "Magpies",
+        "NUFC"
+      ],
+      "wd": "Q18716"
+    },
+    {
+      "id": "crystal-palace",
+      "name": "Crystal Palace",
+      "value": 45,
+      "display": "45 pts",
+      "aliases": [
+        "Palace",
+        "Eagles"
+      ],
+      "wd": "Q19467"
+    },
+    {
+      "id": "swansea-city",
+      "name": "Swansea City",
+      "value": 42,
+      "display": "42 pts",
+      "aliases": [
+        "Swansea",
+        "Swans"
+      ],
+      "wd": "Q18659"
+    },
+    {
+      "id": "west-ham-united",
+      "name": "West Ham United",
+      "value": 40,
+      "display": "40 pts",
+      "aliases": [
+        "West Ham",
+        "Hammers",
+        "Irons"
+      ],
+      "wd": "Q18747"
+    },
+    {
+      "id": "sunderland",
+      "name": "Sunderland",
+      "value": 38,
+      "display": "38 pts",
+      "aliases": [
+        "Black Cats"
+      ],
+      "wd": "Q18739"
+    },
+    {
+      "id": "aston-villa",
+      "name": "Aston Villa",
+      "value": 38,
+      "display": "38 pts",
+      "aliases": [
+        "Villa",
+        "AVFC"
+      ],
+      "wd": "Q18711"
+    },
+    {
+      "id": "hull-city",
+      "name": "Hull City",
+      "value": 37,
+      "display": "37 pts",
+      "aliases": [
+        "Hull",
+        "Tigers"
+      ],
+      "wd": "Q19477"
+    },
+    {
+      "id": "west-bromwich-albion",
+      "name": "West Bromwich Albion",
+      "value": 36,
+      "display": "36 pts",
+      "aliases": [
+        "West Brom",
+        "WBA",
+        "Baggies"
+      ],
+      "wd": "Q18744"
+    },
+    {
+      "id": "norwich-city",
+      "name": "Norwich City",
+      "value": 33,
+      "display": "33 pts",
+      "aliases": [
+        "Norwich",
+        "Canaries"
+      ],
+      "wd": "Q18721"
+    },
+    {
+      "id": "fulham",
+      "name": "Fulham",
+      "value": 32,
+      "display": "32 pts",
+      "aliases": [
+        "Cottagers"
+      ],
+      "wd": "Q18708"
+    },
+    {
+      "id": "cardiff-city",
+      "name": "Cardiff City",
+      "value": 30,
+      "display": "30 pts",
+      "aliases": [
+        "Cardiff",
+        "Bluebirds"
+      ],
+      "wd": "Q18662"
+    }
+  ]
+}

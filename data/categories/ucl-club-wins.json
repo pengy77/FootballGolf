@@ -51,7 +51,7 @@
         "Barça",
         "FC Barcelona"
       ],
-      "wd": "Q248782"
+      "wd": "Q7156"
     },
     {
       "id": "manchester-united",
@@ -170,7 +170,7 @@
       "name": "Chelsea",
       "sub": "England",
       "value": 104,
-      "wd": "x-club-chelsea"
+      "wd": "Q9616"
     },
     {
       "id": "borussia-dortmund",
@@ -258,7 +258,7 @@
       "aliases": [
         "Olympiakos"
       ],
-      "wd": "x-club-olympiacos"
+      "wd": "Q19628"
     },
     {
       "id": "rangers",
@@ -473,7 +473,7 @@
       "aliases": [
         "Legia"
       ],
-      "wd": "x-club-legia-warsaw"
+      "wd": "Q193749"
     },
     {
       "id": "malmo-ff",
@@ -589,7 +589,7 @@
       "aliases": [
         "APOEL Nicosia"
       ],
-      "wd": "x-club-apoel"
+      "wd": "Q131378"
     },
     {
       "id": "sevilla",
@@ -679,7 +679,7 @@
         "Deportivo",
         "Depor"
       ],
-      "wd": "x-club-deportivo-la-coruna"
+      "wd": "Q8760"
     },
     {
       "id": "austria-wien",
@@ -837,7 +837,7 @@
       "aliases": [
         "AEK"
       ],
-      "wd": "x-club-aek-athens"
+      "wd": "Q201584"
     },
     {
       "id": "hamburger-sv",

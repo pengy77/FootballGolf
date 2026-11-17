@@ -1,0 +1,175 @@
+{
+  "id": "ligue-1-2024-25",
+  "title": "2024–⁠25 Ligue 1 table",
+  "prompt": "place in the 2024–⁠25 Ligue 1",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "ligue-1-table",
+  "season": "2024–25",
+  "tiebreak": "goal difference, then head-to-head points",
+  "description": "Final 2024–25 Ligue 1 table: all 18 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2024–25 Ligue 1",
+    "url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Ligue_1#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "paris-saint-germain",
+      "name": "Paris Saint-Germain",
+      "value": 84,
+      "display": "84 pts",
+      "aliases": [
+        "PSG",
+        "Paris SG"
+      ],
+      "wd": "Q483020"
+    },
+    {
+      "id": "marseille",
+      "name": "Marseille",
+      "value": 65,
+      "display": "65 pts",
+      "aliases": [
+        "Olympique de Marseille",
+        "OM"
+      ],
+      "wd": "Q132885"
+    },
+    {
+      "id": "monaco",
+      "name": "Monaco",
+      "value": 61,
+      "display": "61 pts",
+      "aliases": [
+        "AS Monaco"
+      ],
+      "wd": "Q180305"
+    },
+    {
+      "id": "nice",
+      "name": "Nice",
+      "value": 60,
+      "display": "60 pts",
+      "wd": "Q185163"
+    },
+    {
+      "id": "lille",
+      "name": "Lille",
+      "value": 60,
+      "display": "60 pts",
+      "aliases": [
+        "LOSC"
+      ],
+      "wd": "Q19516"
+    },
+    {
+      "id": "lyon",
+      "name": "Lyon",
+      "value": 57,
+      "display": "57 pts",
+      "aliases": [
+        "Olympique Lyonnais",
+        "OL"
+      ],
+      "wd": "Q704"
+    },
+    {
+      "id": "strasbourg",
+      "name": "Strasbourg",
+      "value": 57,
+      "display": "57 pts",
+      "wd": "Q126334"
+    },
+    {
+      "id": "lens",
+      "name": "Lens",
+      "value": 52,
+      "display": "52 pts",
+      "wd": "Q191843"
+    },
+    {
+      "id": "brest",
+      "name": "Brest",
+      "value": 50,
+      "display": "50 pts",
+      "wd": "Q218372"
+    },
+    {
+      "id": "toulouse",
+      "name": "Toulouse",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q19518"
+    },
+    {
+      "id": "auxerre",
+      "name": "Auxerre",
+      "value": 42,
+      "display": "42 pts",
+      "wd": "Q182876"
+    },
+    {
+      "id": "rennes",
+      "name": "Rennes",
+      "value": 41,
+      "display": "41 pts",
+      "wd": "Q19509"
+    },
+    {
+      "id": "nantes",
+      "name": "Nantes",
+      "value": 36,
+      "display": "36 pts",
+      "wd": "Q192071"
+    },
+    {
+      "id": "angers",
+      "name": "Angers",
+      "value": 36,
+      "display": "36 pts",
+      "wd": "Q845137"
+    },
+    {
+      "id": "le-havre",
+      "name": "Le Havre",
+      "value": 34,
+      "display": "34 pts",
+      "wd": "Q328658"
+    },
+    {
+      "id": "reims",
+      "name": "Reims",
+      "value": 33,
+      "display": "33 pts",
+      "wd": "Q208228"
+    },
+    {
+      "id": "saint-etienne",
+      "name": "Saint-Étienne",
+      "value": 30,
+      "display": "30 pts",
+      "aliases": [
+        "ASSE",
+        "St Etienne"
+      ],
+      "wd": "Q19521"
+    },
+    {
+      "id": "montpellier",
+      "name": "Montpellier",
+      "value": 16,
+      "display": "16 pts",
+      "wd": "Q19513"
+    }
+  ]
+}

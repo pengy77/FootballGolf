@@ -1,0 +1,192 @@
+{
+  "id": "ligue-1-2019-20",
+  "title": "2019–⁠20 Ligue 1 table",
+  "prompt": "place in the 2019–⁠20 Ligue 1",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points per game",
+  "order": "desc",
+  "standings": true,
+  "series": "ligue-1-table",
+  "season": "2019–20",
+  "tiebreak": "head-to-head points, then head-to-head goal difference",
+  "description": "Final 2019–20 Ligue 1 table: all 20 clubs in the order they finished. The season was stopped early, so places were decided by points per game.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2019–20 Ligue 1",
+    "url": "https://en.wikipedia.org/wiki/2019%E2%80%9320_Ligue_1#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "paris-saint-germain",
+      "name": "Paris Saint-Germain",
+      "value": 68,
+      "display": "68 pts (27 played)",
+      "aliases": [
+        "PSG",
+        "Paris SG"
+      ],
+      "wd": "Q483020"
+    },
+    {
+      "id": "marseille",
+      "name": "Marseille",
+      "value": 56,
+      "display": "56 pts (28 played)",
+      "aliases": [
+        "Olympique de Marseille",
+        "OM"
+      ],
+      "wd": "Q132885"
+    },
+    {
+      "id": "rennes",
+      "name": "Rennes",
+      "value": 50,
+      "display": "50 pts (28 played)",
+      "wd": "Q19509"
+    },
+    {
+      "id": "lille",
+      "name": "Lille",
+      "value": 49,
+      "display": "49 pts (28 played)",
+      "aliases": [
+        "LOSC"
+      ],
+      "wd": "Q19516"
+    },
+    {
+      "id": "nice",
+      "name": "Nice",
+      "value": 41,
+      "display": "41 pts (28 played)",
+      "wd": "Q185163"
+    },
+    {
+      "id": "reims",
+      "name": "Reims",
+      "value": 41,
+      "display": "41 pts (28 played)",
+      "wd": "Q208228"
+    },
+    {
+      "id": "lyon",
+      "name": "Lyon",
+      "value": 40,
+      "display": "40 pts (28 played)",
+      "aliases": [
+        "Olympique Lyonnais",
+        "OL"
+      ],
+      "wd": "Q704"
+    },
+    {
+      "id": "montpellier",
+      "name": "Montpellier",
+      "value": 40,
+      "display": "40 pts (28 played)",
+      "wd": "Q19513"
+    },
+    {
+      "id": "monaco",
+      "name": "Monaco",
+      "value": 40,
+      "display": "40 pts (28 played)",
+      "aliases": [
+        "AS Monaco"
+      ],
+      "wd": "Q180305"
+    },
+    {
+      "id": "strasbourg",
+      "name": "Strasbourg",
+      "value": 38,
+      "display": "38 pts (27 played)",
+      "wd": "Q126334"
+    },
+    {
+      "id": "angers",
+      "name": "Angers",
+      "value": 39,
+      "display": "39 pts (28 played)",
+      "wd": "Q845137"
+    },
+    {
+      "id": "bordeaux",
+      "name": "Bordeaux",
+      "value": 37,
+      "display": "37 pts (28 played)",
+      "aliases": [
+        "Girondins de Bordeaux"
+      ],
+      "wd": "Q172476"
+    },
+    {
+      "id": "nantes",
+      "name": "Nantes",
+      "value": 37,
+      "display": "37 pts (28 played)",
+      "wd": "Q192071"
+    },
+    {
+      "id": "brest",
+      "name": "Brest",
+      "value": 34,
+      "display": "34 pts (28 played)",
+      "wd": "Q218372"
+    },
+    {
+      "id": "metz",
+      "name": "Metz",
+      "value": 34,
+      "display": "34 pts (28 played)",
+      "wd": "Q221525"
+    },
+    {
+      "id": "dijon",
+      "name": "Dijon",
+      "value": 30,
+      "display": "30 pts (28 played)",
+      "wd": "Q503317"
+    },
+    {
+      "id": "saint-etienne",
+      "name": "Saint-Étienne",
+      "value": 30,
+      "display": "30 pts (28 played)",
+      "aliases": [
+        "ASSE",
+        "St Etienne"
+      ],
+      "wd": "Q19521"
+    },
+    {
+      "id": "nimes",
+      "name": "Nîmes",
+      "value": 27,
+      "display": "27 pts (28 played)",
+      "wd": "Q730809"
+    },
+    {
+      "id": "amiens",
+      "name": "Amiens",
+      "value": 23,
+      "display": "23 pts (28 played)",
+      "wd": "Q866884"
+    },
+    {
+      "id": "toulouse",
+      "name": "Toulouse",
+      "value": 13,
+      "display": "13 pts (28 played)",
+      "wd": "Q19518"
+    }
+  ]
+}

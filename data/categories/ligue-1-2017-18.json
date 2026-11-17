@@ -1,0 +1,192 @@
+{
+  "id": "ligue-1-2017-18",
+  "title": "2017–⁠18 Ligue 1 table",
+  "prompt": "place in the 2017–⁠18 Ligue 1",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Points",
+  "order": "desc",
+  "standings": true,
+  "series": "ligue-1-table",
+  "season": "2017–18",
+  "tiebreak": "goal difference, then head-to-head points",
+  "description": "Final 2017–18 Ligue 1 table: all 20 clubs in the order they finished.",
+  "tags": [
+    "europe",
+    "clubs",
+    "seasons"
+  ],
+  "source": {
+    "name": "Wikipedia: 2017–18 Ligue 1",
+    "url": "https://en.wikipedia.org/wiki/2017%E2%80%9318_Ligue_1#League_table",
+    "asOf": "2026-11-16"
+  },
+  "items": [
+    {
+      "id": "paris-saint-germain",
+      "name": "Paris Saint-Germain",
+      "value": 93,
+      "display": "93 pts",
+      "aliases": [
+        "PSG",
+        "Paris SG"
+      ],
+      "wd": "Q483020"
+    },
+    {
+      "id": "monaco",
+      "name": "Monaco",
+      "value": 80,
+      "display": "80 pts",
+      "aliases": [
+        "AS Monaco"
+      ],
+      "wd": "Q180305"
+    },
+    {
+      "id": "lyon",
+      "name": "Lyon",
+      "value": 78,
+      "display": "78 pts",
+      "aliases": [
+        "Olympique Lyonnais",
+        "OL"
+      ],
+      "wd": "Q704"
+    },
+    {
+      "id": "marseille",
+      "name": "Marseille",
+      "value": 77,
+      "display": "77 pts",
+      "aliases": [
+        "Olympique de Marseille",
+        "OM"
+      ],
+      "wd": "Q132885"
+    },
+    {
+      "id": "rennes",
+      "name": "Rennes",
+      "value": 58,
+      "display": "58 pts",
+      "wd": "Q19509"
+    },
+    {
+      "id": "bordeaux",
+      "name": "Bordeaux",
+      "value": 55,
+      "display": "55 pts",
+      "aliases": [
+        "Girondins de Bordeaux"
+      ],
+      "wd": "Q172476"
+    },
+    {
+      "id": "saint-etienne",
+      "name": "Saint-Étienne",
+      "value": 55,
+      "display": "55 pts",
+      "aliases": [
+        "ASSE",
+        "St Etienne"
+      ],
+      "wd": "Q19521"
+    },
+    {
+      "id": "nice",
+      "name": "Nice",
+      "value": 54,
+      "display": "54 pts",
+      "wd": "Q185163"
+    },
+    {
+      "id": "nantes",
+      "name": "Nantes",
+      "value": 52,
+      "display": "52 pts",
+      "wd": "Q192071"
+    },
+    {
+      "id": "montpellier",
+      "name": "Montpellier",
+      "value": 51,
+      "display": "51 pts",
+      "wd": "Q19513"
+    },
+    {
+      "id": "dijon",
+      "name": "Dijon",
+      "value": 48,
+      "display": "48 pts",
+      "wd": "Q503317"
+    },
+    {
+      "id": "guingamp",
+      "name": "Guingamp",
+      "value": 47,
+      "display": "47 pts",
+      "wd": "Q459148"
+    },
+    {
+      "id": "amiens",
+      "name": "Amiens",
+      "value": 45,
+      "display": "45 pts",
+      "wd": "Q866884"
+    },
+    {
+      "id": "angers",
+      "name": "Angers",
+      "value": 41,
+      "display": "41 pts",
+      "wd": "Q845137"
+    },
+    {
+      "id": "strasbourg",
+      "name": "Strasbourg",
+      "value": 38,
+      "display": "38 pts",
+      "wd": "Q126334"
+    },
+    {
+      "id": "caen",
+      "name": "Caen",
+      "value": 38,
+      "display": "38 pts",
+      "wd": "Q193377"
+    },
+    {
+      "id": "lille",
+      "name": "Lille",
+      "value": 38,
+      "display": "38 pts",
+      "aliases": [
+        "LOSC"
+      ],
+      "wd": "Q19516"
+    },
+    {
+      "id": "toulouse",
+      "name": "Toulouse",
+      "value": 37,
+      "display": "37 pts",
+      "wd": "Q19518"
+    },
+    {
+      "id": "troyes",
+      "name": "Troyes",
+      "value": 33,
+      "display": "33 pts",
+      "wd": "Q501693"
+    },
+    {
+      "id": "metz",
+      "name": "Metz",
+      "value": 26,
+      "display": "26 pts",
+      "wd": "Q221525"
+    }
+  ]
+}

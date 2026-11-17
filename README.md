@@ -42,6 +42,15 @@ Every ranked list lives in `data/categories/<id>.json` (schema enforced by `scri
 - **One clear answer per hole.** A target ("pin") only ever lands on a place exactly one entry holds, never inside a tie and never on a 0. Every live list needs at least 12 such places in its target range. Where an official tiebreak exists (league tables: goal difference, then goals scored), put it in `tiebreak` and each item's `tb`.
 - **`kind`** (`player`, `manager`, `club`, `stadium` or `nation`) says what an answer is. The pick box searches every known entity of that kind, not just the list, so a suggestion never gives away whether a name is on the list.
 - **`retired: true`** takes a list out of new courses but keeps old links scoring.
+- **Season tables** (`standings: true`, `series`, `season`) are one league's final table for one season, e.g. `serie-a-2015-16.json` in series `serie-a-table`. Items are in official finishing order, so every club holds its own place even when level on points; `tiebreak` says how level clubs were split. A course or daily draws a series once (like a single list), then one season from it, so a round never has two seasons of the same table.
+
+Season tables for the top five leagues from 2010–11 to the last finished season are generated from each season's Wikipedia article:
+
+```bash
+node scripts/build-season-tables.mjs           # fetch (cached in .cache/wikipedia/) and write the tables
+node scripts/build-entities.mjs                # link the clubs
+node scripts/build-season-tables.mjs --check   # confirm each club linked to the club its Wikipedia table links to
+```
 
 The search database lives in `data/entities/` and comes from Wikidata (CC0): about 35k players, plus managers, clubs, grounds and nations. Each list entry links to its entity through `wd`. To add a list, drop in a new JSON file, then run:
 

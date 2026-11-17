@@ -83,7 +83,7 @@
         "Etihad",
         "City of Manchester Stadium"
       ],
-      "wd": "x-stadium-etihad-stadium"
+      "wd": "Q48159"
     },
     {
       "id": "emirates-stadium",
@@ -110,7 +110,7 @@
         "Bramley-Moore Dock",
         "Toffees"
       ],
-      "wd": "x-stadium-hill-dickinson-stadium"
+      "wd": "Q29347805"
     },
     {
       "id": "st-james-park",
@@ -135,7 +135,7 @@
       "aliases": [
         "Sunderland"
       ],
-      "wd": "Q7875112"
+      "wd": "Q31969"
     },
     {
       "id": "villa-park",
@@ -640,7 +640,7 @@
         "Queens Park Rangers",
         "QPR"
       ],
-      "wd": "x-stadium-loftus-road"
+      "wd": "Q31670"
     },
     {
       "id": "home-park",
@@ -901,7 +901,7 @@
         "Crewe",
         "Mornflake Stadium"
       ],
-      "wd": "x-stadium-gresty-road"
+      "wd": "Q389544"
     },
     {
       "id": "colchester-community-stadium",
@@ -1026,7 +1026,7 @@
         "Exeter",
         "St James Park Exeter"
       ],
-      "wd": "x-stadium-st-james-park-exeter-city"
+      "wd": "Q191774"
     },
     {
       "id": "york-community-stadium",
@@ -1039,7 +1039,7 @@
         "York",
         "LNER Community Stadium"
       ],
-      "wd": "x-stadium-york-community-stadium"
+      "wd": "Q20876317"
     },
     {
       "id": "sixfields-stadium",
