@@ -7,6 +7,7 @@ import { asGame, canStart, MIN_PLAYERS, onlineInRound, type LiveState } from '..
 import { parseRoomCode, roomUrl } from '../live/rooms';
 import { useRoom, type RoomApi } from '../live/useRoom';
 import { Ball, BALL_FILL, HeroArt, Trophy } from '../components/art';
+import { BallRow } from '../components/BallRow';
 import { Confetti } from '../components/Confetti';
 import { Course, wholeList } from '../components/Course';
 import { HoleCard } from '../components/HoleCard';
@@ -602,7 +603,7 @@ function LiveReveal({ room, s }: { room: RoomApi; s: LiveState }) {
 /* ---------- full time ---------- */
 
 function Final({ room, s }: { room: RoomApi; s: LiveState }) {
-  const { go, toast } = useApp();
+  const { toast } = useApp();
   const me = room.rec.playerId;
   const game = useMemo(() => asGame(s, room.rec.id, me), [s, room.rec.id, me]);
   const all = s.inRound.map((_, i) => i);
@@ -635,34 +636,27 @@ function Final({ room, s }: { room: RoomApi; s: LiveState }) {
       <LiveTop label="Full time" />
       <ConnNote room={room} s={s} />
       <section className="final">
-        <Trophy size={52} />
+        <Trophy size={44} />
         <p className={`final-big is-name${winners.length === 1 && winnerName.length > 7 ? ' is-long' : ''}`}>
           {winners.length > 1 ? 'All square' : iWon ? 'You win!' : `${winnerName} wins`}
         </p>
-        <ol className="duel">
-          {st.map((x) => (
-            <li key={x.index} className={x.place === 1 ? 'is-win' : undefined}>
-              <Ball size={22} fill={BALL_FILL[x.index % BALL_FILL.length]} />
-              <span className="duel-name">
-                {game.players[x.index].name}
-                {x.index === game.me ? ' (you)' : ''}
-              </span>
-              <b>{x.total}</b>
-            </li>
-          ))}
-        </ol>
-      </section>
-
-      <Scorecard game={game} players={st.map((x) => x.index)} />
-
-      <div className="end-actions">
+        <BallRow
+          big={game.me !== null}
+          entries={st.map((x) => ({
+            key: x.index,
+            name: game.players[x.index].name,
+            total: x.total,
+            fill: BALL_FILL[x.index % BALL_FILL.length],
+            you: x.index === game.me,
+            lead: winners.length === 1 && x.place === 1,
+          }))}
+        />
         <button type="button" className="btn btn-secondary btn-block" onClick={shareResult}>
           {Icons.share} Share the result
         </button>
-        <button type="button" className="btn btn-ghost btn-block" onClick={() => go('/')}>
-          Home
-        </button>
-      </div>
+      </section>
+
+      <Scorecard game={game} players={st.map((x) => x.index)} />
 
       <div className="sticky-cta">
         {isHost ? (

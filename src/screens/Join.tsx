@@ -4,7 +4,8 @@ import { COURSES } from '../lib/data';
 import { cleanName, donePlayers, isDone, isPlayable, MAX_LINK_PLAYERS, NAME_MAX, sameName } from '../lib/game';
 import { findGame } from '../lib/store';
 import { dailyLabel } from '../lib/daily';
-import { Ball, BALL_FILL, HeroArt } from '../components/art';
+import { BALL_FILL } from '../components/art';
+import { CourseMap } from '../components/CourseMap';
 import { Icons, IconButton, Tag, TopBar } from '../components/ui';
 import Message from './Message';
 
@@ -62,8 +63,45 @@ export default function Join({ id }: { id: string }) {
     go(`/play/${id}`, { replace: true });
   };
 
+  const title = done.length === 0 ? 'Fancy a round?' : done.length === 1 ? `${doneNames[0]} challenged you` : `${listNames(doneNames)} have played`;
+
+  // The shot button on the first tee: your name in it if we don't know you yet.
+  const cta =
+    claim !== null ? undefined : editing ? (
+      <form
+        className="cm-name"
+        onSubmit={(e) => {
+          e.preventDefault();
+          teeOff();
+        }}
+      >
+        <input
+          id="join-name"
+          className={`input${error ? ' is-error' : ''}`}
+          value={name}
+          maxLength={NAME_MAX}
+          placeholder="Your name"
+          aria-label="Your name"
+          autoCapitalize="words"
+          autoComplete="nickname"
+          enterKeyHint="go"
+          onChange={(e) => {
+            setNameInput(e.target.value);
+            setError('');
+          }}
+        />
+        <button type="submit" className="btn btn-primary">
+          Tee off
+        </button>
+      </form>
+    ) : (
+      <button type="button" className="btn btn-primary cm-go" onClick={teeOff}>
+        Tee off <span aria-hidden="true">›</span>
+      </button>
+    );
+
   return (
-    <main className="screen join">
+    <main className="screen join is-course">
       <TopBar
         left={
           <IconButton label="Home" onClick={() => go('/')}>
@@ -76,111 +114,64 @@ export default function Join({ id }: { id: string }) {
           </IconButton>
         }
       />
-      <div className="join-hero">
-        {done.length > 0 ? (
-          <div className="versus" aria-hidden="true">
-            {done.slice(0, 3).map((i) => (
-              <span key={i} className="vs-ball">
-                <Ball size={done.length > 1 ? 44 : 60} fill={BALL_FILL[i % BALL_FILL.length]} />
-                <small>{game.players[i].name}</small>
-              </span>
-            ))}
-            <span className="vs-v">v</span>
-            <span className="vs-ball is-you">
-              <span className="vs-q">?</span>
-              <small>You</small>
-            </span>
-          </div>
-        ) : (
-          <HeroArt />
-        )}
+      <div className="join-head">
         <p className="kicker">
           {course} · {game.holes.length} holes
         </p>
-        <h1 className="join-title">
-          {done.length === 0 ? 'Fancy a round?' : done.length === 1 ? `${doneNames[0]} challenged you` : `${listNames(doneNames)} have played`}
-        </h1>
-      </div>
-
-      {done.length >= 2 && claim === null && (
-        <div className="who-buttons" aria-label="Already played?">
-          {done.map((i) => (
-            <button key={i} type="button" className="btn btn-secondary who-btn" onClick={() => claimCard(i)}>
-              I'm <Tag name={game.players[i].name} index={i} small />
-            </button>
-          ))}
-        </div>
-      )}
-
-      <form
-        className="join-form"
-        onSubmit={(e) => {
-          e.preventDefault();
-          teeOff();
-        }}
-      >
-        {claim !== null ? (
+        <h1 className="join-title">{title}</h1>
+        {!editing && claim === null && (
+          <button type="button" className="link-btn not-me" onClick={() => setEditing(true)}>
+            Not {saved.name}?
+          </button>
+        )}
+        {error && (
+          <p className="field-error" role="alert">
+            {error}
+          </p>
+        )}
+        {done.length >= 2 && claim === null && (
+          <div className="who-buttons" aria-label="Already played?">
+            {done.map((i) => (
+              <button key={i} type="button" className="btn btn-secondary who-btn" onClick={() => claimCard(i)}>
+                I'm <Tag name={game.players[i].name} index={i} small />
+              </button>
+            ))}
+          </div>
+        )}
+        {claim !== null && (
           <div className="claim" role="alert">
             <p>
               <b>{game.players[claim].name}</b> has already played this. Is that you?
             </p>
-            <button type="button" className="btn btn-primary btn-block" onClick={() => claimCard(claim)}>
-              Yes, show my card
-            </button>
-            <button
-              type="button"
-              className="btn btn-secondary btn-block"
-              onClick={() => {
-                setClaim(null);
-                setNameInput('');
-                setEditing(true);
-              }}
-            >
-              No, use another name
-            </button>
+            <div className="row">
+              <button
+                type="button"
+                className="btn btn-secondary"
+                onClick={() => {
+                  setClaim(null);
+                  setNameInput('');
+                  setEditing(true);
+                }}
+              >
+                No
+              </button>
+              <button type="button" className="btn btn-primary" onClick={() => claimCard(claim)}>
+                Yes, my card
+              </button>
+            </div>
           </div>
-        ) : editing ? (
-          <>
-            <input
-              id="join-name"
-              className={`input${error ? ' is-error' : ''}`}
-              value={name}
-              maxLength={NAME_MAX}
-              placeholder="Your name"
-              aria-label="Your name"
-              autoCapitalize="words"
-              autoComplete="nickname"
-              enterKeyHint="go"
-              onChange={(e) => {
-                setNameInput(e.target.value);
-                setError('');
-              }}
-            />
-            {error && (
-              <p className="field-error" role="alert">
-                {error}
-              </p>
-            )}
-            <button type="submit" className="btn btn-primary btn-block btn-lg">
-              Tee off
-            </button>
-          </>
-        ) : (
-          <>
-            {error && (
-              <p className="field-error" role="alert">
-                {error}
-              </p>
-            )}
-            <button type="submit" className="btn btn-primary btn-block btn-lg">
-              Tee off as {saved.name}
-            </button>
-            <button type="button" className="link-btn not-me" onClick={() => setEditing(true)}>
-              Not {saved.name}?
-            </button>
-          </>
         )}
-      </form>
+      </div>
+
+      <CourseMap
+        count={game.holes.length}
+        at={0}
+        marks={[]}
+        cta={cta}
+        onBall={editing || claim !== null ? undefined : teeOff}
+        others={done.map((i) => ({ key: i, fill: BALL_FILL[i % BALL_FILL.length], name: game.players[i].name }))}
+        label={`${game.holes.length} holes${done.length ? `, ${listNames(doneNames)} already round` : ''}`}
+      />
 
       {done.length > 0 && (
         <div className="join-spectate">

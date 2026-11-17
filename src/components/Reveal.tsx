@@ -7,6 +7,7 @@ import { Confetti } from './Confetti';
 import { Course, framing, scale, terrainFor, wholeList, type Terrain, type YScale } from './Course';
 import { HoleCard } from './HoleCard';
 import { HoleSheet } from './HoleSheet';
+import { markOf } from './Scorecard';
 import { TEE_Y, teeX } from './Tee';
 import { Icons } from './ui';
 
@@ -473,7 +474,8 @@ function ScoreBar({
       <div className="scorebar is-solo" aria-label="Your card">
         <ol className="sb-holes">
           {game.holes.map((hh, k) => {
-            const v = k < hole || (k === hole && scored) ? holeResult(hh, game.players[p].picks[k] ?? null).strokes : null;
+            const r = k < hole || (k === hole && scored) ? holeResult(hh, game.players[p].picks[k] ?? null) : null;
+            const v = r ? r.strokes : null;
             return (
               <li
                 key={k}
@@ -487,7 +489,9 @@ function ScoreBar({
                 className={`${k === hole ? 'is-now' : ''}${v !== null ? ' is-filled' : ''}${v === 0 ? ' is-ace' : ''}`}
               >
                 <small>{k + 1}</small>
-                <b key={v === null ? 'e' : 'v'}>{v ?? ''}</b>
+                <span className={`csc-s ${r ? markOf(r) : ''}`}>
+                  <i key={v === null ? 'e' : 'v'}>{v ?? ''}</i>
+                </span>
               </li>
             );
           })}

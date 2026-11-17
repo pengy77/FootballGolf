@@ -498,25 +498,46 @@ p {
   }
 }
 
-/* ---------- home ---------- */
+/* ---------- home: today's course ---------- */
 
+/* The first screenful is the stage: the top bar, today's course and the other ways to play. Your
+   games follow under it, with a sliver of the first one showing so they're easy to find. */
 .home {
-  gap: 18px;
-  padding-bottom: calc(28px + env(safe-area-inset-bottom));
+  gap: 0;
+  padding-bottom: 0;
+}
+
+.home.has-recent {
+  padding-bottom: calc(24px + env(safe-area-inset-bottom));
+}
+
+.home-stage {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 100vh;
+  height: 100svh;
+  min-height: 560px;
+  max-height: 960px;
+}
+
+.home.has-recent .home-stage {
+  height: calc(100svh - 30px);
 }
 
 .home-top {
+  flex: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: calc(10px + env(safe-area-inset-top));
+  padding-top: calc(8px + env(safe-area-inset-top));
 }
 
 .wordmark {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font: 400 26px/1 var(--display);
+  gap: 9px;
+  font: 400 22px/1 var(--display);
   text-transform: uppercase;
   letter-spacing: 0.01em;
 }
@@ -588,140 +609,566 @@ p {
   }
 }
 
-.daily {
+.today {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.today-head {
+  flex: none;
   display: grid;
   justify-items: center;
-  gap: 14px;
-  text-align: center;
-  margin-top: -6px;
-}
-
-.daily .hero-art {
-  margin-bottom: -6px;
-}
-
-.daily-kicker {
-  display: grid;
   gap: 4px;
-  font: 400 46px/0.95 var(--display);
+  text-align: center;
+  animation: rise-in 0.35s ease-out both;
+}
+
+.today-title {
+  font: 400 46px/0.92 var(--display);
   text-transform: uppercase;
 }
 
-.daily-kicker span {
+.today-date {
   font: 800 13px/1 var(--cond);
   letter-spacing: 0.16em;
+  text-transform: uppercase;
   color: var(--dim);
 }
 
-.daily-holes {
+.today-rival {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 6px;
+  font: 800 15px/1 var(--cond);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--yellow);
+}
+
+.today-rival svg:not(:first-child) {
+  margin-left: -9px;
+}
+
+.today-head.is-played {
+  gap: 10px;
+  padding-top: 2px;
+}
+
+.today-versus {
+  margin-top: -2px;
+  font: 400 24px/1 var(--display);
+  text-transform: uppercase;
+}
+
+.today-head .share-row {
+  width: 100%;
+  max-width: 440px;
+}
+
+.today-next {
   display: flex;
-  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font: 700 13px/1 var(--cond);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.today-next .link-btn {
+  color: #fff;
+  padding: 4px 2px;
+}
+
+/* ---------- the course map ---------- */
+
+.cmap {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 210px;
+  margin: 0 -16px;
+}
+
+.cm-art {
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+}
+
+.cm-edge,
+.cm-rough,
+.cm-fairway,
+.cm-mow {
+  fill: none;
+  stroke-linecap: round;
+}
+
+.cm-edge {
+  stroke: rgba(5, 24, 11, 0.8);
+}
+
+.cm-rough {
+  stroke: #2f7d38;
+}
+
+.cm-fairway {
+  stroke: #58b34c;
+}
+
+.cm-mow {
+  stroke: #64bf57;
+  stroke-linecap: butt;
+}
+
+.cm-green {
+  fill: #9be283;
+  stroke: var(--ink);
+  stroke-width: 2.2;
+}
+
+.cm-sand {
+  fill: #ecd59a;
+  stroke: rgba(12, 31, 18, 0.55);
+  stroke-width: 1.6;
+}
+
+.cm-tee {
+  fill: #74c966;
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+
+.cm-cup {
+  fill: var(--ink);
+}
+
+.cm-pole {
+  stroke: #fff;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+}
+
+.cm-pennant {
+  fill: var(--yellow);
+  stroke: var(--ink);
+  stroke-width: 1.4;
+  stroke-linejoin: round;
+}
+
+.cm-water ellipse {
+  fill: #2f8bd0;
+  stroke: rgba(5, 24, 11, 0.8);
+  stroke-width: 3;
+}
+
+.cm-water path {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.55);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.cm-path {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.25);
+  stroke-width: 2.5;
+  stroke-dasharray: 0.5 7;
+  stroke-linecap: round;
+}
+
+/* The next shot, marching from the ball to the flag. */
+.cm-aim {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2.5;
+  stroke-dasharray: 1 8;
+  stroke-linecap: round;
+  opacity: 0.85;
+  animation: aim-march 0.9s linear infinite;
+}
+
+@keyframes aim-march {
+  to {
+    stroke-dashoffset: -9;
+  }
+}
+
+/* Holes still to play sit back a little; the one you're on and the ones you've played don't. */
+.cm-hole {
+  transition: opacity 0.3s;
+}
+
+.cmap:not(.is-done) .cm-hole:not(.is-played):not(.is-next) {
+  opacity: 0.8;
+}
+
+.cmap:has(.cm-name) .cm-ball::before {
+  display: none;
+}
+
+.cm-num {
+  position: absolute;
+  translate: -50% -50%;
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--ink);
+  color: #fff;
+  font: 800 12px/1 var(--cond);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+}
+
+/* A played hole's strokes, pencilled on a scrap of the scorecard beside its green. */
+.cm-mark {
+  --mk: var(--ink);
+  --mk-size: 26px;
+  --mk-font: 16px;
+  position: absolute;
+  translate: -50% -50%;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--paper);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.32);
+  animation: pop-in 0.35s var(--pop) both;
+}
+
+button.cm-mark:active {
+  transform: scale(0.94);
+}
+
+.cm-mark.mk-box2 {
+  border-radius: 9px;
+}
+
+.cm-ball {
+  position: absolute;
+  z-index: 3;
+  translate: -50% -50%;
+  display: grid;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.cm-ball svg {
+  display: block;
+  filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.35));
+  animation: bob 1.5s ease-in-out infinite;
+}
+
+.cm-ball::before {
+  content: '';
+  position: absolute;
+  inset: -7px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(255, 210, 63, 0.7);
+  animation: tee-ring 1.6s ease-out infinite;
+  pointer-events: none;
+}
+
+@keyframes tee-ring {
+  from {
+    transform: scale(0.7);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.cm-ball.is-holed {
+  translate: -30% -40%;
+  pointer-events: none;
+}
+
+.cm-ball.is-holed svg {
+  animation: none;
+}
+
+.cm-ball.is-holed::before {
+  display: none;
+}
+
+/* The shot button rides beside the ball on its tee. */
+.cm-cta {
+  position: absolute;
+  z-index: 4;
+  translate: 0 -50%;
+  display: flex;
+}
+
+.cm-cta.is-left {
+  justify-content: flex-end;
+}
+
+.cm-cta.is-right:has(.cm-name) {
+  right: 12px;
+}
+
+.cm-cta.is-left:has(.cm-name) {
+  left: 12px;
+}
+
+.cm-go {
+  min-height: 58px;
+  padding: 0 22px 0 28px;
+  font-size: 25px;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  animation: cta-in 0.4s var(--pop) both;
+}
+
+.cm-go span {
+  font-size: 32px;
+  line-height: 0;
+  margin: -4px 0 0 2px;
+}
+
+.cm-name {
+  display: flex;
+  gap: 6px;
+  width: 100%;
+  animation: rise-in 0.25s ease-out both;
+}
+
+.cm-name .input {
+  flex: 1;
+  min-width: 0;
+  height: 54px;
+  padding: 0 16px;
+  font-size: 17px;
+}
+
+.cm-name .btn {
+  flex: none;
+  min-height: 54px;
+  padding: 0 16px;
+  font-size: 19px;
+}
+
+/* ---------- players as balls ---------- */
+
+.ballrow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px 22px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.daily-holes li {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font: 800 16px/1 var(--cond);
-  color: var(--faint);
-  box-shadow: inset 0 0 0 2px var(--glass-line);
-}
-
-.daily-holes li.is-done {
-  background: #fff;
-  color: var(--ink);
-  box-shadow: none;
-  font-size: 18px;
-}
-
-.daily-holes li.is-ace {
-  background: var(--yellow);
-  color: var(--ink);
-  box-shadow: none;
-}
-
-.daily-score {
+.ballrow li {
+  position: relative;
   display: grid;
   justify-items: center;
+  gap: 4px;
+  min-width: 52px;
+  animation: pop-in 0.4s var(--pop) both;
 }
 
-.daily-score b {
-  font: 400 88px/0.9 var(--display);
-  color: var(--yellow);
-  text-shadow: 0 5px 0 rgba(0, 0, 0, 0.25);
+.br-ball {
+  position: relative;
+  display: grid;
 }
 
-.daily-score span {
-  font: 800 14px/1 var(--cond);
-  letter-spacing: 0.22em;
+.br-ball svg {
+  display: block;
+  filter: drop-shadow(0 4px 0 rgba(0, 0, 0, 0.28));
+}
+
+.br-total {
+  font: 400 34px/0.92 var(--display);
+}
+
+.br-name {
+  max-width: 88px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font: 800 13px/1 var(--cond);
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--dim);
 }
 
-.daily-versus {
-  font: 700 18px/1.2 var(--cond);
+.ballrow li.is-you .br-total {
+  color: var(--yellow);
+}
+
+.ballrow.is-big li.is-you .br-total {
+  font-size: 72px;
+  text-shadow: 0 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.ballrow li.is-you .br-name {
+  color: #fff;
+}
+
+/* The leader's ball carries a little 1st flag. */
+.ballrow li.is-lead .br-ball::after {
+  content: '1st';
+  position: absolute;
+  left: 60%;
+  bottom: 70%;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background: var(--yellow);
+  color: var(--ink);
+  font: 800 11px/1 var(--cond);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
 }
 
-.daily-next {
-  font: 700 13px/1 var(--cond);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--faint);
+.br-invite {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #fff;
 }
 
-.daily .btn {
-  max-width: 360px;
+.br-q {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 2.5px dashed rgba(255, 255, 255, 0.5);
+  font: 400 22px/1 var(--display);
+  color: var(--yellow);
+  animation: think 1.6s ease-in-out infinite;
 }
+
+.br-invite .br-total {
+  color: rgba(255, 255, 255, 0.28);
+}
+
+.br-invite .br-name {
+  color: var(--yellow);
+}
+
+.br-invite:active .br-q {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ---------- other ways to play: round buttons at the foot of the course ---------- */
 
 .modes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 4px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 2px 0 calc(8px + env(safe-area-inset-bottom));
 }
 
 .mode {
   display: grid;
-  justify-items: start;
-  align-content: start;
-  gap: 4px;
-  padding: 14px 14px 16px;
+  grid-template-columns: auto auto;
+  grid-template-areas: 'icon name' 'icon sub';
+  align-items: center;
+  column-gap: 9px;
+  row-gap: 2px;
+  min-width: 0;
+  padding: 4px 2px;
   border: 0;
-  border-radius: 20px;
-  background: var(--glass);
-  box-shadow: inset 0 0 0 2px var(--glass-line);
+  background: none;
   color: #fff;
   text-align: left;
 }
 
-.mode:active {
-  transform: scale(0.98);
-  background: rgba(255, 255, 255, 0.12);
+.mode:last-child {
+  grid-template-areas: 'name icon' 'sub icon';
+  text-align: right;
 }
 
 .mode-icon {
+  grid-area: icon;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--ink);
   color: #fff;
-  margin-bottom: 4px;
+  box-shadow:
+    0 4px 0 rgba(0, 0, 0, 0.35),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.14);
+  transition:
+    transform 0.08s,
+    box-shadow 0.08s;
+}
+
+.mode-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.mode-icon .live-dot {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  box-shadow: 0 0 0 2px var(--ink);
+  animation: none;
+}
+
+.mode-icon .live-dot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  animation: live-pulse 1.6s infinite;
+}
+
+.mode:active .mode-icon {
+  transform: translateY(3px);
+  box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.35),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.14);
 }
 
 .mode-name {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  font: 400 24px/1 var(--display);
+  grid-area: name;
+  align-self: end;
+  font: 400 21px/1 var(--display);
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .mode-sub {
-  font-size: 14px;
-  color: var(--dim);
+  grid-area: sub;
+  align-self: start;
+  font: 700 12px/1.1 var(--cond);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--faint);
+  white-space: nowrap;
+}
+
+/* ---------- your games ---------- */
+
+.recent {
+  padding-top: 6px;
 }
 
 .recent ul {
@@ -773,13 +1220,6 @@ p {
 
 .recent-go {
   font-size: 22px;
-  color: var(--faint);
-}
-
-.home-foot {
-  margin-top: auto;
-  text-align: center;
-  font-size: 12px;
   color: var(--faint);
 }
 
@@ -843,27 +1283,38 @@ p {
   color: var(--yellow);
 }
 
+/* Choices are round tokens, like the mode buttons on home: dark until picked, yellow once picked. */
 .segmented {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
+  display: flex;
+  justify-content: space-around;
   gap: 8px;
 }
 
 .segmented button {
   display: grid;
   justify-items: center;
-  gap: 3px;
-  padding: 12px 6px;
+  gap: 7px;
+  min-width: 72px;
+  padding: 2px 4px;
   border: 0;
-  border-radius: 18px;
-  background: var(--glass);
-  box-shadow: inset 0 0 0 2px var(--glass-line);
+  background: none;
   color: #fff;
 }
 
 .segmented b {
-  font: 400 28px/1 var(--display);
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--ink);
+  font: 400 26px/1 var(--display);
+  box-shadow:
+    0 4px 0 rgba(0, 0, 0, 0.35),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.14);
+  transition:
+    transform 0.15s var(--pop),
+    background 0.15s;
 }
 
 .segmented small {
@@ -873,14 +1324,15 @@ p {
   color: var(--faint);
 }
 
-.segmented .is-on {
+.segmented .is-on b {
   background: var(--yellow);
   color: var(--ink);
-  box-shadow: none;
+  transform: scale(1.08);
+  box-shadow: 0 4px 0 var(--yellow-edge);
 }
 
 .segmented .is-on small {
-  color: rgba(12, 31, 18, 0.65);
+  color: var(--yellow);
 }
 
 .segmented button:disabled {
@@ -890,43 +1342,57 @@ p {
 .courses {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  gap: 2px 12px;
 }
 
 .courses .course {
   display: grid;
-  justify-items: start;
-  gap: 2px;
-  padding: 12px 14px;
+  grid-template-columns: 20px 1fr;
+  grid-template-areas: 'dot name' 'dot blurb';
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 2px;
+  padding: 10px 2px;
   border: 0;
-  border-radius: 18px;
-  background: var(--glass);
-  box-shadow: inset 0 0 0 2px var(--glass-line);
+  background: none;
   color: #fff;
   text-align: left;
 }
 
+.courses .course::before {
+  grid-area: dot;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2.5px rgba(255, 255, 255, 0.35);
+  transition: background 0.15s;
+}
+
 .courses .course.is-on {
+  color: var(--yellow);
+}
+
+.courses .course.is-on::before {
   background: var(--yellow);
-  color: var(--ink);
-  box-shadow: none;
+  box-shadow:
+    0 0 0 4px rgba(255, 210, 63, 0.22),
+    inset 0 0 0 5px var(--ink);
 }
 
 .course-name {
-  font: 800 18px/1.1 var(--cond);
+  grid-area: name;
+  font: 800 18px/1.05 var(--cond);
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .course-blurb {
-  font: 600 13px/1 var(--cond);
-  letter-spacing: 0.06em;
+  grid-area: blurb;
+  font: 600 12px/1 var(--cond);
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--faint);
-}
-
-.courses .course.is-on .course-blurb {
-  color: rgba(12, 31, 18, 0.6);
 }
 
 /* ---------- hole header ---------- */
@@ -2334,18 +2800,24 @@ p {
   }
 }
 
-/* Score bar under the scene */
+/* Score bar under the scene: a strip of the paper scorecard, holes left to right with the same
+   pencil marks as the final card, and the total in the last column. */
 .scorebar.is-solo {
+  --mk: var(--ink);
+  --mk-size: 26px;
+  --mk-font: 16px;
   display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 0 2px;
+  align-items: stretch;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.22);
 }
 
 .sb-holes {
   flex: 1;
   display: flex;
-  gap: 6px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -2353,69 +2825,72 @@ p {
 
 .sb-holes li {
   flex: 1;
-  max-width: 50px;
-  height: 46px;
+  min-width: 0;
   display: grid;
-  place-items: center;
-  align-content: center;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.06);
-  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1);
+  grid-template-rows: 22px 42px;
+  border-left: 1px solid var(--paper-line);
+}
+
+.sb-holes li:first-child {
+  border-left: 0;
 }
 
 .sb-holes small {
-  font: 800 10px/1 var(--cond);
-  color: var(--faint);
+  display: grid;
+  place-items: center;
+  background: var(--ink);
+  color: rgba(255, 255, 255, 0.72);
+  font: 400 14px/1 var(--display);
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 
-.sb-holes b {
-  min-height: 20px;
-  font: 400 20px/1 var(--display);
-}
-
-.sb-holes li.is-now {
-  box-shadow: inset 0 0 0 2px var(--yellow);
-}
-
-.sb-holes li.is-now.is-filled {
+.sb-holes li.is-now small {
   background: var(--yellow);
   color: var(--ink);
 }
 
-.sb-holes li.is-now.is-filled small {
-  color: rgba(12, 31, 18, 0.6);
+.sb-holes .csc-s {
+  display: grid;
+  place-items: center;
 }
 
-.sb-holes li.is-now.is-filled b {
+.sb-holes li.is-now.is-filled i {
   animation: pop-in 0.35s var(--pop) both;
-}
-
-.sb-holes li.is-ace:not(.is-now) b {
-  color: var(--yellow);
 }
 
 .sb-total {
   display: grid;
-  justify-items: end;
+  grid-template-rows: 22px 42px;
+  min-width: 62px;
+  border-left: 2px solid var(--ink);
+  background: var(--paper-2);
+  text-align: center;
 }
 
 .sb-total small {
+  display: grid;
+  place-items: center;
+  background: var(--ink);
+  color: var(--yellow);
   font: 800 11px/1 var(--cond);
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--faint);
 }
 
 .sb-total b {
-  font: 400 38px/1 var(--display);
-  color: var(--yellow);
+  display: grid;
+  place-items: center;
+  font: 400 28px/1 var(--display);
 }
 
+/* With several players, each ball and its running total, no boxes; the leader's total in yellow. */
 .scorebar.is-multi {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
+  gap: 4px 18px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -2425,15 +2900,11 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  padding: 5px 12px 5px 6px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.07);
-  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1);
-  transition: box-shadow 0.3s;
+  padding: 4px 2px;
 }
 
-.scorebar.is-multi li.is-lead {
-  box-shadow: inset 0 0 0 2px var(--yellow);
+.scorebar.is-multi li svg {
+  filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.3));
 }
 
 .sb-name {
@@ -2444,10 +2915,12 @@ p {
   font: 800 14px/1 var(--cond);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  color: var(--dim);
 }
 
 .scorebar.is-multi b {
-  font: 400 22px/1 var(--display);
+  font: 400 26px/1 var(--display);
+  transition: color 0.3s;
 }
 
 .scorebar.is-multi li.is-lead b {
@@ -2799,23 +3272,27 @@ p {
 /* ---------- results ---------- */
 
 .results {
-  gap: 18px;
+  gap: 20px;
+  padding-bottom: calc(28px + env(safe-area-inset-bottom));
 }
 
+/* The top of the card reads like the top of today's course on home: everyone's ball and strokes,
+   then the button to send it. */
 .final {
   display: grid;
   justify-items: center;
-  gap: 6px;
-  padding-top: 6px;
+  gap: 12px;
+  padding-top: 4px;
   text-align: center;
   animation: rise-in 0.4s ease-out both;
 }
 
-.final-kicker {
-  font: 800 15px/1 var(--cond);
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--dim);
+.final .share-row {
+  width: 100%;
+}
+
+.final .trophy {
+  margin-bottom: -6px;
 }
 
 .final-big {
@@ -2825,7 +3302,7 @@ p {
 }
 
 .final-big.is-name {
-  font-size: 58px;
+  font-size: 54px;
   line-height: 0.95;
   color: #fff;
   text-transform: uppercase;
@@ -2833,58 +3310,12 @@ p {
 }
 
 .final-big.is-name.is-long {
-  font-size: 44px;
-}
-
-.final-unit {
-  margin-bottom: 10px;
-  font: 800 15px/1 var(--cond);
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: var(--dim);
+  font-size: 42px;
 }
 
 .trophy {
   filter: drop-shadow(0 6px 0 rgba(0, 0, 0, 0.25));
   animation: pop-in 0.5s var(--pop) both;
-}
-
-.duel {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  list-style: none;
-  margin: 8px 0 0;
-  padding: 0;
-}
-
-.duel li {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 7px 16px 7px 8px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.07);
-  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.12);
-}
-
-.duel li.is-win {
-  box-shadow: inset 0 0 0 2.5px var(--yellow);
-}
-
-.duel-name {
-  font: 800 16px/1 var(--cond);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.duel b {
-  font: 400 28px/1 var(--display);
-}
-
-.duel li.is-win b {
-  color: var(--yellow);
 }
 
 .share-row {
@@ -3278,6 +3709,35 @@ p {
   gap: 18px;
 }
 
+/* A mate's link: the course they played, their balls by the last cup, yours on the first tee. */
+.join.is-course {
+  gap: 8px;
+  padding-bottom: calc(8px + env(safe-area-inset-bottom));
+}
+
+.join-head {
+  flex: none;
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  text-align: center;
+  animation: rise-in 0.35s ease-out both;
+}
+
+.join.is-course .join-title {
+  font-size: 42px;
+}
+
+.join.is-course .join-spectate {
+  flex: none;
+  margin-top: 0;
+}
+
+.join-head .claim {
+  width: 100%;
+  margin-top: 4px;
+}
+
 .join-hero {
   display: grid;
   justify-items: center;
@@ -3297,46 +3757,6 @@ p {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--dim);
-}
-
-.versus {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  padding: 18px 0 6px;
-}
-
-.vs-ball {
-  display: grid;
-  justify-items: center;
-  gap: 6px;
-  font: 800 13px/1 var(--cond);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--dim);
-}
-
-.vs-ball svg {
-  filter: drop-shadow(0 5px 0 rgba(0, 0, 0, 0.25));
-  animation: bob 2s ease-in-out infinite;
-}
-
-.vs-q {
-  width: 60px;
-  height: 60px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  border: 3px dashed rgba(255, 255, 255, 0.5);
-  font: 400 30px/1 var(--display);
-  color: var(--yellow);
-}
-
-.vs-v {
-  font: 400 28px/1 var(--display);
-  color: var(--faint);
-  text-transform: uppercase;
 }
 
 .join-form {
@@ -3480,6 +3900,15 @@ p {
 
 .lobby-roster {
   padding: 6px 0 4px;
+}
+
+/* The room sits in the middle of the screen, not stacked at the top over empty turf. */
+.lobby .lobby-hero {
+  margin-top: auto;
+}
+
+.lobby > .share-row {
+  margin-bottom: auto;
 }
 
 .wait-pill {
@@ -3729,8 +4158,8 @@ p {
   .final-big {
     font-size: 104px;
   }
-  .daily-kicker {
-    font-size: 38px;
+  .today-title {
+    font-size: 40px;
   }
   .howto {
     grid-template-columns: 1fr;
@@ -3741,8 +4170,11 @@ p {
   .hole-n {
     font-size: 72px;
   }
-  .daily .hero-art {
-    max-width: 300px;
+  .today-title {
+    font-size: 38px;
+  }
+  .ballrow.is-big li.is-you .br-total {
+    font-size: 60px;
   }
 }
 
@@ -3807,4 +4239,22 @@ p {
 .rl-row.is-out .rl-pos {
   font-size: 13px;
   letter-spacing: 0.06em;
+}
+
+.howto-credit {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.cm-other {
+  position: absolute;
+  z-index: 2;
+  translate: -50% -50%;
+  display: grid;
+  pointer-events: none;
+  animation: pop-in 0.35s var(--pop) both;
+}
+
+.cm-other svg {
+  filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.35));
 }

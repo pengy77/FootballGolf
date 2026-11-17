@@ -104,7 +104,8 @@ try {
   await sleep(400);
   await snap(A.page, 'how-to', false);
   await A.page.keyboard.press('Escape');
-  await A.page.tap('.daily .btn-primary');
+  // Tee off on today's course: with no name saved yet, the shot button opens a name field in place.
+  await A.page.tap('.cm-go');
   await A.page.waitForSelector('#daily-name');
   await A.page.type('#daily-name', 'Hanif');
   await snap(A.page, 'daily-intro');
@@ -143,8 +144,8 @@ try {
   await snap(A.page, 'A-final-h2h');
   await A.page.goto(BASE, { waitUntil: 'networkidle0' });
   await snap(A.page, 'A-home-recent');
-  // Today's daily is done: the home card shows the score instead of a Play button.
-  await A.page.waitForFunction(() => document.querySelector('.daily-score'));
+  // Today's daily is done: the top of the course shows the scores and the share button instead of a tee shot.
+  await A.page.waitForFunction(() => document.querySelector('.today.is-played .ballrow') && document.querySelector('.today .share-row'));
 
   // --- A opens B's result in a fresh browser (e.g. Home Screen app): one tap to claim the card
   console.log('Player A: fresh browser');

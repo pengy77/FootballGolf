@@ -9,7 +9,7 @@ import { colorOf } from './ui';
  * a hole in one, circled when it landed within 5 places (tap-in or on the green), double-boxed when
  * it was off the list, and a plain number otherwise.
  */
-function markOf(r: HoleResult): string {
+export function markOf(r: HoleResult): string {
   switch (r.played ? r.verdict?.tone : undefined) {
     case 'ace':
       return 'mk-ace';

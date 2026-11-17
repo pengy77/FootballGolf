@@ -1,3 +1,4 @@
+import { CATEGORIES } from '../lib/data';
 import { HOLE_MAX } from '../lib/game';
 import { Ball, PinFlag, Trophy } from './art';
 import { Sheet } from './ui';
@@ -58,6 +59,9 @@ export function HowToSheet({ open, onClose }: { open: boolean; onClose: () => vo
       <button type="button" className="btn btn-primary btn-block" onClick={onClose}>
         Got it
       </button>
+      <p className="fine howto-credit">
+        {CATEGORIES.length} lists · data from Wikipedia (CC BY-SA)
+      </p>
     </Sheet>
   );
 }
