@@ -40,9 +40,7 @@ export function shareCopy(game: Game) {
       ? `Send to ${sendTo}`
       : returning
         ? 'Send the result back'
-        : game.mode === 'local'
-          ? 'Challenge someone else'
-          : 'Challenge a mate';
+        : 'Challenge a mate';
   return { text, label, solo, canShare: me !== null || !solo };
 }
 

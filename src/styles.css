@@ -1461,14 +1461,18 @@ button.cm-mark:active {
 .facts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
   margin: 14px 0;
+  border-top: 1px solid var(--paper-line);
+  border-bottom: 1px solid var(--paper-line);
 }
 
 .facts div {
-  padding: 10px;
-  border-radius: 12px;
-  background: var(--paper-2);
+  padding: 10px 10px 10px 0;
+}
+
+.facts div + div {
+  padding-left: 10px;
+  border-left: 1px solid var(--paper-line);
 }
 
 .facts dt {

@@ -133,7 +133,7 @@ try {
   await B.waitForSelector('.shot-clock.is-low', { timeout: 45000 });
   await snap(B, 'hole2-low-clock');
   await waitText(B, 'Ready for hole 3', 45000);
-  await B.waitForFunction(() => [...document.querySelectorAll('.m-bubble b')].some((b) => b.textContent === '⏱'));
+  await B.waitForFunction(() => [...document.querySelectorAll('.m-bubble .m-ob-tag')].some((t) => t.textContent.trim() === '⏱'));
   await snap(B, 'reveal2-timed-out', true);
   log('Jay timed out');
   // Hanif's ready; Jay's still staring at the list. The host can skip the wait.
@@ -157,7 +157,7 @@ try {
   await waitText(A, 'Final scores', 45000);
   await snap(A, 'reveal3-autolocked', true);
   await snap(B, 'reveal3-guest', true);
-  const timedOut = await A.evaluate(() => [...document.querySelectorAll('.m-bubble b')].some((b) => b.textContent === '⏱'));
+  const timedOut = await A.evaluate(() => [...document.querySelectorAll('.m-bubble .m-ob-tag')].some((t) => t.textContent.trim() === '⏱'));
   if (timedOut) throw new Error('Chosen answer was not auto-locked at the buzzer');
   log('auto-locked at the buzzer');
   await tapText(A, 'Final scores');

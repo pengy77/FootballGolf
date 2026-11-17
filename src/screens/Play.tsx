@@ -53,7 +53,7 @@ export function isNewcomer(saved: Saved): boolean {
 }
 
 export default function Play({ id }: { id: string }) {
-  const { saved, saveGame, go, showHowTo, toast } = useApp();
+  const { saved, saveGame, go, showHowTo } = useApp();
   const found = findGame(saved, id);
   const game = found && isPlayable(found) ? found : undefined;
   const [selection, setSelection] = useState<Selection | null>(null);
@@ -88,10 +88,8 @@ export default function Play({ id }: { id: string }) {
   if (state.kind === 'done') return null;
 
   const players = visiblePlayers(game);
-  const quit = () => {
-    toast('Saved. Carry on from the home screen.');
-    go('/');
-  };
+  // No "saved" toast: home shows the ball waiting on the next tee.
+  const quit = () => go('/');
   const top = (current: number) => (
     <TopBar
       left={
