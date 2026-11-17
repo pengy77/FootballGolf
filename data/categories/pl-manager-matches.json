@@ -7,15 +7,15 @@
   "kind": "manager",
   "metric": "Games managed",
   "order": "desc",
-  "description": "Every manager with 300 or more Premier League games in charge, across all their clubs. Up to 12 November 2026.",
+  "description": "Every manager with 150 or more Premier League games in charge, across all their clubs. Up to 17 November 2026 (2026–27 matchweek 10).",
   "tags": [
     "premier-league",
     "managers"
   ],
   "source": {
-    "name": "Wikipedia: List of Premier League managers",
+    "name": "Wikipedia: List of Premier League managers (300+ games); StatMuse FC (below 300)",
     "url": "https://en.wikipedia.org/wiki/List_of_Premier_League_managers#Most_games_managed_in_the_Premier_League",
-    "asOf": "2026-11-16"
+    "asOf": "2026-11-17"
   },
   "items": [
     {
@@ -257,6 +257,388 @@
         "Kinnear"
       ],
       "wd": "Q556620"
+    },
+    {
+      "id": "mauricio-pochettino",
+      "name": "Mauricio Pochettino",
+      "sub": "Argentina · Spurs, Southampton",
+      "value": 294,
+      "display": "294 games",
+      "aliases": [
+        "Pochettino",
+        "Poch"
+      ],
+      "wd": "Q313000"
+    },
+    {
+      "id": "george-graham",
+      "name": "George Graham",
+      "sub": "Scotland · Arsenal, Spurs",
+      "value": 289,
+      "display": "289 games",
+      "aliases": [
+        "Graham"
+      ],
+      "wd": "Q313763"
+    },
+    {
+      "id": "graeme-souness",
+      "name": "Graeme Souness",
+      "sub": "Scotland · Blackburn, Liverpool",
+      "value": 280,
+      "display": "280 games",
+      "aliases": [
+        "Souness"
+      ],
+      "wd": "Q310352"
+    },
+    {
+      "id": "gordon-strachan",
+      "name": "Gordon Strachan",
+      "sub": "Scotland · Coventry, Southampton",
+      "value": 271,
+      "display": "271 games",
+      "aliases": [
+        "Strachan"
+      ],
+      "wd": "Q314095"
+    },
+    {
+      "id": "kevin-keegan",
+      "name": "Kevin Keegan",
+      "sub": "England · Newcastle, Man City",
+      "value": 267,
+      "display": "267 games",
+      "aliases": [
+        "Keegan",
+        "King Kev"
+      ],
+      "wd": "Q152832"
+    },
+    {
+      "id": "roberto-martinez",
+      "name": "Roberto Martínez",
+      "sub": "Spain · Wigan, Everton",
+      "value": 265,
+      "display": "265 games",
+      "aliases": [
+        "Martínez",
+        "Martinez",
+        "Roberto Martinez"
+      ],
+      "wd": "Q357994"
+    },
+    {
+      "id": "david-oleary",
+      "name": "David O'Leary",
+      "sub": "Ireland · Leeds, Aston Villa",
+      "value": 259,
+      "display": "259 games",
+      "aliases": [
+        "O'Leary",
+        "OLeary",
+        "David O Leary",
+        "David OLeary"
+      ],
+      "wd": "Q132026"
+    },
+    {
+      "id": "gerard-houllier",
+      "name": "Gérard Houllier",
+      "sub": "France · Liverpool, Aston Villa",
+      "value": 258,
+      "display": "258 games",
+      "aliases": [
+        "Houllier",
+        "Gerard Houllier"
+      ],
+      "wd": "Q295615"
+    },
+    {
+      "id": "mikel-arteta",
+      "name": "Mikel Arteta",
+      "sub": "Spain · Arsenal",
+      "value": 258,
+      "display": "258 games",
+      "aliases": [
+        "Arteta"
+      ],
+      "wd": "Q185572"
+    },
+    {
+      "id": "glenn-hoddle",
+      "name": "Glenn Hoddle",
+      "sub": "England · Chelsea, Spurs",
+      "value": 256,
+      "display": "256 games",
+      "aliases": [
+        "Hoddle"
+      ],
+      "wd": "Q296666"
+    },
+    {
+      "id": "marco-silva",
+      "name": "Marco Silva",
+      "sub": "Portugal · Fulham, Everton",
+      "value": 247,
+      "display": "247 games",
+      "aliases": [
+        "Silva"
+      ],
+      "wd": "Q6757714"
+    },
+    {
+      "id": "claudio-ranieri",
+      "name": "Claudio Ranieri",
+      "sub": "Italy · Chelsea, Leicester",
+      "value": 238,
+      "display": "238 games",
+      "aliases": [
+        "Ranieri",
+        "The Tinkerman"
+      ],
+      "wd": "Q235068"
+    },
+    {
+      "id": "kenny-dalglish",
+      "name": "Kenny Dalglish",
+      "sub": "Scotland · Blackburn, Newcastle",
+      "value": 238,
+      "display": "238 games",
+      "aliases": [
+        "Dalglish",
+        "King Kenny",
+        "Sir Kenny Dalglish"
+      ],
+      "wd": "Q187198"
+    },
+    {
+      "id": "bryan-robson",
+      "name": "Bryan Robson",
+      "sub": "England · Middlesbrough, West Brom",
+      "value": 232,
+      "display": "232 games",
+      "aliases": [
+        "Robbo"
+      ],
+      "wd": "Q296583"
+    },
+    {
+      "id": "peter-reid",
+      "name": "Peter Reid",
+      "sub": "England · Sunderland, Man City",
+      "value": 227,
+      "display": "227 games",
+      "aliases": [
+        "Reid"
+      ],
+      "wd": "Q360514"
+    },
+    {
+      "id": "joe-royle",
+      "name": "Joe Royle",
+      "sub": "England · Everton, Oldham",
+      "value": 220,
+      "display": "220 games",
+      "aliases": [
+        "Royle"
+      ],
+      "wd": "Q923188"
+    },
+    {
+      "id": "nuno-espirito-santo",
+      "name": "Nuno Espírito Santo",
+      "sub": "Portugal · Wolves, Nottm Forest",
+      "value": 219,
+      "display": "219 games",
+      "aliases": [
+        "Nuno",
+        "Nuno Espirito Santo",
+        "Espírito Santo",
+        "Espirito Santo"
+      ],
+      "wd": "Q372372"
+    },
+    {
+      "id": "steve-mcclaren",
+      "name": "Steve McClaren",
+      "sub": "England · Middlesbrough, Newcastle",
+      "value": 218,
+      "display": "218 games",
+      "aliases": [
+        "McClaren"
+      ],
+      "wd": "Q311007"
+    },
+    {
+      "id": "gerry-francis",
+      "name": "Gerry Francis",
+      "sub": "England · Spurs, QPR",
+      "value": 217,
+      "display": "217 games",
+      "aliases": [
+        "Francis"
+      ],
+      "wd": "Q959314"
+    },
+    {
+      "id": "ron-atkinson",
+      "name": "Ron Atkinson",
+      "sub": "England · Aston Villa, Coventry",
+      "value": 203,
+      "display": "203 games",
+      "aliases": [
+        "Atkinson",
+        "Big Ron"
+      ],
+      "wd": "Q344875"
+    },
+    {
+      "id": "martin-jol",
+      "name": "Martin Jol",
+      "sub": "Netherlands · Spurs, Fulham",
+      "value": 202,
+      "display": "202 games",
+      "aliases": [
+        "Jol"
+      ],
+      "wd": "Q310181"
+    },
+    {
+      "id": "unai-emery",
+      "name": "Unai Emery",
+      "sub": "Spain · Aston Villa, Arsenal",
+      "value": 200,
+      "display": "200 games",
+      "aliases": [
+        "Emery"
+      ],
+      "wd": "Q295610"
+    },
+    {
+      "id": "jim-smith",
+      "name": "Jim Smith",
+      "sub": "England · Derby",
+      "value": 197,
+      "display": "197 games",
+      "aliases": [
+        "Bald Eagle"
+      ],
+      "wd": "Q6198196"
+    },
+    {
+      "id": "howard-wilkinson",
+      "name": "Howard Wilkinson",
+      "sub": "England · Leeds, Sunderland",
+      "value": 189,
+      "display": "189 games",
+      "aliases": [
+        "Wilkinson",
+        "Sergeant Wilko"
+      ],
+      "wd": "Q552905"
+    },
+    {
+      "id": "bobby-robson",
+      "name": "Bobby Robson",
+      "sub": "England · Newcastle",
+      "value": 188,
+      "display": "188 games",
+      "aliases": [
+        "Sir Bobby Robson",
+        "Sir Bobby"
+      ],
+      "wd": "Q189587"
+    },
+    {
+      "id": "thomas-frank",
+      "name": "Thomas Frank",
+      "sub": "Denmark · Brentford, Spurs",
+      "value": 178,
+      "display": "178 games",
+      "aliases": [
+        "Frank"
+      ],
+      "wd": "Q13469562"
+    },
+    {
+      "id": "roy-evans",
+      "name": "Roy Evans",
+      "sub": "England · Liverpool",
+      "value": 172,
+      "display": "172 games",
+      "aliases": [
+        "Evans"
+      ],
+      "wd": "Q927681"
+    },
+    {
+      "id": "manuel-pellegrini",
+      "name": "Manuel Pellegrini",
+      "sub": "Chile · Man City, West Ham",
+      "value": 171,
+      "display": "171 games",
+      "aliases": [
+        "Pellegrini"
+      ],
+      "wd": "Q296036"
+    },
+    {
+      "id": "chris-hughton",
+      "name": "Chris Hughton",
+      "sub": "Ireland · Brighton, Norwich",
+      "value": 170,
+      "display": "170 games",
+      "aliases": [
+        "Hughton"
+      ],
+      "wd": "Q351004"
+    },
+    {
+      "id": "graham-potter",
+      "name": "Graham Potter",
+      "sub": "England · Brighton, Chelsea",
+      "value": 165,
+      "display": "165 games",
+      "aliases": [
+        "Potter"
+      ],
+      "wd": "Q5593150"
+    },
+    {
+      "id": "john-gregory",
+      "name": "John Gregory",
+      "sub": "England · Aston Villa, Derby",
+      "value": 162,
+      "display": "162 games",
+      "aliases": [
+        "Gregory"
+      ],
+      "wd": "Q942124"
+    },
+    {
+      "id": "chris-coleman",
+      "name": "Chris Coleman",
+      "sub": "Wales · Fulham",
+      "value": 152,
+      "display": "152 games",
+      "aliases": [
+        "Coleman"
+      ],
+      "wd": "Q381769"
+    },
+    {
+      "id": "ralph-hasenhuttl",
+      "name": "Ralph Hasenhüttl",
+      "sub": "Austria · Southampton",
+      "value": 151,
+      "display": "151 games",
+      "aliases": [
+        "Hasenhüttl",
+        "Hasenhuttl",
+        "Ralph Hasenhuttl"
+      ],
+      "wd": "Q874628"
     }
   ]
 }

@@ -1,0 +1,218 @@
+{
+  "id": "pl-red-cards",
+  "title": "Premier League all-time red cards",
+  "prompt": "most Premier League red cards",
+  "noun": "player",
+  "nounPlural": "players",
+  "kind": "player",
+  "metric": "Red cards",
+  "order": "desc",
+  "description": "Every player sent off six or more times in the Premier League since 1992–93; tied players share a rank.",
+  "retired": true,
+  "tags": [
+    "premier-league",
+    "players"
+  ],
+  "source": {
+    "name": "Opta Analyst: Most Premier League red cards",
+    "url": "https://theanalyst.com/articles/most-premier-league-red-cards/",
+    "asOf": "2026-11-17"
+  },
+  "items": [
+    {
+      "id": "richard-dunne",
+      "name": "Richard Dunne",
+      "sub": "Ireland · Man City, Everton",
+      "value": 8,
+      "aliases": [
+        "Dunne"
+      ],
+      "wd": "Q241502"
+    },
+    {
+      "id": "duncan-ferguson",
+      "name": "Duncan Ferguson",
+      "sub": "Scotland · Everton, Newcastle",
+      "value": 8,
+      "aliases": [
+        "Ferguson",
+        "Big Dunc"
+      ],
+      "wd": "Q465623"
+    },
+    {
+      "id": "patrick-vieira",
+      "name": "Patrick Vieira",
+      "sub": "France · Arsenal",
+      "value": 8,
+      "aliases": [
+        "Vieira"
+      ],
+      "wd": "Q46347"
+    },
+    {
+      "id": "lee-cattermole",
+      "name": "Lee Cattermole",
+      "sub": "England · Sunderland, Wigan",
+      "value": 7,
+      "aliases": [
+        "Cattermole"
+      ],
+      "wd": "Q83494"
+    },
+    {
+      "id": "vinnie-jones",
+      "name": "Vinnie Jones",
+      "sub": "Wales · Wimbledon, Chelsea",
+      "value": 7,
+      "aliases": [
+        "Jones"
+      ],
+      "wd": "Q296822"
+    },
+    {
+      "id": "roy-keane",
+      "name": "Roy Keane",
+      "sub": "Ireland · Man Utd",
+      "value": 7,
+      "aliases": [
+        "Keane",
+        "Keano"
+      ],
+      "wd": "Q188632"
+    },
+    {
+      "id": "alan-smith",
+      "name": "Alan Smith",
+      "sub": "England · Leeds, Man Utd",
+      "value": 7,
+      "aliases": [
+        "Smith"
+      ],
+      "wd": "Q216614"
+    },
+    {
+      "id": "gareth-barry",
+      "name": "Gareth Barry",
+      "sub": "England · Aston Villa, Man City",
+      "value": 6,
+      "aliases": [
+        "Barry"
+      ],
+      "wd": "Q191855"
+    },
+    {
+      "id": "joey-barton",
+      "name": "Joey Barton",
+      "sub": "England · Man City, Newcastle",
+      "value": 6,
+      "aliases": [
+        "Barton"
+      ],
+      "wd": "Q202329"
+    },
+    {
+      "id": "luis-boa-morte",
+      "name": "Luís Boa Morte",
+      "sub": "Portugal · Fulham, West Ham",
+      "value": 6,
+      "aliases": [
+        "Boa Morte"
+      ],
+      "wd": "Q316512"
+    },
+    {
+      "id": "nicky-butt",
+      "name": "Nicky Butt",
+      "sub": "England · Man Utd, Newcastle",
+      "value": 6,
+      "aliases": [
+        "Butt"
+      ],
+      "wd": "Q295506"
+    },
+    {
+      "id": "andy-cole",
+      "name": "Andy Cole",
+      "sub": "England · Man Utd, Newcastle",
+      "value": 6,
+      "aliases": [
+        "Cole",
+        "Andrew Cole"
+      ],
+      "wd": "Q216928"
+    },
+    {
+      "id": "steven-gerrard",
+      "name": "Steven Gerrard",
+      "sub": "England · Liverpool",
+      "value": 6,
+      "aliases": [
+        "Gerrard",
+        "Stevie G"
+      ],
+      "wd": "Q459830"
+    },
+    {
+      "id": "john-hartson",
+      "name": "John Hartson",
+      "sub": "Wales · West Ham, Wimbledon",
+      "value": 6,
+      "aliases": [
+        "Hartson"
+      ],
+      "wd": "Q356392"
+    },
+    {
+      "id": "younes-kaboul",
+      "name": "Younes Kaboul",
+      "sub": "France · Tottenham, Portsmouth",
+      "value": 6,
+      "aliases": [
+        "Kaboul"
+      ],
+      "wd": "Q311334"
+    },
+    {
+      "id": "martin-keown",
+      "name": "Martin Keown",
+      "sub": "England · Arsenal",
+      "value": 6,
+      "aliases": [
+        "Keown"
+      ],
+      "wd": "Q314405"
+    },
+    {
+      "id": "franck-queudrue",
+      "name": "Franck Queudrue",
+      "sub": "France · Middlesbrough, Fulham",
+      "value": 6,
+      "aliases": [
+        "Queudrue"
+      ],
+      "wd": "Q560510"
+    },
+    {
+      "id": "john-terry",
+      "name": "John Terry",
+      "sub": "England · Chelsea",
+      "value": 6,
+      "aliases": [
+        "Terry",
+        "JT"
+      ],
+      "wd": "Q83456"
+    },
+    {
+      "id": "nemanja-vidic",
+      "name": "Nemanja Vidić",
+      "sub": "Serbia · Man Utd",
+      "value": 6,
+      "aliases": [
+        "Vidić"
+      ],
+      "wd": "Q163564"
+    }
+  ]
+}

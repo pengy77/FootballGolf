@@ -1,0 +1,632 @@
+{
+  "id": "pl-manager-wins",
+  "title": "Most Premier League wins as a manager",
+  "prompt": "most Premier League wins as a manager",
+  "noun": "manager",
+  "nounPlural": "managers",
+  "kind": "manager",
+  "metric": "Wins",
+  "order": "desc",
+  "description": "Every manager with 60 or more Premier League wins, across all their clubs. Up to 17 November 2026 (2026–27 matchweek 10); tied managers share a place.",
+  "tags": [
+    "premier-league",
+    "managers"
+  ],
+  "source": {
+    "name": "StatMuse FC (Premier League managerial records)",
+    "url": "https://www.statmuse.com/fc/ask/most-premier-league-wins-by-a-manager-all-time",
+    "asOf": "2026-11-17"
+  },
+  "items": [
+    {
+      "id": "alex-ferguson",
+      "name": "Alex Ferguson",
+      "sub": "Scotland · Man Utd",
+      "value": 528,
+      "display": "528 wins",
+      "aliases": [
+        "Ferguson",
+        "Fergie",
+        "Sir Alex Ferguson",
+        "Sir Alex"
+      ],
+      "wd": "Q44980"
+    },
+    {
+      "id": "arsene-wenger",
+      "name": "Arsène Wenger",
+      "sub": "France · Arsenal",
+      "value": 476,
+      "display": "476 wins",
+      "aliases": [
+        "Wenger",
+        "Arsene Wenger"
+      ],
+      "wd": "Q47576"
+    },
+    {
+      "id": "david-moyes",
+      "name": "David Moyes",
+      "sub": "Scotland · Everton, West Ham",
+      "value": 293,
+      "display": "293 wins",
+      "aliases": [
+        "Moyes"
+      ],
+      "wd": "Q297252"
+    },
+    {
+      "id": "pep-guardiola",
+      "name": "Pep Guardiola",
+      "sub": "Spain · Man City",
+      "value": 269,
+      "display": "269 wins",
+      "aliases": [
+        "Guardiola",
+        "Pep",
+        "Josep Guardiola"
+      ],
+      "wd": "Q164038"
+    },
+    {
+      "id": "harry-redknapp",
+      "name": "Harry Redknapp",
+      "sub": "England · West Ham, Portsmouth, Spurs",
+      "value": 236,
+      "display": "236 wins",
+      "aliases": [
+        "Redknapp",
+        "Harry"
+      ],
+      "wd": "Q221349"
+    },
+    {
+      "id": "jose-mourinho",
+      "name": "José Mourinho",
+      "sub": "Portugal · Chelsea, Man Utd",
+      "value": 217,
+      "display": "217 wins",
+      "aliases": [
+        "Mourinho",
+        "Jose Mourinho",
+        "The Special One"
+      ],
+      "wd": "Q79983"
+    },
+    {
+      "id": "jurgen-klopp",
+      "name": "Jürgen Klopp",
+      "sub": "Germany · Liverpool",
+      "value": 209,
+      "display": "209 wins",
+      "aliases": [
+        "Klopp",
+        "Jurgen Klopp"
+      ],
+      "wd": "Q83106"
+    },
+    {
+      "id": "sam-allardyce",
+      "name": "Sam Allardyce",
+      "sub": "England · Bolton, West Ham",
+      "value": 178,
+      "display": "178 wins",
+      "aliases": [
+        "Allardyce",
+        "Big Sam"
+      ],
+      "wd": "Q334388"
+    },
+    {
+      "id": "rafael-benitez",
+      "name": "Rafael Benítez",
+      "sub": "Spain · Liverpool, Newcastle",
+      "value": 173,
+      "display": "173 wins",
+      "aliases": [
+        "Benítez",
+        "Benitez",
+        "Rafa Benitez",
+        "Rafa Benítez",
+        "Rafa"
+      ],
+      "wd": "Q144048"
+    },
+    {
+      "id": "mikel-arteta",
+      "name": "Mikel Arteta",
+      "sub": "Spain · Arsenal",
+      "value": 158,
+      "display": "158 wins",
+      "aliases": [
+        "Arteta"
+      ],
+      "wd": "Q185572"
+    },
+    {
+      "id": "mark-hughes",
+      "name": "Mark Hughes",
+      "sub": "Wales · Stoke, Blackburn",
+      "value": 157,
+      "display": "157 wins",
+      "aliases": [
+        "Hughes",
+        "Sparky"
+      ],
+      "wd": "Q214513"
+    },
+    {
+      "id": "mauricio-pochettino",
+      "name": "Mauricio Pochettino",
+      "sub": "Argentina · Spurs, Southampton",
+      "value": 150,
+      "display": "150 wins",
+      "aliases": [
+        "Pochettino",
+        "Poch"
+      ],
+      "wd": "Q313000"
+    },
+    {
+      "id": "eddie-howe",
+      "name": "Eddie Howe",
+      "sub": "England · Bournemouth, Newcastle",
+      "value": 140,
+      "display": "140 wins",
+      "aliases": [
+        "Howe"
+      ],
+      "wd": "Q5336135"
+    },
+    {
+      "id": "brendan-rodgers",
+      "name": "Brendan Rodgers",
+      "sub": "Northern Ireland · Leicester, Liverpool",
+      "value": 139,
+      "display": "139 wins",
+      "aliases": [
+        "Rodgers"
+      ],
+      "wd": "Q310623"
+    },
+    {
+      "id": "roy-hodgson",
+      "name": "Roy Hodgson",
+      "sub": "England · Crystal Palace, Fulham",
+      "value": 136,
+      "display": "136 wins",
+      "aliases": [
+        "Hodgson"
+      ],
+      "wd": "Q203781"
+    },
+    {
+      "id": "steve-bruce",
+      "name": "Steve Bruce",
+      "sub": "England · Birmingham, Sunderland",
+      "value": 133,
+      "display": "133 wins",
+      "aliases": [
+        "Bruce"
+      ],
+      "wd": "Q331904"
+    },
+    {
+      "id": "martin-oneill",
+      "name": "Martin O’Neill",
+      "sub": "Northern Ireland · Leicester, Aston Villa",
+      "value": 130,
+      "display": "130 wins",
+      "aliases": [
+        "O’Neill",
+        "ONeill",
+        "Martin O Neill",
+        "Martin ONeill"
+      ],
+      "wd": "Q310263"
+    },
+    {
+      "id": "gerard-houllier",
+      "name": "Gérard Houllier",
+      "sub": "France · Liverpool, Aston Villa",
+      "value": 120,
+      "display": "120 wins",
+      "aliases": [
+        "Houllier",
+        "Gerard Houllier"
+      ],
+      "wd": "Q295615"
+    },
+    {
+      "id": "kevin-keegan",
+      "name": "Kevin Keegan",
+      "sub": "England · Newcastle, Man City",
+      "value": 116,
+      "display": "116 wins",
+      "aliases": [
+        "Keegan",
+        "King Kev"
+      ],
+      "wd": "Q152832"
+    },
+    {
+      "id": "kenny-dalglish",
+      "name": "Kenny Dalglish",
+      "sub": "Scotland · Blackburn, Newcastle",
+      "value": 115,
+      "display": "115 wins",
+      "aliases": [
+        "Dalglish",
+        "King Kenny",
+        "Sir Kenny Dalglish"
+      ],
+      "wd": "Q187198"
+    },
+    {
+      "id": "david-oleary",
+      "name": "David O'Leary",
+      "sub": "Ireland · Leeds, Aston Villa",
+      "value": 112,
+      "display": "112 wins",
+      "aliases": [
+        "O'Leary",
+        "OLeary",
+        "David O Leary",
+        "David OLeary"
+      ],
+      "wd": "Q132026"
+    },
+    {
+      "id": "alan-pardew",
+      "name": "Alan Pardew",
+      "sub": "England · Newcastle, Crystal Palace",
+      "value": 109,
+      "display": "109 wins",
+      "aliases": [
+        "Pardew"
+      ],
+      "wd": "Q360491"
+    },
+    {
+      "id": "claudio-ranieri",
+      "name": "Claudio Ranieri",
+      "sub": "Italy · Chelsea, Leicester",
+      "value": 109,
+      "display": "109 wins",
+      "aliases": [
+        "Ranieri",
+        "The Tinkerman"
+      ],
+      "wd": "Q235068"
+    },
+    {
+      "id": "alan-curbishley",
+      "name": "Alan Curbishley",
+      "sub": "England · Charlton, West Ham",
+      "value": 108,
+      "display": "108 wins",
+      "aliases": [
+        "Curbishley",
+        "Curbs"
+      ],
+      "wd": "Q470741"
+    },
+    {
+      "id": "george-graham",
+      "name": "George Graham",
+      "sub": "Scotland · Arsenal, Spurs",
+      "value": 103,
+      "display": "103 wins",
+      "aliases": [
+        "Graham"
+      ],
+      "wd": "Q313763"
+    },
+    {
+      "id": "unai-emery",
+      "name": "Unai Emery",
+      "sub": "Spain · Aston Villa, Arsenal",
+      "value": 101,
+      "display": "101 wins",
+      "aliases": [
+        "Emery"
+      ],
+      "wd": "Q295610"
+    },
+    {
+      "id": "sean-dyche",
+      "name": "Sean Dyche",
+      "sub": "England · Burnley, Everton",
+      "value": 99,
+      "display": "99 wins",
+      "aliases": [
+        "Dyche"
+      ],
+      "wd": "Q10599"
+    },
+    {
+      "id": "tony-pulis",
+      "name": "Tony Pulis",
+      "sub": "Wales · Stoke, West Brom",
+      "value": 98,
+      "display": "98 wins",
+      "aliases": [
+        "Pulis"
+      ],
+      "wd": "Q334541"
+    },
+    {
+      "id": "joe-kinnear",
+      "name": "Joe Kinnear",
+      "sub": "Ireland · Wimbledon, Newcastle",
+      "value": 97,
+      "display": "97 wins",
+      "aliases": [
+        "Kinnear"
+      ],
+      "wd": "Q556620"
+    },
+    {
+      "id": "graeme-souness",
+      "name": "Graeme Souness",
+      "sub": "Scotland · Blackburn, Liverpool",
+      "value": 94,
+      "display": "94 wins",
+      "aliases": [
+        "Souness"
+      ],
+      "wd": "Q310352"
+    },
+    {
+      "id": "manuel-pellegrini",
+      "name": "Manuel Pellegrini",
+      "sub": "Chile · Man City, West Ham",
+      "value": 90,
+      "display": "90 wins",
+      "aliases": [
+        "Pellegrini"
+      ],
+      "wd": "Q296036"
+    },
+    {
+      "id": "marco-silva",
+      "name": "Marco Silva",
+      "sub": "Portugal · Fulham, Everton",
+      "value": 90,
+      "display": "90 wins",
+      "aliases": [
+        "Silva"
+      ],
+      "wd": "Q6757714"
+    },
+    {
+      "id": "glenn-hoddle",
+      "name": "Glenn Hoddle",
+      "sub": "England · Chelsea, Spurs",
+      "value": 88,
+      "display": "88 wins",
+      "aliases": [
+        "Hoddle"
+      ],
+      "wd": "Q296666"
+    },
+    {
+      "id": "antonio-conte",
+      "name": "Antonio Conte",
+      "sub": "Italy · Chelsea, Spurs",
+      "value": 83,
+      "display": "83 wins",
+      "aliases": [
+        "Conte"
+      ],
+      "wd": "Q26580"
+    },
+    {
+      "id": "bobby-robson",
+      "name": "Bobby Robson",
+      "sub": "England · Newcastle",
+      "value": 83,
+      "display": "83 wins",
+      "aliases": [
+        "Sir Bobby Robson",
+        "Sir Bobby"
+      ],
+      "wd": "Q189587"
+    },
+    {
+      "id": "nuno-espirito-santo",
+      "name": "Nuno Espírito Santo",
+      "sub": "Portugal · Wolves, Nottm Forest",
+      "value": 83,
+      "display": "83 wins",
+      "aliases": [
+        "Nuno",
+        "Nuno Espirito Santo",
+        "Espírito Santo",
+        "Espirito Santo"
+      ],
+      "wd": "Q372372"
+    },
+    {
+      "id": "roberto-mancini",
+      "name": "Roberto Mancini",
+      "sub": "Italy · Man City",
+      "value": 83,
+      "display": "83 wins",
+      "aliases": [
+        "Mancini"
+      ],
+      "wd": "Q48330"
+    },
+    {
+      "id": "roy-evans",
+      "name": "Roy Evans",
+      "sub": "England · Liverpool",
+      "value": 83,
+      "display": "83 wins",
+      "aliases": [
+        "Evans"
+      ],
+      "wd": "Q927681"
+    },
+    {
+      "id": "gordon-strachan",
+      "name": "Gordon Strachan",
+      "sub": "Scotland · Coventry, Southampton",
+      "value": 82,
+      "display": "82 wins",
+      "aliases": [
+        "Strachan"
+      ],
+      "wd": "Q314095"
+    },
+    {
+      "id": "roberto-martinez",
+      "name": "Roberto Martínez",
+      "sub": "Spain · Wigan, Everton",
+      "value": 81,
+      "display": "81 wins",
+      "aliases": [
+        "Martínez",
+        "Martinez",
+        "Roberto Martinez"
+      ],
+      "wd": "Q357994"
+    },
+    {
+      "id": "gerry-francis",
+      "name": "Gerry Francis",
+      "sub": "England · Spurs, QPR",
+      "value": 79,
+      "display": "79 wins",
+      "aliases": [
+        "Francis"
+      ],
+      "wd": "Q959314"
+    },
+    {
+      "id": "martin-jol",
+      "name": "Martin Jol",
+      "sub": "Netherlands · Spurs, Fulham",
+      "value": 75,
+      "display": "75 wins",
+      "aliases": [
+        "Jol"
+      ],
+      "wd": "Q310181"
+    },
+    {
+      "id": "peter-reid",
+      "name": "Peter Reid",
+      "sub": "England · Sunderland, Man City",
+      "value": 74,
+      "display": "74 wins",
+      "aliases": [
+        "Reid"
+      ],
+      "wd": "Q360514"
+    },
+    {
+      "id": "carlo-ancelotti",
+      "name": "Carlo Ancelotti",
+      "sub": "Italy · Chelsea, Everton",
+      "value": 73,
+      "display": "73 wins",
+      "aliases": [
+        "Ancelotti",
+        "Carletto"
+      ],
+      "wd": "Q174614"
+    },
+    {
+      "id": "steve-mcclaren",
+      "name": "Steve McClaren",
+      "sub": "England · Middlesbrough, Newcastle",
+      "value": 70,
+      "display": "70 wins",
+      "aliases": [
+        "McClaren"
+      ],
+      "wd": "Q311007"
+    },
+    {
+      "id": "joe-royle",
+      "name": "Joe Royle",
+      "sub": "England · Everton, Oldham",
+      "value": 67,
+      "display": "67 wins",
+      "aliases": [
+        "Royle"
+      ],
+      "wd": "Q923188"
+    },
+    {
+      "id": "howard-wilkinson",
+      "name": "Howard Wilkinson",
+      "sub": "England · Leeds, Sunderland",
+      "value": 66,
+      "display": "66 wins",
+      "aliases": [
+        "Wilkinson",
+        "Sergeant Wilko"
+      ],
+      "wd": "Q552905"
+    },
+    {
+      "id": "ron-atkinson",
+      "name": "Ron Atkinson",
+      "sub": "England · Aston Villa, Coventry",
+      "value": 66,
+      "display": "66 wins",
+      "aliases": [
+        "Atkinson",
+        "Big Ron"
+      ],
+      "wd": "Q344875"
+    },
+    {
+      "id": "john-gregory",
+      "name": "John Gregory",
+      "sub": "England · Aston Villa, Derby",
+      "value": 64,
+      "display": "64 wins",
+      "aliases": [
+        "Gregory"
+      ],
+      "wd": "Q942124"
+    },
+    {
+      "id": "bryan-robson",
+      "name": "Bryan Robson",
+      "sub": "England · Middlesbrough, West Brom",
+      "value": 61,
+      "display": "61 wins",
+      "aliases": [
+        "Robbo"
+      ],
+      "wd": "Q296583"
+    },
+    {
+      "id": "thomas-frank",
+      "name": "Thomas Frank",
+      "sub": "Denmark · Brentford, Spurs",
+      "value": 61,
+      "display": "61 wins",
+      "aliases": [
+        "Frank"
+      ],
+      "wd": "Q13469562"
+    },
+    {
+      "id": "jim-smith",
+      "name": "Jim Smith",
+      "sub": "England · Derby",
+      "value": 60,
+      "display": "60 wins",
+      "aliases": [
+        "Bald Eagle"
+      ],
+      "wd": "Q6198196"
+    }
+  ]
+}

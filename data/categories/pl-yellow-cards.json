@@ -1,0 +1,420 @@
+{
+  "id": "pl-yellow-cards",
+  "title": "Premier League all-time yellow cards",
+  "prompt": "most Premier League yellow cards",
+  "noun": "player",
+  "nounPlural": "players",
+  "kind": "player",
+  "metric": "Yellow cards",
+  "order": "desc",
+  "description": "Every player with 65 or more Premier League yellow cards since 1992–93, to 17 November 2026 (StatMuse count, a little above the official tally for some players); tied players share a rank.",
+  "retired": true,
+  "tags": [
+    "premier-league",
+    "players"
+  ],
+  "source": {
+    "name": "StatMuse: Premier League career yellow cards, per player",
+    "url": "https://www.statmuse.com/fc/ask/most-premier-league-yellow-cards-all-time",
+    "asOf": "2026-11-17"
+  },
+  "items": [
+    {
+      "id": "gareth-barry",
+      "name": "Gareth Barry",
+      "sub": "England · Aston Villa, Man City",
+      "value": 129,
+      "aliases": [
+        "Barry"
+      ],
+      "wd": "Q191855"
+    },
+    {
+      "id": "wayne-rooney",
+      "name": "Wayne Rooney",
+      "sub": "England · Man Utd, Everton",
+      "value": 104,
+      "aliases": [
+        "Rooney",
+        "Wazza"
+      ],
+      "wd": "Q266613"
+    },
+    {
+      "id": "lee-bowyer",
+      "name": "Lee Bowyer",
+      "sub": "England · Leeds, Newcastle",
+      "value": 99,
+      "aliases": [
+        "Bowyer"
+      ],
+      "wd": "Q353520"
+    },
+    {
+      "id": "kevin-davies",
+      "name": "Kevin Davies",
+      "sub": "England · Bolton, Southampton",
+      "value": 99,
+      "aliases": [
+        "Davies"
+      ],
+      "wd": "Q311340"
+    },
+    {
+      "id": "paul-scholes",
+      "name": "Paul Scholes",
+      "sub": "England · Man Utd",
+      "value": 99,
+      "aliases": [
+        "Scholes"
+      ],
+      "wd": "Q45613"
+    },
+    {
+      "id": "scott-parker",
+      "name": "Scott Parker",
+      "sub": "England · West Ham, Charlton",
+      "value": 96,
+      "aliases": [
+        "Parker"
+      ],
+      "wd": "Q213989"
+    },
+    {
+      "id": "lee-cattermole",
+      "name": "Lee Cattermole",
+      "sub": "England · Sunderland, Wigan",
+      "value": 95,
+      "aliases": [
+        "Cattermole"
+      ],
+      "wd": "Q83494"
+    },
+    {
+      "id": "ashley-young",
+      "name": "Ashley Young",
+      "sub": "England · Aston Villa, Man Utd",
+      "value": 95,
+      "aliases": [
+        "Young"
+      ],
+      "wd": "Q10602"
+    },
+    {
+      "id": "george-boateng",
+      "name": "George Boateng",
+      "sub": "Netherlands · Middlesbrough, Aston Villa",
+      "value": 89,
+      "aliases": [
+        "Boateng"
+      ],
+      "wd": "Q464701"
+    },
+    {
+      "id": "robbie-savage",
+      "name": "Robbie Savage",
+      "sub": "Wales · Leicester, Blackburn",
+      "value": 89,
+      "aliases": [
+        "Savage"
+      ],
+      "wd": "Q350799"
+    },
+    {
+      "id": "mark-noble",
+      "name": "Mark Noble",
+      "sub": "England · West Ham",
+      "value": 88,
+      "aliases": [
+        "Noble"
+      ],
+      "wd": "Q158814"
+    },
+    {
+      "id": "kevin-nolan",
+      "name": "Kevin Nolan",
+      "sub": "England · Bolton, West Ham",
+      "value": 87,
+      "aliases": [
+        "Nolan"
+      ],
+      "wd": "Q148699"
+    },
+    {
+      "id": "phil-bardsley",
+      "name": "Phil Bardsley",
+      "sub": "Scotland · Sunderland, Stoke",
+      "value": 83,
+      "aliases": [
+        "Bardsley"
+      ],
+      "wd": "Q69965"
+    },
+    {
+      "id": "james-milner",
+      "name": "James Milner",
+      "sub": "England · Liverpool, Man City",
+      "value": 82,
+      "aliases": [
+        "Milner"
+      ],
+      "wd": "Q191136"
+    },
+    {
+      "id": "phil-neville",
+      "name": "Phil Neville",
+      "sub": "England · Man Utd, Everton",
+      "value": 82,
+      "aliases": [
+        "Philip Neville"
+      ],
+      "wd": "Q218063"
+    },
+    {
+      "id": "nicky-butt",
+      "name": "Nicky Butt",
+      "sub": "England · Man Utd, Newcastle",
+      "value": 79,
+      "aliases": [
+        "Butt"
+      ],
+      "wd": "Q295506"
+    },
+    {
+      "id": "joey-barton",
+      "name": "Joey Barton",
+      "sub": "England · Man City, Newcastle",
+      "value": 78,
+      "aliases": [
+        "Barton"
+      ],
+      "wd": "Q202329"
+    },
+    {
+      "id": "gavin-mccann",
+      "name": "Gavin McCann",
+      "sub": "England · Sunderland, Aston Villa",
+      "value": 77,
+      "aliases": [
+        "McCann"
+      ],
+      "wd": "Q356457"
+    },
+    {
+      "id": "richard-dunne",
+      "name": "Richard Dunne",
+      "sub": "Ireland · Man City, Aston Villa",
+      "value": 76,
+      "aliases": [
+        "Dunne"
+      ],
+      "wd": "Q241502"
+    },
+    {
+      "id": "patrick-vieira",
+      "name": "Patrick Vieira",
+      "sub": "France · Arsenal, Man City",
+      "value": 76,
+      "aliases": [
+        "Vieira"
+      ],
+      "wd": "Q46347"
+    },
+    {
+      "id": "john-terry",
+      "name": "John Terry",
+      "sub": "England · Chelsea",
+      "value": 75,
+      "aliases": [
+        "Terry",
+        "JT"
+      ],
+      "wd": "Q83456"
+    },
+    {
+      "id": "paul-ince",
+      "name": "Paul Ince",
+      "sub": "England · Man Utd, Liverpool",
+      "value": 74,
+      "aliases": [
+        "Ince"
+      ],
+      "wd": "Q311171"
+    },
+    {
+      "id": "james-tarkowski",
+      "name": "James Tarkowski",
+      "sub": "England · Burnley, Everton",
+      "value": 74,
+      "aliases": [
+        "Tarkowski"
+      ],
+      "wd": "Q6144020"
+    },
+    {
+      "id": "cesc-fabregas",
+      "name": "Cesc Fàbregas",
+      "sub": "Spain · Arsenal, Chelsea",
+      "value": 73,
+      "aliases": [
+        "Fàbregas",
+        "Cesc"
+      ],
+      "wd": "Q17499"
+    },
+    {
+      "id": "luke-shaw",
+      "name": "Luke Shaw",
+      "sub": "England · Man Utd, Southampton",
+      "value": 73,
+      "aliases": [
+        "Shaw"
+      ],
+      "wd": "Q93563"
+    },
+    {
+      "id": "pablo-zabaleta",
+      "name": "Pablo Zabaleta",
+      "sub": "Argentina · Man City, West Ham",
+      "value": 72,
+      "aliases": [
+        "Zabaleta",
+        "Zaba"
+      ],
+      "wd": "Q244790"
+    },
+    {
+      "id": "jamie-carragher",
+      "name": "Jamie Carragher",
+      "sub": "England · Liverpool",
+      "value": 70,
+      "aliases": [
+        "Carragher",
+        "Carra"
+      ],
+      "wd": "Q172211"
+    },
+    {
+      "id": "mark-hughes",
+      "name": "Mark Hughes",
+      "sub": "Wales · Man Utd, Chelsea",
+      "value": 70,
+      "aliases": [
+        "Hughes",
+        "Sparky"
+      ],
+      "wd": "Q214513"
+    },
+    {
+      "id": "dennis-wise",
+      "name": "Dennis Wise",
+      "sub": "England · Chelsea, Leicester",
+      "value": 70,
+      "aliases": [
+        "Wise"
+      ],
+      "wd": "Q326438"
+    },
+    {
+      "id": "roy-keane",
+      "name": "Roy Keane",
+      "sub": "Ireland · Man Utd",
+      "value": 69,
+      "aliases": [
+        "Keane",
+        "Keano"
+      ],
+      "wd": "Q188632"
+    },
+    {
+      "id": "robert-huth",
+      "name": "Robert Huth",
+      "sub": "Germany · Stoke, Leicester",
+      "value": 68,
+      "aliases": [
+        "Huth"
+      ],
+      "wd": "Q155461"
+    },
+    {
+      "id": "frank-sinclair",
+      "name": "Frank Sinclair",
+      "sub": "Jamaica · Chelsea, Leicester",
+      "value": 68,
+      "aliases": [
+        "Sinclair"
+      ],
+      "wd": "Q657039"
+    },
+    {
+      "id": "harry-maguire",
+      "name": "Harry Maguire",
+      "sub": "England · Man Utd, Leicester",
+      "value": 67,
+      "aliases": [
+        "Maguire"
+      ],
+      "wd": "Q165772"
+    },
+    {
+      "id": "gary-speed",
+      "name": "Gary Speed",
+      "sub": "Wales · Newcastle, Leeds",
+      "value": 67,
+      "aliases": [
+        "Speed"
+      ],
+      "wd": "Q202153"
+    },
+    {
+      "id": "kyle-walker",
+      "name": "Kyle Walker",
+      "sub": "England · Man City, Tottenham",
+      "value": 66,
+      "aliases": [
+        "Walker"
+      ],
+      "wd": "Q59108"
+    },
+    {
+      "id": "granit-xhaka",
+      "name": "Granit Xhaka",
+      "sub": "Switzerland · Arsenal, Sunderland",
+      "value": 66,
+      "aliases": [
+        "Xhaka"
+      ],
+      "wd": "Q514427"
+    },
+    {
+      "id": "david-batty",
+      "name": "David Batty",
+      "sub": "England · Leeds, Newcastle",
+      "value": 65,
+      "aliases": [
+        "Batty"
+      ],
+      "wd": "Q362555"
+    },
+    {
+      "id": "luis-boa-morte",
+      "name": "Luís Boa Morte",
+      "sub": "Portugal · Fulham, West Ham",
+      "value": 65,
+      "aliases": [
+        "Boa Morte"
+      ],
+      "wd": "Q316512"
+    },
+    {
+      "id": "lucas-neill",
+      "name": "Lucas Neill",
+      "sub": "Australia · Blackburn, West Ham",
+      "value": 65,
+      "aliases": [
+        "Neill"
+      ],
+      "wd": "Q215358"
+    }
+  ]
+}

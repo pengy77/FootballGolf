@@ -1,0 +1,224 @@
+{
+  "id": "ucl-assists",
+  "title": "Champions League assists",
+  "prompt": "most Champions League assists",
+  "noun": "player",
+  "nounPlural": "players",
+  "kind": "player",
+  "retired": true,
+  "metric": "Assists",
+  "order": "desc",
+  "description": "Assists in the Champions League since 1992–93 (Opta counting; qualifying rounds excluded; no reliable records before 1992); every player with 25 or more.",
+  "tags": [
+    "champions-league",
+    "players",
+    "europe"
+  ],
+  "source": {
+    "name": "Opta Analyst: Who Has the Most Champions League Assists?",
+    "url": "https://theanalyst.com/2024/11/who-has-the-most-champions-league-assists",
+    "asOf": "2026-11-05"
+  },
+  "items": [
+    {
+      "id": "ryan-giggs",
+      "name": "Ryan Giggs",
+      "sub": "Wales · Man Utd",
+      "value": 41,
+      "aliases": [
+        "Giggs"
+      ],
+      "wd": "Q10524"
+    },
+    {
+      "id": "cristiano-ronaldo",
+      "name": "Cristiano Ronaldo",
+      "sub": "Portugal · Man Utd, Real Madrid",
+      "value": 40,
+      "aliases": [
+        "Ronaldo",
+        "CR7",
+        "Cristiano"
+      ],
+      "wd": "Q11571"
+    },
+    {
+      "id": "lionel-messi",
+      "name": "Lionel Messi",
+      "sub": "Argentina · Barcelona",
+      "value": 39,
+      "aliases": [
+        "Messi",
+        "Leo Messi"
+      ],
+      "wd": "Q615"
+    },
+    {
+      "id": "angel-di-maria",
+      "name": "Ángel Di María",
+      "sub": "Argentina · Real Madrid, PSG",
+      "value": 38,
+      "aliases": [
+        "Di María"
+      ],
+      "wd": "Q251683"
+    },
+    {
+      "id": "david-beckham",
+      "name": "David Beckham",
+      "sub": "England · Man Utd, Real Madrid",
+      "value": 36,
+      "aliases": [
+        "Beckham",
+        "Becks"
+      ],
+      "wd": "Q10520"
+    },
+    {
+      "id": "luis-figo",
+      "name": "Luís Figo",
+      "sub": "Portugal · Barcelona, Real Madrid",
+      "value": 34,
+      "aliases": [
+        "Figo"
+      ],
+      "wd": "Q483145"
+    },
+    {
+      "id": "xavi",
+      "name": "Xavi",
+      "sub": "Spain · Barcelona",
+      "value": 31,
+      "aliases": [
+        "Xavi Hernández"
+      ],
+      "wd": "Q17500"
+    },
+    {
+      "id": "neymar",
+      "name": "Neymar",
+      "sub": "Brazil · Barcelona, PSG",
+      "value": 30,
+      "aliases": [
+        "Neymar Jr"
+      ],
+      "wd": "Q142794"
+    },
+    {
+      "id": "kevin-de-bruyne",
+      "name": "Kevin De Bruyne",
+      "sub": "Belgium · Man City",
+      "value": 28,
+      "aliases": [
+        "De Bruyne",
+        "KDB"
+      ],
+      "wd": "Q357984"
+    },
+    {
+      "id": "raul",
+      "name": "Raúl",
+      "sub": "Spain · Real Madrid",
+      "value": 27,
+      "aliases": [
+        "Raúl González"
+      ],
+      "wd": "Q11576"
+    },
+    {
+      "id": "karim-benzema",
+      "name": "Karim Benzema",
+      "sub": "France · Real Madrid",
+      "value": 27,
+      "aliases": [
+        "Benzema"
+      ],
+      "wd": "Q1912"
+    },
+    {
+      "id": "vinicius-junior",
+      "name": "Vinícius Júnior",
+      "sub": "Brazil · Real Madrid",
+      "value": 26,
+      "aliases": [
+        "Vinícius",
+        "Vini Jr",
+        "Vinicius Jr"
+      ],
+      "wd": "Q28973866"
+    },
+    {
+      "id": "kylian-mbappe",
+      "name": "Kylian Mbappé",
+      "sub": "France · PSG, Real Madrid",
+      "value": 26,
+      "aliases": [
+        "Mbappé"
+      ],
+      "wd": "Q21621995"
+    },
+    {
+      "id": "zinedine-zidane",
+      "name": "Zinedine Zidane",
+      "sub": "France · Juventus, Real Madrid",
+      "value": 26,
+      "aliases": [
+        "Zidane",
+        "Zizou"
+      ],
+      "wd": "Q1835"
+    },
+    {
+      "id": "andres-iniesta",
+      "name": "Andrés Iniesta",
+      "sub": "Spain · Barcelona",
+      "value": 26,
+      "aliases": [
+        "Iniesta"
+      ],
+      "wd": "Q43729"
+    },
+    {
+      "id": "thierry-henry",
+      "name": "Thierry Henry",
+      "sub": "France · Arsenal, Barcelona",
+      "value": 25,
+      "aliases": [
+        "Henry",
+        "Titi"
+      ],
+      "wd": "Q45901"
+    },
+    {
+      "id": "dani-alves",
+      "name": "Dani Alves",
+      "sub": "Brazil · Barcelona",
+      "value": 25,
+      "aliases": [
+        "Alves",
+        "Daniel Alves"
+      ],
+      "wd": "Q172720"
+    },
+    {
+      "id": "thomas-muller",
+      "name": "Thomas Müller",
+      "sub": "Germany · Bayern",
+      "value": 25,
+      "aliases": [
+        "Müller"
+      ],
+      "wd": "Q43666"
+    },
+    {
+      "id": "joshua-kimmich",
+      "name": "Joshua Kimmich",
+      "sub": "Germany · Bayern",
+      "value": 25,
+      "aliases": [
+        "Kimmich"
+      ],
+      "wd": "Q13865408"
+    }
+  ]
+}

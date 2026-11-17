@@ -1,0 +1,571 @@
+{
+  "id": "pl-club-goals",
+  "title": "Most Premier League goals (clubs)",
+  "prompt": "most Premier League goals scored by a club",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Goals scored",
+  "order": "desc",
+  "description": "All-time Premier League goals scored. Every club that has played in the Premier League, from 1992–93 up to 17 November 2026 (2026–27 matchweek 10); tied clubs share a place.",
+  "tags": [
+    "premier-league",
+    "clubs"
+  ],
+  "source": {
+    "name": "Wikipedia: Premier League season articles 1992–93 to 2026–27, summed (cross-checked with the All-time Premier League table and StatMuse FC)",
+    "url": "https://en.wikipedia.org/wiki/Premier_League_records_and_statistics#All-time_Premier_League_table",
+    "asOf": "2026-11-17"
+  },
+  "items": [
+    {
+      "id": "manchester-united",
+      "name": "Manchester United",
+      "sub": "PL debut 1992–93 · 35 seasons",
+      "value": 2427,
+      "aliases": [
+        "Man Utd",
+        "Man United",
+        "MUFC"
+      ],
+      "wd": "Q18656"
+    },
+    {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "sub": "PL debut 1992–93 · 35 seasons",
+      "value": 2351,
+      "aliases": [
+        "Gunners"
+      ],
+      "wd": "Q9617"
+    },
+    {
+      "id": "liverpool",
+      "name": "Liverpool",
+      "sub": "PL debut 1992–93 · 35 seasons",
+      "value": 2345,
+      "aliases": [
+        "LFC"
+      ],
+      "wd": "Q1130849"
+    },
+    {
+      "id": "chelsea",
+      "name": "Chelsea",
+      "sub": "PL debut 1992–93 · 35 seasons",
+      "value": 2229,
+      "aliases": [
+        "CFC"
+      ],
+      "wd": "Q9616"
+    },
+    {
+      "id": "manchester-city",
+      "name": "Manchester City",
+      "sub": "PL debut 1992–93 · 30 seasons",
+      "value": 2018,
+      "aliases": [
+        "Man City",
+        "MCFC"
+      ],
+      "wd": "Q50602"
+    },
+    {
+      "id": "tottenham-hotspur",
+      "name": "Tottenham Hotspur",
+      "sub": "PL debut 1992–93 · 35 seasons",
+      "value": 2011,
+      "aliases": [
+        "Tottenham",
+        "Spurs",
+        "THFC"
+      ],
+      "wd": "Q18741"
+    },
+    {
+      "id": "everton",
+      "name": "Everton",
+      "sub": "PL debut 1992–93 · 35 seasons",
+      "value": 1666,
+      "aliases": [
+        "Toffees"
+      ],
+      "wd": "Q5794"
+    },
+    {
+      "id": "newcastle-united",
+      "name": "Newcastle United",
+      "sub": "PL debut 1993–94 · 32 seasons",
+      "value": 1664,
+      "aliases": [
+        "Newcastle",
+        "Toon",
+        "Magpies",
+        "NUFC"
+      ],
+      "wd": "Q18716"
+    },
+    {
+      "id": "aston-villa",
+      "name": "Aston Villa",
+      "sub": "PL debut 1992–93 · 32 seasons",
+      "value": 1520,
+      "aliases": [
+        "Villa",
+        "AVFC"
+      ],
+      "wd": "Q18711"
+    },
+    {
+      "id": "west-ham-united",
+      "name": "West Ham United",
+      "sub": "PL debut 1993–94 · 30 seasons",
+      "value": 1429,
+      "aliases": [
+        "West Ham",
+        "Hammers",
+        "Irons"
+      ],
+      "wd": "Q18747"
+    },
+    {
+      "id": "southampton",
+      "name": "Southampton",
+      "sub": "PL debut 1992–93 · 25 seasons",
+      "value": 1140,
+      "aliases": [
+        "Saints"
+      ],
+      "wd": "Q18732"
+    },
+    {
+      "id": "blackburn-rovers",
+      "name": "Blackburn Rovers",
+      "sub": "PL debut 1992–93 · 18 seasons",
+      "value": 927,
+      "aliases": [
+        "Blackburn"
+      ],
+      "wd": "Q19446"
+    },
+    {
+      "id": "leicester-city",
+      "name": "Leicester City",
+      "sub": "PL debut 1994–95 · 18 seasons",
+      "value": 904,
+      "aliases": [
+        "Leicester",
+        "Foxes"
+      ],
+      "wd": "Q19481"
+    },
+    {
+      "id": "fulham",
+      "name": "Fulham",
+      "sub": "PL debut 2001–02 · 20 seasons",
+      "value": 852,
+      "aliases": [
+        "Cottagers"
+      ],
+      "wd": "Q18708"
+    },
+    {
+      "id": "leeds-united",
+      "name": "Leeds United",
+      "sub": "PL debut 1992–93 · 17 seasons",
+      "value": 852,
+      "aliases": [
+        "Leeds",
+        "LUFC"
+      ],
+      "wd": "Q1128631"
+    },
+    {
+      "id": "crystal-palace",
+      "name": "Crystal Palace",
+      "sub": "PL debut 1992–93 · 18 seasons",
+      "value": 746,
+      "aliases": [
+        "Palace",
+        "Eagles"
+      ],
+      "wd": "Q19467"
+    },
+    {
+      "id": "sunderland",
+      "name": "Sunderland",
+      "sub": "PL debut 1996–97 · 18 seasons",
+      "value": 662,
+      "aliases": [
+        "Black Cats"
+      ],
+      "wd": "Q18739"
+    },
+    {
+      "id": "middlesbrough",
+      "name": "Middlesbrough",
+      "sub": "PL debut 1992–93 · 15 seasons",
+      "value": 648,
+      "aliases": [
+        "Boro"
+      ],
+      "wd": "Q18661"
+    },
+    {
+      "id": "bolton-wanderers",
+      "name": "Bolton Wanderers",
+      "sub": "PL debut 1995–96 · 13 seasons",
+      "value": 575,
+      "aliases": [
+        "Bolton",
+        "Trotters"
+      ],
+      "wd": "Q19451"
+    },
+    {
+      "id": "west-bromwich-albion",
+      "name": "West Bromwich Albion",
+      "sub": "PL debut 2002–03 · 13 seasons",
+      "value": 510,
+      "aliases": [
+        "West Brom",
+        "WBA",
+        "Baggies"
+      ],
+      "wd": "Q18744"
+    },
+    {
+      "id": "wolverhampton-wanderers",
+      "name": "Wolverhampton Wanderers",
+      "sub": "PL debut 2003–04 · 12 seasons",
+      "value": 490,
+      "aliases": [
+        "Wolves",
+        "Wolverhampton"
+      ],
+      "wd": "Q19500"
+    },
+    {
+      "id": "bournemouth",
+      "name": "Bournemouth",
+      "sub": "PL debut 2015–16 · 10 seasons",
+      "value": 464,
+      "aliases": [
+        "AFC Bournemouth",
+        "Cherries"
+      ],
+      "wd": "Q19568"
+    },
+    {
+      "id": "brighton-hove-albion",
+      "name": "Brighton & Hove Albion",
+      "sub": "PL debut 2017–18 · 10 seasons",
+      "value": 461,
+      "aliases": [
+        "Brighton",
+        "Brighton and Hove Albion",
+        "Seagulls"
+      ],
+      "wd": "Q19453"
+    },
+    {
+      "id": "nottingham-forest",
+      "name": "Nottingham Forest",
+      "sub": "PL debut 1992–93 · 10 seasons",
+      "value": 431,
+      "aliases": [
+        "Forest",
+        "Nottm Forest"
+      ],
+      "wd": "Q19490"
+    },
+    {
+      "id": "norwich-city",
+      "name": "Norwich City",
+      "sub": "PL debut 1992–93 · 10 seasons",
+      "value": 414,
+      "aliases": [
+        "Norwich",
+        "Canaries"
+      ],
+      "wd": "Q18721"
+    },
+    {
+      "id": "sheffield-wednesday",
+      "name": "Sheffield Wednesday",
+      "sub": "PL debut 1992–93 · 8 seasons",
+      "value": 409,
+      "aliases": [
+        "Sheff Wed",
+        "Wednesday",
+        "Owls"
+      ],
+      "wd": "Q19498"
+    },
+    {
+      "id": "stoke-city",
+      "name": "Stoke City",
+      "sub": "PL debut 2008–09 · 10 seasons",
+      "value": 398,
+      "aliases": [
+        "Stoke",
+        "Potters"
+      ],
+      "wd": "Q18736"
+    },
+    {
+      "id": "coventry-city",
+      "name": "Coventry City",
+      "sub": "PL debut 1992–93 · 10 seasons",
+      "value": 397,
+      "aliases": [
+        "Coventry",
+        "Sky Blues"
+      ],
+      "wd": "Q19580"
+    },
+    {
+      "id": "wimbledon",
+      "name": "Wimbledon",
+      "sub": "PL debut 1992–93 · 8 seasons",
+      "value": 384,
+      "aliases": [
+        "Wimbledon FC",
+        "Crazy Gang",
+        "Dons"
+      ],
+      "wd": "Q48851"
+    },
+    {
+      "id": "burnley",
+      "name": "Burnley",
+      "sub": "PL debut 2009–10 · 10 seasons",
+      "value": 379,
+      "aliases": [
+        "Clarets"
+      ],
+      "wd": "Q19458"
+    },
+    {
+      "id": "charlton-athletic",
+      "name": "Charlton Athletic",
+      "sub": "PL debut 1998–99 · 8 seasons",
+      "value": 342,
+      "aliases": [
+        "Charlton",
+        "Addicks"
+      ],
+      "wd": "Q19462"
+    },
+    {
+      "id": "queens-park-rangers",
+      "name": "Queens Park Rangers",
+      "sub": "PL debut 1992–93 · 7 seasons",
+      "value": 339,
+      "aliases": [
+        "QPR"
+      ],
+      "wd": "Q18723"
+    },
+    {
+      "id": "wigan-athletic",
+      "name": "Wigan Athletic",
+      "sub": "PL debut 2005–06 · 8 seasons",
+      "value": 316,
+      "aliases": [
+        "Wigan"
+      ],
+      "wd": "Q18750"
+    },
+    {
+      "id": "watford",
+      "name": "Watford",
+      "sub": "PL debut 1999–2000 · 8 seasons",
+      "value": 310,
+      "aliases": [
+        "Hornets"
+      ],
+      "wd": "Q2714"
+    },
+    {
+      "id": "swansea-city",
+      "name": "Swansea City",
+      "sub": "PL debut 2011–12 · 7 seasons",
+      "value": 306,
+      "aliases": [
+        "Swansea",
+        "Swans"
+      ],
+      "wd": "Q18659"
+    },
+    {
+      "id": "brentford",
+      "name": "Brentford",
+      "sub": "PL debut 2021–22 · 6 seasons",
+      "value": 299,
+      "aliases": [
+        "Bees"
+      ],
+      "wd": "Q19571"
+    },
+    {
+      "id": "portsmouth",
+      "name": "Portsmouth",
+      "sub": "PL debut 2003–04 · 7 seasons",
+      "value": 292,
+      "aliases": [
+        "Pompey"
+      ],
+      "wd": "Q19604"
+    },
+    {
+      "id": "birmingham-city",
+      "name": "Birmingham City",
+      "sub": "PL debut 2002–03 · 7 seasons",
+      "value": 273,
+      "aliases": [
+        "Birmingham"
+      ],
+      "wd": "Q19444"
+    },
+    {
+      "id": "derby-county",
+      "name": "Derby County",
+      "sub": "PL debut 1996–97 · 7 seasons",
+      "value": 271,
+      "aliases": [
+        "Derby",
+        "Rams"
+      ],
+      "wd": "Q19470"
+    },
+    {
+      "id": "ipswich-town",
+      "name": "Ipswich Town",
+      "sub": "PL debut 1992–93 · 7 seasons",
+      "value": 270,
+      "aliases": [
+        "Ipswich",
+        "Tractor Boys"
+      ],
+      "wd": "Q9653"
+    },
+    {
+      "id": "sheffield-united",
+      "name": "Sheffield United",
+      "sub": "PL debut 1992–93 · 6 seasons",
+      "value": 222,
+      "aliases": [
+        "Sheff Utd",
+        "Blades"
+      ],
+      "wd": "Q19607"
+    },
+    {
+      "id": "hull-city",
+      "name": "Hull City",
+      "sub": "PL debut 2008–09 · 6 seasons",
+      "value": 192,
+      "aliases": [
+        "Hull",
+        "Tigers"
+      ],
+      "wd": "Q19477"
+    },
+    {
+      "id": "reading",
+      "name": "Reading",
+      "sub": "PL debut 2006–07 · 3 seasons",
+      "value": 136,
+      "aliases": [
+        "Royals"
+      ],
+      "wd": "Q18729"
+    },
+    {
+      "id": "oldham-athletic",
+      "name": "Oldham Athletic",
+      "sub": "PL debut 1992–93 · 2 seasons",
+      "value": 105,
+      "aliases": [
+        "Oldham"
+      ],
+      "wd": "Q19601"
+    },
+    {
+      "id": "bradford-city",
+      "name": "Bradford City",
+      "sub": "PL debut 1999–2000 · 2 seasons",
+      "value": 68,
+      "aliases": [
+        "Bradford",
+        "Bantams"
+      ],
+      "wd": "Q48879"
+    },
+    {
+      "id": "cardiff-city",
+      "name": "Cardiff City",
+      "sub": "PL debut 2013–14 · 2 seasons",
+      "value": 66,
+      "aliases": [
+        "Cardiff",
+        "Bluebirds"
+      ],
+      "wd": "Q18662"
+    },
+    {
+      "id": "blackpool",
+      "name": "Blackpool",
+      "sub": "PL debut 2010–11 · 1 season",
+      "value": 55,
+      "aliases": [
+        "Seasiders"
+      ],
+      "wd": "Q19449"
+    },
+    {
+      "id": "luton-town",
+      "name": "Luton Town",
+      "sub": "PL debut 2023–24 · 1 season",
+      "value": 52,
+      "aliases": [
+        "Luton",
+        "Hatters"
+      ],
+      "wd": "Q18520"
+    },
+    {
+      "id": "huddersfield-town",
+      "name": "Huddersfield Town",
+      "sub": "PL debut 2017–18 · 2 seasons",
+      "value": 50,
+      "aliases": [
+        "Huddersfield",
+        "Terriers"
+      ],
+      "wd": "Q19473"
+    },
+    {
+      "id": "swindon-town",
+      "name": "Swindon Town",
+      "sub": "PL debut 1993–94 · 1 season",
+      "value": 47,
+      "aliases": [
+        "Swindon"
+      ],
+      "wd": "Q19634"
+    },
+    {
+      "id": "barnsley",
+      "name": "Barnsley",
+      "sub": "PL debut 1997–98 · 1 season",
+      "value": 37,
+      "aliases": [
+        "Tykes"
+      ],
+      "wd": "Q19442"
+    }
+  ]
+}

@@ -7,7 +7,7 @@
   "kind": "player",
   "metric": "Goals",
   "order": "desc",
-  "description": "All-time Bundesliga goals since 1963–64, for every player who has scored 100 or more.",
+  "description": "All-time Bundesliga goals since 1963–64, for every player who has scored 90 or more. Players on 90–99 goals from RSSSF’s all-time list, checked against StatMuse; Patrik Schick to 31 October 2026 from German Wikipedia.",
   "tags": [
     "europe",
     "players"
@@ -595,6 +595,242 @@
         "Heesen"
       ],
       "wd": "Q642986"
+    },
+    {
+      "id": "arjen-robben",
+      "name": "Arjen Robben",
+      "sub": "Netherlands · Bayern",
+      "value": 99,
+      "aliases": [
+        "Robben"
+      ],
+      "wd": "Q43913"
+    },
+    {
+      "id": "pierre-emerick-aubameyang",
+      "name": "Pierre-Emerick Aubameyang",
+      "sub": "Gabon · Dortmund",
+      "value": 98,
+      "aliases": [
+        "Aubameyang",
+        "Auba"
+      ],
+      "wd": "Q44977"
+    },
+    {
+      "id": "erwin-kostedde",
+      "name": "Erwin Kostedde",
+      "sub": "Germany · Kickers Offenbach",
+      "value": 98,
+      "aliases": [
+        "Kostedde"
+      ],
+      "wd": "Q644438"
+    },
+    {
+      "id": "cha-bum-kun",
+      "name": "Cha Bum-kun",
+      "sub": "South Korea · Eintracht Frankfurt, Leverkusen",
+      "value": 98,
+      "aliases": [
+        "Cha",
+        "Cha Bum-keun"
+      ],
+      "wd": "Q346751"
+    },
+    {
+      "id": "mehmet-scholl",
+      "name": "Mehmet Scholl",
+      "sub": "Germany · Bayern",
+      "value": 98,
+      "aliases": [
+        "Scholl"
+      ],
+      "wd": "Q154156"
+    },
+    {
+      "id": "franz-brungs",
+      "name": "Franz Brungs",
+      "sub": "Germany · Dortmund, Nürnberg, Hertha BSC",
+      "value": 97,
+      "aliases": [
+        "Brungs"
+      ],
+      "wd": "Q120255"
+    },
+    {
+      "id": "max-kruse",
+      "name": "Max Kruse",
+      "sub": "Germany · Werder Bremen, Mönchengladbach",
+      "value": 97,
+      "aliases": [
+        "Kruse"
+      ],
+      "wd": "Q129013"
+    },
+    {
+      "id": "frank-neubarth",
+      "name": "Frank Neubarth",
+      "sub": "Germany · Werder Bremen",
+      "value": 97,
+      "aliases": [
+        "Neubarth"
+      ],
+      "wd": "Q460443"
+    },
+    {
+      "id": "patrik-schick",
+      "name": "Patrik Schick",
+      "sub": "Czech Republic · Leverkusen",
+      "value": 97,
+      "aliases": [
+        "Schick"
+      ],
+      "wd": "Q16910257"
+    },
+    {
+      "id": "tony-yeboah",
+      "name": "Tony Yeboah",
+      "sub": "Ghana · Eintracht Frankfurt, Hamburg",
+      "value": 96,
+      "aliases": [
+        "Yeboah",
+        "Anthony Yeboah"
+      ],
+      "wd": "Q379603"
+    },
+    {
+      "id": "hermann-ohlicher",
+      "name": "Hermann Ohlicher",
+      "sub": "Germany · Stuttgart",
+      "value": 96,
+      "aliases": [
+        "Ohlicher"
+      ],
+      "wd": "Q123435"
+    },
+    {
+      "id": "sergej-barbarez",
+      "name": "Sergej Barbarez",
+      "sub": "Bosnia and Herzegovina · Hamburg",
+      "value": 95,
+      "aliases": [
+        "Barbarez"
+      ],
+      "wd": "Q431455"
+    },
+    {
+      "id": "erich-beer",
+      "name": "Erich Beer",
+      "sub": "Germany · Hertha BSC",
+      "value": 95,
+      "aliases": [
+        "Beer"
+      ],
+      "wd": "Q546472"
+    },
+    {
+      "id": "hans-jorg-criens",
+      "name": "Hans-Jörg Criens",
+      "sub": "Germany · Mönchengladbach",
+      "value": 94,
+      "aliases": [
+        "Criens"
+      ],
+      "wd": "Q881293"
+    },
+    {
+      "id": "alexander-meier",
+      "name": "Alexander Meier",
+      "sub": "Germany · Eintracht Frankfurt",
+      "value": 93,
+      "aliases": [
+        "Meier"
+      ],
+      "wd": "Q276731"
+    },
+    {
+      "id": "paul-breitner",
+      "name": "Paul Breitner",
+      "sub": "Germany · Bayern",
+      "value": 93,
+      "aliases": [
+        "Breitner"
+      ],
+      "wd": "Q44458"
+    },
+    {
+      "id": "willi-reimann",
+      "name": "Willi Reimann",
+      "sub": "Germany · Hannover, Hamburg",
+      "value": 93,
+      "aliases": [
+        "Reimann",
+        "Wilhelm Reimann"
+      ],
+      "wd": "Q385304"
+    },
+    {
+      "id": "willi-lippens",
+      "name": "Willi Lippens",
+      "sub": "Netherlands · Rot-Weiss Essen",
+      "value": 92,
+      "aliases": [
+        "Lippens",
+        "Ente"
+      ],
+      "wd": "Q314443"
+    },
+    {
+      "id": "michael-preetz",
+      "name": "Michael Preetz",
+      "sub": "Germany · Hertha BSC",
+      "value": 91,
+      "aliases": [
+        "Preetz"
+      ],
+      "wd": "Q644091"
+    },
+    {
+      "id": "uwe-bein",
+      "name": "Uwe Bein",
+      "sub": "Germany · Hamburg, Eintracht Frankfurt",
+      "value": 91,
+      "aliases": [
+        "Bein"
+      ],
+      "wd": "Q455161"
+    },
+    {
+      "id": "rudiger-wenzel",
+      "name": "Rüdiger Wenzel",
+      "sub": "Germany · Eintracht Frankfurt, Fortuna Düsseldorf",
+      "value": 91,
+      "aliases": [
+        "Wenzel"
+      ],
+      "wd": "Q2203789"
+    },
+    {
+      "id": "oliver-neuville",
+      "name": "Oliver Neuville",
+      "sub": "Germany · Hansa Rostock, Leverkusen, Mönchengladbach",
+      "value": 91,
+      "aliases": [
+        "Neuville"
+      ],
+      "wd": "Q152972"
+    },
+    {
+      "id": "toni-polster",
+      "name": "Toni Polster",
+      "sub": "Austria · Köln",
+      "value": 90,
+      "aliases": [
+        "Polster",
+        "Anton Polster"
+      ],
+      "wd": "Q311520"
     }
   ]
 }

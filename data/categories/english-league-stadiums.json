@@ -1,13 +1,13 @@
 {
   "id": "english-league-stadiums",
-  "title": "English league stadiums by capacity",
-  "prompt": "biggest stadium in English league football",
-  "noun": "stadium",
-  "nounPlural": "stadiums",
-  "kind": "stadium",
-  "metric": "Capacity",
+  "title": "English league clubs by stadium capacity",
+  "prompt": "biggest stadium in English league football: which club plays there?",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Stadium capacity",
   "order": "desc",
-  "description": "Home grounds of all 92 Premier League and EFL clubs in 2026–27 (including the four Welsh clubs), ranked by capacity.",
+  "description": "All 92 Premier League and EFL clubs in 2026–27 (including the four Welsh clubs), ranked by the capacity of their home ground. Name the club: you don't need to know the stadium.",
   "tags": [
     "stadiums",
     "england",
@@ -21,1159 +21,958 @@
   "items": [
     {
       "id": "old-trafford",
-      "name": "Old Trafford",
-      "sub": "Manchester United",
+      "name": "Manchester United",
+      "sub": "Old Trafford",
       "value": 74244,
       "display": "74,244",
       "aliases": [
-        "Manchester United",
         "Man Utd",
-        "Man United",
-        "Theatre of Dreams"
+        "Man United"
       ],
-      "wd": "Q83457"
+      "wd": "Q18656"
     },
     {
       "id": "tottenham-hotspur-stadium",
-      "name": "Tottenham Hotspur Stadium",
-      "sub": "Tottenham Hotspur · London",
+      "name": "Tottenham Hotspur",
+      "sub": "Tottenham Hotspur Stadium",
       "value": 62850,
       "display": "62,850",
       "aliases": [
-        "Tottenham Hotspur",
         "Tottenham",
         "Spurs"
       ],
-      "wd": "Q55074091"
+      "wd": "Q18741"
     },
     {
       "id": "london-stadium",
-      "name": "London Stadium",
-      "sub": "West Ham United · London",
+      "name": "West Ham United",
+      "sub": "London Stadium",
       "value": 62500,
       "display": "62,500",
       "aliases": [
-        "West Ham United",
-        "West Ham",
-        "Olympic Stadium"
+        "West Ham"
       ],
-      "wd": "Q172190"
+      "wd": "Q18747"
     },
     {
       "id": "anfield",
-      "name": "Anfield",
-      "sub": "Liverpool",
+      "name": "Liverpool",
+      "sub": "Anfield",
       "value": 61276,
       "display": "61,276",
       "aliases": [
-        "Liverpool",
         "LFC"
       ],
-      "wd": "Q45671"
+      "wd": "Q1130849"
     },
     {
       "id": "etihad-stadium",
-      "name": "Etihad Stadium",
-      "sub": "Manchester City",
+      "name": "Manchester City",
+      "sub": "Etihad Stadium",
       "value": 61038,
       "display": "61,038",
       "aliases": [
-        "Manchester City",
-        "Man City",
-        "Etihad",
-        "City of Manchester Stadium"
+        "Man City"
       ],
-      "wd": "Q48159"
+      "wd": "Q50602"
     },
     {
       "id": "emirates-stadium",
-      "name": "Emirates Stadium",
-      "sub": "Arsenal · London",
+      "name": "Arsenal",
+      "sub": "Emirates Stadium",
       "value": 60704,
       "display": "60,704",
       "aliases": [
-        "Arsenal",
-        "Emirates",
         "Gunners"
       ],
-      "wd": "Q163995"
+      "wd": "Q9617"
     },
     {
       "id": "hill-dickinson-stadium",
-      "name": "Hill Dickinson Stadium",
-      "sub": "Everton · Liverpool",
+      "name": "Everton",
+      "sub": "Hill Dickinson Stadium",
       "value": 52769,
       "display": "52,769",
       "aliases": [
-        "Everton",
-        "Everton Stadium",
-        "Bramley-Moore Dock",
         "Toffees"
       ],
-      "wd": "Q29347805"
+      "wd": "Q5794"
     },
     {
       "id": "st-james-park",
-      "name": "St James' Park",
-      "sub": "Newcastle United · Newcastle upon Tyne",
+      "name": "Newcastle United",
+      "sub": "St James' Park",
       "value": 52719,
       "display": "52,719",
       "aliases": [
-        "Newcastle United",
         "Newcastle",
-        "St James Park Newcastle",
         "Toon"
       ],
-      "wd": "Q1856701"
+      "wd": "Q18716"
     },
     {
       "id": "stadium-of-light",
-      "name": "Stadium of Light",
-      "sub": "Sunderland",
+      "name": "Sunderland",
+      "sub": "Stadium of Light",
       "value": 48095,
       "display": "48,095",
-      "aliases": [
-        "Sunderland"
-      ],
-      "wd": "Q31969"
+      "wd": "Q18739"
     },
     {
       "id": "villa-park",
-      "name": "Villa Park",
-      "sub": "Aston Villa · Birmingham",
+      "name": "Aston Villa",
+      "sub": "Villa Park",
       "value": 43205,
       "display": "43,205",
       "aliases": [
-        "Aston Villa",
         "Villa"
       ],
-      "wd": "Q175339"
+      "wd": "Q18711"
     },
     {
       "id": "stamford-bridge",
-      "name": "Stamford Bridge",
-      "sub": "Chelsea · London",
+      "name": "Chelsea",
+      "sub": "Stamford Bridge",
       "value": 40044,
       "display": "40,044",
-      "aliases": [
-        "Chelsea",
-        "The Bridge"
-      ],
-      "wd": "Q171458"
+      "wd": "Q9616"
     },
     {
       "id": "elland-road",
-      "name": "Elland Road",
-      "sub": "Leeds United",
+      "name": "Leeds United",
+      "sub": "Elland Road",
       "value": 37645,
       "display": "37,645",
       "aliases": [
-        "Leeds United",
         "Leeds"
       ],
-      "wd": "Q619505"
+      "wd": "Q1128631"
     },
     {
       "id": "hillsborough",
-      "name": "Hillsborough",
-      "sub": "Sheffield Wednesday",
+      "name": "Sheffield Wednesday",
+      "sub": "Hillsborough",
       "value": 34835,
       "display": "34,835",
       "aliases": [
-        "Sheffield Wednesday",
         "Sheff Wed",
-        "Wednesday",
-        "Hillsborough Stadium"
+        "Wednesday"
       ],
-      "wd": "Q642557"
+      "wd": "Q19498"
     },
     {
       "id": "riverside-stadium",
-      "name": "Riverside Stadium",
-      "sub": "Middlesbrough",
+      "name": "Middlesbrough",
+      "sub": "Riverside Stadium",
       "value": 33931,
       "display": "33,931",
       "aliases": [
-        "Middlesbrough",
-        "Boro",
-        "The Riverside"
+        "Boro"
       ],
-      "wd": "Q822886"
+      "wd": "Q18661"
     },
     {
       "id": "cardiff-city-stadium",
-      "name": "Cardiff City Stadium",
-      "sub": "Cardiff City",
+      "name": "Cardiff City",
+      "sub": "Cardiff City Stadium",
       "value": 33280,
       "display": "33,280",
       "aliases": [
-        "Cardiff City",
         "Cardiff"
       ],
-      "wd": "Q867902"
+      "wd": "Q18662"
     },
     {
       "id": "pride-park",
-      "name": "Pride Park",
-      "sub": "Derby County",
+      "name": "Derby County",
+      "sub": "Pride Park",
       "value": 32956,
       "display": "32,956",
       "aliases": [
-        "Derby County",
-        "Derby",
-        "Pride Park Stadium"
+        "Derby"
       ],
-      "wd": "Q201612"
+      "wd": "Q19470"
     },
     {
       "id": "coventry-building-society-arena",
-      "name": "Coventry Building Society Arena",
-      "sub": "Coventry City",
+      "name": "Coventry City",
+      "sub": "Coventry Building Society Arena",
       "value": 32609,
       "display": "32,609",
       "aliases": [
-        "Coventry City",
-        "Coventry",
-        "CBS Arena",
-        "Ricoh Arena"
+        "Coventry"
       ],
-      "wd": "Q842077"
+      "wd": "Q19580"
     },
     {
       "id": "st-mary-s-stadium",
-      "name": "St Mary's Stadium",
-      "sub": "Southampton",
+      "name": "Southampton",
+      "sub": "St Mary's Stadium",
       "value": 32384,
       "display": "32,384",
       "aliases": [
-        "Southampton",
         "Saints"
       ],
-      "wd": "Q567339"
+      "wd": "Q18732"
     },
     {
       "id": "king-power-stadium",
-      "name": "King Power Stadium",
-      "sub": "Leicester City",
+      "name": "Leicester City",
+      "sub": "King Power Stadium",
       "value": 32259,
       "display": "32,259",
       "aliases": [
-        "Leicester City",
         "Leicester"
       ],
-      "wd": "Q620031"
+      "wd": "Q19481"
     },
     {
       "id": "bramall-lane",
-      "name": "Bramall Lane",
-      "sub": "Sheffield United",
+      "name": "Sheffield United",
+      "sub": "Bramall Lane",
       "value": 32050,
       "display": "32,050",
       "aliases": [
-        "Sheffield United",
         "Sheff Utd",
         "Blades"
       ],
-      "wd": "Q897533"
+      "wd": "Q19607"
     },
     {
       "id": "falmer-stadium",
-      "name": "Falmer Stadium",
-      "sub": "Brighton & Hove Albion · Falmer",
+      "name": "Brighton & Hove Albion",
+      "sub": "Falmer Stadium",
       "value": 31876,
       "display": "31,876",
       "aliases": [
-        "Brighton & Hove Albion",
-        "Brighton",
-        "Amex",
-        "Amex Stadium",
-        "American Express Stadium"
+        "Brighton"
       ],
-      "wd": "Q619409"
+      "wd": "Q19453"
     },
     {
       "id": "molineux",
-      "name": "Molineux",
-      "sub": "Wolverhampton Wanderers",
+      "name": "Wolverhampton Wanderers",
+      "sub": "Molineux",
       "value": 31750,
       "display": "31,750",
       "aliases": [
-        "Wolverhampton Wanderers",
-        "Wolves",
-        "Molineux Stadium"
+        "Wolves"
       ],
-      "wd": "Q380823"
+      "wd": "Q19500"
     },
     {
       "id": "ewood-park",
-      "name": "Ewood Park",
-      "sub": "Blackburn Rovers",
+      "name": "Blackburn Rovers",
+      "sub": "Ewood Park",
       "value": 31363,
       "display": "31,363",
       "aliases": [
-        "Blackburn Rovers",
         "Blackburn"
       ],
-      "wd": "Q245085"
+      "wd": "Q19446"
     },
     {
       "id": "city-ground",
-      "name": "City Ground",
-      "sub": "Nottingham Forest · West Bridgford",
+      "name": "Nottingham Forest",
+      "sub": "City Ground",
       "value": 30404,
       "display": "30,404",
       "aliases": [
-        "Nottingham Forest",
         "Forest",
         "Nottm Forest"
       ],
-      "wd": "Q593446"
+      "wd": "Q19490"
     },
     {
       "id": "stadium-mk",
-      "name": "Stadium MK",
-      "sub": "Milton Keynes Dons",
+      "name": "Milton Keynes Dons",
+      "sub": "Stadium MK",
       "value": 30303,
       "display": "30,303",
       "aliases": [
-        "Milton Keynes Dons",
         "MK Dons"
       ],
-      "wd": "Q1144973"
+      "wd": "Q248188"
     },
     {
       "id": "bet365-stadium",
-      "name": "bet365 Stadium",
-      "sub": "Stoke City · Stoke-on-Trent",
+      "name": "Stoke City",
+      "sub": "bet365 Stadium",
       "value": 30089,
       "display": "30,089",
       "aliases": [
-        "Stoke City",
-        "Stoke",
-        "Britannia Stadium"
+        "Stoke"
       ],
-      "wd": "Q500922"
+      "wd": "Q18736"
     },
     {
       "id": "portman-road",
-      "name": "Portman Road",
-      "sub": "Ipswich Town",
+      "name": "Ipswich Town",
+      "sub": "Portman Road",
       "value": 29813,
       "display": "29,813",
       "aliases": [
-        "Ipswich Town",
         "Ipswich"
       ],
-      "wd": "Q619558"
+      "wd": "Q9653"
     },
     {
       "id": "st-andrew-s",
-      "name": "St Andrew's",
-      "sub": "Birmingham City",
+      "name": "Birmingham City",
+      "sub": "St Andrew's",
       "value": 29409,
       "display": "29,409",
       "aliases": [
-        "Birmingham City",
         "Birmingham",
-        "Blues",
-        "St Andrews",
-        "Knighthead Park"
+        "Blues"
       ],
-      "wd": "Q819179"
+      "wd": "Q19444"
     },
     {
       "id": "toughsheet-community-stadium",
-      "name": "Toughsheet Community Stadium",
-      "sub": "Bolton Wanderers · Horwich",
+      "name": "Bolton Wanderers",
+      "sub": "Toughsheet Community Stadium",
       "value": 28018,
       "display": "28,018",
       "aliases": [
-        "Bolton Wanderers",
-        "Bolton",
-        "University of Bolton Stadium",
-        "Reebok Stadium",
-        "Macron Stadium"
+        "Bolton"
       ],
-      "wd": "Q242772"
+      "wd": "Q19451"
     },
     {
       "id": "craven-cottage",
-      "name": "Craven Cottage",
-      "sub": "Fulham · London",
+      "name": "Fulham",
+      "sub": "Craven Cottage",
       "value": 27782,
       "display": "27,782",
-      "aliases": [
-        "Fulham",
-        "The Cottage"
-      ],
-      "wd": "Q318043"
+      "wd": "Q18708"
     },
     {
       "id": "carrow-road",
-      "name": "Carrow Road",
-      "sub": "Norwich City",
+      "name": "Norwich City",
+      "sub": "Carrow Road",
       "value": 27359,
       "display": "27,359",
       "aliases": [
-        "Norwich City",
         "Norwich"
       ],
-      "wd": "Q123017"
+      "wd": "Q18721"
     },
     {
       "id": "the-valley",
-      "name": "The Valley",
-      "sub": "Charlton Athletic · London",
+      "name": "Charlton Athletic",
+      "sub": "The Valley",
       "value": 27111,
       "display": "27,111",
       "aliases": [
-        "Charlton Athletic",
         "Charlton"
       ],
-      "wd": "Q958319"
+      "wd": "Q19462"
     },
     {
       "id": "ashton-gate-stadium",
-      "name": "Ashton Gate Stadium",
-      "sub": "Bristol City",
+      "name": "Bristol City",
+      "sub": "Ashton Gate Stadium",
       "value": 27000,
       "display": "27,000",
-      "aliases": [
-        "Bristol City",
-        "Ashton Gate"
-      ],
-      "wd": "Q726370"
+      "wd": "Q19456"
     },
     {
       "id": "the-hawthorns",
-      "name": "The Hawthorns",
-      "sub": "West Bromwich Albion",
+      "name": "West Bromwich Albion",
+      "sub": "The Hawthorns",
       "value": 26688,
       "display": "26,688",
       "aliases": [
-        "West Bromwich Albion",
         "West Brom",
         "WBA"
       ],
-      "wd": "Q31678"
+      "wd": "Q18744"
     },
     {
       "id": "mkm-stadium",
-      "name": "MKM Stadium",
-      "sub": "Hull City · Kingston upon Hull",
+      "name": "Hull City",
+      "sub": "MKM Stadium",
       "value": 25586,
       "display": "25,586",
       "aliases": [
-        "Hull City",
-        "Hull",
-        "KCOM Stadium",
-        "KC Stadium"
+        "Hull"
       ],
-      "wd": "Q630160"
+      "wd": "Q19477"
     },
     {
       "id": "selhurst-park",
-      "name": "Selhurst Park",
-      "sub": "Crystal Palace · London",
+      "name": "Crystal Palace",
+      "sub": "Selhurst Park",
       "value": 25194,
       "display": "25,194",
       "aliases": [
-        "Crystal Palace",
         "Palace"
       ],
-      "wd": "Q1066373"
+      "wd": "Q19467"
     },
     {
       "id": "brick-community-stadium",
-      "name": "Brick Community Stadium",
-      "sub": "Wigan Athletic",
+      "name": "Wigan Athletic",
+      "sub": "Brick Community Stadium",
       "value": 25133,
       "display": "25,133",
       "aliases": [
-        "Wigan Athletic",
-        "Wigan",
-        "DW Stadium",
-        "JJB Stadium"
+        "Wigan"
       ],
-      "wd": "Q494388"
+      "wd": "Q18750"
     },
     {
       "id": "valley-parade",
-      "name": "Valley Parade",
-      "sub": "Bradford City",
+      "name": "Bradford City",
+      "sub": "Valley Parade",
       "value": 24433,
       "display": "24,433",
       "aliases": [
-        "Bradford City",
         "Bradford"
       ],
-      "wd": "Q969279"
+      "wd": "Q48879"
     },
     {
       "id": "madejski-stadium",
-      "name": "Madejski Stadium",
-      "sub": "Reading",
+      "name": "Reading",
+      "sub": "Madejski Stadium",
       "value": 24376,
       "display": "24,376",
-      "aliases": [
-        "Reading",
-        "Select Car Leasing Stadium"
-      ],
-      "wd": "Q31656"
+      "wd": "Q18729"
     },
     {
       "id": "kirklees-stadium",
-      "name": "Kirklees Stadium",
-      "sub": "Huddersfield Town",
+      "name": "Huddersfield Town",
+      "sub": "Kirklees Stadium",
       "value": 24329,
       "display": "24,329",
       "aliases": [
-        "Huddersfield Town",
-        "Huddersfield",
-        "John Smith's Stadium",
-        "Accu Stadium",
-        "McAlpine Stadium"
+        "Huddersfield"
       ],
-      "wd": "Q619407"
+      "wd": "Q19473"
     },
     {
       "id": "deepdale",
-      "name": "Deepdale",
-      "sub": "Preston North End",
+      "name": "Preston North End",
+      "sub": "Deepdale",
       "value": 23404,
       "display": "23,404",
       "aliases": [
-        "Preston North End",
-        "Preston",
-        "PNE"
+        "Preston"
       ],
-      "wd": "Q1141958"
+      "wd": "Q19612"
     },
     {
       "id": "oakwell",
-      "name": "Oakwell",
-      "sub": "Barnsley",
+      "name": "Barnsley",
+      "sub": "Oakwell",
       "value": 23287,
       "display": "23,287",
-      "aliases": [
-        "Barnsley"
-      ],
-      "wd": "Q1138270"
+      "wd": "Q19442"
     },
     {
       "id": "vicarage-road",
-      "name": "Vicarage Road",
-      "sub": "Watford",
+      "name": "Watford",
+      "sub": "Vicarage Road",
       "value": 22200,
       "display": "22,200",
-      "aliases": [
-        "Watford"
-      ],
-      "wd": "Q10626"
+      "wd": "Q2714"
     },
     {
       "id": "turf-moor",
-      "name": "Turf Moor",
-      "sub": "Burnley",
+      "name": "Burnley",
+      "sub": "Turf Moor",
       "value": 21990,
       "display": "21,990",
-      "aliases": [
-        "Burnley"
-      ],
-      "wd": "Q683112"
+      "wd": "Q19458"
     },
     {
       "id": "liberty-stadium",
-      "name": "Liberty Stadium",
-      "sub": "Swansea City",
+      "name": "Swansea City",
+      "sub": "Liberty Stadium",
       "value": 20996,
       "display": "20,996",
       "aliases": [
-        "Swansea City",
-        "Swansea",
-        "Swansea.com Stadium"
+        "Swansea"
       ],
-      "wd": "Q580480"
+      "wd": "Q18659"
     },
     {
       "id": "fratton-park",
-      "name": "Fratton Park",
-      "sub": "Portsmouth",
+      "name": "Portsmouth",
+      "sub": "Fratton Park",
       "value": 20899,
       "display": "20,899",
       "aliases": [
-        "Portsmouth",
         "Pompey"
       ],
-      "wd": "Q619531"
+      "wd": "Q19604"
     },
     {
       "id": "meadow-lane",
-      "name": "Meadow Lane",
-      "sub": "Notts County · Nottingham",
+      "name": "Notts County",
+      "sub": "Meadow Lane",
       "value": 19841,
       "display": "19,841",
       "aliases": [
-        "Notts County",
         "Notts"
       ],
-      "wd": "Q1192396"
+      "wd": "Q19598"
     },
     {
       "id": "the-den",
-      "name": "The Den",
-      "sub": "Millwall · London",
+      "name": "Millwall",
+      "sub": "The Den",
       "value": 19369,
       "display": "19,369",
-      "aliases": [
-        "Millwall"
-      ],
-      "wd": "Q908481"
+      "wd": "Q19487"
     },
     {
       "id": "loftus-road",
-      "name": "Loftus Road",
-      "sub": "Queens Park Rangers · London",
+      "name": "Queens Park Rangers",
+      "sub": "Loftus Road",
       "value": 18193,
       "display": "18,193",
       "aliases": [
-        "Queens Park Rangers",
         "QPR"
       ],
-      "wd": "Q31670"
+      "wd": "Q18723"
     },
     {
       "id": "home-park",
-      "name": "Home Park",
-      "sub": "Plymouth Argyle",
+      "name": "Plymouth Argyle",
+      "sub": "Home Park",
       "value": 17904,
       "display": "17,904",
       "aliases": [
-        "Plymouth Argyle",
         "Plymouth"
       ],
-      "wd": "Q619350"
+      "wd": "Q48947"
     },
     {
       "id": "brentford-community-stadium",
-      "name": "Brentford Community Stadium",
-      "sub": "Brentford · London",
+      "name": "Brentford",
+      "sub": "Brentford Community Stadium",
       "value": 17250,
       "display": "17,250",
       "aliases": [
-        "Brentford",
-        "Gtech Community Stadium",
         "Bees"
       ],
-      "wd": "Q4961609"
+      "wd": "Q19571"
     },
     {
       "id": "bloomfield-road",
-      "name": "Bloomfield Road",
-      "sub": "Blackpool",
+      "name": "Blackpool",
+      "sub": "Bloomfield Road",
       "value": 16616,
       "display": "16,616",
-      "aliases": [
-        "Blackpool"
-      ],
-      "wd": "Q870859"
+      "wd": "Q19449"
     },
     {
       "id": "county-ground",
-      "name": "County Ground",
-      "sub": "Swindon Town",
+      "name": "Swindon Town",
+      "sub": "County Ground",
       "value": 15547,
       "display": "15,547",
       "aliases": [
-        "Swindon Town",
         "Swindon"
       ],
-      "wd": "Q1137293"
+      "wd": "Q19634"
     },
     {
       "id": "eco-power-stadium",
-      "name": "Eco-Power Stadium",
-      "sub": "Doncaster Rovers",
+      "name": "Doncaster Rovers",
+      "sub": "Eco-Power Stadium",
       "value": 15148,
       "display": "15,148",
       "aliases": [
-        "Doncaster Rovers",
-        "Doncaster",
-        "Keepmoat Stadium",
-        "Club Doncaster Sports Village"
+        "Doncaster"
       ],
-      "wd": "Q1336402"
+      "wd": "Q19589"
     },
     {
       "id": "vale-park",
-      "name": "Vale Park",
-      "sub": "Port Vale · Stoke-on-Trent",
+      "name": "Port Vale",
+      "sub": "Vale Park",
       "value": 15036,
       "display": "15,036",
-      "aliases": [
-        "Port Vale"
-      ],
-      "wd": "Q1724993"
+      "wd": "Q48948"
     },
     {
       "id": "prenton-park",
-      "name": "Prenton Park",
-      "sub": "Tranmere Rovers · Birkenhead",
+      "name": "Tranmere Rovers",
+      "sub": "Prenton Park",
       "value": 15012,
       "display": "15,012",
       "aliases": [
-        "Tranmere Rovers",
         "Tranmere"
       ],
-      "wd": "Q619072"
+      "wd": "Q19637"
     },
     {
       "id": "london-road",
-      "name": "London Road",
-      "sub": "Peterborough United",
+      "name": "Peterborough United",
+      "sub": "London Road",
       "value": 13513,
       "display": "13,513",
       "aliases": [
-        "Peterborough United",
-        "Peterborough",
-        "Posh",
-        "London Road Stadium",
-        "Weston Homes Stadium"
+        "Peterborough"
       ],
-      "wd": "Q1156350"
+      "wd": "Q19495"
     },
     {
       "id": "boundary-park",
-      "name": "Boundary Park",
-      "sub": "Oldham Athletic",
+      "name": "Oldham Athletic",
+      "sub": "Boundary Park",
       "value": 13513,
       "display": "13,513",
       "aliases": [
-        "Oldham Athletic",
         "Oldham"
       ],
-      "wd": "Q895151"
+      "wd": "Q19601"
     },
     {
       "id": "kassam-stadium",
-      "name": "Kassam Stadium",
-      "sub": "Oxford United",
+      "name": "Oxford United",
+      "sub": "Kassam Stadium",
       "value": 12537,
       "display": "12,537",
-      "aliases": [
-        "Oxford United",
-        "Oxford",
-        "Kassam"
-      ],
-      "wd": "Q1672134"
+      "wd": "Q48946"
     },
     {
       "id": "memorial-stadium",
-      "name": "Memorial Stadium",
-      "sub": "Bristol Rovers",
+      "name": "Bristol Rovers",
+      "sub": "Memorial Stadium",
       "value": 12500,
       "display": "12,500",
-      "aliases": [
-        "Bristol Rovers",
-        "The Mem"
-      ],
-      "wd": "Q508121"
+      "wd": "Q48925"
     },
     {
       "id": "new-york-stadium",
-      "name": "New York Stadium",
-      "sub": "Rotherham United",
+      "name": "Rotherham United",
+      "sub": "New York Stadium",
       "value": 12088,
       "display": "12,088",
       "aliases": [
-        "Rotherham United",
-        "Rotherham",
-        "AESSEAL New York Stadium"
+        "Rotherham"
       ],
-      "wd": "Q1983118"
+      "wd": "Q48950"
     },
     {
       "id": "priestfield-stadium",
-      "name": "Priestfield Stadium",
-      "sub": "Gillingham",
+      "name": "Gillingham",
+      "sub": "Priestfield Stadium",
       "value": 11582,
       "display": "11,582",
-      "aliases": [
-        "Gillingham",
-        "Priestfield"
-      ],
-      "wd": "Q619148"
+      "wd": "Q48943"
     },
     {
       "id": "dean-court",
-      "name": "Dean Court",
-      "sub": "Bournemouth",
+      "name": "Bournemouth",
+      "sub": "Dean Court",
       "value": 11307,
       "display": "11,307",
       "aliases": [
-        "Bournemouth",
         "AFC Bournemouth",
-        "Cherries",
-        "Vitality Stadium"
+        "Cherries"
       ],
-      "wd": "Q619094"
+      "wd": "Q19568"
     },
     {
       "id": "bescot-stadium",
-      "name": "Bescot Stadium",
-      "sub": "Walsall",
+      "name": "Walsall",
+      "sub": "Bescot Stadium",
       "value": 10863,
       "display": "10,863",
-      "aliases": [
-        "Walsall"
-      ],
-      "wd": "Q609268"
+      "wd": "Q19644"
     },
     {
       "id": "edgeley-park",
-      "name": "Edgeley Park",
-      "sub": "Stockport County",
+      "name": "Stockport County",
+      "sub": "Edgeley Park",
       "value": 10800,
       "display": "10,800",
       "aliases": [
-        "Stockport County",
         "Stockport"
       ],
-      "wd": "Q1284381"
+      "wd": "Q18526"
     },
     {
       "id": "sincil-bank",
-      "name": "Sincil Bank",
-      "sub": "Lincoln City",
+      "name": "Lincoln City",
+      "sub": "Sincil Bank",
       "value": 10780,
       "display": "10,780",
       "aliases": [
-        "Lincoln City",
-        "Lincoln",
-        "LNER Stadium"
+        "Lincoln"
       ],
-      "wd": "Q619105"
+      "wd": "Q18519"
     },
     {
       "id": "racecourse-ground",
-      "name": "Racecourse Ground",
-      "sub": "Wrexham",
+      "name": "Wrexham",
+      "sub": "Racecourse Ground",
       "value": 10500,
       "display": "10,500",
-      "aliases": [
-        "Wrexham",
-        "STōK Cae Ras"
-      ],
-      "wd": "Q1202579"
+      "wd": "Q18529"
     },
     {
       "id": "smh-group-stadium",
-      "name": "SMH Group Stadium",
-      "sub": "Chesterfield",
+      "name": "Chesterfield",
+      "sub": "SMH Group Stadium",
       "value": 10400,
       "display": "10,400",
-      "aliases": [
-        "Chesterfield",
-        "Proact Stadium"
-      ],
-      "wd": "Q619112"
+      "wd": "Q48935"
     },
     {
       "id": "kenilworth-road",
-      "name": "Kenilworth Road",
-      "sub": "Luton Town",
+      "name": "Luton Town",
+      "sub": "Kenilworth Road",
       "value": 10265,
       "display": "10,265",
       "aliases": [
-        "Luton Town",
         "Luton"
       ],
-      "wd": "Q1613767"
+      "wd": "Q18520"
     },
     {
       "id": "gresty-road",
-      "name": "Gresty Road",
-      "sub": "Crewe Alexandra",
+      "name": "Crewe Alexandra",
+      "sub": "Gresty Road",
       "value": 10109,
       "display": "10,109",
       "aliases": [
-        "Crewe Alexandra",
-        "Crewe",
-        "Mornflake Stadium"
+        "Crewe"
       ],
-      "wd": "Q389544"
+      "wd": "Q19587"
     },
     {
       "id": "colchester-community-stadium",
-      "name": "Colchester Community Stadium",
-      "sub": "Colchester United",
+      "name": "Colchester United",
+      "sub": "Colchester Community Stadium",
       "value": 10105,
       "display": "10,105",
       "aliases": [
-        "Colchester United",
-        "Colchester",
-        "JobServe Community Stadium"
+        "Colchester"
       ],
-      "wd": "Q1141371"
+      "wd": "Q19578"
     },
     {
       "id": "new-meadow",
-      "name": "New Meadow",
-      "sub": "Shrewsbury Town",
+      "name": "Shrewsbury Town",
+      "sub": "New Meadow",
       "value": 9875,
       "display": "9,875",
       "aliases": [
-        "Shrewsbury Town",
         "Shrewsbury"
       ],
-      "wd": "Q619070"
+      "wd": "Q19626"
     },
     {
       "id": "adams-park",
-      "name": "Adams Park",
-      "sub": "Wycombe Wanderers · High Wycombe",
+      "name": "Wycombe Wanderers",
+      "sub": "Adams Park",
       "value": 9558,
       "display": "9,558",
       "aliases": [
-        "Wycombe Wanderers",
         "Wycombe"
       ],
-      "wd": "Q351946"
+      "wd": "Q48953"
     },
     {
       "id": "blundell-park",
-      "name": "Blundell Park",
-      "sub": "Grimsby Town · Cleethorpes",
+      "name": "Grimsby Town",
+      "sub": "Blundell Park",
       "value": 9546,
       "display": "9,546",
       "aliases": [
-        "Grimsby Town",
         "Grimsby"
       ],
-      "wd": "Q3641228"
+      "wd": "Q18515"
     },
     {
       "id": "spotland",
-      "name": "Spotland",
-      "sub": "Rochdale",
+      "name": "Rochdale",
+      "sub": "Spotland",
       "value": 9507,
       "display": "9,507",
-      "aliases": [
-        "Rochdale",
-        "Spotland Stadium",
-        "Crown Oil Arena"
-      ],
-      "wd": "Q619466"
+      "wd": "Q48949"
     },
     {
       "id": "field-mill",
-      "name": "Field Mill",
-      "sub": "Mansfield Town",
+      "name": "Mansfield Town",
+      "sub": "Field Mill",
       "value": 9376,
       "display": "9,376",
       "aliases": [
-        "Mansfield Town",
-        "Mansfield",
-        "One Call Stadium"
+        "Mansfield"
       ],
-      "wd": "Q619071"
+      "wd": "Q18522"
     },
     {
       "id": "brisbane-road",
-      "name": "Brisbane Road",
-      "sub": "Leyton Orient · London",
+      "name": "Leyton Orient",
+      "sub": "Brisbane Road",
       "value": 9253,
       "display": "9,253",
       "aliases": [
-        "Leyton Orient",
         "Orient"
       ],
-      "wd": "Q917727"
+      "wd": "Q19595"
     },
     {
       "id": "plough-lane",
-      "name": "Plough Lane",
-      "sub": "AFC Wimbledon · London",
+      "name": "AFC Wimbledon",
+      "sub": "Plough Lane",
       "value": 9150,
       "display": "9,150",
       "aliases": [
-        "AFC Wimbledon",
-        "Wimbledon",
-        "Cherry Red Records Stadium"
+        "Wimbledon"
       ],
-      "wd": "Q48699006"
+      "wd": "Q48851"
     },
     {
       "id": "rodney-parade",
-      "name": "Rodney Parade",
-      "sub": "Newport County",
+      "name": "Newport County",
+      "sub": "Rodney Parade",
       "value": 8722,
       "display": "8,722",
       "aliases": [
-        "Newport County",
         "Newport"
       ],
-      "wd": "x-stadium-rodney-parade"
+      "wd": "Q18523"
     },
     {
       "id": "st-james-park-exeter-city",
-      "name": "St James Park",
-      "sub": "Exeter City",
+      "name": "Exeter City",
+      "sub": "St James Park",
       "value": 8714,
       "display": "8,714",
-      "aliases": [
-        "Exeter City",
-        "Exeter",
-        "St James Park Exeter"
-      ],
-      "wd": "Q191774"
+      "wd": "Q48939"
     },
     {
       "id": "york-community-stadium",
-      "name": "York Community Stadium",
-      "sub": "York City",
+      "name": "York City",
+      "sub": "York Community Stadium",
       "value": 8500,
       "display": "8,500",
       "aliases": [
-        "York City",
-        "York",
-        "LNER Community Stadium"
+        "York"
       ],
-      "wd": "Q20876317"
+      "wd": "Q48954"
     },
     {
       "id": "sixfields-stadium",
-      "name": "Sixfields Stadium",
-      "sub": "Northampton Town",
+      "name": "Northampton Town",
+      "sub": "Sixfields Stadium",
       "value": 8203,
       "display": "8,203",
       "aliases": [
-        "Northampton Town",
-        "Northampton",
-        "Cobblers"
+        "Northampton"
       ],
-      "wd": "Q619615"
+      "wd": "Q48945"
     },
     {
       "id": "abbey-stadium",
-      "name": "Abbey Stadium",
-      "sub": "Cambridge United",
+      "name": "Cambridge United",
+      "sub": "Abbey Stadium",
       "value": 8024,
       "display": "8,024",
       "aliases": [
-        "Cambridge United",
         "Cambridge"
       ],
-      "wd": "Q2444574"
+      "wd": "Q18509"
     },
     {
       "id": "broadhall-way",
-      "name": "Broadhall Way",
-      "sub": "Stevenage",
+      "name": "Stevenage",
+      "sub": "Broadhall Way",
       "value": 7426,
       "display": "7,426",
-      "aliases": [
-        "Stevenage",
-        "Lamex Stadium"
-      ],
-      "wd": "Q619353"
+      "wd": "Q9426"
     },
     {
       "id": "pirelli-stadium",
-      "name": "Pirelli Stadium",
-      "sub": "Burton Albion · Burton upon Trent",
+      "name": "Burton Albion",
+      "sub": "Pirelli Stadium",
       "value": 7088,
       "display": "7,088",
       "aliases": [
-        "Burton Albion",
         "Burton"
       ],
-      "wd": "Q619136"
+      "wd": "Q48929"
     },
     {
       "id": "whaddon-road",
-      "name": "Whaddon Road",
-      "sub": "Cheltenham Town",
+      "name": "Cheltenham Town",
+      "sub": "Whaddon Road",
       "value": 6923,
       "display": "6,923",
       "aliases": [
-        "Cheltenham Town",
         "Cheltenham"
       ],
-      "wd": "Q541299"
+      "wd": "Q48932"
     },
     {
       "id": "broadfield-stadium",
-      "name": "Broadfield Stadium",
-      "sub": "Crawley Town",
+      "name": "Crawley Town",
+      "sub": "Broadfield Stadium",
       "value": 5907,
       "display": "5,907",
       "aliases": [
-        "Crawley Town",
         "Crawley"
       ],
-      "wd": "Q609115"
+      "wd": "Q19584"
     },
     {
       "id": "crown-ground",
-      "name": "Crown Ground",
-      "sub": "Accrington Stanley",
+      "name": "Accrington Stanley",
+      "sub": "Crown Ground",
       "value": 5278,
       "display": "5,278",
       "aliases": [
-        "Accrington Stanley",
-        "Accrington",
-        "Wham Stadium"
+        "Accrington"
       ],
-      "wd": "Q620815"
+      "wd": "Q48843"
     },
     {
       "id": "the-hive-stadium",
-      "name": "The Hive Stadium",
-      "sub": "Barnet · London",
+      "name": "Barnet",
+      "sub": "The Hive Stadium",
       "value": 5233,
       "display": "5,233",
-      "aliases": [
-        "Barnet",
-        "The Hive"
-      ],
-      "wd": "Q14437690"
+      "wd": "Q9408"
     },
     {
       "id": "highbury-stadium",
-      "name": "Highbury Stadium",
-      "sub": "Fleetwood Town",
+      "name": "Fleetwood Town",
+      "sub": "Highbury Stadium",
       "value": 5137,
       "display": "5,137",
       "aliases": [
-        "Fleetwood Town",
         "Fleetwood"
       ],
-      "wd": "Q619024"
+      "wd": "Q48941"
     },
     {
       "id": "moor-lane",
-      "name": "Moor Lane",
-      "sub": "Salford City",
+      "name": "Salford City",
+      "sub": "Moor Lane",
       "value": 5032,
       "display": "5,032",
       "aliases": [
-        "Salford City",
-        "Salford",
-        "Peninsula Stadium"
+        "Salford"
       ],
-      "wd": "Q54817852"
+      "wd": "Q18460"
     },
     {
       "id": "hayes-lane",
-      "name": "Hayes Lane",
-      "sub": "Bromley · London",
+      "name": "Bromley",
+      "sub": "Hayes Lane",
       "value": 5000,
       "display": "5,000",
-      "aliases": [
-        "Bromley"
-      ],
-      "wd": "Q3986424"
+      "wd": "Q1584552"
     }
   ]
 }

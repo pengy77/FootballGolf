@@ -7,13 +7,13 @@
   "kind": "player",
   "metric": "Appearances",
   "order": "desc",
-  "description": "Players with 400 or more Premier League appearances since 1992–93, to the end of 2025–26; tied players share a rank.",
+  "description": "Players with 350 or more Premier League appearances since 1992–93, to the end of 2025–26; tied players share a rank.",
   "tags": [
     "premier-league",
     "players"
   ],
   "source": {
-    "name": "Wikipedia (Dutch): Lijst van spelers in de Premier League",
+    "name": "Wikipedia (Dutch): Lijst van spelers in de Premier League (400+); 350–399 from English Wikipedia's 300+ appearances table (May 2021 revision) brought up to date with StatMuse",
     "url": "https://nl.wikipedia.org/wiki/Lijst_van_spelers_in_de_Premier_League",
     "asOf": "2026-05-24"
   },
@@ -482,6 +482,398 @@
         "Welbeck"
       ],
       "wd": "Q188457"
+    },
+    {
+      "id": "tim-howard",
+      "name": "Tim Howard",
+      "sub": "United States · GK · Everton, Man Utd",
+      "value": 399,
+      "aliases": [
+        "Howard"
+      ],
+      "wd": "Q200785"
+    },
+    {
+      "id": "lee-bowyer",
+      "name": "Lee Bowyer",
+      "sub": "England · Leeds, Newcastle",
+      "value": 397,
+      "aliases": [
+        "Bowyer"
+      ],
+      "wd": "Q353520"
+    },
+    {
+      "id": "theo-walcott",
+      "name": "Theo Walcott",
+      "sub": "England · Arsenal, Everton",
+      "value": 397,
+      "aliases": [
+        "Walcott"
+      ],
+      "wd": "Q29516"
+    },
+    {
+      "id": "raheem-sterling",
+      "name": "Raheem Sterling",
+      "sub": "England · Man City, Liverpool",
+      "value": 396,
+      "aliases": [
+        "Sterling"
+      ],
+      "wd": "Q312157"
+    },
+    {
+      "id": "gary-cahill",
+      "name": "Gary Cahill",
+      "sub": "England · Chelsea, Bolton",
+      "value": 394,
+      "aliases": [
+        "Cahill"
+      ],
+      "wd": "Q223827"
+    },
+    {
+      "id": "damien-duff",
+      "name": "Damien Duff",
+      "sub": "Ireland · Fulham, Blackburn",
+      "value": 392,
+      "aliases": [
+        "Duff"
+      ],
+      "wd": "Q192971"
+    },
+    {
+      "id": "ben-foster",
+      "name": "Ben Foster",
+      "sub": "England · GK · West Brom, Watford",
+      "value": 390,
+      "aliases": [
+        "Foster"
+      ],
+      "wd": "Q10585"
+    },
+    {
+      "id": "jonny-evans",
+      "name": "Jonny Evans",
+      "sub": "Northern Ireland · Man Utd, Leicester",
+      "value": 386,
+      "aliases": [
+        "Evans"
+      ],
+      "wd": "Q29495"
+    },
+    {
+      "id": "ashley-cole",
+      "name": "Ashley Cole",
+      "sub": "England · Chelsea, Arsenal",
+      "value": 385,
+      "aliases": [
+        "Cole"
+      ],
+      "wd": "Q133556"
+    },
+    {
+      "id": "george-boateng",
+      "name": "George Boateng",
+      "sub": "Netherlands · Middlesbrough, Aston Villa",
+      "value": 384,
+      "aliases": [
+        "Boateng"
+      ],
+      "wd": "Q464701"
+    },
+    {
+      "id": "robbie-fowler",
+      "name": "Robbie Fowler",
+      "sub": "England · Liverpool, Man City",
+      "value": 379,
+      "aliases": [
+        "Fowler"
+      ],
+      "wd": "Q206548"
+    },
+    {
+      "id": "ray-parlour",
+      "name": "Ray Parlour",
+      "sub": "England · Arsenal, Middlesbrough",
+      "value": 379,
+      "aliases": [
+        "Parlour"
+      ],
+      "wd": "Q377746"
+    },
+    {
+      "id": "joe-cole",
+      "name": "Joe Cole",
+      "sub": "England · Chelsea, West Ham",
+      "value": 378,
+      "aliases": [
+        "Cole"
+      ],
+      "wd": "Q184946"
+    },
+    {
+      "id": "luke-young",
+      "name": "Luke Young",
+      "sub": "England · Charlton, Aston Villa",
+      "value": 378,
+      "wd": "Q296410"
+    },
+    {
+      "id": "stephen-carr",
+      "name": "Stephen Carr",
+      "sub": "Ireland · Tottenham, Newcastle",
+      "value": 377,
+      "aliases": [
+        "Carr"
+      ],
+      "wd": "Q342308"
+    },
+    {
+      "id": "lukasz-fabianski",
+      "name": "Łukasz Fabiański",
+      "sub": "Poland · GK · West Ham, Swansea",
+      "value": 376,
+      "aliases": [
+        "Fabiański",
+        "Fabianski"
+      ],
+      "wd": "Q40596"
+    },
+    {
+      "id": "phil-jagielka",
+      "name": "Phil Jagielka",
+      "sub": "England · Everton, Sheffield Utd",
+      "value": 376,
+      "aliases": [
+        "Jagielka"
+      ],
+      "wd": "Q208933"
+    },
+    {
+      "id": "paul-robinson",
+      "name": "Paul Robinson",
+      "sub": "England · GK · Blackburn, Tottenham",
+      "value": 375,
+      "aliases": [
+        "Robinson"
+      ],
+      "wd": "Q215824"
+    },
+    {
+      "id": "dwight-yorke",
+      "name": "Dwight Yorke",
+      "sub": "Trinidad and Tobago · Aston Villa, Man Utd",
+      "value": 375,
+      "aliases": [
+        "Yorke"
+      ],
+      "wd": "Q192175"
+    },
+    {
+      "id": "seamus-coleman",
+      "name": "Séamus Coleman",
+      "sub": "Ireland · Everton",
+      "value": 374,
+      "aliases": [
+        "Coleman"
+      ],
+      "wd": "Q316724"
+    },
+    {
+      "id": "nigel-martyn",
+      "name": "Nigel Martyn",
+      "sub": "England · GK · Leeds, Everton",
+      "value": 372,
+      "aliases": [
+        "Martyn"
+      ],
+      "wd": "Q291022"
+    },
+    {
+      "id": "scott-parker",
+      "name": "Scott Parker",
+      "sub": "England · Charlton, West Ham",
+      "value": 368,
+      "aliases": [
+        "Parker"
+      ],
+      "wd": "Q213989"
+    },
+    {
+      "id": "roy-keane",
+      "name": "Roy Keane",
+      "sub": "Ireland · Man Utd, Nottm Forest",
+      "value": 366,
+      "aliases": [
+        "Keane"
+      ],
+      "wd": "Q188632"
+    },
+    {
+      "id": "nicolas-anelka",
+      "name": "Nicolas Anelka",
+      "sub": "France · Chelsea, Man City",
+      "value": 364,
+      "aliases": [
+        "Anelka"
+      ],
+      "wd": "Q1939"
+    },
+    {
+      "id": "thomas-sorensen",
+      "name": "Thomas Sørensen",
+      "sub": "Denmark · GK · Aston Villa, Sunderland",
+      "value": 364,
+      "aliases": [
+        "Sørensen",
+        "Sorensen"
+      ],
+      "wd": "Q211120"
+    },
+    {
+      "id": "david-unsworth",
+      "name": "David Unsworth",
+      "sub": "England · Everton, West Ham",
+      "value": 364,
+      "aliases": [
+        "Unsworth"
+      ],
+      "wd": "Q340077"
+    },
+    {
+      "id": "chris-perry",
+      "name": "Chris Perry",
+      "sub": "England · Wimbledon, Tottenham",
+      "value": 363,
+      "aliases": [
+        "Perry"
+      ],
+      "wd": "Q1077649"
+    },
+    {
+      "id": "jordan-pickford",
+      "name": "Jordan Pickford",
+      "sub": "England · GK · Everton, Sunderland",
+      "value": 362,
+      "aliases": [
+        "Pickford"
+      ],
+      "wd": "Q13014035"
+    },
+    {
+      "id": "hugo-lloris",
+      "name": "Hugo Lloris",
+      "sub": "France · GK · Tottenham",
+      "value": 361,
+      "aliases": [
+        "Lloris"
+      ],
+      "wd": "Q1907"
+    },
+    {
+      "id": "trevor-sinclair",
+      "name": "Trevor Sinclair",
+      "sub": "England · West Ham, QPR",
+      "value": 361,
+      "aliases": [
+        "Sinclair"
+      ],
+      "wd": "Q433702"
+    },
+    {
+      "id": "rory-delap",
+      "name": "Rory Delap",
+      "sub": "Ireland · Stoke, Southampton",
+      "value": 359,
+      "aliases": [
+        "Delap"
+      ],
+      "wd": "Q316719"
+    },
+    {
+      "id": "glen-johnson",
+      "name": "Glen Johnson",
+      "sub": "England · Liverpool, Portsmouth",
+      "value": 358,
+      "aliases": [
+        "Johnson"
+      ],
+      "wd": "Q185208"
+    },
+    {
+      "id": "ugo-ehiogu",
+      "name": "Ugo Ehiogu",
+      "sub": "England · Aston Villa, Middlesbrough",
+      "value": 355,
+      "aliases": [
+        "Ehiogu"
+      ],
+      "wd": "Q1341518"
+    },
+    {
+      "id": "kolo-toure",
+      "name": "Kolo Touré",
+      "sub": "Ivory Coast · Arsenal, Man City",
+      "value": 353,
+      "aliases": [
+        "Touré",
+        "Kolo"
+      ],
+      "wd": "Q147589"
+    },
+    {
+      "id": "leon-osman",
+      "name": "Leon Osman",
+      "sub": "England · Everton",
+      "value": 352,
+      "aliases": [
+        "Osman"
+      ],
+      "wd": "Q276178"
+    },
+    {
+      "id": "nigel-winterburn",
+      "name": "Nigel Winterburn",
+      "sub": "England · Arsenal, West Ham",
+      "value": 352,
+      "aliases": [
+        "Winterburn"
+      ],
+      "wd": "Q373415"
+    },
+    {
+      "id": "les-ferdinand",
+      "name": "Les Ferdinand",
+      "sub": "England · Tottenham, QPR",
+      "value": 351,
+      "aliases": [
+        "Ferdinand",
+        "Sir Les"
+      ],
+      "wd": "Q311709"
+    },
+    {
+      "id": "steve-watson",
+      "name": "Steve Watson",
+      "sub": "England · Newcastle, Everton",
+      "value": 351,
+      "aliases": [
+        "Watson"
+      ],
+      "wd": "Q2347391"
+    },
+    {
+      "id": "cesc-fabregas",
+      "name": "Cesc Fàbregas",
+      "sub": "Spain · Arsenal, Chelsea",
+      "value": 350,
+      "aliases": [
+        "Fàbregas",
+        "Cesc"
+      ],
+      "wd": "Q17499"
     }
   ]
 }

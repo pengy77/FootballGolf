@@ -1,0 +1,570 @@
+{
+  "id": "pl-manager-losses",
+  "title": "Most Premier League defeats as a manager",
+  "prompt": "most Premier League defeats as a manager",
+  "noun": "manager",
+  "nounPlural": "managers",
+  "kind": "manager",
+  "metric": "Defeats",
+  "order": "desc",
+  "description": "Every manager with 65 or more Premier League defeats, across all their clubs. Up to 17 November 2026 (2026–27 matchweek 10); tied managers share a place.",
+  "tags": [
+    "premier-league",
+    "managers"
+  ],
+  "source": {
+    "name": "StatMuse FC (Premier League managerial records)",
+    "url": "https://www.statmuse.com/fc/ask/david-moyes-premier-league-record-as-manager",
+    "asOf": "2026-11-17"
+  },
+  "items": [
+    {
+      "id": "david-moyes",
+      "name": "David Moyes",
+      "sub": "Scotland · Everton, West Ham",
+      "value": 267,
+      "display": "267 defeats",
+      "aliases": [
+        "Moyes"
+      ],
+      "wd": "Q297252"
+    },
+    {
+      "id": "harry-redknapp",
+      "name": "Harry Redknapp",
+      "sub": "England · West Ham, Portsmouth, Spurs",
+      "value": 239,
+      "display": "239 defeats",
+      "aliases": [
+        "Redknapp",
+        "Harry"
+      ],
+      "wd": "Q221349"
+    },
+    {
+      "id": "sam-allardyce",
+      "name": "Sam Allardyce",
+      "sub": "England · Bolton, West Ham",
+      "value": 218,
+      "display": "218 defeats",
+      "aliases": [
+        "Allardyce",
+        "Big Sam"
+      ],
+      "wd": "Q334388"
+    },
+    {
+      "id": "steve-bruce",
+      "name": "Steve Bruce",
+      "sub": "England · Birmingham, Sunderland",
+      "value": 211,
+      "display": "211 defeats",
+      "aliases": [
+        "Bruce"
+      ],
+      "wd": "Q331904"
+    },
+    {
+      "id": "mark-hughes",
+      "name": "Mark Hughes",
+      "sub": "Wales · Stoke, Blackburn",
+      "value": 181,
+      "display": "181 defeats",
+      "aliases": [
+        "Hughes",
+        "Sparky"
+      ],
+      "wd": "Q214513"
+    },
+    {
+      "id": "roy-hodgson",
+      "name": "Roy Hodgson",
+      "sub": "England · Crystal Palace, Fulham",
+      "value": 178,
+      "display": "178 defeats",
+      "aliases": [
+        "Hodgson"
+      ],
+      "wd": "Q203781"
+    },
+    {
+      "id": "sean-dyche",
+      "name": "Sean Dyche",
+      "sub": "England · Burnley, Everton",
+      "value": 157,
+      "display": "157 defeats",
+      "aliases": [
+        "Dyche"
+      ],
+      "wd": "Q10599"
+    },
+    {
+      "id": "arsene-wenger",
+      "name": "Arsène Wenger",
+      "sub": "France · Arsenal",
+      "value": 153,
+      "display": "153 defeats",
+      "aliases": [
+        "Wenger",
+        "Arsene Wenger"
+      ],
+      "wd": "Q47576"
+    },
+    {
+      "id": "eddie-howe",
+      "name": "Eddie Howe",
+      "sub": "England · Bournemouth, Newcastle",
+      "value": 148,
+      "display": "148 defeats",
+      "aliases": [
+        "Howe"
+      ],
+      "wd": "Q5336135"
+    },
+    {
+      "id": "alan-pardew",
+      "name": "Alan Pardew",
+      "sub": "England · Newcastle, Crystal Palace",
+      "value": 143,
+      "display": "143 defeats",
+      "aliases": [
+        "Pardew"
+      ],
+      "wd": "Q360491"
+    },
+    {
+      "id": "alan-curbishley",
+      "name": "Alan Curbishley",
+      "sub": "England · Charlton, West Ham",
+      "value": 135,
+      "display": "135 defeats",
+      "aliases": [
+        "Curbishley",
+        "Curbs"
+      ],
+      "wd": "Q470741"
+    },
+    {
+      "id": "tony-pulis",
+      "name": "Tony Pulis",
+      "sub": "Wales · Stoke, West Brom",
+      "value": 131,
+      "display": "131 defeats",
+      "aliases": [
+        "Pulis"
+      ],
+      "wd": "Q334541"
+    },
+    {
+      "id": "alex-ferguson",
+      "name": "Alex Ferguson",
+      "sub": "Scotland · Man Utd",
+      "value": 114,
+      "display": "114 defeats",
+      "aliases": [
+        "Ferguson",
+        "Fergie",
+        "Sir Alex Ferguson",
+        "Sir Alex"
+      ],
+      "wd": "Q44980"
+    },
+    {
+      "id": "martin-oneill",
+      "name": "Martin O’Neill",
+      "sub": "Northern Ireland · Leicester, Aston Villa",
+      "value": 114,
+      "display": "114 defeats",
+      "aliases": [
+        "O’Neill",
+        "ONeill",
+        "Martin O Neill",
+        "Martin ONeill"
+      ],
+      "wd": "Q310263"
+    },
+    {
+      "id": "joe-kinnear",
+      "name": "Joe Kinnear",
+      "sub": "Ireland · Wimbledon, Newcastle",
+      "value": 111,
+      "display": "111 defeats",
+      "aliases": [
+        "Kinnear"
+      ],
+      "wd": "Q556620"
+    },
+    {
+      "id": "gordon-strachan",
+      "name": "Gordon Strachan",
+      "sub": "Scotland · Coventry, Southampton",
+      "value": 109,
+      "display": "109 defeats",
+      "aliases": [
+        "Strachan"
+      ],
+      "wd": "Q314095"
+    },
+    {
+      "id": "graeme-souness",
+      "name": "Graeme Souness",
+      "sub": "Scotland · Blackburn, Liverpool",
+      "value": 108,
+      "display": "108 defeats",
+      "aliases": [
+        "Souness"
+      ],
+      "wd": "Q310352"
+    },
+    {
+      "id": "marco-silva",
+      "name": "Marco Silva",
+      "sub": "Portugal · Fulham, Everton",
+      "value": 107,
+      "display": "107 defeats",
+      "aliases": [
+        "Silva"
+      ],
+      "wd": "Q6757714"
+    },
+    {
+      "id": "roberto-martinez",
+      "name": "Roberto Martínez",
+      "sub": "Spain · Wigan, Everton",
+      "value": 107,
+      "display": "107 defeats",
+      "aliases": [
+        "Martínez",
+        "Martinez",
+        "Roberto Martinez"
+      ],
+      "wd": "Q357994"
+    },
+    {
+      "id": "brendan-rodgers",
+      "name": "Brendan Rodgers",
+      "sub": "Northern Ireland · Leicester, Liverpool",
+      "value": 102,
+      "display": "102 defeats",
+      "aliases": [
+        "Rodgers"
+      ],
+      "wd": "Q310623"
+    },
+    {
+      "id": "bryan-robson",
+      "name": "Bryan Robson",
+      "sub": "England · Middlesbrough, West Brom",
+      "value": 100,
+      "display": "100 defeats",
+      "aliases": [
+        "Robbo"
+      ],
+      "wd": "Q296583"
+    },
+    {
+      "id": "rafael-benitez",
+      "name": "Rafael Benítez",
+      "sub": "Spain · Liverpool, Newcastle",
+      "value": 100,
+      "display": "100 defeats",
+      "aliases": [
+        "Benítez",
+        "Benitez",
+        "Rafa Benitez",
+        "Rafa Benítez",
+        "Rafa"
+      ],
+      "wd": "Q144048"
+    },
+    {
+      "id": "glenn-hoddle",
+      "name": "Glenn Hoddle",
+      "sub": "England · Chelsea, Spurs",
+      "value": 98,
+      "display": "98 defeats",
+      "aliases": [
+        "Hoddle"
+      ],
+      "wd": "Q296666"
+    },
+    {
+      "id": "george-graham",
+      "name": "George Graham",
+      "sub": "Scotland · Arsenal, Spurs",
+      "value": 94,
+      "display": "94 defeats",
+      "aliases": [
+        "Graham"
+      ],
+      "wd": "Q313763"
+    },
+    {
+      "id": "peter-reid",
+      "name": "Peter Reid",
+      "sub": "England · Sunderland, Man City",
+      "value": 93,
+      "display": "93 defeats",
+      "aliases": [
+        "Reid"
+      ],
+      "wd": "Q360514"
+    },
+    {
+      "id": "steve-mcclaren",
+      "name": "Steve McClaren",
+      "sub": "England · Middlesbrough, Newcastle",
+      "value": 92,
+      "display": "92 defeats",
+      "aliases": [
+        "McClaren"
+      ],
+      "wd": "Q311007"
+    },
+    {
+      "id": "joe-royle",
+      "name": "Joe Royle",
+      "sub": "England · Everton, Oldham",
+      "value": 89,
+      "display": "89 defeats",
+      "aliases": [
+        "Royle"
+      ],
+      "wd": "Q923188"
+    },
+    {
+      "id": "kevin-keegan",
+      "name": "Kevin Keegan",
+      "sub": "England · Newcastle, Man City",
+      "value": 86,
+      "display": "86 defeats",
+      "aliases": [
+        "Keegan",
+        "King Kev"
+      ],
+      "wd": "Q152832"
+    },
+    {
+      "id": "mick-mccarthy",
+      "name": "Mick McCarthy",
+      "sub": "Ireland · Wolves, Sunderland",
+      "value": 83,
+      "display": "83 defeats",
+      "aliases": [
+        "McCarthy"
+      ],
+      "wd": "Q437925"
+    },
+    {
+      "id": "nuno-espirito-santo",
+      "name": "Nuno Espírito Santo",
+      "sub": "Portugal · Wolves, Nottm Forest",
+      "value": 82,
+      "display": "82 defeats",
+      "aliases": [
+        "Nuno",
+        "Nuno Espirito Santo",
+        "Espírito Santo",
+        "Espirito Santo"
+      ],
+      "wd": "Q372372"
+    },
+    {
+      "id": "chris-hughton",
+      "name": "Chris Hughton",
+      "sub": "Ireland · Brighton, Norwich",
+      "value": 79,
+      "display": "79 defeats",
+      "aliases": [
+        "Hughton"
+      ],
+      "wd": "Q351004"
+    },
+    {
+      "id": "david-oleary",
+      "name": "David O'Leary",
+      "sub": "Ireland · Leeds, Aston Villa",
+      "value": 79,
+      "display": "79 defeats",
+      "aliases": [
+        "O'Leary",
+        "OLeary",
+        "David O Leary",
+        "David OLeary"
+      ],
+      "wd": "Q132026"
+    },
+    {
+      "id": "jim-smith",
+      "name": "Jim Smith",
+      "sub": "England · Derby",
+      "value": 79,
+      "display": "79 defeats",
+      "aliases": [
+        "Bald Eagle"
+      ],
+      "wd": "Q6198196"
+    },
+    {
+      "id": "ron-atkinson",
+      "name": "Ron Atkinson",
+      "sub": "England · Aston Villa, Coventry",
+      "value": 79,
+      "display": "79 defeats",
+      "aliases": [
+        "Atkinson",
+        "Big Ron"
+      ],
+      "wd": "Q344875"
+    },
+    {
+      "id": "martin-jol",
+      "name": "Martin Jol",
+      "sub": "Netherlands · Spurs, Fulham",
+      "value": 76,
+      "display": "76 defeats",
+      "aliases": [
+        "Jol"
+      ],
+      "wd": "Q310181"
+    },
+    {
+      "id": "paul-jewell",
+      "name": "Paul Jewell",
+      "sub": "England · Wigan, Bradford",
+      "value": 76,
+      "display": "76 defeats",
+      "aliases": [
+        "Jewell"
+      ],
+      "wd": "Q954458"
+    },
+    {
+      "id": "gerry-francis",
+      "name": "Gerry Francis",
+      "sub": "England · Spurs, QPR",
+      "value": 74,
+      "display": "74 defeats",
+      "aliases": [
+        "Francis"
+      ],
+      "wd": "Q959314"
+    },
+    {
+      "id": "mauricio-pochettino",
+      "name": "Mauricio Pochettino",
+      "sub": "Argentina · Spurs, Southampton",
+      "value": 74,
+      "display": "74 defeats",
+      "aliases": [
+        "Pochettino",
+        "Poch"
+      ],
+      "wd": "Q313000"
+    },
+    {
+      "id": "thomas-frank",
+      "name": "Thomas Frank",
+      "sub": "Denmark · Brentford, Spurs",
+      "value": 71,
+      "display": "71 defeats",
+      "aliases": [
+        "Frank"
+      ],
+      "wd": "Q13469562"
+    },
+    {
+      "id": "claudio-ranieri",
+      "name": "Claudio Ranieri",
+      "sub": "Italy · Chelsea, Leicester",
+      "value": 70,
+      "display": "70 defeats",
+      "aliases": [
+        "Ranieri",
+        "The Tinkerman"
+      ],
+      "wd": "Q235068"
+    },
+    {
+      "id": "gerard-houllier",
+      "name": "Gérard Houllier",
+      "sub": "France · Liverpool, Aston Villa",
+      "value": 70,
+      "display": "70 defeats",
+      "aliases": [
+        "Houllier",
+        "Gerard Houllier"
+      ],
+      "wd": "Q295615"
+    },
+    {
+      "id": "paul-lambert",
+      "name": "Paul Lambert",
+      "sub": "Scotland · Aston Villa, Norwich",
+      "value": 69,
+      "display": "69 defeats",
+      "aliases": [
+        "Lambert"
+      ],
+      "wd": "Q246724"
+    },
+    {
+      "id": "ralph-hasenhuttl",
+      "name": "Ralph Hasenhüttl",
+      "sub": "Austria · Southampton",
+      "value": 68,
+      "display": "68 defeats",
+      "aliases": [
+        "Hasenhüttl",
+        "Hasenhuttl",
+        "Ralph Hasenhuttl"
+      ],
+      "wd": "Q874628"
+    },
+    {
+      "id": "dave-jones",
+      "name": "Dave Jones",
+      "sub": "England · Southampton, Wolves",
+      "value": 67,
+      "display": "67 defeats",
+      "aliases": [
+        "Jones"
+      ],
+      "wd": "Q1173249"
+    },
+    {
+      "id": "gary-megson",
+      "name": "Gary Megson",
+      "sub": "England · Bolton, West Brom",
+      "value": 67,
+      "display": "67 defeats",
+      "aliases": [
+        "Megson"
+      ],
+      "wd": "Q1337010"
+    },
+    {
+      "id": "steve-coppell",
+      "name": "Steve Coppell",
+      "sub": "England · Reading, Crystal Palace",
+      "value": 67,
+      "display": "67 defeats",
+      "aliases": [
+        "Coppell"
+      ],
+      "wd": "Q438005"
+    },
+    {
+      "id": "howard-wilkinson",
+      "name": "Howard Wilkinson",
+      "sub": "England · Leeds, Sunderland",
+      "value": 66,
+      "display": "66 defeats",
+      "aliases": [
+        "Wilkinson",
+        "Sergeant Wilko"
+      ],
+      "wd": "Q552905"
+    }
+  ]
+}

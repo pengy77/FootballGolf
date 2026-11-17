@@ -7,16 +7,16 @@
   "kind": "player",
   "metric": "Goals",
   "order": "desc",
-  "description": "All-time goals in the European Cup and Champions League, excluding qualifying rounds; every player with 25 or more.",
+  "description": "All-time goals in the European Cup and Champions League, excluding qualifying rounds; every player with 23 or more.",
   "tags": [
     "champions-league",
     "players",
     "europe"
   ],
   "source": {
-    "name": "Wikipedia: List of UEFA Champions League top scorers",
+    "name": "Wikipedia: List of UEFA Champions League top scorers; StatMuse; RSSSF",
     "url": "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers",
-    "asOf": "2026-11-04"
+    "asOf": "2026-11-17"
   },
   "items": [
     {
@@ -542,6 +542,155 @@
         "Crespo"
       ],
       "wd": "Q160206"
+    },
+    {
+      "id": "luis-figo",
+      "name": "Luís Figo",
+      "sub": "Portugal · Barcelona, Real Madrid",
+      "value": 24,
+      "aliases": [
+        "Figo"
+      ],
+      "wd": "Q483145"
+    },
+    {
+      "id": "marco-reus",
+      "name": "Marco Reus",
+      "sub": "Germany · Dortmund",
+      "value": 24,
+      "aliases": [
+        "Reus"
+      ],
+      "wd": "Q152377"
+    },
+    {
+      "id": "angel-di-maria",
+      "name": "Ángel Di María",
+      "sub": "Argentina · Real Madrid, PSG",
+      "value": 24,
+      "aliases": [
+        "Di María"
+      ],
+      "wd": "Q251683"
+    },
+    {
+      "id": "paul-scholes",
+      "name": "Paul Scholes",
+      "sub": "England · Man Utd",
+      "value": 24,
+      "aliases": [
+        "Scholes"
+      ],
+      "wd": "Q45613"
+    },
+    {
+      "id": "gonzalo-higuain",
+      "name": "Gonzalo Higuaín",
+      "sub": "Argentina · Real Madrid, Juventus",
+      "value": 24,
+      "aliases": [
+        "Higuaín",
+        "Pipita"
+      ],
+      "wd": "Q483846"
+    },
+    {
+      "id": "olivier-giroud",
+      "name": "Olivier Giroud",
+      "sub": "France · Arsenal, Chelsea, AC Milan",
+      "value": 24,
+      "aliases": [
+        "Giroud"
+      ],
+      "wd": "Q1911"
+    },
+    {
+      "id": "marco-simone",
+      "name": "Marco Simone",
+      "sub": "Italy · AC Milan, Monaco",
+      "value": 24,
+      "aliases": [
+        "Simone"
+      ],
+      "wd": "Q439332"
+    },
+    {
+      "id": "jose-altafini",
+      "name": "José Altafini",
+      "sub": "Brazil/Italy · AC Milan",
+      "value": 24,
+      "aliases": [
+        "Altafini"
+      ],
+      "wd": "Q62182"
+    },
+    {
+      "id": "jari-litmanen",
+      "name": "Jari Litmanen",
+      "sub": "Finland · Ajax",
+      "value": 23,
+      "aliases": [
+        "Litmanen"
+      ],
+      "wd": "Q209650"
+    },
+    {
+      "id": "frank-lampard",
+      "name": "Frank Lampard",
+      "sub": "England · Chelsea",
+      "value": 23,
+      "aliases": [
+        "Lampard",
+        "Lamps"
+      ],
+      "wd": "Q41533"
+    },
+    {
+      "id": "leroy-sane",
+      "name": "Leroy Sané",
+      "sub": "Germany · Man City, Bayern",
+      "value": 23,
+      "aliases": [
+        "Sané"
+      ],
+      "wd": "Q16499882"
+    },
+    {
+      "id": "raphinha",
+      "name": "Raphinha",
+      "sub": "Brazil · Barcelona",
+      "value": 23,
+      "wd": "Q28861547"
+    },
+    {
+      "id": "serhou-guirassy",
+      "name": "Serhou Guirassy",
+      "sub": "Guinea · Dortmund",
+      "value": 23,
+      "aliases": [
+        "Guirassy"
+      ],
+      "wd": "Q18637429"
+    },
+    {
+      "id": "phil-foden",
+      "name": "Phil Foden",
+      "sub": "England · Man City",
+      "value": 23,
+      "aliases": [
+        "Foden"
+      ],
+      "wd": "Q30729096"
+    },
+    {
+      "id": "jose-augusto",
+      "name": "José Augusto",
+      "sub": "Portugal · Benfica",
+      "value": 23,
+      "aliases": [
+        "José Augusto de Almeida"
+      ],
+      "wd": "Q1709009"
     }
   ]
 }

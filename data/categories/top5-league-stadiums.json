@@ -5,6 +5,7 @@
   "noun": "stadium",
   "nounPlural": "stadiums",
   "kind": "stadium",
+  "retired": true,
   "metric": "Capacity",
   "order": "desc",
   "description": "Home grounds of every 2026–27 Premier League, La Liga, Serie A, Bundesliga and Ligue 1 club, by listed capacity; shared grounds appear once.",

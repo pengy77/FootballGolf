@@ -7,15 +7,15 @@
   "kind": "player",
   "metric": "Goals",
   "order": "desc",
-  "description": "Every player with 100 or more Premier League goals since 1992–93; tied players share a rank.",
+  "description": "Every player with 60 or more Premier League goals since 1992–93; tied players share a rank.",
   "tags": [
     "premier-league",
     "players"
   ],
   "source": {
-    "name": "Wikipedia: List of footballers with 100 or more Premier League goals",
-    "url": "https://en.wikipedia.org/wiki/List_of_footballers_with_100_or_more_Premier_League_goals",
-    "asOf": "2026-10-25"
+    "name": "StatMuse (Opta), cross-checked with Wikipedia and the Premier League",
+    "url": "https://www.statmuse.com/fc/ask/most-premier-league-goals-all-time",
+    "asOf": "2026-11-17"
   },
   "items": [
     {
@@ -383,6 +383,653 @@
         "Le Tiss"
       ],
       "wd": "Q317803"
+    },
+    {
+      "id": "emmanuel-adebayor",
+      "name": "Emmanuel Adebayor",
+      "sub": "Togo · Arsenal, Tottenham",
+      "value": 97,
+      "aliases": [
+        "Adebayor"
+      ],
+      "wd": "Q386876"
+    },
+    {
+      "id": "callum-wilson",
+      "name": "Callum Wilson",
+      "sub": "England · Newcastle, Bournemouth",
+      "value": 95,
+      "aliases": [
+        "Wilson"
+      ],
+      "wd": "Q5022998"
+    },
+    {
+      "id": "yakubu",
+      "name": "Yakubu",
+      "sub": "Nigeria · Portsmouth, Middlesbrough",
+      "value": 95,
+      "aliases": [
+        "Yakubu Aiyegbeni",
+        "The Yak"
+      ],
+      "wd": "Q202410"
+    },
+    {
+      "id": "ruud-van-nistelrooy",
+      "name": "Ruud van Nistelrooy",
+      "sub": "Netherlands · Man Utd",
+      "value": 95,
+      "aliases": [
+        "van Nistelrooy",
+        "Nistelrooy"
+      ],
+      "wd": "Q45626"
+    },
+    {
+      "id": "dimitar-berbatov",
+      "name": "Dimitar Berbatov",
+      "sub": "Bulgaria · Man Utd, Tottenham",
+      "value": 94,
+      "aliases": [
+        "Berbatov"
+      ],
+      "wd": "Q170235"
+    },
+    {
+      "id": "chris-wood",
+      "name": "Chris Wood",
+      "sub": "New Zealand · Burnley, Nottingham Forest",
+      "value": 92,
+      "aliases": [
+        "Wood"
+      ],
+      "wd": "Q74548"
+    },
+    {
+      "id": "mark-viduka",
+      "name": "Mark Viduka",
+      "sub": "Australia · Leeds, Middlesbrough",
+      "value": 92,
+      "aliases": [
+        "Viduka"
+      ],
+      "wd": "Q239513"
+    },
+    {
+      "id": "kevin-phillips",
+      "name": "Kevin Phillips",
+      "sub": "England · Sunderland, Southampton",
+      "value": 92,
+      "aliases": [
+        "Phillips",
+        "Super Kev"
+      ],
+      "wd": "Q256875"
+    },
+    {
+      "id": "ollie-watkins",
+      "name": "Ollie Watkins",
+      "sub": "England · Aston Villa",
+      "value": 91,
+      "aliases": [
+        "Watkins"
+      ],
+      "wd": "Q16911979"
+    },
+    {
+      "id": "james-beattie",
+      "name": "James Beattie",
+      "sub": "England · Southampton, Everton",
+      "value": 91,
+      "aliases": [
+        "Beattie"
+      ],
+      "wd": "Q350807"
+    },
+    {
+      "id": "ole-gunnar-solskjaer",
+      "name": "Ole Gunnar Solskjær",
+      "sub": "Norway · Man Utd",
+      "value": 91,
+      "aliases": [
+        "Solskjær",
+        "Ole"
+      ],
+      "wd": "Q18976"
+    },
+    {
+      "id": "olivier-giroud",
+      "name": "Olivier Giroud",
+      "sub": "France · Arsenal, Chelsea",
+      "value": 90,
+      "aliases": [
+        "Giroud"
+      ],
+      "wd": "Q1911"
+    },
+    {
+      "id": "danny-welbeck",
+      "name": "Danny Welbeck",
+      "sub": "England · Brighton, Man Utd",
+      "value": 90,
+      "aliases": [
+        "Welbeck"
+      ],
+      "wd": "Q188457"
+    },
+    {
+      "id": "marcus-rashford",
+      "name": "Marcus Rashford",
+      "sub": "England · Man Utd, Aston Villa",
+      "value": 89,
+      "aliases": [
+        "Rashford"
+      ],
+      "wd": "Q22951255"
+    },
+    {
+      "id": "kevin-davies",
+      "name": "Kevin Davies",
+      "sub": "England · Bolton, Southampton",
+      "value": 88,
+      "aliases": [
+        "Davies"
+      ],
+      "wd": "Q311340"
+    },
+    {
+      "id": "dennis-bergkamp",
+      "name": "Dennis Bergkamp",
+      "sub": "Netherlands · Arsenal",
+      "value": 87,
+      "aliases": [
+        "Bergkamp"
+      ],
+      "wd": "Q185389"
+    },
+    {
+      "id": "christian-benteke",
+      "name": "Christian Benteke",
+      "sub": "Belgium · Aston Villa, Crystal Palace",
+      "value": 86,
+      "aliases": [
+        "Benteke"
+      ],
+      "wd": "Q60326"
+    },
+    {
+      "id": "fernando-torres",
+      "name": "Fernando Torres",
+      "sub": "Spain · Liverpool, Chelsea",
+      "value": 85,
+      "aliases": [
+        "Torres",
+        "El Niño"
+      ],
+      "wd": "Q42731"
+    },
+    {
+      "id": "eden-hazard",
+      "name": "Eden Hazard",
+      "sub": "Belgium · Chelsea",
+      "value": 85,
+      "aliases": [
+        "Hazard"
+      ],
+      "wd": "Q214204"
+    },
+    {
+      "id": "louis-saha",
+      "name": "Louis Saha",
+      "sub": "France · Man Utd, Everton",
+      "value": 85,
+      "aliases": [
+        "Saha"
+      ],
+      "wd": "Q484968"
+    },
+    {
+      "id": "carlos-tevez",
+      "name": "Carlos Tevez",
+      "sub": "Argentina · Man City, Man Utd",
+      "value": 84,
+      "aliases": [
+        "Tevez"
+      ],
+      "wd": "Q50600"
+    },
+    {
+      "id": "chris-sutton",
+      "name": "Chris Sutton",
+      "sub": "England · Blackburn, Norwich",
+      "value": 83,
+      "aliases": [
+        "Sutton"
+      ],
+      "wd": "Q363769"
+    },
+    {
+      "id": "kevin-campbell",
+      "name": "Kevin Campbell",
+      "sub": "England · Everton, Arsenal",
+      "value": 83,
+      "aliases": [
+        "Campbell"
+      ],
+      "wd": "Q927006"
+    },
+    {
+      "id": "roberto-firmino",
+      "name": "Roberto Firmino",
+      "sub": "Brazil · Liverpool",
+      "value": 82,
+      "aliases": [
+        "Firmino",
+        "Bobby Firmino"
+      ],
+      "wd": "Q602525"
+    },
+    {
+      "id": "riyad-mahrez",
+      "name": "Riyad Mahrez",
+      "sub": "Algeria · Man City, Leicester",
+      "value": 82,
+      "aliases": [
+        "Mahrez"
+      ],
+      "wd": "Q8338725"
+    },
+    {
+      "id": "craig-bellamy",
+      "name": "Craig Bellamy",
+      "sub": "Wales · Newcastle, Blackburn",
+      "value": 81,
+      "aliases": [
+        "Bellamy"
+      ],
+      "wd": "Q190515"
+    },
+    {
+      "id": "gary-speed",
+      "name": "Gary Speed",
+      "sub": "Wales · Newcastle, Leeds",
+      "value": 80,
+      "aliases": [
+        "Speed"
+      ],
+      "wd": "Q202153"
+    },
+    {
+      "id": "theo-walcott",
+      "name": "Theo Walcott",
+      "sub": "England · Arsenal, Everton",
+      "value": 80,
+      "aliases": [
+        "Walcott"
+      ],
+      "wd": "Q29516"
+    },
+    {
+      "id": "gabriel-jesus",
+      "name": "Gabriel Jesus",
+      "sub": "Brazil · Man City, Arsenal",
+      "value": 79,
+      "aliases": [
+        "Jesus"
+      ],
+      "wd": "Q19708656"
+    },
+    {
+      "id": "tony-cottee",
+      "name": "Tony Cottee",
+      "sub": "England · Everton, Leicester",
+      "value": 78,
+      "aliases": [
+        "Cottee"
+      ],
+      "wd": "Q348642"
+    },
+    {
+      "id": "daniel-sturridge",
+      "name": "Daniel Sturridge",
+      "sub": "England · Liverpool, Chelsea",
+      "value": 76,
+      "aliases": [
+        "Sturridge"
+      ],
+      "wd": "Q222231"
+    },
+    {
+      "id": "richarlison",
+      "name": "Richarlison",
+      "sub": "Brazil · Everton, Tottenham",
+      "value": 75,
+      "aliases": [],
+      "wd": "Q20806743"
+    },
+    {
+      "id": "bruno-fernandes",
+      "name": "Bruno Fernandes",
+      "sub": "Portugal · Man Utd",
+      "value": 75,
+      "aliases": [
+        "Bruno",
+        "Fernandes"
+      ],
+      "wd": "Q4979316"
+    },
+    {
+      "id": "dominic-calvert-lewin",
+      "name": "Dominic Calvert-Lewin",
+      "sub": "England · Everton, Leeds",
+      "value": 74,
+      "aliases": [
+        "Calvert-Lewin",
+        "DCL"
+      ],
+      "wd": "Q19956709"
+    },
+    {
+      "id": "gabriel-agbonlahor",
+      "name": "Gabriel Agbonlahor",
+      "sub": "England · Aston Villa",
+      "value": 74,
+      "aliases": [
+        "Agbonlahor",
+        "Gabby Agbonlahor"
+      ],
+      "wd": "Q135314"
+    },
+    {
+      "id": "kevin-de-bruyne",
+      "name": "Kevin De Bruyne",
+      "sub": "Belgium · Man City",
+      "value": 72,
+      "aliases": [
+        "De Bruyne",
+        "KDB"
+      ],
+      "wd": "Q357984"
+    },
+    {
+      "id": "danny-ings",
+      "name": "Danny Ings",
+      "sub": "England · Southampton, Aston Villa",
+      "value": 72,
+      "aliases": [
+        "Ings"
+      ],
+      "wd": "Q5220475"
+    },
+    {
+      "id": "brian-deane",
+      "name": "Brian Deane",
+      "sub": "England · Leeds, Middlesbrough",
+      "value": 71,
+      "aliases": [
+        "Deane"
+      ],
+      "wd": "Q2703910"
+    },
+    {
+      "id": "chris-armstrong",
+      "name": "Chris Armstrong",
+      "sub": "England · Tottenham, Crystal Palace",
+      "value": 71,
+      "aliases": [
+        "Armstrong"
+      ],
+      "wd": "Q3675448"
+    },
+    {
+      "id": "eric-cantona",
+      "name": "Eric Cantona",
+      "sub": "France · Man Utd, Leeds",
+      "value": 70,
+      "aliases": [
+        "Cantona",
+        "King Eric"
+      ],
+      "wd": "Q170328"
+    },
+    {
+      "id": "luis-suarez",
+      "name": "Luis Suárez",
+      "sub": "Uruguay · Liverpool",
+      "value": 69,
+      "aliases": [
+        "Suárez"
+      ],
+      "wd": "Q26517"
+    },
+    {
+      "id": "pierre-emerick-aubameyang",
+      "name": "Pierre-Emerick Aubameyang",
+      "sub": "Gabon · Arsenal, Chelsea",
+      "value": 69,
+      "aliases": [
+        "Aubameyang",
+        "Auba"
+      ],
+      "wd": "Q44977"
+    },
+    {
+      "id": "phil-foden",
+      "name": "Phil Foden",
+      "sub": "England · Man City",
+      "value": 69,
+      "aliases": [
+        "Foden"
+      ],
+      "wd": "Q30729096"
+    },
+    {
+      "id": "kevin-nolan",
+      "name": "Kevin Nolan",
+      "sub": "England · Bolton, West Ham",
+      "value": 69,
+      "aliases": [
+        "Nolan"
+      ],
+      "wd": "Q148699"
+    },
+    {
+      "id": "wilfried-zaha",
+      "name": "Wilfried Zaha",
+      "sub": "Ivory Coast · Crystal Palace",
+      "value": 68,
+      "aliases": [
+        "Zaha"
+      ],
+      "wd": "Q713711"
+    },
+    {
+      "id": "michail-antonio",
+      "name": "Michail Antonio",
+      "sub": "Jamaica · West Ham",
+      "value": 68,
+      "aliases": [
+        "Antonio"
+      ],
+      "wd": "Q1966430"
+    },
+    {
+      "id": "raul-jimenez",
+      "name": "Raúl Jiménez",
+      "sub": "Mexico · Wolves, Fulham",
+      "value": 68,
+      "aliases": [
+        "Jiménez"
+      ],
+      "wd": "Q1925465"
+    },
+    {
+      "id": "duncan-ferguson",
+      "name": "Duncan Ferguson",
+      "sub": "Scotland · Everton, Newcastle",
+      "value": 68,
+      "aliases": [
+        "Ferguson",
+        "Big Dunc"
+      ],
+      "wd": "Q465623"
+    },
+    {
+      "id": "gylfi-sigurdsson",
+      "name": "Gylfi Sigurðsson",
+      "sub": "Iceland · Swansea, Everton",
+      "value": 67,
+      "aliases": [
+        "Sigurðsson",
+        "Gylfi"
+      ],
+      "wd": "Q59105"
+    },
+    {
+      "id": "paolo-di-canio",
+      "name": "Paolo Di Canio",
+      "sub": "Italy · West Ham, Sheffield Wed",
+      "value": 66,
+      "aliases": [
+        "Di Canio"
+      ],
+      "wd": "Q44655"
+    },
+    {
+      "id": "jarrod-bowen",
+      "name": "Jarrod Bowen",
+      "sub": "England · West Ham",
+      "value": 65,
+      "aliases": [
+        "Bowen"
+      ],
+      "wd": "Q26704890"
+    },
+    {
+      "id": "mark-hughes",
+      "name": "Mark Hughes",
+      "sub": "Wales · Man Utd, Chelsea",
+      "value": 64,
+      "aliases": [
+        "Hughes",
+        "Sparky"
+      ],
+      "wd": "Q214513"
+    },
+    {
+      "id": "alexander-isak",
+      "name": "Alexander Isak",
+      "sub": "Sweden · Newcastle, Liverpool",
+      "value": 64,
+      "aliases": [
+        "Isak"
+      ],
+      "wd": "Q23759917"
+    },
+    {
+      "id": "anthony-martial",
+      "name": "Anthony Martial",
+      "sub": "France · Man Utd",
+      "value": 63,
+      "aliases": [
+        "Martial"
+      ],
+      "wd": "Q2091463"
+    },
+    {
+      "id": "alexis-sanchez",
+      "name": "Alexis Sánchez",
+      "sub": "Chile · Arsenal, Man Utd",
+      "value": 63,
+      "aliases": [
+        "Alexis",
+        "Sánchez"
+      ],
+      "wd": "Q180553"
+    },
+    {
+      "id": "diogo-jota",
+      "name": "Diogo Jota",
+      "sub": "Portugal · Liverpool, Wolves",
+      "value": 63,
+      "aliases": [
+        "Jota"
+      ],
+      "wd": "Q19518278"
+    },
+    {
+      "id": "bukayo-saka",
+      "name": "Bukayo Saka",
+      "sub": "England · Arsenal",
+      "value": 63,
+      "aliases": [
+        "Saka"
+      ],
+      "wd": "Q59306386"
+    },
+    {
+      "id": "dean-holdsworth",
+      "name": "Dean Holdsworth",
+      "sub": "England · Wimbledon, Bolton",
+      "value": 63,
+      "aliases": [
+        "Holdsworth"
+      ],
+      "wd": "Q387740"
+    },
+    {
+      "id": "robert-pires",
+      "name": "Robert Pires",
+      "sub": "France · Arsenal",
+      "value": 62,
+      "aliases": [
+        "Pirès",
+        "Pires"
+      ],
+      "wd": "Q113156"
+    },
+    {
+      "id": "yaya-toure",
+      "name": "Yaya Touré",
+      "sub": "Ivory Coast · Man City",
+      "value": 62,
+      "aliases": [
+        "Touré",
+        "Yaya"
+      ],
+      "wd": "Q184277"
+    },
+    {
+      "id": "david-beckham",
+      "name": "David Beckham",
+      "sub": "England · Man Utd",
+      "value": 62,
+      "aliases": [
+        "Beckham",
+        "Becks"
+      ],
+      "wd": "Q10520"
+    },
+    {
+      "id": "stan-collymore",
+      "name": "Stan Collymore",
+      "sub": "England · Liverpool, Nottingham Forest",
+      "value": 62,
+      "aliases": [
+        "Collymore"
+      ],
+      "wd": "Q444975"
+    },
+    {
+      "id": "david-silva",
+      "name": "David Silva",
+      "sub": "Spain · Man City",
+      "value": 60,
+      "aliases": [
+        "Silva"
+      ],
+      "wd": "Q161069"
     }
   ]
 }

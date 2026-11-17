@@ -1,0 +1,968 @@
+{
+  "id": "ligue-1-top-scorers",
+  "title": "Ligue 1 all-time top scorers",
+  "prompt": "most Ligue 1 goals",
+  "noun": "player",
+  "nounPlural": "players",
+  "kind": "player",
+  "metric": "Goals",
+  "order": "desc",
+  "description": "All-time French top-flight (Division 1 / Ligue 1) goals since 1932–33, for every player who has scored 100 or more. Florian Thauvin updated to 8 November 2026.",
+  "tags": [
+    "europe",
+    "players"
+  ],
+  "source": {
+    "name": "Wikipedia: List of Ligue 1 top scorers",
+    "url": "https://en.wikipedia.org/wiki/List_of_Ligue_1_top_scorers",
+    "asOf": "2026-11-08"
+  },
+  "items": [
+    {
+      "id": "delio-onnis",
+      "name": "Delio Onnis",
+      "sub": "Argentina · Monaco, Tours",
+      "value": 299,
+      "aliases": [
+        "Onnis"
+      ],
+      "wd": "Q535142"
+    },
+    {
+      "id": "bernard-lacombe",
+      "name": "Bernard Lacombe",
+      "sub": "France · Lyon, Bordeaux",
+      "value": 255,
+      "aliases": [
+        "Lacombe"
+      ],
+      "wd": "Q4232"
+    },
+    {
+      "id": "herve-revelli",
+      "name": "Hervé Revelli",
+      "sub": "France · Saint-Étienne",
+      "value": 216,
+      "aliases": [
+        "Revelli"
+      ],
+      "wd": "Q710312"
+    },
+    {
+      "id": "roger-courtois",
+      "name": "Roger Courtois",
+      "sub": "France · Sochaux",
+      "value": 210,
+      "aliases": [
+        "Courtois"
+      ],
+      "wd": "Q1389029"
+    },
+    {
+      "id": "thadee-cisowski",
+      "name": "Thadée Cisowski",
+      "sub": "France · Metz, Racing Paris",
+      "value": 206,
+      "aliases": [
+        "Cisowski"
+      ],
+      "wd": "Q926919"
+    },
+    {
+      "id": "roger-piantoni",
+      "name": "Roger Piantoni",
+      "sub": "France · Nancy, Reims",
+      "value": 203,
+      "aliases": [
+        "Piantoni"
+      ],
+      "wd": "Q709114"
+    },
+    {
+      "id": "kylian-mbappe",
+      "name": "Kylian Mbappé",
+      "sub": "France · PSG",
+      "value": 191,
+      "aliases": [
+        "Mbappé"
+      ],
+      "wd": "Q21621995"
+    },
+    {
+      "id": "joseph-ujlaki",
+      "name": "Joseph Ujlaki",
+      "sub": "France · Nîmes, Nice, Racing Paris",
+      "value": 190,
+      "aliases": [
+        "Ujlaki",
+        "József Ujlaki"
+      ],
+      "wd": "Q905343"
+    },
+    {
+      "id": "fleury-di-nallo",
+      "name": "Fleury Di Nallo",
+      "sub": "France · Lyon",
+      "value": 187,
+      "aliases": [
+        "Di Nallo"
+      ],
+      "wd": "Q4237"
+    },
+    {
+      "id": "carlos-bianchi",
+      "name": "Carlos Bianchi",
+      "sub": "Argentina · Reims, PSG",
+      "value": 179,
+      "aliases": [
+        "Bianchi"
+      ],
+      "wd": "Q449873"
+    },
+    {
+      "id": "gunnar-andersson",
+      "name": "Gunnar Andersson",
+      "sub": "Sweden · Marseille",
+      "value": 179,
+      "aliases": [
+        "Andersson"
+      ],
+      "wd": "Q1389203"
+    },
+    {
+      "id": "hassan-akesbi",
+      "name": "Hassan Akesbi",
+      "sub": "Morocco · Nîmes, Reims",
+      "value": 173,
+      "aliases": [
+        "Akesbi"
+      ],
+      "wd": "Q325471"
+    },
+    {
+      "id": "jean-baratte",
+      "name": "Jean Baratte",
+      "sub": "France · Lille",
+      "value": 169,
+      "aliases": [
+        "Baratte"
+      ],
+      "wd": "Q718852"
+    },
+    {
+      "id": "just-fontaine",
+      "name": "Just Fontaine",
+      "sub": "France · Nice, Reims",
+      "value": 164,
+      "aliases": [
+        "Fontaine"
+      ],
+      "wd": "Q192749"
+    },
+    {
+      "id": "alain-giresse",
+      "name": "Alain Giresse",
+      "sub": "France · Bordeaux",
+      "value": 163,
+      "aliases": [
+        "Giresse",
+        "Gigi"
+      ],
+      "wd": "Q312170"
+    },
+    {
+      "id": "alexandre-lacazette",
+      "name": "Alexandre Lacazette",
+      "sub": "France · Lyon",
+      "value": 161,
+      "aliases": [
+        "Lacazette"
+      ],
+      "wd": "Q13306"
+    },
+    {
+      "id": "wissam-ben-yedder",
+      "name": "Wissam Ben Yedder",
+      "sub": "France · Toulouse, Monaco",
+      "value": 161,
+      "aliases": [
+        "Ben Yedder"
+      ],
+      "wd": "Q137128"
+    },
+    {
+      "id": "andre-guy",
+      "name": "André Guy",
+      "sub": "France · Saint-Étienne, Lille, Lyon",
+      "value": 159,
+      "aliases": [
+        "Guy"
+      ],
+      "wd": "Q519425"
+    },
+    {
+      "id": "desire-koranyi",
+      "name": "Désiré Koranyi",
+      "sub": "France · Sète",
+      "value": 157,
+      "aliases": [
+        "Koranyi"
+      ],
+      "wd": "Q901489"
+    },
+    {
+      "id": "jean-pierre-papin",
+      "name": "Jean-Pierre Papin",
+      "sub": "France · Marseille",
+      "value": 156,
+      "aliases": [
+        "Papin",
+        "JPP"
+      ],
+      "wd": "Q13494"
+    },
+    {
+      "id": "jacky-vergnes",
+      "name": "Jacky Vergnes",
+      "sub": "France · Nîmes",
+      "value": 153,
+      "aliases": [
+        "Vergnes",
+        "Jacques Vergnes"
+      ],
+      "wd": "Q376656"
+    },
+    {
+      "id": "josip-skoblar",
+      "name": "Josip Skoblar",
+      "sub": "Yugoslavia · Marseille",
+      "value": 151,
+      "aliases": [
+        "Skoblar"
+      ],
+      "wd": "Q315114"
+    },
+    {
+      "id": "lucien-cossou",
+      "name": "Lucien Cossou",
+      "sub": "France · Lyon, Monaco",
+      "value": 149,
+      "aliases": [
+        "Cossou"
+      ],
+      "wd": "Q1388983"
+    },
+    {
+      "id": "dominique-rocheteau",
+      "name": "Dominique Rocheteau",
+      "sub": "France · Saint-Étienne, PSG",
+      "value": 145,
+      "aliases": [
+        "Rocheteau"
+      ],
+      "wd": "Q433193"
+    },
+    {
+      "id": "rachid-mekhloufi",
+      "name": "Rachid Mekhloufi",
+      "sub": "France/Algeria · Saint-Étienne",
+      "value": 143,
+      "aliases": [
+        "Mekhloufi"
+      ],
+      "wd": "Q747340"
+    },
+    {
+      "id": "pauleta",
+      "name": "Pauleta",
+      "sub": "Portugal · Bordeaux, PSG",
+      "value": 141,
+      "aliases": [
+        "Pedro Pauleta"
+      ],
+      "wd": "Q218165"
+    },
+    {
+      "id": "yvon-douis",
+      "name": "Yvon Douis",
+      "sub": "France · Lille, Le Havre, Monaco",
+      "value": 140,
+      "aliases": [
+        "Douis"
+      ],
+      "wd": "Q1344922"
+    },
+    {
+      "id": "michel-platini",
+      "name": "Michel Platini",
+      "sub": "France · Nancy, Saint-Étienne",
+      "value": 139,
+      "aliases": [
+        "Platini"
+      ],
+      "wd": "Q4261"
+    },
+    {
+      "id": "stephane-bruey",
+      "name": "Stéphane Bruey",
+      "sub": "France · Angers",
+      "value": 139,
+      "aliases": [
+        "Bruey"
+      ],
+      "wd": "Q2034872"
+    },
+    {
+      "id": "edinson-cavani",
+      "name": "Edinson Cavani",
+      "sub": "Uruguay · PSG",
+      "value": 138,
+      "aliases": [
+        "Cavani"
+      ],
+      "wd": "Q167790"
+    },
+    {
+      "id": "sonny-anderson",
+      "name": "Sonny Anderson",
+      "sub": "Brazil · Monaco, Lyon",
+      "value": 138,
+      "aliases": [
+        "Anderson"
+      ],
+      "wd": "Q313861"
+    },
+    {
+      "id": "salif-keita",
+      "name": "Salif Keïta",
+      "sub": "Mali · Saint-Étienne",
+      "value": 135,
+      "aliases": [
+        "Keïta",
+        "Salif Keita"
+      ],
+      "wd": "Q964530"
+    },
+    {
+      "id": "hector-de-bourgoing",
+      "name": "Hector De Bourgoing",
+      "sub": "France · Nice, Bordeaux",
+      "value": 133,
+      "aliases": [
+        "De Bourgoing",
+        "Héctor De Bourgoing"
+      ],
+      "wd": "Q1373765"
+    },
+    {
+      "id": "jacques-foix",
+      "name": "Jacques Foix",
+      "sub": "France · Saint-Étienne, Nice",
+      "value": 132,
+      "aliases": [
+        "Foix"
+      ],
+      "wd": "Q462396"
+    },
+    {
+      "id": "yannick-stopyra",
+      "name": "Yannick Stopyra",
+      "sub": "France · Sochaux, Toulouse",
+      "value": 132,
+      "aliases": [
+        "Stopyra"
+      ],
+      "wd": "Q1347683"
+    },
+    {
+      "id": "henri-hiltl",
+      "name": "Henri Hiltl",
+      "sub": "France · Excelsior Roubaix, Roubaix-Tourcoing",
+      "value": 131,
+      "aliases": [
+        "Hiltl",
+        "Heinrich Hiltl"
+      ],
+      "wd": "Q874431"
+    },
+    {
+      "id": "bernard-zenier",
+      "name": "Bernard Zénier",
+      "sub": "France · Metz, Nancy",
+      "value": 130,
+      "aliases": [
+        "Zénier"
+      ],
+      "wd": "Q600984"
+    },
+    {
+      "id": "francois-m-pele",
+      "name": "François M'Pelé",
+      "sub": "Congo · Ajaccio, PSG",
+      "value": 129,
+      "aliases": [
+        "M'Pelé"
+      ],
+      "wd": "Q963790"
+    },
+    {
+      "id": "gerard-soler",
+      "name": "Gérard Soler",
+      "sub": "France · Sochaux",
+      "value": 129,
+      "aliases": [
+        "Soler"
+      ],
+      "wd": "Q1265123"
+    },
+    {
+      "id": "alberto-muro",
+      "name": "Alberto Muro",
+      "sub": "Argentina · Sochaux, Nice, Nancy",
+      "value": 128,
+      "aliases": [
+        "Muro"
+      ],
+      "wd": "Q1792925"
+    },
+    {
+      "id": "jean-grumellon",
+      "name": "Jean Grumellon",
+      "sub": "France · Rennes",
+      "value": 126,
+      "aliases": [
+        "Grumellon"
+      ],
+      "wd": "Q1336172"
+    },
+    {
+      "id": "lilian-laslandes",
+      "name": "Lilian Laslandes",
+      "sub": "France · Auxerre, Bordeaux",
+      "value": 126,
+      "aliases": [
+        "Laslandes"
+      ],
+      "wd": "Q956723"
+    },
+    {
+      "id": "joseph-yegba-maya",
+      "name": "Joseph Yegba Maya",
+      "sub": "Cameroon · Marseille, Valenciennes",
+      "value": 124,
+      "aliases": [
+        "Yegba Maya",
+        "Maya"
+      ],
+      "wd": "Q1708292"
+    },
+    {
+      "id": "bafetimbi-gomis",
+      "name": "Bafétimbi Gomis",
+      "sub": "France · Saint-Étienne, Lyon",
+      "value": 122,
+      "aliases": [
+        "Gomis",
+        "Bafé Gomis"
+      ],
+      "wd": "Q11966"
+    },
+    {
+      "id": "henri-baillot",
+      "name": "Henri Baillot",
+      "sub": "France · Metz, Bordeaux",
+      "value": 121,
+      "aliases": [
+        "Baillot"
+      ],
+      "wd": "Q1605705"
+    },
+    {
+      "id": "ernest-schultz",
+      "name": "Ernest Schultz",
+      "sub": "France · Lyon, Toulouse",
+      "value": 121,
+      "aliases": [
+        "Schultz",
+        "Ernie Schultz"
+      ],
+      "wd": "Q377737"
+    },
+    {
+      "id": "rene-gardien",
+      "name": "René Gardien",
+      "sub": "France · Sochaux",
+      "value": 121,
+      "aliases": [
+        "Gardien"
+      ],
+      "wd": "Q2144657"
+    },
+    {
+      "id": "andre-simonyi",
+      "name": "André Simonyi",
+      "sub": "France · Olympique Lillois, Red Star",
+      "value": 120,
+      "aliases": [
+        "Simonyi"
+      ],
+      "wd": "Q522864"
+    },
+    {
+      "id": "francois-felix",
+      "name": "François Félix",
+      "sub": "France · Bastia",
+      "value": 120,
+      "aliases": [
+        "Félix"
+      ],
+      "wd": "x-player-francois-felix"
+    },
+    {
+      "id": "serge-chiesa",
+      "name": "Serge Chiesa",
+      "sub": "France · Lyon",
+      "value": 120,
+      "aliases": [
+        "Chiesa"
+      ],
+      "wd": "Q4240"
+    },
+    {
+      "id": "jean-vincent",
+      "name": "Jean Vincent",
+      "sub": "France · Lille, Reims",
+      "value": 119,
+      "aliases": [
+        "Vincent"
+      ],
+      "wd": "Q708893"
+    },
+    {
+      "id": "oskar-rohr",
+      "name": "Oskar Rohr",
+      "sub": "Germany · Strasbourg",
+      "value": 118,
+      "aliases": [
+        "Rohr"
+      ],
+      "wd": "Q317560"
+    },
+    {
+      "id": "nestor-combin",
+      "name": "Nestor Combin",
+      "sub": "France · Lyon, Metz",
+      "value": 117,
+      "aliases": [
+        "Combin"
+      ],
+      "wd": "Q605050"
+    },
+    {
+      "id": "didier-couecou",
+      "name": "Didier Couécou",
+      "sub": "France · Bordeaux, Marseille",
+      "value": 117,
+      "aliases": [
+        "Couécou"
+      ],
+      "wd": "Q1210530"
+    },
+    {
+      "id": "bernard-genghini",
+      "name": "Bernard Genghini",
+      "sub": "France · Sochaux, Monaco",
+      "value": 117,
+      "aliases": [
+        "Genghini"
+      ],
+      "wd": "Q431255"
+    },
+    {
+      "id": "georges-lech",
+      "name": "Georges Lech",
+      "sub": "France · Lens, Sochaux",
+      "value": 117,
+      "aliases": [
+        "Lech"
+      ],
+      "wd": "Q1508989"
+    },
+    {
+      "id": "dominique-rustichelli",
+      "name": "Dominique Rustichelli",
+      "sub": "France · Marseille, Nice",
+      "value": 117,
+      "aliases": [
+        "Rustichelli"
+      ],
+      "wd": "Q373599"
+    },
+    {
+      "id": "gines-liron",
+      "name": "Ginès Liron",
+      "sub": "France · Sochaux, Saint-Étienne",
+      "value": 116,
+      "aliases": [
+        "Liron"
+      ],
+      "wd": "Q1372098"
+    },
+    {
+      "id": "pierre-sinibaldi",
+      "name": "Pierre Sinibaldi",
+      "sub": "France · Reims",
+      "value": 115,
+      "aliases": [
+        "Sinibaldi"
+      ],
+      "wd": "Q1399017"
+    },
+    {
+      "id": "zlatan-ibrahimovic",
+      "name": "Zlatan Ibrahimović",
+      "sub": "Sweden · PSG",
+      "value": 113,
+      "aliases": [
+        "Ibrahimović",
+        "Zlatan",
+        "Ibra"
+      ],
+      "wd": "Q46896"
+    },
+    {
+      "id": "charly-loubet",
+      "name": "Charly Loubet",
+      "sub": "France · Nice, Marseille",
+      "value": 113,
+      "aliases": [
+        "Loubet"
+      ],
+      "wd": "Q921146"
+    },
+    {
+      "id": "maryan-wisniewski",
+      "name": "Maryan Wisniewski",
+      "sub": "France · Lens",
+      "value": 113,
+      "aliases": [
+        "Wisniewski"
+      ],
+      "wd": "Q964973"
+    },
+    {
+      "id": "eric-pecout",
+      "name": "Éric Pécout",
+      "sub": "France · Nantes",
+      "value": 112,
+      "aliases": [
+        "Pécout"
+      ],
+      "wd": "Q288321"
+    },
+    {
+      "id": "andre-strappe",
+      "name": "André Strappe",
+      "sub": "France · Lille",
+      "value": 112,
+      "aliases": [
+        "Strappe"
+      ],
+      "wd": "Q522955"
+    },
+    {
+      "id": "bernard-blanchet",
+      "name": "Bernard Blanchet",
+      "sub": "France · Nantes",
+      "value": 111,
+      "aliases": [
+        "Blanchet"
+      ],
+      "wd": "Q541266"
+    },
+    {
+      "id": "claude-papi",
+      "name": "Claude Papi",
+      "sub": "France · Bastia",
+      "value": 110,
+      "aliases": [
+        "Papi"
+      ],
+      "wd": "Q1097041"
+    },
+    {
+      "id": "albert-emon",
+      "name": "Albert Emon",
+      "sub": "France · Marseille, Monaco",
+      "value": 110,
+      "aliases": [
+        "Emon"
+      ],
+      "wd": "Q2831161"
+    },
+    {
+      "id": "henri-skiba",
+      "name": "Henri Skiba",
+      "sub": "France · Nîmes, Stade Français",
+      "value": 109,
+      "aliases": [
+        "Skiba"
+      ],
+      "wd": "Q442674"
+    },
+    {
+      "id": "pierre-flamion",
+      "name": "Pierre Flamion",
+      "sub": "France · Reims, Troyes",
+      "value": 106,
+      "aliases": [
+        "Flamion"
+      ],
+      "wd": "Q1354999"
+    },
+    {
+      "id": "albert-gemmrich",
+      "name": "Albert Gemmrich",
+      "sub": "France · Strasbourg, Bordeaux",
+      "value": 106,
+      "aliases": [
+        "Gemmrich"
+      ],
+      "wd": "Q979305"
+    },
+    {
+      "id": "leon-deladerriere",
+      "name": "Léon Deladerrière",
+      "sub": "France · Nancy",
+      "value": 106,
+      "aliases": [
+        "Deladerrière"
+      ],
+      "wd": "Q376683"
+    },
+    {
+      "id": "michel-stievenard",
+      "name": "Michel Stievenard",
+      "sub": "France · Lens, Angers",
+      "value": 106,
+      "aliases": [
+        "Stievenard"
+      ],
+      "wd": "Q1372118"
+    },
+    {
+      "id": "edouard-kargu",
+      "name": "Édouard Kargu",
+      "sub": "France · Bordeaux",
+      "value": 105,
+      "aliases": [
+        "Kargu"
+      ],
+      "wd": "Q274350"
+    },
+    {
+      "id": "daniel-xuereb",
+      "name": "Daniel Xuereb",
+      "sub": "France · Lyon, Lens, Montpellier",
+      "value": 105,
+      "aliases": [
+        "Xuereb"
+      ],
+      "wd": "Q2423642"
+    },
+    {
+      "id": "bernard-rahis",
+      "name": "Bernard Rahis",
+      "sub": "France · Nîmes",
+      "value": 104,
+      "aliases": [
+        "Rahis"
+      ],
+      "wd": "Q541754"
+    },
+    {
+      "id": "alain-caveglia",
+      "name": "Alain Caveglia",
+      "sub": "France · Sochaux, Le Havre, Lyon",
+      "value": 104,
+      "aliases": [
+        "Caveglia"
+      ],
+      "wd": "Q520658"
+    },
+    {
+      "id": "robert-pintenat",
+      "name": "Robert Pintenat",
+      "sub": "France · Sochaux",
+      "value": 103,
+      "aliases": [
+        "Pintenat"
+      ],
+      "wd": "Q374639"
+    },
+    {
+      "id": "abdelkrim-merry",
+      "name": "Abdelkrim Merry",
+      "sub": "Morocco · Bastia, Metz",
+      "value": 103,
+      "aliases": [
+        "Merry",
+        "Krimau",
+        "Merry Krimau"
+      ],
+      "wd": "Q1169405"
+    },
+    {
+      "id": "dimitri-payet",
+      "name": "Dimitri Payet",
+      "sub": "France · Marseille",
+      "value": 103,
+      "aliases": [
+        "Payet"
+      ],
+      "wd": "Q376247"
+    },
+    {
+      "id": "francois-brisson",
+      "name": "François Brisson",
+      "sub": "France · Laval, Lens",
+      "value": 103,
+      "aliases": [
+        "Brisson"
+      ],
+      "wd": "Q1450943"
+    },
+    {
+      "id": "philippe-piat",
+      "name": "Philippe Piat",
+      "sub": "France · Strasbourg, Sochaux",
+      "value": 102,
+      "aliases": [
+        "Piat"
+      ],
+      "wd": "Q2087701"
+    },
+    {
+      "id": "marc-berdoll",
+      "name": "Marc Berdoll",
+      "sub": "France · Angers, Marseille",
+      "value": 102,
+      "aliases": [
+        "Berdoll"
+      ],
+      "wd": "Q1371956"
+    },
+    {
+      "id": "andre-pierre-gignac",
+      "name": "André-Pierre Gignac",
+      "sub": "France · Toulouse, Marseille",
+      "value": 102,
+      "aliases": [
+        "Gignac",
+        "APG"
+      ],
+      "wd": "Q1940"
+    },
+    {
+      "id": "mustapha-dahleb",
+      "name": "Mustapha Dahleb",
+      "sub": "Algeria · PSG",
+      "value": 102,
+      "aliases": [
+        "Dahleb"
+      ],
+      "wd": "Q735925"
+    },
+    {
+      "id": "philippe-vercruysse",
+      "name": "Philippe Vercruysse",
+      "sub": "France · Lens, Marseille",
+      "value": 102,
+      "aliases": [
+        "Vercruysse"
+      ],
+      "wd": "Q2624462"
+    },
+    {
+      "id": "jimmy-briand",
+      "name": "Jimmy Briand",
+      "sub": "France · Rennes, Lyon, Guingamp",
+      "value": 102,
+      "aliases": [
+        "Briand"
+      ],
+      "wd": "Q342312"
+    },
+    {
+      "id": "florian-thauvin",
+      "name": "Florian Thauvin",
+      "sub": "France · Marseille, Lens",
+      "value": 102,
+      "aliases": [
+        "Thauvin"
+      ],
+      "wd": "Q27476"
+    },
+    {
+      "id": "vahid-halilhodzic",
+      "name": "Vahid Halilhodžić",
+      "sub": "Yugoslavia · Nantes",
+      "value": 101,
+      "aliases": [
+        "Halilhodžić",
+        "Vahid"
+      ],
+      "wd": "Q463933"
+    },
+    {
+      "id": "kevin-gameiro",
+      "name": "Kevin Gameiro",
+      "sub": "France · Strasbourg, Lorient",
+      "value": 101,
+      "aliases": [
+        "Gameiro"
+      ],
+      "wd": "Q314028"
+    },
+    {
+      "id": "victor-nurenberg",
+      "name": "Victor Nurenberg",
+      "sub": "Luxembourg · Nice",
+      "value": 101,
+      "aliases": [
+        "Nurenberg"
+      ],
+      "wd": "Q768904"
+    },
+    {
+      "id": "patrick-revelli",
+      "name": "Patrick Revelli",
+      "sub": "France · Saint-Étienne, Sochaux",
+      "value": 101,
+      "aliases": [
+        "Revelli"
+      ],
+      "wd": "Q346069"
+    },
+    {
+      "id": "philippe-gondet",
+      "name": "Philippe Gondet",
+      "sub": "France · Nantes",
+      "value": 100,
+      "aliases": [
+        "Gondet"
+      ],
+      "wd": "Q1357606"
+    },
+    {
+      "id": "mamadou-niang",
+      "name": "Mamadou Niang",
+      "sub": "Senegal · Strasbourg, Marseille",
+      "value": 100,
+      "aliases": [
+        "Niang"
+      ],
+      "wd": "Q342707"
+    }
+  ]
+}

@@ -7,15 +7,15 @@
   "kind": "player",
   "metric": "Goals",
   "order": "desc",
-  "description": "Men's senior international goals; every player with 50 or more.",
+  "description": "Men's senior international goals; every player with 47 or more.",
   "tags": [
     "international",
     "players"
   ],
   "source": {
-    "name": "Wikipedia: List of men's footballers with 50 or more international goals",
+    "name": "Wikipedia: List of men's footballers with 50 or more international goals; RSSSF: Players with 30 or more goals",
     "url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
-    "asOf": "2026-11-15"
+    "asOf": "2026-11-16"
   },
   "items": [
     {
@@ -928,6 +928,260 @@
         "Hassan"
       ],
       "wd": "Q3783618"
+    },
+    {
+      "id": "marko-arnautovic",
+      "name": "Marko Arnautović",
+      "sub": "Austria",
+      "value": 49,
+      "aliases": [
+        "Arnautović"
+      ],
+      "wd": "Q313575"
+    },
+    {
+      "id": "bobby-charlton",
+      "name": "Bobby Charlton",
+      "sub": "England",
+      "value": 49,
+      "aliases": [
+        "Charlton",
+        "Sir Bobby Charlton"
+      ],
+      "wd": "Q171583"
+    },
+    {
+      "id": "lukas-podolski",
+      "name": "Lukas Podolski",
+      "sub": "Germany",
+      "value": 49,
+      "aliases": [
+        "Podolski",
+        "Poldi"
+      ],
+      "wd": "Q134976"
+    },
+    {
+      "id": "sven-rydell",
+      "name": "Sven Rydell",
+      "sub": "Sweden",
+      "value": 49,
+      "aliases": [
+        "Rydell"
+      ],
+      "wd": "Q536745"
+    },
+    {
+      "id": "hassan-el-shazly",
+      "name": "Hassan El-Shazly",
+      "sub": "Egypt",
+      "value": 49,
+      "aliases": [
+        "El-Shazly",
+        "Shazly"
+      ],
+      "wd": "Q2016805"
+    },
+    {
+      "id": "enner-valencia",
+      "name": "Enner Valencia",
+      "sub": "Ecuador",
+      "value": 49,
+      "aliases": [
+        "Valencia"
+      ],
+      "wd": "Q2843080"
+    },
+    {
+      "id": "abdoulaye-traore",
+      "name": "Abdoulaye Traoré",
+      "sub": "Ivory Coast",
+      "value": 49,
+      "aliases": [
+        "Traoré"
+      ],
+      "wd": "Q308424"
+    },
+    {
+      "id": "dimitar-berbatov",
+      "name": "Dimitar Berbatov",
+      "sub": "Bulgaria",
+      "value": 48,
+      "aliases": [
+        "Berbatov"
+      ],
+      "wd": "Q170235"
+    },
+    {
+      "id": "hristo-bonev",
+      "name": "Hristo Bonev",
+      "sub": "Bulgaria",
+      "value": 48,
+      "aliases": [
+        "Bonev"
+      ],
+      "wd": "Q706715"
+    },
+    {
+      "id": "raul-jimenez",
+      "name": "Raúl Jiménez",
+      "sub": "Mexico",
+      "value": 48,
+      "aliases": [
+        "Jiménez"
+      ],
+      "wd": "Q1925465"
+    },
+    {
+      "id": "ahmed-khalil",
+      "name": "Ahmed Khalil",
+      "sub": "United Arab Emirates",
+      "value": 48,
+      "aliases": [
+        "Khalil"
+      ],
+      "wd": "Q2160925"
+    },
+    {
+      "id": "gary-lineker",
+      "name": "Gary Lineker",
+      "sub": "England",
+      "value": 48,
+      "aliases": [
+        "Lineker"
+      ],
+      "wd": "Q47778"
+    },
+    {
+      "id": "wlodzimierz-lubanski",
+      "name": "Włodzimierz Lubański",
+      "sub": "Poland",
+      "value": 48,
+      "aliases": [
+        "Lubański"
+      ],
+      "wd": "Q313446"
+    },
+    {
+      "id": "andriy-shevchenko",
+      "name": "Andriy Shevchenko",
+      "sub": "Ukraine",
+      "value": 48,
+      "aliases": [
+        "Shevchenko",
+        "Sheva"
+      ],
+      "wd": "Q41244"
+    },
+    {
+      "id": "zico",
+      "name": "Zico",
+      "sub": "Brazil",
+      "value": 48,
+      "wd": "Q47526"
+    },
+    {
+      "id": "mansour-muftah",
+      "name": "Mansour Muftah",
+      "sub": "Qatar",
+      "value": 48,
+      "aliases": [
+        "Muftah"
+      ],
+      "wd": "Q10498393"
+    },
+    {
+      "id": "ismail-abdul-latif",
+      "name": "Ismail Abdul-Latif",
+      "sub": "Bahrain",
+      "value": 47,
+      "aliases": [
+        "Abdul-Latif",
+        "Abdullatif",
+        "Ismail Abdullatif"
+      ],
+      "wd": "Q527718"
+    },
+    {
+      "id": "rolando-fonseca",
+      "name": "Rolando Fonseca",
+      "sub": "Costa Rica",
+      "value": 47,
+      "aliases": [
+        "Fonseca"
+      ],
+      "wd": "Q483093"
+    },
+    {
+      "id": "jurgen-klinsmann",
+      "name": "Jürgen Klinsmann",
+      "sub": "West Germany / Germany",
+      "value": 47,
+      "aliases": [
+        "Klinsmann",
+        "Klinsi",
+        "Juergen Klinsmann"
+      ],
+      "wd": "Q57079"
+    },
+    {
+      "id": "pauleta",
+      "name": "Pauleta",
+      "sub": "Portugal",
+      "value": 47,
+      "wd": "Q218165"
+    },
+    {
+      "id": "rudi-voller",
+      "name": "Rudi Völler",
+      "sub": "West Germany / Germany",
+      "value": 47,
+      "aliases": [
+        "Völler",
+        "Rudi Voeller",
+        "Voeller"
+      ],
+      "wd": "Q44464"
+    },
+    {
+      "id": "andriy-yarmolenko",
+      "name": "Andriy Yarmolenko",
+      "sub": "Ukraine",
+      "value": 47,
+      "aliases": [
+        "Yarmolenko"
+      ],
+      "wd": "Q310328"
+    },
+    {
+      "id": "roy-krishna",
+      "name": "Roy Krishna",
+      "sub": "Fiji",
+      "value": 47,
+      "aliases": [
+        "Krishna"
+      ],
+      "wd": "Q733523"
+    },
+    {
+      "id": "eldor-shomurodov",
+      "name": "Eldor Shomurodov",
+      "sub": "Uzbekistan",
+      "value": 47,
+      "aliases": [
+        "Shomurodov"
+      ],
+      "wd": "Q20641483"
+    },
+    {
+      "id": "chris-wood",
+      "name": "Chris Wood",
+      "sub": "New Zealand",
+      "value": 47,
+      "aliases": [
+        "Wood"
+      ],
+      "wd": "Q74548"
     }
   ]
 }

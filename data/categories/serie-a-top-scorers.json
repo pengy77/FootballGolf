@@ -7,7 +7,7 @@
   "kind": "player",
   "metric": "Goals",
   "order": "desc",
-  "description": "All-time Serie A goals since 1929–30, for every player who has scored 110 or more. Lautaro Martínez and Domenico Berardi updated to 8 November 2026 from Italian Wikipedia’s all-time list.",
+  "description": "All-time Serie A goals since 1929–30, for every player who has scored 100 or more. Lautaro Martínez and Domenico Berardi updated to 8 November 2026 from Italian Wikipedia’s all-time list. Players on 100–110 goals checked against Italian Wikipedia and RSSSF; where sources split, the figure two of the three agree on is used.",
   "tags": [
     "europe",
     "players"
@@ -762,6 +762,207 @@
         "Baldini"
       ],
       "wd": "Q708936"
+    },
+    {
+      "id": "bruno-giordano",
+      "name": "Bruno Giordano",
+      "sub": "Italy · Lazio, Napoli",
+      "value": 110,
+      "aliases": [
+        "Giordano"
+      ],
+      "wd": "Q613257"
+    },
+    {
+      "id": "angelo-schiavio",
+      "name": "Angelo Schiavio",
+      "sub": "Italy · Bologna",
+      "value": 109,
+      "aliases": [
+        "Schiavio"
+      ],
+      "wd": "Q315817"
+    },
+    {
+      "id": "aldo-boffi",
+      "name": "Aldo Boffi",
+      "sub": "Italy · AC Milan",
+      "value": 109,
+      "aliases": [
+        "Boffi"
+      ],
+      "wd": "Q922569"
+    },
+    {
+      "id": "eddie-firmani",
+      "name": "Eddie Firmani",
+      "sub": "Italy · Sampdoria, Inter",
+      "value": 108,
+      "aliases": [
+        "Firmani",
+        "Edwing Firmani"
+      ],
+      "wd": "Q1282776"
+    },
+    {
+      "id": "edin-dzeko",
+      "name": "Edin Džeko",
+      "sub": "Bosnia and Herzegovina · Roma, Inter",
+      "value": 107,
+      "aliases": [
+        "Džeko"
+      ],
+      "wd": "Q153786"
+    },
+    {
+      "id": "dino-da-costa",
+      "name": "Dino Da Costa",
+      "sub": "Brazil/Italy · Roma",
+      "value": 107,
+      "aliases": [
+        "Da Costa"
+      ],
+      "wd": "Q585082"
+    },
+    {
+      "id": "antonio-vojak",
+      "name": "Antonio Vojak",
+      "sub": "Italy · Napoli",
+      "value": 106,
+      "aliases": [
+        "Vojak"
+      ],
+      "wd": "Q605715"
+    },
+    {
+      "id": "gino-armano",
+      "name": "Gino Armano",
+      "sub": "Italy · Inter, Torino",
+      "value": 106,
+      "aliases": [
+        "Armano"
+      ],
+      "wd": "Q986473"
+    },
+    {
+      "id": "pietro-anastasi",
+      "name": "Pietro Anastasi",
+      "sub": "Italy · Juventus",
+      "value": 105,
+      "aliases": [
+        "Anastasi"
+      ],
+      "wd": "Q62252"
+    },
+    {
+      "id": "gino-cappello",
+      "name": "Gino Cappello",
+      "sub": "Italy · AC Milan, Bologna",
+      "value": 104,
+      "aliases": [
+        "Cappello"
+      ],
+      "wd": "Q1539178"
+    },
+    {
+      "id": "fabrizio-miccoli",
+      "name": "Fabrizio Miccoli",
+      "sub": "Italy · Palermo",
+      "value": 103,
+      "aliases": [
+        "Miccoli"
+      ],
+      "wd": "Q136959"
+    },
+    {
+      "id": "adrian-mutu",
+      "name": "Adrian Mutu",
+      "sub": "Romania · Fiorentina",
+      "value": 103,
+      "aliases": [
+        "Mutu"
+      ],
+      "wd": "Q202645"
+    },
+    {
+      "id": "luis-muriel",
+      "name": "Luis Muriel",
+      "sub": "Colombia · Sampdoria, Atalanta",
+      "value": 103,
+      "aliases": [
+        "Muriel"
+      ],
+      "wd": "Q1032597"
+    },
+    {
+      "id": "sergio-clerici",
+      "name": "Sergio Clerici",
+      "sub": "Brazil · Fiorentina, Napoli",
+      "value": 103,
+      "aliases": [
+        "Clerici"
+      ],
+      "wd": "Q1264644"
+    },
+    {
+      "id": "oliver-bierhoff",
+      "name": "Oliver Bierhoff",
+      "sub": "Germany · Udinese, AC Milan",
+      "value": 102,
+      "aliases": [
+        "Bierhoff"
+      ],
+      "wd": "Q152844"
+    },
+    {
+      "id": "tommaso-rocchi",
+      "name": "Tommaso Rocchi",
+      "sub": "Italy · Lazio",
+      "value": 102,
+      "aliases": [
+        "Rocchi"
+      ],
+      "wd": "Q75580"
+    },
+    {
+      "id": "pietro-paolo-virdis",
+      "name": "Pietro Paolo Virdis",
+      "sub": "Italy · AC Milan",
+      "value": 102,
+      "aliases": [
+        "Virdis"
+      ],
+      "wd": "Q719481"
+    },
+    {
+      "id": "goran-pandev",
+      "name": "Goran Pandev",
+      "sub": "North Macedonia · Lazio, Genoa",
+      "value": 101,
+      "aliases": [
+        "Pandev"
+      ],
+      "wd": "Q238163"
+    },
+    {
+      "id": "pierino-prati",
+      "name": "Pierino Prati",
+      "sub": "Italy · AC Milan, Roma",
+      "value": 100,
+      "aliases": [
+        "Prati"
+      ],
+      "wd": "Q515815"
+    },
+    {
+      "id": "marek-hamsik",
+      "name": "Marek Hamšík",
+      "sub": "Slovakia · Napoli",
+      "value": 100,
+      "aliases": [
+        "Hamšík"
+      ],
+      "wd": "Q201825"
     }
   ]
 }
