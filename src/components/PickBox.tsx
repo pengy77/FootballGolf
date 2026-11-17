@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Category, Item } from '../lib/data';
 import { entitiesNow, exactSuggestion, loadEntities, suggest, type Entity, type Suggestion } from '../lib/entities';
 import { norm } from '../lib/search';
+import { Ball } from './art';
 import { Icons } from './ui';
 import './pickbox-extra.css';
 
@@ -111,23 +112,22 @@ export function PickBox({
     const unknown = !shown;
     return (
       <div className={`pick-chosen${unknown ? ' is-ob' : ''}`}>
-        <div className="pick-chosen-label">Your pick</div>
-        <div className="pick-chosen-name">{shown ? shown.name : !isItem && selection.offList ? `“${selection.offList}”` : 'No answer'}</div>
-        {shown?.sub && <div className="pick-chosen-sub">{shown.sub}</div>}
-        {unknown && (
-          <div className="pick-chosen-warn">
-            {!isItem && selection.offList ? `We don't know that ${cat.noun}, so it counts as out of bounds.` : 'Counts as out of bounds.'}
-          </div>
-        )}
+        <Ball size={30} className="pick-chosen-ball" />
+        <div className="pick-chosen-text">
+          <div className="pick-chosen-name">{shown ? shown.name : !isItem && selection.offList ? `“${selection.offList}”` : 'No answer'}</div>
+          {shown?.sub && <div className="pick-chosen-sub">{shown.sub}</div>}
+          {unknown && <div className="pick-chosen-warn">{!isItem && selection.offList ? `Unknown ${cat.noun}: out of bounds` : 'Out of bounds'}</div>}
+        </div>
         <button
           type="button"
-          className="link-btn pick-change"
+          className="pick-change"
+          aria-label="Change your pick"
           onClick={() => {
             onSelect(null);
             requestAnimationFrame(() => inputRef.current?.focus());
           }}
         >
-          Change
+          {Icons.close}
         </button>
       </div>
     );
@@ -146,7 +146,7 @@ export function PickBox({
           autoCorrect="off"
           autoCapitalize="words"
           spellCheck={false}
-          placeholder={`Name a ${cat.noun}…`}
+          placeholder={cat.kind === 'stadium' ? 'Name a stadium or its club…' : `Name a ${cat.noun}…`}
           aria-label={`Name a ${cat.noun}`}
           role="combobox"
           aria-expanded={open}
@@ -213,20 +213,15 @@ export function PickBox({
           {waiting && <p className="sugg-empty sugg-loading">Loading {cat.nounPlural}…</p>}
           {!waiting && results.length === 0 && (
             <p className="sugg-empty">
-              No {cat.noun} called “{q.trim()}” that we know of.{!canPlayAnyway && ' Keep typing, or check the spelling.'}
+              No match for “{q.trim()}”
             </p>
           )}
           {canPlayAnyway && (
             <button type="button" className="sugg-anyway" onClick={playAnyway}>
-              {results.length ? 'Not here? ' : ''}Play “{q.trim()}” anyway <span className="sugg-ob">Out of bounds</span>
+              Play “{q.trim()}” anyway <span className="sugg-ob">OB</span>
             </button>
           )}
         </div>
-      )}
-      {!open && (
-        <p className="pick-hint">
-          {focused ? 'Keep typing…' : `Type 2 or more letters, then pick a name. Accents don't matter.`}
-        </p>
       )}
     </div>
   );

@@ -1,19 +1,20 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useApp } from '../App';
 import { CATEGORY_BY_ID, COURSES } from '../lib/data';
-import { cleanName, NAME_MAX, obStrokes, ordinal, sameName, standings, type Game } from '../lib/game';
+import { cleanName, NAME_MAX, obStrokes, sameName, standings, type Game } from '../lib/game';
 import { buzz, copyText, shareLink } from '../lib/share';
 import { asGame, canStart, MIN_PLAYERS, onlineInRound, type LiveState } from '../live/room';
 import { parseRoomCode, roomUrl } from '../live/rooms';
 import { useRoom, type RoomApi } from '../live/useRoom';
+import { Ball, BALL_FILL, HeroArt, Trophy } from '../components/art';
 import { Confetti } from '../components/Confetti';
+import { Course, wholeList } from '../components/Course';
 import { HoleCard } from '../components/HoleCard';
-import { HowToSteps } from '../components/HowTo';
 import { PickBox, type Selection } from '../components/PickBox';
 import { Reveal, RevealCta } from '../components/Reveal';
 import { Scorecard } from '../components/Scorecard';
-import { Icons, IconButton, Logo, Tag, TopBar } from '../components/ui';
-import { HoleRecap } from './Results';
+import { TeeBalls, type TeeBall } from '../components/Tee';
+import { HoleDots, Icons, IconButton, TopBar } from '../components/ui';
 import Message from './Message';
 
 export default function Live({ code }: { code: string }) {
@@ -38,7 +39,6 @@ function useTicker(ms: number, active = true) {
   }, [ms, active]);
 }
 
-const secsLabel = (ms: number) => `${Math.round(ms / 1000)}-second`;
 const courseName = (s: LiveState) => COURSES.find((c) => c.id === s.course)?.name ?? 'Mixed';
 const nameOf = (s: LiveState, id: string) => s.players.find((p) => p.id === id)?.name ?? 'Someone';
 const listNames = (names: string[]) => (names.length <= 2 ? names.join(' & ') : `${names.slice(0, -1).join(', ')} & ${names[names.length - 1]}`);
@@ -80,16 +80,15 @@ function LiveTop({ s, label, confirmLeave }: { s?: LiveState; label?: string; co
       }
       title={
         inGame ? (
-          <div className="progress" aria-label={`Hole ${s.hole + 1} of ${s.holes.length}`}>
-            <span className="progress-label">
-              <span className="live-dot" aria-hidden="true" /> {label ?? 'Live'}
-            </span>
-            <span className="progress-dots" aria-hidden="true">
-              {s.holes.map((_, i) => (
-                <i key={i} className={i < s.hole ? 'is-done' : i === s.hole ? 'is-now' : undefined} />
-              ))}
-            </span>
-          </div>
+          <HoleDots
+            count={s.holes.length}
+            current={s.hole}
+            label={
+              <>
+                <span className="live-dot" aria-hidden="true" /> {label ?? 'Live'}
+              </>
+            }
+          />
         ) : (
           <span className="topbar-label">
             <span className="live-dot" aria-hidden="true" /> {label ?? 'Live room'}
@@ -185,41 +184,29 @@ function JoinRoom({ room }: { room: RoomApi }) {
         title={<span className="topbar-label">Live challenge</span>}
       />
       <div className="join-hero">
-        <Logo size={56} />
-        <p className="kicker">You're invited to play live</p>
+        {s ? <Roster names={s.players.map((p) => p.name)} /> : <HeroArt />}
+        <p className="kicker">
+          <span className="live-dot" aria-hidden="true" /> Live{s ? ` · ${s.holeCount} holes · ${Math.round(s.turnMs / 1000)}s clock` : ''}
+        </p>
         <h1 className="join-title">{hostName ? `${hostName}'s room` : 'Football Golf live'}</h1>
-        {s && (
-          <>
-            <div className="join-players">
-              {s.players.map((p, i) => (
-                <Tag key={p.id} name={p.name} index={i} small />
-              ))}
-            </div>
-            <p className="join-course">
-              {s.holeCount} holes · {courseName(s)} · {secsLabel(s.turnMs)} shot clock
-            </p>
-          </>
-        )}
         {!s && room.status !== 'online' && <p className="join-course">Connecting…</p>}
       </div>
 
       <form
-        className="card form-card join-form"
+        className="join-form"
         onSubmit={(e) => {
           e.preventDefault();
           join();
         }}
       >
-        <label className="field-title" htmlFor="join-name">
-          Your name
-        </label>
-        {s && s.phase !== 'lobby' && <p className="field-help">A round's already under way. Join now and you're in the next one.</p>}
+        {s && s.phase !== 'lobby' && <p className="field-help">Round under way: you're in from the next one.</p>}
         <input
           id="join-name"
           className={`input${err ? ' is-error' : ''}`}
           value={name}
           maxLength={NAME_MAX}
           placeholder="Your name"
+          aria-label="Your name"
           autoCapitalize="words"
           autoComplete="nickname"
           enterKeyHint="go"
@@ -238,15 +225,21 @@ function JoinRoom({ room }: { room: RoomApi }) {
         </button>
       </form>
 
-      <section className="card howto-card">
-        <h2 className="field-title">How it works</h2>
-        <HowToSteps />
-        <p className="fine">
-          Live: everyone plays the same hole at the same time, with {s ? `a ${secsLabel(s.turnMs)}` : 'a'} shot clock. Miss it and that hole counts as out of
-          bounds.
-        </p>
-      </section>
     </main>
+  );
+}
+
+/** Players as balls in their colours. */
+function Roster({ names }: { names: string[] }) {
+  return (
+    <ul className="roster-balls">
+      {names.map((n, i) => (
+        <li key={i}>
+          <Ball size={40} fill={BALL_FILL[i % BALL_FILL.length]} />
+          <span>{n}</span>
+        </li>
+      ))}
+    </ul>
   );
 }
 
@@ -299,90 +292,54 @@ function Lobby({ room, s }: { room: RoomApi; s: LiveState }) {
     <main className="screen live lobby">
       <LiveTop />
       <ConnNote room={room} s={s} />
-      <div className="join-hero">
-        <p className="kicker">{s.round > 1 ? `Round ${s.round}` : 'Live challenge'}</p>
-        <h1 className="join-title">{isHost ? 'Get your mates in' : `${hostName}'s room`}</h1>
-        <p className="join-course">
-          {s.holeCount} holes · {courseName(s)} · {secsLabel(s.turnMs)} shot clock
+      <div className="join-hero lobby-hero">
+        <p className="kicker">
+          {s.round > 1 ? `Round ${s.round} · ` : ''}
+          {s.holeCount} holes · {courseName(s)} · {Math.round(s.turnMs / 1000)}s clock
         </p>
+        <h1 className="join-title">{isHost ? 'Get your mates in' : `${hostName}'s room`}</h1>
       </div>
 
-      {!isHost && (
-        <p className="youre-in" role="status">
-          <span aria-hidden="true">✓</span> You're in. {hostName} starts the game once everyone's here.
-        </p>
-      )}
-
-      <section className="card roster" aria-label="Players">
-        <h2 className="field-title roster-title">
-          Players <span>{onlineCount} online</span>
-        </h2>
-        <ul className="roster-list">
+      <section className="lobby-roster" aria-label={`Players, ${onlineCount} online`}>
+        <ul className="roster-balls">
           {players.map((p) => {
             const i = s.players.indexOf(p);
             const on = isOn(p.id);
             return (
               <li key={p.id} className={on ? 'is-on' : 'is-away'}>
-                <span className="presence" aria-hidden="true" />
-                <Tag name={p.name} index={i} small />
-                <span className="roster-note">
-                  {[p.id === room.rec.playerId && 'you', p.id === s.hostId && 'host'].filter(Boolean).join(' · ')}
+                <Ball size={44} fill={BALL_FILL[i % BALL_FILL.length]} />
+                <span>
+                  {p.name}
+                  {p.id === room.rec.playerId ? ' (you)' : ''}
                 </span>
-                <span className="roster-state">{on ? 'Here' : 'Away'}</span>
               </li>
             );
           })}
           {!meListed && (
-            <li className="is-on">
-              <span className="presence" aria-hidden="true" />
-              <Tag name={room.rec.name} index={s.players.length} small />
-              <span className="roster-note">you</span>
-              <span className="roster-state">Joining…</span>
+            <li className="is-on is-joining">
+              <Ball size={44} fill={BALL_FILL[s.players.length % BALL_FILL.length]} />
+              <span>{room.rec.name} (you)</span>
             </li>
           )}
+          {need > 0 &&
+            Array.from({ length: need }, (_, k) => (
+              <li key={`empty${k}`} className="is-empty" aria-hidden="true">
+                <span className="empty-ball">+</span>
+                <span>&nbsp;</span>
+              </li>
+            ))}
         </ul>
-        {need > 0 && (
-          <p className="roster-wait">
-            <span className="spinner" aria-hidden="true" />
-            {isHost ? `Waiting for ${need === 1 ? 'a mate' : `${need} players`} to open your link` : 'Waiting for more players'}
-          </p>
-        )}
       </section>
 
-      <section className="card share-card">
+      <div className="share-row">
         <button type="button" className={`btn btn-block ${isHost && s.players.length < MIN_PLAYERS ? 'btn-primary btn-lg' : 'btn-secondary'}`} onClick={invite}>
-          {Icons.share} {isHost ? 'Send the invite link' : 'Invite someone else'}
+          {Icons.share} {isHost ? 'Send the invite' : 'Invite someone'}
         </button>
-        <button type="button" className="btn btn-secondary btn-block" onClick={copy}>
-          {Icons.copy} Copy link
-        </button>
-        {box}
-        <p className="fine">Anyone with this link can join, up to 8 players. Keep this screen open: you'll tee off together.</p>
-      </section>
-
-      <section className="card howto-card">
-        <h2 className="field-title">How live works</h2>
-        <ol className="howto">
-          <li>
-            <span className="howto-n">1</span>
-            <div>
-              <b>Same hole, same time.</b> Everyone gets the same target rank and list.
-            </div>
-          </li>
-          <li>
-            <span className="howto-n">2</span>
-            <div>
-              <b>{Math.round(s.turnMs / 1000)} seconds to lock in.</b> Miss the clock and the hole counts as out of bounds.
-            </div>
-          </li>
-          <li>
-            <span className="howto-n">3</span>
-            <div>
-              <b>Reveal together.</b> Picks stay hidden until everyone's in, then you all see the answers at once.
-            </div>
-          </li>
-        </ol>
-      </section>
+        <IconButton label="Copy link" onClick={copy}>
+          {Icons.copy}
+        </IconButton>
+      </div>
+      {box}
 
       <div className="sticky-cta">
         {isHost ? (
@@ -436,21 +393,19 @@ function ShotClock({ s, now, away, hostAway }: { s: LiveState; now: () => number
   );
 }
 
-function LockStatus({ s, game, hostAway }: { s: LiveState; game: Game; hostAway?: boolean }) {
-  return (
-    <ul className="lock-status" aria-label="Who's locked in">
-      {s.inRound.map((pid, i) => {
-        const done = s.picks[pid]?.[s.hole] != null;
-        const away = !s.online.includes(pid) || (pid === s.hostId && !!hostAway);
-        return (
-          <li key={pid} className={done ? 'is-in' : away ? 'is-away' : undefined}>
-            <Tag name={game.players[i].name} index={i} small />
-            <span className="lock-word">{done ? 'Locked in' : away ? 'Away' : 'Thinking…'}</span>
-          </li>
-        );
-      })}
-    </ul>
-  );
+/** Everyone in the round, as balls on the tee: thinking, locked in, or away. */
+function teeFor(s: LiveState, game: Game, me: string, mine: boolean, hostAway: boolean, tag?: string): TeeBall[] {
+  return s.inRound.map((pid, i) => {
+    const done = pid === me ? mine : s.picks[pid]?.[s.hole] != null;
+    const away = !s.online.includes(pid) || (pid === s.hostId && hostAway);
+    return {
+      key: pid,
+      fill: BALL_FILL[i % BALL_FILL.length],
+      state: done ? 'locked' : pid === me ? 'active' : away ? 'away' : 'thinking',
+      name: game.players[i].name,
+      tag: pid === me && !done ? tag : undefined,
+    };
+  });
 }
 
 function LiveHole({ room, s }: { room: RoomApi; s: LiveState }) {
@@ -471,8 +426,6 @@ function LiveHole({ room, s }: { room: RoomApi; s: LiveState }) {
   const hostAway = !room.engine && s.hostId !== me && room.status === 'online' && !room.online.has(s.hostId) ? nameOf(s, s.hostId) : null;
   const timeUp = !hostAway && s.deadline !== null && room.now() > s.deadline;
   const away = s.inRound.filter((pid) => !s.online.includes(pid)).map((pid) => nameOf(s, pid));
-  const waitingOn = s.inRound.filter((pid) => pid !== me && s.picks[pid]?.[s.hole] == null).map((pid) => nameOf(s, pid));
-  const all = s.inRound.map((_, i) => i);
 
   const lock = useCallback(
     (sel: Selection | null) => {
@@ -489,7 +442,7 @@ function LiveHole({ room, s }: { room: RoomApi; s: LiveState }) {
     if (!opening) buzz(20);
   }, [opening]);
 
-  // Picked something but didn't tap "Lock it in" before the buzzer: lock it in for them.
+  // Picked something but didn't tap the button before the buzzer: lock it in for them.
   const buzzer = !mine && !hostAway && s.deadline !== null && room.now() > s.deadline - 400;
   useEffect(() => {
     if (buzzer && selection) lock(selection);
@@ -505,15 +458,12 @@ function LiveHole({ room, s }: { room: RoomApi; s: LiveState }) {
         <LiveTop s={s} label={playing ? 'Live' : 'Watching'} confirmLeave={leaveWarning} />
         <ConnNote room={room} s={s} />
         <div className="get-ready" role="status" aria-live="polite">
-          <p className="kicker">
-            Hole {s.hole + 1} of {s.holes.length}
-          </p>
+          <p className="kicker">Hole {s.hole + 1}</p>
           <p className="get-ready-n" key={n}>
             {n}
           </p>
-          <p className="lead">{playing ? `Get ready: ${Math.round(s.turnMs / 1000)} seconds on the clock` : 'Next hole coming up'}</p>
+          <p className="get-ready-clock">{Math.round(s.turnMs / 1000)}s on the clock</p>
         </div>
-        {s.hole > 0 && <Scorecard game={game} players={all} upTo={s.hole} current={s.hole} />}
       </main>
     );
   }
@@ -524,8 +474,16 @@ function LiveHole({ room, s }: { room: RoomApi; s: LiveState }) {
       className="link-btn give-up"
       onClick={() => window.confirm('End this round for everyone and go back to the room?') && room.hostToLobby()}
     >
-      Stop waiting: end this round
+      End this round
     </button>
+  );
+
+  const tag = selection ? ('item' in selection ? (selection.shown?.name ?? selection.item.name) : selection.shown?.name || selection.offList || 'No answer') : undefined;
+  const tee = teeFor(s, game, me, !!mine, !!hostAway, tag);
+  const course = (
+    <Course size={cat.size} target={h.target} view={wholeList(cat.size)} tee className="is-aim">
+      {() => <TeeBalls balls={tee} />}
+    </Course>
   );
 
   if (!playing) {
@@ -534,54 +492,51 @@ function LiveHole({ room, s }: { room: RoomApi; s: LiveState }) {
         <LiveTop s={s} label="Watching" />
         <ConnNote room={room} s={s} />
         <ShotClock s={s} now={room.now} away={away} hostAway={hostAway} />
-        <p className="spectate-note">
-          {listNames(s.inRound.map((pid) => nameOf(s, pid)))} {s.inRound.length === 1 ? 'is' : 'are'} playing. You're in from the next round.
-        </p>
         <HoleCard hole={h} index={s.hole} count={s.holes.length} />
-        <LockStatus s={s} game={game} hostAway={!!hostAway} />
-        {s.hole > 0 && <Scorecard game={game} players={all} upTo={s.hole} current={s.hole} />}
+        <p className="spectate-note">You're in from the next round</p>
+        {course}
       </main>
     );
   }
+
+  const lockedName = mine ? (mine === '~' ? 'No answer' : mine.startsWith('~') ? `“${mine.slice(1)}”` : (cat.byId.get(mine)?.name ?? mine)) : '';
 
   return (
     <main className={`screen play picking live${searching ? ' is-searching' : ''}`}>
       <LiveTop s={s} confirmLeave={leaveWarning} />
       <ConnNote room={room} s={s} />
       <ShotClock s={s} now={room.now} away={away} hostAway={hostAway} />
-      <HoleCard hole={h} index={s.hole} count={s.holes.length} compact={searching || !!mine} />
+      <HoleCard hole={h} index={s.hole} count={s.holes.length} compact={searching} />
 
       {mine ? (
-        <section className="card locked-card" aria-live="polite">
-          <p className="kicker-ink">Locked in</p>
-          <p className="locked-name">{mine === '~' ? 'No answer (penalty)' : mine.startsWith('~') ? `“${mine.slice(1)}”` : (cat.byId.get(mine)?.name ?? mine)}</p>
-          <p className="fine">{waitingOn.length ? `Waiting for ${listNames(waitingOn)}. Picks stay hidden till everyone's in.` : 'Everyone is in. Here comes the reveal…'}</p>
-        </section>
+        <p className="locked-note" aria-live="polite">
+          <span className="kicker-ink">Locked in</span> {lockedName}
+        </p>
       ) : timeUp ? (
-        <section className="card locked-card is-late" aria-live="assertive">
-          <p className="kicker-ink">Time's up</p>
-          <p className="locked-name">Out of bounds (+{obStrokes(cat, h.target)})</p>
-          <p className="fine">No pick in time. The reveal's coming up…</p>
-        </section>
+        <p className="locked-note is-late" aria-live="assertive">
+          <span className="kicker-ink">Time's up</span> Out of bounds +{obStrokes(cat, h.target)}
+        </p>
       ) : (
         <>
           <PickBox key={`${s.round}:${s.hole}`} cat={cat} selection={selection} onSelect={setSelection} onSearching={onSearching} autoFocus />
-          {!selection && !searching && (
-            <button type="button" className="link-btn give-up" onClick={() => setSelection({ offList: '' })}>
-              No idea? Take the penalty (+{obStrokes(cat, h.target)})
-            </button>
-          )}
+          <button
+            type="button"
+            className={`give-up${selection ? ' is-hidden' : ''}`}
+            onClick={() => setSelection({ offList: '' })}
+            tabIndex={selection ? -1 : undefined}
+          >
+            Give up <span>+{obStrokes(cat, h.target)}</span>
+          </button>
         </>
       )}
 
-      {!searching && <LockStatus s={s} game={game} hostAway={!!hostAway} />}
-      {!searching && endRound}
-      {!searching && s.hole > 0 && <Scorecard game={game} players={all} upTo={s.hole} current={s.hole} />}
+      {endRound}
+      {course}
 
-      {!mine && !timeUp && !searching && (
+      {!mine && !timeUp && !searching && selection && (
         <div className="sticky-cta">
-          <button type="button" className="btn btn-primary btn-block btn-lg" disabled={!selection} onClick={() => lock(selection)}>
-            {selection ? 'Lock it in' : `Pick a ${cat.noun}`}
+          <button type="button" className="btn btn-primary btn-block btn-lg cta-in" onClick={() => lock(selection)}>
+            Take the shot
           </button>
         </div>
       )}
@@ -616,21 +571,14 @@ function LiveReveal({ room, s }: { room: RoomApi; s: LiveState }) {
   }, [isHost, iAmReady]);
 
   return (
-    <main className="screen play live">
+    <main className="screen play live revealing">
       <LiveTop s={s} label={playing ? 'Live' : 'Watching'} confirmLeave={isHost ? 'Leaving pauses the game for everyone until you come back. Leave anyway?' : undefined} />
       <ConnNote room={room} s={s} />
-      <Reveal
-        game={game}
-        hole={s.hole}
-        players={all}
-        animate
-        onSettled={onSettled}
-        after={<Scorecard game={game} players={all} upTo={s.hole + 1} current={s.hole} />}
-      />
+      <Reveal game={game} hole={s.hole} players={all} animate onSettled={onSettled} />
       {playing && !iAmReady && (
         <RevealCta
           armed={armed}
-          label={`${last ? 'See final scores' : `Ready for hole ${s.hole + 2}`}${readyCount > 0 ? ` · ${readyCount}/${online.length}` : ''}`}
+          label={`${last ? 'Final scores' : `Ready for hole ${s.hole + 2}`}${readyCount > 0 ? ` · ${readyCount}/${online.length}` : ''}`}
           onNext={() => room.ready(s.hole)}
         />
       )}
@@ -638,7 +586,7 @@ function LiveReveal({ room, s }: { room: RoomApi; s: LiveState }) {
         <div className="sticky-cta">
           <p className="wait-pill">
             <span className="spinner" aria-hidden="true" />
-            {waitingOn.length ? `Waiting for ${listNames(waitingOn)} · ${readyCount} of ${online.length} ready` : last ? 'Adding up the cards…' : 'Teeing up the next hole…'}
+            {waitingOn.length ? `Waiting for ${listNames(waitingOn)} · ${readyCount}/${online.length}` : last ? 'Adding up the cards…' : 'Teeing up the next hole…'}
           </p>
           {isHost && canSkip && waitingOn.length > 0 && (
             <button type="button" className="link-btn wait-skip" onClick={room.hostAdvance}>
@@ -654,7 +602,7 @@ function LiveReveal({ room, s }: { room: RoomApi; s: LiveState }) {
 /* ---------- full time ---------- */
 
 function Final({ room, s }: { room: RoomApi; s: LiveState }) {
-  const { go } = useApp();
+  const { go, toast } = useApp();
   const me = room.rec.playerId;
   const game = useMemo(() => asGame(s, room.rec.id, me), [s, room.rec.id, me]);
   const all = s.inRound.map((_, i) => i);
@@ -668,20 +616,10 @@ function Final({ room, s }: { room: RoomApi; s: LiveState }) {
     if (iWon) setConfetti(Date.now());
   }, [iWon]);
   const onlineCount = s.players.filter((p) => s.online.includes(p.id)).length;
-  const { toast } = useApp();
 
   if (!s.holes.length || !st.length) return <Lobby room={room} s={s} />;
 
   const winnerName = game.players[winners[0].index].name;
-  const mine = game.me !== null ? st.find((x) => x.index === game.me) : undefined;
-  let personal = '';
-  if (mine) {
-    const best = st[0].total;
-    const runnerUp = st.find((x) => x.total > best)?.total;
-    if (mine.place === 1 && winners.length > 1) personal = `You tied for the win on ${mine.total}`;
-    else if (mine.place === 1) personal = runnerUp !== undefined ? `You won by ${runnerUp - best} stroke${runnerUp - best === 1 ? '' : 's'}` : 'You won';
-    else personal = `You came ${ordinal(mine.place)}, ${mine.total - best} behind ${winners.length > 1 ? 'the leaders' : winnerName}`;
-  }
   const shareResult = async () => {
     const line = st.map((x) => `${game.players[x.index].name} ${x.total}`).join(', ');
     const out = await shareLink({
@@ -696,34 +634,26 @@ function Final({ room, s }: { room: RoomApi; s: LiveState }) {
     <main className="screen results live">
       <LiveTop label="Full time" />
       <ConnNote room={room} s={s} />
-      <section className="banner">
-        <p className="banner-kicker">{iWon && winners.length === 1 ? 'Get in!' : 'Full time'}</p>
-        <p className={`banner-big${winnerName.length > 8 ? ' is-long' : ''}`}>{winners.length > 1 ? 'All square!' : `${winnerName} wins!`}</p>
-        <p className="banner-sub">{personal || `${st.map((x) => x.total).join(' v ')} · fewest strokes wins`}</p>
-      </section>
-
-      <Scorecard game={game} players={st.map((x) => x.index)} upTo={s.holes.length} />
-
-      {st.length > 2 && (
-        <ol className="standings card">
+      <section className="final">
+        <Trophy size={52} />
+        <p className={`final-big is-name${winners.length === 1 && winnerName.length > 7 ? ' is-long' : ''}`}>
+          {winners.length > 1 ? 'All square' : iWon ? 'You win!' : `${winnerName} wins`}
+        </p>
+        <ol className="duel">
           {st.map((x) => (
-            <li key={x.index}>
-              <span className="st-place">{ordinal(x.place)}</span>
-              <Tag name={game.players[x.index].name} index={x.index} small />
-              <span className="st-total">{x.total}</span>
+            <li key={x.index} className={x.place === 1 ? 'is-win' : undefined}>
+              <Ball size={22} fill={BALL_FILL[x.index % BALL_FILL.length]} />
+              <span className="duel-name">
+                {game.players[x.index].name}
+                {x.index === game.me ? ' (you)' : ''}
+              </span>
+              <b>{x.total}</b>
             </li>
           ))}
         </ol>
-      )}
-
-      <section>
-        <h2 className="section-title">Hole by hole</h2>
-        <ol className="recaps">
-          {s.holes.map((_, i) => (
-            <HoleRecap key={i} game={game} hole={i} players={st.map((x) => x.index)} />
-          ))}
-        </ol>
       </section>
+
+      <Scorecard game={game} players={st.map((x) => x.index)} />
 
       <div className="end-actions">
         <button type="button" className="btn btn-secondary btn-block" onClick={shareResult}>
@@ -737,7 +667,7 @@ function Final({ room, s }: { room: RoomApi; s: LiveState }) {
       <div className="sticky-cta">
         {isHost ? (
           <button type="button" className="btn btn-primary btn-block btn-lg" disabled={!room.engine} onClick={room.hostRematch}>
-            {onlineCount >= MIN_PLAYERS ? 'Rematch: new holes' : 'Back to the room'}
+            {onlineCount >= MIN_PLAYERS ? 'Rematch' : 'Back to the room'}
           </button>
         ) : (
           <p className="wait-pill">

@@ -3,12 +3,12 @@ import { NavGuard, useApp } from '../App';
 import { DAILY_HOLES, dailyId, dailyKey, dailyNumber, newDailyGame } from '../lib/daily';
 import { cleanName, isDone, NAME_MAX } from '../lib/game';
 import { findGame } from '../lib/store';
-import { HowToSteps } from '../components/HowTo';
-import { Icons, IconButton, Logo, TopBar } from '../components/ui';
+import { HeroArt } from '../components/art';
+import { Icons, IconButton, TopBar } from '../components/ui';
 
 /** Today's daily: straight into it if we know your name, otherwise ask for it first. */
 export default function Daily() {
-  const { saved, saveGame, setName, go } = useApp();
+  const { saved, saveGame, setName, go, showHowTo } = useApp();
   const key = dailyKey();
   const id = dailyId(key);
   const existing = findGame(saved, id);
@@ -21,7 +21,7 @@ export default function Daily() {
 
   const teeOff = () => {
     const n = cleanName(name);
-    if (!n) return setError('Pop your name in first. Friends see it when you share your card.');
+    if (!n) return setError('Pop your name in first.');
     setName(n);
     saveGame(newDailyGame(n, key));
     go(`/play/${id}`, { replace: true });
@@ -35,30 +35,31 @@ export default function Daily() {
             {Icons.back}
           </IconButton>
         }
-        title={<span className="topbar-label">Daily challenge</span>}
+        right={
+          <IconButton label="How to play" onClick={showHowTo}>
+            {Icons.help}
+          </IconButton>
+        }
       />
       <div className="join-hero">
-        <Logo size={64} />
+        <HeroArt />
         <p className="kicker">Daily #{dailyNumber(key)}</p>
-        <h1 className="join-title">Today's {DAILY_HOLES} holes</h1>
-        <p className="lead">Same holes for everyone today. Play once, then send your card to a mate to see who's better.</p>
+        <h1 className="join-title">{DAILY_HOLES} holes</h1>
       </div>
       <form
-        className="card form-card join-form"
+        className="join-form"
         onSubmit={(e) => {
           e.preventDefault();
           teeOff();
         }}
       >
-        <label className="field-title" htmlFor="daily-name">
-          Your name
-        </label>
         <input
           id="daily-name"
           className={`input${error ? ' is-error' : ''}`}
           value={name}
           maxLength={NAME_MAX}
           placeholder="Your name"
+          aria-label="Your name"
           autoCapitalize="words"
           autoComplete="nickname"
           enterKeyHint="go"
@@ -76,10 +77,6 @@ export default function Daily() {
           Tee off
         </button>
       </form>
-      <section className="card howto-card">
-        <h2 className="field-title">How it works</h2>
-        <HowToSteps />
-      </section>
     </main>
   );
 }

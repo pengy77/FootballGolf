@@ -1,31 +1,48 @@
+import { HOLE_MAX } from '../lib/game';
+import { Ball, PinFlag, Trophy } from './art';
 import { Sheet } from './ui';
+
+/** A tiny slice of the fairway: ranks down the side, the flag at one, the ball at another. */
+function Strip({ ball }: { ball?: number }) {
+  const rows = [5, 6, 7, 8, 9];
+  return (
+    <div className="ht-strip" aria-hidden="true">
+      {rows.map((r) => (
+        <div key={r} className={`ht-row${r === 8 ? ' is-pin' : ''}`}>
+          <span className="ht-rank">{r}</span>
+          <span className="ht-lane">
+            {r === 8 && <PinFlag height={22} />}
+            {ball === r && <Ball size={16} />}
+          </span>
+        </div>
+      ))}
+      {ball !== undefined && <span className="ht-gap">{Math.abs(8 - ball)}</span>}
+    </div>
+  );
+}
 
 export function HowToSteps() {
   return (
     <ol className="howto">
       <li>
-        <span className="howto-n">1</span>
-        <div>
-          <b>Every hole has a target.</b> Something like <i>“the 42nd most Champions League match wins”</i>.
-        </div>
+        <Strip />
+        <p>
+          <b>The flag is a rank.</b> Like the 8th most Premier League goals.
+        </p>
       </li>
       <li>
-        <span className="howto-n">2</span>
-        <div>
-          <b>Name what you think sits closest to it.</b> Start typing: every player, manager, club and ground is in there, so you only find out at the reveal whether yours made the list.
-        </div>
+        <Strip ball={5} />
+        <p>
+          <b>Name who's closest.</b> Every place off is a stroke.
+        </p>
       </li>
       <li>
-        <span className="howto-n">3</span>
-        <div>
-          <b>Every place you're off is a stroke.</b> Pick the 35th when the target is 42nd: 7 strokes. Bang on is a hole in one.
+        <div className="ht-trophy">
+          <Trophy size={44} />
         </div>
-      </li>
-      <li>
-        <span className="howto-n">4</span>
-        <div>
-          <b>Fewest strokes wins.</b> Not on the list? That's out of bounds: 1 worse than the worst answer on the list. No hole costs more than 40.
-        </div>
+        <p>
+          <b>Fewest strokes wins.</b>
+        </p>
       </li>
     </ol>
   );
@@ -36,7 +53,7 @@ export function HowToSheet({ open, onClose }: { open: boolean; onClose: () => vo
     <Sheet open={open} onClose={onClose} title="How to play">
       <HowToSteps />
       <p className="fine">
-        Tied entries share every place they cover: if three players are tied 20th–22nd, any of them scores 0 when the target is 21st. Lists come from Wikipedia, and each one shows the date it's correct to.
+        Not on the list? Out of bounds: 1 stroke worse than the furthest answer on it. No hole costs more than {HOLE_MAX}. Tied entries share a place.
       </p>
       <button type="button" className="btn btn-primary btn-block" onClick={onClose}>
         Got it

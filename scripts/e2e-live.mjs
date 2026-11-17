@@ -62,7 +62,7 @@ async function pick(page, query) {
     await page.waitForSelector('.sugg-anyway');
     await page.tap('.sugg-anyway');
   }
-  await tapText(page, 'Lock it in');
+  await tapText(page, 'Take the shot');
 }
 
 const browser = await puppeteer.launch({ executablePath: CHROME, headless: true, args: ['--no-first-run'] });
@@ -71,7 +71,7 @@ try {
   const A = await phone(browser, 'A');
   await A.goto(BASE, { waitUntil: 'networkidle0' });
   await snap(A, 'home', true);
-  await tapText(A, 'Start a live challenge');
+  await tapText(A, 'Live', { selector: '.mode' });
   await A.waitForSelector('.name-row input');
   await A.type('.name-row input', 'Hanif');
   await tapText(A, '30s');
@@ -82,7 +82,7 @@ try {
   await snap(A, 'lobby-alone', true);
   const startDisabled = await A.evaluate(() => [...document.querySelectorAll('.sticky-cta button')].every((b) => b.disabled));
   if (!startDisabled) throw new Error('Host could start alone');
-  await tapText(A, 'Send the invite link');
+  await tapText(A, 'Send the invite');
   await sleep(300);
   const invite = await A.evaluate(() => window.__shared);
   log('invite:', invite.text, invite.url);
@@ -104,7 +104,8 @@ try {
   await B.waitForSelector('.shot-clock');
   await snap(B, 'hole1-guest');
   await pick(A, 'ar');
-  await waitText(A, 'Waiting for Jay');
+  await A.waitForSelector('.locked-note');
+  await A.waitForSelector('.tb.is-thinking');
   await snap(A, 'hole1-host-locked');
   await pick(B, 'ch');
   await waitText(A, 'Ready for hole 2', 20000);
@@ -132,7 +133,7 @@ try {
   await B.waitForSelector('.shot-clock.is-low', { timeout: 45000 });
   await snap(B, 'hole2-low-clock');
   await waitText(B, 'Ready for hole 3', 45000);
-  await waitText(B, 'Ran out of time');
+  await B.waitForFunction(() => [...document.querySelectorAll('.m-bubble b')].some((b) => b.textContent === '⏱'));
   await snap(B, 'reveal2-timed-out', true);
   log('Jay timed out');
   // Hanif's ready; Jay's still staring at the list. The host can skip the wait.
@@ -140,7 +141,7 @@ try {
   await snap(A, 'reveal2-host-skip');
   await tapText(A, 'Start hole 3 now');
 
-  // Hole 3: Jay chooses an answer but never taps "Lock it in". The buzzer locks it in for him.
+  // Hole 3: Jay chooses an answer but never taps "Take the shot". The buzzer locks it in for him.
   await pick(A, 'li');
   await B.waitForSelector('.search input', { timeout: 20000 });
   await B.tap('.search input');
@@ -152,13 +153,15 @@ try {
     await B.waitForSelector('.sugg-anyway');
     await B.tap('.sugg-anyway');
   }
-  await waitText(A, 'See final scores', 45000);
-  const jayCard = await A.evaluate(() => [...document.querySelectorAll('.pick-card')].map((c) => c.innerText).find((t) => /jay/i.test(t)) ?? '');
-  if (/ran out of time/i.test(jayCard)) throw new Error('Chosen answer was not auto-locked at the buzzer');
-  log('auto-locked at the buzzer');
+  await snap(B, 'hole3-guest-chosen');
+  await waitText(A, 'Final scores', 45000);
   await snap(A, 'reveal3-autolocked', true);
-  await tapText(A, 'See final scores');
-  await tapText(B, 'See final scores');
+  await snap(B, 'reveal3-guest', true);
+  const timedOut = await A.evaluate(() => [...document.querySelectorAll('.m-bubble b')].some((b) => b.textContent === '⏱'));
+  if (timedOut) throw new Error('Chosen answer was not auto-locked at the buzzer');
+  log('auto-locked at the buzzer');
+  await tapText(A, 'Final scores');
+  await tapText(B, 'Final scores');
   await waitText(A, 'Full time', 20000);
   await waitText(B, 'Waiting for Hanif to start a rematch', 20000);
   await snap(A, 'final-host', true);
@@ -172,7 +175,7 @@ try {
 
   // Home shows the room.
   await A.goto(BASE, { waitUntil: 'networkidle0' });
-  await waitText(A, 'Live · hole 1 of 3');
+  await A.waitForFunction(() => [...document.querySelectorAll('.recent-row')].some((r) => /live/i.test(r.innerText) && /hole 1/i.test(r.innerText)), { timeout: 20000 });
   await snap(A, 'home-with-room', true);
 } finally {
   await browser.close();

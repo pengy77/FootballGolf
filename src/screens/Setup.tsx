@@ -5,7 +5,8 @@ import { cleanName, createGame, MAX_PLAYERS, NAME_MAX, sameName } from '../lib/g
 import { newSecret } from '../live/crypto';
 import { newDoc, newRoom } from '../live/room';
 import { newRoomIds, putRoom, roomCode } from '../live/rooms';
-import { Icons, IconButton, TopBar, colorOf } from '../components/ui';
+import { Ball, BALL_FILL } from '../components/art';
+import { Icons, IconButton, TopBar } from '../components/ui';
 
 const HOLE_OPTIONS = [3, 6, 9];
 const CLOCK_OPTIONS = [30, 60, 90];
@@ -50,7 +51,7 @@ export default function Setup({ mode }: { mode: 'live' | 'local' }) {
             {Icons.back}
           </IconButton>
         }
-        title={mode === 'live' ? 'Live challenge' : 'Pass & play'}
+        title={<span className="topbar-label">{mode === 'live' ? 'Live challenge' : 'Pass & play'}</span>}
       />
 
       <form
@@ -60,14 +61,12 @@ export default function Setup({ mode }: { mode: 'live' | 'local' }) {
           start();
         }}
       >
-        <section className="card form-card">
-          <h2 className="field-title">{mode === 'live' ? 'Your name' : 'Players'}</h2>
-          {mode === 'live' && <p className="field-help">Next you'll get a link to send your mates. You tee off once at least one of them is in.</p>}
-          {mode === 'local' && <p className="field-help">Everyone picks in secret, then you pass the phone on.</p>}
+        <section className="setup-group">
+          <h2 className="field-title">{mode === 'live' ? 'You' : 'Players'}</h2>
           <div className="names">
             {names.map((n, i) => (
               <div key={i} className="name-row">
-                <span className={`name-dot dot-${colorOf(i)}`} aria-hidden="true" />
+                <Ball size={26} fill={BALL_FILL[i % BALL_FILL.length]} className="name-ball" />
                 <input
                   className={`input${tried && (!cleaned[i] || dupes[i]) ? ' is-error' : ''}`}
                   value={n}
@@ -99,7 +98,7 @@ export default function Setup({ mode }: { mode: 'live' | 'local' }) {
           )}
         </section>
 
-        <section className="card form-card">
+        <section className="setup-group">
           <h2 className="field-title">Holes</h2>
           <div className="segmented" role="radiogroup" aria-label="Number of holes">
             {HOLE_OPTIONS.map((n) => (
@@ -119,7 +118,7 @@ export default function Setup({ mode }: { mode: 'live' | 'local' }) {
           </div>
         </section>
 
-        <section className="card form-card">
+        <section className="setup-group">
           <h2 className="field-title">Course</h2>
           <div className="courses" role="radiogroup" aria-label="Course">
             {COURSES.map((c) => {
@@ -138,9 +137,7 @@ export default function Setup({ mode }: { mode: 'live' | 'local' }) {
                   }}
                 >
                   <span className="course-name">{c.name}</span>
-                  <span className="course-blurb">
-                    {c.blurb} · {n} lists
-                  </span>
+                  <span className="course-blurb">{n} lists</span>
                 </button>
               );
             })}
@@ -148,9 +145,8 @@ export default function Setup({ mode }: { mode: 'live' | 'local' }) {
         </section>
 
         {mode === 'live' && (
-          <section className="card form-card">
+          <section className="setup-group">
             <h2 className="field-title">Shot clock</h2>
-            <p className="field-help">Time to lock in each hole. Miss it and that hole counts as out of bounds.</p>
             <div className="segmented" role="radiogroup" aria-label="Shot clock">
               {CLOCK_OPTIONS.map((n) => (
                 <button key={n} type="button" role="radio" aria-checked={clock === n} className={clock === n ? 'is-on' : undefined} onClick={() => setClock(n)}>

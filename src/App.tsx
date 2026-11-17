@@ -170,7 +170,7 @@ export default function App() {
       screen = (
         <Message
           title="That link's gone wide"
-          body="This game link doesn't work. It may have been cut off when it was copied, or it's from an older version of the game. Ask your mate to send it again, or start your own game."
+          body="It may have been cut off when it was copied. Ask your mate to send it again."
         />
       );
       break;

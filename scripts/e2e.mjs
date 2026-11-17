@@ -67,9 +67,18 @@ async function playHole(page, label, query, hole) {
   await pickFirst(page);
   await sleep(300);
   if (hole === 0) await snap(page, `${label}-chosen`, false);
-  await clickText(page, 'Lock it in');
-  await sleep(3200);
-  await snap(page, `${label}-reveal-${hole + 1}`);
+  await clickText(page, 'Take the shot');
+  if (hole === 0) {
+    // The beats of the reveal: ball in the air, landed + zoom, gap measured, answer + list, scored.
+    let at = 0;
+    for (const [ms, beat] of [[700, 'air'], [1500, 'zoom'], [2700, 'gap'], [3700, 'answer']]) {
+      await sleep(ms - at);
+      at = ms;
+      await snap(page, `${label}-reveal-1-${beat}`, false);
+    }
+    await sleep(5000 - at);
+  } else await sleep(5000);
+  await snap(page, `${label}-reveal-${hole + 1}`, false);
   const btn = await page.waitForFunction(() => [...document.querySelectorAll('.sticky-cta button')].find((b) => /hole|final/i.test(b.textContent)));
   await btn.asElement().tap();
   await sleep(500);
@@ -77,10 +86,10 @@ async function playHole(page, label, query, hole) {
 
 async function playRound(page, label, queries) {
   for (let i = 0; i < queries.length; i++) {
-    if (await page.$('.banner')) break;
+    if (await page.$('.final')) break;
     await playHole(page, label, queries[i], i);
   }
-  await page.waitForSelector('.banner', { timeout: 8000 });
+  await page.waitForSelector('.final', { timeout: 8000 });
   await sleep(800);
 }
 
@@ -91,18 +100,18 @@ try {
   const A = await newPage(browser);
   await A.page.goto(BASE, { waitUntil: 'networkidle0' });
   await snap(A.page, 'home');
-  await clickText(A.page, 'How to play');
+  await A.page.tap('.home-top [aria-label="How to play"]');
   await sleep(400);
   await snap(A.page, 'how-to', false);
   await A.page.keyboard.press('Escape');
-  await clickText(A.page, "Play today's holes");
+  await A.page.tap('.daily .btn-primary');
   await A.page.waitForSelector('#daily-name');
   await A.page.type('#daily-name', 'Hanif');
   await snap(A.page, 'daily-intro');
   await clickText(A.page, 'Tee off');
   await playRound(A.page, 'A', ['st', 'ma', 'ro', 'li', 'ar']);
   await snap(A.page, 'A-final-solo');
-  await clickText(A.page, 'Send to a friend');
+  await clickText(A.page, 'Challenge a mate');
   await sleep(300);
   const sharedA = await A.page.evaluate(() => window.__shared);
   const shareA = sharedA.url;
@@ -127,8 +136,8 @@ try {
   // --- Player A opens the result link
   console.log('Player A: watch the head-to-head');
   await A.page.goto(shared.url, { waitUntil: 'networkidle0' });
-  await sleep(3200);
-  await snap(A.page, 'A-replay-hole-1');
+  await sleep(5200);
+  await snap(A.page, 'A-replay-hole-1', false);
   await clickText(A.page, 'Skip');
   await sleep(900);
   await snap(A.page, 'A-final-h2h');
@@ -144,7 +153,7 @@ try {
   await sleep(300);
   await snap(A2.page, 'A2-result-landing', false);
   await clickText(A2.page, "I'm");
-  await sleep(3200);
+  await sleep(5200);
   await snap(A2.page, 'A2-replay-hole-1', false);
 
   // --- Pass & play
@@ -170,11 +179,11 @@ try {
     await L.page.type('.search input', q);
     await sleep(200);
     await pickFirst(L.page);
-    await clickText(L.page, 'Lock it in');
+    await clickText(L.page, 'Take the shot');
     await sleep(400);
   }
-  await sleep(3500);
-  await snap(L.page, 'local-reveal-3p');
+  await sleep(6500);
+  await snap(L.page, 'local-reveal-3p', false);
 
   // --- Bad link
   const X = await newPage(browser);

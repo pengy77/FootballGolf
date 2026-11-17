@@ -8,8 +8,8 @@ export interface Mark {
 }
 
 /**
- * The full ranked list with the pin and everyone's picks highlighted.
- * Starts as a window around the interesting rows; one tap shows everything.
+ * The full ranked list with the pin and everyone's picks highlighted. Lives inside a sheet, so it's
+ * flat rows, not another card. Starts as a window around the interesting rows; one tap shows everything.
  */
 export function RankedList({ cat, target, marks }: { cat: Category; target: number; marks: Map<string, Mark[]> }) {
   const [all, setAll] = useState(false);
@@ -47,26 +47,14 @@ export function RankedList({ cat, target, marks }: { cat: Category; target: numb
   if (gap) rows.push({ gap });
 
   return (
-    <section className="card ranked" aria-label={`${cat.title}, full list`}>
-      <header className="ranked-head">
-        <div>
-          <div className="ranked-title">{cat.title}</div>
-          <div className="ranked-meta">
-            {cat.size} {cat.nounPlural} · ranked by {cat.metric.toLowerCase()}
-            {cat.items.some((x) => x.lo !== x.hi) && ' · ties share places'}
-          </div>
-        </div>
-        <button type="button" className="chip chip-btn" onClick={() => setAll((a) => !a)} aria-pressed={all}>
-          {all ? 'Show less' : 'Full list'}
-        </button>
-      </header>
+    <section className="ranked" aria-label={`${cat.title}, full list`}>
       <ol className="ranked-list">
         {rows.map((r, k) => {
           if ('gap' in r)
             return (
               <li key={`g${k}`} className="rl-gap">
                 <button type="button" onClick={() => setAll(true)}>
-                  ··· {r.gap} more
+                  {r.gap} more
                 </button>
               </li>
             );
@@ -79,17 +67,11 @@ export function RankedList({ cat, target, marks }: { cat: Category; target: numb
                 {it.lo !== it.hi ? `${it.lo}–${it.hi}` : it.lo}
               </span>
               <span className="rl-main">
-                <span className="rl-name">{it.name}</span>
-                {(m || isPin) && (
-                  <span className="rl-tags">
-                    {isPin && (
-                      <span className="pin-badge">
-                        <FlagIcon size={11} /> Pin
-                      </span>
-                    )}
-                    {m?.map((p) => <Tag key={p.index} name={p.name} index={p.index} small />)}
-                  </span>
-                )}
+                <span className="rl-name">
+                  {it.name}
+                  {isPin && <FlagIcon size={13} className="rl-flag" />}
+                  {m?.map((p) => <Tag key={p.index} name={p.name} index={p.index} small />)}
+                </span>
                 {it.sub && <span className="rl-sub">{it.sub}</span>}
               </span>
               <span className="rl-val">{formatValue(cat, it)}</span>
@@ -98,6 +80,13 @@ export function RankedList({ cat, target, marks }: { cat: Category; target: numb
         })}
       </ol>
       <footer className="ranked-foot">
+        {all ? (
+          <button type="button" className="link-btn" onClick={() => setAll(false)}>
+            Show less
+          </button>
+        ) : (
+          <span />
+        )}
         <a href={cat.source.url} target="_blank" rel="noreferrer">
           {cat.source.name}
         </a>

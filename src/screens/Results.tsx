@@ -1,51 +1,17 @@
 import { useCallback, useEffect, useState } from 'react';
 import { NavGuard, useApp, useCanonicalUrl } from '../App';
-import { CATEGORY_BY_ID } from '../lib/data';
-import { createGame, donePlayers, holeResult, isDone, isPlayable, ordinal, pickLabel, rankLabel, standings, type Game } from '../lib/game';
+import { createGame, donePlayers, isDone, isPlayable, standings } from '../lib/game';
 import { findGame } from '../lib/store';
 import { dailyId, dailyLabel, formatCountdown, msUntilNextDaily } from '../lib/daily';
 import { shareUrl } from '../lib/link';
+import { coursePar, toParWords } from '../lib/par';
 import { copyText, shareLink } from '../lib/share';
+import { Ball, BALL_FILL, Trophy } from '../components/art';
 import { Confetti } from '../components/Confetti';
-import { RankedList, type Mark } from '../components/RankedList';
 import { Reveal, RevealCta } from '../components/Reveal';
 import { Scorecard } from '../components/Scorecard';
-import { FlagIcon, Icons, IconButton, Tag, TopBar } from '../components/ui';
+import { HoleDots, Icons, IconButton, TopBar } from '../components/ui';
 import Message from './Message';
-
-export function HoleRecap({ game, hole, players }: { game: Game; hole: number; players: number[] }) {
-  const h = game.holes[hole];
-  const cat = CATEGORY_BY_ID.get(h.cat);
-  const [open, setOpen] = useState(false);
-  if (!cat) return null;
-  const rows = players.map((p) => ({ p, r: holeResult(h, game.players[p].picks[hole] ?? null) }));
-  const marks = new Map<string, Mark[]>();
-  rows.forEach(({ p, r }) => r.item && marks.set(r.item.id, [...(marks.get(r.item.id) ?? []), { name: game.players[p].name, index: p }]));
-  return (
-    <li className="recap">
-      <button type="button" className="recap-head" aria-expanded={open} onClick={() => setOpen((o) => !o)}>
-        <span className="recap-n">{hole + 1}</span>
-        <span className="recap-q">
-          <b>{ordinal(h.target)}</b> {cat.prompt}
-        </span>
-        <span className={`recap-caret${open ? ' is-open' : ''}`} aria-hidden="true">
-          ▾
-        </span>
-      </button>
-      <ul className="recap-picks">
-        {rows.map(({ p, r }) => (
-          <li key={p}>
-            <Tag name={game.players[p].name} index={p} small />
-            <span className="recap-pick">{pickLabel(r)}</span>
-            <span className="recap-rank">{r.item ? rankLabel(r.item) : 'OB'}</span>
-            <span className="recap-strokes">{r.strokes}</span>
-          </li>
-        ))}
-      </ul>
-      {open && <RankedList cat={cat} target={h.target} marks={marks} />}
-    </li>
-  );
-}
 
 export default function Results({ id }: { id: string }) {
   const { saved, saveGame, go, toast } = useApp();
@@ -84,23 +50,14 @@ export default function Results({ id }: { id: string }) {
 
   if (!summary) {
     return (
-      <main className="screen play">
+      <main className="screen play revealing">
         <TopBar
           left={
             <IconButton label="Home" onClick={() => go('/')}>
               {Icons.close}
             </IconButton>
           }
-          title={
-            <div className="progress" aria-label={`Replay, hole ${step + 1} of ${n}`}>
-              <span className="progress-label">Replay</span>
-              <span className="progress-dots" aria-hidden="true">
-                {game.holes.map((_, i) => (
-                  <i key={i} className={i < step ? 'is-done' : i === step ? 'is-now' : undefined} />
-                ))}
-              </span>
-            </div>
-          }
+          title={<HoleDots count={n} current={step} label="Replay" />}
           right={
             <button type="button" className="link-btn skip" onClick={() => setStep(n)}>
               Skip
@@ -109,21 +66,13 @@ export default function Results({ id }: { id: string }) {
         />
         {step === 0 && unseen.length > 0 && game.me !== null && (
           <p className="replay-note">
-            <b>{unseen.map((i) => game.players[i].name).join(' & ')}</b> played your course. Here's how it went, hole by hole.
+            <b>{unseen.map((i) => game.players[i].name).join(' & ')}</b> played your course
           </p>
         )}
-        <Reveal
-          key={step}
-          game={game}
-          hole={step}
-          players={done}
-          animate
-          onSettled={onSettled}
-          after={<Scorecard game={game} players={done} upTo={step + 1} current={step} />}
-        />
+        <Reveal key={step} game={game} hole={step} players={done} animate onSettled={onSettled} />
         <RevealCta
           armed={armed}
-          label={step === n - 1 ? 'See final scores' : `On to hole ${step + 2}`}
+          label={step === n - 1 ? 'Final scores' : `Hole ${step + 2}`}
           onNext={() => {
             setStep(step + 1);
             window.scrollTo({ top: 0 });
@@ -171,18 +120,36 @@ export default function Results({ id }: { id: string }) {
     toast("Couldn't copy. Long-press the link below to copy it.");
   };
 
-  const urlBox = showUrl && (
-    <p className="share-url" aria-label="Game link">
-      {url}
-    </p>
-  );
-
   const rematch = () => {
     if (game.mode === 'challenge') return go('/new/live');
     const g = createGame({ mode: 'local', course: game.course, holes: n, names: game.players.map((p) => p.name), me: null });
     saveGame(g);
     go(`/play/${g.id}`);
   };
+
+  const shareLabel = solo
+    ? game.me !== null
+      ? 'Challenge a mate'
+      : 'Share'
+    : sendTo
+      ? `Send to ${sendTo}`
+      : returning
+        ? 'Send the result back'
+        : game.mode === 'local'
+          ? 'Challenge someone else'
+          : 'Share the card';
+  const sharePrimary = solo ? game.me !== null : returning || game.mode === 'local';
+  // The main ask stays pinned to the bottom, so the card can sit right under the total.
+  const shareRow = (game.me !== null || !solo) && (
+    <div className="share-row">
+      <button type="button" className={`btn btn-block ${sharePrimary ? 'btn-primary btn-lg' : 'btn-secondary'}`} onClick={share}>
+        {Icons.share} {shareLabel}
+      </button>
+      <IconButton label="Copy link" onClick={copy}>
+        {Icons.copy}
+      </IconButton>
+    </div>
+  );
 
   return (
     <main className="screen results">
@@ -192,95 +159,53 @@ export default function Results({ id }: { id: string }) {
             {Icons.close}
           </IconButton>
         }
-        title={<span className="topbar-label">{daily ?? 'Final card'}</span>}
+        title={<span className="topbar-label">{daily ?? 'Full time'}</span>}
       />
 
-      <section className={`banner${solo ? ' is-solo' : ''}`}>
+      <section className={`final${solo ? ' is-solo' : ''}`}>
         {solo ? (
           <>
-            <p className="banner-kicker">{game.me !== null ? 'You went round in' : `${game.players[done[0]].name} went round in`}</p>
-            <p className="banner-big">
-              {s[0].total} <span>strokes</span>
-            </p>
-            <p className="banner-sub">
-              {game.me !== null ? 'Now send it to a friend. They play the same holes, then send you the result.' : 'Lowest score wins.'}
+            <p className="final-kicker">{game.me !== null ? 'You went round in' : `${game.players[done[0]].name} went round in`}</p>
+            <p className="final-big">{s[0].total}</p>
+            <p className="final-unit">strokes</p>
+            <p className={`final-par ${s[0].total - coursePar(game.holes) > 0 ? 'is-over' : 'is-under'}`}>
+              {toParWords(s[0].total - coursePar(game.holes))}
             </p>
           </>
         ) : (
           <>
-            <p className="banner-kicker">{iWon && winners.length === 1 ? 'Get in!' : 'Full time'}</p>
-            <p className="banner-big">
-              {winners.length > 1 ? 'All square!' : `${game.players[winners[0].index].name} wins!`}
+            <Trophy size={52} />
+            <p className={`final-big is-name${winners.length === 1 && game.players[winners[0].index].name.length > 7 ? ' is-long' : ''}`}>
+              {winners.length > 1 ? 'All square' : iWon ? 'You win!' : `${game.players[winners[0].index].name} wins`}
             </p>
-            <p className="banner-sub">
-              {s.map((x) => x.total).join(' v ')} · fewest strokes wins
-            </p>
+            <ol className="duel">
+              {s.map((x) => (
+                <li key={x.index} className={x.place === 1 ? 'is-win' : undefined}>
+                  <Ball size={22} fill={BALL_FILL[x.index % BALL_FILL.length]} />
+                  <span className="duel-name">{game.players[x.index].name}</span>
+                  <b>{x.total}</b>
+                </li>
+              ))}
+            </ol>
           </>
         )}
       </section>
 
-      {game.me !== null && solo && (
-        <section className="card share-card">
-          <button type="button" className="btn btn-primary btn-block btn-lg" onClick={share}>
-            {Icons.share} Send to a friend
-          </button>
-          <button type="button" className="btn btn-secondary btn-block" onClick={copy}>
-            {Icons.copy} Copy link
-          </button>
-          {urlBox}
-          <p className="fine">They play the same holes without seeing your answers. Their result comes back to you as a link: open it to watch the head-to-head.</p>
-          {isToday && <p className="fine">Next daily in {formatCountdown(msUntilNextDaily())}.</p>}
-        </section>
+      <Scorecard game={game} players={s.map((x) => x.index)} />
+
+      {shareRow && !sharePrimary && shareRow}
+      {showUrl && (
+        <p className="share-url" aria-label="Game link">
+          {url}
+        </p>
       )}
-
-      <Scorecard game={game} players={s.map((x) => x.index)} upTo={n} />
-
-      {s.length > 2 && (
-        <ol className="standings card">
-          {s.map((x) => (
-            <li key={x.index}>
-              <span className="st-place">{ordinal(x.place)}</span>
-              <Tag name={game.players[x.index].name} index={x.index} small />
-              <span className="st-total">{x.total}</span>
-            </li>
-          ))}
-        </ol>
-      )}
-
-      {!solo && (
-        <section className="card share-card">
-          {returning && (
-            <p className="share-lead">
-              <b>{sendTo ?? otherNames.join(' & ')}</b> won't see how it went until you send this.
-            </p>
-          )}
-          <button type="button" className={`btn btn-block ${returning || game.mode === 'local' ? 'btn-primary btn-lg' : 'btn-secondary'}`} onClick={share}>
-            {Icons.share} {sendTo ? `Send to ${sendTo}` : returning ? 'Send the result back' : game.mode === 'local' ? 'Challenge someone else' : 'Share the card'}
-          </button>
-          <button type="button" className="btn btn-secondary btn-block" onClick={copy}>
-            {Icons.copy} Copy link
-          </button>
-          {urlBox}
-          <p className="fine">Anyone with the link can also play the same course and join the card.</p>
-        </section>
-      )}
-
-      <section>
-        <h2 className="section-title">
-          <FlagIcon size={16} /> Hole by hole
-        </h2>
-        <ol className="recaps">
-          {game.holes.map((_, i) => (
-            <HoleRecap key={i} game={game} hole={i} players={s.map((x) => x.index)} />
-          ))}
-        </ol>
-      </section>
+      {isToday && solo && <p className="fine center">Next daily in {formatCountdown(msUntilNextDaily())}</p>}
 
       <div className="end-actions">
         <button type="button" className="btn btn-secondary btn-block" onClick={rematch}>
-          {game.mode === 'local' ? 'Rematch on a new course' : 'Play your mates live'}
+          {game.mode === 'local' ? 'Rematch' : 'Play your mates live'}
         </button>
-        {!summary || done.length < 2 ? null : (
+        {done.length >= 2 && (
           <button type="button" className="btn btn-ghost btn-block" onClick={() => setStep(0)}>
             Watch the reveal again
           </button>
@@ -289,6 +214,7 @@ export default function Results({ id }: { id: string }) {
           Home
         </button>
       </div>
+      {shareRow && sharePrimary && <div className="sticky-cta">{shareRow}</div>}
       <Confetti fire={confetti} />
     </main>
   );
