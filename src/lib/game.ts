@@ -95,9 +95,20 @@ export function createGame(opts: { mode: Mode; course: CourseId; holes: number; 
 /** No hole costs more than this, so one long list (e.g. 211 nations) can't decide a match on its own. */
 export const HOLE_MAX = 40;
 
+/**
+ * Out of bounds, worked through so the score can explain itself: the answer on the list furthest from
+ * the flag (`rank`, `off` places away), plus one, capped at the hole maximum.
+ */
+export function obBreakdown(cat: Category, target: number): { rank: number; off: number; strokes: number; capped: boolean } {
+  const up = target - 1;
+  const down = cat.size - target;
+  const off = Math.max(up, down);
+  return { rank: up >= down ? 1 : cat.size, off, strokes: Math.min(off + 1, HOLE_MAX), capped: off + 1 > HOLE_MAX };
+}
+
 /** Out of bounds: 1 worse than the worst answer on the list, capped at the hole maximum. */
 export function obStrokes(cat: Category, target: number): number {
-  return Math.min(Math.max(target - 1, cat.size - target) + 1, HOLE_MAX);
+  return obBreakdown(cat, target).strokes;
 }
 
 /** The rank inside an item's (possibly tied) range that sits closest to the target. */

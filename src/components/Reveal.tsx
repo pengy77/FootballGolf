@@ -132,7 +132,7 @@ function placeShots(
     const above = ups !== downs ? downs : pinAbove;
     for (const s of shots) {
       if (s.rank !== null) continue;
-      const size = s.r.offList ? 44 : 30;
+      const size = s.r.offList ? 56 : 42; // strokes, the guess, and why it's out
       const want = pin + (above ? -80 : 80);
       const c =
         nearestClear(want, size, [...taken, ...tapes, flag], lo, hi) ??
@@ -375,14 +375,23 @@ export function Reveal({
                       style={{ left: ballLeft(s.fx), top: `${yBubble}%`, '--c': s.fill } as CSSProperties}
                     >
                       {ob ? (
-                        <b aria-label={s.r.timedOut ? 'Ran out of time' : 'Out of bounds'}>{s.r.timedOut ? '⏱' : 'OB'}</b>
+                        // Out of bounds still shows what it costs, and why: the list stops at its last entry.
+                        <>
+                          <b aria-label={`${s.r.timedOut ? 'Ran out of time' : 'Out of bounds'}, ${s.r.strokes} strokes`}>
+                            <span className="m-ob-tag" aria-hidden="true">
+                              {s.r.timedOut ? '⏱' : 'OB'}
+                            </span>
+                            <CountUp to={s.r.strokes} run={showGap} instant={instant} />
+                          </b>
+                          {s.r.offList && <small className="m-guess">{pickLabel(s.r)}</small>}
+                          <small>{s.r.timedOut ? 'Out of time' : s.r.offList ? `Not in the top ${cat.size}` : 'No answer'}</small>
+                        </>
                       ) : (
                         <b>
                           <CountUp to={s.r.raw} run={showGap} instant={instant} />
                         </b>
                       )}
-                      {ob && s.r.offList && <small className="m-guess">{pickLabel(s.r)}</small>}
-                      {solo && <small>{ob ? (s.r.timedOut ? 'Out of time' : s.r.offList ? 'Not on the list' : 'No answer') : s.r.raw === 1 ? 'place off' : 'places off'}</small>}
+                      {solo && !ob && <small>{s.r.raw === 1 ? 'place off' : 'places off'}</small>}
                       {solo && s.r.verdict && !ob && <i className={`tone-${s.r.verdict.tone}`}>{s.r.verdict.label}</i>}
                     </span>
                   )}
@@ -431,7 +440,7 @@ export function Reveal({
 
       <p className="sr-only" aria-live="polite">
         {answered &&
-          `${shots.map((s) => `${solo ? 'You' : game.players[s.p].name}: ${pickLabel(s.r)}${s.rank ? `, ${ordinal(s.rank)}` : ''}, ${s.r.strokes} strokes.`).join(' ')} The answer was ${pins.map((x) => x.name).join(', ')}.`}
+          `${shots.map((s) => `${solo ? 'You' : game.players[s.p].name}: ${pickLabel(s.r)}${s.rank ? `, ${ordinal(s.rank)}` : s.r.offList ? `, not in the top ${cat.size}` : ''}, ${s.r.strokes} strokes.`).join(' ')} The answer was ${pins.map((x) => x.name).join(', ')}.`}
       </p>
 
       <HoleSheet game={game} hole={hole} players={players} open={sheet} onClose={() => setSheet(false)} />

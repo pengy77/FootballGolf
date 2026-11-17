@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { buildCategory, CATEGORIES, CATEGORY_BY_ID, type RawCategory } from './data';
-import { distance, HOLE_MAX, holeResult, mergeGame, newCourse, obStrokes, ordinal, rankLabel, standings, targetRange, type Game } from './game';
+import { distance, HOLE_MAX, holeResult, mergeGame, newCourse, obBreakdown, obStrokes, ordinal, rankLabel, standings, targetRange, type Game } from './game';
 import { decodeGame, encodeGame } from './link';
 import { norm, searchItems } from './search';
 import { findGame, mergeSaved } from './store';
@@ -47,6 +47,17 @@ describe('ranking & ties', () => {
       const worst = Math.max(...cat.items.map((it) => distance(it, t)));
       expect(obStrokes(cat, t)).toBe(Math.min(worst + 1, HOLE_MAX));
     }
+  });
+  it('explains out of bounds with the furthest answer on the list', () => {
+    // The Ancelotti hole: 53 managers, flag on 45th. 1st is 44 off, so 45, capped at 40.
+    const m = CATEGORY_BY_ID.get('pl-manager-matches')!;
+    const pin = 45;
+    const ob = obBreakdown(m, pin);
+    const furthest = m.items.find((it) => it.lo <= ob.rank && ob.rank <= it.hi)!;
+    expect(distance(furthest, pin)).toBe(ob.off);
+    expect(ob.strokes).toBe(obStrokes(m, pin));
+    expect(ob.capped).toBe(ob.off + 1 > HOLE_MAX);
+    expect(obBreakdown(cat, 2)).toEqual({ rank: cat.size, off: cat.size - 2, strokes: cat.size - 1, capped: false });
   });
   it('caps every hole at HOLE_MAX', () => {
     for (const c of CATEGORIES) {

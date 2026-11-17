@@ -4,7 +4,6 @@ import { createGame, donePlayers, isDone, isPlayable, standings } from '../lib/g
 import { findGame } from '../lib/store';
 import { dailyId, dailyLabel, formatCountdown, msUntilNextDaily } from '../lib/daily';
 import { shareUrl } from '../lib/link';
-import { coursePar, toParWords } from '../lib/par';
 import { copyText, shareLink } from '../lib/share';
 import { Ball, BALL_FILL, Trophy } from '../components/art';
 import { Confetti } from '../components/Confetti';
@@ -168,9 +167,6 @@ export default function Results({ id }: { id: string }) {
             <p className="final-kicker">{game.me !== null ? 'You went round in' : `${game.players[done[0]].name} went round in`}</p>
             <p className="final-big">{s[0].total}</p>
             <p className="final-unit">strokes</p>
-            <p className={`final-par ${s[0].total - coursePar(game.holes) > 0 ? 'is-over' : 'is-under'}`}>
-              {toParWords(s[0].total - coursePar(game.holes))}
-            </p>
           </>
         ) : (
           <>

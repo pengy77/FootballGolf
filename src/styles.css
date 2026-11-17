@@ -2844,24 +2844,6 @@ p {
   color: var(--dim);
 }
 
-.final-par {
-  margin: -2px 0 6px;
-  padding: 7px 14px;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.22);
-  font: 800 16px/1 var(--cond);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.final-par.is-over {
-  color: var(--bad);
-}
-
-.final-par.is-under {
-  color: var(--great);
-}
-
 .trophy {
   filter: drop-shadow(0 6px 0 rgba(0, 0, 0, 0.25));
   animation: pop-in 0.5s var(--pop) both;
@@ -2945,7 +2927,7 @@ p {
   color: #d26a10;
 }
 
-/* The final card: a golf scorecard on paper. Holes run left to right; par, then a row per player. */
+/* The final card: a golf scorecard on paper. Holes run left to right, then a row of strokes per player. */
 .sc-block {
   display: grid;
   gap: 14px;
@@ -3049,18 +3031,6 @@ p {
   background: rgba(255, 255, 255, 0.12);
 }
 
-.csc-par td,
-.csc-par th {
-  height: 30px;
-  background: var(--paper-2);
-  font: 700 14px/1 var(--cond);
-  color: var(--muted);
-}
-
-.csc-par .csc-tot {
-  font-size: 15px;
-}
-
 .csc-player th,
 .csc-player td {
   height: 50px;
@@ -3079,34 +3049,8 @@ p {
   font: 400 21px/1 var(--display);
 }
 
-.csc-player .csc-tot small {
-  display: block;
-  margin-top: 2px;
-  font: 800 12px/1 var(--cond);
-}
-
 .csc-player .csc-tot.is-best {
   background: var(--yellow);
-}
-
-.csc-diff td,
-.csc-diff th {
-  height: 32px;
-  font: 800 14px/1 var(--cond);
-}
-
-.csc-diff .csc-tot {
-  font: 400 18px/1 var(--display);
-}
-
-.is-under {
-  color: #1d7f37;
-}
-.is-over {
-  color: #c23a26;
-}
-.is-level {
-  color: var(--ink);
 }
 
 /* Pencil marks */
@@ -3129,9 +3073,6 @@ p {
 .mk-circle {
   --mk: #1d7f37;
 }
-.mk-box {
-  --mk: #c23a26;
-}
 .mk-box2 {
   --mk: #8e2f20;
 }
@@ -3148,13 +3089,9 @@ p {
   outline-offset: 1.5px;
 }
 
-.mk-box i,
 .mk-box2 i {
   border-color: var(--mk);
   border-radius: 2px;
-}
-
-.mk-box2 i {
   outline: 2px solid var(--mk);
   outline-offset: 1.5px;
 }
@@ -3186,20 +3123,49 @@ p {
   margin-left: 8px;
 }
 
-/* The holes, under the card */
+/* The holes, under the card: the question, then target · your guess · places off in columns that
+   line up from hole to hole, under one row of labels. */
 .sc-holes {
+  --sc-cols: 28px 46px minmax(0, 1fr) 34px;
+  --sc-areas: 'n q q q' 'n t g o';
+  --sc-head: '. t g o';
+}
+
+.sc-holes:not(.is-solo) {
+  --sc-cols: 28px 46px minmax(0, 1fr);
+  --sc-areas: 'n q q' 'n t .';
+  --sc-head: '. t .';
+}
+
+.sc-holes ol {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.sc-head,
 .sc-holes button {
-  width: 100%;
   display: grid;
-  grid-template-columns: 28px minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 2px;
+  grid-template-columns: var(--sc-cols);
+  column-gap: 10px;
+  padding: 0 2px;
+}
+
+.sc-head {
+  grid-template-areas: var(--sc-head);
+  padding-bottom: 6px;
+  font: 800 11px/1 var(--cond);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.sc-holes button {
+  grid-template-areas: var(--sc-areas);
+  align-items: baseline;
+  row-gap: 6px;
+  width: 100%;
+  padding-block: 10px;
   border: 0;
   border-bottom: 1px solid var(--glass-line);
   background: none;
@@ -3212,6 +3178,8 @@ p {
 }
 
 .sc-n {
+  grid-area: n;
+  align-self: center;
   width: 28px;
   height: 28px;
   display: grid;
@@ -3221,13 +3189,8 @@ p {
   font: 800 14px/1 var(--cond);
 }
 
-.sc-q {
-  display: grid;
-  gap: 2px;
-  min-width: 0;
-}
-
 .sc-prompt {
+  grid-area: q;
   font: 700 15px/1.15 var(--cond);
   text-transform: uppercase;
   letter-spacing: 0.02em;
@@ -3237,11 +3200,38 @@ p {
   overflow: hidden;
 }
 
-.sc-prompt b {
+.sc-t {
+  grid-area: t;
+}
+
+.sc-g {
+  grid-area: g;
+  min-width: 0;
+}
+
+.sc-off {
+  grid-area: o;
+  text-align: right;
+}
+
+.sc-holes button .sc-t {
+  font: 800 18px/1 var(--cond);
   color: var(--yellow);
 }
 
-.sc-pick {
+.sc-holes button .sc-g {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.sc-g b {
+  font: 800 18px/1 var(--cond);
+  white-space: nowrap;
+}
+
+.sc-g span {
+  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -3249,12 +3239,26 @@ p {
   color: var(--dim);
 }
 
-.sc-par {
+.sc-g em {
   font: 800 12px/1 var(--cond);
+  font-style: normal;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--ob);
+}
+
+.sc-holes button .sc-off {
+  font: 800 18px/1 var(--cond);
+}
+
+.sc-off small {
+  display: block;
+  margin-top: 2px;
+  font: 800 9px/1 var(--cond);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--faint);
-  white-space: nowrap;
 }
 
 .end-actions {
@@ -3740,4 +3744,67 @@ p {
   .daily .hero-art {
     max-width: 300px;
   }
+}
+
+/* ---------- out of bounds, explained (reveal bubble, hole sheet, end of the list) ---------- */
+
+.m-ob-tag {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 3px 5px 2px;
+  border-radius: 5px;
+  vertical-align: 0.32em;
+  font: 800 12px/1 var(--cond);
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  background: #fff;
+}
+
+.reveal:not(.is-solo) .m-ob-tag {
+  margin-right: 4px;
+  padding: 2px 4px 1px;
+  vertical-align: 0.18em;
+  font-size: 10px;
+}
+
+.hs-ob {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--muted);
+}
+
+.hs-ob b {
+  font: 800 13px/1 var(--cond);
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+
+.rl-end {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 0 8px;
+  font: 800 12px/1 var(--cond);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.rl-end::before,
+.rl-end::after {
+  content: '';
+  flex: 1;
+  border-top: 2px dashed var(--paper-line);
+}
+
+.rl-row.is-out {
+  border-bottom-color: transparent;
+  border-radius: 12px;
+  background: var(--paper-2);
+}
+
+.rl-row.is-out .rl-pos {
+  font-size: 13px;
+  letter-spacing: 0.06em;
 }
