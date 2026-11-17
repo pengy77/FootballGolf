@@ -51,7 +51,7 @@ export default function Setup({ mode }: { mode: 'live' | 'local' }) {
             {Icons.back}
           </IconButton>
         }
-        title={<span className="topbar-label">{mode === 'live' ? 'Live challenge' : 'Pass & play'}</span>}
+        title={<span className="topbar-label">{mode === 'live' ? 'Play online' : 'Play on same device'}</span>}
       />
 
       <form
@@ -119,8 +119,8 @@ export default function Setup({ mode }: { mode: 'live' | 'local' }) {
         </section>
 
         <section className="setup-group">
-          <h2 className="field-title">Course</h2>
-          <div className="courses" role="radiogroup" aria-label="Course">
+          <h2 className="field-title">Topic</h2>
+          <div className="courses" role="radiogroup" aria-label="Topic">
             {COURSES.map((c) => {
               const n = poolSize(c.id);
               if (!n) return null;
@@ -146,8 +146,8 @@ export default function Setup({ mode }: { mode: 'live' | 'local' }) {
 
         {mode === 'live' && (
           <section className="setup-group">
-            <h2 className="field-title">Shot clock</h2>
-            <div className="segmented" role="radiogroup" aria-label="Shot clock">
+            <h2 className="field-title">Time to answer</h2>
+            <div className="segmented" role="radiogroup" aria-label="Time to answer">
               {CLOCK_OPTIONS.map((n) => (
                 <button key={n} type="button" role="radio" aria-checked={clock === n} className={clock === n ? 'is-on' : undefined} onClick={() => setClock(n)}>
                   <b>{n}s</b>
@@ -160,7 +160,7 @@ export default function Setup({ mode }: { mode: 'live' | 'local' }) {
 
         <div className="sticky-cta">
           <button type="submit" className="btn btn-primary btn-block btn-lg">
-            {mode === 'live' ? 'Open the room' : 'Tee off'}
+            {mode === 'live' ? 'Create game' : 'Start'}
           </button>
         </div>
       </form>

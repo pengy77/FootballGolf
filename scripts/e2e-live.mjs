@@ -71,12 +71,12 @@ try {
   const A = await phone(browser, 'A');
   await A.goto(BASE, { waitUntil: 'networkidle0' });
   await snap(A, 'home', true);
-  await tapText(A, 'Live', { selector: '.mode' });
+  await tapText(A, 'Play online', { selector: '.more button' });
   await A.waitForSelector('.name-row input');
   await A.type('.name-row input', 'Hanif');
   await tapText(A, '30s');
   await snap(A, 'setup', true);
-  await tapText(A, 'Open the room');
+  await tapText(A, 'Create game');
   await waitText(A, 'Get your mates in');
   await waitText(A, 'Need 1 more player');
   await snap(A, 'lobby-alone', true);
@@ -90,14 +90,14 @@ try {
   // Guest opens the link and joins.
   const B = await phone(browser, 'B');
   await B.goto(invite.url, { waitUntil: 'networkidle0' });
-  await waitText(B, "Hanif's room");
+  await waitText(B, "Hanif's game");
   await snap(B, 'guest-invite', true);
   await B.type('#join-name', 'Jay');
-  await tapText(B, 'Join the room');
-  await waitText(B, 'Waiting for Hanif to tee off');
+  await tapText(B, 'Join');
+  await waitText(B, 'Waiting for Hanif to start');
   await snap(B, 'guest-lobby', true);
-  await tapText(A, 'Tee off · 2 players', { timeout: 20000 });
-  log('teed off');
+  await tapText(A, 'Start · 2 players', { timeout: 20000 });
+  log('started');
 
   // Hole 1: both pick; the hole closes as soon as both are in.
   await A.waitForSelector('.shot-clock');
@@ -175,7 +175,7 @@ try {
 
   // Home shows the room.
   await A.goto(BASE, { waitUntil: 'networkidle0' });
-  await A.waitForFunction(() => [...document.querySelectorAll('.recent-row')].some((r) => /live/i.test(r.innerText) && /hole 1/i.test(r.innerText)), { timeout: 20000 });
+  await A.waitForFunction(() => [...document.querySelectorAll('.recent-row')].some((r) => /online/i.test(r.innerText) && /hole 1/i.test(r.innerText)), { timeout: 20000 });
   await snap(A, 'home-with-room', true);
 } finally {
   await browser.close();

@@ -498,31 +498,28 @@ p {
   }
 }
 
-/* ---------- home: today's course ---------- */
+/* ---------- home ---------- */
 
-/* The first screenful is the stage: the top bar, today's course and the other ways to play. Your
-   games follow under it, with a sliver of the first one showing so they're easy to find. */
+/* A title screen: one centred column with today's game and the other ways to play. Your games
+   follow underneath, their heading just showing above the fold. */
 .home {
   gap: 0;
   padding-bottom: 0;
 }
 
 .home.has-recent {
-  padding-bottom: calc(24px + env(safe-area-inset-bottom));
+  padding-bottom: calc(16px + env(safe-area-inset-bottom));
 }
 
 .home-stage {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  height: 100vh;
-  height: 100svh;
-  min-height: 560px;
-  max-height: 960px;
+  min-height: 100vh;
+  min-height: 100svh;
 }
 
 .home.has-recent .home-stage {
-  height: calc(100svh - 30px);
+  min-height: calc(100svh - 40px);
 }
 
 .home-top {
@@ -531,6 +528,18 @@ p {
   align-items: center;
   justify-content: space-between;
   padding-top: calc(8px + env(safe-area-inset-top));
+}
+
+.home-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 4px 0 calc(28px + env(safe-area-inset-bottom));
 }
 
 .wordmark {
@@ -610,25 +619,21 @@ p {
 }
 
 .today {
-  flex: 1 1 auto;
-  min-height: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.today-head {
-  flex: none;
   display: grid;
   justify-items: center;
-  gap: 4px;
+  gap: 8px;
   text-align: center;
   animation: rise-in 0.35s ease-out both;
 }
 
 .today-title {
-  font: 400 46px/0.92 var(--display);
+  font: 400 58px/0.9 var(--display);
   text-transform: uppercase;
+}
+
+.today-title em {
+  font-style: normal;
+  color: var(--yellow);
 }
 
 .today-date {
@@ -638,35 +643,177 @@ p {
   color: var(--dim);
 }
 
+.today-pitch {
+  max-width: 30ch;
+  margin-top: 8px;
+  font: 500 17px/1.4 var(--body);
+  color: var(--dim);
+  text-wrap: balance;
+}
+
 .today-rival {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  margin-top: 6px;
-  font: 800 15px/1 var(--cond);
+  gap: 6px;
+  margin-top: 10px;
+  font: 800 16px/1 var(--cond);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--yellow);
 }
 
 .today-rival svg:not(:first-child) {
-  margin-left: -9px;
+  margin-left: -10px;
 }
 
-.today-head.is-played {
+.today-play,
+.today-name {
+  margin-top: 18px;
+}
+
+.today-name {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+}
+
+.today-name .input {
+  height: 60px;
+}
+
+/* The shot: ball on the tee, a dotted line to the flag. Play sends the ball along it. */
+.shot-art {
+  display: block;
+  width: min(100%, 300px);
+  height: auto;
+  margin-bottom: 6px;
+  overflow: visible;
+}
+
+.shot-line {
+  animation: shot-aim 1.1s linear infinite;
+}
+
+@keyframes shot-aim {
+  to {
+    stroke-dashoffset: -22;
+  }
+}
+
+.shot-ball {
+  offset-rotate: 0deg;
+  offset-distance: 0%;
+}
+
+.shot-ball-in {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  animation: shot-wait 3s ease-in-out infinite;
+}
+
+@keyframes shot-wait {
+  0%,
+  72%,
+  100% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(-8px);
+  }
+  88% {
+    transform: translateY(0);
+  }
+  93% {
+    transform: translateY(-3px);
+  }
+}
+
+.shot-art.is-kicking .shot-line {
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.shot-art.is-kicking .shot-ball {
+  animation: shot-fly 0.56s cubic-bezier(0.25, 0.1, 0.5, 1) forwards;
+}
+
+.shot-art.is-kicking .shot-ball-in {
+  animation: shot-spin 0.56s linear forwards;
+}
+
+@keyframes shot-fly {
+  0% {
+    offset-distance: 0%;
+  }
+  86%,
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes shot-spin {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  86% {
+    transform: rotate(480deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(560deg) scale(0.3);
+    opacity: 0;
+  }
+}
+
+/* Part-way round: your strokes so far, pencilled like the card, the next hole lit. */
+.track {
+  display: flex;
   gap: 10px;
-  padding-top: 2px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.track li {
+  --mk: var(--ink);
+  --mk-size: 28px;
+  --mk-font: 17px;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px var(--glass-line);
+  font: 400 19px/1 var(--display);
+  color: var(--faint);
+}
+
+.track li.is-played {
+  background: var(--paper);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.32);
+}
+
+.track li.is-next {
+  background: var(--yellow);
+  color: var(--ink);
+  box-shadow: 0 0 0 5px rgba(255, 210, 63, 0.22);
+}
+
+/* Played: the scores are the screen. */
+.today.is-played {
+  gap: 12px;
 }
 
 .today-versus {
   margin-top: -2px;
-  font: 400 24px/1 var(--display);
+  font: 400 26px/1 var(--display);
   text-transform: uppercase;
 }
 
-.today-head .share-row {
+.today .share-row {
   width: 100%;
-  max-width: 440px;
+  margin-top: 6px;
 }
 
 .today-next {
@@ -685,279 +832,19 @@ p {
   padding: 4px 2px;
 }
 
-/* ---------- the course map ---------- */
-
-.cmap {
-  position: relative;
-  flex: 1 1 auto;
-  min-height: 210px;
-  margin: 0 -16px;
-}
-
-.cm-art {
-  position: absolute;
-  inset: 0;
-  overflow: visible;
-}
-
-.cm-edge,
-.cm-rough,
-.cm-fairway,
-.cm-mow {
-  fill: none;
-  stroke-linecap: round;
-}
-
-.cm-edge {
-  stroke: rgba(5, 24, 11, 0.8);
-}
-
-.cm-rough {
-  stroke: #2f7d38;
-}
-
-.cm-fairway {
-  stroke: #58b34c;
-}
-
-.cm-mow {
-  stroke: #64bf57;
-  stroke-linecap: butt;
-}
-
-.cm-green {
-  fill: #9be283;
-  stroke: var(--ink);
-  stroke-width: 2.2;
-}
-
-.cm-sand {
-  fill: #ecd59a;
-  stroke: rgba(12, 31, 18, 0.55);
-  stroke-width: 1.6;
-}
-
-.cm-tee {
-  fill: #74c966;
-  stroke: var(--ink);
-  stroke-width: 2;
-}
-
-.cm-cup {
-  fill: var(--ink);
-}
-
-.cm-pole {
-  stroke: #fff;
-  stroke-width: 2.2;
-  stroke-linecap: round;
-}
-
-.cm-pennant {
-  fill: var(--yellow);
-  stroke: var(--ink);
-  stroke-width: 1.4;
-  stroke-linejoin: round;
-}
-
-.cm-water ellipse {
-  fill: #2f8bd0;
-  stroke: rgba(5, 24, 11, 0.8);
-  stroke-width: 3;
-}
-
-.cm-water path {
-  fill: none;
-  stroke: rgba(255, 255, 255, 0.55);
-  stroke-width: 2;
-  stroke-linecap: round;
-}
-
-.cm-path {
-  fill: none;
-  stroke: rgba(255, 255, 255, 0.25);
-  stroke-width: 2.5;
-  stroke-dasharray: 0.5 7;
-  stroke-linecap: round;
-}
-
-/* The next shot, marching from the ball to the flag. */
-.cm-aim {
-  fill: none;
-  stroke: #fff;
-  stroke-width: 2.5;
-  stroke-dasharray: 1 8;
-  stroke-linecap: round;
-  opacity: 0.85;
-  animation: aim-march 0.9s linear infinite;
-}
-
-@keyframes aim-march {
-  to {
-    stroke-dashoffset: -9;
-  }
-}
-
-/* Holes still to play sit back a little; the one you're on and the ones you've played don't. */
-.cm-hole {
-  transition: opacity 0.3s;
-}
-
-.cmap:not(.is-done) .cm-hole:not(.is-played):not(.is-next) {
-  opacity: 0.8;
-}
-
-.cmap:has(.cm-name) .cm-ball::before {
-  display: none;
-}
-
-.cm-num {
-  position: absolute;
-  translate: -50% -50%;
-  width: 20px;
-  height: 20px;
+/* Other ways to play: quiet, in plain words, narrower than Play. */
+.more {
   display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--ink);
-  color: #fff;
-  font: 800 12px/1 var(--cond);
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
-  pointer-events: none;
+  justify-items: center;
+  gap: 10px;
 }
 
-/* A played hole's strokes, pencilled on a scrap of the scorecard beside its green. */
-.cm-mark {
-  --mk: var(--ink);
-  --mk-size: 26px;
-  --mk-font: 16px;
-  position: absolute;
-  translate: -50% -50%;
-  width: 38px;
-  height: 38px;
-  display: grid;
-  place-items: center;
-  padding: 0;
-  border: 0;
-  border-radius: 50%;
-  background: var(--paper);
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.32);
-  animation: pop-in 0.35s var(--pop) both;
-}
-
-button.cm-mark:active {
-  transform: scale(0.94);
-}
-
-.cm-mark.mk-box2 {
-  border-radius: 9px;
-}
-
-.cm-ball {
-  position: absolute;
-  z-index: 3;
-  translate: -50% -50%;
-  display: grid;
-  padding: 0;
-  border: 0;
+.more .btn {
+  width: min(100%, 280px);
+  min-height: 48px;
+  font-size: 16px;
   background: none;
-}
-
-.cm-ball svg {
-  display: block;
-  filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.35));
-  animation: bob 1.5s ease-in-out infinite;
-}
-
-.cm-ball::before {
-  content: '';
-  position: absolute;
-  inset: -7px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(255, 210, 63, 0.7);
-  animation: tee-ring 1.6s ease-out infinite;
-  pointer-events: none;
-}
-
-@keyframes tee-ring {
-  from {
-    transform: scale(0.7);
-    opacity: 1;
-  }
-  to {
-    transform: scale(1.6);
-    opacity: 0;
-  }
-}
-
-.cm-ball.is-holed {
-  translate: -30% -40%;
-  pointer-events: none;
-}
-
-.cm-ball.is-holed svg {
-  animation: none;
-}
-
-.cm-ball.is-holed::before {
-  display: none;
-}
-
-/* The shot button rides beside the ball on its tee. */
-.cm-cta {
-  position: absolute;
-  z-index: 4;
-  translate: 0 -50%;
-  display: flex;
-}
-
-.cm-cta.is-left {
-  justify-content: flex-end;
-}
-
-.cm-cta.is-right:has(.cm-name) {
-  right: 12px;
-}
-
-.cm-cta.is-left:has(.cm-name) {
-  left: 12px;
-}
-
-.cm-go {
-  min-height: 58px;
-  padding: 0 22px 0 28px;
-  font-size: 25px;
-  letter-spacing: 0.08em;
-  white-space: nowrap;
-  animation: cta-in 0.4s var(--pop) both;
-}
-
-.cm-go span {
-  font-size: 32px;
-  line-height: 0;
-  margin: -4px 0 0 2px;
-}
-
-.cm-name {
-  display: flex;
-  gap: 6px;
-  width: 100%;
-  animation: rise-in 0.25s ease-out both;
-}
-
-.cm-name .input {
-  flex: 1;
-  min-width: 0;
-  height: 54px;
-  padding: 0 16px;
-  font-size: 17px;
-}
-
-.cm-name .btn {
-  flex: none;
-  min-height: 54px;
-  padding: 0 16px;
-  font-size: 19px;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.24);
 }
 
 /* ---------- players as balls ---------- */
@@ -1070,105 +957,18 @@ button.cm-mark:active {
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* ---------- other ways to play: round buttons at the foot of the course ---------- */
-
-.modes {
-  flex: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 2px 0 calc(8px + env(safe-area-inset-bottom));
-}
-
-.mode {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-areas: 'icon name' 'icon sub';
-  align-items: center;
-  column-gap: 9px;
-  row-gap: 2px;
-  min-width: 0;
-  padding: 4px 2px;
-  border: 0;
-  background: none;
-  color: #fff;
-  text-align: left;
-}
-
-.mode:last-child {
-  grid-template-areas: 'name icon' 'sub icon';
-  text-align: right;
-}
-
-.mode-icon {
-  grid-area: icon;
-  position: relative;
-  width: 48px;
-  height: 48px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--ink);
-  color: #fff;
-  box-shadow:
-    0 4px 0 rgba(0, 0, 0, 0.35),
-    inset 0 0 0 2px rgba(255, 255, 255, 0.14);
-  transition:
-    transform 0.08s,
-    box-shadow 0.08s;
-}
-
-.mode-icon svg {
-  width: 28px;
-  height: 28px;
-}
-
-.mode-icon .live-dot {
-  position: absolute;
-  top: 2px;
-  right: 2px;
-  box-shadow: 0 0 0 2px var(--ink);
-  animation: none;
-}
-
-.mode-icon .live-dot::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  animation: live-pulse 1.6s infinite;
-}
-
-.mode:active .mode-icon {
-  transform: translateY(3px);
-  box-shadow:
-    0 1px 0 rgba(0, 0, 0, 0.35),
-    inset 0 0 0 2px rgba(255, 255, 255, 0.14);
-}
-
-.mode-name {
-  grid-area: name;
-  align-self: end;
-  font: 400 21px/1 var(--display);
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.mode-sub {
-  grid-area: sub;
-  align-self: start;
-  font: 700 12px/1.1 var(--cond);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--faint);
-  white-space: nowrap;
-}
-
 /* ---------- your games ---------- */
 
 .recent {
   padding-top: 6px;
+}
+
+.recent-h {
+  padding: 0 2px 10px;
+  font: 800 12px/1 var(--cond);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--faint);
 }
 
 .recent ul {
@@ -3713,33 +3513,30 @@ button.cm-mark:active {
   gap: 18px;
 }
 
-/* A mate's link: the course they played, their balls by the last cup, yours on the first tee. */
-.join.is-course {
+/* A mate's link: the same title screen as home, with their challenge as the headline. */
+.join.is-title {
   gap: 8px;
-  padding-bottom: calc(8px + env(safe-area-inset-bottom));
+  padding-bottom: calc(12px + env(safe-area-inset-bottom));
 }
 
-.join-head {
-  flex: none;
-  display: grid;
-  justify-items: center;
-  gap: 6px;
-  text-align: center;
-  animation: rise-in 0.35s ease-out both;
+.join-main {
+  margin: auto 0;
+  padding-bottom: 16px;
 }
 
-.join.is-course .join-title {
-  font-size: 42px;
+.join.is-title .join-title {
+  font-size: 44px;
 }
 
-.join.is-course .join-spectate {
+.join.is-title .join-spectate {
   flex: none;
   margin-top: 0;
 }
 
-.join-head .claim {
+.join-main .claim,
+.join-main .who-buttons {
   width: 100%;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 .join-hero {
@@ -4163,7 +3960,7 @@ button.cm-mark:active {
     font-size: 104px;
   }
   .today-title {
-    font-size: 40px;
+    font-size: 50px;
   }
   .howto {
     grid-template-columns: 1fr;
@@ -4175,7 +3972,13 @@ button.cm-mark:active {
     font-size: 72px;
   }
   .today-title {
-    font-size: 38px;
+    font-size: 48px;
+  }
+  .shot-art {
+    width: min(100%, 250px);
+  }
+  .home-main {
+    gap: 22px;
   }
   .ballrow.is-big li.is-you .br-total {
     font-size: 60px;
@@ -4248,17 +4051,4 @@ button.cm-mark:active {
 .howto-credit {
   margin-top: 12px;
   text-align: center;
-}
-
-.cm-other {
-  position: absolute;
-  z-index: 2;
-  translate: -50% -50%;
-  display: grid;
-  pointer-events: none;
-  animation: pop-in 0.35s var(--pop) both;
-}
-
-.cm-other svg {
-  filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.35));
 }

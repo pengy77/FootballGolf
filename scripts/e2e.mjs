@@ -104,12 +104,12 @@ try {
   await sleep(400);
   await snap(A.page, 'how-to', false);
   await A.page.keyboard.press('Escape');
-  // Tee off on today's course: with no name saved yet, the shot button opens a name field in place.
-  await A.page.tap('.cm-go');
+  // Play today's daily: with no name saved yet, Play opens a name field in its place.
+  await A.page.tap('.today-play');
   await A.page.waitForSelector('#daily-name');
   await A.page.type('#daily-name', 'Hanif');
   await snap(A.page, 'daily-intro');
-  await clickText(A.page, 'Tee off');
+  await A.page.tap('.today-name [type=submit]');
   await playRound(A.page, 'A', ['st', 'ma', 'ro', 'li', 'ar']);
   await snap(A.page, 'A-final-solo');
   await clickText(A.page, 'Challenge a mate');
@@ -125,7 +125,7 @@ try {
   await sleep(300);
   await snap(B.page, 'B-landing');
   await B.page.type('#join-name', 'Jay');
-  await clickText(B.page, 'Tee off');
+  await B.page.tap('.today-name [type=submit]');
   await sleep(300);
   await playRound(B.page, 'B', ['ar', 'li', 'sa', 'ch', 'ma']);
   await snap(B.page, 'B-final-h2h');
@@ -144,7 +144,7 @@ try {
   await snap(A.page, 'A-final-h2h');
   await A.page.goto(BASE, { waitUntil: 'networkidle0' });
   await snap(A.page, 'A-home-recent');
-  // Today's daily is done: the top of the course shows the scores and the share button instead of a tee shot.
+  // Today's daily is done: home shows the scores and the share button instead of Play.
   await A.page.waitForFunction(() => document.querySelector('.today.is-played .ballrow') && document.querySelector('.today .share-row'));
 
   // --- A opens B's result in a fresh browser (e.g. Home Screen app): one tap to claim the card
@@ -168,7 +168,7 @@ try {
   const inputs2 = await L.page.$$('.name-row input');
   await inputs2[2].type('Kim');
   await snap(L.page, 'local-setup');
-  await clickText(L.page, 'Tee off');
+  await clickText(L.page, 'Start');
   for (const [i, q] of ['ch', 'an', 'el'].entries()) {
     if (i > 0) {
       await L.page.waitForSelector('.handoff-body');

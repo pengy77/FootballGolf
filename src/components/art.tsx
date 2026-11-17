@@ -1,4 +1,4 @@
-import { useId } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 
 const INK = '#0c1f12';
 
@@ -117,26 +117,57 @@ export function HeroArt({ className }: { className?: string }) {
   );
 }
 
-/** Mode icons for the home screen. */
-export const ModeIcon = {
-  live: (
-    <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
-      <rect x="3" y="6" width="12" height="22" rx="3" fill="none" stroke="currentColor" strokeWidth="2.4" />
-      <rect x="19" y="6" width="12" height="22" rx="3" fill="none" stroke="currentColor" strokeWidth="2.4" />
-      <path d="M13 17h8" stroke="#ffd23f" strokeWidth="2.6" strokeLinecap="round" strokeDasharray="1 4" />
-      <circle cx="9" cy="23.5" r="1.4" fill="currentColor" />
-      <circle cx="25" cy="23.5" r="1.4" fill="currentColor" />
+/**
+ * Play's kick: flags the shot so <ShotArt kicking> flies the ball to the cup, then runs `then` as it
+ * drops in. Straight through when motion is reduced.
+ */
+export function useKick(): [boolean, (then: () => void) => void] {
+  const [kicking, setKicking] = useState(false);
+  const timer = useRef<number>(undefined);
+  useEffect(() => () => clearTimeout(timer.current), []);
+  const kick = (then: () => void) => {
+    if (kicking) return;
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return then();
+    setKicking(true);
+    timer.current = window.setTimeout(then, 560);
+  };
+  return [kicking, kick];
+}
+
+/**
+ * Home's one bit of scenery, and it's the game: your ball on the tee, the flag on the green, the
+ * line of the shot between them. Tap Play and the ball flies the line into the cup (.is-kicking).
+ */
+export function ShotArt({ kicking, className }: { kicking?: boolean; className?: string }) {
+  const arc = 'M62 100 C 112 8, 214 4, 262 106';
+  return (
+    <svg className={`shot-art${kicking ? ' is-kicking' : ''}${className ? ` ${className}` : ''}`} viewBox="0 0 320 136" aria-hidden="true">
+      <defs>
+        <linearGradient id="shot-green" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0" stopColor="#8fdc77" />
+          <stop offset="1" stopColor="#5fb653" />
+        </linearGradient>
+      </defs>
+      {/* A little island of turf: shadow, sides, top. */}
+      <ellipse cx="160" cy="129" rx="150" ry="5" fill="#000" opacity="0.2" />
+      <path d="M10 124 C 34 110, 80 110, 120 112 S 210 102, 252 101 S 306 106, 310 124 C 250 131, 70 131, 10 124Z" fill="#0d3a19" />
+      <path d="M14 121 C 38 108, 80 108, 120 110 S 210 100, 252 99 S 302 104, 306 121 C 250 125, 70 125, 14 121Z" fill="#1a5a2b" />
+      <rect x="44" y="114" width="36" height="9" rx="3" fill="#5fb653" stroke={INK} strokeWidth="2.2" />
+      <ellipse cx="254" cy="110" rx="50" ry="12" fill="url(#shot-green)" stroke={INK} strokeWidth="2.5" />
+      <ellipse cx="262" cy="110" rx="6" ry="2.4" fill={INK} />
+      <path d="M262 110V44" stroke="#fff" strokeWidth="3" strokeLinecap="round" />
+      <path className="pin-pennant" d="M263.5 45 292 54 263.5 63Z" fill="#ffd23f" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+      <path className="shot-line" d={arc} fill="none" stroke="#fff" strokeOpacity="0.6" strokeWidth="2.5" strokeDasharray="2 9" strokeLinecap="round" />
+      <g className="shot-ball" style={{ offsetPath: `path('${arc}')` }}>
+        <g className="shot-ball-in">
+          <g transform="translate(-14 -14)">
+            <Ball size={28} />
+          </g>
+        </g>
+      </g>
     </svg>
-  ),
-  pass: (
-    <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
-      <rect x="11" y="4" width="13" height="23" rx="3" fill="none" stroke="currentColor" strokeWidth="2.4" />
-      <circle cx="17.5" cy="22.5" r="1.4" fill="currentColor" />
-      <path d="M4 22c0 5 4 8 9 8M30 12c0-5-4-8-9-8" fill="none" stroke="#ffd23f" strokeWidth="2.4" strokeLinecap="round" />
-      <path d="M10 27.5 13 30l-2.6 2.6M24 1.5 21 4l2.6 2.6" fill="none" stroke="#ffd23f" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  ),
-};
+  );
+}
 
 /** A little trophy for the winner banner. */
 export function Trophy({ size = 56 }: { size?: number }) {

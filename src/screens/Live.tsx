@@ -49,14 +49,14 @@ function Room({ id, secret }: { id: string; secret: string }) {
   const { rec, state: s, error } = room;
 
   if (error === 'insecure')
-    return <Message title="Live games need a secure link" body="Open the link that starts with https:// (the one your mate sent) and try again." />;
-  if (error) return <Message title="Couldn't open the room" body="Check your connection, then open the link again." />;
+    return <Message title="Online games need a secure link" body="Open the link that starts with https:// (the one your mate sent) and try again." />;
+  if (error) return <Message title="Couldn't open the game" body="Check your connection, then open the link again." />;
   // Find the room before asking for a name, so a dead link says so straight away.
   if (!s) return <FindingRoom room={room} />;
   if (!rec.name) return <JoinRoom room={room} />;
   const me = rec.playerId;
   if (!s.players.some((p) => p.id === me) && s.players.length >= 8)
-    return <Message title="This room is full" body="Live rooms take up to 8 players. Start your own room from the home screen." />;
+    return <Message title="This game is full" body="Online games take up to 8 players. Start your own from the home screen." />;
   if (s.phase === 'lobby') return <Lobby room={room} s={s} />;
   if (s.phase === 'done') return <Final room={room} s={s} />;
   if (s.phase === 'reveal') return <LiveReveal key={`${s.round}:${s.hole}`} room={room} s={s} />;
@@ -75,7 +75,7 @@ function LiveTop({ s, label, confirmLeave }: { s?: LiveState; label?: string; co
   return (
     <TopBar
       left={
-        <IconButton label="Leave room" onClick={leave}>
+        <IconButton label="Leave game" onClick={leave}>
           {Icons.close}
         </IconButton>
       }
@@ -92,7 +92,7 @@ function LiveTop({ s, label, confirmLeave }: { s?: LiveState; label?: string; co
           />
         ) : (
           <span className="topbar-label">
-            <span className="live-dot" aria-hidden="true" /> {label ?? 'Live room'}
+            <span className="live-dot" aria-hidden="true" /> {label ?? 'Play online'}
           </span>
         )
       }
@@ -136,7 +136,7 @@ function useInvite(id: string, secret: string, hostName: string) {
   const [showUrl, setShowUrl] = useState(false);
   const url = roomUrl({ id, secret });
   const invite = async () => {
-    const out = await shareLink({ title: 'Football Golf', text: `⛳ ${hostName} wants a live game of Football Golf, right now. Tap to join:`, url });
+    const out = await shareLink({ title: 'Football Golf', text: `⛳ ${hostName} wants to play Football Golf with you, right now. Tap to join:`, url });
     if (out === 'copied') toast('Link copied. Paste it into your chat.');
     if (out === 'failed') {
       setShowUrl(true);
@@ -168,7 +168,7 @@ function JoinRoom({ room }: { room: RoomApi }) {
   const join = () => {
     const n = cleanName(name);
     if (!n) return setErr('Add your name so the others know who you are.');
-    if (s?.players.some((p) => sameName(p.name, n))) return setErr(`There's already a ${n} in this room. Try a nickname.`);
+    if (s?.players.some((p) => sameName(p.name, n))) return setErr(`There's already a ${n} in this game. Try a nickname.`);
     setName(n);
     room.join(n);
     buzz();
@@ -182,14 +182,14 @@ function JoinRoom({ room }: { room: RoomApi }) {
             {Icons.close}
           </IconButton>
         }
-        title={<span className="topbar-label">Live challenge</span>}
+        title={<span className="topbar-label">Play online</span>}
       />
       <div className="join-hero">
         {s ? <Roster names={s.players.map((p) => p.name)} /> : <HeroArt />}
         <p className="kicker">
-          <span className="live-dot" aria-hidden="true" /> Live{s ? ` · ${s.holeCount} holes · ${Math.round(s.turnMs / 1000)}s clock` : ''}
+          {s ? `${s.holeCount} holes · ${Math.round(s.turnMs / 1000)}s to answer` : 'Football Golf'}
         </p>
-        <h1 className="join-title">{hostName ? `${hostName}'s room` : 'Football Golf live'}</h1>
+        <h1 className="join-title">{hostName ? `${hostName}'s game` : 'Play online'}</h1>
         {!s && room.status !== 'online' && <p className="join-course">Connecting…</p>}
       </div>
 
@@ -222,7 +222,7 @@ function JoinRoom({ room }: { room: RoomApi }) {
           </p>
         )}
         <button type="submit" className="btn btn-primary btn-block btn-lg">
-          Join the room
+          Join
         </button>
       </form>
 
@@ -258,11 +258,11 @@ function FindingRoom({ room }: { room: RoomApi }) {
       <LiveTop />
       <div className="message">
         <span className="spinner spinner-lg" aria-hidden="true" />
-        <h1 className="join-title">Finding the room</h1>
+        <h1 className="join-title">Finding the game</h1>
         {slow && room.status === 'online' ? (
           <>
             <p className="lead">
-              Can't find this room. The host may have closed the game, or the link is from more than a day ago. Ask them to send a fresh link.
+              Can't find this game. The host may have closed it, or the link is from more than a day ago. Ask them to send a fresh link.
             </p>
             <button type="button" className="btn btn-secondary" onClick={() => go('/')}>
               Home
@@ -296,9 +296,9 @@ function Lobby({ room, s }: { room: RoomApi; s: LiveState }) {
       <div className="join-hero lobby-hero">
         <p className="kicker">
           {s.round > 1 ? `Round ${s.round} · ` : ''}
-          {s.holeCount} holes · {courseName(s)} · {Math.round(s.turnMs / 1000)}s clock
+          {s.holeCount} holes · {courseName(s)} · {Math.round(s.turnMs / 1000)}s to answer
         </p>
-        <h1 className="join-title">{isHost ? 'Get your mates in' : `${hostName}'s room`}</h1>
+        <h1 className="join-title">{isHost ? 'Get your mates in' : `${hostName}'s game`}</h1>
       </div>
 
       <section className="lobby-roster" aria-label={`Players, ${onlineCount} online`}>
@@ -345,12 +345,12 @@ function Lobby({ room, s }: { room: RoomApi; s: LiveState }) {
       <div className="sticky-cta">
         {isHost ? (
           <button type="button" className="btn btn-primary btn-block btn-lg" disabled={!startable} onClick={room.hostStart}>
-            {startable ? `Tee off · ${onlineCount} players` : !room.engine ? 'This room is open in another tab' : `Need ${need} more player${need === 1 ? '' : 's'} online`}
+            {startable ? `Start · ${onlineCount} players` : !room.engine ? 'This game is open in another tab' : `Need ${need} more player${need === 1 ? '' : 's'} online`}
           </button>
         ) : (
           <p className="wait-pill">
             <span className="spinner" aria-hidden="true" />
-            {onlineCount >= MIN_PLAYERS ? `Waiting for ${hostName} to tee off` : 'Waiting for more players'}
+            {onlineCount >= MIN_PLAYERS ? `Waiting for ${hostName} to start` : 'Waiting for more players'}
           </p>
         )}
       </div>
@@ -473,7 +473,7 @@ function LiveHole({ room, s }: { room: RoomApi; s: LiveState }) {
     <button
       type="button"
       className="link-btn give-up"
-      onClick={() => window.confirm('End this round for everyone and go back to the room?') && room.hostToLobby()}
+      onClick={() => window.confirm('End this round for everyone and go back to the start?') && room.hostToLobby()}
     >
       End this round
     </button>
@@ -625,7 +625,7 @@ function Final({ room, s }: { room: RoomApi; s: LiveState }) {
     const line = st.map((x) => `${game.players[x.index].name} ${x.total}`).join(', ');
     const out = await shareLink({
       title: 'Football Golf',
-      text: `⛳ Football Golf live, ${s.holes.length} holes: ${line}. ${winners.length > 1 ? 'All square!' : `${winnerName} wins!`}`,
+      text: `⛳ Football Golf, ${s.holes.length} holes: ${line}. ${winners.length > 1 ? 'All square!' : `${winnerName} wins!`}`,
       url: `${location.origin}${location.pathname}`,
     });
     if (out === 'copied') toast('Result copied. Paste it into your chat.');
@@ -661,7 +661,7 @@ function Final({ room, s }: { room: RoomApi; s: LiveState }) {
       <div className="sticky-cta">
         {isHost ? (
           <button type="button" className="btn btn-primary btn-block btn-lg" disabled={!room.engine} onClick={room.hostRematch}>
-            {onlineCount >= MIN_PLAYERS ? 'Rematch' : 'Back to the room'}
+            {onlineCount >= MIN_PLAYERS ? 'Rematch' : 'Back to the start'}
           </button>
         ) : (
           <p className="wait-pill">

@@ -27,9 +27,9 @@ export function shareCopy(game: Game) {
       ? `⛳ Football Golf ${daily}: I've played today's ${n} holes. Can you beat me?`
       : `⛳ I've just played a ${n}-hole round of Football Golf. Your turn: can you beat me?`
     : game.mode === 'local'
-      ? `⛳ We've just played ${n} holes of Football Golf. Think you can beat us? Play the same course:`
+      ? `⛳ We've just played ${n} holes of Football Golf. Think you can beat us? Play the same holes:`
       : returning
-        ? `⛳ I've played your Football Golf course${sendTo ? `, ${sendTo}` : ''}. Tap to see who won:`
+        ? `⛳ I've played your Football Golf round${sendTo ? `, ${sendTo}` : ''}. Tap to see who won:`
         : `⛳ Football Golf: see who won, or play the same ${n} holes yourself:`;
 
   const label = solo

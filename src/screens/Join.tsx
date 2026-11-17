@@ -4,8 +4,7 @@ import { COURSES } from '../lib/data';
 import { cleanName, donePlayers, isDone, isPlayable, MAX_LINK_PLAYERS, NAME_MAX, sameName } from '../lib/game';
 import { findGame } from '../lib/store';
 import { dailyLabel } from '../lib/daily';
-import { BALL_FILL } from '../components/art';
-import { CourseMap } from '../components/CourseMap';
+import { ShotArt, useKick } from '../components/art';
 import { Icons, IconButton, Tag, TopBar } from '../components/ui';
 import Message from './Message';
 
@@ -22,6 +21,7 @@ export default function Join({ id }: { id: string }) {
   const [error, setError] = useState('');
   const [claim, setClaim] = useState<number | null>(null);
   const [spoilerCheck, setSpoilerCheck] = useState(false);
+  const [kicking, kick] = useKick();
   useCanonicalUrl(game);
 
   if (!game) return <Message title="Game not found" body="We couldn't find that game on this phone. Open the link your friend sent you again." />;
@@ -51,25 +51,28 @@ export default function Join({ id }: { id: string }) {
       setClaim(existing);
       return setError('');
     }
-    if (full) return setError(`This course already has ${MAX_LINK_PLAYERS} players.`);
-    setName(n);
-    saveGame({
-      ...game,
-      players: [...game.players, { name: n, picks: game.holes.map(() => null) }],
-      me: game.players.length,
-      revealed: 0,
-      seen: [],
+    if (full) return setError(`This game already has ${MAX_LINK_PLAYERS} players.`);
+    // Saving makes this a game you're in, which sends you on, so the ball flies first.
+    kick(() => {
+      setName(n);
+      saveGame({
+        ...game,
+        players: [...game.players, { name: n, picks: game.holes.map(() => null) }],
+        me: game.players.length,
+        revealed: 0,
+        seen: [],
+      });
+      go(`/play/${id}`, { replace: true });
     });
-    go(`/play/${id}`, { replace: true });
   };
 
   const title = done.length === 0 ? 'Fancy a round?' : done.length === 1 ? `${doneNames[0]} challenged you` : `${listNames(doneNames)} have played`;
 
-  // The shot button on the first tee: your name in it if we don't know you yet.
+  // Play, with your name in front of it if we don't know you yet.
   const cta =
-    claim !== null ? undefined : editing ? (
+    claim !== null ? null : editing ? (
       <form
-        className="cm-name"
+        className="today-name"
         onSubmit={(e) => {
           e.preventDefault();
           teeOff();
@@ -90,18 +93,18 @@ export default function Join({ id }: { id: string }) {
             setError('');
           }}
         />
-        <button type="submit" className="btn btn-primary">
-          Tee off
+        <button type="submit" className="btn btn-primary btn-lg">
+          Play
         </button>
       </form>
     ) : (
-      <button type="button" className="btn btn-primary cm-go" onClick={teeOff}>
-        Tee off <span aria-hidden="true">›</span>
+      <button type="button" className="btn btn-primary btn-xl btn-block today-play" onClick={teeOff}>
+        Play
       </button>
     );
 
   return (
-    <main className="screen join is-course">
+    <main className="screen join is-title">
       <TopBar
         left={
           <IconButton label="Home" onClick={() => go('/')}>
@@ -114,8 +117,9 @@ export default function Join({ id }: { id: string }) {
           </IconButton>
         }
       />
-      <div className="join-head">
-        <p className="kicker">
+      <section className="today join-main">
+        <ShotArt kicking={kicking} />
+        <p className="today-date">
           {course} · {game.holes.length} holes
         </p>
         <h1 className="join-title">{title}</h1>
@@ -161,17 +165,8 @@ export default function Join({ id }: { id: string }) {
             </div>
           </div>
         )}
-      </div>
-
-      <CourseMap
-        count={game.holes.length}
-        at={0}
-        marks={[]}
-        cta={cta}
-        onBall={editing || claim !== null ? undefined : teeOff}
-        others={done.map((i) => ({ key: i, fill: BALL_FILL[i % BALL_FILL.length], name: game.players[i].name }))}
-        label={`${game.holes.length} holes${done.length ? `, ${listNames(doneNames)} already round` : ''}`}
-      />
+        {cta}
+      </section>
 
       {done.length > 0 && (
         <div className="join-spectate">

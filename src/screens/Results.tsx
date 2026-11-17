@@ -142,7 +142,7 @@ export default function Results({ id }: { id: string }) {
 
       <div className="end-actions">
         <button type="button" className="btn btn-secondary btn-block" onClick={rematch}>
-          {game.mode === 'local' ? 'Rematch' : 'Play your mates live'}
+          {game.mode === 'local' ? 'Rematch' : 'Play mates online'}
         </button>
         {done.length >= 2 && (
           <button type="button" className="btn btn-ghost btn-block" onClick={() => setStep(0)}>
