@@ -78,6 +78,9 @@ export function PickBox({
   const [focused, setFocused] = useState(false);
   const [active, setActive] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
+  // True while a finger/mouse is down on the suggestions. iOS blurs the input on that press before
+  // the tap's click arrives; closing on that blur unmounted the list and the tap hit nothing.
+  const pressing = useRef(false);
   const ents = useEntities(cat);
   const waiting = ents === undefined;
   const results = useMemo(() => (waiting ? [] : suggest(cat, ents, q, 6)), [cat, ents, waiting, q]);
@@ -95,6 +98,7 @@ export function PickBox({
   }, [autoFocus, selection]);
 
   const choose = (s: Selection) => {
+    pressing.current = false;
     onSelect(s);
     setQ('');
     inputRef.current?.blur();
@@ -159,7 +163,9 @@ export function PickBox({
             setFocused(true);
             setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 60);
           }}
-          onBlur={() => setFocused(false)}
+          onBlur={() => {
+            if (!pressing.current) setFocused(false);
+          }}
           onKeyDown={(e) => {
             if (e.key === 'ArrowDown') {
               e.preventDefault();
@@ -191,7 +197,26 @@ export function PickBox({
         )}
       </label>
       {open && (
-        <div className="suggestions" onPointerDown={(e) => e.preventDefault()}>
+        <div
+          className="suggestions"
+          onPointerDown={(e) => {
+            e.preventDefault();
+            pressing.current = true;
+            // A press that ends without choosing (a drag, a tap on the empty note) lets go cleanly.
+            const release = () => {
+              window.removeEventListener('pointerup', release, true);
+              window.removeEventListener('pointercancel', release, true);
+              setTimeout(() => {
+                if (!pressing.current) return;
+                pressing.current = false;
+                if (document.activeElement !== inputRef.current) setFocused(false);
+              }, 400);
+            };
+            window.addEventListener('pointerup', release, true);
+            window.addEventListener('pointercancel', release, true);
+          }}
+          onMouseDown={(e) => e.preventDefault()}
+        >
           <ul id={listId} role="listbox" aria-label="Suggestions">
             {results.map((it, i) => (
               <li
