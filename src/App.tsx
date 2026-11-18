@@ -61,6 +61,9 @@ interface Ctx {
 const AppCtx = createContext<Ctx>(null as unknown as Ctx);
 export const useApp = () => useContext(AppCtx);
 
+/** Whether the page around the game already has its own close button (Reddit's expanded view does). */
+export const HOST_HAS_CLOSE = false;
+
 export default function App() {
   const [saved, setSaved] = useState<Saved>(loadSaved);
   const [route, setRoute] = useState<Route>(() => parseHash(location.hash));

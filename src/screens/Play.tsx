@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { NavGuard, useApp, useCanonicalUrl } from '../App';
+import { HOST_HAS_CLOSE, NavGuard, useApp, useCanonicalUrl } from '../App';
 import { CATEGORY_BY_ID } from '../lib/data';
 import { donePlayers, isDone, isPlayable, obStrokes, ordinal, type Game } from '../lib/game';
 import { findGame, type Saved } from '../lib/store';
@@ -93,9 +93,11 @@ export default function Play({ id }: { id: string }) {
   const top = (current: number) => (
     <TopBar
       left={
-        <IconButton label="Leave game" onClick={quit}>
-          {Icons.close}
-        </IconButton>
+        HOST_HAS_CLOSE ? undefined : (
+          <IconButton label="Leave game" onClick={quit}>
+            {Icons.close}
+          </IconButton>
+        )
       }
       title={<HoleDots count={game.holes.length} current={current} label={contextLabel(game)} />}
       right={
