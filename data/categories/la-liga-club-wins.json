@@ -1,0 +1,526 @@
+{
+  "id": "la-liga-club-wins",
+  "title": "Most La Liga wins (clubs)",
+  "prompt": "most La Liga wins by a club",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Wins",
+  "order": "desc",
+  "description": "All-time La Liga match wins: every club that has played in Spain's top flight, from 1929 to the end of the 2025–26 season; tied clubs share a place.",
+  "tags": [
+    "europe",
+    "clubs"
+  ],
+  "source": {
+    "name": "Wikipedia (Spanish): Clasificación histórica de la Primera División de España (after Marca's all-time table), to the end of 2025–26",
+    "url": "https://es.wikipedia.org/wiki/Anexo:Clasificaci%C3%B3n_hist%C3%B3rica_de_la_Primera_Divisi%C3%B3n_de_Espa%C3%B1a",
+    "asOf": "2026-11-18"
+  },
+  "items": [
+    {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "sub": "95 seasons",
+      "value": 1873,
+      "aliases": [
+        "Real",
+        "Los Blancos"
+      ],
+      "wd": "Q8682"
+    },
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "sub": "95 seasons",
+      "value": 1818,
+      "aliases": [
+        "Barça",
+        "FC Barcelona"
+      ],
+      "wd": "Q7156"
+    },
+    {
+      "id": "atletico-madrid",
+      "name": "Atlético Madrid",
+      "sub": "89 seasons",
+      "value": 1441,
+      "aliases": [
+        "Atlético",
+        "Atleti"
+      ],
+      "wd": "Q8701"
+    },
+    {
+      "id": "athletic-bilbao",
+      "name": "Athletic Bilbao",
+      "sub": "95 seasons",
+      "value": 1335,
+      "aliases": [
+        "Athletic Club"
+      ],
+      "wd": "Q8687"
+    },
+    {
+      "id": "valencia",
+      "name": "Valencia",
+      "sub": "91 seasons",
+      "value": 1307,
+      "wd": "Q10333"
+    },
+    {
+      "id": "sevilla",
+      "name": "Sevilla",
+      "sub": "82 seasons",
+      "value": 1130,
+      "aliases": [
+        "Seville"
+      ],
+      "wd": "Q10329"
+    },
+    {
+      "id": "espanyol",
+      "name": "Espanyol",
+      "sub": "89 seasons",
+      "value": 1020,
+      "wd": "Q8780"
+    },
+    {
+      "id": "real-sociedad",
+      "name": "Real Sociedad",
+      "sub": "79 seasons",
+      "value": 1002,
+      "wd": "Q10315"
+    },
+    {
+      "id": "real-betis",
+      "name": "Real Betis",
+      "sub": "60 seasons",
+      "value": 746,
+      "aliases": [
+        "Betis"
+      ],
+      "wd": "Q8723"
+    },
+    {
+      "id": "zaragoza",
+      "name": "Zaragoza",
+      "sub": "58 seasons",
+      "value": 698,
+      "wd": "Q10308"
+    },
+    {
+      "id": "celta-vigo",
+      "name": "Celta Vigo",
+      "sub": "60 seasons",
+      "value": 693,
+      "wd": "Q8749"
+    },
+    {
+      "id": "deportivo-la-coruna",
+      "name": "Deportivo La Coruña",
+      "sub": "46 seasons",
+      "value": 569,
+      "aliases": [
+        "Deportivo",
+        "Depor"
+      ],
+      "wd": "Q8760"
+    },
+    {
+      "id": "osasuna",
+      "name": "Osasuna",
+      "sub": "44 seasons",
+      "value": 511,
+      "wd": "Q10286"
+    },
+    {
+      "id": "valladolid",
+      "name": "Real Valladolid",
+      "sub": "47 seasons",
+      "value": 502,
+      "aliases": [
+        "Valladolid"
+      ],
+      "wd": "Q10319"
+    },
+    {
+      "id": "sporting-gijon",
+      "name": "Sporting Gijón",
+      "sub": "42 seasons",
+      "value": 471,
+      "wd": "Q12278"
+    },
+    {
+      "id": "racing-santander",
+      "name": "Racing Santander",
+      "sub": "44 seasons",
+      "value": 453,
+      "wd": "Q12236"
+    },
+    {
+      "id": "villarreal",
+      "name": "Villarreal",
+      "sub": "26 seasons",
+      "value": 418,
+      "wd": "Q12297"
+    },
+    {
+      "id": "oviedo",
+      "name": "Oviedo",
+      "sub": "39 seasons",
+      "value": 414,
+      "wd": "Q271574"
+    },
+    {
+      "id": "mallorca",
+      "name": "Mallorca",
+      "sub": "33 seasons",
+      "value": 398,
+      "wd": "Q8835"
+    },
+    {
+      "id": "las-palmas",
+      "name": "Las Palmas",
+      "sub": "36 seasons",
+      "value": 390,
+      "wd": "Q11979"
+    },
+    {
+      "id": "granada",
+      "name": "Granada",
+      "sub": "27 seasons",
+      "value": 259,
+      "wd": "Q8812"
+    },
+    {
+      "id": "getafe",
+      "name": "Getafe",
+      "sub": "21 seasons",
+      "value": 254,
+      "wd": "Q8806"
+    },
+    {
+      "id": "rayo-vallecano",
+      "name": "Rayo Vallecano",
+      "sub": "23 seasons",
+      "value": 254,
+      "wd": "Q10300"
+    },
+    {
+      "id": "elche",
+      "name": "Elche",
+      "sub": "25 seasons",
+      "value": 237,
+      "wd": "Q10512"
+    },
+    {
+      "id": "alaves",
+      "name": "Alavés",
+      "sub": "20 seasons",
+      "value": 213,
+      "wd": "Q223620"
+    },
+    {
+      "id": "malaga",
+      "name": "Málaga",
+      "sub": "17 seasons",
+      "value": 209,
+      "wd": "Q8857"
+    },
+    {
+      "id": "cd-malaga",
+      "name": "CD Málaga",
+      "sub": "20 seasons · defunct 1992",
+      "value": 186,
+      "wd": "Q124518"
+    },
+    {
+      "id": "hercules",
+      "name": "Hércules",
+      "sub": "20 seasons",
+      "value": 184,
+      "aliases": [
+        "Hércules de Alicante"
+      ],
+      "wd": "Q11963"
+    },
+    {
+      "id": "levante",
+      "name": "Levante",
+      "sub": "17 seasons",
+      "value": 177,
+      "wd": "Q8823"
+    },
+    {
+      "id": "tenerife",
+      "name": "Tenerife",
+      "sub": "13 seasons",
+      "value": 155,
+      "aliases": [
+        "CD Tenerife"
+      ],
+      "wd": "Q216661"
+    },
+    {
+      "id": "real-murcia",
+      "name": "Real Murcia",
+      "sub": "18 seasons",
+      "value": 145,
+      "aliases": [
+        "Murcia"
+      ],
+      "wd": "Q12230"
+    },
+    {
+      "id": "cadiz",
+      "name": "Cádiz",
+      "sub": "16 seasons",
+      "value": 139,
+      "wd": "Q460448"
+    },
+    {
+      "id": "sabadell",
+      "name": "Sabadell",
+      "sub": "14 seasons",
+      "value": 129,
+      "aliases": [
+        "CE Sabadell"
+      ],
+      "wd": "Q12260"
+    },
+    {
+      "id": "ud-salamanca",
+      "name": "UD Salamanca",
+      "sub": "12 seasons",
+      "value": 124,
+      "wd": "Q697353"
+    },
+    {
+      "id": "cd-castellon",
+      "name": "CD Castellón",
+      "sub": "11 seasons",
+      "value": 103,
+      "wd": "Q743557"
+    },
+    {
+      "id": "cd-logrones",
+      "name": "CD Logroñés",
+      "sub": "9 seasons",
+      "value": 96,
+      "wd": "Q657865"
+    },
+    {
+      "id": "cordoba",
+      "name": "Córdoba",
+      "sub": "9 seasons",
+      "value": 82,
+      "wd": "Q10499"
+    },
+    {
+      "id": "girona",
+      "name": "Girona",
+      "sub": "6 seasons",
+      "value": 81,
+      "wd": "Q11945"
+    },
+    {
+      "id": "eibar",
+      "name": "Eibar",
+      "sub": "7 seasons",
+      "value": 77,
+      "wd": "Q770740"
+    },
+    {
+      "id": "almeria",
+      "name": "Almería",
+      "sub": "8 seasons",
+      "value": 76,
+      "wd": "Q10407"
+    },
+    {
+      "id": "albacete-balompie",
+      "name": "Albacete Balompié",
+      "sub": "7 seasons",
+      "value": 76,
+      "wd": "Q576285"
+    },
+    {
+      "id": "burgos-cf",
+      "name": "Burgos CF",
+      "sub": "6 seasons",
+      "value": 59,
+      "wd": "Q852079"
+    },
+    {
+      "id": "pontevedra",
+      "name": "Pontevedra",
+      "sub": "6 seasons",
+      "value": 53,
+      "wd": "Q849271"
+    },
+    {
+      "id": "compostela",
+      "name": "Compostela",
+      "sub": "4 seasons",
+      "value": 52,
+      "aliases": [
+        "SD Compostela"
+      ],
+      "wd": "Q929753"
+    },
+    {
+      "id": "recreativo-de-huelva",
+      "name": "Recreativo de Huelva",
+      "sub": "5 seasons",
+      "value": 50,
+      "wd": "Q12249"
+    },
+    {
+      "id": "leganes",
+      "name": "Leganés",
+      "sub": "5 seasons",
+      "value": 48,
+      "wd": "Q856119"
+    },
+    {
+      "id": "arenas-club",
+      "name": "Arenas Club",
+      "sub": "7 seasons",
+      "value": 43,
+      "aliases": [
+        "Arenas de Getxo",
+        "Arenas"
+      ],
+      "wd": "Q641649"
+    },
+    {
+      "id": "numancia",
+      "name": "Numancia",
+      "sub": "4 seasons",
+      "value": 37,
+      "aliases": [
+        "CD Numancia"
+      ],
+      "wd": "Q12158"
+    },
+    {
+      "id": "gimnastic-de-tarragona",
+      "name": "Gimnàstic de Tarragona",
+      "sub": "4 seasons",
+      "value": 34,
+      "wd": "Q257984"
+    },
+    {
+      "id": "cd-alcoyano",
+      "name": "CD Alcoyano",
+      "sub": "4 seasons",
+      "value": 30,
+      "wd": "Q837238"
+    },
+    {
+      "id": "real-jaen",
+      "name": "Real Jaén",
+      "sub": "3 seasons",
+      "value": 29,
+      "aliases": [
+        "Jaén"
+      ],
+      "wd": "Q837183"
+    },
+    {
+      "id": "real-burgos",
+      "name": "Real Burgos",
+      "sub": "3 seasons",
+      "value": 26,
+      "wd": "Q543446"
+    },
+    {
+      "id": "real-union",
+      "name": "Real Unión",
+      "sub": "4 seasons",
+      "value": 21,
+      "aliases": [
+        "Real Unión de Irún",
+        "Irún"
+      ],
+      "wd": "Q726810"
+    },
+    {
+      "id": "cf-extremadura",
+      "name": "CF Extremadura",
+      "sub": "2 seasons",
+      "value": 20,
+      "wd": "Q732742"
+    },
+    {
+      "id": "cp-merida",
+      "name": "CP Mérida",
+      "sub": "2 seasons",
+      "value": 19,
+      "wd": "Q856416"
+    },
+    {
+      "id": "ce-europa",
+      "name": "CE Europa",
+      "sub": "3 seasons",
+      "value": 18,
+      "wd": "Q856024"
+    },
+    {
+      "id": "ad-almeria",
+      "name": "AD Almería",
+      "sub": "2 seasons · defunct 1982",
+      "value": 17,
+      "wd": "Q290781"
+    },
+    {
+      "id": "huesca",
+      "name": "Huesca",
+      "sub": "2 seasons",
+      "value": 14,
+      "aliases": [
+        "SD Huesca"
+      ],
+      "wd": "Q11971"
+    },
+    {
+      "id": "ue-lleida",
+      "name": "UE Lleida",
+      "sub": "2 seasons",
+      "value": 13,
+      "wd": "Q837218"
+    },
+    {
+      "id": "xerez",
+      "name": "Xerez",
+      "sub": "1 season",
+      "value": 8,
+      "wd": "Q12308"
+    },
+    {
+      "id": "cd-condal",
+      "name": "CD Condal",
+      "sub": "1 season",
+      "value": 7,
+      "wd": "Q856083"
+    },
+    {
+      "id": "atletico-tetuan",
+      "name": "Atlético Tetuán",
+      "sub": "1 season",
+      "value": 7,
+      "aliases": [
+        "Atlético de Tetuán"
+      ],
+      "wd": "Q757467"
+    },
+    {
+      "id": "cultural-y-deportiva-leonesa",
+      "name": "Cultural y Deportiva Leonesa",
+      "sub": "1 season",
+      "value": 5,
+      "wd": "Q582342"
+    }
+  ]
+}

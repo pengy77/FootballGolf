@@ -1,10 +1,11 @@
 {
   "id": "uefa-association-coefficients",
-  "title": "UEFA country coefficients",
-  "prompt": "highest UEFA country coefficient",
+  "title": "European countries by UEFA coefficient",
+  "prompt": "European country with the highest UEFA coefficient",
   "noun": "country",
   "nounPlural": "countries",
   "kind": "nation",
+  "outside": "not a UEFA member",
   "metric": "Coefficient",
   "order": "desc",
   "description": "UEFA men's association coefficient: five-season total of club results in European competitions, 2022–23 to 2026–27 (2026–27 still in progress).",

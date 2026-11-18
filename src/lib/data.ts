@@ -34,6 +34,11 @@ export interface RawCategory {
   standings?: boolean;
   /** Lists that are editions of the same thing, e.g. "serie-a-table". A course draws the series once, then one edition. */
   series?: string;
+  /**
+   * What a pick that isn't on the list is, when the list is a closed set rather than a top N, e.g.
+   * "not a UEFA member" for the 55 UEFA associations. Defaults to "not in the top {size}".
+   */
+  outside?: string;
   /** Which edition of its series this list is, e.g. "2015–16". */
   season?: string;
   metric: string;
@@ -107,6 +112,14 @@ export function buildCategory(raw: RawCategory): Category {
     pins,
   };
 }
+
+/** Why an off-list pick isn't on this list, lower case: "not in the top 250" or the list's own `outside`. */
+export function offListReason(c: { outside?: string; size: number }): string {
+  return c.outside ?? `not in the top ${c.size}`;
+}
+
+const upFirst = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+export const offListTitle = (c: { outside?: string; size: number }) => upFirst(offListReason(c));
 
 /** Where a pin may sit: not trivially near the top, not lost in the depths. (scripts/validate-data.mjs mirrors this.) */
 export function targetRange(size: number): [number, number] {

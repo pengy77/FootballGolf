@@ -1,0 +1,524 @@
+{
+  "id": "serie-a-club-wins",
+  "title": "Most Serie A wins (clubs)",
+  "prompt": "most Serie A wins by a club",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Wins",
+  "order": "desc",
+  "description": "All-time Serie A match wins: every club that has played in the single-table Serie A, from 1929–30 to the end of the 2025–26 season (1945–46, split into regional groups, not counted); tied clubs share a place.",
+  "tags": [
+    "europe",
+    "clubs"
+  ],
+  "source": {
+    "name": "Wikipedia (Italian): Classifica perpetua della Serie A dal 1929, to the end of 2025–26",
+    "url": "https://it.wikipedia.org/wiki/Classifica_perpetua_della_Serie_A_dal_1929",
+    "asOf": "2026-11-18"
+  },
+  "items": [
+    {
+      "id": "juventus",
+      "name": "Juventus",
+      "sub": "93 seasons",
+      "value": 1730,
+      "aliases": [
+        "Juve"
+      ],
+      "wd": "Q1422"
+    },
+    {
+      "id": "inter-milan",
+      "name": "Inter Milan",
+      "sub": "94 seasons",
+      "value": 1624,
+      "aliases": [
+        "Inter",
+        "Internazionale"
+      ],
+      "wd": "Q631"
+    },
+    {
+      "id": "ac-milan",
+      "name": "AC Milan",
+      "sub": "92 seasons",
+      "value": 1526,
+      "aliases": [
+        "Milan"
+      ],
+      "wd": "Q1543"
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "sub": "93 seasons",
+      "value": 1347,
+      "aliases": [
+        "AS Roma"
+      ],
+      "wd": "Q2739"
+    },
+    {
+      "id": "fiorentina",
+      "name": "Fiorentina",
+      "sub": "88 seasons",
+      "value": 1178,
+      "wd": "Q2052"
+    },
+    {
+      "id": "napoli",
+      "name": "Napoli",
+      "sub": "80 seasons",
+      "value": 1117,
+      "aliases": [
+        "SSC Napoli"
+      ],
+      "wd": "Q2641"
+    },
+    {
+      "id": "lazio",
+      "name": "Lazio",
+      "sub": "83 seasons",
+      "value": 1108,
+      "aliases": [
+        "SS Lazio"
+      ],
+      "wd": "Q2609"
+    },
+    {
+      "id": "torino",
+      "name": "Torino",
+      "sub": "82 seasons",
+      "value": 993,
+      "wd": "Q2768"
+    },
+    {
+      "id": "bologna",
+      "name": "Bologna",
+      "sub": "79 seasons",
+      "value": 960,
+      "wd": "Q1893"
+    },
+    {
+      "id": "sampdoria",
+      "name": "Sampdoria",
+      "sub": "66 seasons",
+      "value": 753,
+      "wd": "Q1457"
+    },
+    {
+      "id": "atalanta",
+      "name": "Atalanta",
+      "sub": "65 seasons",
+      "value": 729,
+      "wd": "Q1886"
+    },
+    {
+      "id": "genoa",
+      "name": "Genoa",
+      "sub": "58 seasons",
+      "value": 618,
+      "wd": "Q2074"
+    },
+    {
+      "id": "udinese",
+      "name": "Udinese",
+      "sub": "53 seasons",
+      "value": 597,
+      "wd": "Q2798"
+    },
+    {
+      "id": "cagliari",
+      "name": "Cagliari",
+      "sub": "45 seasons",
+      "value": 446,
+      "wd": "Q1900"
+    },
+    {
+      "id": "parma",
+      "name": "Parma",
+      "sub": "29 seasons",
+      "value": 372,
+      "wd": "Q2693"
+    },
+    {
+      "id": "palermo",
+      "name": "Palermo",
+      "sub": "29 seasons",
+      "value": 307,
+      "wd": "Q2674"
+    },
+    {
+      "id": "hellas-verona",
+      "name": "Hellas Verona",
+      "sub": "35 seasons",
+      "value": 300,
+      "wd": "Q8639"
+    },
+    {
+      "id": "vicenza",
+      "name": "Vicenza",
+      "sub": "30 seasons",
+      "value": 296,
+      "aliases": [
+        "LR Vicenza",
+        "Lanerossi Vicenza"
+      ],
+      "wd": "Q56542463"
+    },
+    {
+      "id": "bari",
+      "name": "Bari",
+      "sub": "30 seasons",
+      "value": 258,
+      "wd": "Q6641"
+    },
+    {
+      "id": "triestina",
+      "name": "Triestina",
+      "sub": "26 seasons",
+      "value": 253,
+      "wd": "Q13381"
+    },
+    {
+      "id": "brescia",
+      "name": "Brescia",
+      "sub": "23 seasons",
+      "value": 194,
+      "wd": "Q6651"
+    },
+    {
+      "id": "chievo",
+      "name": "Chievo",
+      "sub": "17 seasons",
+      "value": 186,
+      "wd": "Q2037"
+    },
+    {
+      "id": "padova",
+      "name": "Padova",
+      "sub": "16 seasons",
+      "value": 182,
+      "aliases": [
+        "Calcio Padova"
+      ],
+      "wd": "Q8428"
+    },
+    {
+      "id": "spal",
+      "name": "SPAL",
+      "sub": "19 seasons",
+      "value": 175,
+      "wd": "Q13385"
+    },
+    {
+      "id": "livorno",
+      "name": "Livorno",
+      "sub": "18 seasons",
+      "value": 171,
+      "wd": "Q6767"
+    },
+    {
+      "id": "catania",
+      "name": "Catania",
+      "sub": "17 seasons",
+      "value": 162,
+      "wd": "Q2018"
+    },
+    {
+      "id": "lecce",
+      "name": "Lecce",
+      "sub": "20 seasons",
+      "value": 157,
+      "wd": "Q13391"
+    },
+    {
+      "id": "empoli",
+      "name": "Empoli",
+      "sub": "17 seasons",
+      "value": 153,
+      "wd": "Q6703"
+    },
+    {
+      "id": "sassuolo",
+      "name": "Sassuolo",
+      "sub": "12 seasons",
+      "value": 147,
+      "wd": "Q8603"
+    },
+    {
+      "id": "como",
+      "name": "Como",
+      "sub": "15 seasons",
+      "value": 142,
+      "wd": "Q1120838"
+    },
+    {
+      "id": "alessandria",
+      "name": "Alessandria",
+      "sub": "13 seasons",
+      "value": 136,
+      "wd": "Q16348"
+    },
+    {
+      "id": "novara",
+      "name": "Novara",
+      "sub": "13 seasons",
+      "value": 133,
+      "wd": "Q8416"
+    },
+    {
+      "id": "modena",
+      "name": "Modena",
+      "sub": "13 seasons",
+      "value": 130,
+      "wd": "Q8408"
+    },
+    {
+      "id": "perugia",
+      "name": "Perugia",
+      "sub": "13 seasons",
+      "value": 126,
+      "wd": "Q16344"
+    },
+    {
+      "id": "pro-patria",
+      "name": "Pro Patria",
+      "sub": "12 seasons",
+      "value": 118,
+      "wd": "Q777337"
+    },
+    {
+      "id": "ascoli",
+      "name": "Ascoli",
+      "sub": "16 seasons",
+      "value": 110,
+      "wd": "Q6630"
+    },
+    {
+      "id": "venezia",
+      "name": "Venezia",
+      "sub": "14 seasons",
+      "value": 105,
+      "wd": "Q501245"
+    },
+    {
+      "id": "foggia",
+      "name": "Foggia",
+      "sub": "11 seasons",
+      "value": 95,
+      "wd": "Q139399"
+    },
+    {
+      "id": "siena",
+      "name": "Siena",
+      "sub": "9 seasons",
+      "value": 83,
+      "wd": "Q2756"
+    },
+    {
+      "id": "reggina",
+      "name": "Reggina",
+      "sub": "9 seasons",
+      "value": 83,
+      "wd": "Q8476"
+    },
+    {
+      "id": "cesena",
+      "name": "Cesena",
+      "sub": "13 seasons",
+      "value": 80,
+      "wd": "Q6664"
+    },
+    {
+      "id": "lucchese",
+      "name": "Lucchese",
+      "sub": "8 seasons",
+      "value": 80,
+      "wd": "Q298333"
+    },
+    {
+      "id": "avellino",
+      "name": "Avellino",
+      "sub": "10 seasons",
+      "value": 79,
+      "wd": "Q298217"
+    },
+    {
+      "id": "sampierdarenese",
+      "name": "Sampierdarenese",
+      "sub": "8 seasons · merged into Sampdoria 1946",
+      "value": 68,
+      "wd": "x-club-sampierdarenese"
+    },
+    {
+      "id": "piacenza",
+      "name": "Piacenza",
+      "sub": "8 seasons",
+      "value": 65,
+      "wd": "Q459794"
+    },
+    {
+      "id": "pro-vercelli",
+      "name": "Pro Vercelli",
+      "sub": "6 seasons",
+      "value": 65,
+      "wd": "Q8455"
+    },
+    {
+      "id": "cremonese",
+      "name": "Cremonese",
+      "sub": "9 seasons",
+      "value": 56,
+      "wd": "Q759482"
+    },
+    {
+      "id": "mantova",
+      "name": "Mantova",
+      "sub": "7 seasons",
+      "value": 48,
+      "wd": "Q430993"
+    },
+    {
+      "id": "pisa",
+      "name": "Pisa",
+      "sub": "8 seasons",
+      "value": 44,
+      "wd": "Q289613"
+    },
+    {
+      "id": "salernitana",
+      "name": "Salernitana",
+      "sub": "5 seasons",
+      "value": 41,
+      "wd": "Q847587"
+    },
+    {
+      "id": "messina",
+      "name": "Messina",
+      "sub": "5 seasons",
+      "value": 39,
+      "wd": "Q29390"
+    },
+    {
+      "id": "catanzaro",
+      "name": "Catanzaro",
+      "sub": "7 seasons",
+      "value": 38,
+      "wd": "Q501372"
+    },
+    {
+      "id": "varese",
+      "name": "Varese",
+      "sub": "7 seasons",
+      "value": 36,
+      "wd": "Q8633"
+    },
+    {
+      "id": "pescara",
+      "name": "Pescara",
+      "sub": "7 seasons",
+      "value": 36,
+      "wd": "Q2710"
+    },
+    {
+      "id": "casale",
+      "name": "Casale",
+      "sub": "4 seasons",
+      "value": 33,
+      "wd": "Q16334"
+    },
+    {
+      "id": "monza",
+      "name": "Monza",
+      "sub": "3 seasons",
+      "value": 28,
+      "wd": "Q289482"
+    },
+    {
+      "id": "spezia",
+      "name": "Spezia",
+      "sub": "3 seasons",
+      "value": 25,
+      "wd": "Q8615"
+    },
+    {
+      "id": "crotone",
+      "name": "Crotone",
+      "sub": "3 seasons",
+      "value": 24,
+      "wd": "Q6690"
+    },
+    {
+      "id": "frosinone",
+      "name": "Frosinone",
+      "sub": "3 seasons",
+      "value": 21,
+      "wd": "Q845043"
+    },
+    {
+      "id": "lecco",
+      "name": "Lecco",
+      "sub": "3 seasons",
+      "value": 19,
+      "wd": "Q944876"
+    },
+    {
+      "id": "reggiana",
+      "name": "Reggiana",
+      "sub": "3 seasons",
+      "value": 16,
+      "wd": "Q289707"
+    },
+    {
+      "id": "legnano",
+      "name": "Legnano",
+      "sub": "3 seasons",
+      "value": 16,
+      "wd": "Q289289"
+    },
+    {
+      "id": "benevento",
+      "name": "Benevento",
+      "sub": "2 seasons",
+      "value": 13,
+      "wd": "Q652516"
+    },
+    {
+      "id": "carpi",
+      "name": "Carpi",
+      "sub": "1 season",
+      "value": 9,
+      "wd": "Q610621"
+    },
+    {
+      "id": "ancona",
+      "name": "Ancona",
+      "sub": "2 seasons",
+      "value": 8,
+      "wd": "Q289029"
+    },
+    {
+      "id": "ternana",
+      "name": "Ternana",
+      "sub": "2 seasons",
+      "value": 7,
+      "wd": "Q8623"
+    },
+    {
+      "id": "pistoiese",
+      "name": "Pistoiese",
+      "sub": "1 season",
+      "value": 6,
+      "wd": "Q1279917"
+    },
+    {
+      "id": "treviso",
+      "name": "Treviso",
+      "sub": "1 season",
+      "value": 3,
+      "wd": "Q611222"
+    }
+  ]
+}

@@ -766,7 +766,7 @@ p {
   }
 }
 
-/* Part-way round: your strokes so far, pencilled like the card, the next hole lit. */
+/* Part-way round: your strokes so far, the next hole lit. */
 .track {
   display: flex;
   gap: 10px;
@@ -776,9 +776,6 @@ p {
 }
 
 .track li {
-  --mk: var(--ink);
-  --mk-size: 28px;
-  --mk-font: 17px;
   width: 42px;
   height: 42px;
   display: grid;
@@ -791,6 +788,7 @@ p {
 
 .track li.is-played {
   background: var(--paper);
+  color: var(--ink);
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.32);
 }
 
@@ -811,8 +809,7 @@ p {
   text-transform: uppercase;
 }
 
-.today .share-row {
-  width: 100%;
+.today .share-btn {
   margin-top: 6px;
 }
 
@@ -921,40 +918,6 @@ p {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
-}
-
-.br-invite {
-  display: grid;
-  justify-items: center;
-  gap: 4px;
-  padding: 0;
-  border: 0;
-  background: none;
-  color: #fff;
-}
-
-.br-q {
-  width: 34px;
-  height: 34px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  border: 2.5px dashed rgba(255, 255, 255, 0.5);
-  font: 400 22px/1 var(--display);
-  color: var(--yellow);
-  animation: think 1.6s ease-in-out infinite;
-}
-
-.br-invite .br-total {
-  color: rgba(255, 255, 255, 0.28);
-}
-
-.br-invite .br-name {
-  color: var(--yellow);
-}
-
-.br-invite:active .br-q {
-  background: rgba(255, 255, 255, 0.1);
 }
 
 /* ---------- your games ---------- */
@@ -2604,12 +2567,9 @@ p {
   }
 }
 
-/* Score bar under the scene: a strip of the paper scorecard, holes left to right with the same
-   pencil marks as the final card, and the total in the last column. */
+/* Score bar under the scene: a strip of the paper scorecard, holes left to right, and the total in
+   the last column. */
 .scorebar.is-solo {
-  --mk: var(--ink);
-  --mk-size: 26px;
-  --mk-font: 16px;
   display: flex;
   align-items: stretch;
   overflow: hidden;
@@ -2658,6 +2618,12 @@ p {
 .sb-holes .csc-s {
   display: grid;
   place-items: center;
+}
+
+.sb-holes .csc-s i {
+  display: inline-block;
+  font: 400 19px/1 var(--display);
+  font-style: normal;
 }
 
 .sb-holes li.is-now.is-filled i {
@@ -3075,13 +3041,12 @@ p {
 
 /* ---------- results ---------- */
 
+/* Read top to bottom: the score, where it came from, then one button to send it (pinned below). */
 .results {
-  gap: 20px;
-  padding-bottom: calc(28px + env(safe-area-inset-bottom));
+  gap: 22px;
+  padding-bottom: calc(var(--cta-h) + 36px + env(safe-area-inset-bottom));
 }
 
-/* The top of the card reads like the top of today's course on home: everyone's ball and strokes,
-   then the button to send it. */
 .final {
   display: grid;
   justify-items: center;
@@ -3091,25 +3056,40 @@ p {
   animation: rise-in 0.4s ease-out both;
 }
 
-.final .share-row {
-  width: 100%;
+/* Alone, the score is one big number. */
+.final.is-solo {
+  gap: 4px;
+  padding-top: 10px;
+}
+
+.final-score {
+  font: 400 124px/0.86 var(--display);
+  color: var(--yellow);
+  text-shadow: 0 6px 0 rgba(0, 0, 0, 0.28);
+  animation: pop-in 0.5s var(--pop) both;
+}
+
+/* Short phones: a smaller number leaves room for more of the round above the button. */
+@media (max-height: 700px) {
+  .final-score {
+    font-size: 96px;
+  }
+}
+
+.final-unit {
+  font: 500 16px/1 var(--body);
+  color: var(--dim);
 }
 
 .final .trophy {
   margin-bottom: -6px;
 }
 
-.final-big {
-  font: 400 128px/0.9 var(--display);
-  color: var(--yellow);
-  text-shadow: 0 7px 0 rgba(0, 0, 0, 0.28);
-}
-
 .final-big.is-name {
-  font-size: 54px;
-  line-height: 0.95;
+  font: 400 54px/0.95 var(--display);
   color: #fff;
   text-transform: uppercase;
+  text-shadow: 0 6px 0 rgba(0, 0, 0, 0.28);
   overflow-wrap: anywhere;
 }
 
@@ -3122,14 +3102,15 @@ p {
   animation: pop-in 0.5s var(--pop) both;
 }
 
+.results-cta .today-next {
+  margin-top: 4px;
+}
+
+/* The live lobby's invite with a copy button beside it. */
 .share-row {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-.sticky-cta > .share-row {
-  width: 100%;
 }
 
 .share-row .icon-btn {
@@ -3149,46 +3130,20 @@ p {
   user-select: all;
 }
 
-.sc-red {
-  color: #d63c30;
-}
-.sc-blue {
-  color: #2e6be0;
-}
-.sc-purple {
-  color: #7a45e0;
-}
-.sc-orange {
-  color: #d26a10;
-}
-
-/* The final card: a golf scorecard on paper. Holes run left to right, then a row of strokes per player. */
+/* The golf scorecard, on paper: holes left to right, the target where a real card prints par, then
+   strokes per player and the total. Plain numbers only: no marks, no legend, no colours. */
 .sc-block {
   display: grid;
-  gap: 14px;
+  gap: 16px;
 }
 
 .card-sc {
-  --mk: var(--ink);
-  --mk-size: 22px;
-  --mk-font: 14px;
   overflow: hidden;
   border-radius: 14px;
   background: var(--paper);
   color: var(--ink);
   box-shadow: 0 6px 0 rgba(0, 0, 0, 0.22);
   animation: rise-in 0.45s 0.1s ease-out both;
-}
-
-.card-sc.is-roomy {
-  --mk-size: 32px;
-  --mk-font: 19px;
-}
-
-/* 7–9 holes on a narrow phone: slimmer rings so the double marks stay inside their cells */
-.card-sc:not(.is-roomy) .csc-player :is(.mk-ace, .mk-box2) i {
-  outline-width: 1.5px;
-  outline-offset: 1px;
 }
 
 .csc {
@@ -3200,7 +3155,6 @@ p {
 
 .csc th,
 .csc td {
-  height: 40px;
   padding: 0;
   border-left: 1px solid var(--paper-line);
   vertical-align: middle;
@@ -3215,41 +3169,35 @@ p {
 }
 
 .csc-label {
-  width: 50px;
-  padding: 0 4px 0 10px !important;
+  width: 62px;
+  padding: 0 4px 0 12px !important;
   text-align: left;
-  font: 800 12px/1 var(--cond);
-  letter-spacing: 0.08em;
+  font: 700 11px/1 var(--cond);
+  letter-spacing: 0.1em;
   text-transform: uppercase;
+  color: var(--muted);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.card-sc.is-roomy .csc-label {
-  width: 58px;
-}
-
 .csc .csc-tot {
-  width: 46px;
+  width: 50px;
   background: var(--paper-2);
-  border-left: 2px solid var(--ink);
 }
 
 .csc thead th {
-  height: 34px;
+  height: 32px;
   background: var(--ink);
-  border-left-color: rgba(255, 255, 255, 0.12);
-  color: rgba(255, 255, 255, 0.72);
+  border-left-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .csc thead .csc-tot {
   background: var(--ink);
-  border-left-color: rgba(255, 255, 255, 0.35);
-  font: 800 12px/1 var(--cond);
-  letter-spacing: 0.08em;
+  font: 700 11px/1 var(--cond);
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--yellow);
 }
 
 .csc thead button {
@@ -3258,7 +3206,7 @@ p {
   border: 0;
   padding: 0;
   background: none;
-  font: 400 17px/1 var(--display);
+  font: 400 16px/1 var(--display);
   color: #fff;
 }
 
@@ -3266,239 +3214,92 @@ p {
   background: rgba(255, 255, 255, 0.12);
 }
 
-.csc-player th,
-.csc-player td {
-  height: 50px;
-}
-
-.card-sc.is-roomy .csc-player :is(th, td) {
-  height: 56px;
-}
-
-.csc-name {
-  font-size: 13px !important;
-}
-
-.csc-player .csc-tot b {
-  display: block;
-  font: 400 21px/1 var(--display);
-}
-
-.csc-player .csc-tot.is-best {
-  background: var(--yellow);
-}
-
-/* Pencil marks */
-.csc-s i {
-  min-width: var(--mk-size);
-  height: var(--mk-size);
-  padding: 0 1px;
-  display: inline-grid;
-  place-items: center;
-  vertical-align: middle;
-  border: 2px solid transparent;
-  font: 400 var(--mk-font)/1 var(--display);
-  font-style: normal;
-  color: var(--mk);
-}
-
-.mk-ace {
-  --mk: #8a5d00;
-}
-.mk-circle {
-  --mk: #1d7f37;
-}
-.mk-box2 {
-  --mk: #8e2f20;
-}
-
-.mk-ace i,
-.mk-circle i {
-  border-color: var(--mk);
-  border-radius: 999px;
-}
-
-.mk-ace i {
-  background: var(--yellow);
-  outline: 2px solid var(--mk);
-  outline-offset: 1.5px;
-}
-
-.mk-box2 i {
-  border-color: var(--mk);
-  border-radius: 2px;
-  outline: 2px solid var(--mk);
-  outline-offset: 1.5px;
-}
-
-.csc-key {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 4px 6px;
-  margin: 0;
-  padding: 9px 10px 11px;
-  border-top: 1px solid var(--paper-line);
-  font: 600 12px/1 var(--body);
+.csc-target td {
+  height: 32px;
+  font: 500 14px/1 var(--body);
   color: var(--muted);
 }
 
-.csc-key .csc-s i {
-  min-width: 14px;
-  width: 14px;
-  height: 14px;
-  padding: 0;
-  border-width: 1.5px;
-  outline-width: 1.5px;
-  outline-offset: 1.5px;
+.csc-player th,
+.csc-player td {
+  height: 52px;
 }
 
-.csc-key .csc-s:not(:first-child) {
-  margin-left: 8px;
+.csc-player td {
+  font: 400 22px/1 var(--display);
+  /* Set, not inherited: some in-app webviews (Reddit inside Telegram on iOS) drew these white on the cream card. */
+  color: var(--ink);
 }
 
-/* The holes, under the card: the question, then target · your guess · places off in columns that
-   line up from hole to hole, under one row of labels. */
-.sc-holes {
-  --sc-cols: 28px 46px minmax(0, 1fr) 34px;
-  --sc-areas: 'n q q q' 'n t g o';
-  --sc-head: '. t g o';
+.csc-player .csc-label {
+  color: var(--ink);
 }
 
-.sc-holes:not(.is-solo) {
-  --sc-cols: 28px 46px minmax(0, 1fr);
-  --sc-areas: 'n q q' 'n t .';
-  --sc-head: '. t .';
+.csc-player .csc-tot {
+  font-size: 24px;
 }
 
-.sc-holes ol {
+/* 7–9 holes on a narrow phone */
+.card-sc:not(.is-roomy) .csc-player td {
+  font-size: 17px;
+}
+
+.card-sc:not(.is-roomy) .csc-target td {
+  font-size: 12px;
+}
+
+/* The holes in words, under the card: quiet text, nothing bold, so the numbers above lead. */
+.holes {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.sc-head,
-.sc-holes button {
+.holes li + li {
+  border-top: 1px solid var(--glass-line);
+}
+
+.holes button {
   display: grid;
-  grid-template-columns: var(--sc-cols);
-  column-gap: 10px;
-  padding: 0 2px;
-}
-
-.sc-head {
-  grid-template-areas: var(--sc-head);
-  padding-bottom: 6px;
-  font: 800 11px/1 var(--cond);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--faint);
-}
-
-.sc-holes button {
-  grid-template-areas: var(--sc-areas);
-  align-items: baseline;
-  row-gap: 6px;
+  grid-template-columns: 18px minmax(0, 1fr);
+  column-gap: 12px;
+  row-gap: 2px;
   width: 100%;
-  padding-block: 10px;
+  padding: 11px 2px;
   border: 0;
-  border-bottom: 1px solid var(--glass-line);
   background: none;
   color: #fff;
   text-align: left;
 }
 
-.sc-holes li:first-child button {
-  border-top: 1px solid var(--glass-line);
+.holes button:active {
+  background: rgba(255, 255, 255, 0.05);
 }
 
-.sc-n {
-  grid-area: n;
-  align-self: center;
-  width: 28px;
-  height: 28px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  font: 800 14px/1 var(--cond);
-}
-
-.sc-prompt {
-  grid-area: q;
-  font: 700 15px/1.15 var(--cond);
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.sc-t {
-  grid-area: t;
-}
-
-.sc-g {
-  grid-area: g;
-  min-width: 0;
-}
-
-.sc-off {
-  grid-area: o;
+.hl-n {
+  grid-row: 1 / span 2;
+  font: 400 15px/1.3 var(--body);
+  color: var(--faint);
   text-align: right;
 }
 
-.sc-holes button .sc-t {
-  font: 800 18px/1 var(--cond);
-  color: var(--yellow);
+.hl-q {
+  font: 500 15px/1.3 var(--body);
+  color: rgba(255, 255, 255, 0.9);
 }
 
-.sc-holes button .sc-g {
-  display: flex;
-  align-items: baseline;
-  gap: 6px;
+.hl-q::first-letter {
+  text-transform: uppercase;
 }
 
-.sc-g b {
-  font: 800 18px/1 var(--cond);
-  white-space: nowrap;
-}
-
-.sc-g span {
+.hl-g {
+  grid-column: 2;
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font: 500 13px/1.2 var(--body);
-  color: var(--dim);
-}
-
-.sc-g em {
-  font: 800 12px/1 var(--cond);
-  font-style: normal;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  color: var(--ob);
-}
-
-.sc-holes button .sc-off {
-  font: 800 18px/1 var(--cond);
-}
-
-.sc-off small {
-  display: block;
-  margin-top: 2px;
-  font: 800 9px/1 var(--cond);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font: 400 14px/1.3 var(--body);
   color: var(--faint);
-}
-
-.end-actions {
-  display: grid;
-  gap: 6px;
 }
 
 .skip {

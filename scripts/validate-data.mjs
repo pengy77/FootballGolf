@@ -70,6 +70,7 @@ for (const file of files) {
   if (c.retired !== undefined && typeof c.retired !== 'boolean') errs.push('retired must be a boolean');
   if (c.tiebreak !== undefined && (typeof c.tiebreak !== 'string' || !c.tiebreak.trim())) errs.push('tiebreak must be a sentence, e.g. "goal difference, then goals scored"');
   if (c.standings !== undefined && typeof c.standings !== 'boolean') errs.push('standings must be a boolean');
+  if (c.outside !== undefined && (typeof c.outside !== 'string' || !/^not /.test(c.outside))) errs.push('outside must read after a name, lower case, e.g. "not a UEFA member"');
   // Standings never share a place, so the hole's "Level on points? Split by …" line needs the real rule.
   if (c.standings && !c.tiebreak) errs.push('standings lists need a "tiebreak" sentence saying how level entries were separated');
   if (c.series !== undefined || c.season !== undefined) {

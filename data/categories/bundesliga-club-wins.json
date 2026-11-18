@@ -1,0 +1,508 @@
+{
+  "id": "bundesliga-club-wins",
+  "title": "Most Bundesliga wins (clubs)",
+  "prompt": "most Bundesliga wins by a club",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "metric": "Wins",
+  "order": "desc",
+  "description": "All-time Bundesliga match wins: every club that has played in the Bundesliga, from 1963–64 to the end of the 2025–26 season; tied clubs share a place.",
+  "tags": [
+    "europe",
+    "clubs"
+  ],
+  "source": {
+    "name": "Wikipedia: All-time Bundesliga table, to the end of 2025–26 (cross-checked with the German Wikipedia's Ewige Tabelle der Fußball-Bundesliga)",
+    "url": "https://en.wikipedia.org/wiki/All-time_Bundesliga_table",
+    "asOf": "2026-11-18"
+  },
+  "items": [
+    {
+      "id": "bayern-munich",
+      "name": "Bayern Munich",
+      "sub": "61 seasons",
+      "value": 1265,
+      "aliases": [
+        "Bayern",
+        "FC Bayern",
+        "Bayern München"
+      ],
+      "wd": "Q15789"
+    },
+    {
+      "id": "borussia-dortmund",
+      "name": "Borussia Dortmund",
+      "sub": "59 seasons",
+      "value": 926,
+      "aliases": [
+        "Dortmund",
+        "BVB"
+      ],
+      "wd": "Q41420"
+    },
+    {
+      "id": "werder-bremen",
+      "name": "Werder Bremen",
+      "sub": "61 seasons",
+      "value": 843,
+      "aliases": [
+        "Werder",
+        "Bremen"
+      ],
+      "wd": "Q51976"
+    },
+    {
+      "id": "vfb-stuttgart",
+      "name": "VfB Stuttgart",
+      "sub": "59 seasons",
+      "value": 821,
+      "wd": "Q4512"
+    },
+    {
+      "id": "borussia-monchengladbach",
+      "name": "Borussia Mönchengladbach",
+      "sub": "58 seasons",
+      "value": 786,
+      "aliases": [
+        "Gladbach",
+        "Mönchengladbach"
+      ],
+      "wd": "Q101959"
+    },
+    {
+      "id": "hamburger-sv",
+      "name": "Hamburger SV",
+      "sub": "56 seasons",
+      "value": 755,
+      "aliases": [
+        "Hamburg",
+        "HSV"
+      ],
+      "wd": "Q51974"
+    },
+    {
+      "id": "bayer-leverkusen",
+      "name": "Bayer Leverkusen",
+      "sub": "47 seasons",
+      "value": 713,
+      "aliases": [
+        "Leverkusen"
+      ],
+      "wd": "Q104761"
+    },
+    {
+      "id": "eintracht-frankfurt",
+      "name": "Eintracht Frankfurt",
+      "sub": "57 seasons",
+      "value": 712,
+      "aliases": [
+        "Frankfurt"
+      ],
+      "wd": "Q38245"
+    },
+    {
+      "id": "schalke-04",
+      "name": "Schalke 04",
+      "sub": "54 seasons",
+      "value": 700,
+      "aliases": [
+        "Schalke"
+      ],
+      "wd": "Q32494"
+    },
+    {
+      "id": "1-fc-koln",
+      "name": "1. FC Köln",
+      "sub": "53 seasons",
+      "value": 683,
+      "wd": "Q104770"
+    },
+    {
+      "id": "1-fc-kaiserslautern",
+      "name": "1. FC Kaiserslautern",
+      "sub": "44 seasons",
+      "value": 575,
+      "wd": "Q8466"
+    },
+    {
+      "id": "hertha-bsc",
+      "name": "Hertha BSC",
+      "sub": "40 seasons",
+      "value": 477,
+      "wd": "Q102720"
+    },
+    {
+      "id": "vfl-bochum",
+      "name": "VfL Bochum",
+      "sub": "38 seasons",
+      "value": 391,
+      "wd": "Q105861"
+    },
+    {
+      "id": "vfl-wolfsburg",
+      "name": "VfL Wolfsburg",
+      "sub": "29 seasons",
+      "value": 366,
+      "wd": "Q101859"
+    },
+    {
+      "id": "1-fc-nurnberg",
+      "name": "1. FC Nürnberg",
+      "sub": "33 seasons",
+      "value": 344,
+      "wd": "Q15786"
+    },
+    {
+      "id": "hannover-96",
+      "name": "Hannover 96",
+      "sub": "30 seasons",
+      "value": 308,
+      "wd": "Q33748"
+    },
+    {
+      "id": "msv-duisburg",
+      "name": "MSV Duisburg",
+      "sub": "28 seasons",
+      "value": 296,
+      "wd": "Q154293"
+    },
+    {
+      "id": "sc-freiburg",
+      "name": "SC Freiburg",
+      "sub": "26 seasons",
+      "value": 293,
+      "aliases": [
+        "Freiburg"
+      ],
+      "wd": "Q106394"
+    },
+    {
+      "id": "fortuna-dusseldorf",
+      "name": "Fortuna Düsseldorf",
+      "sub": "25 seasons",
+      "value": 264,
+      "wd": "Q151747"
+    },
+    {
+      "id": "eintracht-braunschweig",
+      "name": "Eintracht Braunschweig",
+      "sub": "21 seasons",
+      "value": 242,
+      "wd": "Q154053"
+    },
+    {
+      "id": "karlsruher-sc",
+      "name": "Karlsruher SC",
+      "sub": "24 seasons",
+      "value": 241,
+      "aliases": [
+        "Karlsruhe",
+        "KSC"
+      ],
+      "wd": "Q105853"
+    },
+    {
+      "id": "1860-munich",
+      "name": "1860 Munich",
+      "sub": "20 seasons",
+      "value": 238,
+      "aliases": [
+        "TSV 1860 München",
+        "1860 München",
+        "TSV 1860"
+      ],
+      "wd": "Q131603"
+    },
+    {
+      "id": "mainz-05",
+      "name": "Mainz 05",
+      "sub": "20 seasons",
+      "value": 225,
+      "wd": "Q105254"
+    },
+    {
+      "id": "tsg-hoffenheim",
+      "name": "TSG Hoffenheim",
+      "sub": "18 seasons",
+      "value": 218,
+      "aliases": [
+        "1899 Hoffenheim"
+      ],
+      "wd": "Q22707"
+    },
+    {
+      "id": "rb-leipzig",
+      "name": "RB Leipzig",
+      "sub": "10 seasons",
+      "value": 180,
+      "aliases": [
+        "Leipzig"
+      ],
+      "wd": "Q702455"
+    },
+    {
+      "id": "arminia-bielefeld",
+      "name": "Arminia Bielefeld",
+      "sub": "19 seasons",
+      "value": 167,
+      "wd": "Q105844"
+    },
+    {
+      "id": "fc-augsburg",
+      "name": "FC Augsburg",
+      "sub": "15 seasons",
+      "value": 153,
+      "wd": "Q15755"
+    },
+    {
+      "id": "kfc-uerdingen",
+      "name": "KFC Uerdingen",
+      "sub": "14 seasons",
+      "value": 138,
+      "aliases": [
+        "Bayer Uerdingen",
+        "KFC Uerdingen 05"
+      ],
+      "wd": "Q157464"
+    },
+    {
+      "id": "hansa-rostock",
+      "name": "Hansa Rostock",
+      "sub": "12 seasons",
+      "value": 124,
+      "wd": "Q142005"
+    },
+    {
+      "id": "union-berlin",
+      "name": "Union Berlin",
+      "sub": "7 seasons",
+      "value": 87,
+      "wd": "Q141971"
+    },
+    {
+      "id": "kickers-offenbach",
+      "name": "Kickers Offenbach",
+      "sub": "7 seasons",
+      "value": 77,
+      "wd": "Q159936"
+    },
+    {
+      "id": "fc-st-pauli",
+      "name": "FC St. Pauli",
+      "sub": "10 seasons",
+      "value": 72,
+      "wd": "Q6463"
+    },
+    {
+      "id": "waldhof-mannheim",
+      "name": "Waldhof Mannheim",
+      "sub": "7 seasons",
+      "value": 71,
+      "wd": "Q170134"
+    },
+    {
+      "id": "rot-weiss-essen",
+      "name": "Rot-Weiss Essen",
+      "sub": "7 seasons",
+      "value": 61,
+      "wd": "Q155218"
+    },
+    {
+      "id": "energie-cottbus",
+      "name": "Energie Cottbus",
+      "sub": "6 seasons",
+      "value": 56,
+      "wd": "Q107818"
+    },
+    {
+      "id": "alemannia-aachen",
+      "name": "Alemannia Aachen",
+      "sub": "4 seasons",
+      "value": 43,
+      "wd": "Q153535"
+    },
+    {
+      "id": "rot-weiss-oberhausen",
+      "name": "Rot-Weiß Oberhausen",
+      "sub": "4 seasons",
+      "value": 36,
+      "wd": "Q157020"
+    },
+    {
+      "id": "wattenscheid-09",
+      "name": "Wattenscheid 09",
+      "sub": "4 seasons",
+      "value": 34,
+      "aliases": [
+        "SG Wattenscheid 09"
+      ],
+      "wd": "Q524378"
+    },
+    {
+      "id": "dynamo-dresden",
+      "name": "Dynamo Dresden",
+      "sub": "4 seasons",
+      "value": 33,
+      "wd": "Q141931"
+    },
+    {
+      "id": "1-fc-saarbrucken",
+      "name": "1. FC Saarbrücken",
+      "sub": "5 seasons",
+      "value": 32,
+      "aliases": [
+        "Saarbrücken"
+      ],
+      "wd": "Q157463"
+    },
+    {
+      "id": "darmstadt-98",
+      "name": "Darmstadt 98",
+      "sub": "5 seasons",
+      "value": 31,
+      "wd": "Q479351"
+    },
+    {
+      "id": "wuppertaler-sv",
+      "name": "Wuppertaler SV",
+      "sub": "3 seasons",
+      "value": 25,
+      "wd": "Q170157"
+    },
+    {
+      "id": "borussia-neunkirchen",
+      "name": "Borussia Neunkirchen",
+      "sub": "3 seasons",
+      "value": 25,
+      "wd": "Q819382"
+    },
+    {
+      "id": "1-fc-heidenheim",
+      "name": "1. FC Heidenheim",
+      "sub": "3 seasons",
+      "value": 24,
+      "wd": "Q162251"
+    },
+    {
+      "id": "fc-08-homburg",
+      "name": "FC 08 Homburg",
+      "sub": "3 seasons",
+      "value": 21,
+      "aliases": [
+        "Homburg"
+      ],
+      "wd": "Q137499"
+    },
+    {
+      "id": "spvgg-unterhaching",
+      "name": "SpVgg Unterhaching",
+      "sub": "2 seasons",
+      "value": 20,
+      "wd": "Q158121"
+    },
+    {
+      "id": "stuttgarter-kickers",
+      "name": "Stuttgarter Kickers",
+      "sub": "2 seasons",
+      "value": 20,
+      "wd": "Q170105"
+    },
+    {
+      "id": "fc-ingolstadt",
+      "name": "FC Ingolstadt",
+      "sub": "2 seasons",
+      "value": 18,
+      "wd": "Q170117"
+    },
+    {
+      "id": "sc-paderborn",
+      "name": "SC Paderborn",
+      "sub": "2 seasons",
+      "value": 11,
+      "wd": "Q160532"
+    },
+    {
+      "id": "tennis-borussia-berlin",
+      "name": "Tennis Borussia Berlin",
+      "sub": "2 seasons",
+      "value": 11,
+      "wd": "Q639560"
+    },
+    {
+      "id": "ssv-ulm",
+      "name": "SSV Ulm",
+      "sub": "1 season",
+      "value": 9,
+      "aliases": [
+        "SSV Ulm 1846",
+        "Ulm"
+      ],
+      "wd": "Q14551982"
+    },
+    {
+      "id": "sc-fortuna-koln",
+      "name": "SC Fortuna Köln",
+      "sub": "1 season",
+      "value": 8,
+      "wd": "Q310608"
+    },
+    {
+      "id": "greuther-furth",
+      "name": "Greuther Fürth",
+      "sub": "2 seasons",
+      "value": 7,
+      "wd": "Q153539"
+    },
+    {
+      "id": "preussen-munster",
+      "name": "Preußen Münster",
+      "sub": "1 season",
+      "value": 7,
+      "aliases": [
+        "SC Preußen Münster"
+      ],
+      "wd": "Q316865"
+    },
+    {
+      "id": "holstein-kiel",
+      "name": "Holstein Kiel",
+      "sub": "1 season",
+      "value": 6,
+      "wd": "Q157828"
+    },
+    {
+      "id": "blau-weiss-90-berlin",
+      "name": "Blau-Weiß 90 Berlin",
+      "sub": "1 season",
+      "value": 3,
+      "aliases": [
+        "Blau-Weiß 1890 Berlin",
+        "Blau-Weiss Berlin"
+      ],
+      "wd": "Q3163786"
+    },
+    {
+      "id": "vfb-leipzig",
+      "name": "VfB Leipzig",
+      "sub": "1 season",
+      "value": 3,
+      "aliases": [
+        "Lokomotive Leipzig",
+        "Lok Leipzig"
+      ],
+      "wd": "Q162317"
+    },
+    {
+      "id": "tasmania-berlin",
+      "name": "Tasmania Berlin",
+      "sub": "1 season",
+      "value": 2,
+      "aliases": [
+        "Tasmania 1900 Berlin",
+        "SC Tasmania 1900 Berlin"
+      ],
+      "wd": "Q819332"
+    }
+  ]
+}

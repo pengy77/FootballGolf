@@ -7,8 +7,7 @@ import { asGame } from '../live/room';
 import { loadRooms, roomCode, type RoomRecord } from '../live/rooms';
 import { Ball, BALL_FILL, ShotArt, useKick } from '../components/art';
 import { BallRow, type BallEntry } from '../components/BallRow';
-import { ShareRow, useGameShare } from '../components/GameShare';
-import { markOf } from '../components/Scorecard';
+import { ShareButton, useGameShare } from '../components/GameShare';
 import { Icons, IconButton, Logo } from '../components/ui';
 
 type Row = { key: string; names: string; line: string; href: string; tone?: 'live' | 'wait'; at: number };
@@ -46,19 +45,17 @@ function roomRow(r: RoomRecord): Row | null {
   return { key: `r:${r.id}`, names: `Online · ${names}`, line, href, tone: s.phase === 'done' ? undefined : 'live', at: r.updatedAt };
 }
 
-/** A played hole's strokes, with the scorecard's pencil mark (mk-ace, mk-circle, mk-box2, mk-plain). */
-type Mark = { strokes: number; mark: string; label: string };
+/** A played hole's strokes. */
+type Mark = { strokes: number; label: string };
 
-/** Your strokes so far, pencilled like the scorecard; the next hole ringed. */
+/** Your strokes so far; the next hole lit. */
 function Track({ marks, at }: { marks: (Mark | null)[]; at: number }) {
   return (
     <ol className="track" aria-label={`Hole ${at + 1} of ${marks.length} next`}>
       {marks.map((m, i) => (
         <li key={i} className={i === at ? 'is-next' : m ? 'is-played' : undefined} aria-label={m?.label}>
           {m ? (
-            <span className={`csc-s ${m.mark}`}>
-              <i>{m.strokes}</i>
-            </span>
+            m.strokes
           ) : (
             i + 1
           )}
@@ -91,7 +88,7 @@ function Today({ askName }: { askName?: boolean }) {
   const me = g?.me ?? null;
   const played = !!g && me !== null && isDone(g, me);
   const rivals = g ? donePlayers(g).filter((i) => i !== me) : [];
-  const { share, copyLink, urlBox, label: shareLabel } = useGameShare(played ? g : undefined);
+  const { share, urlBox, label: shareLabel } = useGameShare(played ? g : undefined);
 
   const n = g?.holes.length ?? DAILY_HOLES;
   const picked = g && me !== null ? g.players[me].picks.filter((x) => x !== null).length : 0;
@@ -102,7 +99,7 @@ function Today({ askName }: { askName?: boolean }) {
     const pick = g.players[me].picks[i];
     if (pick === null || !(played || i < g.revealed)) return null;
     const r = holeResult(g.holes[i], pick);
-    return { strokes: r.strokes, mark: markOf(r), label: `Hole ${i + 1}: ${r.strokes} ${r.strokes === 1 ? 'stroke' : 'strokes'}` };
+    return { strokes: r.strokes, label: `Hole ${i + 1}: ${r.strokes} ${r.strokes === 1 ? 'stroke' : 'strokes'}` };
   });
 
   const play = () => {
@@ -150,9 +147,9 @@ function Today({ askName }: { askName?: boolean }) {
     return (
       <section className="today is-played" aria-label="Today's daily, played">
         <p className="today-date">{stamp}</p>
-        <BallRow entries={entries} onInvite={share} big />
+        <BallRow entries={entries} big />
         {versus && <p className="today-versus">{versus}</p>}
-        <ShareRow label={shareLabel} onShare={share} onCopy={copyLink} />
+        <ShareButton label={shareLabel} onShare={share} />
         {urlBox}
         <p className="today-next">
           <button type="button" className="link-btn" onClick={() => go(`/results/${id}`)}>

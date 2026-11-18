@@ -1,71 +1,22 @@
 import { useCallback, useState } from 'react';
-import { CATEGORY_BY_ID } from '../lib/data';
+import { CATEGORY_BY_ID, offListReason } from '../lib/data';
 import { holeResult, ordinal, pickLabel, rankLabel, type Game, type HoleResult } from '../lib/game';
 import { HoleSheet } from './HoleSheet';
-import { colorOf } from './ui';
 
-/**
- * Pencil marks, the way a golf card is marked, keyed off the hole's verdict: a gold double ring for
- * a hole in one, circled when it landed within 5 places (tap-in or on the green), double-boxed when
- * it was off the list, and a plain number otherwise.
- */
-export function markOf(r: HoleResult): string {
-  switch (r.played ? r.verdict?.tone : undefined) {
-    case 'ace':
-      return 'mk-ace';
-    case 'great':
-    case 'good':
-      return 'mk-circle';
-    case 'ob':
-      return 'mk-box2';
-    default:
-      return 'mk-plain';
-  }
-}
-
-/** Where their pick sits on the list (or why it doesn't), then who it was. Off-list wording matches the reveal. */
-function Guess({ r, size }: { r: HoleResult; size: number }) {
-  if (!r.played) return <span className="sc-g">–</span>;
-  if (r.item) {
-    return (
-      <span className="sc-g">
-        <b>{rankLabel(r.item)}</b>
-        <span>{r.item.name}</span>
-      </span>
-    );
-  }
-  if (r.timedOut || !r.offList) {
-    return (
-      <span className="sc-g">
-        <em>{pickLabel(r)}</em>
-      </span>
-    );
-  }
-  return (
-    <span className="sc-g">
-      <em>Not in top {size}</em>
-      <span>{r.offList}</span>
-    </span>
-  );
-}
-
-/** Places off, in the reveal's verdict colour. Capped holes say so, since 40 is less than the real gap. */
-function Off({ r }: { r: HoleResult }) {
-  if (!r.played) return <span className="sc-off">–</span>;
-  const tone = r.verdict?.tone === 'ob' ? 'bad' : (r.verdict?.tone ?? 'ok');
-  return (
-    <span className="sc-off" style={{ color: `var(--${tone})` }}>
-      {r.strokes}
-      {r.capped && <small>max</small>}
-    </span>
-  );
+/** What you answered, in quiet words: the name and where it sits on the list, or why it isn't on it. */
+function guessLine(r: HoleResult, why: string): string {
+  if (!r.played) return 'Not played';
+  if (r.item) return `${r.item.name} · ${rankLabel(r.item)}`;
+  if (r.timedOut || !r.offList) return pickLabel(r);
+  return `${r.offList} · ${why}`;
 }
 
 /**
- * The final card, laid out like a golf scorecard: holes left to right, a row of strokes per player
- * (in finishing order) and their totals. The holes themselves are listed under the card with the
- * target, the guess and how far off it was; tap one (or its number on the card) for everyone's
- * picks and the full list.
+ * The golf scorecard: holes left to right, each hole's target where a real card prints par, then a
+ * row of strokes per player and their totals. Plain pencil numbers, nothing else.
+ *
+ * Under it, the holes in words: what each one asked and (alone) what you said. Numbers live on the
+ * card, words in the list. Tap a hole on either for everyone's picks and the full list.
  */
 export function Scorecard({ game, players }: { game: Game; players: number[] }) {
   const [open, setOpen] = useState<number | null>(null);
@@ -73,7 +24,7 @@ export function Scorecard({ game, players }: { game: Game; players: number[] }) 
   const solo = players.length === 1;
   const results = players.map((p) => game.holes.map((h, i) => holeResult(h, game.players[p].picks[i] ?? null)));
   const totals = results.map((row) => row.reduce((s, r) => s + r.strokes, 0));
-  const best = Math.min(...totals);
+  const name = (p: number) => (p === game.me ? 'You' : game.players[p].name);
 
   return (
     <section className="sc-block" aria-label="Scorecard">
@@ -97,67 +48,47 @@ export function Scorecard({ game, players }: { game: Game; players: number[] }) 
             </tr>
           </thead>
           <tbody>
+            <tr className="csc-target">
+              <th scope="row" className="csc-label">
+                Target
+              </th>
+              {game.holes.map((h, i) => (
+                <td key={i} aria-label={ordinal(h.target)}>
+                  {h.target}
+                </td>
+              ))}
+              <td className="csc-tot" />
+            </tr>
             {players.map((p, row) => (
               <tr key={p} className="csc-player">
-                <th scope="row" className={`csc-label csc-name${solo ? '' : ` sc-${colorOf(p)}`}`}>
-                  {game.players[p].name}
+                <th scope="row" className="csc-label">
+                  {name(p)}
                 </th>
                 {results[row].map((r, i) => (
-                  <td key={i} className={`csc-s ${markOf(r)}`}>
-                    <i>{r.played ? r.strokes : ''}</i>
-                  </td>
+                  <td key={i}>{r.played ? r.strokes : ''}</td>
                 ))}
-                <td className={`csc-tot${!solo && totals[row] === best ? ' is-best' : ''}`}>
-                  <b>{totals[row]}</b>
-                </td>
+                <td className="csc-tot">{totals[row]}</td>
               </tr>
             ))}
           </tbody>
         </table>
-        <p className="csc-key">
-          <span className="csc-s mk-ace" aria-hidden="true">
-            <i />
-          </span>
-          Hole in one
-          <span className="csc-s mk-circle" aria-hidden="true">
-            <i />
-          </span>
-          Within 5
-          <span className="csc-s mk-box2" aria-hidden="true">
-            <i />
-          </span>
-          Not on the list
-        </p>
       </div>
 
-      {/* Each hole: the question, then the target, where the guess landed and how far off it was. */}
-      <div className={`sc-holes${solo ? ' is-solo' : ''}`}>
-        <div className="sc-head" aria-hidden="true">
-          <span className="sc-t">Target</span>
-          {solo && <span className="sc-g">Your guess</span>}
-          {solo && <span className="sc-off">Off</span>}
-        </div>
-        <ol>
-          {game.holes.map((h, i) => {
-            const cat = CATEGORY_BY_ID.get(h.cat);
-            const r = results[0][i];
-            const said = solo
-              ? `, target ${ordinal(h.target)}, ${r.item ? `you guessed ${r.item.name}, ${rankLabel(r.item)}` : pickLabel(r)}, ${r.strokes} off`
-              : `, target ${ordinal(h.target)}`;
-            return (
-              <li key={i}>
-                <button type="button" onClick={() => setOpen(i)} aria-label={`Hole ${i + 1}: ${cat?.prompt}${said}`}>
-                  <span className="sc-n">{i + 1}</span>
-                  <span className="sc-prompt">{cat?.prompt}</span>
-                  <span className="sc-t">{ordinal(h.target)}</span>
-                  {solo && <Guess r={r} size={cat?.size ?? 0} />}
-                  {solo && <Off r={r} />}
-                </button>
-              </li>
-            );
-          })}
-        </ol>
-      </div>
+      <ol className="holes">
+        {game.holes.map((h, i) => {
+          const cat = CATEGORY_BY_ID.get(h.cat);
+          const said = solo ? guessLine(results[0][i], cat ? offListReason(cat) : 'not on the list') : null;
+          return (
+            <li key={i}>
+              <button type="button" onClick={() => setOpen(i)} aria-label={`Hole ${i + 1}: ${cat?.prompt}, target ${ordinal(h.target)}${said ? `, you said ${said}` : ''}`}>
+                <span className="hl-n">{i + 1}</span>
+                <span className="hl-q">{cat?.prompt}</span>
+                {said && <span className="hl-g">{said}</span>}
+              </button>
+            </li>
+          );
+        })}
+      </ol>
       <HoleSheet game={game} hole={open ?? 0} players={players} open={open !== null} onClose={close} />
     </section>
   );

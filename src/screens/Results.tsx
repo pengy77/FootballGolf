@@ -3,10 +3,9 @@ import { NavGuard, useApp, useCanonicalUrl } from '../App';
 import { createGame, donePlayers, isDone, isPlayable, ordinal, standings } from '../lib/game';
 import { findGame } from '../lib/store';
 import { dailyId, dailyLabel, formatCountdown, msUntilNextDaily } from '../lib/daily';
-import { BALL_FILL, Trophy } from '../components/art';
-import { BallRow, type BallEntry } from '../components/BallRow';
+import { Trophy } from '../components/art';
 import { Confetti } from '../components/Confetti';
-import { ShareRow, useGameShare } from '../components/GameShare';
+import { ShareButton, useGameShare } from '../components/GameShare';
 import { Reveal, RevealCta } from '../components/Reveal';
 import { Scorecard } from '../components/Scorecard';
 import { HoleDots, Icons, IconButton, TopBar } from '../components/ui';
@@ -24,7 +23,7 @@ export default function Results({ id }: { id: string }) {
   const [armed, setArmed] = useState(false);
   const summary = !!game && step >= game.holes.length;
   const onSettled = useCallback(() => setArmed(true), []);
-  const { share, copyLink, urlBox, label: shareLabel, canShare } = useGameShare(game);
+  const { share, urlBox, label: shareLabel, canShare } = useGameShare(game);
 
   useEffect(() => setArmed(false), [step]);
 
@@ -88,25 +87,14 @@ export default function Results({ id }: { id: string }) {
   const iWon = meIndex !== null && winners.some((w) => w.index === meIndex);
 
   const rematch = () => {
-    if (game.mode === 'challenge') return go('/new/live');
     const g = createGame({ mode: 'local', course: game.course, holes: n, names: game.players.map((p) => p.name), me: null });
     saveGame(g);
     go(`/play/${g.id}`);
   };
 
-  // Everyone's ball and strokes, best first; a lone card leaves room for one more.
-  const entries: BallEntry[] = s.map((x) => ({
-    key: x.index,
-    name: game.players[x.index].name,
-    total: x.total,
-    fill: solo ? '#fff' : BALL_FILL[x.index % BALL_FILL.length],
-    you: x.index === meIndex,
-    lead: !solo && winners.length === 1 && x.place === 1,
-  }));
   const winnerName = game.players[winners[0].index].name;
-  const headline = solo
-    ? null
-    : winners.length > 1
+  const headline =
+    winners.length > 1
       ? 'All square'
       : iWon
         ? 'You win!'
@@ -114,6 +102,7 @@ export default function Results({ id }: { id: string }) {
           ? `You came ${ordinal(s.find((x) => x.index === meIndex)!.place)}`
           : `${winnerName} wins`;
 
+  // Read top to bottom: the result, the card it came from, then the one thing to do with it.
   return (
     <main className="screen results">
       <TopBar
@@ -125,29 +114,37 @@ export default function Results({ id }: { id: string }) {
         title={<span className="topbar-label">{daily ?? 'Full time'}</span>}
       />
 
-      <section className={`final${solo ? ' is-solo' : ''}`}>
-        {headline && (
-          <>
-            <Trophy size={44} />
-            <p className={`final-big is-name${headline.length > 12 ? ' is-long' : ''}`}>{headline}</p>
-          </>
-        )}
-        <BallRow entries={entries} big={meIndex !== null} onInvite={solo && meIndex !== null ? share : undefined} />
-        {canShare && <ShareRow label={shareLabel} onShare={share} onCopy={copyLink} />}
-        {urlBox}
-        {isToday && meIndex !== null && <p className="today-next">Next daily in {formatCountdown(msUntilNextDaily())}</p>}
-      </section>
+      {solo ? (
+        <section className="final is-solo" aria-label="Your score">
+          <p className="final-score">{s[0].total}</p>
+          <p className="final-unit">{s[0].total === 1 ? 'stroke' : 'strokes'}</p>
+        </section>
+      ) : (
+        <section className="final" aria-label="Result">
+          <Trophy size={40} />
+          <p className={`final-big is-name${headline.length > 12 ? ' is-long' : ''}`}>{headline}</p>
+        </section>
+      )}
 
       <Scorecard game={game} players={s.map((x) => x.index)} />
 
-      <div className="end-actions">
-        <button type="button" className="btn btn-secondary btn-block" onClick={rematch}>
-          {game.mode === 'local' ? 'Rematch' : 'Play mates online'}
-        </button>
-        {done.length >= 2 && (
-          <button type="button" className="btn btn-ghost btn-block" onClick={() => setStep(0)}>
-            Watch the reveal again
+      <div className="sticky-cta results-cta">
+        {canShare ? (
+          <ShareButton label={shareLabel} onShare={share} />
+        ) : (
+          game.mode === 'local' && (
+            <button type="button" className="btn btn-primary btn-lg btn-block" onClick={rematch}>
+              Rematch
+            </button>
+          )
+        )}
+        {urlBox}
+        {canShare && game.mode === 'local' ? (
+          <button type="button" className="link-btn" onClick={rematch}>
+            Rematch
           </button>
+        ) : (
+          isToday && meIndex !== null && <p className="today-next">Next daily in {formatCountdown(msUntilNextDaily())}</p>
         )}
       </div>
       <Confetti fire={confetti} />

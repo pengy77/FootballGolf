@@ -3,8 +3,8 @@ import { useApp } from '../App';
 import { dailyLabel } from '../lib/daily';
 import { donePlayers, type Game } from '../lib/game';
 import { shareUrl } from '../lib/link';
-import { copyText, shareLink } from '../lib/share';
-import { Icons, IconButton } from './ui';
+import { shareLink } from '../lib/share';
+import { Icons } from './ui';
 
 /**
  * What sharing a finished card says and does, wherever the card is shown (home and the results).
@@ -44,7 +44,10 @@ export function shareCopy(game: Game) {
   return { text, label, solo, canShare: me !== null || !solo };
 }
 
-/** Share (native sheet on phones, clipboard elsewhere) and copy, with a long-press fallback when both fail. */
+/**
+ * Share: the native sheet on phones (which has its own Copy), the clipboard elsewhere. If both fail
+ * the link is shown so it can be long-pressed. One button does it all, so there's no separate copy.
+ */
 export function useGameShare(game: Game | undefined) {
   const { toast } = useApp();
   const [showUrl, setShowUrl] = useState(false);
@@ -61,31 +64,20 @@ export function useGameShare(game: Game | undefined) {
     }
   };
 
-  const copyLink = async () => {
-    if (await copyText(url)) return toast('Link copied. Paste it into your chat.');
-    setShowUrl(true);
-    toast("Couldn't copy. Long-press the link below to copy it.");
-  };
-
   const urlBox = showUrl ? (
     <p className="share-url" aria-label="Game link">
       {url}
     </p>
   ) : null;
 
-  return { share, copyLink, urlBox, label: copy?.label ?? 'Share', canShare: !!copy?.canShare };
+  return { share, urlBox, label: copy?.label ?? 'Share', canShare: !!copy?.canShare };
 }
 
-/** The share button with a copy-link button beside it. */
-export function ShareRow({ label, onShare, onCopy, primary = true }: { label: string; onShare: () => void; onCopy: () => void; primary?: boolean }) {
+/** The one way to send a card on. */
+export function ShareButton({ label, onShare }: { label: string; onShare: () => void }) {
   return (
-    <div className="share-row">
-      <button type="button" className={`btn btn-block ${primary ? 'btn-primary btn-lg' : 'btn-secondary'}`} onClick={onShare}>
-        {Icons.share} {label}
-      </button>
-      <IconButton label="Copy link" onClick={onCopy}>
-        {Icons.copy}
-      </IconButton>
-    </div>
+    <button type="button" className="btn btn-primary btn-lg btn-block share-btn" onClick={onShare}>
+      {Icons.share} {label}
+    </button>
   );
 }

@@ -5,6 +5,7 @@
   "noun": "club",
   "nounPlural": "clubs",
   "kind": "club",
+  "retired": true,
   "metric": "Stadium capacity",
   "order": "desc",
   "description": "All 92 Premier League and EFL clubs in 2026–27 (including the four Welsh clubs), ranked by the capacity of their home ground. Name the club: you don't need to know the stadium.",

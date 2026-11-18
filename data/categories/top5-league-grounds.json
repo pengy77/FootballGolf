@@ -5,6 +5,7 @@
   "noun": "club",
   "nounPlural": "clubs",
   "kind": "club",
+  "retired": true,
   "metric": "Stadium capacity",
   "order": "desc",
   "description": "Every 2026–27 Premier League, La Liga, Serie A, Bundesliga and Ligue 1 club, ranked by the capacity of its home ground. Name the club: you don't need to know the stadium. Clubs that share a ground (AC Milan and Inter, Lazio and Roma) share a place.",

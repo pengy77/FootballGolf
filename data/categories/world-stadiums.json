@@ -5,6 +5,7 @@
   "noun": "stadium",
   "nounPlural": "stadiums",
   "kind": "stadium",
+  "retired": true,
   "metric": "Capacity",
   "order": "desc",
   "description": "The world's largest stadiums used for association football, by seated capacity as listed on Wikipedia (multi-sport grounds included); stadiums with the same capacity share a rank.",

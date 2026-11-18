@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { formatValue, type Category } from '../lib/data';
+import { formatValue, offListTitle, type Category } from '../lib/data';
 import { FlagIcon, Tag } from './ui';
 
 export interface Mark {
@@ -99,7 +99,7 @@ export function RankedList({ cat, target, marks, outside = [] }: { cat: Category
                 “{o.guess}”
                 {o.marks.map((p) => <Tag key={p.index} name={p.name} index={p.index} small />)}
               </span>
-              <span className="rl-sub">Not in the top {cat.size}</span>
+              <span className="rl-sub">{offListTitle(cat)}</span>
             </span>
             <span className="rl-val" />
           </li>

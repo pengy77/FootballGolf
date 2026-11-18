@@ -145,7 +145,7 @@ try {
   await A.page.goto(BASE, { waitUntil: 'networkidle0' });
   await snap(A.page, 'A-home-recent');
   // Today's daily is done: home shows the scores and the share button instead of Play.
-  await A.page.waitForFunction(() => document.querySelector('.today.is-played .ballrow') && document.querySelector('.today .share-row'));
+  await A.page.waitForFunction(() => document.querySelector('.today.is-played .ballrow') && document.querySelector('.today .share-btn'));
 
   // --- A opens B's result in a fresh browser (e.g. Home Screen app): one tap to claim the card
   console.log('Player A: fresh browser');

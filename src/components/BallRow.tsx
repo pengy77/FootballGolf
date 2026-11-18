@@ -11,11 +11,8 @@ export interface BallEntry {
   lead?: boolean;
 }
 
-/**
- * Everyone's round as their ball with the strokes under it, best first: the comparison at a glance.
- * An empty dashed ball at the end asks for one more player; tapping it shares the course.
- */
-export function BallRow({ entries, onInvite, inviteLabel = 'Mate', big }: { entries: BallEntry[]; onInvite?: () => void; inviteLabel?: string; big?: boolean }) {
+/** Everyone's round as their ball with the strokes under it, best first: the comparison at a glance. */
+export function BallRow({ entries, big }: { entries: BallEntry[]; big?: boolean }) {
   return (
     <ol className={`ballrow${big ? ' is-big' : ''}`} aria-label="Scores">
       {entries.map((e, i) => (
@@ -32,19 +29,6 @@ export function BallRow({ entries, onInvite, inviteLabel = 'Mate', big }: { entr
           <span className="br-name">{e.you ? 'You' : e.name}</span>
         </li>
       ))}
-      {onInvite && (
-        <li className="is-invite" style={{ animationDelay: `${entries.length * 80}ms` } as CSSProperties}>
-          <button type="button" className="br-invite" onClick={onInvite} aria-label={`Challenge a mate`}>
-            <span className="br-q" aria-hidden="true">
-              +
-            </span>
-            <b className="br-total" aria-hidden="true">
-              ?
-            </b>
-            <span className="br-name">{inviteLabel}</span>
-          </button>
-        </li>
-      )}
     </ol>
   );
 }

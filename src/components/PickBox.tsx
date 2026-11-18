@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import type { Category, Item } from '../lib/data';
+import { offListTitle, type Category, type Item } from '../lib/data';
 import { entitiesNow, exactSuggestion, loadEntities, suggest, type Entity, type Suggestion } from '../lib/entities';
 import { norm } from '../lib/search';
 import { Ball } from './art';
@@ -113,14 +113,17 @@ export function PickBox({
     const isItem = 'item' in selection;
     const shown = selection.shown ?? (isItem ? { name: selection.item.name, sub: selection.item.sub ?? '' } : undefined);
     // Only a name nobody recognises is flagged: a known name stays a surprise until the reveal.
-    const unknown = !shown;
+    // Except on a closed list (every UEFA member is on it): picking from outside that set is a slip,
+    // not a guess, so say so while there's still time to change it.
+    const outside = !isItem && !!cat.outside && !!shown;
+    const unknown = !shown || outside;
     return (
       <div className={`pick-chosen${unknown ? ' is-ob' : ''}`}>
         <Ball size={30} className="pick-chosen-ball" />
         <div className="pick-chosen-text">
           <div className="pick-chosen-name">{shown ? shown.name : !isItem && selection.offList ? `“${selection.offList}”` : 'No answer'}</div>
           {shown?.sub && <div className="pick-chosen-sub">{shown.sub}</div>}
-          {unknown && <div className="pick-chosen-warn">{!isItem && selection.offList ? `Unknown ${cat.noun}: out of bounds` : 'Out of bounds'}</div>}
+          {unknown && <div className="pick-chosen-warn">{outside ? `${offListTitle(cat)}: out of bounds. Tap × to change` : !isItem && selection.offList ? `Unknown ${cat.noun}: out of bounds` : 'Out of bounds'}</div>}
         </div>
         <button
           type="button"

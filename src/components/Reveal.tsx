@@ -1,5 +1,5 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
-import { CATEGORY_BY_ID, formatValue } from '../lib/data';
+import { CATEGORY_BY_ID, formatValue, offListReason, offListTitle } from '../lib/data';
 import { holeResult, nearestRank, ordinal, perfectAnswers, pickLabel, type Game } from '../lib/game';
 import { buzz } from '../lib/share';
 import { Ball, BALL_FILL } from './art';
@@ -7,7 +7,6 @@ import { Confetti } from './Confetti';
 import { Course, framing, scale, terrainFor, wholeList, type Terrain, type YScale } from './Course';
 import { HoleCard } from './HoleCard';
 import { HoleSheet } from './HoleSheet';
-import { markOf } from './Scorecard';
 import { TEE_Y, teeX } from './Tee';
 import { Icons } from './ui';
 
@@ -385,7 +384,7 @@ export function Reveal({
                             <CountUp to={s.r.strokes} run={showGap} instant={instant} />
                           </b>
                           {s.r.offList && <small className="m-guess">{pickLabel(s.r)}</small>}
-                          <small>{s.r.timedOut ? 'Out of time' : s.r.offList ? `Not in the top ${cat.size}` : 'No answer'}</small>
+                          <small>{s.r.timedOut ? 'Out of time' : s.r.offList ? offListTitle(cat) : 'No answer'}</small>
                         </>
                       ) : (
                         <b>
@@ -441,7 +440,7 @@ export function Reveal({
 
       <p className="sr-only" aria-live="polite">
         {answered &&
-          `${shots.map((s) => `${solo ? 'You' : game.players[s.p].name}: ${pickLabel(s.r)}${s.rank ? `, ${ordinal(s.rank)}` : s.r.offList ? `, not in the top ${cat.size}` : ''}, ${s.r.strokes} strokes.`).join(' ')} The answer was ${pins.map((x) => x.name).join(', ')}.`}
+          `${shots.map((s) => `${solo ? 'You' : game.players[s.p].name}: ${pickLabel(s.r)}${s.rank ? `, ${ordinal(s.rank)}` : s.r.offList ? `, ${offListReason(cat)}` : ''}, ${s.r.strokes} strokes.`).join(' ')} The answer was ${pins.map((x) => x.name).join(', ')}.`}
       </p>
 
       <HoleSheet game={game} hole={hole} players={players} open={sheet} onClose={() => setSheet(false)} />
@@ -489,7 +488,7 @@ function ScoreBar({
                 className={`${k === hole ? 'is-now' : ''}${v !== null ? ' is-filled' : ''}${v === 0 ? ' is-ace' : ''}`}
               >
                 <small>{k + 1}</small>
-                <span className={`csc-s ${r ? markOf(r) : ''}`}>
+                <span className="csc-s">
                   <i key={v === null ? 'e' : 'v'}>{v ?? ''}</i>
                 </span>
               </li>
