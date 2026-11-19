@@ -1,7 +1,7 @@
 {
   "id": "pl-club-wins",
   "title": "Most Premier League wins (clubs)",
-  "prompt": "most Premier League wins by a club",
+  "prompt": "club with the most Premier League wins",
   "noun": "club",
   "nounPlural": "clubs",
   "kind": "club",

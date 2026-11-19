@@ -1,10 +1,11 @@
 {
   "id": "ligue-1-top-scorers",
   "title": "Ligue 1 all-time top scorers",
-  "prompt": "most Ligue 1 goals",
+  "prompt": "player with the most Ligue 1 goals",
   "noun": "player",
   "nounPlural": "players",
   "kind": "player",
+  "retired": true,
   "metric": "Goals",
   "order": "desc",
   "description": "All-time French top-flight (Division 1 / Ligue 1) goals since 1932–33, for every player who has scored 100 or more. Florian Thauvin updated to 8 November 2026.",

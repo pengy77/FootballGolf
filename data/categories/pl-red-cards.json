@@ -1,14 +1,14 @@
 {
   "id": "pl-red-cards",
   "title": "Premier League all-time red cards",
-  "prompt": "most Premier League red cards",
+  "prompt": "player with the most Premier League red cards",
   "noun": "player",
   "nounPlural": "players",
   "kind": "player",
+  "retired": true,
   "metric": "Red cards",
   "order": "desc",
   "description": "Every player sent off six or more times in the Premier League since 1992–93; tied players share a rank.",
-  "retired": true,
   "tags": [
     "premier-league",
     "players"

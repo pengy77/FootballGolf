@@ -1,10 +1,11 @@
 {
   "id": "la-liga-club-wins",
   "title": "Most La Liga wins (clubs)",
-  "prompt": "most La Liga wins by a club",
+  "prompt": "club with the most La Liga wins",
   "noun": "club",
   "nounPlural": "clubs",
   "kind": "club",
+  "retired": true,
   "metric": "Wins",
   "order": "desc",
   "description": "All-time La Liga match wins: every club that has played in Spain's top flight, from 1929 to the end of the 2025–26 season; tied clubs share a place.",

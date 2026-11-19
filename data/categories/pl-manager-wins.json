@@ -1,7 +1,7 @@
 {
   "id": "pl-manager-wins",
   "title": "Most Premier League wins as a manager",
-  "prompt": "most Premier League wins as a manager",
+  "prompt": "manager with the most Premier League wins",
   "noun": "manager",
   "nounPlural": "managers",
   "kind": "manager",

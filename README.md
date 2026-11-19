@@ -1,6 +1,6 @@
 # Football Golf ⛳
 
-A football quiz played like golf. Each hole gives you a target, like *"the 42nd most Champions League match wins"*. Name the club, player, stadium or nation you think sits closest to that rank. Every place you're off is a stroke, and the fewest strokes wins.
+A football quiz played like golf. Each hole gives you a target, like *"the 42nd most Champions League match wins"*. Name the club, player, manager or country you think sits closest to that rank. Every place you're off is a stroke, and the fewest strokes wins.
 
 **Play:** https://pengy77.github.io/FootballGolf/
 
@@ -42,8 +42,19 @@ Every ranked list lives in `data/categories/<id>.json` (schema enforced by `scri
 - **One clear answer per hole.** A target ("pin") only ever lands on a place exactly one entry holds, never inside a tie and never on a 0. Every live list needs at least 12 such places in its target range. Where an official tiebreak exists (league tables: goal difference, then goals scored), put it in `tiebreak` and each item's `tb`.
 - **`kind`** (`player`, `manager`, `club`, `stadium` or `nation`) says what an answer is. The pick box searches every known entity of that kind, not just the list, so a suggestion never gives away whether a name is on the list.
 - **Ask for what players know.** A list of club grounds ranked by capacity is a `club` list: the club is the answer and the ground goes in `sub` (`"name": "Tranmere Rovers", "sub": "Prenton Park"`), so nobody needs the stadium's name. Clubs that share a ground share a place. `english-league-stadiums` keeps the stadium-slug item ids it had before it asked for clubs, so old links still score. Only lists with grounds no club calls home (`world-stadiums`) ask for the stadium.
+- **Say what to name.** Every `prompt` contains its `noun` ("**club** with the most Premier League wins", "**country** in the FIFA world ranking"), and the hole shows that word in yellow next to the rank. The validator checks it.
 - **`retired: true`** takes a list out of new courses but keeps old links scoring.
 - **Season tables** (`standings: true`, `series`, `season`) are one league's final table for one season, e.g. `serie-a-2015-16.json` in series `serie-a-table`. Items are in official finishing order, so every club holds its own place even when level on points; `tiebreak` says how level clubs were split. A course or daily draws a series once (like a single list), then one season from it, so a round never has two seasons of the same table.
+
+### Who the questions are for
+
+Players have general football knowledge and watch the Euros and international football. They know the Premier League best, Serie A and La Liga rather well, and the Bundesliga, Ligue 1 and MLS reasonably well. A hole should ask for a name they could know, so:
+
+- **Abroad, stick to the first division.** All-time club lists for La Liga, Serie A and the Bundesliga only rank the clubs in this season's top flight (`*-club-wins-2026-27`, with `outside: "not in the 2026–27 La Liga"`). The all-club versions are retired: "48th most La Liga wins" was Numancia. Each summer, add next season's version and retire this one.
+- **Fame floors.** A list can set `minFame`: a hole's answer must have a page on at least that many Wikimedia sites (`fame` on each entry, written by `node scripts/add-fame.mjs`). Every entry still counts as a guess, so the lists stay deep. Current floors: none for Premier League lists, 30 for England caps, 40 for La Liga and Serie A scorers, 45 for Bundesliga scorers and international goals. A list with a floor needs 8 clean pins instead of 12.
+- **Too obscure to keep.** The all-time Ligue 1 scorers list is retired: most of it is 1950s–70s players, and a floor left only 3–5 pins.
+
+### Building lists
 
 Season tables for the top five leagues from 2010–11 to the last finished season are generated from each season's Wikipedia article:
 
@@ -57,5 +68,6 @@ The search database lives in `data/entities/` and comes from Wikidata (CC0): abo
 
 ```bash
 node scripts/build-entities.mjs   # link the new entries (Wikidata answers are cached in .cache/)
+node scripts/add-fame.mjs         # only if the list sets minFame
 npm run validate
 ```

@@ -1,7 +1,7 @@
 {
   "id": "pl-club-losses",
   "title": "Most Premier League defeats (clubs)",
-  "prompt": "most Premier League defeats by a club",
+  "prompt": "club with the most Premier League defeats",
   "noun": "club",
   "nounPlural": "clubs",
   "kind": "club",

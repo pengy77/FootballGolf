@@ -1,7 +1,7 @@
 {
   "id": "uefa-club-coefficients",
   "title": "UEFA club coefficients",
-  "prompt": "highest UEFA club coefficient (end of 2025–26)",
+  "prompt": "club with the highest UEFA coefficient (end of 2025–26)",
   "noun": "club",
   "nounPlural": "clubs",
   "kind": "club",

@@ -15,6 +15,8 @@ const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const KINDS = ['player', 'manager', 'club', 'stadium', 'nation'];
 /** Every live list needs at least this many clean pins (untied ranks) in its target range. */
 const MIN_PINS = 12;
+/** A list with a fame floor trades variety for answers people know, so it may have fewer. */
+const MIN_FAMOUS_PINS = 8;
 const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 
 // Must match targetRange() in src/lib/game.ts.
@@ -82,7 +84,11 @@ for (const file of files) {
   }
   if (c.id && !SLUG.test(c.id)) errs.push(`id "${c.id}" is not a kebab slug`);
   if (c.id && basename(file, '.json') !== c.id) errs.push(`file name must equal id (${c.id}.json)`);
-  if (c.prompt && /^\d|^the /i.test(c.prompt)) errs.push('prompt must read naturally after an ordinal, e.g. "most Premier League goals"');
+  if (c.prompt && /^\d|^the /i.test(c.prompt)) errs.push('prompt must read naturally after an ordinal, e.g. "player with the most Premier League goals"');
+  // The hole shows this word in yellow next to the rank, so you can see at a glance what to name.
+  if (c.prompt && c.noun && !new RegExp(`\\b${c.noun}\\b`, 'i').test(c.prompt))
+    errs.push(`prompt must say what to name: include the noun "${c.noun}", e.g. "${c.noun} with the most …"`);
+  if (c.minFame !== undefined && (!Number.isInteger(c.minFame) || c.minFame < 1)) errs.push('minFame must be a whole number of Wikimedia sites, e.g. 40');
   if (!c.source || typeof c.source.url !== 'string' || !/^https:\/\//.test(c.source.url) || !c.source.name || !c.source.asOf)
     errs.push('source must be {name, url (https), asOf}');
   if (c.source?.asOf && !/^\d{4}-\d{2}-\d{2}$/.test(c.source.asOf)) errs.push('source.asOf must be YYYY-MM-DD');
@@ -110,6 +116,8 @@ for (const file of files) {
         if (!Array.isArray(it.tb) || it.tb.some((x) => typeof x !== 'number' || !Number.isFinite(x))) errs.push(`${at}.tb must be number[]`);
       }
       if (it.sub !== undefined && typeof it.sub !== 'string') errs.push(`${at}.sub must be a string`);
+      if (it.fame !== undefined && (!Number.isInteger(it.fame) || it.fame < 0)) errs.push(`${at}.fame must be a whole number`);
+      if (c.minFame !== undefined && it.fame === undefined) errs.push(`${at} (${it.name}) has no "fame" but the list sets minFame — run node scripts/add-fame.mjs`);
       if (it.display !== undefined && typeof it.display !== 'string') errs.push(`${at}.display must be a string`);
       if (it.aliases !== undefined && (!Array.isArray(it.aliases) || it.aliases.some((a) => typeof a !== 'string')))
         errs.push(`${at}.aliases must be string[]`);
@@ -128,14 +136,18 @@ for (const file of files) {
         errs.push(`${at} (${it.name}) ranks above the entry before it but comes after it (order is ${c.order}${c.tiebreak ? ', then tiebreaks' : ''})`);
     });
     // A pin is a rank only one entry holds (no tie), with a real value: one clear answer per hole.
+    // With a fame floor, only entries famous enough count (must match buildCategory() in src/lib/data.ts).
     const n = c.items.length;
     const same = (a, b) => !c.standings && a && b && cmp(c.order, a, b) === 0;
     const [lo, hi] = targetRange(n);
     for (let r = lo; r <= hi; r++) {
       const it = c.items[r - 1];
-      if (it && it.value !== 0 && !same(it, c.items[r - 2]) && !same(it, c.items[r])) pins++;
+      const famous = c.minFame === undefined || (it?.fame ?? 0) >= c.minFame;
+      if (it && it.value !== 0 && famous && !same(it, c.items[r - 2]) && !same(it, c.items[r])) pins++;
     }
-    if (!c.retired && pins < MIN_PINS) errs.push(`only ${pins} clean pins (untied ranks ${lo}–${hi}); need ${MIN_PINS}. Trim the tied tail, add a real tiebreak, or set "retired": true`);
+    const need = c.minFame === undefined ? MIN_PINS : MIN_FAMOUS_PINS;
+    if (!c.retired && pins < need)
+      errs.push(`only ${pins} clean pins (untied ranks ${lo}–${hi}${c.minFame === undefined ? '' : `, fame ${c.minFame}+`}); need ${need}. Trim the tied tail, add a real tiebreak, lower minFame, or set "retired": true`);
   }
   if (errs.length) {
     failed++;

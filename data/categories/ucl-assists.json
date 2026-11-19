@@ -1,7 +1,7 @@
 {
   "id": "ucl-assists",
   "title": "Champions League assists",
-  "prompt": "most Champions League assists",
+  "prompt": "player with the most Champions League assists",
   "noun": "player",
   "nounPlural": "players",
   "kind": "player",

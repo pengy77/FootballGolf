@@ -1,10 +1,11 @@
 {
   "id": "bundesliga-club-wins",
   "title": "Most Bundesliga wins (clubs)",
-  "prompt": "most Bundesliga wins by a club",
+  "prompt": "club with the most Bundesliga wins",
   "noun": "club",
   "nounPlural": "clubs",
   "kind": "club",
+  "retired": true,
   "metric": "Wins",
   "order": "desc",
   "description": "All-time Bundesliga match wins: every club that has played in the Bundesliga, from 1963–64 to the end of the 2025–26 season; tied clubs share a place.",

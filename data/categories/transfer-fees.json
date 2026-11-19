@@ -1,9 +1,9 @@
 {
   "id": "transfer-fees",
   "title": "Biggest transfer fees",
-  "prompt": "biggest transfer fee ever paid for a player",
-  "noun": "transfer",
-  "nounPlural": "transfers",
+  "prompt": "player with the biggest transfer fee",
+  "noun": "player",
+  "nounPlural": "players",
   "kind": "player",
   "metric": "Fee",
   "order": "desc",

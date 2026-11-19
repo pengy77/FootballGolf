@@ -1,7 +1,7 @@
 {
   "id": "england-top-scorers",
   "title": "England men's top goalscorers",
-  "prompt": "most goals for the England men's team",
+  "prompt": "player with the most England men's goals",
   "noun": "player",
   "nounPlural": "players",
   "kind": "player",

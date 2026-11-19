@@ -1187,6 +1187,12 @@ p {
   transition: font-size 0.3s var(--cam);
 }
 
+/* What to name ("club", "player"…), in the rank's yellow: "42nd club with the most La Liga wins". */
+.hole-noun {
+  font-style: normal;
+  color: var(--yellow);
+}
+
 .hole-info {
   align-self: start;
   width: 36px;

@@ -1,0 +1,191 @@
+{
+  "id": "bundesliga-club-wins-2026-27",
+  "title": "Most Bundesliga wins: 2026–27 clubs",
+  "prompt": "current Bundesliga club with the most Bundesliga wins",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "outside": "not in the 2026–27 Bundesliga",
+  "metric": "Wins",
+  "order": "desc",
+  "description": "All-time Bundesliga match wins, from 1963–64 to the end of the 2025–26 season, for the 18 clubs in the 2026–27 Bundesliga (SV Elversberg is new to the Bundesliga, so 0); tied clubs share a place.",
+  "tags": [
+    "europe",
+    "clubs"
+  ],
+  "source": {
+    "name": "Wikipedia: All-time Bundesliga table, to the end of 2025–26 (cross-checked with the German Wikipedia's Ewige Tabelle der Fußball-Bundesliga); this season's clubs from Wikipedia: 2026–27 Bundesliga",
+    "url": "https://en.wikipedia.org/wiki/All-time_Bundesliga_table",
+    "asOf": "2026-11-19"
+  },
+  "items": [
+    {
+      "id": "bayern-munich",
+      "name": "Bayern Munich",
+      "sub": "61 seasons",
+      "value": 1265,
+      "aliases": [
+        "Bayern",
+        "FC Bayern",
+        "Bayern München"
+      ],
+      "wd": "Q15789"
+    },
+    {
+      "id": "borussia-dortmund",
+      "name": "Borussia Dortmund",
+      "sub": "59 seasons",
+      "value": 926,
+      "aliases": [
+        "Dortmund",
+        "BVB"
+      ],
+      "wd": "Q41420"
+    },
+    {
+      "id": "werder-bremen",
+      "name": "Werder Bremen",
+      "sub": "61 seasons",
+      "value": 843,
+      "aliases": [
+        "Werder",
+        "Bremen"
+      ],
+      "wd": "Q51976"
+    },
+    {
+      "id": "vfb-stuttgart",
+      "name": "VfB Stuttgart",
+      "sub": "59 seasons",
+      "value": 821,
+      "wd": "Q4512"
+    },
+    {
+      "id": "borussia-monchengladbach",
+      "name": "Borussia Mönchengladbach",
+      "sub": "58 seasons",
+      "value": 786,
+      "aliases": [
+        "Gladbach",
+        "Mönchengladbach"
+      ],
+      "wd": "Q101959"
+    },
+    {
+      "id": "hamburger-sv",
+      "name": "Hamburger SV",
+      "sub": "56 seasons",
+      "value": 755,
+      "aliases": [
+        "Hamburg",
+        "HSV"
+      ],
+      "wd": "Q51974"
+    },
+    {
+      "id": "bayer-leverkusen",
+      "name": "Bayer Leverkusen",
+      "sub": "47 seasons",
+      "value": 713,
+      "aliases": [
+        "Leverkusen"
+      ],
+      "wd": "Q104761"
+    },
+    {
+      "id": "eintracht-frankfurt",
+      "name": "Eintracht Frankfurt",
+      "sub": "57 seasons",
+      "value": 712,
+      "aliases": [
+        "Frankfurt"
+      ],
+      "wd": "Q38245"
+    },
+    {
+      "id": "schalke-04",
+      "name": "Schalke 04",
+      "sub": "54 seasons",
+      "value": 700,
+      "aliases": [
+        "Schalke"
+      ],
+      "wd": "Q32494"
+    },
+    {
+      "id": "1-fc-koln",
+      "name": "1. FC Köln",
+      "sub": "53 seasons",
+      "value": 683,
+      "wd": "Q104770"
+    },
+    {
+      "id": "sc-freiburg",
+      "name": "SC Freiburg",
+      "sub": "26 seasons",
+      "value": 293,
+      "aliases": [
+        "Freiburg"
+      ],
+      "wd": "Q106394"
+    },
+    {
+      "id": "mainz-05",
+      "name": "Mainz 05",
+      "sub": "20 seasons",
+      "value": 225,
+      "wd": "Q105254"
+    },
+    {
+      "id": "tsg-hoffenheim",
+      "name": "TSG Hoffenheim",
+      "sub": "18 seasons",
+      "value": 218,
+      "aliases": [
+        "1899 Hoffenheim"
+      ],
+      "wd": "Q22707"
+    },
+    {
+      "id": "rb-leipzig",
+      "name": "RB Leipzig",
+      "sub": "10 seasons",
+      "value": 180,
+      "aliases": [
+        "Leipzig"
+      ],
+      "wd": "Q702455"
+    },
+    {
+      "id": "fc-augsburg",
+      "name": "FC Augsburg",
+      "sub": "15 seasons",
+      "value": 153,
+      "wd": "Q15755"
+    },
+    {
+      "id": "union-berlin",
+      "name": "Union Berlin",
+      "sub": "7 seasons",
+      "value": 87,
+      "wd": "Q141971"
+    },
+    {
+      "id": "sc-paderborn",
+      "name": "SC Paderborn",
+      "sub": "2 seasons",
+      "value": 11,
+      "wd": "Q160532"
+    },
+    {
+      "id": "sv-elversberg",
+      "name": "SV Elversberg",
+      "sub": "First Bundesliga season",
+      "value": 0,
+      "aliases": [
+        "Elversberg"
+      ],
+      "wd": "Q692691"
+    }
+  ]
+}

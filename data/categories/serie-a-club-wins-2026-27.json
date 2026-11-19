@@ -1,0 +1,182 @@
+{
+  "id": "serie-a-club-wins-2026-27",
+  "title": "Most Serie A wins: 2026–27 clubs",
+  "prompt": "current Serie A club with the most Serie A wins",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "outside": "not in the 2026–27 Serie A",
+  "metric": "Wins",
+  "order": "desc",
+  "description": "All-time Serie A match wins, from 1929–30 (1945–46, split into regional groups, not counted) to the end of the 2025–26 season, for the 20 clubs in the 2026–27 Serie A; tied clubs share a place.",
+  "tags": [
+    "europe",
+    "clubs"
+  ],
+  "source": {
+    "name": "Wikipedia (Italian): Classifica perpetua della Serie A dal 1929, to the end of 2025–26; this season's clubs from Wikipedia: 2026–27 Serie A",
+    "url": "https://it.wikipedia.org/wiki/Classifica_perpetua_della_Serie_A_dal_1929",
+    "asOf": "2026-11-19"
+  },
+  "items": [
+    {
+      "id": "juventus",
+      "name": "Juventus",
+      "sub": "93 seasons",
+      "value": 1730,
+      "aliases": [
+        "Juve"
+      ],
+      "wd": "Q1422"
+    },
+    {
+      "id": "inter-milan",
+      "name": "Inter Milan",
+      "sub": "94 seasons",
+      "value": 1624,
+      "aliases": [
+        "Inter",
+        "Internazionale"
+      ],
+      "wd": "Q631"
+    },
+    {
+      "id": "ac-milan",
+      "name": "AC Milan",
+      "sub": "92 seasons",
+      "value": 1526,
+      "aliases": [
+        "Milan"
+      ],
+      "wd": "Q1543"
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "sub": "93 seasons",
+      "value": 1347,
+      "aliases": [
+        "AS Roma"
+      ],
+      "wd": "Q2739"
+    },
+    {
+      "id": "fiorentina",
+      "name": "Fiorentina",
+      "sub": "88 seasons",
+      "value": 1178,
+      "wd": "Q2052"
+    },
+    {
+      "id": "napoli",
+      "name": "Napoli",
+      "sub": "80 seasons",
+      "value": 1117,
+      "aliases": [
+        "SSC Napoli"
+      ],
+      "wd": "Q2641"
+    },
+    {
+      "id": "lazio",
+      "name": "Lazio",
+      "sub": "83 seasons",
+      "value": 1108,
+      "aliases": [
+        "SS Lazio"
+      ],
+      "wd": "Q2609"
+    },
+    {
+      "id": "torino",
+      "name": "Torino",
+      "sub": "82 seasons",
+      "value": 993,
+      "wd": "Q2768"
+    },
+    {
+      "id": "bologna",
+      "name": "Bologna",
+      "sub": "79 seasons",
+      "value": 960,
+      "wd": "Q1893"
+    },
+    {
+      "id": "atalanta",
+      "name": "Atalanta",
+      "sub": "65 seasons",
+      "value": 729,
+      "wd": "Q1886"
+    },
+    {
+      "id": "genoa",
+      "name": "Genoa",
+      "sub": "58 seasons",
+      "value": 618,
+      "wd": "Q2074"
+    },
+    {
+      "id": "udinese",
+      "name": "Udinese",
+      "sub": "53 seasons",
+      "value": 597,
+      "wd": "Q2798"
+    },
+    {
+      "id": "cagliari",
+      "name": "Cagliari",
+      "sub": "45 seasons",
+      "value": 446,
+      "wd": "Q1900"
+    },
+    {
+      "id": "parma",
+      "name": "Parma",
+      "sub": "29 seasons",
+      "value": 372,
+      "wd": "Q2693"
+    },
+    {
+      "id": "lecce",
+      "name": "Lecce",
+      "sub": "20 seasons",
+      "value": 157,
+      "wd": "Q13391"
+    },
+    {
+      "id": "sassuolo",
+      "name": "Sassuolo",
+      "sub": "12 seasons",
+      "value": 147,
+      "wd": "Q8603"
+    },
+    {
+      "id": "como",
+      "name": "Como",
+      "sub": "15 seasons",
+      "value": 142,
+      "wd": "Q1120838"
+    },
+    {
+      "id": "venezia",
+      "name": "Venezia",
+      "sub": "14 seasons",
+      "value": 105,
+      "wd": "Q501245"
+    },
+    {
+      "id": "monza",
+      "name": "Monza",
+      "sub": "3 seasons",
+      "value": 28,
+      "wd": "Q289482"
+    },
+    {
+      "id": "frosinone",
+      "name": "Frosinone",
+      "sub": "3 seasons",
+      "value": 21,
+      "wd": "Q845043"
+    }
+  ]
+}

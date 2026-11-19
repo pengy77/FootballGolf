@@ -1,7 +1,7 @@
 {
   "id": "pl-club-goals",
   "title": "Most Premier League goals (clubs)",
-  "prompt": "most Premier League goals scored by a club",
+  "prompt": "club with the most Premier League goals",
   "noun": "club",
   "nounPlural": "clubs",
   "kind": "club",

@@ -1,9 +1,9 @@
 {
   "id": "world-cup-table",
   "title": "World Cup all-time table",
-  "prompt": "highest-placed team in the all-time World Cup table",
-  "noun": "nation",
-  "nounPlural": "nations",
+  "prompt": "country in the all-time World Cup table",
+  "noun": "country",
+  "nounPlural": "countries",
   "kind": "nation",
   "metric": "Points",
   "order": "desc",

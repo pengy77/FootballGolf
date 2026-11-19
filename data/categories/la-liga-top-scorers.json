@@ -1,12 +1,13 @@
 {
   "id": "la-liga-top-scorers",
   "title": "La Liga all-time top scorers",
-  "prompt": "most La Liga goals",
+  "prompt": "player with the most La Liga goals",
   "noun": "player",
   "nounPlural": "players",
   "kind": "player",
   "metric": "Goals",
   "order": "desc",
+  "minFame": 40,
   "description": "All-time La Liga goals, for every player who has scored 100 or more.",
   "tags": [
     "europe",
@@ -27,7 +28,8 @@
         "Messi",
         "Leo Messi"
       ],
-      "wd": "Q615"
+      "wd": "Q615",
+      "fame": 228
     },
     {
       "id": "cristiano-ronaldo",
@@ -39,7 +41,8 @@
         "CR7",
         "Cristiano"
       ],
-      "wd": "Q11571"
+      "wd": "Q11571",
+      "fame": 215
     },
     {
       "id": "telmo-zarra",
@@ -49,7 +52,8 @@
       "aliases": [
         "Zarra"
       ],
-      "wd": "Q312408"
+      "wd": "Q312408",
+      "fame": 41
     },
     {
       "id": "karim-benzema",
@@ -59,7 +63,8 @@
       "aliases": [
         "Benzema"
       ],
-      "wd": "Q1912"
+      "wd": "Q1912",
+      "fame": 108
     },
     {
       "id": "hugo-sanchez",
@@ -70,7 +75,8 @@
         "Sánchez",
         "Hugol"
       ],
-      "wd": "Q487155"
+      "wd": "Q487155",
+      "fame": 51
     },
     {
       "id": "raul",
@@ -80,7 +86,8 @@
       "aliases": [
         "Raúl González"
       ],
-      "wd": "Q11576"
+      "wd": "Q11576",
+      "fame": 83
     },
     {
       "id": "alfredo-di-stefano",
@@ -90,7 +97,8 @@
       "aliases": [
         "Di Stéfano"
       ],
-      "wd": "Q164546"
+      "wd": "Q164546",
+      "fame": 90
     },
     {
       "id": "cesar",
@@ -100,7 +108,8 @@
       "aliases": [
         "César Rodríguez"
       ],
-      "wd": "Q110761637"
+      "wd": "Q110761637",
+      "fame": 3
     },
     {
       "id": "quini",
@@ -110,14 +119,16 @@
       "aliases": [
         "Enrique Castro"
       ],
-      "wd": "Q379756"
+      "wd": "Q379756",
+      "fame": 42
     },
     {
       "id": "pahino",
       "name": "Pahiño",
       "sub": "Spain · Celta Vigo, Real Madrid",
       "value": 212,
-      "wd": "Q525599"
+      "wd": "Q525599",
+      "fame": 25
     },
     {
       "id": "antoine-griezmann",
@@ -127,7 +138,8 @@
       "aliases": [
         "Griezmann"
       ],
-      "wd": "Q455462"
+      "wd": "Q455462",
+      "fame": 100
     },
     {
       "id": "mundo",
@@ -137,7 +149,8 @@
       "aliases": [
         "Edmundo Suárez"
       ],
-      "wd": "Q940035"
+      "wd": "Q940035",
+      "fame": 22
     },
     {
       "id": "david-villa",
@@ -147,14 +160,16 @@
       "aliases": [
         "Villa"
       ],
-      "wd": "Q83006"
+      "wd": "Q83006",
+      "fame": 85
     },
     {
       "id": "santillana",
       "name": "Santillana",
       "sub": "Spain · Real Madrid",
       "value": 186,
-      "wd": "Q32763"
+      "wd": "Q32763",
+      "fame": 37
     },
     {
       "id": "guillermo-gorostiza",
@@ -164,7 +179,8 @@
       "aliases": [
         "Gorostiza"
       ],
-      "wd": "Q716545"
+      "wd": "Q716545",
+      "fame": 23
     },
     {
       "id": "juan-arza",
@@ -174,7 +190,8 @@
       "aliases": [
         "Arza"
       ],
-      "wd": "Q978159"
+      "wd": "Q978159",
+      "fame": 24
     },
     {
       "id": "luis-suarez",
@@ -184,14 +201,16 @@
       "aliases": [
         "Suárez"
       ],
-      "wd": "Q26517"
+      "wd": "Q26517",
+      "fame": 113
     },
     {
       "id": "iago-aspas",
       "name": "Iago Aspas",
       "sub": "Spain · Celta Vigo",
       "value": 171,
-      "wd": "Q26380"
+      "wd": "Q26380",
+      "fame": 55
     },
     {
       "id": "samuel-etoo",
@@ -201,7 +220,8 @@
       "aliases": [
         "Eto'o"
       ],
-      "wd": "Q1255625"
+      "wd": "Q1255625",
+      "fame": 91
     },
     {
       "id": "luis-aragones",
@@ -211,7 +231,8 @@
       "aliases": [
         "Aragonés"
       ],
-      "wd": "Q576614"
+      "wd": "Q576614",
+      "fame": 59
     },
     {
       "id": "aritz-aduriz",
@@ -221,7 +242,8 @@
       "aliases": [
         "Aduriz"
       ],
-      "wd": "Q54105"
+      "wd": "Q54105",
+      "fame": 49
     },
     {
       "id": "ferenc-puskas",
@@ -231,7 +253,8 @@
       "aliases": [
         "Puskás"
       ],
-      "wd": "Q482931"
+      "wd": "Q482931",
+      "fame": 93
     },
     {
       "id": "julio-salinas",
@@ -241,7 +264,8 @@
       "aliases": [
         "Salinas"
       ],
-      "wd": "Q155290"
+      "wd": "Q155290",
+      "fame": 53
     },
     {
       "id": "adrian-escudero",
@@ -251,14 +275,16 @@
       "aliases": [
         "Escudero"
       ],
-      "wd": "Q377873"
+      "wd": "Q377873",
+      "fame": 19
     },
     {
       "id": "dani",
       "name": "Dani",
       "sub": "Spain · Athletic Bilbao",
       "value": 147,
-      "wd": "Q19372395"
+      "wd": "Q19372395",
+      "fame": 7
     },
     {
       "id": "raul-tamudo",
@@ -268,7 +294,8 @@
       "aliases": [
         "Tamudo"
       ],
-      "wd": "Q312946"
+      "wd": "Q312946",
+      "fame": 31
     },
     {
       "id": "silvestre-igoa",
@@ -278,7 +305,8 @@
       "aliases": [
         "Igoa"
       ],
-      "wd": "Q771416"
+      "wd": "Q771416",
+      "fame": 23
     },
     {
       "id": "manuel-badenes",
@@ -288,7 +316,8 @@
       "aliases": [
         "Badenes"
       ],
-      "wd": "Q951937"
+      "wd": "Q951937",
+      "fame": 17
     },
     {
       "id": "juan-araujo",
@@ -298,7 +327,8 @@
       "aliases": [
         "Araujo"
       ],
-      "wd": "x-player-juan-araujo"
+      "wd": "x-player-juan-araujo",
+      "fame": 0
     },
     {
       "id": "jose-mari-bakero",
@@ -308,7 +338,8 @@
       "aliases": [
         "Bakero"
       ],
-      "wd": "Q325950"
+      "wd": "Q325950",
+      "fame": 31
     },
     {
       "id": "laszlo-kubala",
@@ -319,7 +350,8 @@
         "Kubala",
         "Ladislao Kubala"
       ],
-      "wd": "Q295732"
+      "wd": "Q295732",
+      "fame": 44
     },
     {
       "id": "jose-luis-panizo",
@@ -329,7 +361,8 @@
       "aliases": [
         "Panizo"
       ],
-      "wd": "Q31980"
+      "wd": "Q31980",
+      "fame": 23
     },
     {
       "id": "jesus-maria-satrustegui",
@@ -339,7 +372,8 @@
       "aliases": [
         "Satrústegui"
       ],
-      "wd": "Q562421"
+      "wd": "Q562421",
+      "fame": 24
     },
     {
       "id": "gerard-moreno",
@@ -349,7 +383,8 @@
       "aliases": [
         "Moreno"
       ],
-      "wd": "Q5550103"
+      "wd": "Q5550103",
+      "fame": 46
     },
     {
       "id": "ismael-urzaiz",
@@ -359,7 +394,8 @@
       "aliases": [
         "Urzaiz"
       ],
-      "wd": "Q360177"
+      "wd": "Q360177",
+      "fame": 30
     },
     {
       "id": "joaquin-murillo",
@@ -369,7 +405,8 @@
       "aliases": [
         "Murillo"
       ],
-      "wd": "x-player-joaquin-murillo"
+      "wd": "x-player-joaquin-murillo",
+      "fame": 0
     },
     {
       "id": "fernando-ansola",
@@ -379,7 +416,8 @@
       "aliases": [
         "Ansola"
       ],
-      "wd": "Q3742881"
+      "wd": "Q3742881",
+      "fame": 8
     },
     {
       "id": "lyuboslav-penev",
@@ -389,7 +427,8 @@
       "aliases": [
         "Penev"
       ],
-      "wd": "Q322073"
+      "wd": "Q322073",
+      "fame": 34
     },
     {
       "id": "roberto-soldado",
@@ -399,7 +438,8 @@
       "aliases": [
         "Soldado"
       ],
-      "wd": "Q218401"
+      "wd": "Q218401",
+      "fame": 49
     },
     {
       "id": "paco-gento",
@@ -409,7 +449,8 @@
       "aliases": [
         "Francisco Gento"
       ],
-      "wd": "Q493081"
+      "wd": "Q493081",
+      "fame": 51
     },
     {
       "id": "diego-forlan",
@@ -419,7 +460,8 @@
       "aliases": [
         "Forlán"
       ],
-      "wd": "Q261534"
+      "wd": "Q261534",
+      "fame": 87
     },
     {
       "id": "eneko-arieta",
@@ -429,7 +471,8 @@
       "aliases": [
         "Arieta"
       ],
-      "wd": "Q1646505"
+      "wd": "Q1646505",
+      "fame": 12
     },
     {
       "id": "alvaro-negredo",
@@ -439,7 +482,8 @@
       "aliases": [
         "Negredo"
       ],
-      "wd": "Q210916"
+      "wd": "Q210916",
+      "fame": 53
     },
     {
       "id": "paco-campos",
@@ -449,7 +493,8 @@
       "aliases": [
         "Campos"
       ],
-      "wd": "Q38261"
+      "wd": "Q38261",
+      "fame": 14
     },
     {
       "id": "mario-kempes",
@@ -459,7 +504,8 @@
       "aliases": [
         "Kempes"
       ],
-      "wd": "Q180649"
+      "wd": "Q180649",
+      "fame": 70
     },
     {
       "id": "epi-fernandez",
@@ -469,7 +515,8 @@
       "aliases": [
         "Epi"
       ],
-      "wd": "x-player-epi-fernandez"
+      "wd": "x-player-epi-fernandez",
+      "fame": 0
     },
     {
       "id": "fernando-morientes",
@@ -479,7 +526,8 @@
       "aliases": [
         "Morientes"
       ],
-      "wd": "Q45567"
+      "wd": "Q45567",
+      "fame": 48
     },
     {
       "id": "emilio-butragueno",
@@ -490,21 +538,24 @@
         "Butragueño",
         "El Buitre"
       ],
-      "wd": "Q41235"
+      "wd": "Q41235",
+      "fame": 50
     },
     {
       "id": "pirri",
       "name": "Pirri",
       "sub": "Spain · Real Madrid",
       "value": 123,
-      "wd": "Q442441"
+      "wd": "Q442441",
+      "fame": 34
     },
     {
       "id": "herrerita",
       "name": "Herrerita",
       "sub": "Spain · Oviedo",
       "value": 119,
-      "wd": "Q107011826"
+      "wd": "Q107011826",
+      "fame": 2
     },
     {
       "id": "amancio",
@@ -514,7 +565,8 @@
       "aliases": [
         "Amancio Amaro"
       ],
-      "wd": "Q453653"
+      "wd": "Q453653",
+      "fame": 41
     },
     {
       "id": "ronaldo",
@@ -525,7 +577,8 @@
         "Ronaldo Nazário",
         "R9"
       ],
-      "wd": "Q529207"
+      "wd": "Q529207",
+      "fame": 125
     },
     {
       "id": "agustin-gainza",
@@ -535,7 +588,8 @@
       "aliases": [
         "Gaínza"
       ],
-      "wd": "Q399271"
+      "wd": "Q399271",
+      "fame": 24
     },
     {
       "id": "cristhian-stuani",
@@ -545,7 +599,8 @@
       "aliases": [
         "Stuani"
       ],
-      "wd": "Q2608851"
+      "wd": "Q2608851",
+      "fame": 46
     },
     {
       "id": "waldo",
@@ -555,7 +610,8 @@
       "aliases": [
         "Waldo Machado"
       ],
-      "wd": "Q1333472"
+      "wd": "Q1333472",
+      "fame": 22
     },
     {
       "id": "maranon",
@@ -565,7 +621,8 @@
       "aliases": [
         "Rafael Marañón"
       ],
-      "wd": "Q421810"
+      "wd": "Q421810",
+      "fame": 21
     },
     {
       "id": "jose-juncosa",
@@ -575,7 +632,8 @@
       "aliases": [
         "Juncosa"
       ],
-      "wd": "Q586164"
+      "wd": "Q586164",
+      "fame": 18
     },
     {
       "id": "davor-suker",
@@ -585,7 +643,8 @@
       "aliases": [
         "Šuker"
       ],
-      "wd": "Q189217"
+      "wd": "Q189217",
+      "fame": 66
     },
     {
       "id": "roberto-lopez-ufarte",
@@ -595,14 +654,16 @@
       "aliases": [
         "López Ufarte"
       ],
-      "wd": "Q2722051"
+      "wd": "Q2722051",
+      "fame": 24
     },
     {
       "id": "raul-garcia",
       "name": "Raúl García",
       "sub": "Spain · Atlético Madrid, Athletic Bilbao",
       "value": 112,
-      "wd": "Q316772"
+      "wd": "Q316772",
+      "fame": 45
     },
     {
       "id": "carlos-munoz",
@@ -612,7 +673,8 @@
       "aliases": [
         "Muñoz"
       ],
-      "wd": "Q517654"
+      "wd": "Q517654",
+      "fame": 18
     },
     {
       "id": "pedro-uralde",
@@ -622,7 +684,8 @@
       "aliases": [
         "Uralde"
       ],
-      "wd": "Q2554252"
+      "wd": "Q2554252",
+      "fame": 21
     },
     {
       "id": "jose-angel-ziganda",
@@ -632,7 +695,8 @@
       "aliases": [
         "Ziganda"
       ],
-      "wd": "Q704571"
+      "wd": "Q704571",
+      "fame": 24
     },
     {
       "id": "jose-eulogio-garate",
@@ -642,14 +706,16 @@
       "aliases": [
         "Gárate"
       ],
-      "wd": "Q552946"
+      "wd": "Q552946",
+      "fame": 26
     },
     {
       "id": "bata",
       "name": "Bata",
       "sub": "Spain · Athletic Bilbao",
       "value": 108,
-      "wd": "x-player-bata"
+      "wd": "x-player-bata",
+      "fame": 0
     },
     {
       "id": "fernando-gomez",
@@ -659,7 +725,8 @@
       "aliases": [
         "Gómez"
       ],
-      "wd": "x-player-fernando-gomez"
+      "wd": "x-player-fernando-gomez",
+      "fame": 0
     },
     {
       "id": "mariano-martin",
@@ -669,7 +736,8 @@
       "aliases": [
         "Martín"
       ],
-      "wd": "Q554710"
+      "wd": "Q554710",
+      "fame": 21
     },
     {
       "id": "gonzalo-higuain",
@@ -679,14 +747,16 @@
       "aliases": [
         "Higuaín"
       ],
-      "wd": "Q483846"
+      "wd": "Q483846",
+      "fame": 76
     },
     {
       "id": "rivaldo",
       "name": "Rivaldo",
       "sub": "Brazil · Deportivo, Barcelona",
       "value": 107,
-      "wd": "Q483577"
+      "wd": "Q483577",
+      "fame": 79
     },
     {
       "id": "pichi-alonso",
@@ -696,7 +766,8 @@
       "aliases": [
         "Pichi"
       ],
-      "wd": "Q2618093"
+      "wd": "Q2618093",
+      "fame": 17
     },
     {
       "id": "jose-luis-artetxe",
@@ -706,7 +777,8 @@
       "aliases": [
         "Artetxe"
       ],
-      "wd": "x-player-jose-luis-artetxe"
+      "wd": "x-player-jose-luis-artetxe",
+      "fame": 0
     },
     {
       "id": "isidro-langara",
@@ -716,7 +788,8 @@
       "aliases": [
         "Lángara"
       ],
-      "wd": "Q470448"
+      "wd": "Q470448",
+      "fame": 30
     },
     {
       "id": "meho-kodro",
@@ -726,7 +799,8 @@
       "aliases": [
         "Kodro"
       ],
-      "wd": "Q380566"
+      "wd": "Q380566",
+      "fame": 25
     },
     {
       "id": "fernando-hierro",
@@ -736,14 +810,16 @@
       "aliases": [
         "Hierro"
       ],
-      "wd": "Q205499"
+      "wd": "Q205499",
+      "fame": 54
     },
     {
       "id": "hermidita",
       "name": "Hermidita",
       "sub": "Spain · Celta Vigo",
       "value": 104,
-      "wd": "Q31878"
+      "wd": "Q31878",
+      "fame": 11
     },
     {
       "id": "cayetano-re",
@@ -753,7 +829,8 @@
       "aliases": [
         "Ré"
       ],
-      "wd": "Q598115"
+      "wd": "Q598115",
+      "fame": 23
     },
     {
       "id": "luis-enrique",
@@ -763,7 +840,8 @@
       "aliases": [
         "Lucho"
       ],
-      "wd": "Q222789"
+      "wd": "Q222789",
+      "fame": 68
     },
     {
       "id": "guillermo-campanal",
@@ -773,7 +851,8 @@
       "aliases": [
         "Campanal"
       ],
-      "wd": "x-player-guillermo-campanal"
+      "wd": "x-player-guillermo-campanal",
+      "fame": 0
     },
     {
       "id": "fernando-torres",
@@ -784,7 +863,8 @@
         "Torres",
         "El Niño"
       ],
-      "wd": "Q42731"
+      "wd": "Q42731",
+      "fame": 92
     },
     {
       "id": "mikel-oyarzabal",
@@ -794,7 +874,8 @@
       "aliases": [
         "Oyarzabal"
       ],
-      "wd": "Q21195147"
+      "wd": "Q21195147",
+      "fame": 57
     },
     {
       "id": "manuel-sarabia",
@@ -804,7 +885,8 @@
       "aliases": [
         "Sarabia"
       ],
-      "wd": "Q930130"
+      "wd": "Q930130",
+      "fame": 20
     },
     {
       "id": "victorio-unamuno",
@@ -814,7 +896,8 @@
       "aliases": [
         "Unamuno"
       ],
-      "wd": "x-player-victorio-unamuno"
+      "wd": "x-player-victorio-unamuno",
+      "fame": 0
     },
     {
       "id": "julen-guerrero",
@@ -824,7 +907,8 @@
       "aliases": [
         "Guerrero"
       ],
-      "wd": "Q350851"
+      "wd": "Q350851",
+      "fame": 30
     },
     {
       "id": "roy-makaay",
@@ -834,7 +918,8 @@
       "aliases": [
         "Makaay"
       ],
-      "wd": "Q152725"
+      "wd": "Q152725",
+      "fame": 47
     }
   ]
 }

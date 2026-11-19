@@ -1,7 +1,7 @@
 {
   "id": "ucl-club-wins",
   "title": "Champions League match wins",
-  "prompt": "most Champions League match wins (up to 2024–25)",
+  "prompt": "club with the most Champions League match wins (up to 2024–25)",
   "noun": "club",
   "nounPlural": "clubs",
   "kind": "club",

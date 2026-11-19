@@ -1,7 +1,7 @@
 {
   "id": "pl-assists",
   "title": "Premier League all-time assists",
-  "prompt": "most Premier League assists",
+  "prompt": "player with the most Premier League assists",
   "noun": "player",
   "nounPlural": "players",
   "kind": "player",

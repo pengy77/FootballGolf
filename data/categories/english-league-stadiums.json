@@ -1,7 +1,7 @@
 {
   "id": "english-league-stadiums",
   "title": "English league clubs by stadium capacity",
-  "prompt": "biggest stadium in English league football: which club plays there?",
+  "prompt": "club with the biggest stadium in English league football",
   "noun": "club",
   "nounPlural": "clubs",
   "kind": "club",

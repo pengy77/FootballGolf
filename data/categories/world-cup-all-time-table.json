@@ -1,9 +1,9 @@
 {
   "id": "world-cup-all-time-table",
   "title": "World Cup all-time table",
-  "prompt": "most World Cup points of all time",
-  "noun": "nation",
-  "nounPlural": "nations",
+  "prompt": "country with the most World Cup points",
+  "noun": "country",
+  "nounPlural": "countries",
   "kind": "nation",
   "retired": true,
   "metric": "Points",

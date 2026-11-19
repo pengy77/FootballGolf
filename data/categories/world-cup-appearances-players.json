@@ -1,7 +1,7 @@
 {
   "id": "world-cup-appearances-players",
   "title": "World Cup appearances",
-  "prompt": "most men's World Cup matches played",
+  "prompt": "player with the most men's World Cup matches",
   "noun": "player",
   "nounPlural": "players",
   "kind": "player",

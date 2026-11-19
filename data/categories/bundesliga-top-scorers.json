@@ -1,12 +1,13 @@
 {
   "id": "bundesliga-top-scorers",
   "title": "Bundesliga all-time top scorers",
-  "prompt": "most Bundesliga goals",
+  "prompt": "player with the most Bundesliga goals",
   "noun": "player",
   "nounPlural": "players",
   "kind": "player",
   "metric": "Goals",
   "order": "desc",
+  "minFame": 45,
   "description": "All-time Bundesliga goals since 1963–64, for every player who has scored 90 or more. Players on 90–99 goals from RSSSF’s all-time list, checked against StatMuse; Patrik Schick to 31 October 2026 from German Wikipedia.",
   "tags": [
     "europe",
@@ -27,7 +28,8 @@
         "Müller",
         "Der Bomber"
       ],
-      "wd": "Q43744"
+      "wd": "Q43744",
+      "fame": 91
     },
     {
       "id": "robert-lewandowski",
@@ -38,7 +40,8 @@
         "Lewandowski",
         "Lewy"
       ],
-      "wd": "Q151269"
+      "wd": "Q151269",
+      "fame": 106
     },
     {
       "id": "klaus-fischer",
@@ -48,7 +51,8 @@
       "aliases": [
         "Fischer"
       ],
-      "wd": "Q169999"
+      "wd": "Q169999",
+      "fame": 35
     },
     {
       "id": "jupp-heynckes",
@@ -59,7 +63,8 @@
         "Heynckes",
         "Josef Heynckes"
       ],
-      "wd": "Q152107"
+      "wd": "Q152107",
+      "fame": 62
     },
     {
       "id": "manfred-burgsmuller",
@@ -69,7 +74,8 @@
       "aliases": [
         "Burgsmüller"
       ],
-      "wd": "Q63920"
+      "wd": "Q63920",
+      "fame": 24
     },
     {
       "id": "claudio-pizarro",
@@ -79,7 +85,8 @@
       "aliases": [
         "Pizarro"
       ],
-      "wd": "Q109397"
+      "wd": "Q109397",
+      "fame": 55
     },
     {
       "id": "ulf-kirsten",
@@ -89,7 +96,8 @@
       "aliases": [
         "Kirsten"
       ],
-      "wd": "Q310519"
+      "wd": "Q310519",
+      "fame": 40
     },
     {
       "id": "stefan-kuntz",
@@ -99,7 +107,8 @@
       "aliases": [
         "Kuntz"
       ],
-      "wd": "Q437241"
+      "wd": "Q437241",
+      "fame": 40
     },
     {
       "id": "dieter-muller",
@@ -109,7 +118,8 @@
       "aliases": [
         "Müller"
       ],
-      "wd": "Q60417"
+      "wd": "Q60417",
+      "fame": 29
     },
     {
       "id": "klaus-allofs",
@@ -119,7 +129,8 @@
       "aliases": [
         "Allofs"
       ],
-      "wd": "Q166336"
+      "wd": "Q166336",
+      "fame": 39
     },
     {
       "id": "mario-gomez",
@@ -129,7 +140,8 @@
       "aliases": [
         "Gómez"
       ],
-      "wd": "Q45766"
+      "wd": "Q45766",
+      "fame": 72
     },
     {
       "id": "hannes-lohr",
@@ -139,7 +151,8 @@
       "aliases": [
         "Löhr"
       ],
-      "wd": "Q702406"
+      "wd": "Q702406",
+      "fame": 29
     },
     {
       "id": "karl-heinz-rummenigge",
@@ -150,7 +163,8 @@
         "Rummenigge",
         "Kalle Rummenigge"
       ],
-      "wd": "Q152871"
+      "wd": "Q152871",
+      "fame": 65
     },
     {
       "id": "bernd-holzenbein",
@@ -160,7 +174,8 @@
       "aliases": [
         "Hölzenbein"
       ],
-      "wd": "Q44858"
+      "wd": "Q44858",
+      "fame": 41
     },
     {
       "id": "fritz-walter",
@@ -170,7 +185,8 @@
       "aliases": [
         "Walter"
       ],
-      "wd": "Q22717"
+      "wd": "Q62162",
+      "fame": 20
     },
     {
       "id": "marco-reus",
@@ -180,7 +196,8 @@
       "aliases": [
         "Reus"
       ],
-      "wd": "Q152377"
+      "wd": "Q152377",
+      "fame": 78
     },
     {
       "id": "thomas-muller",
@@ -190,7 +207,8 @@
       "aliases": [
         "Müller"
       ],
-      "wd": "Q43666"
+      "wd": "Q43666",
+      "fame": 94
     },
     {
       "id": "thomas-allofs",
@@ -200,7 +218,8 @@
       "aliases": [
         "Allofs"
       ],
-      "wd": "Q703224"
+      "wd": "Q703224",
+      "fame": 27
     },
     {
       "id": "stefan-kieling",
@@ -212,7 +231,8 @@
         "Kiessling",
         "Stefan Kiessling"
       ],
-      "wd": "Q106387"
+      "wd": "Q106387",
+      "fame": 47
     },
     {
       "id": "andrej-kramaric",
@@ -222,7 +242,8 @@
       "aliases": [
         "Kramarić"
       ],
-      "wd": "Q502898"
+      "wd": "Q502898",
+      "fame": 54
     },
     {
       "id": "bernd-nickel",
@@ -232,7 +253,8 @@
       "aliases": [
         "Nickel"
       ],
-      "wd": "Q316902"
+      "wd": "Q316902",
+      "fame": 20
     },
     {
       "id": "uwe-seeler",
@@ -242,7 +264,8 @@
       "aliases": [
         "Seeler"
       ],
-      "wd": "Q44470"
+      "wd": "Q44470",
+      "fame": 53
     },
     {
       "id": "horst-hrubesch",
@@ -252,7 +275,8 @@
       "aliases": [
         "Hrubesch"
       ],
-      "wd": "Q366559"
+      "wd": "Q366559",
+      "fame": 40
     },
     {
       "id": "giovane-elber",
@@ -262,7 +286,8 @@
       "aliases": [
         "Élber"
       ],
-      "wd": "Q44815"
+      "wd": "Q44815",
+      "fame": 38
     },
     {
       "id": "rudi-voller",
@@ -273,7 +298,8 @@
         "Völler",
         "Rudolf Völler"
       ],
-      "wd": "Q44464"
+      "wd": "Q44464",
+      "fame": 62
     },
     {
       "id": "michael-zorc",
@@ -283,7 +309,8 @@
       "aliases": [
         "Zorc"
       ],
-      "wd": "Q598387"
+      "wd": "Q598387",
+      "fame": 22
     },
     {
       "id": "karl-allgower",
@@ -293,7 +320,8 @@
       "aliases": [
         "Allgöwer"
       ],
-      "wd": "Q68759"
+      "wd": "Q68759",
+      "fame": 25
     },
     {
       "id": "dieter-hoene",
@@ -305,7 +333,8 @@
         "Hoeness",
         "Dieter Hoeness"
       ],
-      "wd": "Q60414"
+      "wd": "Q60414",
+      "fame": 32
     },
     {
       "id": "vedad-ibisevic",
@@ -315,7 +344,8 @@
       "aliases": [
         "Ibišević"
       ],
-      "wd": "Q155604"
+      "wd": "Q155604",
+      "fame": 50
     },
     {
       "id": "martin-max",
@@ -325,7 +355,8 @@
       "aliases": [
         "Max"
       ],
-      "wd": "Q703757"
+      "wd": "Q703757",
+      "fame": 26
     },
     {
       "id": "georg-volkert",
@@ -335,7 +366,8 @@
       "aliases": [
         "Volkert"
       ],
-      "wd": "Q72801"
+      "wd": "Q72801",
+      "fame": 19
     },
     {
       "id": "frank-mill",
@@ -345,7 +377,8 @@
       "aliases": [
         "Mill"
       ],
-      "wd": "Q550144"
+      "wd": "Q550144",
+      "fame": 31
     },
     {
       "id": "herbert-laumen",
@@ -355,7 +388,8 @@
       "aliases": [
         "Laumen"
       ],
-      "wd": "Q878500"
+      "wd": "Q878500",
+      "fame": 10
     },
     {
       "id": "miroslav-klose",
@@ -365,7 +399,8 @@
       "aliases": [
         "Klose"
       ],
-      "wd": "Q80471"
+      "wd": "Q80471",
+      "fame": 101
     },
     {
       "id": "lothar-matthaus",
@@ -375,7 +410,8 @@
       "aliases": [
         "Matthäus"
       ],
-      "wd": "Q36386"
+      "wd": "Q36386",
+      "fame": 85
     },
     {
       "id": "roland-wohlfarth",
@@ -385,7 +421,8 @@
       "aliases": [
         "Wohlfarth"
       ],
-      "wd": "Q683030"
+      "wd": "Q683030",
+      "fame": 21
     },
     {
       "id": "bernd-rupp",
@@ -395,7 +432,8 @@
       "aliases": [
         "Rupp"
       ],
-      "wd": "Q824102"
+      "wd": "Q824102",
+      "fame": 14
     },
     {
       "id": "ronnie-worm",
@@ -406,7 +444,8 @@
         "Worm",
         "Ronald Worm"
       ],
-      "wd": "Q695256"
+      "wd": "Q695256",
+      "fame": 23
     },
     {
       "id": "pierre-littbarski",
@@ -416,7 +455,8 @@
       "aliases": [
         "Littbarski"
       ],
-      "wd": "Q47516"
+      "wd": "Q47516",
+      "fame": 56
     },
     {
       "id": "lothar-emmerich",
@@ -426,7 +466,8 @@
       "aliases": [
         "Emmerich"
       ],
-      "wd": "Q498257"
+      "wd": "Q498257",
+      "fame": 30
     },
     {
       "id": "reiner-geye",
@@ -436,7 +477,8 @@
       "aliases": [
         "Geye"
       ],
-      "wd": "Q486404"
+      "wd": "Q486404",
+      "fame": 13
     },
     {
       "id": "kevin-kuranyi",
@@ -446,7 +488,8 @@
       "aliases": [
         "Kurányi"
       ],
-      "wd": "Q152968"
+      "wd": "Q152968",
+      "fame": 50
     },
     {
       "id": "jurgen-klinsmann",
@@ -456,7 +499,8 @@
       "aliases": [
         "Klinsmann"
       ],
-      "wd": "Q57079"
+      "wd": "Q57079",
+      "fame": 77
     },
     {
       "id": "andreas-moller",
@@ -466,7 +510,8 @@
       "aliases": [
         "Möller"
       ],
-      "wd": "Q155919"
+      "wd": "Q155919",
+      "fame": 49
     },
     {
       "id": "jurgen-grabowski",
@@ -476,7 +521,8 @@
       "aliases": [
         "Grabowski"
       ],
-      "wd": "Q44917"
+      "wd": "Q44917",
+      "fame": 44
     },
     {
       "id": "klaus-toppmoller",
@@ -486,7 +532,8 @@
       "aliases": [
         "Toppmöller"
       ],
-      "wd": "Q508529"
+      "wd": "Q508529",
+      "fame": 24
     },
     {
       "id": "fredi-bobic",
@@ -496,7 +543,8 @@
       "aliases": [
         "Bobic"
       ],
-      "wd": "Q61219"
+      "wd": "Q61219",
+      "fame": 39
     },
     {
       "id": "uwe-rahn",
@@ -506,14 +554,16 @@
       "aliases": [
         "Rahn"
       ],
-      "wd": "Q47470"
+      "wd": "Q47470",
+      "fame": 46
     },
     {
       "id": "ailton",
       "name": "Aílton",
       "sub": "Brazil · Werder Bremen",
       "value": 106,
-      "wd": "Q123310423"
+      "wd": "Q123310423",
+      "fame": 2
     },
     {
       "id": "stephane-chapuisat",
@@ -523,7 +573,8 @@
       "aliases": [
         "Chapuisat"
       ],
-      "wd": "Q313438"
+      "wd": "Q313438",
+      "fame": 33
     },
     {
       "id": "christian-schreier",
@@ -533,7 +584,8 @@
       "aliases": [
         "Schreier"
       ],
-      "wd": "Q463919"
+      "wd": "Q463919",
+      "fame": 15
     },
     {
       "id": "bruno-labbadia",
@@ -543,7 +595,8 @@
       "aliases": [
         "Labbadia"
       ],
-      "wd": "Q57548"
+      "wd": "Q57548",
+      "fame": 27
     },
     {
       "id": "harry-kane",
@@ -553,7 +606,8 @@
       "aliases": [
         "Kane"
       ],
-      "wd": "Q969725"
+      "wd": "Q969725",
+      "fame": 98
     },
     {
       "id": "timo-werner",
@@ -563,7 +617,8 @@
       "aliases": [
         "Werner"
       ],
-      "wd": "Q3529022"
+      "wd": "Q3529022",
+      "fame": 63
     },
     {
       "id": "marco-bode",
@@ -573,7 +628,8 @@
       "aliases": [
         "Bode"
       ],
-      "wd": "Q437274"
+      "wd": "Q437274",
+      "fame": 34
     },
     {
       "id": "serge-gnabry",
@@ -583,7 +639,8 @@
       "aliases": [
         "Gnabry"
       ],
-      "wd": "Q59490"
+      "wd": "Q59490",
+      "fame": 58
     },
     {
       "id": "thomas-von-heesen",
@@ -594,7 +651,8 @@
         "von Heesen",
         "Heesen"
       ],
-      "wd": "Q642986"
+      "wd": "Q642986",
+      "fame": 18
     },
     {
       "id": "arjen-robben",
@@ -604,7 +662,8 @@
       "aliases": [
         "Robben"
       ],
-      "wd": "Q43913"
+      "wd": "Q43913",
+      "fame": 93
     },
     {
       "id": "pierre-emerick-aubameyang",
@@ -615,7 +674,8 @@
         "Aubameyang",
         "Auba"
       ],
-      "wd": "Q44977"
+      "wd": "Q44977",
+      "fame": 73
     },
     {
       "id": "erwin-kostedde",
@@ -625,7 +685,8 @@
       "aliases": [
         "Kostedde"
       ],
-      "wd": "Q644438"
+      "wd": "Q644438",
+      "fame": 13
     },
     {
       "id": "cha-bum-kun",
@@ -636,7 +697,8 @@
         "Cha",
         "Cha Bum-keun"
       ],
-      "wd": "Q346751"
+      "wd": "Q346751",
+      "fame": 37
     },
     {
       "id": "mehmet-scholl",
@@ -646,7 +708,8 @@
       "aliases": [
         "Scholl"
       ],
-      "wd": "Q154156"
+      "wd": "Q154156",
+      "fame": 49
     },
     {
       "id": "franz-brungs",
@@ -656,7 +719,8 @@
       "aliases": [
         "Brungs"
       ],
-      "wd": "Q120255"
+      "wd": "Q120255",
+      "fame": 7
     },
     {
       "id": "max-kruse",
@@ -666,7 +730,8 @@
       "aliases": [
         "Kruse"
       ],
-      "wd": "Q129013"
+      "wd": "Q129013",
+      "fame": 36
     },
     {
       "id": "frank-neubarth",
@@ -676,7 +741,8 @@
       "aliases": [
         "Neubarth"
       ],
-      "wd": "Q460443"
+      "wd": "Q460443",
+      "fame": 10
     },
     {
       "id": "patrik-schick",
@@ -686,7 +752,8 @@
       "aliases": [
         "Schick"
       ],
-      "wd": "Q16910257"
+      "wd": "Q16910257",
+      "fame": 51
     },
     {
       "id": "tony-yeboah",
@@ -697,7 +764,8 @@
         "Yeboah",
         "Anthony Yeboah"
       ],
-      "wd": "Q379603"
+      "wd": "Q379603",
+      "fame": 32
     },
     {
       "id": "hermann-ohlicher",
@@ -707,7 +775,8 @@
       "aliases": [
         "Ohlicher"
       ],
-      "wd": "Q123435"
+      "wd": "Q123435",
+      "fame": 8
     },
     {
       "id": "sergej-barbarez",
@@ -717,7 +786,8 @@
       "aliases": [
         "Barbarez"
       ],
-      "wd": "Q431455"
+      "wd": "Q431455",
+      "fame": 36
     },
     {
       "id": "erich-beer",
@@ -727,7 +797,8 @@
       "aliases": [
         "Beer"
       ],
-      "wd": "Q546472"
+      "wd": "Q546472",
+      "fame": 23
     },
     {
       "id": "hans-jorg-criens",
@@ -737,7 +808,8 @@
       "aliases": [
         "Criens"
       ],
-      "wd": "Q881293"
+      "wd": "Q881293",
+      "fame": 8
     },
     {
       "id": "alexander-meier",
@@ -747,7 +819,8 @@
       "aliases": [
         "Meier"
       ],
-      "wd": "Q276731"
+      "wd": "Q276731",
+      "fame": 30
     },
     {
       "id": "paul-breitner",
@@ -757,7 +830,8 @@
       "aliases": [
         "Breitner"
       ],
-      "wd": "Q44458"
+      "wd": "Q44458",
+      "fame": 63
     },
     {
       "id": "willi-reimann",
@@ -768,7 +842,8 @@
         "Reimann",
         "Wilhelm Reimann"
       ],
-      "wd": "Q385304"
+      "wd": "Q385304",
+      "fame": 15
     },
     {
       "id": "willi-lippens",
@@ -779,7 +854,8 @@
         "Lippens",
         "Ente"
       ],
-      "wd": "Q314443"
+      "wd": "Q314443",
+      "fame": 11
     },
     {
       "id": "michael-preetz",
@@ -789,7 +865,8 @@
       "aliases": [
         "Preetz"
       ],
-      "wd": "Q644091"
+      "wd": "Q644091",
+      "fame": 24
     },
     {
       "id": "uwe-bein",
@@ -799,7 +876,8 @@
       "aliases": [
         "Bein"
       ],
-      "wd": "Q455161"
+      "wd": "Q455161",
+      "fame": 52
     },
     {
       "id": "rudiger-wenzel",
@@ -809,7 +887,8 @@
       "aliases": [
         "Wenzel"
       ],
-      "wd": "Q2203789"
+      "wd": "Q2203789",
+      "fame": 4
     },
     {
       "id": "oliver-neuville",
@@ -819,7 +898,8 @@
       "aliases": [
         "Neuville"
       ],
-      "wd": "Q152972"
+      "wd": "Q152972",
+      "fame": 46
     },
     {
       "id": "toni-polster",
@@ -830,7 +910,8 @@
         "Polster",
         "Anton Polster"
       ],
-      "wd": "Q311520"
+      "wd": "Q311520",
+      "fame": 38
     }
   ]
 }

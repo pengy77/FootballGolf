@@ -1,10 +1,11 @@
 {
   "id": "serie-a-club-wins",
   "title": "Most Serie A wins (clubs)",
-  "prompt": "most Serie A wins by a club",
+  "prompt": "club with the most Serie A wins",
   "noun": "club",
   "nounPlural": "clubs",
   "kind": "club",
+  "retired": true,
   "metric": "Wins",
   "order": "desc",
   "description": "All-time Serie A match wins: every club that has played in the single-table Serie A, from 1929–30 to the end of the 2025–26 season (1945–46, split into regional groups, not counted); tied clubs share a place.",

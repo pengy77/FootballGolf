@@ -1,7 +1,7 @@
 {
   "id": "pl-appearances",
   "title": "Premier League all-time appearances",
-  "prompt": "most Premier League appearances",
+  "prompt": "player with the most Premier League appearances",
   "noun": "player",
   "nounPlural": "players",
   "kind": "player",

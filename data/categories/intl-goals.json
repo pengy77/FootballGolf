@@ -1,12 +1,13 @@
 {
   "id": "intl-goals",
   "title": "International goals",
-  "prompt": "most men's international goals",
+  "prompt": "player with the most men's international goals",
   "noun": "player",
   "nounPlural": "players",
   "kind": "player",
   "metric": "Goals",
   "order": "desc",
+  "minFame": 45,
   "description": "Men's senior international goals; every player with 47 or more.",
   "tags": [
     "international",
@@ -28,7 +29,8 @@
         "CR7",
         "Cristiano"
       ],
-      "wd": "Q11571"
+      "wd": "Q11571",
+      "fame": 215
     },
     {
       "id": "lionel-messi",
@@ -40,7 +42,8 @@
         "Leo Messi",
         "La Pulga"
       ],
-      "wd": "Q615"
+      "wd": "Q615",
+      "fame": 228
     },
     {
       "id": "ali-daei",
@@ -50,7 +53,8 @@
       "aliases": [
         "Daei"
       ],
-      "wd": "Q159622"
+      "wd": "Q159622",
+      "fame": 53
     },
     {
       "id": "sunil-chhetri",
@@ -60,7 +64,8 @@
       "aliases": [
         "Chhetri"
       ],
-      "wd": "Q561004"
+      "wd": "Q561004",
+      "fame": 60
     },
     {
       "id": "romelu-lukaku",
@@ -70,7 +75,8 @@
       "aliases": [
         "Lukaku"
       ],
-      "wd": "Q313316"
+      "wd": "Q313316",
+      "fame": 89
     },
     {
       "id": "harry-kane",
@@ -80,7 +86,8 @@
       "aliases": [
         "Kane"
       ],
-      "wd": "Q969725"
+      "wd": "Q969725",
+      "fame": 98
     },
     {
       "id": "robert-lewandowski",
@@ -91,7 +98,8 @@
         "Lewandowski",
         "Lewy"
       ],
-      "wd": "Q151269"
+      "wd": "Q151269",
+      "fame": 106
     },
     {
       "id": "mokhtar-dahari",
@@ -103,7 +111,8 @@
         "Dahari",
         "Super Mokh"
       ],
-      "wd": "Q1943172"
+      "wd": "Q1943172",
+      "fame": 24
     },
     {
       "id": "ali-mabkhout",
@@ -113,7 +122,8 @@
       "aliases": [
         "Mabkhout"
       ],
-      "wd": "Q1089907"
+      "wd": "Q1089907",
+      "fame": 27
     },
     {
       "id": "ferenc-puskas",
@@ -123,7 +133,8 @@
       "aliases": [
         "Puskás"
       ],
-      "wd": "Q482931"
+      "wd": "Q482931",
+      "fame": 93
     },
     {
       "id": "neymar",
@@ -134,7 +145,8 @@
         "Neymar Jr",
         "Neymar Júnior"
       ],
-      "wd": "Q142794"
+      "wd": "Q142794",
+      "fame": 160
     },
     {
       "id": "godfrey-chitalu",
@@ -144,7 +156,8 @@
       "aliases": [
         "Chitalu"
       ],
-      "wd": "Q794512"
+      "wd": "Q794512",
+      "fame": 28
     },
     {
       "id": "hussein-saeed",
@@ -154,7 +167,8 @@
       "aliases": [
         "Saeed"
       ],
-      "wd": "Q1389004"
+      "wd": "Q1389004",
+      "fame": 22
     },
     {
       "id": "pele",
@@ -164,7 +178,8 @@
       "aliases": [
         "Edson Arantes do Nascimento"
       ],
-      "wd": "Q12897"
+      "wd": "Q12897",
+      "fame": 185
     },
     {
       "id": "vivian-woodward",
@@ -174,7 +189,8 @@
       "aliases": [
         "Woodward"
       ],
-      "wd": "Q181512"
+      "wd": "Q181512",
+      "fame": 30
     },
     {
       "id": "sandor-kocsis",
@@ -184,7 +200,8 @@
       "aliases": [
         "Kocsis"
       ],
-      "wd": "Q295265"
+      "wd": "Q295265",
+      "fame": 53
     },
     {
       "id": "kunishige-kamamoto",
@@ -194,7 +211,8 @@
       "aliases": [
         "Kamamoto"
       ],
-      "wd": "Q380695"
+      "wd": "Q380695",
+      "fame": 62
     },
     {
       "id": "bashar-abdullah",
@@ -204,7 +222,8 @@
       "aliases": [
         "Abdullah"
       ],
-      "wd": "Q623283"
+      "wd": "Q623283",
+      "fame": 20
     },
     {
       "id": "edin-dzeko",
@@ -214,7 +233,8 @@
       "aliases": [
         "Džeko"
       ],
-      "wd": "Q153786"
+      "wd": "Q153786",
+      "fame": 69
     },
     {
       "id": "majed-abdullah",
@@ -224,7 +244,8 @@
       "aliases": [
         "Abdullah"
       ],
-      "wd": "Q446181"
+      "wd": "Q446181",
+      "fame": 35
     },
     {
       "id": "kinnah-phiri",
@@ -234,7 +255,8 @@
       "aliases": [
         "Phiri"
       ],
-      "wd": "Q369479"
+      "wd": "Q369479",
+      "fame": 15
     },
     {
       "id": "kiatisuk-senamuang",
@@ -245,7 +267,8 @@
         "Kiatisuk",
         "Senamuang"
       ],
-      "wd": "Q532438"
+      "wd": "Q532438",
+      "fame": 28
     },
     {
       "id": "miroslav-klose",
@@ -255,7 +278,8 @@
       "aliases": [
         "Klose"
       ],
-      "wd": "Q80471"
+      "wd": "Q80471",
+      "fame": 101
     },
     {
       "id": "piyapong-pue-on",
@@ -266,7 +290,8 @@
         "Piyapong",
         "Pue-on"
       ],
-      "wd": "Q483765"
+      "wd": "Q483765",
+      "fame": 18
     },
     {
       "id": "abdul-kadir",
@@ -276,7 +301,8 @@
       "aliases": [
         "Kadir"
       ],
-      "wd": "Q4665453"
+      "wd": "Q4665453",
+      "fame": 16
     },
     {
       "id": "stern-john",
@@ -286,7 +312,8 @@
       "aliases": [
         "John"
       ],
-      "wd": "Q445801"
+      "wd": "Q445801",
+      "fame": 28
     },
     {
       "id": "mohamed-salah",
@@ -296,7 +323,8 @@
       "aliases": [
         "Salah"
       ],
-      "wd": "Q1354960"
+      "wd": "Q1354960",
+      "fame": 106
     },
     {
       "id": "luis-suarez",
@@ -307,7 +335,8 @@
         "Suárez",
         "El Pistolero"
       ],
-      "wd": "Q26517"
+      "wd": "Q26517",
+      "fame": 113
     },
     {
       "id": "hossam-hassan",
@@ -317,7 +346,8 @@
       "aliases": [
         "Hassan"
       ],
-      "wd": "Q448937"
+      "wd": "Q448937",
+      "fame": 36
     },
     {
       "id": "gerd-muller",
@@ -330,7 +360,8 @@
         "Gerd Mueller",
         "Mueller"
       ],
-      "wd": "Q43744"
+      "wd": "Q43744",
+      "fame": 91
     },
     {
       "id": "carlos-ruiz",
@@ -340,7 +371,8 @@
       "aliases": [
         "Ruiz"
       ],
-      "wd": "Q475730"
+      "wd": "Q475730",
+      "fame": 33
     },
     {
       "id": "robbie-keane",
@@ -350,7 +382,8 @@
       "aliases": [
         "Keane"
       ],
-      "wd": "Q184612"
+      "wd": "Q184612",
+      "fame": 64
     },
     {
       "id": "kylian-mbappe",
@@ -360,7 +393,8 @@
       "aliases": [
         "Mbappé"
       ],
-      "wd": "Q21621995"
+      "wd": "Q21621995",
+      "fame": 134
     },
     {
       "id": "erling-haaland",
@@ -370,7 +404,8 @@
       "aliases": [
         "Haaland"
       ],
-      "wd": "Q28967995"
+      "wd": "Q28967995",
+      "fame": 99
     },
     {
       "id": "didier-drogba",
@@ -380,7 +415,8 @@
       "aliases": [
         "Drogba"
       ],
-      "wd": "Q48892"
+      "wd": "Q48892",
+      "fame": 92
     },
     {
       "id": "aleksandar-mitrovic",
@@ -390,7 +426,8 @@
       "aliases": [
         "Mitrović"
       ],
-      "wd": "Q84086"
+      "wd": "Q84086",
+      "fame": 60
     },
     {
       "id": "teerasil-dangda",
@@ -401,7 +438,8 @@
         "Teerasil",
         "Dangda"
       ],
-      "wd": "Q304901"
+      "wd": "Q304901",
+      "fame": 41
     },
     {
       "id": "jasem-al-huwaidi",
@@ -412,7 +450,8 @@
         "Al-Huwaidi",
         "Huwaidi"
       ],
-      "wd": "Q253945"
+      "wd": "Q253945",
+      "fame": 14
     },
     {
       "id": "ronaldo",
@@ -426,7 +465,8 @@
         "O Fenômeno",
         "Brazilian Ronaldo"
       ],
-      "wd": "Q529207"
+      "wd": "Q529207",
+      "fame": 125
     },
     {
       "id": "ahmed-radhi",
@@ -436,7 +476,8 @@
       "aliases": [
         "Radhi"
       ],
-      "wd": "x-player-ahmed-radhi"
+      "wd": "x-player-ahmed-radhi",
+      "fame": 0
     },
     {
       "id": "zlatan-ibrahimovic",
@@ -448,7 +489,8 @@
         "Zlatan",
         "Ibra"
       ],
-      "wd": "Q46896"
+      "wd": "Q46896",
+      "fame": 120
     },
     {
       "id": "abdul-ghani-minhat",
@@ -459,7 +501,8 @@
         "Minhat",
         "Abdul Ghani"
       ],
-      "wd": "Q4665342"
+      "wd": "Q4665342",
+      "fame": 9
     },
     {
       "id": "almoez-ali",
@@ -469,7 +512,8 @@
       "aliases": [
         "Almoez"
       ],
-      "wd": "Q21011188"
+      "wd": "Q21011188",
+      "fame": 41
     },
     {
       "id": "mehdi-taremi",
@@ -479,7 +523,8 @@
       "aliases": [
         "Taremi"
       ],
-      "wd": "Q17070837"
+      "wd": "Q17070837",
+      "fame": 46
     },
     {
       "id": "yousef-nasser",
@@ -489,7 +534,8 @@
       "aliases": [
         "Nasser"
       ],
-      "wd": "Q4023099"
+      "wd": "Q4023099",
+      "fame": 16
     },
     {
       "id": "imre-schlosser",
@@ -499,7 +545,8 @@
       "aliases": [
         "Schlosser"
       ],
-      "wd": "Q464646"
+      "wd": "Q464646",
+      "fame": 30
     },
     {
       "id": "david-villa",
@@ -510,7 +557,8 @@
         "Villa",
         "El Guaje"
       ],
-      "wd": "Q83006"
+      "wd": "Q83006",
+      "fame": 85
     },
     {
       "id": "son-heung-min",
@@ -522,7 +570,8 @@
         "Heung-min Son",
         "Heungmin Son"
       ],
-      "wd": "Q439722"
+      "wd": "Q439722",
+      "fame": 79
     },
     {
       "id": "sardar-azmoun",
@@ -532,7 +581,8 @@
       "aliases": [
         "Azmoun"
       ],
-      "wd": "Q5298679"
+      "wd": "Q5298679",
+      "fame": 51
     },
     {
       "id": "ali-ashfaq",
@@ -542,7 +592,8 @@
       "aliases": [
         "Ashfaq"
       ],
-      "wd": "Q2057870"
+      "wd": "Q2057870",
+      "fame": 24
     },
     {
       "id": "cha-bum-kun",
@@ -554,7 +605,8 @@
         "Bum-kun Cha",
         "Cha Bum"
       ],
-      "wd": "Q346751"
+      "wd": "Q346751",
+      "fame": 37
     },
     {
       "id": "edinson-cavani",
@@ -564,7 +616,8 @@
       "aliases": [
         "Cavani"
       ],
-      "wd": "Q167790"
+      "wd": "Q167790",
+      "fame": 85
     },
     {
       "id": "carlos-pavon",
@@ -574,7 +627,8 @@
       "aliases": [
         "Pavón"
       ],
-      "wd": "Q350398"
+      "wd": "Q350398",
+      "fame": 31
     },
     {
       "id": "olivier-giroud",
@@ -584,7 +638,8 @@
       "aliases": [
         "Giroud"
       ],
-      "wd": "Q1911"
+      "wd": "Q1911",
+      "fame": 89
     },
     {
       "id": "clint-dempsey",
@@ -594,7 +649,8 @@
       "aliases": [
         "Dempsey"
       ],
-      "wd": "Q201860"
+      "wd": "Q201860",
+      "fame": 58
     },
     {
       "id": "younis-mahmoud",
@@ -604,7 +660,8 @@
       "aliases": [
         "Mahmoud"
       ],
-      "wd": "Q318780"
+      "wd": "Q318780",
+      "fame": 31
     },
     {
       "id": "landon-donovan",
@@ -614,7 +671,8 @@
       "aliases": [
         "Donovan"
       ],
-      "wd": "Q202237"
+      "wd": "Q202237",
+      "fame": 59
     },
     {
       "id": "gabriel-batistuta",
@@ -625,7 +683,8 @@
         "Batistuta",
         "Batigol"
       ],
-      "wd": "Q170376"
+      "wd": "Q170376",
+      "fame": 69
     },
     {
       "id": "samuel-eto-o",
@@ -637,7 +696,8 @@
         "Etoo",
         "Samuel Etoo"
       ],
-      "wd": "Q1255625"
+      "wd": "Q1255625",
+      "fame": 91
     },
     {
       "id": "bader-al-mutawa",
@@ -648,14 +708,16 @@
         "Al-Mutawa",
         "Mutawa"
       ],
-      "wd": "Q532893"
+      "wd": "Q532893",
+      "fame": 26
     },
     {
       "id": "romario",
       "name": "Romário",
       "sub": "Brazil",
       "value": 55,
-      "wd": "Q178649"
+      "wd": "Q178649",
+      "fame": 80
     },
     {
       "id": "kazuyoshi-miura",
@@ -667,7 +729,8 @@
         "Kazu",
         "King Kazu"
       ],
-      "wd": "Q331953"
+      "wd": "Q331953",
+      "fame": 63
     },
     {
       "id": "jan-koller",
@@ -677,7 +740,8 @@
       "aliases": [
         "Koller"
       ],
-      "wd": "Q152340"
+      "wd": "Q152340",
+      "fame": 50
     },
     {
       "id": "iswadi-idris",
@@ -688,7 +752,8 @@
         "Iswadi",
         "Idris"
       ],
-      "wd": "Q6089546"
+      "wd": "Q6089546",
+      "fame": 7
     },
     {
       "id": "fandi-ahmad",
@@ -699,7 +764,8 @@
         "Fandi",
         "Ahmad"
       ],
-      "wd": "Q2556661"
+      "wd": "Q2556661",
+      "fame": 21
     },
     {
       "id": "joachim-streich",
@@ -709,7 +775,8 @@
       "aliases": [
         "Streich"
       ],
-      "wd": "Q435542"
+      "wd": "Q435542",
+      "fame": 35
     },
     {
       "id": "memphis-depay",
@@ -720,7 +787,8 @@
         "Depay",
         "Memphis"
       ],
-      "wd": "Q1894"
+      "wd": "Q1894",
+      "fame": 69
     },
     {
       "id": "sadio-mane",
@@ -730,7 +798,8 @@
       "aliases": [
         "Mané"
       ],
-      "wd": "Q209942"
+      "wd": "Q209942",
+      "fame": 92
     },
     {
       "id": "wayne-rooney",
@@ -740,7 +809,8 @@
       "aliases": [
         "Rooney"
       ],
-      "wd": "Q266613"
+      "wd": "Q266613",
+      "fame": 101
     },
     {
       "id": "poul-nielsen",
@@ -750,7 +820,8 @@
       "aliases": [
         "Nielsen"
       ],
-      "wd": "Q555972"
+      "wd": "Q555972",
+      "fame": 26
     },
     {
       "id": "phil-younghusband",
@@ -760,7 +831,8 @@
       "aliases": [
         "Younghusband"
       ],
-      "wd": "Q240008"
+      "wd": "Q240008",
+      "fame": 33
     },
     {
       "id": "javier-hernandez",
@@ -771,7 +843,8 @@
         "Hernández",
         "Chicharito"
       ],
-      "wd": "Q165125"
+      "wd": "Q165125",
+      "fame": 69
     },
     {
       "id": "jon-dahl-tomasson",
@@ -782,7 +855,8 @@
         "Tomasson",
         "Dahl Tomasson"
       ],
-      "wd": "Q203657"
+      "wd": "Q203657",
+      "fame": 48
     },
     {
       "id": "adnan-al-talyani",
@@ -793,7 +867,8 @@
         "Al Talyani",
         "Talyani"
       ],
-      "wd": "Q359830"
+      "wd": "Q359830",
+      "fame": 25
     },
     {
       "id": "lajos-tichy",
@@ -803,7 +878,8 @@
       "aliases": [
         "Tichy"
       ],
-      "wd": "Q553339"
+      "wd": "Q553339",
+      "fame": 31
     },
     {
       "id": "le-cong-vinh",
@@ -813,7 +889,8 @@
       "aliases": [
         "Công Vinh"
       ],
-      "wd": "Q460346"
+      "wd": "Q460346",
+      "fame": 47
     },
     {
       "id": "asamoah-gyan",
@@ -823,7 +900,8 @@
       "aliases": [
         "Gyan"
       ],
-      "wd": "Q222746"
+      "wd": "Q222746",
+      "fame": 63
     },
     {
       "id": "hakan-sukur",
@@ -833,7 +911,8 @@
       "aliases": [
         "Şükür"
       ],
-      "wd": "Q192974"
+      "wd": "Q192974",
+      "fame": 59
     },
     {
       "id": "thierry-henry",
@@ -843,7 +922,8 @@
       "aliases": [
         "Henry"
       ],
-      "wd": "Q45901"
+      "wd": "Q45901",
+      "fame": 104
     },
     {
       "id": "alexis-sanchez",
@@ -854,7 +934,8 @@
         "Sánchez",
         "Alexis"
       ],
-      "wd": "Q180553"
+      "wd": "Q180553",
+      "fame": 74
     },
     {
       "id": "karim-bagheri",
@@ -864,7 +945,8 @@
       "aliases": [
         "Bagheri"
       ],
-      "wd": "Q466108"
+      "wd": "Q466108",
+      "fame": 28
     },
     {
       "id": "robin-van-persie",
@@ -875,7 +957,8 @@
         "van Persie",
         "RVP"
       ],
-      "wd": "Q2339"
+      "wd": "Q2339",
+      "fame": 98
     },
     {
       "id": "hwang-sun-hong",
@@ -886,7 +969,8 @@
         "Hwang",
         "Sun-hong Hwang"
       ],
-      "wd": "Q483065"
+      "wd": "Q483065",
+      "fame": 30
     },
     {
       "id": "tim-cahill",
@@ -896,7 +980,8 @@
       "aliases": [
         "Cahill"
       ],
-      "wd": "Q187238"
+      "wd": "Q187238",
+      "fame": 65
     },
     {
       "id": "shinji-okazaki",
@@ -906,7 +991,8 @@
       "aliases": [
         "Okazaki"
       ],
-      "wd": "Q310612"
+      "wd": "Q310612",
+      "fame": 68
     },
     {
       "id": "salomon-rondon",
@@ -916,7 +1002,8 @@
       "aliases": [
         "Rondón"
       ],
-      "wd": "Q357613"
+      "wd": "Q357613",
+      "fame": 52
     },
     {
       "id": "zainal-abidin-hassan",
@@ -927,7 +1014,8 @@
         "Zainal Abidin",
         "Hassan"
       ],
-      "wd": "Q3783618"
+      "wd": "Q3783618",
+      "fame": 10
     },
     {
       "id": "marko-arnautovic",
@@ -937,7 +1025,8 @@
       "aliases": [
         "Arnautović"
       ],
-      "wd": "Q313575"
+      "wd": "Q313575",
+      "fame": 57
     },
     {
       "id": "bobby-charlton",
@@ -948,7 +1037,8 @@
         "Charlton",
         "Sir Bobby Charlton"
       ],
-      "wd": "Q171583"
+      "wd": "Q171583",
+      "fame": 83
     },
     {
       "id": "lukas-podolski",
@@ -959,7 +1049,8 @@
         "Podolski",
         "Poldi"
       ],
-      "wd": "Q134976"
+      "wd": "Q134976",
+      "fame": 90
     },
     {
       "id": "sven-rydell",
@@ -969,7 +1060,8 @@
       "aliases": [
         "Rydell"
       ],
-      "wd": "Q536745"
+      "wd": "Q536745",
+      "fame": 27
     },
     {
       "id": "hassan-el-shazly",
@@ -980,7 +1072,8 @@
         "El-Shazly",
         "Shazly"
       ],
-      "wd": "Q2016805"
+      "wd": "Q2016805",
+      "fame": 15
     },
     {
       "id": "enner-valencia",
@@ -990,7 +1083,8 @@
       "aliases": [
         "Valencia"
       ],
-      "wd": "Q2843080"
+      "wd": "Q2843080",
+      "fame": 59
     },
     {
       "id": "abdoulaye-traore",
@@ -1000,7 +1094,8 @@
       "aliases": [
         "Traoré"
       ],
-      "wd": "Q308424"
+      "wd": "Q308424",
+      "fame": 20
     },
     {
       "id": "dimitar-berbatov",
@@ -1010,7 +1105,8 @@
       "aliases": [
         "Berbatov"
       ],
-      "wd": "Q170235"
+      "wd": "Q170235",
+      "fame": 62
     },
     {
       "id": "hristo-bonev",
@@ -1020,7 +1116,8 @@
       "aliases": [
         "Bonev"
       ],
-      "wd": "Q706715"
+      "wd": "Q706715",
+      "fame": 23
     },
     {
       "id": "raul-jimenez",
@@ -1030,7 +1127,8 @@
       "aliases": [
         "Jiménez"
       ],
-      "wd": "Q1925465"
+      "wd": "Q1925465",
+      "fame": 52
     },
     {
       "id": "ahmed-khalil",
@@ -1040,7 +1138,8 @@
       "aliases": [
         "Khalil"
       ],
-      "wd": "Q2160925"
+      "wd": "Q2160925",
+      "fame": 22
     },
     {
       "id": "gary-lineker",
@@ -1050,7 +1149,8 @@
       "aliases": [
         "Lineker"
       ],
-      "wd": "Q47778"
+      "wd": "Q47778",
+      "fame": 89
     },
     {
       "id": "wlodzimierz-lubanski",
@@ -1060,7 +1160,8 @@
       "aliases": [
         "Lubański"
       ],
-      "wd": "Q313446"
+      "wd": "Q313446",
+      "fame": 40
     },
     {
       "id": "andriy-shevchenko",
@@ -1071,14 +1172,16 @@
         "Shevchenko",
         "Sheva"
       ],
-      "wd": "Q41244"
+      "wd": "Q41244",
+      "fame": 88
     },
     {
       "id": "zico",
       "name": "Zico",
       "sub": "Brazil",
       "value": 48,
-      "wd": "Q47526"
+      "wd": "Q47526",
+      "fame": 76
     },
     {
       "id": "mansour-muftah",
@@ -1088,7 +1191,8 @@
       "aliases": [
         "Muftah"
       ],
-      "wd": "Q10498393"
+      "wd": "Q10498393",
+      "fame": 12
     },
     {
       "id": "ismail-abdul-latif",
@@ -1100,7 +1204,8 @@
         "Abdullatif",
         "Ismail Abdullatif"
       ],
-      "wd": "Q527718"
+      "wd": "Q527718",
+      "fame": 21
     },
     {
       "id": "rolando-fonseca",
@@ -1110,7 +1215,8 @@
       "aliases": [
         "Fonseca"
       ],
-      "wd": "Q483093"
+      "wd": "Q483093",
+      "fame": 30
     },
     {
       "id": "jurgen-klinsmann",
@@ -1122,14 +1228,16 @@
         "Klinsi",
         "Juergen Klinsmann"
       ],
-      "wd": "Q57079"
+      "wd": "Q57079",
+      "fame": 77
     },
     {
       "id": "pauleta",
       "name": "Pauleta",
       "sub": "Portugal",
       "value": 47,
-      "wd": "Q218165"
+      "wd": "Q218165",
+      "fame": 48
     },
     {
       "id": "rudi-voller",
@@ -1141,7 +1249,8 @@
         "Rudi Voeller",
         "Voeller"
       ],
-      "wd": "Q44464"
+      "wd": "Q44464",
+      "fame": 62
     },
     {
       "id": "andriy-yarmolenko",
@@ -1151,7 +1260,8 @@
       "aliases": [
         "Yarmolenko"
       ],
-      "wd": "Q310328"
+      "wd": "Q310328",
+      "fame": 53
     },
     {
       "id": "roy-krishna",
@@ -1161,7 +1271,8 @@
       "aliases": [
         "Krishna"
       ],
-      "wd": "Q733523"
+      "wd": "Q733523",
+      "fame": 31
     },
     {
       "id": "eldor-shomurodov",
@@ -1171,7 +1282,8 @@
       "aliases": [
         "Shomurodov"
       ],
-      "wd": "Q20641483"
+      "wd": "Q20641483",
+      "fame": 41
     },
     {
       "id": "chris-wood",
@@ -1181,7 +1293,8 @@
       "aliases": [
         "Wood"
       ],
-      "wd": "Q74548"
+      "wd": "Q74548",
+      "fame": 47
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "top5-league-grounds",
   "title": "Top-five league clubs by stadium capacity",
-  "prompt": "biggest stadium in Europe's top 5 leagues: which club plays there?",
+  "prompt": "club with the biggest stadium in Europe's top 5 leagues",
   "noun": "club",
   "nounPlural": "clubs",
   "kind": "club",

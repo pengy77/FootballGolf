@@ -1,7 +1,7 @@
 {
   "id": "uefa-association-coefficients",
   "title": "European countries by UEFA coefficient",
-  "prompt": "European country with the highest UEFA coefficient",
+  "prompt": "country with the highest UEFA coefficient",
   "noun": "country",
   "nounPlural": "countries",
   "kind": "nation",

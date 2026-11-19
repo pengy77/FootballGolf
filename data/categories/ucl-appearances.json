@@ -1,7 +1,7 @@
 {
   "id": "ucl-appearances",
   "title": "Champions League appearances",
-  "prompt": "most Champions League appearances",
+  "prompt": "player with the most Champions League appearances",
   "noun": "player",
   "nounPlural": "players",
   "kind": "player",

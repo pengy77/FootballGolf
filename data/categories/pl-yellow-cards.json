@@ -1,14 +1,14 @@
 {
   "id": "pl-yellow-cards",
   "title": "Premier League all-time yellow cards",
-  "prompt": "most Premier League yellow cards",
+  "prompt": "player with the most Premier League yellow cards",
   "noun": "player",
   "nounPlural": "players",
   "kind": "player",
+  "retired": true,
   "metric": "Yellow cards",
   "order": "desc",
   "description": "Every player with 65 or more Premier League yellow cards since 1992–93, to 17 November 2026 (StatMuse count, a little above the official tally for some players); tied players share a rank.",
-  "retired": true,
   "tags": [
     "premier-league",
     "players"

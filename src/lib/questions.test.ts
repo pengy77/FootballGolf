@@ -28,13 +28,31 @@ describe('one clear answer per hole', () => {
   it('every live list has pins, and every pin is held by exactly one entry with a real value', () => {
     expect(LIVE_CATEGORIES.length).toBeGreaterThanOrEqual(12);
     for (const c of LIVE_CATEGORIES) {
-      expect(c.pins.length, c.id).toBeGreaterThanOrEqual(12);
+      // A fame floor trades variety for answers people know (scripts/validate-data.mjs: MIN_FAMOUS_PINS).
+      expect(c.pins.length, c.id).toBeGreaterThanOrEqual(c.minFame === undefined ? 12 : 8);
       for (const p of c.pins) {
         const at = c.items.filter((it) => it.lo <= p && p <= it.hi);
         expect(at.length, `${c.id} pin ${p}`).toBe(1);
         expect(at[0].value, `${c.id} pin ${p}`).not.toBe(0);
       }
     }
+  });
+
+  it('a fame floor keeps holes on names people know, while the whole list still scores', () => {
+    const c = buildCategory({
+      ...base,
+      minFame: 40,
+      items: Array.from({ length: 30 }, (_, i) => ({ id: `p${i}`, name: `P${i}`, value: 100 - i, fame: i % 2 ? 80 : 10 })),
+    });
+    expect(c.pins.length).toBeGreaterThan(0);
+    for (const p of c.pins) expect(c.items[p - 1].fame).toBe(80);
+    expect(c.size).toBe(30);
+    for (const cat of LIVE_CATEGORIES.filter((x) => x.minFame !== undefined))
+      for (const p of cat.pins) expect(cat.items[p - 1].fame ?? 0, `${cat.id} pin ${p}`).toBeGreaterThanOrEqual(cat.minFame!);
+  });
+
+  it('every question says what to name (the hole shows that word in yellow)', () => {
+    for (const c of CATEGORIES) expect(c.prompt, c.id).toMatch(new RegExp(`\\b${c.noun}\\b`, 'i'));
   });
 
   it('courses only ever target a pin, for every course and many seeds', () => {

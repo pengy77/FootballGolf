@@ -1,7 +1,7 @@
 {
   "id": "pl-manager-matches",
   "title": "Most Premier League games managed",
-  "prompt": "most Premier League games managed",
+  "prompt": "manager with the most Premier League games",
   "noun": "manager",
   "nounPlural": "managers",
   "kind": "manager",

@@ -1,7 +1,7 @@
 {
   "id": "pl-all-time-table",
   "title": "All-time Premier League table",
-  "prompt": "most all-time Premier League points",
+  "prompt": "club with the most Premier League points",
   "noun": "club",
   "nounPlural": "clubs",
   "kind": "club",

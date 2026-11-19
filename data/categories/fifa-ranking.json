@@ -1,9 +1,9 @@
 {
   "id": "fifa-ranking",
   "title": "FIFA world ranking",
-  "prompt": "highest-ranked nation in the FIFA world ranking",
-  "noun": "nation",
-  "nounPlural": "nations",
+  "prompt": "country in the FIFA world ranking",
+  "noun": "country",
+  "nounPlural": "countries",
   "kind": "nation",
   "metric": "Points",
   "order": "desc",

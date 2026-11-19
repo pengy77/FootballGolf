@@ -1,7 +1,7 @@
 {
   "id": "pl-manager-losses",
   "title": "Most Premier League defeats as a manager",
-  "prompt": "most Premier League defeats as a manager",
+  "prompt": "manager with the most Premier League defeats",
   "noun": "manager",
   "nounPlural": "managers",
   "kind": "manager",

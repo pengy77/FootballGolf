@@ -271,7 +271,7 @@ for (const s of seasons) {
   const cat = {
     id,
     title: `${unbroken} ${lg.name} table`,
-    prompt: `place in the ${unbroken} ${lg.name}`,
+    prompt: `club in the ${unbroken} ${lg.name} table`,
     noun: 'club',
     nounPlural: 'clubs',
     kind: 'club',

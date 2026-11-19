@@ -1,12 +1,13 @@
 {
   "id": "serie-a-top-scorers",
   "title": "Serie A all-time top scorers",
-  "prompt": "most Serie A goals",
+  "prompt": "player with the most Serie A goals",
   "noun": "player",
   "nounPlural": "players",
   "kind": "player",
   "metric": "Goals",
   "order": "desc",
+  "minFame": 40,
   "description": "All-time Serie A goals since 1929–30, for every player who has scored 100 or more. Lautaro Martínez and Domenico Berardi updated to 8 November 2026 from Italian Wikipedia’s all-time list. Players on 100–110 goals checked against Italian Wikipedia and RSSSF; where sources split, the figure two of the three agree on is used.",
   "tags": [
     "europe",
@@ -26,7 +27,8 @@
       "aliases": [
         "Piola"
       ],
-      "wd": "Q296276"
+      "wd": "Q296276",
+      "fame": 50
     },
     {
       "id": "francesco-totti",
@@ -36,7 +38,8 @@
       "aliases": [
         "Totti"
       ],
-      "wd": "Q20110"
+      "wd": "Q20110",
+      "fame": 126
     },
     {
       "id": "gunnar-nordahl",
@@ -46,7 +49,8 @@
       "aliases": [
         "Nordahl"
       ],
-      "wd": "Q110111"
+      "wd": "Q110111",
+      "fame": 53
     },
     {
       "id": "giuseppe-meazza",
@@ -56,7 +60,8 @@
       "aliases": [
         "Meazza"
       ],
-      "wd": "Q192131"
+      "wd": "Q192131",
+      "fame": 67
     },
     {
       "id": "jose-altafini",
@@ -66,7 +71,8 @@
       "aliases": [
         "Altafini"
       ],
-      "wd": "Q62182"
+      "wd": "Q62182",
+      "fame": 47
     },
     {
       "id": "antonio-di-natale",
@@ -77,7 +83,8 @@
         "Di Natale",
         "Totò Di Natale"
       ],
-      "wd": "Q167281"
+      "wd": "Q167281",
+      "fame": 62
     },
     {
       "id": "roberto-baggio",
@@ -87,7 +94,8 @@
       "aliases": [
         "Baggio"
       ],
-      "wd": "Q67964"
+      "wd": "Q67964",
+      "fame": 91
     },
     {
       "id": "ciro-immobile",
@@ -97,7 +105,8 @@
       "aliases": [
         "Immobile"
       ],
-      "wd": "Q458101"
+      "wd": "Q458101",
+      "fame": 63
     },
     {
       "id": "kurt-hamrin",
@@ -107,7 +116,8 @@
       "aliases": [
         "Hamrin"
       ],
-      "wd": "Q363766"
+      "wd": "Q363766",
+      "fame": 39
     },
     {
       "id": "giuseppe-signori",
@@ -118,7 +128,8 @@
         "Signori",
         "Beppe Signori"
       ],
-      "wd": "Q334684"
+      "wd": "Q334684",
+      "fame": 37
     },
     {
       "id": "alessandro-del-piero",
@@ -128,7 +139,8 @@
       "aliases": [
         "Del Piero"
       ],
-      "wd": "Q624"
+      "wd": "Q624",
+      "fame": 87
     },
     {
       "id": "alberto-gilardino",
@@ -138,7 +150,8 @@
       "aliases": [
         "Gilardino"
       ],
-      "wd": "Q182451"
+      "wd": "Q182451",
+      "fame": 65
     },
     {
       "id": "gabriel-batistuta",
@@ -149,7 +162,8 @@
         "Batistuta",
         "Batigol"
       ],
-      "wd": "Q170376"
+      "wd": "Q170376",
+      "fame": 69
     },
     {
       "id": "fabio-quagliarella",
@@ -159,7 +173,8 @@
       "aliases": [
         "Quagliarella"
       ],
-      "wd": "Q45900"
+      "wd": "Q45900",
+      "fame": 56
     },
     {
       "id": "giampiero-boniperti",
@@ -169,7 +184,8 @@
       "aliases": [
         "Boniperti"
       ],
-      "wd": "Q68050"
+      "wd": "Q68050",
+      "fame": 48
     },
     {
       "id": "amedeo-amadei",
@@ -179,7 +195,8 @@
       "aliases": [
         "Amadei"
       ],
-      "wd": "Q460577"
+      "wd": "Q460577",
+      "fame": 33
     },
     {
       "id": "giuseppe-savoldi",
@@ -190,7 +207,8 @@
         "Savoldi",
         "Beppe Savoldi"
       ],
-      "wd": "Q1377845"
+      "wd": "Q1377845",
+      "fame": 24
     },
     {
       "id": "guglielmo-gabetto",
@@ -200,7 +218,8 @@
       "aliases": [
         "Gabetto"
       ],
-      "wd": "Q723371"
+      "wd": "Q723371",
+      "fame": 19
     },
     {
       "id": "roberto-boninsegna",
@@ -210,7 +229,8 @@
       "aliases": [
         "Boninsegna"
       ],
-      "wd": "Q448752"
+      "wd": "Q448752",
+      "fame": 37
     },
     {
       "id": "luca-toni",
@@ -220,7 +240,8 @@
       "aliases": [
         "Toni"
       ],
-      "wd": "Q186478"
+      "wd": "Q186478",
+      "fame": 57
     },
     {
       "id": "zlatan-ibrahimovic",
@@ -231,7 +252,8 @@
         "Ibrahimović",
         "Zlatan"
       ],
-      "wd": "Q46896"
+      "wd": "Q46896",
+      "fame": 120
     },
     {
       "id": "gigi-riva",
@@ -242,7 +264,8 @@
         "Riva",
         "Luigi Riva"
       ],
-      "wd": "Q276026"
+      "wd": "Q276026",
+      "fame": 59
     },
     {
       "id": "filippo-inzaghi",
@@ -253,7 +276,8 @@
         "Inzaghi",
         "Pippo Inzaghi"
       ],
-      "wd": "Q126503"
+      "wd": "Q126503",
+      "fame": 67
     },
     {
       "id": "roberto-mancini",
@@ -263,7 +287,8 @@
       "aliases": [
         "Mancini"
       ],
-      "wd": "Q48330"
+      "wd": "Q48330",
+      "fame": 65
     },
     {
       "id": "luis-vinicio",
@@ -273,7 +298,8 @@
       "aliases": [
         "Vinício"
       ],
-      "wd": "Q48955"
+      "wd": "Q48955",
+      "fame": 18
     },
     {
       "id": "carlo-reguzzoni",
@@ -283,7 +309,8 @@
       "aliases": [
         "Reguzzoni"
       ],
-      "wd": "Q3659772"
+      "wd": "Q3659772",
+      "fame": 12
     },
     {
       "id": "istvan-nyers",
@@ -293,7 +320,8 @@
       "aliases": [
         "Nyers"
       ],
-      "wd": "Q255515"
+      "wd": "Q255515",
+      "fame": 26
     },
     {
       "id": "hernan-crespo",
@@ -303,7 +331,8 @@
       "aliases": [
         "Crespo"
       ],
-      "wd": "Q160206"
+      "wd": "Q160206",
+      "fame": 78
     },
     {
       "id": "adriano-bassetto",
@@ -313,7 +342,8 @@
       "aliases": [
         "Bassetto"
       ],
-      "wd": "Q1318350"
+      "wd": "Q1318350",
+      "fame": 11
     },
     {
       "id": "omar-sivori",
@@ -323,7 +353,8 @@
       "aliases": [
         "Sívori"
       ],
-      "wd": "Q220700"
+      "wd": "Q220700",
+      "fame": 57
     },
     {
       "id": "christian-vieri",
@@ -334,7 +365,8 @@
         "Vieri",
         "Bobo Vieri"
       ],
-      "wd": "Q188696"
+      "wd": "Q188696",
+      "fame": 55
     },
     {
       "id": "benito-lorenzi",
@@ -344,7 +376,8 @@
       "aliases": [
         "Lorenzi"
       ],
-      "wd": "Q705162"
+      "wd": "Q705162",
+      "fame": 25
     },
     {
       "id": "marco-di-vaio",
@@ -354,7 +387,8 @@
       "aliases": [
         "Di Vaio"
       ],
-      "wd": "Q136940"
+      "wd": "Q136940",
+      "fame": 38
     },
     {
       "id": "paolo-pulici",
@@ -364,7 +398,8 @@
       "aliases": [
         "Pulici"
       ],
-      "wd": "Q167936"
+      "wd": "Q167936",
+      "fame": 28
     },
     {
       "id": "vincenzo-montella",
@@ -374,7 +409,8 @@
       "aliases": [
         "Montella"
       ],
-      "wd": "Q297768"
+      "wd": "Q297768",
+      "fame": 50
     },
     {
       "id": "john-hansen",
@@ -384,7 +420,8 @@
       "aliases": [
         "Hansen"
       ],
-      "wd": "Q728031"
+      "wd": "Q728031",
+      "fame": 22
     },
     {
       "id": "enrico-chiesa",
@@ -394,7 +431,8 @@
       "aliases": [
         "Chiesa"
       ],
-      "wd": "Q345026"
+      "wd": "Q345026",
+      "fame": 35
     },
     {
       "id": "sergio-brighenti",
@@ -404,7 +442,8 @@
       "aliases": [
         "Brighenti"
       ],
-      "wd": "Q989525"
+      "wd": "Q989525",
+      "fame": 17
     },
     {
       "id": "lautaro-martinez",
@@ -415,7 +454,8 @@
         "Lautaro",
         "Martínez"
       ],
-      "wd": "Q21484126"
+      "wd": "Q21484126",
+      "fame": 66
     },
     {
       "id": "roberto-pruzzo",
@@ -425,7 +465,8 @@
       "aliases": [
         "Pruzzo"
       ],
-      "wd": "Q515901"
+      "wd": "Q515901",
+      "fame": 31
     },
     {
       "id": "alessandro-altobelli",
@@ -435,7 +476,8 @@
       "aliases": [
         "Altobelli"
       ],
-      "wd": "Q346945"
+      "wd": "Q346945",
+      "fame": 46
     },
     {
       "id": "domenico-berardi",
@@ -445,7 +487,8 @@
       "aliases": [
         "Berardi"
       ],
-      "wd": "Q348407"
+      "wd": "Q348407",
+      "fame": 46
     },
     {
       "id": "felice-borel",
@@ -455,7 +498,8 @@
       "aliases": [
         "Borel"
       ],
-      "wd": "Q68053"
+      "wd": "Q68053",
+      "fame": 38
     },
     {
       "id": "paulo-dybala",
@@ -465,7 +509,8 @@
       "aliases": [
         "Dybala"
       ],
-      "wd": "Q166317"
+      "wd": "Q166317",
+      "fame": 80
     },
     {
       "id": "ezio-pascutti",
@@ -475,7 +520,8 @@
       "aliases": [
         "Pascutti"
       ],
-      "wd": "Q983267"
+      "wd": "Q983267",
+      "fame": 25
     },
     {
       "id": "francesco-graziani",
@@ -486,7 +532,8 @@
         "Graziani",
         "Ciccio Graziani"
       ],
-      "wd": "Q355897"
+      "wd": "Q355897",
+      "fame": 39
     },
     {
       "id": "roberto-bettega",
@@ -496,7 +543,8 @@
       "aliases": [
         "Bettega"
       ],
-      "wd": "Q67990"
+      "wd": "Q67990",
+      "fame": 40
     },
     {
       "id": "gianni-rivera",
@@ -506,7 +554,8 @@
       "aliases": [
         "Rivera"
       ],
-      "wd": "Q230046"
+      "wd": "Q230046",
+      "fame": 55
     },
     {
       "id": "andriy-shevchenko",
@@ -517,7 +566,8 @@
         "Shevchenko",
         "Sheva"
       ],
-      "wd": "Q41244"
+      "wd": "Q41244",
+      "fame": 88
     },
     {
       "id": "duvan-zapata",
@@ -527,7 +577,8 @@
       "aliases": [
         "Zapata"
       ],
-      "wd": "Q577481"
+      "wd": "Q577481",
+      "fame": 41
     },
     {
       "id": "gonzalo-higuain",
@@ -538,7 +589,8 @@
         "Higuaín",
         "Pipita"
       ],
-      "wd": "Q483846"
+      "wd": "Q483846",
+      "fame": 76
     },
     {
       "id": "pietro-ferraris",
@@ -550,7 +602,8 @@
         "Ferraris II",
         "Pietro Ferraris II"
       ],
-      "wd": "Q723583"
+      "wd": "Q723583",
+      "fame": 30
     },
     {
       "id": "david-trezeguet",
@@ -560,7 +613,8 @@
       "aliases": [
         "Trezeguet"
       ],
-      "wd": "Q183967"
+      "wd": "Q183967",
+      "fame": 70
     },
     {
       "id": "gianluca-vialli",
@@ -570,7 +624,8 @@
       "aliases": [
         "Vialli"
       ],
-      "wd": "Q239688"
+      "wd": "Q239688",
+      "fame": 54
     },
     {
       "id": "renzo-burini",
@@ -580,7 +635,8 @@
       "aliases": [
         "Burini"
       ],
-      "wd": "Q1487896"
+      "wd": "Q1487896",
+      "fame": 14
     },
     {
       "id": "mauro-icardi",
@@ -590,7 +646,8 @@
       "aliases": [
         "Icardi"
       ],
-      "wd": "Q136986"
+      "wd": "Q136986",
+      "fame": 65
     },
     {
       "id": "cristiano-lucarelli",
@@ -600,7 +657,8 @@
       "aliases": [
         "Lucarelli"
       ],
-      "wd": "Q310034"
+      "wd": "Q310034",
+      "fame": 36
     },
     {
       "id": "ettore-puricelli",
@@ -610,7 +668,8 @@
       "aliases": [
         "Puricelli"
       ],
-      "wd": "Q969232"
+      "wd": "Q969232",
+      "fame": 20
     },
     {
       "id": "gino-pivatelli",
@@ -620,7 +679,8 @@
       "aliases": [
         "Pivatelli"
       ],
-      "wd": "Q945747"
+      "wd": "Q945747",
+      "fame": 23
     },
     {
       "id": "abel-balbo",
@@ -630,7 +690,8 @@
       "aliases": [
         "Balbo"
       ],
-      "wd": "Q318387"
+      "wd": "Q318387",
+      "fame": 34
     },
     {
       "id": "andrea-belotti",
@@ -640,7 +701,8 @@
       "aliases": [
         "Belotti"
       ],
-      "wd": "Q4754963"
+      "wd": "Q4754963",
+      "fame": 50
     },
     {
       "id": "sandro-mazzola",
@@ -651,7 +713,8 @@
         "Mazzola",
         "Alessandro Mazzola"
       ],
-      "wd": "Q314856"
+      "wd": "Q314856",
+      "fame": 50
     },
     {
       "id": "giampaolo-pazzini",
@@ -661,7 +724,8 @@
       "aliases": [
         "Pazzini"
       ],
-      "wd": "Q219389"
+      "wd": "Q219389",
+      "fame": 48
     },
     {
       "id": "dries-mertens",
@@ -671,7 +735,8 @@
       "aliases": [
         "Mertens"
       ],
-      "wd": "Q11954"
+      "wd": "Q11954",
+      "fame": 57
     },
     {
       "id": "nicola-amoruso",
@@ -681,7 +746,8 @@
       "aliases": [
         "Amoruso"
       ],
-      "wd": "Q62244"
+      "wd": "Q62244",
+      "fame": 21
     },
     {
       "id": "antonio-cassano",
@@ -691,7 +757,8 @@
       "aliases": [
         "Cassano"
       ],
-      "wd": "Q180993"
+      "wd": "Q180993",
+      "fame": 59
     },
     {
       "id": "edinson-cavani",
@@ -701,7 +768,8 @@
       "aliases": [
         "Cavani"
       ],
-      "wd": "Q167790"
+      "wd": "Q167790",
+      "fame": 85
     },
     {
       "id": "sergio-pellissier",
@@ -711,7 +779,8 @@
       "aliases": [
         "Pellissier"
       ],
-      "wd": "Q465699"
+      "wd": "Q465699",
+      "fame": 20
     },
     {
       "id": "riccardo-carapellese",
@@ -721,7 +790,8 @@
       "aliases": [
         "Carapellese"
       ],
-      "wd": "Q1360161"
+      "wd": "Q1360161",
+      "fame": 22
     },
     {
       "id": "lorenzo-bettini",
@@ -731,7 +801,8 @@
       "aliases": [
         "Bettini"
       ],
-      "wd": "Q1409166"
+      "wd": "Q1409166",
+      "fame": 9
     },
     {
       "id": "carlo-galli",
@@ -741,7 +812,8 @@
       "aliases": [
         "Galli"
       ],
-      "wd": "Q2721098"
+      "wd": "Q2721098",
+      "fame": 19
     },
     {
       "id": "giovanni-ferrari",
@@ -751,7 +823,8 @@
       "aliases": [
         "Ferrari"
       ],
-      "wd": "Q382987"
+      "wd": "Q382987",
+      "fame": 38
     },
     {
       "id": "giuseppe-baldini",
@@ -761,7 +834,8 @@
       "aliases": [
         "Baldini"
       ],
-      "wd": "Q708936"
+      "wd": "Q708936",
+      "fame": 13
     },
     {
       "id": "bruno-giordano",
@@ -771,7 +845,8 @@
       "aliases": [
         "Giordano"
       ],
-      "wd": "Q613257"
+      "wd": "Q613257",
+      "fame": 24
     },
     {
       "id": "angelo-schiavio",
@@ -781,7 +856,8 @@
       "aliases": [
         "Schiavio"
       ],
-      "wd": "Q315817"
+      "wd": "Q315817",
+      "fame": 41
     },
     {
       "id": "aldo-boffi",
@@ -791,7 +867,8 @@
       "aliases": [
         "Boffi"
       ],
-      "wd": "Q922569"
+      "wd": "Q922569",
+      "fame": 22
     },
     {
       "id": "eddie-firmani",
@@ -802,7 +879,8 @@
         "Firmani",
         "Edwing Firmani"
       ],
-      "wd": "Q1282776"
+      "wd": "Q1282776",
+      "fame": 14
     },
     {
       "id": "edin-dzeko",
@@ -812,7 +890,8 @@
       "aliases": [
         "Džeko"
       ],
-      "wd": "Q153786"
+      "wd": "Q153786",
+      "fame": 69
     },
     {
       "id": "dino-da-costa",
@@ -822,7 +901,8 @@
       "aliases": [
         "Da Costa"
       ],
-      "wd": "Q585082"
+      "wd": "Q585082",
+      "fame": 19
     },
     {
       "id": "antonio-vojak",
@@ -832,7 +912,8 @@
       "aliases": [
         "Vojak"
       ],
-      "wd": "Q605715"
+      "wd": "Q605715",
+      "fame": 19
     },
     {
       "id": "gino-armano",
@@ -842,7 +923,8 @@
       "aliases": [
         "Armano"
       ],
-      "wd": "Q986473"
+      "wd": "Q986473",
+      "fame": 8
     },
     {
       "id": "pietro-anastasi",
@@ -852,7 +934,8 @@
       "aliases": [
         "Anastasi"
       ],
-      "wd": "Q62252"
+      "wd": "Q62252",
+      "fame": 38
     },
     {
       "id": "gino-cappello",
@@ -862,7 +945,8 @@
       "aliases": [
         "Cappello"
       ],
-      "wd": "Q1539178"
+      "wd": "Q1539178",
+      "fame": 23
     },
     {
       "id": "fabrizio-miccoli",
@@ -872,7 +956,8 @@
       "aliases": [
         "Miccoli"
       ],
-      "wd": "Q136959"
+      "wd": "Q136959",
+      "fame": 32
     },
     {
       "id": "adrian-mutu",
@@ -882,7 +967,8 @@
       "aliases": [
         "Mutu"
       ],
-      "wd": "Q202645"
+      "wd": "Q202645",
+      "fame": 53
     },
     {
       "id": "luis-muriel",
@@ -892,7 +978,8 @@
       "aliases": [
         "Muriel"
       ],
-      "wd": "Q1032597"
+      "wd": "Q1032597",
+      "fame": 50
     },
     {
       "id": "sergio-clerici",
@@ -902,7 +989,8 @@
       "aliases": [
         "Clerici"
       ],
-      "wd": "Q1264644"
+      "wd": "Q1264644",
+      "fame": 12
     },
     {
       "id": "oliver-bierhoff",
@@ -912,7 +1000,8 @@
       "aliases": [
         "Bierhoff"
       ],
-      "wd": "Q152844"
+      "wd": "Q152844",
+      "fame": 51
     },
     {
       "id": "tommaso-rocchi",
@@ -922,7 +1011,8 @@
       "aliases": [
         "Rocchi"
       ],
-      "wd": "Q75580"
+      "wd": "Q75580",
+      "fame": 31
     },
     {
       "id": "pietro-paolo-virdis",
@@ -932,7 +1022,8 @@
       "aliases": [
         "Virdis"
       ],
-      "wd": "Q719481"
+      "wd": "Q719481",
+      "fame": 24
     },
     {
       "id": "goran-pandev",
@@ -942,7 +1033,8 @@
       "aliases": [
         "Pandev"
       ],
-      "wd": "Q238163"
+      "wd": "Q238163",
+      "fame": 50
     },
     {
       "id": "pierino-prati",
@@ -952,7 +1044,8 @@
       "aliases": [
         "Prati"
       ],
-      "wd": "Q515815"
+      "wd": "Q515815",
+      "fame": 33
     },
     {
       "id": "marek-hamsik",
@@ -962,7 +1055,8 @@
       "aliases": [
         "Hamšík"
       ],
-      "wd": "Q201825"
+      "wd": "Q201825",
+      "fame": 65
     }
   ]
 }

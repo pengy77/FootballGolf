@@ -1,7 +1,7 @@
 {
   "id": "intl-caps",
   "title": "International caps",
-  "prompt": "most men's international caps",
+  "prompt": "player with the most men's international caps",
   "noun": "player",
   "nounPlural": "players",
   "kind": "player",

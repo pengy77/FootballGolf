@@ -11,6 +11,11 @@ export interface RawItem {
   tb?: number[];
   /** Search-database entity this entry is (see data/entities). */
   wd?: string;
+  /**
+   * How well known the entry is: how many Wikimedia sites (mostly Wikipedia languages) have a page on it,
+   * from Wikidata. Written by scripts/add-fame.mjs for lists that set `minFame`.
+   */
+  fame?: number;
 }
 
 /** What an answer is. Search offers every known entity of this kind, not just the list. */
@@ -41,6 +46,11 @@ export interface RawCategory {
   outside?: string;
   /** Which edition of its series this list is, e.g. "2015–16". */
   season?: string;
+  /**
+   * The least `fame` a hole's answer may have, so a hole only asks for names people who follow this
+   * competition would know (README: "Who the questions are for"). Every entry still scores as a guess.
+   */
+  minFame?: number;
   metric: string;
   order: 'asc' | 'desc';
   description: string;
@@ -64,7 +74,10 @@ export interface Category extends Omit<RawCategory, 'items'> {
   byId: Map<string, Item>;
   byWd: Map<string, Item>;
   size: number;
-  /** Ranks a hole may target: inside the target range, held by exactly one entry, with a real value. One clear answer each. */
+  /**
+   * Ranks a hole may target: inside the target range, held by exactly one entry, with a real value, and
+   * famous enough for the list's `minFame`. One clear answer each, and one players could know.
+   */
   pins: number[];
 }
 
@@ -102,7 +115,8 @@ export function buildCategory(raw: RawCategory): Category {
     i = j + 1;
   }
   const [lo, hi] = targetRange(items.length);
-  const pins = items.filter((it) => it.pos >= lo && it.pos <= hi && it.lo === it.hi && it.value !== 0).map((it) => it.pos);
+  const famous = (it: Item) => raw.minFame === undefined || (it.fame ?? 0) >= raw.minFame;
+  const pins = items.filter((it) => it.pos >= lo && it.pos <= hi && it.lo === it.hi && it.value !== 0 && famous(it)).map((it) => it.pos);
   return {
     ...raw,
     items,

@@ -1,7 +1,7 @@
 {
   "id": "pl-top-scorers",
   "title": "Premier League all-time top scorers",
-  "prompt": "most Premier League goals",
+  "prompt": "player with the most Premier League goals",
   "noun": "player",
   "nounPlural": "players",
   "kind": "player",

@@ -1,0 +1,188 @@
+{
+  "id": "la-liga-club-wins-2026-27",
+  "title": "Most La Liga wins: 2026–27 clubs",
+  "prompt": "current La Liga club with the most La Liga wins",
+  "noun": "club",
+  "nounPlural": "clubs",
+  "kind": "club",
+  "outside": "not in the 2026–27 La Liga",
+  "metric": "Wins",
+  "order": "desc",
+  "description": "All-time La Liga match wins, from 1929 to the end of the 2025–26 season, for the 20 clubs in the 2026–27 La Liga; tied clubs share a place.",
+  "tags": [
+    "europe",
+    "clubs"
+  ],
+  "source": {
+    "name": "Wikipedia (Spanish): Clasificación histórica de la Primera División de España (after Marca's all-time table), to the end of 2025–26; this season's clubs from Wikipedia: 2026–27 La Liga",
+    "url": "https://es.wikipedia.org/wiki/Anexo:Clasificaci%C3%B3n_hist%C3%B3rica_de_la_Primera_Divisi%C3%B3n_de_Espa%C3%B1a",
+    "asOf": "2026-11-19"
+  },
+  "items": [
+    {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "sub": "95 seasons",
+      "value": 1873,
+      "aliases": [
+        "Real",
+        "Los Blancos"
+      ],
+      "wd": "Q8682"
+    },
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "sub": "95 seasons",
+      "value": 1818,
+      "aliases": [
+        "Barça",
+        "FC Barcelona"
+      ],
+      "wd": "Q7156"
+    },
+    {
+      "id": "atletico-madrid",
+      "name": "Atlético Madrid",
+      "sub": "89 seasons",
+      "value": 1441,
+      "aliases": [
+        "Atlético",
+        "Atleti"
+      ],
+      "wd": "Q8701"
+    },
+    {
+      "id": "athletic-bilbao",
+      "name": "Athletic Bilbao",
+      "sub": "95 seasons",
+      "value": 1335,
+      "aliases": [
+        "Athletic Club"
+      ],
+      "wd": "Q8687"
+    },
+    {
+      "id": "valencia",
+      "name": "Valencia",
+      "sub": "91 seasons",
+      "value": 1307,
+      "wd": "Q10333"
+    },
+    {
+      "id": "sevilla",
+      "name": "Sevilla",
+      "sub": "82 seasons",
+      "value": 1130,
+      "aliases": [
+        "Seville"
+      ],
+      "wd": "Q10329"
+    },
+    {
+      "id": "espanyol",
+      "name": "Espanyol",
+      "sub": "89 seasons",
+      "value": 1020,
+      "wd": "Q8780"
+    },
+    {
+      "id": "real-sociedad",
+      "name": "Real Sociedad",
+      "sub": "79 seasons",
+      "value": 1002,
+      "wd": "Q10315"
+    },
+    {
+      "id": "real-betis",
+      "name": "Real Betis",
+      "sub": "60 seasons",
+      "value": 746,
+      "aliases": [
+        "Betis"
+      ],
+      "wd": "Q8723"
+    },
+    {
+      "id": "celta-vigo",
+      "name": "Celta Vigo",
+      "sub": "60 seasons",
+      "value": 693,
+      "wd": "Q8749"
+    },
+    {
+      "id": "deportivo-la-coruna",
+      "name": "Deportivo La Coruña",
+      "sub": "46 seasons",
+      "value": 569,
+      "aliases": [
+        "Deportivo",
+        "Depor"
+      ],
+      "wd": "Q8760"
+    },
+    {
+      "id": "osasuna",
+      "name": "Osasuna",
+      "sub": "44 seasons",
+      "value": 511,
+      "wd": "Q10286"
+    },
+    {
+      "id": "racing-santander",
+      "name": "Racing Santander",
+      "sub": "44 seasons",
+      "value": 453,
+      "wd": "Q12236"
+    },
+    {
+      "id": "villarreal",
+      "name": "Villarreal",
+      "sub": "26 seasons",
+      "value": 418,
+      "wd": "Q12297"
+    },
+    {
+      "id": "getafe",
+      "name": "Getafe",
+      "sub": "21 seasons",
+      "value": 254,
+      "wd": "Q8806"
+    },
+    {
+      "id": "rayo-vallecano",
+      "name": "Rayo Vallecano",
+      "sub": "23 seasons",
+      "value": 254,
+      "wd": "Q10300"
+    },
+    {
+      "id": "elche",
+      "name": "Elche",
+      "sub": "25 seasons",
+      "value": 237,
+      "wd": "Q10512"
+    },
+    {
+      "id": "alaves",
+      "name": "Alavés",
+      "sub": "20 seasons",
+      "value": 213,
+      "wd": "Q223620"
+    },
+    {
+      "id": "malaga",
+      "name": "Málaga",
+      "sub": "17 seasons",
+      "value": 209,
+      "wd": "Q8857"
+    },
+    {
+      "id": "levante",
+      "name": "Levante",
+      "sub": "17 seasons",
+      "value": 177,
+      "wd": "Q8823"
+    }
+  ]
+}

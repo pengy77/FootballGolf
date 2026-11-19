@@ -1,7 +1,7 @@
 {
   "id": "ucl-top-scorers",
   "title": "Champions League top scorers",
-  "prompt": "most Champions League goals",
+  "prompt": "player with the most Champions League goals",
   "noun": "player",
   "nounPlural": "players",
   "kind": "player",

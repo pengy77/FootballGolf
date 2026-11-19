@@ -1,9 +1,9 @@
 {
   "id": "record-transfers",
   "title": "Most expensive transfers",
-  "prompt": "most expensive transfer of all time",
-  "noun": "transfer",
-  "nounPlural": "transfers",
+  "prompt": "player with the most expensive transfer of all time",
+  "noun": "player",
+  "nounPlural": "players",
   "kind": "player",
   "retired": true,
   "metric": "Fee",

@@ -1,9 +1,9 @@
 {
   "id": "euro-table",
   "title": "European Championship all-time table",
-  "prompt": "highest-placed team in the all-time European Championship table",
-  "noun": "nation",
-  "nounPlural": "nations",
+  "prompt": "country in the all-time European Championship table",
+  "noun": "country",
+  "nounPlural": "countries",
   "kind": "nation",
   "metric": "Points",
   "order": "desc",
