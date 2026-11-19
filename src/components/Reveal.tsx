@@ -83,6 +83,60 @@ function nearestClear(want: number, size: number, taken: Span[], lo: number, hi:
  * With several players everything shares one narrow column, so each count and each out-of-bounds ball
  * moves to the nearest clear spot rather than covering someone else's ball, count or tape.
  */
+/**
+ * The leaderboard beside the fairway, in px down the scene. The flag's row and every pick always get a row:
+ * where two would overlap, the flag's row stays on its rank and picks are nudged clear of it. `jog` is how far
+ * a row sits from its rank, so its leader can bend back to the ball. The rest of the list fills the gaps,
+ * nearest the flag first.
+ */
+export function layoutRows(o: {
+  /** Ranks in view */
+  first: number;
+  last: number;
+  target: number;
+  /** The flag's rank, if it's in view */
+  pin?: number;
+  picks: number[];
+  /** Rank → px down the scene */
+  at: (pos: number) => number;
+  /** Where a row's centre may go, in px */
+  lo: number;
+  hi: number;
+}): { pos: number; y: number; jog: number }[] {
+  const must = [...new Set([...(o.pin === undefined ? [] : [o.pin]), ...o.picks])].sort((a, b) => a - b);
+  // Rows for the flag and for picks are taller: they carry a subtitle.
+  const tall = (pos: number) => must.includes(pos);
+  const gap = (a: number, b: number) => (tall(a) && tall(b) ? 36 : tall(a) || tall(b) ? 31 : 24);
+  const ys = must.map(o.at);
+  const down = (from: number) => {
+    for (let i = from + 1; i < must.length; i++) ys[i] = Math.max(ys[i], ys[i - 1] + gap(must[i - 1], must[i]));
+  };
+  const up = (from: number) => {
+    for (let i = from - 1; i >= 0; i--) ys[i] = Math.min(ys[i], ys[i + 1] - gap(must[i], must[i + 1]));
+  };
+  const a = o.pin === undefined ? 0 : must.indexOf(o.pin);
+  up(a);
+  down(a);
+  // Keep the column inside the scene, even if that moves the flag's row.
+  if (ys.length && ys[0] < o.lo) {
+    ys[0] = o.lo;
+    down(0);
+  }
+  if (ys.length && ys[ys.length - 1] > o.hi) {
+    ys[ys.length - 1] = o.hi;
+    up(ys.length - 1);
+  }
+  const rows = must.map((pos, i) => ({ pos, y: ys[i], jog: o.at(pos) - ys[i] }));
+  const rest: number[] = [];
+  for (let pos = o.first; pos <= o.last; pos++) if (!tall(pos)) rest.push(pos);
+  rest.sort((p, q) => Math.abs(p - o.target) - Math.abs(q - o.target));
+  for (const pos of rest) {
+    const y = o.at(pos);
+    if (rows.every((r) => Math.abs(r.y - y) >= gap(r.pos, pos))) rows.push({ pos, y, jog: 0 });
+  }
+  return rows;
+}
+
 function placeShots(
   shots: { i: number; r: { offList?: string }; rank: number | null; terrain: Terrain }[],
   solo: boolean,
@@ -262,35 +316,35 @@ export function Reveal({
   const pins = perfectAnswers(h);
   const pinItem = pins[0];
 
-  // The leaderboard beside the fairway: the flag's row and every pick first, then the rest of the
-  // list nearest the flag first, as long as there's room for a row.
+  const yAt = scale(view, top, bottom);
+
+  // The leaderboard beside the fairway: the flag's row and every pick always (a guess one place off
+  // the flag still gets its row), then the rest of the list nearest the flag, as long as there's room.
   const rows = useMemo(() => {
     if (!zoomed) return [];
-    const pxPerRank = (sceneH * (bottom - top)) / 100 / (view[1] - view[0]);
     const pickedBy = new Map<number, number[]>();
     shots.forEach((s) => s.r.item && pickedBy.set(s.r.item.pos, [...(pickedBy.get(s.r.item.pos) ?? []), s.p]));
-    const chosen: number[] = [];
-    const inView = (pos: number) => pos >= view[0] && pos <= view[1];
-    const add = (pos: number, force = false) => {
-      if (pos < 1 || pos > cat.size || chosen.includes(pos) || !inView(pos)) return;
-      const tall = (p: number) => p === pinItem?.pos || pickedBy.has(p);
-      if (!force && chosen.some((c) => Math.abs(c - pos) * pxPerRank < (tall(c) || tall(pos) ? 34 : 24))) return;
-      chosen.push(pos);
-    };
-    if (pinItem) add(pinItem.pos, true);
-    pickedBy.forEach((_, pos) => add(pos));
-    const rest: number[] = [];
-    for (let pos = Math.max(1, Math.ceil(view[0])); pos <= Math.min(cat.size, Math.floor(view[1])); pos++) rest.push(pos);
-    rest.sort((a, b) => Math.abs(a - h.target) - Math.abs(b - h.target)).forEach((pos) => add(pos));
-    return chosen.map((pos) => {
+    const first = Math.max(1, Math.ceil(view[0]));
+    const last = Math.min(cat.size, Math.floor(view[1]));
+    const inView = (pos: number) => pos >= first && pos <= last;
+    const laid = layoutRows({
+      first,
+      last,
+      target: h.target,
+      pin: pinItem && inView(pinItem.pos) ? pinItem.pos : undefined,
+      picks: [...pickedBy.keys()].filter(inView),
+      at: (pos) => (yAt(pos) / 100) * sceneH,
+      lo: 18,
+      hi: sceneH - 18,
+    });
+    return laid.map(({ pos, y, jog }) => {
       const item = cat.items[pos - 1];
       const by = pickedBy.get(pos);
-      return { pos, item, kind: item === pinItem ? 'pin' : by ? 'pick' : 'list', by };
+      return { pos, item, kind: item === pinItem ? 'pin' : by ? 'pick' : 'list', by, top: (y / sceneH) * 100, jog };
     });
   }, [zoomed, sceneH, bottom, view[0], view[1]]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const ballLeft = (fx: number) => `calc((var(--cl) + var(--cw) * ${fx}) * 1%)`;
-  const yAt = scale(view, top, bottom);
   const yPin = yAt(h.target);
   const spots = placeShots(shots, solo, h.target, yAt, top, bottom, sceneH);
 
@@ -309,18 +363,28 @@ export function Reveal({
         sceneRef={sceneRef}
         onTap={() => setInstant(true)}
       >
-        {(y) => (
+        {() => (
           <>
-            {rows.map(({ pos, item, kind, by }) => {
+            {rows.map(({ pos, item, kind, by, top: rowTop, jog }) => {
               const fill = by && !solo ? BALL_FILL[by[0] % BALL_FILL.length] : undefined;
-              // Rows for the flag and for picks reach across to the fairway with a dotted line.
+              // Rows for the flag and for picks reach across to the fairway with a dotted line, which
+              // steps up or down to the ball when the row was nudged off its rank to make room.
               const fx = kind === 'pin' ? 0.5 : kind === 'pick' ? (shots.find((x) => x.p === by![0])?.fx ?? 0.3) : 0;
               const hidden = kind === 'pin' ? false : kind === 'pick' ? false : !listed;
+              const bent = Math.abs(jog) >= 2;
               return (
                 <div
                   key={pos}
-                  className={`lr is-${kind}${hidden ? ' is-hidden' : ''}${kind === 'pin' && answered ? ' is-flipped' : ''}`}
-                  style={{ top: `${y(pos)}%`, '--fx': fx, '--d': Math.abs(pos - h.target), ...(fill ? { '--pick': fill } : {}) } as CSSProperties}
+                  className={`lr is-${kind}${hidden ? ' is-hidden' : ''}${kind === 'pin' && answered ? ' is-flipped' : ''}${bent ? ' has-jog' : ''}`}
+                  style={
+                    {
+                      top: `${rowTop}%`,
+                      '--fx': fx,
+                      '--d': Math.abs(pos - h.target),
+                      ...(fill ? { '--pick': fill } : {}),
+                      ...(bent ? { '--jog-top': jog > 0 ? '50%' : `calc(50% - ${-jog}px)`, '--jog-h': `${Math.abs(jog)}px` } : {}),
+                    } as CSSProperties
+                  }
                 >
                   <span className="lr-pos">{item.lo !== item.hi ? `${item.lo}–${item.hi}` : item.pos}</span>
                   <span className="lr-name">

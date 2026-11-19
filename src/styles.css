@@ -2096,6 +2096,22 @@ p {
   border-top-color: var(--pick, #fff);
 }
 
+/* A row nudged off its rank (to make room next to the flag) steps its leader back to the ball. */
+.lr.has-jog::before {
+  content: '';
+  position: absolute;
+  left: calc(100% + 4px + (6 + var(--cw) * var(--fx, 0)) * 1cqw - 3cqw - 12px);
+  top: var(--jog-top);
+  height: var(--jog-h);
+  border-left: 2px dotted var(--yellow);
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.lr.is-pick.has-jog::before {
+  border-left-color: var(--pick, #fff);
+}
+
 /* A shot: the ball and its shadow fly from the tee; the ball arcs up towards us and back down. */
 .fb {
   position: absolute;
